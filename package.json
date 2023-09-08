@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "name": "steamos",
+    "scripts": {
+      "prettier": "prettier"
+    },
+    "dependencies": {
+      "prettier": "^3.0.2"
+    }
+  }
