@@ -1,0 +1,1411 @@
+ [^_H
+ [^_]A\
+ [^_]A\A]A^
+!This program cannot be run in DOS mode.
+!send_mechtok
+%lu %lu 
+%s:%s
+(!do_encrypt) || (toktype == KG_TOK_SEAL_MSG)
+(*cmp_OM_uint32)(l, pair->l) != 0
+(*mechanisms)->elements != NULL
+(*mecherror_cmp)(r, pair->r) != 0
+([^_]
+([^_]A\A]
+([^_]A\A]A^A_
+([^_]A\A]A^A_H
++D$@H
++D$@L
++T$@F
++l$@L
+./errmap.h
+.edata
+.gnu_debuglink
+.rdata
+.reloc
+.text
+/etc/gss/mech
+/etc/gss/mech.d/*.conf
+/usr/lib/gss/
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/include/k5-thread.h
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/generic/oid_ops.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/accept_sec_context.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/acquire_cred.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/copy_ccache.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/iakerb.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/import_name.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/init_sec_context.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/k5seal.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/k5sealiov.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/k5sealv3.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/k5sealv3iov.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/k5unseal.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/k5unsealiov.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/naming_exts.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/s4u_gss_glue.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/set_allowable_enctypes.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/set_ccache.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/util_cksum.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/krb5/util_crypt.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/mechglue/g_authorize_localname.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/mechglue/g_encapsulate_token.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/mechglue/g_initialize.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/mechglue/g_unwrap_aead.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/mechglue/g_wrap_aead.c
+/usr/src/ports/krb5/krb5-1.15.2-2.x86_64/src/krb5-1.15.2/src/lib/gssapi/spnego/spnego_mech.c
+0@.bss
+0@.idata
+0@.pdata
+0@.xdata
+0[^_]A\
+0[^_]A\A]A^
+0[^_]A\A]A^H
+8[^_]
+8[^_]A\A]
+8[^_]A\A]A^A_
+8[^_]A\A]A^A_I
+8`unH
+90t)H
+90teH
+98t6H
+9;u,D9k
+9D$$s
+9L$<H
+:T$Fu
+:T$Gu
+:T$Xt.A
+;0tPH
+<$`tW
+<^u=H
+?ntxH
+@ tNE
+@[^_]A\
+@[^_]A\A]A^
+A credential was invalid
+A later token has already been processed
+A parameter was malformed
+A required input parameter could not be read
+A required input parameter could not be written
+A required output parameter could not be written
+A supplied name was of an unsupported type
+A token had an invalid Message Integrity Check (MIC)
+A token had an invalid signature
+A token was invalid
+ABCDEFGHIJKLMNOPQRSTUVWXYZ234567
+ATUWVSH
+AUATUWVSH
+AVAUATUWVSH
+AWAVAUATUWVSH
+Acceptor and Initiator share no checksum types
+An expected per-message token was not received
+An invalid name was supplied
+An invalid status code was supplied
+An unsupported mechanism was requested
+Attempt to use incomplete security context
+Authenticator has no subkey
+Bad magic number for iakerb_ctx_id_t
+Bad magic number for krb5_gss_cred_id_t
+Bad magic number for krb5_gss_ctx_id_t
+Bad magic number for krb5_gss_enc_desc
+Buffer is the wrong size
+C(90u
+Context is already fully established
+Couldn't allocate gss_buffer_t data
+Credential cache has no TGT
+Credential cache is empty
+Credential usage type is unknown
+D$ E1
+D$ H+D$(E1
+D$ tbH
+D$ tsH
+D$(+D$@H
+D$(+D$@L
+D$(E1
+D$(H3
+D$(H9
+D$(t?H
+D$(u1
+D$(u6H
+D$,t(
+D$0t7H
+D$8H3
+D$8H9
+D$8H;
+D$<E1
+D$<tRH
+D$<u$H
+D$@E1
+D$@tOH
+D$@tsH
+D$DH)
+D$HE1
+D$Ht3
+D$Hu"L
+D$PHc
+D$PtHH
+D$XE1
+D$XH=
+D$XL)
+D$`E1
+D$`H9
+D$hL)
+D$huAH
+D$pE9
+D$pH	
+D$pH)
+D$pH+
+D$pHc
+D$pL+
+D$pL;
+D$pu5H
+D$xH;
+D$xL;D$X
+D$xMc
+D$xu4
+D+D$p
+D+D$x
+D;0t-H
+DD$ H
+ED$HA
+ET$xH
+FL+D$pL
+Fh+D$4
+GCC: (GNU) 6.4.0
+GCC: (GNU) 6.4.0 20170704 (Fedora Cygwin 6.4.0-1)
+GS2-IAKERB
+GS2-KRB5
+GSS_C_ATTR_LOCAL_LOGIN_USER
+GSS_C_INQ_SSPI_SESSION_KEY
+GSS_C_MA_AUTH_INIT
+GSS_C_MA_AUTH_INIT_ANON
+GSS_C_MA_AUTH_INIT_INIT
+GSS_C_MA_AUTH_TARG
+GSS_C_MA_AUTH_TARG_ANON
+GSS_C_MA_AUTH_TARG_INIT
+GSS_C_MA_CBINDINGS
+GSS_C_MA_COMPRESS
+GSS_C_MA_CONF_PROT
+GSS_C_MA_CTX_TRANS
+GSS_C_MA_DELEG_CRED
+GSS_C_MA_DEPRECATED
+GSS_C_MA_INTEG_PROT
+GSS_C_MA_ITOK_FRAMED
+GSS_C_MA_MECH_COMPOSITE
+GSS_C_MA_MECH_CONCRETE
+GSS_C_MA_MECH_GLUE
+GSS_C_MA_MECH_NEGO
+GSS_C_MA_MECH_PSEUDO
+GSS_C_MA_MIC
+GSS_C_MA_NOT_DFLT_MECH
+GSS_C_MA_NOT_MECH
+GSS_C_MA_OOS_DET
+GSS_C_MA_PFS
+GSS_C_MA_PROT_READY
+GSS_C_MA_REPLAY_DET
+GSS_C_MA_WRAP
+GSS_C_NT_ANONYMOUS
+GSS_C_NT_COMPOSITE_EXPORT
+GSS_C_NT_EXPORT_NAME
+GSS_C_NT_HOSTBASED_SERVICE
+GSS_C_NT_HOSTBASED_SERVICE_X
+GSS_C_NT_MACHINE_UID_NAME
+GSS_C_NT_STRING_UID_NAME
+GSS_C_NT_USER_NAME
+GSS_C_SEC_CONTEXT_SASL_SSF
+GSS_KRB5_CRED_NO_CI_FLAGS_X
+GSS_KRB5_NT_PRINCIPAL_NAME
+GetModuleHandleA
+GetProcAddress
+H+D$ H
+H+D$@H
+H+L$h
+H+T$8
+H+T$@L
+H+\$8M
+H9D$`
+H9D$p
+H9|$h
+H;C0t
+H[^_]
+H[^_]A\A]
+H[^_]A\A]A^A_
+HcD$pH
+HcL$H
+HcL$tL
+HkT$H(D
+Hostname in SERVICE-NAME string could not be canonicalized
+I;.s-H
+Incorrect channel bindings were supplied
+Initial and Pass Through Authentication Kerberos Mechanism (IAKERB)
+Invalid credential was supplied
+Invalid field length in token
+Invalid token was supplied
+KERNEL32.dll
+Kerberos 5 GSS-API Mechanism
+Kh+L$D
+Known OID but not a mechanism OID.
+L$ E1
+L$ tVH
+L$$E1
+L$(H3
+L$(tN
+L$(tiH
+L$(tqL
+L$(uU
+L$0x1I
+L$8H+L$`L
+L$8H3
+L$8H3M
+L$8H9
+L$<E1
+L$HH3
+L$HH3M
+L$HM9
+L$PH;
+L$XE1
+L$XH3
+L$Xtb1
+L$\tHH
+L$h;NH
+L$hE1
+L$hH3
+L$htgH
+L$lE1
+L$pE1
+L$xH3
+L+D$h
+L9l$ tTL
+L;;sOL
+Local host name could not be determined
+M;<$r
+MEMORY
+Mechanism is a composite of other mechanisms.
+Mechanism is a pseudo-mechanism.
+Mechanism is deprecated.
+Mechanism is incorrect
+Mechanism is neither a pseudo-mechanism nor a composite mechanism.
+Mechanism must not be used as a default mechanism.
+Mechanism negotiates other mechanisms.
+Mechanism supports GSS_C_NT_ANONYMOUS as an acceptor name.
+Mechanism supports GSS_C_NT_ANONYMOUS as an initiator name.
+Mechanism supports Message Integrity Code (MIC) tokens.
+Mechanism supports Perfect Forward Security.
+Mechanism supports authentication of acceptor to initiator.
+Mechanism supports authentication of acceptor using initial credentials.
+Mechanism supports authentication of initiator to acceptor.
+Mechanism supports authentication of initiator using initial credentials.
+Mechanism supports channel bindings.
+Mechanism supports compression of data inputs to gss_wrap().
+Mechanism supports credential delegation.
+Mechanism supports out-of-sequence detection.
+Mechanism supports per-message confidentiality protection.
+Mechanism supports per-message integrity protection.
+Mechanism supports per-message proteciton prior to full context establishment.
+Mechanism supports replay detection.
+Mechanism supports security context export/import.
+Mechanism supports wrap tokens.
+Mechanism's initial contexts are properly framed.
+Message context invalid
+Miscellaneous failure
+NTLMSSP
+No @ in SERVICE-NAME name string
+No context has been established
+No credentials were supplied
+No credentials were supplied, or the credentials were unavailable or inaccessible
+No error
+No key table entry found matching %s
+No principal in keytab matches desired name
+OID is not a mechanism but the GSS-API itself.
+PRF input too long
+P[^_]A\
+P[^_]A\A]A^
+P`.data
+Packet was replayed in wrong direction
+Principal in credential cache does not match desired name
+Received token ID does not match expected token ID
+Requested lucid context version not supported
+SPNEGO
+SPNEGO acceptor did not return a valid token
+SPNEGO acceptor did not select a mechanism
+SPNEGO cannot find mechanisms to negotiate
+SPNEGO failed to acquire creds
+SPNEGO failed to negotiate a mechanism
+STRING-UID-NAME contains nondigits
+Sequence number in token is corrupt
+Simple and Protected GSS-API Negotiation Mechanism
+Storing of acceptor credentials is not supported by the mechanism
+Storing of non-default credentials is not supported by the mechanism
+T$ A)
+T$(H3
+T$(H3U
+T$(u$I
+T$0;J
+T$0E1
+T$0fA
+T$8H3
+T$8I3U
+T$8uLH
+T$8w9
+T$<9P
+T$@u[L
+T$D:T$EtE
+T$HE1
+T$HH3
+T$HH9T$8w
+T$HI3U
+T$Ht>H
+T$Hu|L
+T$Pt4
+T$TE1
+T$XE1
+T$XH3
+T$XI3U
+T$`9B
+T$`E1
+T$`fA
+T$`tOI
+T$hE1
+T$hH3
+T$hI9
+T$pE1
+T$pHcp
+T$pHcx
+T$xE1
+T$xH)
+T$xH3
+The context has expired
+The given credential's usage does not match the requested usage
+The operation is forbidden by local security policy
+The operation is forbidden by the local security policy
+The operation or option is not available
+The operation or option is not available or unsupported
+The provided name was not mechanism specific (MN)
+The quality-of-protection (QOP) requested could not be provided
+The quality-of-protection requested could not be provided
+The referenced context has expired
+The referenced credential has expired
+The referenced credentials have expired
+The requested credential element already exists
+The routine completed successfully
+The routine must be called again to complete its function
+The token was a duplicate of an earlier token
+The token's validity period has expired
+Token header is malformed or corrupt
+Token is missing data
+Token was reflected
+UID does not resolve to username
+UWVSH
+Unable to resolve default client keytab: {kerr}
+Unknown 
+Unknown %s (field = %d)
+Unknown quality of protection specified
+Unknown signature type in token
+Unspecified GSS failure.  Minor code may provide more information
+Validation error
+X[^_]
+X[^_]A\A]
+X[^_]A\A]A^A_
+[^_]A\
+[^_]A\A]
+[^_]A\A]A^
+[^_]A\A]A^A_
+\$0Hc
+\$8M)
+\$8[^
+\$8tFH
+\$@E1
+\$HH3
+\$PE1
+\$Pt:L
+\$XH3
+\$`t4
+\$`tAH
+\$`t{H
+\$`u>
+\$huKL
+\$pLch
+\$xH3
+_Jv_RegisterClasses
+__assert_func
+__cxa_atexit
+__gcc_deregister_frame
+__gcc_register_frame
+__locale_ctype_ptr
+__stack_chk_fail
+__stack_chk_guard
+_et_list
+_impure_ptr
+`@.buildid5
+`[^_]A\
+`[^_]A\A]A^
+abort
+accept_sec_context called with existing context handle
+acquire_accept_cred
+acquire_cred_context
+acquire_init_cred
+add_error_table
+asprintf
+attr_authorize_localname
+auth-init-princ
+auth-init-princ-anon
+auth-init-princ-initial
+auth-targ-princ
+auth-targ-princ-anon
+auth-target-princ-initial
+build_dynamicMech
+calling error
+calloc
+ccache
+channel-bindings
+checksum_iov_v3
+cksumsize <= 0xffff
+cksumtype != 0
+client_keytab
+composite-mech
+compress
+concrete-mech
+conf-prot
+context-transfer
+cp == end
+cred->ccache == NULL
+cred->default_identity || cred->name != NULL
+cred->keytab == NULL
+cred->name != NULL
+cred->name != NULL && cred->ccache == NULL
+cred->name == NULL
+cred->name->princ != NULL
+ctx != NULL
+ctx->have_acceptor_subkey
+ctx->proto == 1
+ctx->state != IAKERB_AP_REQ
+cygcom_err-2.dll
+cyggcj-16.dll
+cyggssapi_krb5-2.dll
+cyggssapi_krb5-2.dll.dbg
+cygintl-8.dll
+cygk5crypto-3.dll
+cygkrb5-3.dll
+cygkrb5support-0.dll
+cygwin1.dll
+cygwin_detach_dll
+cygwin_internal
+d$HuyM
+d$hE1
+data->buffer.length >= relative_padlength
+data->cred->name != NULL
+data->exts != NULL
+data_list_to_buffer_set
+decode_krb5_ap_req
+decode_krb5_error
+decode_krb5_iakerb_finished
+decode_krb5_iakerb_header
+deleg-cred
+dll_dllcrt0
+enc_key->length == 16
+encode_krb5_iakerb_finished
+encode_krb5_iakerb_header
+encode_krb5_ticket
+erroH
+error_message
+et_ggss_error_table
+et_k5g_error_table
+evidence_creds.ticket_flags & TKT_FLG_FORWARDABLE
+externalName != GSS_C_NO_BUFFER
+exts != NULL
+fclose
+fgets
+fopen
+generic_gss_add_buffer_set_member
+generic_gss_add_oid_set_member
+generic_gss_copy_oid
+generic_gss_copy_oid_set
+generic_gss_create_empty_buffer_set
+generic_gss_create_empty_oid_set
+generic_gss_display_mech_attr
+generic_gss_oid_compose
+generic_gss_oid_decompose
+generic_gss_oid_to_str
+generic_gss_release_buffer
+generic_gss_release_buffer_set
+generic_gss_release_oid
+generic_gss_release_oid_set
+generic_gss_str_to_oid
+generic_gss_test_oid_set_member
+get_cache_for_name
+get_credentials
+get_name_from_client_keytab
+getpwnam_r
+getpwuid_r
+globfree
+gss_accept_sec_context
+gss_acquire_cred
+gss_acquire_cred_from
+gss_acquire_cred_impersonate_name
+gss_acquire_cred_with_password
+gss_add_buffer_set_member
+gss_add_cred
+gss_add_cred_from
+gss_add_cred_impersonate_name
+gss_add_cred_with_password
+gss_add_mech_name_type
+gss_add_oid_set_member
+gss_authorize_localname
+gss_canonicalize_name
+gss_compare_name
+gss_complete_auth_token
+gss_context_time
+gss_create_empty_buffer_set
+gss_create_empty_oid_set
+gss_decapsulate_token
+gss_delete_name_attribute
+gss_delete_sec_context
+gss_display_mech_attr
+gss_display_name
+gss_display_name_ext
+gss_display_status
+gss_duplicate_name
+gss_encapsulate_token
+gss_export_cred
+gss_export_name
+gss_export_name_composite
+gss_export_sec_context
+gss_find_mechanism_from_name_type
+gss_get_mic
+gss_get_mic_iov
+gss_get_mic_iov_length
+gss_get_name_attribute
+gss_import_cred
+gss_import_name
+gss_import_sec_context
+gss_indicate_mechs
+gss_indicate_mechs_by_attrs
+gss_init_sec_context
+gss_inquire_attrs_for_mech
+gss_inquire_context
+gss_inquire_cred
+gss_inquire_cred_by_mech
+gss_inquire_cred_by_oid
+gss_inquire_mech_for_saslname
+gss_inquire_mechs_for_name
+gss_inquire_name
+gss_inquire_names_for_mech
+gss_inquire_saslname_for_mech
+gss_inquire_sec_context_by_oid
+gss_internal_release_oid
+gss_krb5_ccache_name
+gss_krb5_copy_ccache
+gss_krb5_export_lucid_sec_context
+gss_krb5_free_lucid_sec_context
+gss_krb5_get_tkt_flags
+gss_krb5_import_cred
+gss_krb5_set_allowable_enctypes
+gss_krb5_set_cred_rcache
+gss_krb5int_ccache_name
+gss_krb5int_copy_ccache
+gss_krb5int_export_lucid_sec_context
+gss_krb5int_extract_authtime_from_sec_context
+gss_krb5int_extract_authz_data_from_sec_context
+gss_krb5int_free_lucid_sec_context
+gss_krb5int_get_tkt_flags
+gss_krb5int_import_cred
+gss_krb5int_initialize_library
+gss_krb5int_inq_session_key
+gss_krb5int_lib_fini
+gss_krb5int_lib_init
+gss_krb5int_make_seal_token_v3
+gss_krb5int_make_seal_token_v3_iov
+gss_krb5int_register_acceptor_identity
+gss_krb5int_rotate_left
+gss_krb5int_sec_context_sasl_ssf
+gss_krb5int_set_allowable_enctypes
+gss_krb5int_set_cred_rcache
+gss_krb5int_unseal_token_v3
+gss_krb5int_unseal_v3_iov
+gss_localname
+gss_ma_known_attrs
+gss_map_name_to_any
+gss_mech_iakerb
+gss_mech_initialize
+gss_mech_interposer
+gss_mech_krb5
+gss_mech_krb5_old
+gss_mech_krb5_wrong
+gss_mech_set_krb5
+gss_mech_set_krb5_both
+gss_mech_set_krb5_old
+gss_mech_set_spnego
+gss_mech_spnego
+gss_nt_exported_name
+gss_nt_krb5_name
+gss_nt_krb5_principal
+gss_nt_machine_uid_name
+gss_nt_service_name
+gss_nt_service_name_v2
+gss_nt_string_uid_name
+gss_nt_user_name
+gss_oid_equal
+gss_oid_to_str
+gss_padlen == 0 || padding != NULL
+gss_pname_to_uid
+gss_process_context_token
+gss_pseudo_random
+gss_release_any_name_mapping
+gss_release_buffer
+gss_release_buffer_set
+gss_release_cred
+gss_release_iov_buffer
+gss_release_name
+gss_release_oid
+gss_release_oid_set
+gss_seal
+gss_set_cred_option
+gss_set_name_attribute
+gss_set_neg_mechs
+gss_set_sec_context_option
+gss_sign
+gss_spnegoint_lib_fini
+gss_spnegoint_lib_init
+gss_store_cred
+gss_store_cred_into
+gss_str_to_oid
+gss_test_oid_set_member
+gss_trailerlen <= 0xFFFF
+gss_unseal
+gss_unwrap
+gss_unwrap_aead
+gss_unwrap_iov
+gss_userok
+gss_verify
+gss_verify_mic
+gss_verify_mic_iov
+gss_wrap
+gss_wrap_aead
+gss_wrap_iov
+gss_wrap_iov_length
+gss_wrap_size_limit
+gssi_accept_sec_context
+gssi_acquire_cred
+gssi_acquire_cred_from
+gssi_acquire_cred_impersonate_name
+gssi_acquire_cred_with_password
+gssi_add_cred
+gssi_add_cred_impersonate_name
+gssi_authorize_localname
+gssi_compare_name
+gssi_complete_auth_token
+gssi_context_time
+gssi_delete_name_attribute
+gssi_delete_sec_context
+gssi_display_name
+gssi_display_name_ext
+gssi_display_status
+gssi_duplicate_name
+gssi_export_cred
+gssi_export_name
+gssi_export_name_composite
+gssi_export_sec_context
+gssi_get_mic
+gssi_get_name_attribute
+gssi_import_cred
+gssi_import_cred_by_mech
+gssi_import_name
+gssi_import_name_by_mech
+gssi_import_sec_context
+gssi_import_sec_context_by_mech
+gssi_indicate_mechs
+gssi_init_sec_context
+gssi_inquire_attrs_for_mech
+gssi_inquire_context
+gssi_inquire_cred
+gssi_inquire_cred_by_mech
+gssi_inquire_cred_by_oid
+gssi_inquire_mech_for_saslname
+gssi_inquire_name
+gssi_inquire_names_for_mech
+gssi_inquire_saslname_for_mech
+gssi_inquire_sec_context_by_oid
+gssi_internal_release_oid
+gssi_localname
+gssi_map_name_to_any
+gssi_mech_invoke
+gssi_process_context_token
+gssi_pseudo_random
+gssi_release_any_name_mapping
+gssi_release_cred
+gssi_release_name
+gssi_set_cred_option
+gssi_set_name_attribute
+gssi_set_neg_mechs
+gssi_set_sec_context_option
+gssi_store_cred
+gssi_store_cred_into
+gssi_unwrap
+gssi_unwrap_aead
+gssi_unwrap_iov
+gssi_verify_mic
+gssi_wrap
+gssi_wrap_aead
+gssi_wrap_iov
+gssi_wrap_iov_length
+gssi_wrap_size_limit
+gssint_convert_name_to_union_name
+gssint_copy_oid_set
+gssint_create_copy_buffer
+gssint_delete_internal_sec_context
+gssint_der_length_size
+gssint_display_internal_name
+gssint_export_internal_name
+gssint_g_display_com_err_status
+gssint_g_display_major_status
+gssint_g_make_string_buffer
+gssint_g_make_token_header
+gssint_g_seqstate_check
+gssint_g_seqstate_externalize
+gssint_g_seqstate_free
+gssint_g_seqstate_init
+gssint_g_seqstate_internalize
+gssint_g_seqstate_size
+gssint_g_set_entry_add
+gssint_g_set_entry_delete
+gssint_g_set_entry_get
+gssint_g_set_init
+gssint_g_token_size
+gssint_g_verify_token_header
+gssint_get_der_length
+gssint_get_mech_type
+gssint_get_mech_type_oid
+gssint_get_mechanism
+gssint_get_mechanism_cred
+gssint_get_modOptions
+gssint_get_public_oid
+gssint_import_internal_name
+gssint_krb5_keytab_lock
+gssint_make_public_oid_set
+gssint_mecherrmap_destroy
+gssint_mecherrmap_get
+gssint_mecherrmap_init
+gssint_mecherrmap_map
+gssint_mecherrmap_map_errcode
+gssint_mechglue_initialize_library
+gssint_put_der_length
+gssint_register_mechinfo
+gssint_release_internal_name
+gssint_select_mech_type
+gssint_unwrap_aead
+gssint_wrap_aead
+gssint_wrap_aead_iov_shim
+gsskrb5_extract_authtime_from_sec_context
+gsskrb5_extract_authz_data_from_sec_context
+gssspi_acquire_cred_with_password
+gssspi_authorize_localname
+gssspi_import_cred_by_mech
+gssspi_import_name_by_mech
+gssspi_import_sec_context_by_mech
+gssspi_mech_invoke
+gssspi_set_cred_option
+h[^_]
+h[^_]A\A]A^A_
+handle_mic
+header != NULL
+i <= iov_count + 2
+iakerb
+iakerb_gss_accept_sec_context
+iakerb_gss_acquire_cred
+iakerb_gss_acquire_cred_with_password
+iakerb_gss_context_time
+iakerb_gss_delete_sec_context
+iakerb_gss_export_sec_context
+iakerb_gss_get_mic
+iakerb_gss_get_mic_iov
+iakerb_gss_get_mic_iov_length
+iakerb_gss_import_sec_context
+iakerb_gss_init_sec_context
+iakerb_gss_inquire_context
+iakerb_gss_inquire_sec_context_by_oid
+iakerb_gss_process_context_token
+iakerb_gss_pseudo_random
+iakerb_gss_set_sec_context_option
+iakerb_gss_unwrap
+iakerb_gss_unwrap_iov
+iakerb_gss_verify_mic
+iakerb_gss_verify_mic_iov
+iakerb_gss_wrap
+iakerb_gss_wrap_iov
+iakerb_gss_wrap_iov_length
+iakerb_gss_wrap_size_limit
+iakerb_init_creds_ctx
+iakerb_initiator_step
+iakerb_make_finished
+iakerb_make_token
+iakerb_parse_token
+iakerb_tkt_creds_ctx
+iakerb_verify_finished
+impersonator_cred->name->princ != NULL
+initial-is-framed
+initialize_ggss_error_table
+initialize_ggss_error_table_r
+initialize_k5g_error_table
+initialize_k5g_error_table_r
+integ-prot
+interposer
+iov != GSS_C_NO_IOV_BUFFER
+iov->type & GSS_IOV_BUFFER_FLAG_ALLOCATE
+ivvbbvvvvbLLvs
+k5_bcmp
+k5_buf_add
+k5_buf_add_fmt
+k5_buf_add_len
+k5_buf_free
+k5_buf_init_dynamic
+k5_buf_status
+k5_change_error_message_code
+k5_clear_error
+k5_enctype_to_ssf
+k5_json_array_add
+k5_json_array_create
+k5_json_array_fmt
+k5_json_array_get
+k5_json_array_length
+k5_json_bool_value
+k5_json_decode
+k5_json_encode
+k5_json_get_tid
+k5_json_null_create_val
+k5_json_number_create
+k5_json_number_value
+k5_json_release
+k5_json_string_create
+k5_json_string_unbase64
+k5_json_string_utf8
+k5_kt_get_principal
+k5_mutex_lock
+k5_mutex_unlock
+k5int_i->did_run != 0
+kerberos_v5
+kerberos_v5_old
+key != NULL
+keytab
+kg_accept_krb5
+kg_acceptor_princ
+kg_all_mechs
+kg_allocate_iov
+kg_arcfour_docrypt
+kg_arcfour_docrypt_iov
+kg_caller_provided_ccache_name
+kg_checksum_channel_bindings
+kg_compare_name
+kg_compose_deleg_cred
+kg_confounder_size
+kg_cred_resolve
+kg_cred_set_initial_refresh
+kg_cred_time_to_refresh
+kg_ctx_externalize
+kg_ctx_internalize
+kg_ctx_size
+kg_decrypt
+kg_decrypt_iov
+kg_duplicate_name
+kg_encrypt
+kg_encrypt_inplace
+kg_encrypt_iov
+kg_fixup_padding_iov
+kg_get_ccache_name
+kg_get_defcred
+kg_get_seq_num
+kg_init_name
+kg_integ_only_iov
+kg_iov_msglen
+kg_kdc_flag_mutex
+kg_locate_header_iov
+kg_locate_iov
+kg_make_checksum_iov_v1
+kg_make_checksum_iov_v3
+kg_make_confounder
+kg_make_seed
+kg_make_seq_num
+kg_process_extension
+kg_release_iov
+kg_release_name
+kg_seal
+kg_seal_iov
+kg_seal_iov_length
+kg_set_ccache_name
+kg_setup_keys
+kg_sync_ccache_name
+kg_translate_flag_iov
+kg_translate_iov_v1
+kg_translate_iov_v3
+kg_unseal
+kg_unseal_iov
+kg_unseal_stream_iov
+kg_unseal_v1
+kg_unseal_v1_iov
+kg_value_from_cred_store
+kg_vdb
+kg_verify_checksum_iov_v3
+krb5_aname_to_localname
+krb5_anonymous_principal
+krb5_auth_con_free
+krb5_auth_con_get_authdata_context
+krb5_auth_con_getauthenticator
+krb5_auth_con_getflags
+krb5_auth_con_getkey_k
+krb5_auth_con_getlocalseqnumber
+krb5_auth_con_getrecvsubkey_k
+krb5_auth_con_getremoteseqnumber
+krb5_auth_con_getsendsubkey
+krb5_auth_con_getsendsubkey_k
+krb5_auth_con_init
+krb5_auth_con_set_authdata_context
+krb5_auth_con_set_checksum_func
+krb5_auth_con_set_req_cksumtype
+krb5_auth_con_setaddrs
+krb5_auth_con_setflags
+krb5_auth_con_setpermetypes
+krb5_auth_con_setrcache
+krb5_auth_con_setsendsubkey_k
+krb5_auth_con_setuseruserkey
+krb5_authdata_context_copy
+krb5_authdata_context_free
+krb5_authdata_context_init
+krb5_authdata_delete_attribute
+krb5_authdata_export_attributes
+krb5_authdata_export_authdata
+krb5_authdata_export_internal
+krb5_authdata_free_internal
+krb5_authdata_get_attribute
+krb5_authdata_get_attribute_types
+krb5_authdata_import_attributes
+krb5_authdata_set_attribute
+krb5_build_principal
+krb5_build_principal_ext
+krb5_c_block_size
+krb5_c_checksum_length
+krb5_c_crypto_length
+krb5_c_make_checksum
+krb5_c_padding_length
+krb5_c_prf_length
+krb5_c_random_make_octets
+krb5_c_valid_enctype
+krb5_cc_cache_match
+krb5_cc_close
+krb5_cc_copy_creds
+krb5_cc_default
+krb5_cc_default_name
+krb5_cc_destroy
+krb5_cc_dup
+krb5_cc_end_seq_get
+krb5_cc_get_full_name
+krb5_cc_get_principal
+krb5_cc_get_type
+krb5_cc_initialize
+krb5_cc_new_unique
+krb5_cc_next_cred
+krb5_cc_resolve
+krb5_cc_retrieve_cred
+krb5_cc_select
+krb5_cc_set_config
+krb5_cc_set_default_name
+krb5_cc_set_flags
+krb5_cc_start_seq_get
+krb5_cc_store_cred
+krb5_cc_support_switch
+krb5_cccol_have_content
+krb5_clear_error_message
+krb5_copy_principal
+krb5_encrypt_size
+krb5_externalize_opaque
+krb5_free_addresses
+krb5_free_ap_rep_enc_part
+krb5_free_ap_req
+krb5_free_authdata
+krb5_free_authenticator
+krb5_free_checksum_contents
+krb5_free_context
+krb5_free_cred_contents
+krb5_free_creds
+krb5_free_data
+krb5_free_data_contents
+krb5_free_error
+krb5_free_error_message
+krb5_free_iakerb_finished
+krb5_free_iakerb_header
+krb5_free_keyblock
+krb5_free_keytab_entry_contents
+krb5_free_principal
+krb5_free_tgt_creds
+krb5_free_unparsed_name
+krb5_fwd_tgt_creds
+krb5_get_credentials
+krb5_get_credentials_for_user
+krb5_get_error_message
+krb5_get_init_creds_keytab
+krb5_get_init_creds_opt_alloc
+krb5_get_init_creds_opt_free
+krb5_get_init_creds_opt_set_out_ccache
+krb5_get_init_creds_opt_set_tkt_life
+krb5_get_init_creds_password
+krb5_get_server_rcache
+krb5_gss_accept_sec_context
+krb5_gss_accept_sec_context_ext
+krb5_gss_acquire_cred
+krb5_gss_acquire_cred_from
+krb5_gss_acquire_cred_impersonate_name
+krb5_gss_acquire_cred_with_password
+krb5_gss_canonicalize_name
+krb5_gss_compare_name
+krb5_gss_context_time
+krb5_gss_convert_static_mech_oid
+krb5_gss_dbg_client_expcreds
+krb5_gss_delete_error_info
+krb5_gss_delete_name_attribute
+krb5_gss_delete_sec_context
+krb5_gss_display_name
+krb5_gss_display_status
+krb5_gss_duplicate_name
+krb5_gss_export_cred
+krb5_gss_export_name
+krb5_gss_export_name_composite
+krb5_gss_export_sec_context
+krb5_gss_get_error_message
+krb5_gss_get_mic
+krb5_gss_get_mic_iov
+krb5_gss_get_mic_iov_length
+krb5_gss_get_name_attribute
+krb5_gss_import_cred
+krb5_gss_import_name
+krb5_gss_import_sec_context
+krb5_gss_indicate_mechs
+krb5_gss_init_context
+krb5_gss_init_sec_context
+krb5_gss_init_sec_context_ext
+krb5_gss_inquire_context
+krb5_gss_inquire_cred
+krb5_gss_inquire_cred_by_mech
+krb5_gss_inquire_name
+krb5_gss_inquire_names_for_mech
+krb5_gss_inquire_sec_context_by_oid
+krb5_gss_internal_release_oid
+krb5_gss_map_name_to_any
+krb5_gss_oid_array
+krb5_gss_process_context_token
+krb5_gss_pseudo_random
+krb5_gss_register_acceptor_identity
+krb5_gss_release_any_name_mapping
+krb5_gss_release_cred
+krb5_gss_release_name
+krb5_gss_release_oid
+krb5_gss_save_error_info
+krb5_gss_save_error_message
+krb5_gss_save_error_string
+krb5_gss_ser_init
+krb5_gss_set_name_attribute
+krb5_gss_set_sec_context_option
+krb5_gss_store_cred
+krb5_gss_store_cred_into
+krb5_gss_unwrap
+krb5_gss_unwrap_iov
+krb5_gss_use_kdc_context
+krb5_gss_validate_cred
+krb5_gss_validate_cred_1
+krb5_gss_verify_mic
+krb5_gss_verify_mic_iov
+krb5_gss_wrap
+krb5_gss_wrap_iov
+krb5_gss_wrap_iov_length
+krb5_gss_wrap_size_limit
+krb5_init_context
+krb5_init_creds_free
+krb5_init_creds_get_times
+krb5_init_creds_init
+krb5_init_creds_set_keytab
+krb5_init_creds_set_password
+krb5_init_creds_step
+krb5_internalize_opaque
+krb5_is_config_principal
+krb5_k_create_key
+krb5_k_decrypt
+krb5_k_decrypt_iov
+krb5_k_encrypt
+krb5_k_encrypt_iov
+krb5_k_free_key
+krb5_k_key_enctype
+krb5_k_key_keyblock
+krb5_k_make_checksum
+krb5_k_make_checksum_iov
+krb5_k_prf
+krb5_k_verify_checksum
+krb5_k_verify_checksum_iov
+krb5_kt_client_default
+krb5_kt_close
+krb5_kt_default
+krb5_kt_dup
+krb5_kt_end_seq_get
+krb5_kt_free_entry
+krb5_kt_get_entry
+krb5_kt_get_name
+krb5_kt_have_content
+krb5_kt_next_entry
+krb5_kt_resolve
+krb5_kt_start_seq_get
+krb5_kuserok
+krb5_merge_authdata
+krb5_mk_error
+krb5_mk_rep
+krb5_mk_rep_dce
+krb5_mk_req_extended
+krb5_parse_name
+krb5_principal_compare
+krb5_rc_close
+krb5_rc_get_name
+krb5_rc_get_type
+krb5_rc_recover_or_initialize
+krb5_rc_resolve_full
+krb5_rd_cred
+krb5_rd_error
+krb5_rd_rep
+krb5_rd_rep_dce
+krb5_rd_req_decoded
+krb5_sendto_kdc
+krb5_ser_auth_context_init
+krb5_ser_ccache_init
+krb5_ser_context_init
+krb5_ser_keytab_init
+krb5_ser_pack_bytes
+krb5_ser_pack_int32
+krb5_ser_rcache_init
+krb5_ser_unpack_bytes
+krb5_ser_unpack_int32
+krb5_set_default_tgs_enctypes
+krb5_set_error_message
+krb5_size_opaque
+krb5_sname_match
+krb5_sname_to_principal
+krb5_timeofday
+krb5_tkt_creds_free
+krb5_tkt_creds_get_times
+krb5_tkt_creds_init
+krb5_tkt_creds_step
+krb5_unparse_name
+krb5_us_timeofday
+krb5int_accessor
+krb5int_arcfour_gsscrypt
+krb5int_c_mandatory_cksumtype
+krb5int_cc_default
+krb5int_close_plugin
+krb5int_copy_data_contents_add0
+krb5int_free_data_list
+krb5int_get_plugin_func
+krb5int_getspecific
+krb5int_gss_use_kdc_context
+krb5int_init_context_kdc
+krb5int_key_delete
+krb5int_key_register
+krb5int_open_plugin
+krb5int_setspecific
+krb5int_trace
+krbtgt
+l$ E1
+l$(E1
+l$0t,
+l$xtlH
+libintl_dgettext
+local-login-user
+lstat
+make_gss_checksum
+make_seal_token_v1
+make_seal_token_v1_iov
+malloc
+md5cksum.length == ctx->cksum_size
+mech != NULL
+mech->gss_wrap_iov
+mech-deprecated
+mech-glue
+mech-negotiation-mech
+mech-not-default
+mech_type != GSS_C_NO_OID
+mecherrmap_add
+memchr
+memcmp
+memcpy
+memmove
+memset
+minor_status != 0
+mit-krb5
+mskrb
+not-mech
+not_defined_in_RFC4178@please_ignore
+offset == output_message_buffer->length
+oos-detection
+out - nbytes == oid->elements
+p[^_]A\
+p[^_]A\A]A^
+posix_memalign
+principal != NULL
+prot-ready
+proxy_impersonator
+pseudo-mech
+pthread_mutex_destroy
+pthread_mutex_init
+pthread_mutex_lock
+pthread_mutex_unlock
+pthread_once
+q == (unsigned char *)token->value + token->length
+r == 0
+rcache
+realloc
+refresh_time
+remove_error_table
+replay-detection
+req_ccache == NULL
+request->data + request->length == (char *)token->value + token->length
+routine error
+rrc != 0 || trailer != NULL
+s(9>u
+sc != NULL
+scan_ccache
+snprintf
+spnego
+spnego_gss_accept_sec_context
+spnego_gss_acquire_cred
+spnego_gss_acquire_cred_from
+spnego_gss_acquire_cred_impersonate_name
+spnego_gss_acquire_cred_with_password
+spnego_gss_compare_name
+spnego_gss_complete_auth_token
+spnego_gss_context_time
+spnego_gss_delete_name_attribute
+spnego_gss_delete_sec_context
+spnego_gss_display_name
+spnego_gss_display_name_ext
+spnego_gss_display_status
+spnego_gss_duplicate_name
+spnego_gss_export_cred
+spnego_gss_export_name_composite
+spnego_gss_export_sec_context
+spnego_gss_get_mic
+spnego_gss_get_mic_iov
+spnego_gss_get_mic_iov_length
+spnego_gss_get_name_attribute
+spnego_gss_import_cred
+spnego_gss_import_name
+spnego_gss_import_sec_context
+spnego_gss_init_sec_context
+spnego_gss_inquire_attrs_for_mech
+spnego_gss_inquire_context
+spnego_gss_inquire_cred
+spnego_gss_inquire_cred_by_oid
+spnego_gss_inquire_mech_for_saslname
+spnego_gss_inquire_name
+spnego_gss_inquire_names_for_mech
+spnego_gss_inquire_saslname_for_mech
+spnego_gss_inquire_sec_context_by_oid
+spnego_gss_map_name_to_any
+spnego_gss_process_context_token
+spnego_gss_pseudo_random
+spnego_gss_release_any_name_mapping
+spnego_gss_release_cred
+spnego_gss_release_name
+spnego_gss_set_cred_option
+spnego_gss_set_name_attribute
+spnego_gss_set_neg_mechs
+spnego_gss_set_sec_context_option
+spnego_gss_unwrap
+spnego_gss_unwrap_aead
+spnego_gss_unwrap_iov
+spnego_gss_verify_mic
+spnego_gss_verify_mic_iov
+spnego_gss_wrap
+spnego_gss_wrap_aead
+spnego_gss_wrap_iov
+spnego_gss_wrap_iov_length
+spnego_gss_wrap_size_limit
+strcmp
+strdup
+stream != NULL
+strlen
+strncpy
+subject_creds != NULL
+subject_creds->client != NULL
+subkey != NULL
+supplementary info code
+t$(H33u
+t$(H37
+t$8H33u7H
+t$8H37
+t$8fD
+t$<L9
+t$HH33
+t$HH33D
+t$HH33u
+t$HH37
+t$XE1
+t$XH32u"H
+t$XH37
+t$`;p8
+t$`E1
+t$hH32unH
+t$hH37
+t$hH37u:H
+t$xH37
+t$xH37D
+t&;3u
+t6;7H
+t_vSfA
+tokenSize > 2
+toktype == KG_TOK_WRAP_MSG
+trailer == NULL || rrc == 0
+trailer == NULL || trailer->buffer.length == 0
+tw;r8}9H
+u'D9n
+value->length == sizeof(*req)
+value->length == sizeof(out_ccache)
+value->length == sizeof(rcache)
+vasprintf
+vvviiiibivBBv
+x[^_]
+x[^_]A\A]
+x[^_]A\A]A^A_
+xgL9=
+{(~{K
+|$ E1
+|$(H3;
+|$(H3;uCH
+|$(H3;uKH
+|$(H3>
+|$(H3}
+|$(I3<$H
+|$(I3<$uhH
+|$8E1
+|$8H3;D
+|$8H3;u
+|$8H3>
+|$8H3>u
+|$8H3>u	H
+|$8H3>u1H
+|$8H3>upH
+|$8H3}
+|$8I3<$
+|$HH3;
+|$HH3;u
+|$HH3;uaH
+|$HH3>
+|$HH3>u^H
+|$HH3}
+|$HI3<$
+|$PE1
+|$PH9
+|$XH39
+|$XH3;
+|$XH3;u
+|$XH3;u	H
+|$XH3;uaH
+|$XH3>
+|$XH3>u|H
+|$hH3;u
+|$hH3;u+H
+|$hH3>
+|$hfA
+|$p#t
+|$xH3:
+|$xH3;
+~49;u

@@ -1,0 +1,174 @@
+ Microsoft Operations Puerto Rico1&0$
+ http://www.microsoft.com/windows0
+ {poc]
+!This program cannot be run in DOS mode.
+#Vx"&6
+$Microsoft Ireland Operations Limited1
+$`2X`F
+% moa
+&%VmwP
+)Microsoft Root Certificate Authority 20100
+*'q. 
+,I&>d
+,sPY7xPB7hT5g5HHrYt8rDLSM9VuZRuWZaef2e22Rs54=0Z
+.edata
+.rdata
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+1(0&0
+1/0-0
+100701213655Z
+100706204017Z
+191219011500Z
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+200304182929Z
+20201202071548Z
+20201202133042.083Z0
+20201203071548Z0w0=
+210303182929Z0t1
+210317011500Z0
+230865+4584940
+250701214655Z0|1
+250706205017Z0~1
+2H!3T9
+7Z>@B1
+>http://www.microsoft.com/pki/certs/MicCodSigPCA_2010-07-06.crt0
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+@.rsrc
+CreateProcessA
+CreateProcessAsUserW
+CreateProcessW
+CreateRemoteThread
+CreateRemoteThreadEx
+CreateThread
+DeleteProcThreadAttributeList
+Ehttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_2010-07-06.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+ExitProcess
+ExitThread
+FlushProcessWriteBuffers
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetExitCodeProcess
+GetExitCodeThread
+GetPriorityClass
+GetProcessId
+GetProcessIdOfThread
+GetProcessTimes
+GetProcessVersion
+GetStartupInfoW
+GetThreadId
+GetThreadPriority
+GetThreadPriorityBoost
+I0G1-0+
+InitializeProcThreadAttributeList
+KnILk
+Microsoft Code Signing PCA 2010
+Microsoft Code Signing PCA 20100
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1(0&
+Microsoft Corporation1)0'
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+N0L0J
+O0M0K
+OpenProcessToken
+OpenThread
+OpenThreadToken
+ProcessIdToSessionId
+QueryProcessAffinityUpdateMode
+QueueUserAPC
+Redmond1
+ResumeThread
+SetPriorityClass
+SetProcessAffinityUpdateMode
+SetProcessShutdownParameters
+SetThreadPriority
+SetThreadPriorityBoost
+SetThreadStackGuarantee
+SetThreadToken
+SuspendThread
+SwitchToThread
+TerminateProcess
+TerminateThread
+Thales TSS ESN:7880-E390-80141%0#
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+UpdateProcThreadAttribute
+Washington1
+WeU@l
+Wp/wM
+]>Ccd
+_)=SPPe"
+advapi32.dll.CreateProcessAsUserW
+advapi32.dll.OpenProcessToken
+advapi32.dll.OpenThreadToken
+advapi32.dll.SetThreadToken
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.pdb
+f@-Mv
+kernel32.CreateProcessA
+kernel32.CreateProcessW
+kernel32.CreateRemoteThread
+kernel32.CreateRemoteThreadEx
+kernel32.CreateThread
+kernel32.DeleteProcThreadAttributeList
+kernel32.ExitProcess
+kernel32.ExitThread
+kernel32.FlushProcessWriteBuffers
+kernel32.GetCurrentProcess
+kernel32.GetCurrentProcessId
+kernel32.GetCurrentThread
+kernel32.GetCurrentThreadId
+kernel32.GetExitCodeProcess
+kernel32.GetExitCodeThread
+kernel32.GetPriorityClass
+kernel32.GetProcessId
+kernel32.GetProcessIdOfThread
+kernel32.GetProcessTimes
+kernel32.GetProcessVersion
+kernel32.GetStartupInfoW
+kernel32.GetThreadId
+kernel32.GetThreadPriority
+kernel32.GetThreadPriorityBoost
+kernel32.InitializeProcThreadAttributeList
+kernel32.OpenThread
+kernel32.ProcessIdToSessionId
+kernel32.QueryProcessAffinityUpdateMode
+kernel32.QueueUserAPC
+kernel32.ResumeThread
+kernel32.SetPriorityClass
+kernel32.SetProcessAffinityUpdateMode
+kernel32.SetProcessShutdownParameters
+kernel32.SetThreadPriority
+kernel32.SetThreadPriorityBoost
+kernel32.SetThreadStackGuarantee
+kernel32.SuspendThread
+kernel32.SwitchToThread
+kernel32.TerminateProcess
+kernel32.TerminateThread
+kernel32.TlsAlloc
+kernel32.TlsFree
+kernel32.TlsGetValue
+kernel32.TlsSetValue
+kernel32.UpdateProcThreadAttribute
+m<!*R
+oK0D$"<
+oLLRyIt=
+r~akow
+x=[4n
+z.9Wv
+zlUg{
+|hK,_

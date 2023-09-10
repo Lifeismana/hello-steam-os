@@ -1,0 +1,290 @@
+ A_A^A]A\_
+ A_A^A]A\_^]
+ Base Class Array'
+ Base Class Descriptor at (
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+ H3E H3E
+ Type Descriptor'
+ delete
+ delete[]
+ new[]
+!This program cannot be run in DOS mode.
+!TkjE
+!]_0t
+!fk51o
+$Microsoft Ireland Operations Limited1&0$
+&S|9a
+(D$0f
+(t$ A
+(t$ H
+)Microsoft Root Certificate Authority 20100
+)Microsoft Root Certificate Authority 20110
+*?*kXIc
+.00cfg
+.?AVbad_exception@std@@
+.?AVexception@std@@
+.?AVtype_info@@
+.ITtS)
+.data
+.data$r
+.data$rs
+.edata
+.gehcont
+.gfids
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$r
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.text
+.text$mn
+.text$mn$00
+.text$x
+.xdata
+.xdata$x
+0A_A^A]
+1(0&0
+1/0-0
+110708205909Z
+20220610065341.64Z0
+20220610093414Z
+20220611093414Z0w0=
+210902183301Z
+210930182225Z
+211028192745Z
+220901183301Z0t1
+230126192745Z0
+230217+4673160
+260708210909Z0~1
+2r|la
+3 X^}gR=G
+3-gNW
+300930183225Z0|1
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+9)~P3
+99~CE
+9p@u+
+9t$Pu	
+<Qh{r<
+=}}Z:
+>NGdx
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+@.data
+@.reloc
+@.rsrc
+@SVWH
+@USVWATAUAVAWH
+AUAVAWH
+A_A]A\_^[
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^_
+B(I9A(
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+D$8H9D$ t
+D$HL9gXt
+D$pHc
+D8L$0uP
+D:\a\_work\1\s\\binaries\amd64ret\bin\amd64\\vcruntime140_1.amd64.pdb
+D=xz#
+DeleteCriticalSection
+E0HcH
+E0Lc`
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+EncodePointer
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+FreeLibrary
+G-Z~(5u
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetLastError
+GetProcAddress
+GetSystemTimeAsFileTime
+H;XXs
+H;xXu
+HcE_L
+HcEgH
+I9}(t9H
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+IsProcessorFeaturePresent
+J>f;O
+K0HcQ
+KERNEL32.dll
+L!d$(L!d$@D
+L$`;M
+L$h;M
+L;|$X
+LoadLibraryExW
+M H1E
+M0K0I
+Microsoft Code Signing PCA 2011
+Microsoft Code Signing PCA 20110
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1(0&
+Microsoft Corporation1-0+
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+N0L0J
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+O0M0K
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+QEX82q'
+QueryPerformanceCounter
+R0P0N
+RaiseException
+Redmond1
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlPcToFileHeader
+RtlUnwindEx
+RtlVirtualUnwind
+S0Q0O
+SVWATAUAVAWH
+SVWATAUAWH
+SetLastError
+SetUnhandledExceptionFilter
+TerminateProcess
+Thales TSS ESN:A240-4B82-130E1%0#
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+U0S0Q
+UVWATAUAVAWH
+UnhandledExceptionFilter
+Unknown exception
+VCRUNTIME140.dll
+VCRUNTIME140_1.dll
+WATAUAVAWH
+WAVAWH
+Washington1
+WqVNHE
+X0V0T
+\$ UH
+__C_specific_handler
+__CxxFrameHandler4
+__NLG_Dispatch2
+__NLG_Return2
+__based(
+__cdecl
+__clrcall
+__current_exception
+__eabi
+__fastcall
+__pascal
+__processing_throw
+__ptr64
+__restrict
+__stdcall
+__swift_1
+__swift_2
+__swift_3
+__thiscall
+__unaligned
+__vectorcall
+`.rdata
+`0^0\
+`A_A^A]A\_^]
+`RTTI
+`anonymous namespace'
+`copy constructor closure'
+`default constructor closure'
+`dynamic atexit destructor for '
+`dynamic initializer for '
+`eh vector constructor iterator'
+`eh vector copy constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`eh vector vbase copy constructor iterator'
+`local static guard'
+`local static thread guard'
+`local vftable constructor closure'
+`local vftable'
+`managed vector constructor iterator'
+`managed vector copy constructor iterator'
+`managed vector destructor iterator'
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`scalar deleting destructor'
+`string'
+`typeof'
+`udt returning'
+`vbase destructor'
+`vbtable'
+`vcall'
+`vector constructor iterator'
+`vector copy constructor iterator'
+`vector deleting destructor'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`vector vbase copy constructor iterator'
+`vftable'
+`virtual displacement map'
+abort
+api-ms-win-crt-heap-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+as.,k{n?,	x
+b)\JD
+bad exception
+calloc
+d$ D!
+d$dD;d$ltY
+e_.,>
+fV0f.	
+fg:SM
+http://www.microsoft.com0
+ineID
+malloc
+memcpy
+memmove
+ntelA
+operator
+operator "" 
+operator co_await
+operator<=>
+q\Q17
+restrict(
+strcpy_s
+t!Ic^
+t$ WATAUAVAWH
+t$ WH
+t'HcW
+t)IcV
+t4McF
+t7HcP
+t?HcS
+tEHcR
+terminate
+u2I9}(t&H
+uN]'[
+wcsncmp
+x AVH
+xSu$W
+zU.xt
+|$(A^
+|$8L;
+|2HcW

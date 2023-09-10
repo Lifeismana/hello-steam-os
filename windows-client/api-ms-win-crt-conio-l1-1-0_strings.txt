@@ -1,0 +1,127 @@
+ Microsoft Operations Puerto Rico1&0$
+ http://www.microsoft.com/windows0
+!This program cannot be run in DOS mode.
+#Vx"&6
+$Microsoft Ireland Operations Limited1
+$`2X`F
+% moa
+)Microsoft Root Certificate Authority 20100
+,sPY7xPB7hT5g5HHrYt8rDLSM9VuZRuWZaef2e22Rs54=0Z
+.edata
+.rdata
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+1(0&0
+1/0-0
+100701213655Z
+100706204017Z
+191219011505Z
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+200304182929Z
+20201202085824Z
+20201202133042.958Z0
+20201203085824Z0w0=
+210303182929Z0t1
+210317011505Z0
+230865+4584940
+250701214655Z0|1
+250706205017Z0~1
+7Z>@B1
+8I	(\D
+>http://www.microsoft.com/pki/certs/MicCodSigPCA_2010-07-06.crt0
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+@.rsrc
+Ehttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_2010-07-06.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+I0G1-0+
+KnILk
+Microsoft Code Signing PCA 2010
+Microsoft Code Signing PCA 20100
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1(0&
+Microsoft Corporation1)0'
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+N0L0J
+O0M0K
+QS_z,R#1
+Redmond1
+Thales TSS ESN:32BD-E3D5-3B1D1%0#
+Washington1
+__conio_common_vcprintf
+__conio_common_vcprintf_p
+__conio_common_vcprintf_s
+__conio_common_vcscanf
+__conio_common_vcwprintf
+__conio_common_vcwprintf_p
+__conio_common_vcwprintf_s
+__conio_common_vcwscanf
+_cgets
+_cgets_s
+_cgetws
+_cgetws_s
+_cputs
+_cputws
+_getch
+_getch_nolock
+_getche
+_getche_nolock
+_getwch
+_getwch_nolock
+_getwche
+_getwche_nolock
+_putch
+_putch_nolock
+_putwch
+_putwch_nolock
+_ungetch
+_ungetch_nolock
+_ungetwch
+_ungetwch_nolock
+api-ms-win-crt-conio-l1-1-0.dll
+api-ms-win-crt-conio-l1-1-0.pdb
+kwG9AW
+oK0D$"<
+r~akow
+ucrtbase.__conio_common_vcprintf
+ucrtbase.__conio_common_vcprintf_p
+ucrtbase.__conio_common_vcprintf_s
+ucrtbase.__conio_common_vcscanf
+ucrtbase.__conio_common_vcwprintf
+ucrtbase.__conio_common_vcwprintf_p
+ucrtbase.__conio_common_vcwprintf_s
+ucrtbase.__conio_common_vcwscanf
+ucrtbase._cgets
+ucrtbase._cgets_s
+ucrtbase._cgetws
+ucrtbase._cgetws_s
+ucrtbase._cputs
+ucrtbase._cputws
+ucrtbase._getch
+ucrtbase._getch_nolock
+ucrtbase._getche
+ucrtbase._getche_nolock
+ucrtbase._getwch
+ucrtbase._getwch_nolock
+ucrtbase._getwche
+ucrtbase._getwche_nolock
+ucrtbase._putch
+ucrtbase._putch_nolock
+ucrtbase._putwch
+ucrtbase._putwch_nolock
+ucrtbase._ungetch
+ucrtbase._ungetch_nolock
+ucrtbase._ungetwch
+ucrtbase._ungetwch_nolock
+x=[4n
+z.9Wv
+|hK,_
+~bj'e

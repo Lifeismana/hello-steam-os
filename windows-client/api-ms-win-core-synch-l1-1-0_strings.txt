@@ -1,0 +1,153 @@
+ Microsoft Operations Puerto Rico1&0$
+ http://www.microsoft.com/windows0
+!This program cannot be run in DOS mode.
+#Vx"&6
+$Microsoft Ireland Operations Limited1
+$`2X`F
+% moa
+&&1J+d
+)Microsoft Root Certificate Authority 20100
+,sPY7xPB7hT5g5HHrYt8rDLSM9VuZRuWZaef2e22Rs54=0Z
+.edata
+.rdata
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+1(0&0
+1/0-0
+100701213655Z
+100706204017Z
+191219011458Z
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+200304182929Z
+20201202065900Z
+20201202133042.091Z0
+20201203065900Z0w0=
+210303182929Z0t1
+210317011458Z0
+230865+4584940
+250701214655Z0|1
+250706205017Z0~1
+75w46
+7Z>@B1
+>http://www.microsoft.com/pki/certs/MicCodSigPCA_2010-07-06.crt0
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+@.rsrc
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+CancelWaitableTimer
+CreateEventA
+CreateEventExA
+CreateEventExW
+CreateEventW
+CreateMutexA
+CreateMutexExA
+CreateMutexExW
+CreateMutexW
+CreateSemaphoreExW
+CreateWaitableTimerExW
+DeleteCriticalSection
+Ehttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_2010-07-06.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+EnterCriticalSection
+I0G1-0+
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeSRWLock
+KnILk
+LeaveCriticalSection
+Microsoft Code Signing PCA 2010
+Microsoft Code Signing PCA 20100
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1(0&
+Microsoft Corporation1)0'
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+N0L0J
+O0M0K
+OpenEventA
+OpenEventW
+OpenMutexW
+OpenSemaphoreW
+OpenWaitableTimerW
+Redmond1
+ReleaseMutex
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+ReleaseSemaphore
+ResetEvent
+SetCriticalSectionSpinCount
+SetEvent
+SetWaitableTimer
+SetWaitableTimerEx
+SleepEx
+Thales TSS ESN:F7A6-E251-150A1%0#
+TryAcquireSRWLockExclusive
+TryAcquireSRWLockShared
+TryEnterCriticalSection
+WaitForMultipleObjectsEx
+WaitForSingleObject
+WaitForSingleObjectEx
+Washington1
+Y<a "
+YiaKd
+]j:pV'
+]oB"y
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.pdb
+cd\	c
+hMYZV
+kernel32.AcquireSRWLockExclusive
+kernel32.AcquireSRWLockShared
+kernel32.CancelWaitableTimer
+kernel32.CreateEventA
+kernel32.CreateEventExA
+kernel32.CreateEventExW
+kernel32.CreateEventW
+kernel32.CreateMutexA
+kernel32.CreateMutexExA
+kernel32.CreateMutexExW
+kernel32.CreateMutexW
+kernel32.CreateSemaphoreExW
+kernel32.CreateWaitableTimerExW
+kernel32.DeleteCriticalSection
+kernel32.EnterCriticalSection
+kernel32.InitializeCriticalSection
+kernel32.InitializeCriticalSectionAndSpinCount
+kernel32.InitializeCriticalSectionEx
+kernel32.InitializeSRWLock
+kernel32.LeaveCriticalSection
+kernel32.OpenEventA
+kernel32.OpenEventW
+kernel32.OpenMutexW
+kernel32.OpenSemaphoreW
+kernel32.OpenWaitableTimerW
+kernel32.ReleaseMutex
+kernel32.ReleaseSRWLockExclusive
+kernel32.ReleaseSRWLockShared
+kernel32.ReleaseSemaphore
+kernel32.ResetEvent
+kernel32.SetCriticalSectionSpinCount
+kernel32.SetEvent
+kernel32.SetWaitableTimer
+kernel32.SetWaitableTimerEx
+kernel32.SleepEx
+kernel32.TryAcquireSRWLockExclusive
+kernel32.TryAcquireSRWLockShared
+kernel32.TryEnterCriticalSection
+kernel32.WaitForMultipleObjectsEx
+kernel32.WaitForSingleObject
+kernel32.WaitForSingleObjectEx
+oK0D$"<
+r~akow
+x=[4n
+z.9Wv
+|hK,_
