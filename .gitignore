@@ -1,6 +1,6 @@
 windows-client/lib/
 node_modules/
 package-lock.json
-.exe
-.dll
-.pyz
+*.exe
+*.dll
+*.pyz
