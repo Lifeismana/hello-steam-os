@@ -1,4 +1,17 @@
-2023-045-09 Timothee Besset <ttimo@valvesoftware.com>
+2023-07-06 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v.0.20230706.0
+	* Tool was downloading truncated RGP traces, fixed (Samuel Pitoiset).
+	* Fix support for latest SteamOS.
+
+2023-06-13 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v.0.20230613.0
+	* Improve permission management of the devkit ssh key.
+	* Windows: migrate to Python 3.11.
+	* Screenshot button more resilient to empty input.
+
+2023-04-09 Timothee Besset <ttimo@valvesoftware.com>
 
 	* Releave v0.20230509.0
 	* Linux: add support for Python 3.11
