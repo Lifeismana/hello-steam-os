@@ -78,6 +78,7 @@ IsDebuggerPresent
 IsProcessorFeaturePresent
 KERNEL32.dll
 L$ SUVWH
+LoadLibraryExW
 M H1E
 MessageBoxA
 MessageBoxW
@@ -122,6 +123,7 @@ USER32.dll
 Unable to calculate directory of executable!
 Unable to change DLL search path!
 Unable to get executable name!
+Unable to load python3.dll!
 UnhandledExceptionFilter
 VAVAWH
 VCRUNTIME140.dll
