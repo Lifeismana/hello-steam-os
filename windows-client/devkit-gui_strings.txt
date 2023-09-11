@@ -5,6 +5,7 @@
     <security>
   </trustInfo>
   <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+ H3E H3E
 !This program cannot be run in DOS mode.
 .00cfg
 .CRT$XCA
@@ -78,6 +79,7 @@ IsProcessorFeaturePresent
 KERNEL32.dll
 L$ SUVWH
 LoadLibraryExW
+M H1E
 MessageBoxA
 MessageBoxW
 Original Exception: %s
@@ -111,7 +113,7 @@ Py_NoSiteFlag
 Py_SetPath
 Py_SetProgramName
 QueryPerformanceCounter
-Richv
+RichF!
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlVirtualUnwind
@@ -126,6 +128,7 @@ Unable to load python3.dll!
 UnhandledExceptionFilter
 VAVAWH
 VCRUNTIME140.dll
+\$ UH
 _Py_Dealloc
 _Py_NoneStruct
 __C_specific_handler
