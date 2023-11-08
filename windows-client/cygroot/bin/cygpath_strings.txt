@@ -68,7 +68,6 @@
 .gnu_debuglink
 .idata
 .rdata
-.reloc
 .rsrc
 .text
 </assembly>
@@ -77,6 +76,7 @@
 @.bss
 @.buildid5
 @.pdata
+@.reloc
 @.xdata
 @[^_]A\A]A^
 ALROH
@@ -86,25 +86,19 @@ AVAUATUWVS
 AVAUATUWVSH
 AVAUATVS
 AWAVAUATVS
-A\A]H
 CloseHandle
 Convert Unix and Windows format paths, or output system path information
 Copyright (C) 1998 - %s Cygwin Authors
-GCC: (GNU) 11.2.0 20210728 (Fedora Cygwin 11.2.0-2)
+GCC: (GNU) 11.4.0
 GetACP
-GetCurrentProcess
 GetLongPathNameW
 GetModuleHandleA
-GetModuleHandleW
 GetOEMCP
-GetProcAddress
 GetProfilesDirectoryW
 GetShortPathNameW
 GetSystemDirectoryW
 GetSystemWindowsDirectoryW
-IsWow64Process
 KERNEL32.dll
-LoadLibraryExW
 NtClose
 NtOpenDirectoryObject
 NtOpenFile
@@ -126,8 +120,7 @@ RtlUnicodeStringToAnsiString
 SHELL32.dll
 SHGetPathFromIDListW
 SHGetSpecialFolderLocation
-Sep  5 2022
-SetDllDirectoryW
+Sep  6 2023
 System information:
 This is free software; see the source for copying conditions.  There is NO
 Try `%s --help' for more information.
@@ -216,7 +209,6 @@ u fD9u
 version
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 wcpcpy
-wcscmp
 wcscpy
 wcslen
 wcsncasecmp

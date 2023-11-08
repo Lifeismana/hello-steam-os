@@ -139,7 +139,7 @@
             data visible to .read() and .write()) while Reader and Writer
             decoded data.
             def my_abstract_classmethod(cls, ...):
-            def my_abstract_method(self, ...):
+            def my_abstract_method(self, arg1, arg2, argN):
             def my_abstract_property(self):
             def my_abstract_staticmethod(...):
             definition of the encoding and the given size, e.g.  if
@@ -242,7 +242,7 @@
          can be supplied multiple times to increase verbosity
          control how Python invalidates hash-based .pyc files
          debug builds); also PYTHONDEBUG=x
-         def f(arg1, arg2, ...):
+         def f(arg1, arg2, argN):
          if stdin does not appear to be a terminal; also PYTHONINSPECT=x
          this option has no effect on stdin; also PYTHONUNBUFFERED=x
          when given twice, print more information about the build
@@ -372,11 +372,6 @@
         causing an exception when encountered by the charmap codec
         class C(ABC):
         class C(metaclass=ABCMeta):
-        co_cellvars=None, co_filename=None, co_name=None,
-        co_flags=-1, co_firstlineno=-1, co_code=None, co_consts=None,
-        co_kwonlyargcount=-1, co_nlocals=-1, co_stacksize=-1,
-        co_names=None, co_varnames=None, co_freevars=None,
-        co_qualname=None, co_linetable=None, co_exceptiontable=None)
         codecs. Output is also codec dependent and will usually be
         codecs.lookup() function to implement their task.
         contain the module, but has no source for it.
@@ -556,7 +551,7 @@
       DEBUG_STATS - Print statistics during collection.
       DEBUG_UNCOLLECTABLE - Print unreachable but uncollectable objects
       buffer_callback=None)
-      def f(cls, arg1, arg2, ...):
+      def f(cls, arg1, arg2, argN):
       dir_fd=None, follow_symlinks=True)
       errors='strict', buffers=())
      0  Start of stream (the default).  pos should be >= 0;
@@ -670,6 +665,9 @@
     *source_size* is None or the size of the source file in bytes.
     +25 to +31: Include a gzip container.
     +9 to +15: The base-two logarithm of the window size.  Include a zlib
+    - SEEK_CUR: seek from the current file position.
+    - SEEK_END: seek from the end of the file.
+    - SEEK_SET: seek from the start of the file.
     -1 (the default value) means no limit.
     -1 (the default value) means remove the last item.
     -1 (the default value) means replace all occurrences.
@@ -725,6 +723,7 @@
     An integer that specifies the type of the data, one of:
     An integer that specifies the type of the data.  Currently this must
     An object that holds the value data, and whose type depends
+    An open file descriptor, as returned by os.open().
     An optional single character or byte to separate hex bytes.
     As sys is needed for sys.modules access and _imp is needed to load built-in
     Be prepared to handle a FileExistsError if concurrent writing of the
@@ -837,6 +836,7 @@
     Path to be modified.  May always be specified as a str, bytes, or a path-like object.
     Path to be tested; can be string, bytes, or a path-like object.
     Paths cannot contain both a drive letter and a UNC path.
+    Position, interpreted relative to 'whence'.
     PyImport_ExecCodeModuleWithFilenames() in the C API.
     REG_BINARY -- Binary data in any form.
     REG_DWORD -- A 32-bit number.
@@ -911,9 +911,12 @@
     The predefined compression dictionary - a sequence of bytes
     The predefined compression dictionary.  This must be the same
     The predefined key to connect to.
+    The relative position to seek from.
+    The relative position to seek from. Valid values are:
     The repr of each object contains a hint at how it works.
     The same applies to excess data after padding (= / ==).
     The separator used to split the string.
+    The stream position, relative to 'whence'.
     The value to remove.
     The window buffer size and container format.
     These are objects which make the interpreter exit when called.
@@ -963,6 +966,7 @@
     Without arguments print some useful information
     XXX Should add all their methods.
     Z_DEFAULT_STRATEGY, Z_FILTERED, and Z_HUFFMAN_ONLY.
+    Zero or an opaque number returned by tell().
     [or]
     __getitem__, __setitem__, __delitem__, __len__, and insert().
     __getitem__, and __len__.
@@ -1035,7 +1039,7 @@
     can handle UnicodeDecodeErrors.
     can still be compressed.
     changes the current directory, and assumes that the client doesn't
-    character (including \\n \\r \\t \\f and spaces) and will discard
+    character (including \n \r \t \f and spaces) and will discard
     checks which are too expensive to be enabled by default. Effect of the
     chmod will modify the symbolic link itself instead of the file
     class after this function is called.
@@ -1365,6 +1369,7 @@
   "block size" and falling back on `io.DEFAULT_BUFFER_SIZE`.
   # bar package configuration
   # foo package configuration
+  'cookie' must be a number returned by tell().
   ((year, week, weekday)
   (bsize, frsize, blocks, bfree, bavail, files, ffree, favail, flag, namemax),
   (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime)
@@ -1402,6 +1407,7 @@
   <dependency>
   <no Python frame>
   <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+  <tstate is freed>
   =: native order, std. size & alignment
   >: big-endian, std. size & alignment
   ?: _Bool (requires C99; if not available, char is used instead)
@@ -1452,6 +1458,7 @@
   command_line
   computer_name
   contents
+  cookie
   count
   data
   data_type
@@ -1519,10 +1526,12 @@
   newline is '' or '\n', no translation takes place. If newline is any
   obvious, but is more suitable since Python uses 0-based indexing.
   of the other legal values, any '\n' characters written are translated
+  offset
   on your platform.  If they are unavailable, using them will raise a
   path
   pipe_attrs
   platform.  If they are unavailable, using them will raise a
+  position
   proc_attrs
   program name = 
   q:long long; Q:unsigned long long
@@ -1569,6 +1578,7 @@
   version
   wbits
   weekday (0-6, Monday is 0)
+  whence
   x: pad byte (no data); c:char; b:signed byte; B:unsigned byte;
   year (including century, e.g. 1998)
   zdict
@@ -1599,7 +1609,6 @@
  ;o |
  A0B0C0D0E0F0G0H0I0J0K0L0M0N0O0P0Q0R0S0T0U0V0W0X0Y0Z0[0\0]0^0_0`0a0b0c0d0e0f0g0h0i0j0k0l0m0n0o0p0q0r0s0t0u0v0w0x0y0z0{0|0}0~0
  API '%c'
- A]_^][
  A^A\_
  A^A\_^]
  A^A]A\
@@ -1721,6 +1730,7 @@
  t@$@
  tB$@
  tD$@
+ tI$@
  tK$@
  tR$@L
  tV$@
@@ -2017,7 +2027,6 @@ $:uQ102k4k
 $;(1m
 $=mPD
 $?+[R
-$@rename
 $AX=t
 $A_A^A\
 $C%CT
@@ -2344,6 +2353,7 @@ $|JMTW#^
 &g=G'
 &m#mo
 &n7M?1]
+&oPiv
 &p,3o?
 &r'rUQn6(r)r_5*r+rK
 &s`]&a
@@ -2546,7 +2556,6 @@ $|JMTW#^
 (A^_][
 (A_A\_^][
 (A_A^A]A\_^][
-(A__][
 (A__^[
 (BQ5qM
 (C)Cf
@@ -2736,19 +2745,18 @@ $|JMTW#^
 )t$ I
 )t$ L
 )t$0D
+)t$0E3
 )t$0H
 )t$0L
 )t$@H
 )t$PH
 )uM=8Ca?aK*uT
 )|$ H
+)|$ I;
 )|$0D
 )|$0H
 )|$@3
 * "Interactive" text files (files for which isatty() returns True)
-* 0 -- start of stream (the default); offset should be zero or positive
-* 1 -- current stream position; offset may be negative
-* 2 -- end of stream; offset is usually negative
 * Binary files are buffered in fixed-size chunks; the size of the buffer
 * If WIFEXITED(status) is true, return WEXITSTATUS(status).
 * If WIFSIGNALED(status) is true, return -WTERMSIG(status).
@@ -2763,6 +2771,9 @@ $|JMTW#^
 * exc_type: Exception type.
 * exc_value: Exception value, can be None.
 * object: Object causing the exception, can be None.
+* os.SEEK_CUR or 1 -- current stream position; offset may be negative
+* os.SEEK_END or 2 -- end of stream; offset is usually negative
+* os.SEEK_SET or 0 -- start of stream (the default); offset should be zero or positive
 * wants int
 ** or pow()
 *** IMPORTANT NOTICE ***
@@ -2824,6 +2835,7 @@ $|JMTW#^
 +;RYr
 +?>>[
 +@WcXcYc`
++A#F 
 +B,BK
 +D$DL
 +D.[|4t
@@ -2833,6 +2845,7 @@ $|JMTW#^
 +R+4r
 +RO@S
 +T3J&M
++Vln"
 +Xt@(
 +Z,Z'E.Z+
 +[q=bAm
@@ -2896,6 +2909,10 @@ $|JMTW#^
 - defaultdict:  dict subclass with a default value factory
 - deque:        ordered collection accessible from endpoints only
 - platform documentation should be referred to for more information
+- seek(0, SEEK_CUR): Leave the current stream position unchanged.
+- seek(0, SEEK_END): Fast-forward to the end of the stream.
+- seek(0, SEEK_SET): Rewind to the start of the stream.
+- seek(cookie, SEEK_SET): Restore a previous position;
 - zipimporter: a class; its constructor takes a path to a Zip archive.
 -----   ----   ---------   -------------  ------------
 --------- ---------------------------------------------------------------
@@ -2934,7 +2951,7 @@ $|JMTW#^
 -O     : remove assert and __debug__-dependent statements; add .opt-1 before
 -O or -OO
 -OO    : do -O changes and also discard docstrings; add .opt-2 before
--P     : don't prepend a potentially unsafe path to sys.path
+-P     : don't prepend a potentially unsafe path to sys.path; also PYTHONSAFEPATH
 -S     : don't imply 'import site' on initialization
 -S,S@
 -SahlN
@@ -3000,7 +3017,6 @@ $|JMTW#^
 .00cfg
 .28h!
 .3/30313
-.5[M#
 .7.Rx
 .;C:\bin
 .<locals>
@@ -3079,7 +3095,7 @@ $|JMTW#^
 .rtc$TAA
 .rtc$TZZ
 .s4G4
-.tJL+
+.tFL+
 .text
 .text$lp00python311
 .text$mn
@@ -3097,7 +3113,6 @@ $|JMTW#^
 /20212
 /30f0
 /4h7fpep#FapbpC4T
-/5xM#
 /6zV,EY=>[?[
 /8-8K
 /9091929N
@@ -3113,7 +3128,6 @@ $|JMTW#^
 /OeRZS
 /UQO*Q
 /V1V_4
-/WF$.
 /[0[ZL
 /\,\w
 /`RJGH
@@ -3131,7 +3145,6 @@ $|JMTW#^
 /qn20qT
 /site-packages
 /s~r-s_
-/tif;
 /usr/local and there is a directory /usr/local/lib/python2.5/site-packages
 0 <= keys->dk_nentries && keys->dk_nentries <= usable
 0 <= keys->dk_usable && keys->dk_usable <= usable
@@ -3168,13 +3181,11 @@ $|JMTW#^
 0A_A^A]A\_^[
 0A_A^A]A\_^]
 0A_A^A]_^
-0A_A^[
 0A_A^]
 0A_A^_
 0A_A^_^]
 0A__^
 0A__^[]
-0A__^][
 0B1BR
 0E1EP
 0E;0u
@@ -3225,6 +3236,7 @@ $|JMTW#^
 12345679:;<=>?@A
 124789ABCEFGHIJKLMN
 130801120000Z
+14:57:12
 1525q
 19F2pTMO\0KUu;JV770L6Fa1:9|Va9!7z<Zj[jyLs9\j{43CQ7X:]jtT^jV<_;_j^A8B_TJW`jajdjbjcj^I38D6ejjJMIM4P
 1;wH{P%
@@ -3261,7 +3273,7 @@ $|JMTW#^
 2()(>(
 2+u*(+y*
 2, so that the pickle data stream is readable with Python 2.
-20230405000245Z
+20231002151211Z
 2047.984375
 2048 bytes) should be stored as files with the filenames stored in
 210429000000Z
@@ -3270,10 +3282,9 @@ $|JMTW#^
 220117000000Z
 220323000000Z
 220801000000Z
-220921000000Z
-230405000245Z0+
+230714000000Z
+231002151211Z0+
 2333D
-23:49:59
 23c1,>H2X
 250115235959Z0|1
 2:3:4:
@@ -3311,13 +3322,13 @@ $|JMTW#^
 3"4"5"
 3&3#3+3J3;3
 3+"."5"4"@&B&A&	&
-3.11.3
+3.11.6
 304050;0<0
 311109235959Z0b1
 31Rk%Lc
-331121235959Z0F1
 3333333
 3333H+
+341013235959Z0H1
 34?J/GtVuV
 35Vq<
 360428235959Z0i1
@@ -3357,6 +3368,7 @@ $|JMTW#^
 3|jjkjzP
 4!5!6!7!8!9!:!;!<!=!
 4!5!6!7!8!9!:!;!>!?!
+4$u	I
 4(N/N0N
 41jU:8O
 424O[
@@ -3549,6 +3561,7 @@ $|JMTW#^
 8]tXH
 8^'||w1w;N!t
 8_^][
+8b6ee5b
 8d9diL
 8eoLISW<jIh
 8g9g[W@U:gLB:W;g<g=gj<eCB@>g?g)<
@@ -3562,7 +3575,7 @@ $|JMTW#^
 9!:!;!R!S!T!U!V!W!X!Y!Z![!)"."L!M!
 9)t<I
 9+tOH
-9-e%N
+9-AIA
 9/t	H
 90:0;0X
 90H8?
@@ -3570,10 +3583,8 @@ $|JMTW#^
 91+cQ2,5_9h6
 93t#H
 93u)H
-93u+H
-93u-H
 94,@"Bb[d[
-95YD)
+95aM)
 96xtM
 97u#;k
 97u);k
@@ -3594,7 +3605,6 @@ $|JMTW#^
 9>u6H
 9>u=H
 9>uBA
-9>uHH
 9>uJ3
 9>uJA
 9>uJD
@@ -3652,11 +3662,10 @@ $|JMTW#^
 9j\uqH
 9k`ul
 9l$0t
-9l$pt
 9l8lCB7l
 9mH?;mN
 9o ~E3
-9o@~QH
+9o@~GL
 9p:p<pCpGpKp
 9p@pBp
 9p~dId
@@ -3666,10 +3675,10 @@ $|JMTW#^
 9y$uf
 9yXubI
 9y\t6
-9y`uw
+9y`ux
 9z]zmzU
 9{@~8L
-9{`u*
+9{`u&
 9{`u1
 9{`u6
 9{`u9
@@ -3706,7 +3715,6 @@ $|JMTW#^
 :getstate
 :j;je
 :oVua
-:p&z'
 :r+J8r]
 :r}iJP
 :u9B~
@@ -3778,7 +3786,6 @@ $|JMTW#^
 <%s object; span=(%zd, %zd), match=%.50R>
 <%s.%s object for encoding %s at %#x>
 <)~-<{t7<}tF<:t
-<*J=)
 <-ta<+t
 <-u^L
 </assembly>
@@ -3831,6 +3838,7 @@ $|JMTW#^
 <^w>D
 <^waD
 <_=_>_;E?_B_1TC_
+<__map_
 <__notes__ repr() failed>
 <__phello__
 <__phello__.ham
@@ -3942,7 +3950,7 @@ $|JMTW#^
 <string>
 <super: <class '%s'>, <%s object>>
 <super: <class '%s'>, NULL>
-<symtable entry %U(%ld), line %d>
+<symtable entry %U(%R), line %d>
 <u$rNXOX
 <unknown module name>
 <unknown>
@@ -3953,8 +3961,8 @@ $|JMTW#^
 <weakref at %p; dead>
 <weakref at %p; to '%s' at %p (%U)>
 <weakref at %p; to '%s' at %p>
+<xt2H
 <xt3H
-<xt4H
 <y=yAy
 <zipimporter object "
 <|w,A
@@ -4068,7 +4076,7 @@ $|JMTW#^
 ?#h&i&j&k&
 ?+n*&+.+
 ?.tOH
-?0t/A
+?0tdA
 ?1@1A1
 ?3333
 ?333333
@@ -4082,7 +4090,6 @@ $|JMTW#^
 ?E@EAEv
 ?F?R==6
 ?FI4B
-?O|OO:
 ?Q@\e
 ?Q]C3<p
 ?S?Bumuru
@@ -4138,22 +4145,24 @@ $|JMTW#^
 @;Klh
 @<A<R
 @@A@B@C@D@E@F@G@
-@A]_^][
-@A^A]A\_]
+@A^A\_
+@A^][
 @A^_]
 @A^_^
 @A^_^[]
 @A^_^][
-@A_A]A\_^][
+@A_A]A\_]
 @A_A^A\
 @A_A^A\_^
 @A_A^A]A\^
 @A_A^A]A\_][
 @A_A^A]A\_^]
+@A_A^A]^]
 @A_A^A]_^][
 @A_A^]
 @A_A^_
 @A_A^_^]
+@A__^
 @B9_pB
 @BABR
 @CACj
@@ -4167,28 +4176,24 @@ $|JMTW#^
 @L<Jw&A3
 @NTcOQuq
 @PyRuntim
-@RSDS
-@SAVAWH
+@RSDS|8
 @SAVH
 @SAWH
 @SUATAVAWH
 @SUVATAUAWH
-@SUVATAVH
 @SUVWATAUAVAWH
 @SUVWATAUAVH
 @SUVWATAVAWH
 @SUVWATAVH
 @SUVWATAWH
 @SUVWAUAVAWH
-@SUVWAUH
 @SUVWAVAWH
 @SUVWAVH
-@SUVWAWH
 @SUVWH
 @SUWATAUAVAWH
 @SUWAVH
-@SUWAWH
 @SUWH
+@SVAVAWH
 @SVWATAUAVAWH
 @SVWATAUAVH
 @SVWATAUH
@@ -4215,9 +4220,10 @@ $|JMTW#^
 @UWATAWH
 @UWAUAVAWH
 @Upczm
-@VAVH
 @VAWH
-@VWAVH
+@VWAWH
+@WAVH
+@WhA6o
 @X|;R
 @Z4xrk
 @c@ypi
@@ -4228,7 +4234,6 @@ $|JMTW#^
 @sAsW
 @tgI;
 @vAvQDc
-@|)b,
 A +B 
 A H+A
 A H9A
@@ -4336,7 +4341,8 @@ A8H9h
 A8Hcx
 A8v]u
 A8v_u
-A94$~UL
+A94$~PL
+A96u-H
 A96u4
 A96v.f
 A9N8~
@@ -4347,7 +4353,6 @@ A9wX}"E9
 A9z ~
 A9~\t}
 A;,$|
-A;ML|
 A;OL|
 A;OL}
 A>]H]V]
@@ -4407,12 +4412,11 @@ AWAIT
 AWBWy
 A]|m|
 A^A\]
-A^A\^][
 A^A\_
 A^A\_^]
-A^A\_^][
 A^A]A\^[
 A^A]A\^]
+A^A]A\^][
 A^A]A\_]
 A^A]]
 A^A]_
@@ -4437,12 +4441,13 @@ A_A^A]A\_^[
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
+A_A^A]]
 A_A^A]_]
-A_A^A]_][
 A_A^A]_^
 A_A^[]
 A_A^]
 A_A^_
+A_A^_][
 A_A^_^[
 A_A^_^[]
 A_A^_^]
@@ -4522,7 +4527,7 @@ AnnAssign
 AnnAssign with simple non-Name target
 AnnAssign(expr target, expr annotation, expr? value, int simple)
 Another IOBase subclass, TextIOBase, deals with the encoding and decoding
-ApD9{
+Any other argument combinations are invalid,
 Append a single item to the end of the bytearray.
 Append all the items from the iterator or sequence to the end of the bytearray.
 Append items to array from list.
@@ -4532,7 +4537,6 @@ Append new value v to the end of the array.
 Append object to the end of the list.
 Appends items from the string, interpreting it as an array of machine values, as if it had been read from a file using the fromfile() method.
 Apply a function of two arguments cumulatively to the items of a sequence
-Apr  4 2023
 Argument expected for the %ls options
 Argument expected for the -%c option
 Argument names are not part of the specification, and only the arguments
@@ -4613,12 +4617,10 @@ Awaitable.__await__
 Awaitable.__subclasshook__
 B  tQ
 B @tEH
-B A#@ 
 B H9A 
 B H9A uRH
 B H9B
 B HcC I
-B L9z(
 B&@& "
 B'C'D'E'F'G'H'I'J'K'L'M'N'O'P'
 B(H9A(uHH
@@ -4814,7 +4816,7 @@ BufferedWriter(raw, buffer_size=DEFAULT_BUFFER_SIZE)
 Build an immutable unordered collection of unique elements.
 Build an unordered collection of unique elements.
 Build number
-Built-in functions, exceptions, and other objects.
+Built-in functions, types, exceptions, and other objects.
 Built-in immutable sequence.
 Built-in mutable sequence.
 BuiltinImporter
@@ -4847,6 +4849,7 @@ C @t9H
 C @tFL
 C @tNH
 C @ti
+C A#D$ 
 C H+C
 C H9C
 C H;7
@@ -4885,14 +4888,12 @@ C5GEca
 C89G8u~
 C8<,u
 C8HcE
-C8L9{0
 C8M90u$L
 C;@4C
 C=soL6+0C
 C>fA;
 C?D?E?
 C@D9s(
-C@H9{
 C@I98
 CDD9EL~
 CDDDDDD
@@ -5041,7 +5042,7 @@ Change or add an environment variable.
 Change stream position.
 Change the access permissions of a file.
 Change the current working directory to the specified path.
-Change the stream position to the given byte offset. The offset is
+Change the stream position to the given byte offset.
 Changes code.co_filename to specify the passed-in file path.
 Changes the default filesystem encoding to mbcs:replace.
 ChannelClosedError
@@ -5348,7 +5349,6 @@ D#C|H
 D#K|A
 D#K|H
 D#O|D
-D$ #C 
 D$ @f
 D$ A3
 D$ A9^ 
@@ -5408,19 +5408,20 @@ D$0E3
 D$0FH
 D$0H+
 D$0H9
+D$0H9A
 D$0H;
-D$0H;D$@|
+D$0H;D$P|
 D$0Hc
 D$0I#
 D$0I+
 D$0I3
 D$0IcD$@H
 D$0L+
-D$0L;m
 D$0M3
 D$0M9G
 D$0M9W
 D$0M;
+D$0M;u
 D$0fD
 D$0tdH
 D$0u7
@@ -5433,7 +5434,7 @@ D$8A3
 D$8D+
 D$8E3
 D$8GH
-D$8H#
+D$8H;
 D$8I3
 D$8I;
 D$8L9h
@@ -5446,7 +5447,6 @@ D$@(d
 D$@(l
 D$@,B
 D$@.H
-D$@93
 D$@9>
 D$@A3
 D$@D3
@@ -5455,29 +5455,34 @@ D$@H!|$@
 D$@H9H
 D$@H;
 D$@H;C
+D$@I#
 D$@I+
 D$@I3
 D$@I9
 D$@I;
 D$@L3
+D$@L;
 D$@L;t$H
 D$@M3
 D$@QH
 D$DA3
+D$H+S
 D$HA3
 D$HD3
 D$HE3
 D$HH+
 D$HH9
 D$HH9D$@
-D$HH;
+D$HI#
 D$HI3
 D$HL#
+D$HL+
 D$HL9p`
 D$HL;
 D$P,B
 D$PD9k`
 D$PE3
+D$PH+
 D$PH3
 D$PH9X`
 D$PH;
@@ -5487,8 +5492,8 @@ D$PI+
 D$PI3
 D$PIc
 D$PL3
-D$PL9q`
 D$PL;
+D$PL;D$X
 D$PL;l$h
 D$PL;u
 D$PNH
@@ -5496,11 +5501,10 @@ D$PPH
 D$PfD
 D$TD+L$PH
 D$TI;
-D$TL9q`
 D$XD9k`
 D$XE2
 D$XE3
-D$XH3
+D$XH#
 D$XI3
 D$XLc
 D$\A#
@@ -5521,8 +5525,6 @@ D$hH+
 D$hH3
 D$hI+
 D$hI3
-D$hI;
-D$hL+
 D$haH
 D$p(L9b
 D$p9>
@@ -5534,19 +5536,16 @@ D$pE3
 D$pH3
 D$pH;
 D$pH;F
-D$pH;h u"I9>u
-D$pH;h uzK9t
+D$pH;h u3I9>u.E
 D$pI+
 D$pI3
-D$pI;
 D$pL;
+D$pL;x u
 D$pM3
 D$x<&
 D$xC9,
 D$xE3
-D$xH#
 D$xH9E
-D$xH;
 D$xH;F
 D$xI#
 D$xI;
@@ -5617,16 +5616,14 @@ D84:u?I
 D8<0u
 D8<8u
 D8<9u
-D8=Qw"
 D8AEt
 D8E8F8
 D8GK|	D
 D8c4t
+D9%5f&
 D9)t"A
-D9*u[A
 D90uK
 D90ujD9s
-D95c/N
 D9A ~
 D9B,}
 D9C$H
@@ -5642,6 +5639,9 @@ D9L$l
 D9L$p
 D9T$0t
 D9T$\
+D9T$pt
+D9T$pt 
+D9T$x
 D9W`u
 D9X t
 D9X tOH
@@ -5650,10 +5650,10 @@ D9\$(u
 D9c t
 D9c }
 D9c$t
+D9d$Pt
 D9d$p
 D9g t
 D9k }
-D9l$0
 D9m ~
 D9q u
 D9s t
@@ -5670,7 +5670,6 @@ D9vL~oE3
 D9w ~G3
 D9{$t
 D9{(}
-D9|$0t
 D:\a\1\b\bin\amd64\python311.pdb
 D:\a\1\s\Modules\_sha3\sha3module.c
 D:\a\1\s\Modules\arraymodule.c
@@ -5703,6 +5702,7 @@ D:\a\1\s\Python\getargs.c
 D:\a\1\s\Python\import.c
 D:\a\1\s\Python\pystrtod.c
 D:\a\1\s\Python\traceback.c
+D;A8}5H
 D;B |
 D;CL|
 D;E;F;
@@ -5863,11 +5863,11 @@ Difference between two datetime values.
 Difference between x and the closest integer multiple of y.
 DigiCert Assured ID Root CA0
 DigiCert Inc1
-DigiCert Timestamp 2022 - 20
+DigiCert Timestamp 20230
 DigiCert Trusted Root G40
+DigiCert, Inc.1 0
 DigiCert, Inc.1;09
 DigiCert, Inc.1A0?
-DigiCert1$0"
 DirEntry
 Directory tree generator.
 Disable all I/O operations.
@@ -5897,18 +5897,16 @@ Dynamic objects:
 E #C 
 E @t.H
 E @t|H
-E D8x
-E L)p
-E L;`
+E H)p
 E"F"G"H"I"J"K"L"M"N"O"P"Q"R"S"T"U"V"W"X"1"2"3"4"5"6"7"8"9":";"<"=">"?"@"A"B"C"D"$)%)&)')()))*)+),)-).)/)0)1)2)3)4)5)6)7)8)9):);)<)=)>)?)@)A)B)C)D)E)F)G)H)I)J)K)L)M)N)O)P)Q)R)S)T)U)V)W)X)Y)Z)[)\)])^)_)`)a)b)c)d)e)f)g)h)i)j)k)l)m)n)o)
 E'!E'H
 E'uLH
 E(F(G(H(I(J(K(L(M(N(O(P(Q(R(S(T(U(V(W(X(Y(Z([(\(](^(_(`(a(b(c(d(e(f(g(h(i(e"f"g"h"i"j"k"l"m"n"
+E(I9@
 E(L;u 
 E+3+9+:+%+
 E.g. for int | str
 E.g. for t = list[int], t.__origin__ is list and t.__args__ is (int,).
-E0I9@
 E2BIG
 E3.E3*E3)L
 E3F A
@@ -5918,7 +5916,6 @@ E9J@uQA
 E9Y t
 E9rHu	
 E9~X}TA9v\tmH
-E;<$|
 E;wL|
 E<F<Y
 E@I;E
@@ -5960,7 +5957,6 @@ EISDIR
 EJQ3YKlTRej7B
 EJ}o!p~o"p
 EKZ1b0
-EL$(M
 EL$D%Ox
 ELLIPSIS
 ELOOP
@@ -6050,7 +6046,7 @@ ETXTBSY
 EUSERS
 EWFWLWMW
 EWOULDBLOCK
-EXD9|$x
+EXD9t$h
 EXDEV
 EXEC_PREFIX
 EXE_SUFFIX
@@ -6216,11 +6212,13 @@ ExtensionFileLoader.is_package
 ExtensionFileLoader.is_package.<locals>.<genexpr>
 EyFyN
 F  t3
+F @8p
 F @tCA
 F @u'H
 F H+F
 F H+N
 F H9B u!H
+F L;h
 F!>!w)x)%"
 F#k%rTZc
 F(D:9
@@ -6395,6 +6393,7 @@ For field "body" must be a list, not a %.200s
 For field "orelse" changed size during iteration
 For field "orelse" must be a list, not a %.200s
 For internal use by `threading.Condition`.
+For internal use by reentrancy checks.
 For many object types, including most builtins, eval(repr(obj)) == obj.
 For match object m, return the 2-tuple (m.start(group), m.end(group)).
 For the values to be considered close, the difference between them
@@ -6413,6 +6412,7 @@ FormattedValue
 FormattedValue(expr value, int conversion, expr? format_spec)
 Forms a shorter iterator from selected data elements using the selectors to
 Fortran order is preserved. For non-contiguous views, the data is converted
+Four operations are supported, given by the following argument
 Fractions of a second may be present if the system clock provides them.
 FreeLibrary
 Freeze all current tracked objects and ignore them for future collections.
@@ -6662,25 +6662,25 @@ H!}(H
 H!}8H
 H#D$ H
 H#D$(H
+H#D$HH
 H#D$pH
-H#D$xH
 H#L$ 
-H#L$0
-H#L$0H
-H#L$x
+H#L$H
+H#L$P
+H#L$PH
 H#Q8L
 H#T$(
 H#T$@
 H#T$@H
 H$E98t0A
 H))tU
-H)0t.H
+H)0t1
 H)9t4
 H)9u$H
 H)9u%H
 H)9u'H
 H)9u(H
-H)9u1H
+H)9u3H
 H);u*H
 H)C@H
 H)CHH+
@@ -6705,9 +6705,9 @@ H+q(L
 H+t$@H
 H+|$8H
 H+|$HH;
+H-^Eu
 H2YWs
 H3A(H3
-H3D$p%
 H3H0H
 H3SPH
 H3T$ H
@@ -6717,8 +6717,8 @@ H3t$xK
 H6:\]=O
 H8H+H 
 H8H+H H
+H9(ubH
 H9*t3H
-H90uTI
 H91tT3
 H99t+H
 H99uHL
@@ -6754,7 +6754,6 @@ H9D$`uEE3
 H9D$h}
 H9D$x
 H9D$x~
-H9E`ueH
 H9G(u
 H9G0u
 H9G0u;E3
@@ -6769,6 +6768,7 @@ H9J`D
 H9J`t
 H9Jx|
 H9K8s	H
+H9M I
 H9M L
 H9N`tRL
 H9O(u"H
@@ -6776,18 +6776,19 @@ H9O`A
 H9P0t2H
 H9P`u
 H9P`u-H
+H9P`uEH
 H9Q H
-H9Q ~<H
+H9Q ~BH
 H9Q0u.H
 H9Q8r
 H9S L
+H9U L
 H9X(t I
 H9X8t|H
 H9X8u
 H9X`E
 H9X`t
 H9X`t%H
-H9X`t&
 H9X`tMH
 H9X`tqH
 H9X`u
@@ -6796,6 +6797,7 @@ H9X`u'
 H9X`u(
 H9X`u.H
 H9X`u2H
+H9X`u3
 H9X`u5
 H9X`u7H
 H9X`u=H
@@ -6835,13 +6837,16 @@ H9]`u
 H9^`u
 H9_(H
 H9_0u
+H9_8t
 H9_@t H
+H9_`u
 H9h`u
 H9i ~'H
 H9i`u
 H9i`uYH
 H9j0H
 H9k s
+H9k@t H
 H9l$0
 H9oH~1L
 H9p H
@@ -6859,12 +6864,8 @@ H9q`u
 H9q`u1H
 H9q`uLH
 H9qxt:I;
-H9s0t
-H9s@t H
 H9t$ht
 H9t$p
-H9u(I
-H9u0u
 H9x vPH
 H9x`H
 H9x`t
@@ -6878,23 +6879,24 @@ H9y8u
 H9y`t
 H9y`u
 H9y`u*H
+H9y`u3H
 H9y`u43
 H9y`uUH
 H9y`umI
 H9y`upH;
+H9y`uxH
 H9z0}
+H9z`u
+H9{8t
 H9|$P~R
 H9|$h~'H
 H9}`u
 H9~(u
 H;0t)
 H;;}NL
-H;=ca?
-H;A s
 H;A@u,L
 H;B(t
 H;B0u
-H;C s
 H;C@t
 H;CH}
 H;D$8
@@ -6934,7 +6936,6 @@ H;L$`H
 H;L$h|
 H;L$h}WH
 H;M ~
-H;Q s
 H;Q }$
 H;Q(~BH
 H;Q(~JH
@@ -6959,6 +6960,7 @@ H;l$ }dH
 H;l$ }qL+
 H;l$P
 H;l$Pu
+H;l$X
 H;oH|
 H;sx~AH
 H;t$P
@@ -6966,7 +6968,7 @@ H;t$Pt
 H;t$`t
 H;u s>H
 H;x r
-H;{ s<H
+H;{ sBH
 H;{ s[H
 H;{H|
 H;|$ 
@@ -6978,8 +6980,6 @@ H;|$P}K
 H;|$P}R
 H;|$`
 H;|$h|
-H;}H|
-H;}H}+H
 H;~ u
 H=I=J=
 H>I>J>
@@ -7035,7 +7035,7 @@ HKEY_DYN_DATA
 HKEY_LOCAL_MACHINE
 HKEY_PERFORMANCE_DATA
 HKEY_USERS
-HL)/uCH
+HL)+uCH
 HLr:PR
 HM94=
 HOF[u?
@@ -7065,11 +7065,13 @@ HcD$
 HcD$DD
 HcD$`M
 HcD$h
+HcD$pM
 HcE LcM
 HcE(McO$McG H
 HcE8H
 HcEPL+
 HcEgI;G
+HcF LcN
 HcF0H3
 HcF8H3
 HcFLH+
@@ -7092,15 +7094,14 @@ HcJ$H
 HcJ(HcB,LcJ$LcB H
 HcK L
 HcK$H
+HcK8H;
 HcKH@
-HcL$`3
 HcM H
 HcM,H
 HcM,HcU(LcE LcM$H
 HcO,HcW(LcO$LcG H
 HcOTH
 HcS H
-HcS<H
 HcSH@
 HcSHHcK8H3
 HcS|H
@@ -7112,9 +7113,7 @@ HcU H
 HcU(LcM$LcE H
 Hc\$@E
 Hc]oL
-Hck8I
 Hcl$xE3
-Hcs8H
 Hct$x
 Hc|$(D
 Heap queue algorithm (a.k.a. priority queue).
@@ -7163,19 +7162,21 @@ I9>u'L
 I9>~;L
 I9?t4A
 I9?tiI
+I9@(t
+I9F`uxH
 I9G`u
 I9G`u?I
 I9H8r
 I9H8u
-I9L$ L
-I9M L
 I9X(u(
 I9\$`
-I9v`u
 I9|$`
+I9~`u
 I:)][
 I:ExitProcess
 I;<$~
+I;oH|
+I;oH}+L
 I<J<k
 I?ESB
 I?cm-
@@ -7618,7 +7619,6 @@ K0+9yAbY
 K0H9H
 K0H9K
 K0fpx
-K0t'H
 K2tZvZ
 K3RR]
 K8L8M8N8
@@ -7669,6 +7669,7 @@ KO|i:WriteFile
 KQ;RJT
 KQLQi>t
 KR72A
+KSM!!H
 KW'Ne8*
 KY'0d
 K]$2U]
@@ -7693,7 +7694,6 @@ KpLpMpk
 Kw._uh
 K|i:ConnectNamedPipe
 K|i:PeekNamedPipe
-L!%V8:
 L!D$ E3
 L!L$ L
 L!d$8H
@@ -7701,11 +7701,11 @@ L!d$PH
 L!d$pL!e
 L!t$ 
 L!u0H
+L!u@H
 L!uHH
 L!|$(M
 L!}@L!|$ L
 L!}HL!|$ L
-L#T$HI
 L#l$(
 L#l$H
 L#l$HI
@@ -7719,6 +7719,7 @@ L$ H3
 L$ H;
 L$ Hc
 L$ I3
+L$ L)!u
 L$ L+
 L$ SH
 L$ SUVWH
@@ -7739,13 +7740,11 @@ L$(H3
 L$(H9L$P
 L$(H;
 L$(I#
-L$(L#
 L$(L3
 L$,A3
 L$0A3
 L$0E3
 L$0E3*A
-L$0H#
 L$0H+
 L$0H3
 L$0H9{8u
@@ -7762,13 +7761,16 @@ L$8A3
 L$8D;
 L$8E3
 L$8E;
+L$8H#
 L$8H+
 L$8H3
 L$8H;
-L$8I#
 L$8I3
 L$8I;
+L$8L#
+L$8L9y
 L$8L;
+L$8M;
 L$8tiH
 L$@E3
 L$@H!\$03
@@ -7776,6 +7778,7 @@ L$@H3
 L$@H9Z
 L$@I+
 L$@I;
+L$@L)!u
 L$@L3
 L$@L;l$P
 L$@Lc
@@ -7784,14 +7787,12 @@ L$HE3
 L$HH3
 L$HI;
 L$HL;
-L$HM;
 L$PE3
 L$PH)1
 L$PH+
 L$PH3
 L$PH9A
 L$PH;
-L$PL9w
 L$XDk
 L$XH+
 L$XH3
@@ -7802,6 +7803,7 @@ L$XL+
 L$XL;
 L$`E3
 L$`H3
+L$`H;T$H
 L$`M;
 L$h;l
 L$hE3
@@ -7816,7 +7818,6 @@ L$tD#
 L$tMc
 L$xA+
 L$xD+
-L$xE3
 L$xH3
 L$xH;
 L$xH;D$`~
@@ -7828,6 +7829,7 @@ L( Hc
 L)&u*H
 L)9t+H
 L)9td
+L)=aXH
 L)s0L
 L)s0xIH
 L+I0H
@@ -7864,17 +7866,14 @@ L3L$hI
 L3\$8I
 L9 u:H
 L9!u6D9%
+L9%z`<
 L9&~eL
-L9-(]A
-L9-Z*R
+L9-*7V
 L91uFL
 L97~,E3
-L9=_&G
-L9=a G
-L9=e"G
-L9=g$G
 L9?~%H
 L9@ u
+L9@(u
 L9@Xu
 L9@`u
 L9@htA
@@ -7893,8 +7892,8 @@ L9\$p
 L9``t
 L9``u
 L9``u$H
-L9``u>H
 L9c(u
+L9c@H
 L9cXu
 L9d$h
 L9g@t H
@@ -7902,19 +7901,21 @@ L9g@u
 L9g`u
 L9h`u@
 L9h`ucH
-L9k@t:H
 L9kPt
 L9kPu
 L9k`t
 L9l$0
 L9m'u
 L9m/u
+L9p0u+L
 L9p`t
 L9p`u
 L9p`u(H
-L9p`uSH
+L9p`u7I
 L9p`uVI
+L9p`uYH
 L9q`t
+L9s0t
 L9s@u
 L9sHu
 L9sXu
@@ -7926,8 +7927,10 @@ L9|$@u
 L9~@t%
 L:7I&DKIEW
 L:get_handle_inheritable
+L;=:|V
 L;C(|
 L;C0|
+L;D$`L
 L;G0|
 L;J t
 L;P H
@@ -7940,10 +7943,12 @@ L;array item must be integer
 L;d$0|
 L;f8uNH
 L;l$(
-L;l$0
 L;l$`
 L;l$`s
 L;l$h
+L;l$x
+L;l$x}
+L;t$ 
 L;|$h
 L;|$h|
 L;|$p|
@@ -8012,16 +8017,17 @@ LcA$L
 LcB(L
 LcC$H
 LcC(M;
+LcC8M
 LcD$hH
 LcG\H
 LcI$L
 LcI\3
 LcJ\L;
+LcK<H
 LcL$@M
 LcM$LcE H
 LcM8M
 LcV$E
-LcX$M;
 LcY L
 LcZ@M
 Lcd$hH+
@@ -8085,6 +8091,7 @@ Lu7u7
 LwH'H
 L}M}R
 M H1E
+M L)9
 M(N(O(P(Q(R(S(T(U(V(W(X(Y(Z([(\(](^(_(`(a(b(c(d(e(f(!&,&"&-&
 M)N)O)P)Q)R)S)T)U)V)W)X)Y)Z)[)\)])^)_)`)a)b)c)d)e)f)
 M+4$H
@@ -8102,6 +8109,7 @@ M9NfT<MfH
 M9e`u
 M9g(I
 M9t$`
+M9w0u
 M;A@r
 M;H }N
 M;S s
@@ -8323,7 +8331,6 @@ MutableSet.pop
 MutableSet.remove
 M{LvM
 N	OZO0O[O]OWOGOvO
-N L))
 N N!N#N&N)N.N/N1N3N5N7N<N@NANBNDNFNJNQNUNWNZN[NbNcNdNeNgNhNjNkNlNmNnNoNrNtNuNvNwNxNyNzN{N|N}N
 N S4X
 N"OdO
@@ -8390,6 +8397,7 @@ NRNSNiN
 NSIG -- number of defined signals
 NSLSx
 NULL interpreter
+NULL object in marshal data for code object
 NULL object in marshal data for list
 NULL object in marshal data for object
 NULL object in marshal data for set
@@ -8409,6 +8417,7 @@ Name not found globally.
 Name(identifier id, expr_context ctx)
 NameError
 NamedExpr
+NamedExpr target must be a Name
 NamedExpr(expr target, expr value)
 NamespaceLoader
 NamespaceLoader.__init__
@@ -8487,7 +8496,6 @@ Note: If a and b are of different lengths, or if an error occurs,
 Note: If an object containing an unsupported type was marshalled with
 Note: collection before a POSIX fork() call may free pages for future allocation
 Note: the default signal handler for SIGINT raises ``KeyboardInterrupt``.
-Noteworthy: None is the `nil' object; Ellipsis represents `...' in slices.
 Nothing is echoed to the console. This call will block if a keypress is
 NpPjPaP^P`PSPKP]PrPHPMPAP[PJPbP
 NsJsZ5
@@ -8651,6 +8659,7 @@ Object causing the exception
 Object is not writable.
 Objects of type '%s' can not be used as binary registry values
 OceQh
+Oct  2 2023
 OczcWS!
 OdO7O>OTOXO
 Odd-length string
@@ -8728,6 +8737,7 @@ Optional method returning a metadata dict for the specified
 Optional method that returns the modification time (an int) for the
 Optional method which writes data (bytes) to a file path (a str).
 Options (and corresponding environment variables):
+Oq!|D
 Order can be {'C', 'F', 'A'}. When order is 'C' or 'F', the data of the
 OrderedDict changed size during iteration
 OrderedDict mutated during iteration
@@ -8767,6 +8777,7 @@ O|$p:set_wakeup_fd
 O|O&O&:index
 O|O:fromtimestamp
 O|O:getsizeof
+O|OO:
 O|iOi:dump_traceback_later
 O|n:repeat
 O|s:StreamReader
@@ -8792,9 +8803,10 @@ P*Rq\ceUl
 P*x)})
 P-Q-R-
 P.P-P
+P0H)]
 P0HcF
 P0HcG
-P0I),$u
+P0I)u
 P0L)&
 P0L)'
 P0L)3
@@ -8821,7 +8833,6 @@ PA]A\_^[
 PA]_^][
 PA^_[
 PA^_^
-PA_A][
 PA_A^A\_^[]
 PA_A^A\_^][
 PA_A^A]A\_^]
@@ -8910,7 +8921,7 @@ PYTHONPLATLIBDIR : override sys.platlibdir.
 PYTHONPROFILEIMPORTTIME
 PYTHONPYCACHEPREFIX: root directory for bytecode cache (pyc) files.
 PYTHONSAFEPATH
-PYTHONSAFEPATH: don't prepend a potentially unsafe path to sys.path.
+PYTHONSAFEPATH          : don't prepend a potentially unsafe path to sys.path (-P)
 PYTHONSTARTUP: file executed on interactive startup (no default)
 PYTHONTRACEMALLOC
 PYTHONTRACEMALLOC: invalid number of frames
@@ -10306,6 +10317,8 @@ R(D;R,v
 R(u}^
 R)TtV
 R-R3R?R@RLR^RaR\R
+R09t$ |.A
+R0H)]
 R1PJ<2
 R2wD!J
 R5S5X
@@ -10988,7 +11001,6 @@ Return the minimum and maximum values of all samples in the sound fragment.
 Return the most recent exception caught by an except clause
 Return the natural logarithm of 1+x (base e).
 Return the new absolute position.
-Return the new cursor position in number of bytes
 Return the next floating-point value after x towards y.
 Return the next item from the async iterator.  If default is given and the async
 Return the next item from the asynchronous generator.
@@ -11036,6 +11048,7 @@ Return the spec for the specified module.
 Return the specialization stats
 Return the square root of x.
 Return the square root of z.
+Return the stream position as an opaque number.
 Return the string obtained by doing backslash substitution on the string template, as done by the sub() method.
 Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement repl.
 Return the sum of a 'start' value (default: 0) plus an iterable of numbers
@@ -11234,7 +11247,6 @@ S?T?U?
 S@H9S(H
 SALT_SIZE
 SAS\S
-SAUAWH
 SA|X=G
 SCOPE_MASK
 SCOPE_OFF
@@ -11326,20 +11338,19 @@ ST_UID
 SUATAUH
 SUAVH
 SUT$T(Tn5CTbTfTlT
+SUVATAUAVH
 SUVAUH
 SUVWATAUAVAWH
-SUVWATAUAWH
 SUVWATAVAWH
 SUVWATAVH
-SUVWATAWH
 SUVWAUAVAWH
 SUVWAUH
 SUVWAVH
-SUWAUAVAWH
 SUus.w
 SVWATAUAVAWH
 SVWATAUH
 SWATAWH
+SWATH
 SWAVH
 SWS{S
 SW]fH
@@ -11563,6 +11574,7 @@ Set the maximum string digits limit for non-binary int<->str conversions.
 Set the peak size of memory blocks traced by tracemalloc to the current size.
 Set the position of a file descriptor.  Return the new position.
 Set the profiling function.  It will be called on each function call
+Set the stream position, and return the new stream position.
 Set(expr* elts)
 Set.__and__
 Set.__and__.<locals>.<genexpr>
@@ -11709,6 +11721,7 @@ StreamReader.__getattr__
 StreamReader.__init__
 StreamReader.__iter__
 StreamReader.__next__
+StreamReader.__reduce_ex__
 StreamReader.decode
 StreamReader.read
 StreamReader.readline
@@ -11722,6 +11735,7 @@ StreamReaderWriter.__getattr__
 StreamReaderWriter.__init__
 StreamReaderWriter.__iter__
 StreamReaderWriter.__next__
+StreamReaderWriter.__reduce_ex__
 StreamReaderWriter.read
 StreamReaderWriter.readline
 StreamReaderWriter.readlines
@@ -11736,6 +11750,7 @@ StreamRecoder.__getattr__
 StreamRecoder.__init__
 StreamRecoder.__iter__
 StreamRecoder.__next__
+StreamRecoder.__reduce_ex__
 StreamRecoder.read
 StreamRecoder.readline
 StreamRecoder.readlines
@@ -11748,6 +11763,7 @@ StreamWriter.__enter__
 StreamWriter.__exit__
 StreamWriter.__getattr__
 StreamWriter.__init__
+StreamWriter.__reduce_ex__
 StreamWriter.reset
 StreamWriter.seek
 StreamWriter.write
@@ -11786,6 +11802,7 @@ T$ A;
 T$ E3
 T$ H+
 T$ HcE
+T$ I#
 T$ L#
 T$ M#
 T$ M;
@@ -11796,55 +11813,50 @@ T$(H#
 T$(L+L$ 
 T$(McF McN$H
 T$0E3
+T$0H#
 T$0H+
-T$0Hc
 T$0HcH(H
 T$0I9
 T$0I;
 T$0L3
 T$0L;
-T$0M#
 T$4D3
 T$4H;
 T$8E3
 T$8H!t$8H
+T$8H9Q
 T$8H;P
 T$8L#
 T$8LcE
 T$@E3
-T$@H#
 T$@H;
 T$@I+
 T$@L!|$ 
 T$@M#
 T$HE3
-T$HH9Q
+T$HH;
 T$HL;
 T$P9\$@t L
 T$PE3
 T$TL;
 T$XE3
-T$XH#L$H
 T$XH;
 T$XHcM
-T$XI#
 T$XL;E
 T$XL;M
 T$`E3
 T$`H;
+T$`L;
 T$`Lc`
 T$gE3
 T$hI;
 T$hL3
 T$pE3
-T$pH9
 T$pH;
 T$pI+
 T$pMc
 T$xE3
-T$xH9{
-T$xI#
-T$xL#
+T$xH9
 T$xL;
 T$xLcA
 T$xM;
@@ -11855,7 +11867,6 @@ T0*X(X1
 T0W@W
 T0yES
 T5XWX
-T5\~"
 T5d4dt
 T6M@_
 T9'^*
@@ -12036,6 +12047,7 @@ The number of unreachable objects is returned.
 The object is not a PyHKEY object
 The object returned behaves like a named tuple with these fields:
 The objects used by the site module to add custom builtins.
+The offset is interpreted relative to the position indicated by whence.
 The optional *protocol* argument tells the pickler to use the given
 The optional argument fd (default standard output) specifies
 The optional argument timespec specifies the number of additional terms
@@ -12081,6 +12093,8 @@ The return value is a tuple of the process handle, thread handle,
 The return value is a tuple of the value and the type_id.
 The return value is an integer if ndigits is omitted or None.  Otherwise
 The return value is the handle of the opened key.
+The return value is the number of bytes relative to the beginning of the file.
+The return value of tell() can be given as input to seek(), to restore a
 The returned checksum is an integer.
 The returned info (a 2-tuple):
 The returned object is an iterator.  Each iteration returns a row
@@ -12178,6 +12192,7 @@ This module defines an object type which can efficiently represent
 This module exports a set of functions implemented in C corresponding
 This module exports three objects:
 This module is NOT meant to be directly imported! It has been designed such
+This module is not normally accessed explicitly by most
 This module makes available standard errno system symbols.
 This module provides access to mathematical functions for complex
 This module provides access to operating system functionality that is
@@ -12186,6 +12201,7 @@ This module provides access to the Windows registry API.
 This module provides access to the garbage collector for reference cycles.
 This module provides access to the mathematical functions
 This module provides classes that assist in the reading and writing
+This module provides direct access to all 'built-in'
 This module provides mechanisms to use signal handlers in Python.
 This module provides primitive operations to manage Python interpreters.
 This module provides primitive operations to write multi-threaded programs.
@@ -12352,7 +12368,6 @@ T{)vSb'YFTyk
 T{TwT
 T|TNN
 U	U<UAU
-U N9|
 U!U%U&U
 U#U(U
 U#n-gg
@@ -12364,6 +12379,7 @@ U1JN34rHGcPOHcd<IcJcFC"UVDk9ENKcvCLc]
 U2UeUNU9UHU-U;U@UKU
 U4HozL
 U8o6qhQ
+U8u!H
 U9Mja03
 U:__format__
 U:strftime
@@ -12372,6 +12388,7 @@ U@V@W@X@
 UATAUAVAWH
 UATAUAVAWI
 UATAVH
+UAUAVAWH
 UAVAWH
 UAVAWI
 UAYG}ECEj
@@ -12425,6 +12442,7 @@ UUVUZ;'9?
 UUlGb.
 UUnnU
 UVATH
+UVAUAVAWH
 UVWATAUAVAWH
 UVWATAVH
 UVWATAWH
@@ -12594,6 +12612,7 @@ VWf4oKZfCXNW"PJ
 VY.If
 VYTlKj
 VY[Y)
+V[Go!A
 V][He
 V^_^/021k
 VaTa@<O
@@ -12605,6 +12624,7 @@ Value wrapped by a key function.
 ValueError
 ValueError exception is raised - but garbage data will also be written
 Values are unpacked according to the format string Struct.format.
+Values for whence are:
 Values in the registry have name, type, and data components. This method
 ValuesView
 ValuesView.__contains__
@@ -12656,9 +12676,9 @@ W1X1A
 W3NXE
 W4+u.u_
 W5XWX
+W5oj#
 W5uCO8u
 W:gxu=z
-W<=c1+
 W=X=Y=D
 W>Lj1
 W?I]XfP
@@ -12895,7 +12915,7 @@ X@[C[}[
 XAZb\
 XA]A\][
 XA]^][
-XA_A\_^][
+XA^A\_^][
 XA_A^A]A\_^][
 XC[Y`
 XDX XeXlX
@@ -12950,7 +12970,6 @@ Y1&X{
 Y2Y4Yf[
 Y4Z4[4
 Y4m64YT
-Y5Jg"
 Y6S2EF(=d;t
 Y7Y8Y
 Y9"SD
@@ -13000,7 +13019,6 @@ Yo.A"
 You probably don't want to use this function.
 Yr^y^
 Ys8IY
-Ys9cW
 YvtGd'\e
 Yw_tW
 Y{SwS
@@ -13183,7 +13201,7 @@ Z|2L;
 [K]taM?
 [Kb1g
 [LR>2<X
-[MSC v.1934 64 bit (AMD64)]
+[MSC v.1935 64 bit (AMD64)]
 [MbPg=h
 [PEQ/<M9f
 [Q%tE6(
@@ -13242,7 +13260,7 @@ Z|2L;
 \$ UVWATAUAVAWH
 \$ UVWAVAWH
 \$ UVWH
-\$ UWATAUAVH
+\$ UWATAUAWH
 \$ WH
 \$$A#
 \$(E3
@@ -13258,10 +13276,10 @@ Z|2L;
 \$0I;
 \$8L;
 \$8Lc
+\$HH;
 \$PE3
 \$PI;
 \$\:\o\
-\$`H;
 \$`L+
 \$hE3
 \$hI;
@@ -13331,6 +13349,7 @@ Z|2L;
 \os.pyz
 \o|O]o
 \pFAI
+\qr|6
 \rV{2i
 \site-packages
 \u%04x
@@ -13487,7 +13506,6 @@ Z|2L;
 ^s^|^
 ^t<Ah<D
 ^uY@=p
-^udE3
 ^udueu
 ^v^t^
 ^wcRr
@@ -13543,7 +13561,6 @@ _CallableGenericAlias.__repr__
 _CallableGenericAlias.__repr__.<locals>.<listcomp>
 _Cn>m
 _ConcatenateGenericAlias
-_DA9]L~
 _DA9_L~
 _DeadlockError
 _DummyModuleLock
@@ -13895,6 +13912,7 @@ _PyMem_SetupAllocators
 _PyMem_Strdup
 _PyMethodWrapper_Type
 _PyModuleSpec_IsInitializing
+_PyModule_Add
 _PyModule_Clear
 _PyModule_ClearDict
 _PyModule_CreateInitialized
@@ -14189,6 +14207,7 @@ _Py_SwappedOp
 _Py_TrueStruct
 _Py_UTF8_Edit_Cost
 _Py_UnhandledKeyboardInterrupt
+_Py_UniversalNewlineFgetsWithSize
 _Py_VaBuildStack
 _Py_VaBuildStack_SizeT
 _Py_VaBuildValue_SizeT
@@ -15166,6 +15185,8 @@ _read_null
 _read_null(): read from NULL, raise a SIGSEGV or SIGBUS signal depending on the platform
 _readlink_deep
 _recalculate
+_recursion_count
+_recursion_count() -> int
 _reduce_ex
 _register_builtins_for_crossinterpreter_data
 _relax_case
@@ -15382,6 +15403,7 @@ _~_}_
 `,nd\
 `.rdata
 `/`5`
+`0@SH
 `0aLaCfDf
 `2a2b2c2d2e2f2g2h2i2j2k2l2m2n2o2p2q2r2s2t2u2v2w2x2y2z2{2
 `2cec
@@ -15396,7 +15418,7 @@ _~_}_
 `:NMo
 `:`Z`A`j`w`_`J`F`M`c`C`d`B`l`k`Y`
 `:c?ete
-`<`t?H
+`<`tiH
 `<`u&H
 `<`u,H
 `>Huz8D
@@ -15492,13 +15514,12 @@ a2b_uu
 a2b_uu($module, data, /)
 a7a!b"b
 a7a0a
+a7hIw
 a:ao9AaFa`a|a
 a<3L^[S0kNX79WBFm
 a@;dH
 aAigp
-aB__map_
 aC"Z_H
-aD9%l
 aFbFcFf
 aGa>a(a'aJa?a<a,a4a=aBaDasawaXaYaZakataoaeaqa_a]aSaua
 aGe_h_H>!
@@ -15646,6 +15667,7 @@ and also by ctypes.
 and another thread holds the lock, the method will return False
 and bar.pth contains:
 and elapsed.
+and may raise exceptions.
 and much better for input fuzzily ordered.
 and must be True in that case.
 and must be locked by the same thread that unlocks it; otherwise a
@@ -15697,6 +15719,7 @@ append() -- append a new item to the end of the array
 appended to sys.path, and also inspected for path configuration
 appendleft
 application (if any) its extension is associated.
+applications, but can be useful in modules that provide
 aqgPh
 arc_offset
 archive
@@ -16262,7 +16285,7 @@ bzlToP}:
 b|b~bybsb
 c {+j
 c&c'c)c,c-c.c0c1c3c4c5c6c7c8c;c<c>c?c@cAcDcGcHcJcQcRcScTcVcWcXcYcZc[c\c]c`cdcecfchcjckclcocpcrcsctcucxcyc|c}c~c
-c(L9'urH
+c(L9'u/H
 c)c*c-c5c6c9c<cAcBcCcDcFcJcKcNcRcScTcXc[cecfclcmcqctcucxc|c}c
 c/e\[
 c0i:r6
@@ -16271,7 +16294,7 @@ c2egejede\eheee
 c4fsg:n+s
 c6JKg
 c7yB2_;G
-c8L9%36<
+c8L9%
 c8e	g
 c9JxM3.
 c9cCcec|c
@@ -16291,13 +16314,13 @@ cEdAd
 cFC83K
 cFec\
 cGdGA
+cH;=h
 cIs^Z0!Rw1
 cJv_GpFp
 cM;X[ewx
 cP=Ke
 cProfile
 cT7?T
-cU	F9
 cVc,cDcEc6cCc
 cVeVfVgVmVnVoVpVrVsVtVuVwVxVyVzV}V~V
 cVu4&
@@ -16429,6 +16452,7 @@ can't restore logical file position
 can't send non-None value to a just-started async generator
 can't send non-None value to a just-started coroutine
 can't send non-None value to a just-started generator
+can't serialize %s
 can't set attribute
 can't set bytearray slice from %.100s
 can't set preliminary stderr
@@ -16770,6 +16794,7 @@ combinations
 combinations(iterable, r)
 combinations(p, r)
 combinations(range(4), 3) --> (0,1,2), (0,1,3), (0,2,3), (1,2,3)
+combinations:
 combinations_with_replacement
 combinations_with_replacement('ABC', 2) --> ('A','A'), ('A','B'), ('A','C'), ('B','B'), ('B','C'), ('C','C')
 combinations_with_replacement(iterable, r)
@@ -17034,21 +17059,19 @@ d$ L3
 d$ UAVAWH
 d$(A]
 d$(A_
-d$(E3
 d$0E3
-d$4H;
+d$0M;
 d$8A_A^A]
 d$8D8$
-d$@L;
 d$HH9W
-d$PH;
+d$PH#
 d$PLcc
 d$`E3
-d$`xTA
+d$`xKA
+d$hH;
+d$hHcs8H
 d$nQo|v
-d$p93
 d$p9>
-d$pH;
 d$pLcc
 d%d)d/dZd[d]dsd}d
 d&d!d^d
@@ -17914,11 +17937,8 @@ f-string: unmatched '%c'
 f-string: unterminated string
 f1g1m
 f30r@
-f3909b8
 f4f1f6f5f
 f4f9f.f
-f9(u"H
-f9(udfE9)
 f9)tpL
 f9,Au
 f9,Bu
@@ -17927,8 +17947,6 @@ f9,Pu
 f9,Su
 f9,Wu
 f9,Yu
-f9,^u
-f92t9fD92t3D
 f94Pu
 f9<Pu
 f9YCSJhj@@u>ijjjkj`
@@ -17941,9 +17959,8 @@ f;f	f.f
 f<9X<X6
 f=j8j:jYjkjXj9jDjbjajKjGj5j_jHjYkwk
 fA9(t
-fA9*t
-fA90t
-fA91t
+fA9)t
+fA9,^u
 fA9|]
 fBgBL
 fD9	u
@@ -17957,6 +17974,9 @@ fD9$^u
 fD9&u+D9%
 fD9,pu
 fD9,xu
+fD90t
+fD90uhfE9
+fD92t
 fD94Hu
 fD94Vu
 fD99t
@@ -17982,6 +18002,7 @@ fE9$wu
 fE9,ltuH
 fE9,wu
 fE9,~u
+fE90t
 fE91t
 fE94Au
 fE9<^u
@@ -18296,7 +18317,6 @@ for progressively building a second heap, which grows at exactly the
 for subsequently created threads, and must be 0 (use platform or
 for the lock to be available or not.  If `blocking` is False
 for the specified number of times.  If not specified, returns the object
-for whence are:
 force
 form a sequential IO object that can read and write. This is typically
 format
@@ -18775,6 +18795,8 @@ h>lNl
 h?HRWk\kl8Xkq
 hA_A^A]A\_^[]
 hA_A^A]A\_^][
+hA_A^^[
+hA_A^^[H
 hD_Ja
 hDb8p9
 hF1G"
@@ -18984,6 +19006,7 @@ iconcat
 iconcat($module, a, b, /)
 id($module, obj, /)
 identifier field can't represent '%s' constant
+identifiers of Python; for example, builtins.len is
 idlelib
 idx cannot be negative
 if it is -1, mktime() should guess based on the date and time.
@@ -19164,6 +19187,7 @@ inode($self, /)
 inplace
 input
 input line too long
+input string is too long
 input too long
 input($module, prompt='', /)
 input(): lost sys.stderr
@@ -19245,8 +19269,8 @@ internal error in SHA3 Update()
 internal error in regular expression engine
 internal output size of hash algorithm
 internal representation of integers.  The attributes are read only.
+interp is freed
 interpreted as in slice notation.
-interpreted relative to the position indicated by whence.  Values
 interpreter ID must be a non-negative int, got %R
 interpreter ID must be an int, got %.100s
 interpreter already initialized
@@ -19687,6 +19711,7 @@ k?o|o
 k@l@E
 kBl^l
 kCpDpJpHpIpEpFp
+kDA9oL~
 kF4lX
 kIt:|C
 kJneS
@@ -19763,6 +19788,7 @@ l"m#Z#
 l"m'Z'
 l#n	pEs
 l$ E3
+l$ L#
 l$ Lc
 l$ VWATAUAVAW
 l$ VWATAVAWH
@@ -19771,12 +19797,10 @@ l$(A^
 l$(D9
 l$(E3
 l$(H+
-l$(H;
 l$09C
 l$0E3
 l$0H+
 l$0H9A
-l$0H9p0u.L
 l$0H9q
 l$0H;
 l$0I9
@@ -19784,11 +19808,13 @@ l$0L;
 l$0M;
 l$8E3
 l$8Mct$@I
+l$8ff
 l$<H;
 l$@E3
 l$@H;
 l$H9C
 l$HE3
+l$HH+
 l$PA_A^A]A\_^
 l$PD9c`
 l$PHc
@@ -19797,15 +19823,12 @@ l$`9C
 l$`A9~
 l$`H;
 l$`L+
-l$`L;
 l$hE3
-l$hH+
-l$hI9E
 l$l#l^lUlbljl
-l$pA9
 l$pA96
 l$pD;
 l$pJ9l
+l$ptUH
 l$xE3
 l&l'l(l,l.l3l5l6l:l;l?lJlKlMlOlRlTlYl[l\lklmloltlvlxlyl{l
 l(m(n(
@@ -19813,6 +19836,7 @@ l)m+n
 l)m[t
 l*A+s*
 l2mJn
+l2|X/gGe
 l3lYl\l
 l4lkp*r6r;rGrYr[r
 l5l6l:l
@@ -20046,6 +20070,7 @@ lookup_error(errors) -> handler
 lost builtins module
 lost sys.breakpointhook
 lost sys.displayhook
+lost sys.flags
 lost sys.stderr
 lost sys.stdout
 lower
@@ -20056,7 +20081,7 @@ lpAttributeList
 lqlolil
 lrl~ltl
 lseek
-lseek($module, fd, position, how, /)
+lseek($module, fd, position, whence, /)
 lshift
 lshift($module, a, b, /)
 lstat
@@ -20124,7 +20149,6 @@ mS.Xk@c
 mTh8|Mv
 mXDcqp
 mXmbmmmom
-mZ-Q"0z
 mZITUOcE
 m[nmo
 m\[+}
@@ -20805,7 +20829,6 @@ oVqVrV
 oW_Wh
 o_SLyS
 o_p_=;}
-o`0&I
 o`j8M1q`A
 oaoko}ogo
 object
@@ -20844,6 +20867,7 @@ object_pairs_hook
 objects and the copy of the original bytearray object.
 objects and the original bytes object.
 objects support decompress() and flush().
+objects with the same name as a built-in value, but in
 objects.
 oboOo
 ocowojo{o
@@ -21313,6 +21337,7 @@ preinitialization config is NULL
 preinitialized
 preinitializing
 pressed key was a special function key, this will return '\000' or
+previous stream position.
 prime number giving the modulus on which the hash function is based
 print
 print($module, /, *args, sep=' ', end='\n', file=None, flush=False)
@@ -21354,6 +21379,7 @@ property of %R object has no setter
 property of a heap is that a[0] is always its smallest element.
 property(fget=None, fset=None, fdel=None, doc=None)
 protection bits
+proto
 protocol
 protocol argument is needed.  Bytes past the pickled object's
 protocol is 4. It was introduced in Python 3.4, and is incompatible
@@ -21461,6 +21487,7 @@ qeqUq
 qfqbqLqVqlq
 qjwjm
 qkyH]
+qky}*
 qlnlol#WqInKtl}
 qpppp
 qr>Fnrmr
@@ -21691,7 +21718,6 @@ rel_list
 rel_tol
 related to conversion from str or comparing to str.
 related to conversion problems.
-relative to the beginning of the file.
 relative, it will be resolved against this directory. This argument
 release
 release unlocked lock
@@ -21741,7 +21767,7 @@ replace bytes is too long
 replace it by something else at a lower level, and the rule becomes
 replace string is too long
 replace($module, /, src, dst, *, src_dir_fd=None, dst_dir_fd=None)
-replace($self, /, *, co_argcount=-1, co_posonlyargcount=-1,
+replace($self, /, **changes)
 replace($self, old, new, count=-1, /)
 replace_errors
 replaced.
@@ -22052,7 +22078,7 @@ s<^P)8i
 s@9{(
 sAJbKbxBLbMbNbWJ8XeYcOB
 sCNqp6'
-sDA9uL~
+sD9uL~
 sG'L9
 sH'=GU,I"8Jd
 sH9{@~
@@ -22078,7 +22104,6 @@ s[R[89+Tl[
 s\v<h\D;L
 s]#7m
 s]uF~
-s^d2"
 s_gNBZ
 safe_path
 same rate the first heap is melting.  When the first heap completely
@@ -22128,7 +22153,8 @@ seed([n]) -> None.
 seed_bits
 seek of closed file
 seek out of range
-seek($self, cookie, whence=0, /)
+seek($self, cookie, whence=os.SEEK_SET, /)
+seek($self, offset, whence=os.SEEK_SET, /)
 seek($self, pos, whence=0, /)
 seek($self, target, whence=0, /)
 seekable
@@ -22357,6 +22383,7 @@ sort_keys
 sorted
 sorted($module, iterable, /, *, key=None, reverse=False)
 source
+source code cannot contain null bytes
 source code string cannot contain null bytes
 source not available through get_data()
 source, destination, or count out of range
@@ -22689,7 +22716,6 @@ surrogates not allowed
 swapcase
 swapcase($self, /)
 switch interval must be strictly positive
-sx9kp
 sy#nns
 symbolic links encountered in the path.
 symbols
@@ -22747,12 +22773,11 @@ s}r}&w
 t	H)3
 t	H)7
 t	H9>
+t	L)?
 t	M9>
-t	f9)
-t	f91
 t	jI&
 t 9+t7
-t D8;|
+t D8+|
 t t!t#t$t't)t+t-t/t1t2t7t8t9t:t;t=t>t?t@tBtCtDtEtFtGtHtItJtKtLtMt
 t!HcA H
 t!fA9
@@ -22761,14 +22786,14 @@ t!t-t1t$t#t
 t!u[u_u
 t"!!"!#!7!
 t"H9K
-t#L9P
+t#D9k
 t$ D;
 t$ E3
 t$ E;D$
 t$ H+
 t$ Hc
 t$ I+
-t$ L#
+t$ M#
 t$ UWATAUAVH
 t$ UWATAVAWH
 t$ UWAVH
@@ -22794,7 +22819,6 @@ t$8I9F
 t$8I;
 t$@8w,t
 t$@A_A^A]A\
-t$@E3
 t$@H;
 t$@L;
 t$@M;
@@ -22810,8 +22834,7 @@ t$LcC$H
 t$P9]
 t$P9_
 t$PD+p
-t$PH9
-t$PH9H0u,H
+t$PL9t$X
 t$TH+
 t$`D8
 t$`E3
@@ -22824,6 +22847,7 @@ t$`M;
 t$hE3
 t$hH;
 t$hI+
+t$pH;
 t$pHcs
 t$pM#
 t$t&t(t)t*t+t,t-t.t/t0t1t9t@tCtDtFtGtKtMtQtRtWt]tbtftgthtktmtntqtrt
@@ -22831,14 +22855,13 @@ t$t1t9tSt@tCtMtRt]tqt
 t$u$v$
 t$xHcs
 t%H;Y
-t%HcS
+t&H9}
 t&t(t%u&ukuju
 t&vaw
 t'9|$`~
 t'H9X
 t'H9_
 t'I9Z
-t'fD9(t
 t(9n 
 t(H;s
 t(HcO
@@ -22862,9 +22885,11 @@ t/L9{
 t/uoulu
 t/v2Z%
 t/y#I
+t0M9i
 t0u0v0
 t1H+_
 t1H9s
+t2HcS
 t2JT.
 t3u3v3
 t4*V-
@@ -22872,14 +22897,15 @@ t5H!C
 t5H98@
 t5H;_
 t5L9m
+t5L9y
 t6<:u2H
 t6I9Z
 t6L9i
 t6ZeXeYe@5_
+t7H9}`
 t7I9Z
 t7J7R
 t8H9i
-t8I9h
 t8L9i
 t99Lv
 t9D9@
@@ -22893,13 +22919,13 @@ t;0K~>P
 t;9] tD
 t;H9^`
 t;HcE
-t<L95x
 t=;w$t8H
 t=H;Y
 t=H;Y t@H;Y(
 t=I9l$
 t=I;E
 t=L9h
+t=M9p
 t=u=J
 t>88/RV0y5
 t>H9^`
@@ -22909,9 +22935,7 @@ t@H!\$8H
 tAD88t<H
 tAN[3nsP
 tAt\tWtUtYtwtmt~t
-tCH9_
 tD#3-:y
-tDO9T
 tDuqr
 tEHcK
 tFI+B
@@ -22931,11 +22955,13 @@ tK0T2s7{
 tK5:Z5'MPA?H}<Y
 tK=4j
 tLD9CL~8A
+tLH9_`
 tMLcw
 tNH;G
 tOHcK
 tOHcM
 tOIcN H
+tOL9a
 tOfA98tIH
 tO~1H
 tP/Re\
@@ -22943,44 +22969,41 @@ tPI9|
 tPMcN
 tQ9]oH
 tQIcO
-tQfA;
 tRHcH HcP
 tSHcS
 tSLcL$ J
 tT![\[][
 tTHcK$H
-tTfD9(t=H
 tU3F.>
 tU9>uQH
-tUH9}`
 tUL9}@t
 tUs]p]m
 tV#5p24DiD-@T^
 tVI9Z
 tWH9]
 tWL9s
+tWfD9
 tY&hNMia
 tYH9_
 tYMcN$H
-tZD9{
 tZH;~
 tZHcF<HcN@H3
 tZIcN(H
+t[L9y
 t[L9}@t
-t]H9i
 t]L9w
 t]Tv4
+t_L9(
 t_args
 t_result
 t`H;q
-t`I9U
 taIcO(H
 tab: complete
 table
 tabnanny
 tabsize
 tagname
-tags/v3.11.3
+tags/v3.11.6
 tail_module
 tail_name
 take it and then return True.
@@ -23009,6 +23032,7 @@ tb_next
 tbuTsbD
 tbvev&y*y,y+y
 tcI,\
+tcI9U
 tducu
 tee($module, iterable, n=2, /)
 tee(it, n=2) --> (it1, it2 , ... itn) splits one iterator into n
@@ -23035,6 +23059,7 @@ tfH9]`
 tg#2u
 tg@89tb
 tgL9@pua
+thI9h
 than the average case.  However, there are other representations which
 that EOF is imminent.
 that a cell and the two cells it tops contain three different items,
@@ -23072,6 +23097,7 @@ the first is the signal number, the second is the interrupted stack frame.
 the first two maketrans arguments must have equal length
 the format is not formally defined by a stable specification and
 the frame at the top of the call stack.
+the full name for the built-in function len().
 the function (or other callable) implementing a method
 the function must be called with the GIL held, but the GIL is released (the current Python thread state is NULL)
 the handle returned is the same key handle passed in to the function.
@@ -23161,7 +23187,6 @@ throw(type[,value[,tb]])
 throw(type[,value[,traceback]])
 throw(value)
 tiH)3
-tiI9S
 tia[VRNLJHGFEDDCCCC
 tilde
 time of last access
@@ -23205,7 +23230,6 @@ tjD9mP
 tjHcP I
 tkD9&tf
 tkinter
-tlH9G
 tm_gmtoff
 tm_hour
 tm_isdst
@@ -23352,6 +23376,7 @@ trying {}
 trying {}{}{}
 tssxAp/^0x
 tstate %p is still current
+tstate is freed
 tstate mix-up
 tstate_delete_common
 tu*1r2t
@@ -23371,10 +23396,12 @@ turtle
 turtledemo
 tvL9@
 tvL9@ up
+tvL9@(up
 tvL9@xup
-twI9h
+twL9a
 tyH9U
 tyH9]8
+tyM9h
 type %.100s doesn't define __round__ method
 type %.100s doesn't define __trunc__ method
 type %s has the Py_TPFLAGS_HAVE_GC flag but has no traverse function
@@ -23418,7 +23445,6 @@ types.SimpleNamespace
 types.UnionType
 typing
 tz -> convert to local time in new timezone tz
-tzfD9:
 tzinfo
 tzinfo argument must be None or of a tzinfo subclass, not type '%s'
 tzinfo.%s() must return None or timedelta, not '%.200s'
@@ -23445,7 +23471,6 @@ u&u,u<uDuMuJuIu[uFuZuiudugukumuxuvu
 u(A9X
 u(HcB
 u(L)s(H
-u(M90
 u(u)u0u1u2u3u
 u)L9m
 u*H97tH
@@ -23478,12 +23503,10 @@ u:H;q
 u;H9^8
 u;H;~
 u<H!uHH
-u=I)M
 u=XEe9"R#R
 u?D;6
 u@M9u
 uBH9B
-uBHcK8H;
 uCH9M
 uCvHvIvGv
 uDA=a5
@@ -23519,9 +23542,9 @@ uWsceO
 uX~<[<
 uYEyS]qV|lp|
 uYvY|Y
+u[H;{
 u[w[v[
 u\;;t$H
-u\H;s
 u\vdvYvPvSvWvZv
 u]9_8uJ
 u]L9w
@@ -23533,6 +23556,7 @@ ua3q#w
 uaL;c8uCH
 uawaI
 ubyte format requires 0 <= number <= 255
+ucH;s
 uespemosL
 uewexef
 ugL;c
@@ -23753,6 +23777,7 @@ ushort format requires 0 <= number <= %u
 using it will raise a NotImplementedError.
 using the Pythagorean theorem:  sqrt(x*x + y*y).
 usvsM
+utH9u(I
 utcfromtimestamp
 utcnow
 utcoffset
@@ -23818,6 +23843,7 @@ uwL;c
 uwyI{T{R{
 uyuwu
 uy}m~
+uzI9t
 u{Q7h>o
 u{v|v
 u}LcE\M
@@ -24032,6 +24058,7 @@ which are used to control compatibility support for pickle stream
 which can cause copy-on-write.
 which file descriptor should be queried.
 which is a 3-tuple. Platform is always 2. Product_type may be 1 for a
+which the built-in of that name is also needed.
 while
 while compressing data
 while copying compression object
@@ -24155,7 +24182,6 @@ x ATAVAWH
 x ATAVAWI
 x ATH
 x ATL
-x AUAV
 x AUAVAWH
 x AUAVAWL
 x AUAWL
@@ -24246,8 +24272,6 @@ x^Og'`
 x^`^y5:I
 x^ix^cuN
 x_H;s s=I
-x_^][
-x_^][H
 x_m18
 x`JU{`
 xc:PCFsT~c
@@ -24494,6 +24518,7 @@ z{|}~
 {...}
 {.{1{ {%{${3{>{
 {0.__class__.__name__}({0._mapping!r})
+{0H9{
 {1{+{-{/{2{8{
 {5{({6{P{z{
 {5|5M
@@ -24510,6 +24535,7 @@ z{|}~
 {@H9C
 {@I+?H
 {@M9't3I
+{@t:H
 {B'hp
 {C|CE
 {D9~L~
@@ -24583,18 +24609,18 @@ z{|}~
 |$(A\
 |$(A^
 |$(A_
+|$(D;d$P
 |$(E3
 |$(FMc
+|$(L)'u
 |$09C
 |$0@8|$e
-|$0A^A]
 |$0A_A]
+|$0A_A^
 |$0CtHH
-|$0D;d$P
 |$0H+
 |$0H;
 |$0L9K
-|$0L;
 |$0M;
 |$8A^A]A\
 |$8A_A]A\
@@ -24630,6 +24656,7 @@ z{|}~
 |$i:create
 |$p:zip
 |$pH+
+|$pI9G
 |$pI;
 |$pIc
 |$pL)+

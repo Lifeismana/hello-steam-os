@@ -1,10 +1,31 @@
-        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+                        version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
       </requestedPrivileges>
+      <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls"
+      <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
       <requestedPrivileges>
+      <supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>
+      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>
+      <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>
+      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/>
+    </application>
+    </dependentAssembly>
     </security>
+    </windowsSettings>
+    <application>
+    <dependentAssembly>
     <security>
+    <windowsSettings>
+  </application>
+  </compatibility>
+  </dependency>
   </trustInfo>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+  <dependency>
   <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+ H3E H3E
 !This program cannot be run in DOS mode.
 .00cfg
 .CRT$XCA
@@ -42,8 +63,8 @@
 0A_A^^
 8_^][
 </assembly>
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
 @.data
 @.reloc
 @.rsrc
@@ -78,6 +99,7 @@ IsProcessorFeaturePresent
 KERNEL32.dll
 L$ SUVWH
 LoadLibraryExW
+M H1E
 MessageBoxA
 MessageBoxW
 Original Exception: %s
@@ -125,6 +147,7 @@ Unable to load python3.dll!
 UnhandledExceptionFilter
 VAVAWH
 VCRUNTIME140.dll
+\$ UH
 _Py_Dealloc
 _Py_NoneStruct
 __C_specific_handler

@@ -57,6 +57,7 @@
 .reloc
 .text
 33333333H
+8[^_]A\A]A^A_
 < u,H
 =CCG u
 =CCG!
@@ -77,7 +78,6 @@ AWAVATWVSH
 AWAVAUATUWVSH
 AWAVAUATWVSH
 CCG!H
-Centt=
 D$ A	
 D$(H!
 D$(I!
@@ -88,9 +88,8 @@ D$8L!
 D$<E1
 D$@H9
 D$@L!
-GCC: (GNU) 11.2.0 20210728 (Fedora Cygwin 11.2.0-2)
-GCC: (GNU) 11.3.0
-Genut@
+GCC: (GNU) 11.3.0 20220421 (Fedora Cygwin 11.3.0-1)
+GCC: (GNU) 11.4.0
 GetModuleHandleA
 H;\$`
 KERNEL32.dll
@@ -100,7 +99,7 @@ L9l$
 P[A\A]
 P[^_]A\
 P^_A\
-RSDSJW
+RSDS{l
 RaiseException
 RtlCaptureContext
 RtlLookupFunctionEntry

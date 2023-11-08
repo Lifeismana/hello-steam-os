@@ -1,14 +1,20 @@
 	-f3F2
-	OPENSSL_init_crypto
-	OpenSSL_version
-	OpenSSL_version_num
+	EVP_aes_128_cbc
+	EVP_aes_128_ctr
+	EVP_aes_128_gcm
+	EVP_des_ede3_cbc
+	EVP_md5
+	EVP_sha1
+	EVP_sha256
+	EVP_sha384
+	EVP_sha512
 	fA;M
-           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
-           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
-           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
-           [-i identity_file] [-J [user@]host[:port]] [-L address]
-           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
-           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+           [-J destination] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-P tag] [-p port] [-Q query_option]
+           [-R address] [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
+           [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
+           destination [command [argument ...]]
         <requestedExecutionLevel level="asInvoker"/>
       !args                                  Execute local command
       -D[bind_address:]port                  Request dynamic forward
@@ -56,6 +62,7 @@
  [^A\A]A^
  [^_A\A]
  [^_A\A]A^A_
+ [^_A\A]H
  [^_]A\
  [^_]A\A]A^
  agent
@@ -78,10 +85,11 @@
 # KRL version %llu
 # Wildcard CA
 # hash SHA1:%s
+$	EVP_aes_192_cbc
 %*s %511s %511s
 %.100s: %.100s
 %.100s: unknown host. (%s)
-%.200s line %d: %smatched '%s "%.100s"' 
+%.200s line %d: %smatched '%s%s%.100s%s' 
 %.200s line %d: %smatched '%s'
 %.200s line %d: '%s' cannot be combined with other Match attributes
 %.200s line %d: Applying options for %.100s
@@ -161,7 +169,9 @@
 %s [mux]
 %s allowed port %d for forwarding to host %s port %d
 %s any
+%s bad size %lld
 %s command "%s" running as %s (flags 0x%x)
+%s does not contain expected string %s
 %s for: listen %d, connect %s:%d
 %s forwardings: %d local, %d remote
 %s host key fingerprint found in DNS.
@@ -185,24 +195,29 @@
 %s line %d: Unimplemented opcode %d
 %s line %d: Unsupported option "%s"
 %s line %d: bad port number in %s
+%s line %d: ignoring duplicate env name "%.64s"
 %s line %d: integer value %s.
+%s line %d: invalid arguments
 %s line %d: invalid quotes
 %s line %d: invalid time value.
+%s line %d: keyword %s "%s" argument must appear alone.
 %s line %d: keyword %s "none" argument must appear alone.
 %s line %d: keyword %s empty argument
 %s line %d: missing %s specification
+%s line %d: missing argument
 %s line %d: missing argument.
 %s line %d: missing host in %s
 %s line %d: missing time value.
 %s line %d: no argument after keyword "%s"
 %s line %d: removing environment %s
 %s line %d: too many %s entries.
-%s line %d: too many SetEnv.
 %s line %d: too many hostname suffixes.
 %s line %d: too many permitted CNAMEs.
-%s line %d: too many send env.
+%s line %d: unsupported argument "%s"
 %s line %d: unsupported option
 %s line %d: unsupported option "%s".
+%s line %d: value out of range.
+%s no
 %s overflow
 %s packet referred to nonexistent channel %d
 %s path is not absolute
@@ -211,6 +226,7 @@
 %s request failed
 %s request failed on channel %d
 %s waitpid: %s
+%s yes
 %s%02x
 %s%s%.*s
 %s%s%c%s
@@ -294,14 +310,11 @@
 )D$ H
 )L	u@
 )T$ L
-)T$@L
 )d$ H
+*	EVP_aes_192_ctr
 *MindTerm*
-*OSU_0*,OSU_1.0*,OSU_1.1*,OSU_1.2*,OSU_1.3*,OSU_1.4*,OSU_1.5alpha1*,OSU_1.5alpha2*,OSU_1.5alpha3*
-*SSH Compatible Server*
 *SSH_Version_Mapper*
 +-------A
-+T$PA
 ,.1>H
 ,;1+H
 ,t1E1
@@ -319,7 +332,6 @@
 .gnu_debuglink
 .idata
 .rdata
-.reloc
 .rsrc
 .ssh/config
 .ssh/id_dsa
@@ -332,6 +344,42 @@
 .text
 /bin/sh
 /bin:/usr/sbin:/sbin:/usr/bin
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/addrmatch.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/authfd.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/authfile.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/canohost.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/channels.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/clientloop.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/compat.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/dh.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/dispatch.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/dns.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/entropy.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/gss-genr.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/hostfile.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/kex.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/kexgen.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/kexgexc.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/krl.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/misc.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/monitor_fdpass.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/msg.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/mux.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/nchan.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/openbsd-compat/bsd-setres_id.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/packet.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/readconf.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/readpass.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/ssh-ed25519-sk.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/ssh-ed25519.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/ssh-pkcs11.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/ssh-sk-client.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/ssh.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/sshconnect.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/sshconnect2.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/ttymodes.c
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/ttymodes.h
+/cygdrive/d/a/scallywag/openssh/openssh-9.5p1-1.x86_64/src/openssh-portable/xmalloc.c
 /dev/null
 /dev/tty
 /etc/moduli
@@ -343,41 +391,6 @@
 /etc/ssh_host_xmss_key
 /etc/ssh_known_hosts
 /etc/ssh_known_hosts2
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/addrmatch.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/authfile.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/canohost.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/channels.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/clientloop.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/compat.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/dh.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/dispatch.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/dns.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/entropy.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/gss-genr.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/hostfile.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/kex.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/kexgen.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/kexgexc.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/krl.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/misc.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/monitor_fdpass.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/msg.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/mux.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/nchan.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/openbsd-compat/bsd-setres_id.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/packet.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/readconf.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/readpass.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/ssh-ed25519-sk.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/ssh-ed25519.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/ssh-pkcs11.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/ssh-sk-client.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/ssh.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/sshconnect.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/sshconnect2.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/ttymodes.c
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/ttymodes.h
-/home/corinna/tmp/openssh-9.0p1/openssh-9.0p1-1.x86_64/src/openssh-portable/xmalloc.c
 /proc/%ld/fd
 /tmp/.X11-unix/X%u
 /tmp/ssh-XXXXXXXXXXXX
@@ -390,6 +403,7 @@
 0123456789.
 0123456789abcdefABCDEF.:/
 01234567H
+0Hc5yI
 0[A\A]
 0[A]A^
 0[^A\
@@ -400,12 +414,10 @@
 0[^_]A\
 0[^_]A\A]A^
 0x%02x
-1.2.12
-1.2.18*,1.2.19*,1.2.20*,1.2.21*,1.2.22*
-1.3.2*
+1	EVP_aes_256_cbc
 1.7 SecureFX*
 1234567890.
-1246ab:c:e:fgi:kl:m:no:p:qstvxAB:CD:E:F:GI:J:KL:MNO:PQ:R:S:TVw:W:XYy
+1246ab:c:e:fgi:kl:m:no:p:qstvxAB:CD:E:F:GI:J:KL:MNO:P:Q:R:S:TVw:W:XYy
 127.0.0.1
 3.0 SecureCRT*
 3.0.*
@@ -428,19 +440,22 @@
 8[^_]A\A]A^A_
 8]tSL
 8none
+9	EVP_aes_256_ctr
 :/.-_
+;	EVP_aes_256_gcm
 ;"lY7
+;D$Lt
 ;D$htQ
+;H(u'
 <	t	< u
 < u&I
-<#t|E1
 <$/uoH
 <$u	@
-<-t"<+
+<-t%<+
 </assembly>
 </u!O
 <:tQ1
-<>=t[H
+<>=tcH
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ERROR>
 <INVALID>
@@ -458,10 +473,12 @@
 @.bss
 @.buildid5
 @.pdata
+@.reloc
 @.xdata
-@8t$W
+@?*#[]|''"\
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @A\A]A^
+@X[^_]A\A]H
 @[A\A]
 @[A\A]A^A_
 @[^A\
@@ -474,12 +491,11 @@
 @cert-authority
 @revoked
 @revokedH9
-A	D2B	D	
 A I9P
 A#B,A	B0H
 A4x{%`
-A9\$|w
 A;\$ r
+A;\$(
 ADDRESS
 AES_encrypt
 AES_set_encrypt_key
@@ -491,7 +507,6 @@ ATUWVS
 ATUWVSH
 ATVS1
 ATVSH
-ATVSL
 ATWVSH
 AUATH
 AUATSH
@@ -502,6 +517,7 @@ AUATVS
 AUATVSH
 AUATWVSH
 AUTHPRIV
+AUVSH
 AVAUATH
 AVAUATSH
 AVAUATUWVS
@@ -522,11 +538,11 @@ Add correct host key in %.100s to get rid of this message.
 Add key %s (%s) to agent?
 Adding new key
 Agent forwarding is disabled to avoid man-in-the-middle attacks.
-All keys used to sign KRL were revoked
 Allocated listen port %d
 Allocated port %u for mux remote forward to %s:%d
 Allocated port %u for remote forward to %s:%d
-Allow forward to %s:%u? 
+Allow forward to [%s]:%d? 
+Allow forward to path %s
 Allow shared connection to %s? 
 Are you sure you want to continue connecting (yes/no)? 
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
@@ -569,13 +585,15 @@ BN_value_one
 Bad dynamic forwarding specification '%s'
 Bad escape character '%s'.
 Bad forwarding close specification.
-Bad forwarding specification.
 Bad local forwarding specification '%s'
+Bad local forwarding specification.
 Bad owner or permissions on %s
 Bad packet length %u.
 Bad port '%s'
 Bad remote forwarding specification '%s'
+Bad remote forwarding specification.
 Bad remote protocol version identification: '%.100s'
+Bad server host key
 Bad stdio forwarding specification '%s'
 Bad tun device '%s'
 Badly encoded mechanism OID received
@@ -585,6 +603,7 @@ C 9F A
 C.UTF-8
 CA key
 CA/revocation marker, manual host list or wildcard host pattern found, skipping UserKnownHostsFile update
+CASignatureAlgorithms
 CKA_EC_POINT too small
 COMPUTERNAME=
 COMSPEC=
@@ -687,7 +706,7 @@ D$(I+E
 D$(I9
 D$(L9
 D$*Lc
-D$,A9D$
+D$,9G
 D$0E1
 D$0H9D$h
 D$8E1
@@ -697,15 +716,17 @@ D$8H9
 D$8I+
 D$8I+E
 D$8L9
-D$<E1
+D$@8D$?
 D$@E1
 D$@H;\$H
+D$@Hc
 D$@HcD$dA
 D$DM9
 D$H0L
 D$HE1
 D$HH+
 D$HH+E
+D$HHct$8L
 D$HI+
 D$Jf-
 D$L9D$$s4I
@@ -720,9 +741,9 @@ D$XD9
 D$XE1
 D$XH+
 D$XH+E
+D$XH9
 D$XH=
 D$XI+
-D$XI9
 D$\E1
 D$`?t
 D$`E1
@@ -732,15 +753,15 @@ D$hE1
 D$hH+
 D$hHc
 D$hI+E
+D$lE1
 D$pA9
 D$pD9
 D$pE1
 D$pt1
-D$wE1
+D$tE1
 D$xE1
 D$xH+
 D$xI+
-D$|E1
 D9h u
 D9|$H
 D;vXs
@@ -830,7 +851,7 @@ EC_KEY_get0_group
 EC_KEY_get0_private_key
 EC_KEY_get0_public_key
 EC_KEY_get_ex_data
-EC_KEY_get_key_method_data failed for ec
+EC_KEY_get_ex_data failed for ec
 EC_KEY_new
 EC_KEY_new failed
 EC_KEY_new_by_curve_name
@@ -863,10 +884,11 @@ ERR_peek_error
 ERR_peek_last_error
 EVP_CIPHER_CTX_ctrl
 EVP_CIPHER_CTX_free
+EVP_CIPHER_CTX_get_iv_length
+EVP_CIPHER_CTX_get_key_length
+EVP_CIPHER_CTX_get_updated_iv
 EVP_CIPHER_CTX_iv
-EVP_CIPHER_CTX_iv_length
 EVP_CIPHER_CTX_iv_noconst
-EVP_CIPHER_CTX_key_length
 EVP_CIPHER_CTX_new
 EVP_CIPHER_CTX_set_key_length
 EVP_Cipher
@@ -877,35 +899,20 @@ EVP_DigestInit_ex
 EVP_DigestUpdate
 EVP_MD_CTX_copy_ex
 EVP_MD_CTX_free
-EVP_MD_CTX_md
+EVP_MD_CTX_get0_md
 EVP_MD_CTX_new
-EVP_MD_block_size
-EVP_PKEY_base_id
+EVP_MD_get_block_size
 EVP_PKEY_free
 EVP_PKEY_get0_EC_KEY
 EVP_PKEY_get0_RSA
 EVP_PKEY_get1_DSA
 EVP_PKEY_get1_EC_KEY
 EVP_PKEY_get1_RSA
+EVP_PKEY_get_base_id
 EVP_PKEY_new
 EVP_PKEY_set1_DSA
 EVP_PKEY_set1_EC_KEY
 EVP_PKEY_set1_RSA
-EVP_aes_128_cbc
-EVP_aes_128_ctr
-EVP_aes_128_gcm
-EVP_aes_192_cbc
-EVP_aes_192_ctr
-EVP_aes_256_cbc
-EVP_aes_256_ctr
-EVP_aes_256_gcm
-EVP_chacha20
-EVP_des_ede3_cbc
-EVP_md5
-EVP_sha1
-EVP_sha256
-EVP_sha384
-EVP_sha512
 Enabling compression at level %d.
 Enter %.30s@%.128s's new password: 
 Enter %.30s@%.128s's old password: 
@@ -932,6 +939,7 @@ FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBEA63B139B22
 FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBEA63B139B22514A08798E3404DDEF9519B3CD3A431B302B0A6DF25F14374FE1356D6D51C245E485B576625E7EC6F44C42E9A637ED6B0BFF5CB6F406B7EDEE386BFB5A899FA5AE9F24117C4B1FE649286651ECE45B3DC2007CB8A163BF0598DA48361C55D39A69163FA8FD24CF5F83655D23DCA3AD961C62F356208552BB9ED529077096966D670C354E4ABC9804F1746C08CA18217C32905E462E36CE3BE39E772C180E86039B2783A2EC07A28FB5C55DF06F4C52C9DE2BCBF6955817183995497CEA956AE515D2261898FA051015728E5A8AAAC42DAD33170D04507A33A85521ABDF1CBA64ECFB850458DBEF0A8AEA71575D060C7DB3970F85A6E1E4C7ABF5AE8CDB0933D71E8C94E04A25619DCEE3D2261AD2EE6BF12FFA06D98A0864D87602733EC86A64521F2B18177B200CBBE117577A615D6C770988C0BAD946E208E24FA074E5AB3143DB5BFCE0FD108E4B82D120A92108011A723C12A787E6D788719A10BDBA5B2699C327186AF4E23C1A946834B6150BDA2583E9CA2AD44CE8DBBBC2DB04DE8EF92E8EFC141FBECAA6287C59474E6BC05D99B2964FA090C3A2233BA186515BE7ED1F612970CEE2D7AFB81BDD762170481CD0069127D5B05AA993B4EA988D8FDDC186FFB7DC90A6C08F4DF435C934063199FFFFFFFFFFFFFFFF
 FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBEA63B139B22514A08798E3404DDEF9519B3CD3A431B302B0A6DF25F14374FE1356D6D51C245E485B576625E7EC6F44C42E9A637ED6B0BFF5CB6F406B7EDEE386BFB5A899FA5AE9F24117C4B1FE649286651ECE45B3DC2007CB8A163BF0598DA48361C55D39A69163FA8FD24CF5F83655D23DCA3AD961C62F356208552BB9ED529077096966D670C354E4ABC9804F1746C08CA18217C32905E462E36CE3BE39E772C180E86039B2783A2EC07A28FB5C55DF06F4C52C9DE2BCBF6955817183995497CEA956AE515D2261898FA051015728E5A8AACAA68FFFFFFFFFFFFFFFF
 FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBEA63B139B22514A08798E3404DDEF9519B3CD3A431B302B0A6DF25F14374FE1356D6D51C245E485B576625E7EC6F44C42E9A637ED6B0BFF5CB6F406B7EDEE386BFB5A899FA5AE9F24117C4B1FE649286651ECE65381FFFFFFFFFFFFFFFF
+Failed to add terminating newline to %s: %s
 Failed to add the %s host key for IP address '%.128s' to the list of known hosts (%.500s).
 Failed to add the host to the list of known hosts (%.500s).
 Failed to allocate internet-domain X11 display socket.
@@ -947,26 +955,27 @@ Found %s in %s:%lu
 FuTTY*
 G H9E 
 G(9E(
-GCC: (GNU) 11.2.0
-GCC: (GNU) 11.2.0 20210728 (Fedora Cygwin 11.2.0-2)
+GCC: (GNU) 11.4.0
 GSS_C_NT_HOSTBASED_SERVICE
 GetModuleHandleA
 H)D$(
 H)t$(
+H+D$P
 H+D$pH;D$xtTA
 H9D$0}\H
 H9D$@
-H9D$`
+H9D$h
 H9D$hu
 H9D$p
 H9l$ th
 H9l$0
 H9n0w
-H9t$(u
+H9t$ u
 H9t$hu
 H9|$hu
 H;D$@
 H;D$P
+H;D$XD
 H;T$8
 H;sps[H
 H;t$(
@@ -989,7 +998,6 @@ Hc;Jc
 HcT$hH
 Hc\$,D
 Hc\$`H
-Hct$<1
 Host '%.200s' is known and matches the %s host %s.
 Host certificate authority does not match %s in %s:%lu
 Host directive not supported as a command-line option
@@ -1000,15 +1008,15 @@ Host key verification failed.
 HostKeyAlgorithms
 HostbasedAcceptedAlgorithms
 HostbasedAcceptedKeyTypes
+HostbasedAuthentication enabled but no local public host keys could be loaded.
 HostbasedKeyTypes
-I u A
 I9\$(
 I;4$r
 I;P I
 I;\$(r
 I;\$Hr
 I;l$p
-I;}(r
+I;u(r
 ICANON
 ICRNL
 IEXTEN
@@ -1065,11 +1073,14 @@ KERNEL32.dll
 KEX algorithms
 KEX hash failed
 KRL certificate section contains unparsed data
-KRL contains non-signature section after signature
+KRL contains unsupported critical certificate subsection "%s"
+KRL contains unsupported critical section "%s"
 KRL file has invalid magic number
-KRL not signed with any trusted key
+KRL has invalid certificate extension subsection
+KRL has invalid certificate extension subsection: trailing data
+KRL has invalid extension section
+KRL has invalid extension section: trailing data
 KRL section contains unparsed data
-KRL signed more than once with the same key
 KRL version %llu generated at %s%s%s
 KexAlgorithms
 Key is not a certificate
@@ -1083,28 +1094,32 @@ L$(E1
 L$(H+
 L$(H9
 L$+Ic
+L$0D9m
 L$0E1
 L$0H)
 L$8E1
+L$8Ic
 L$8L)
-L$<Ic
+L$<E1
 L$@E1
 L$HE1
 L$JfA
 L$PE1
+L$PH9
 L$PL9
 L$XE1
 L$\E1
 L$`E1
 L$dE1
 L$hE1
+L$hH9
 L$pE1
 L$qE1
 L$xE1
-L9d$`w
 L9l$Xu
 L9t$`u
 L9t$p
+L9|$Pw
 L;l$P
 LC_ALL
 LC_CTYPE
@@ -1161,8 +1176,6 @@ No more authentication methods to try.
 No more client hostkeys for hostbased authentication.
 No such uid %ld
 No such user %s
-No supported PK algorithms found
-No supported ciphers found
 No supported key exchange algorithms found
 No user exists for uid %lu
 No xauth program.
@@ -1173,6 +1186,7 @@ OLCUC
 ONLCR
 ONLRET
 ONOCR
+OPENSSL_init_crypto
 OPOST
 ORDER
 Offending %s key in %s:%lu
@@ -1190,9 +1204,11 @@ OpenSSH_6.5*,OpenSSH_6.6*
 OpenSSH_6.6.1*
 OpenSSH_7.0*,OpenSSH_7.1*,OpenSSH_7.2*,OpenSSH_7.3*,OpenSSH_7.5*,OpenSSH_7.6*,OpenSSH_7.7*
 OpenSSH_7.4*
-OpenSSH_9.0
-OpenSSH_9.0p1
+OpenSSH_9.5
+OpenSSH_9.5p1
 OpenSSL version mismatch. Built against %lx, you have %lx
+OpenSSL_version
+OpenSSL_version_num
 OxychromI
 PARENB
 PARMRK
@@ -1205,6 +1221,7 @@ PEM_write_bio_DSAPrivateKey
 PEM_write_bio_ECPrivateKey
 PEM_write_bio_PrivateKey
 PEM_write_bio_RSAPrivateKey
+PING!
 PKCS#11 login failed: PIN incorrect
 PKCS#11 login failed: PIN length out of range
 PKCS#11 login failed: PIN locked
@@ -1217,6 +1234,7 @@ P[A\A]
 P[A\A]A^A_
 P[^A\
 P[^A\A]A^
+P[^A]
 P[^_A\A]
 P[^_A\A]A^A_
 P[^_]A\
@@ -1273,6 +1291,7 @@ RSA_set_ex_data
 RSA_set_method
 RSA_sign
 RSA_size
+RSDSw
 Read from remote host %s: %s
 Reading configuration data %.200s
 Received SSH2_MSG_IGNORE
@@ -1291,7 +1310,6 @@ Received window adjust for non-open channel %d.
 Rejected X11 connection after ForwardX11Timeout expired
 Remote connections from %.200s:%d forwarded to local address %.200s:%d
 Remote protocol version %d.%d, remote software version %.100s
-Remote version "%.100s" uses unsafe RSA signature scheme; disabling use of RSA keys
 Remote: %.900s
 Removing
 Requesting %s %s
@@ -1313,6 +1331,8 @@ SSH protocol v.1 is no longer supported
 SSH-%d.%d-%.100s%s%s
 SSH-%d.%d-%[^
 SSH2_MSG_EXT_INFO received
+SSH2_MSG_EXT_INFO with too many entries, expected <=1024, received %u
+SSH2_MSG_EXT_INFO: %s value contains nul byte
 SSH2_MSG_KEXINIT received
 SSH2_MSG_KEXINIT sent
 SSH2_MSG_KEX_DH_GEX_GROUP received
@@ -1351,8 +1371,8 @@ Setting routing domain is not supported on this platform
 Setting tty modes failed: %.100s
 Shared connection to %s closed.
 Shell "%s" is not executable: %s
-Skipped %s key %s for RSA/MD5 server
 Skipping %s key %s - corresponding algo not in PubkeyAcceptedAlgorithms
+Skipping key %s
 Someone could be eavesdropping on you right now (man-in-the-middle attack)!
 Stale control socket %.100s, unlinking
 Stdio forwarding request failed: %s
@@ -1365,14 +1385,11 @@ T$(H+
 T$(H+U
 T$(H9
 T$(I+
-T$(I+U
 T$0E1
 T$8E1
 T$8H+
 T$8H+U
 T$@E1
-T$@H+T$HI
-T$@[^A\
 T$HE1
 T$HH+
 T$HI+U
@@ -1380,14 +1397,10 @@ T$PE1
 T$XE1
 T$XH+
 T$XH+U
-T$XH;T$P
 T$\E1
-T$`D9
 T$`E1
 T$`Lc
-T$`tQL
-T$dD9
-T$du7H
+T$`tKL
 T$hE1
 T$hH+
 T$hI+U
@@ -1412,7 +1425,7 @@ The server has updated its host keys.
 These changes were verified by the server's existing trusted key.
 This could mean that a stolen key is being used to
 This host key is known by the following other names/addresses:
-This key is not known by any other names
+This key is not known by any other names.
 This private key will be ignored.
 Timed out waiting for SSH identification string.
 Timeout, server %s not responding.
@@ -1475,6 +1488,7 @@ VSTART
 VSTOP
 VSUSP
 VWERASE
+VXH;T$X
 W;()f
 WARNING: %s key found for host %s
 WARNING: Server requests forwarding for unknown listen_port %d
@@ -1500,7 +1514,6 @@ Will attempt key: %s
 WinSCP_release_4*,WinSCP_release_5.0*,WinSCP_release_5.1,WinSCP_release_5.1.*,WinSCP_release_5.5,WinSCP_release_5.5.*,WinSCP_release_5.6,WinSCP_release_5.6.*,WinSCP_release_5.7,WinSCP_release_5.7.1,WinSCP_release_5.7.2,WinSCP_release_5.7.3,WinSCP_release_5.7.4
 Write failed flushing stderr buffer.
 X11 auth data does not match fake data.
-X11 closed %d i%d/o%d
 X11 connection from %.200s port %d
 X11 connection rejected because of wrong authentication.
 X11 connection requested.
@@ -1527,7 +1540,6 @@ X[^_A\A]A^
 X[^_]A\A]
 X[^_]A\A]A^A_
 YnFpW
-You may need to touch your authenticator.
 You must specify a subsystem to invoke.
 Ze2Zh@
 [%s %u]
@@ -1560,7 +1572,6 @@ Ze2Zh@
 \$HE1
 \$PE1
 \$hA9
-\$pE1
 \$pH;l$x
 \^c$j
 __addvdi3
@@ -1608,9 +1619,9 @@ accept-new
 accept: %.100s
 accept: %s
 accepted auth socket
-accepted x11 socket
 access
 add_certificate_file
+add_host_to_hostfile
 add_identity_file
 addargs
 addkeystoagent
@@ -1637,6 +1648,7 @@ agent contains no identities
 agent not present
 agent refused operation
 agent returned %zu keys
+agent-connection
 all expected forwarding replies received
 alloc
 alloc failed
@@ -1686,6 +1698,7 @@ autoask
 background process is %ld
 background ssh (when waiting for connections to terminate)
 backgrounding master process
+bad KRL magic header
 bad channel type %d
 bad kex length: %zu < %d
 bad length
@@ -1696,6 +1709,7 @@ bad ownership or modes for file %s
 bad passphrase given, try again...
 bad permissions
 bad port number in %s
+bad signature length: %lu
 bad size %d
 bad version
 banner exchange
@@ -1757,7 +1771,9 @@ canonicalizemaxdots
 canonicalizepermittedcnames
 casignaturealgorithms
 cctx == NULL
+cert extension %s critical %u len %zu
 cert out of array bounds
+cert_extension_subsection
 certificate
 certificate does not match key
 certificate file %s type %d
@@ -1769,8 +1785,8 @@ cfsetospeed
 cfsetospeed failed for %d
 chacha20-poly1305@openssh.com
 chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+chaff time expired
 challengeresponseauthentication
-chan %d: skip for %d more seconds
 chan_ibuf_empty
 chan_is_dead
 chan_obuf_empty
@@ -1825,6 +1841,7 @@ channel %d: chan_write_failed for ostate %d
 channel %d: cleanup remote forward for %s:%u
 channel %d: close() failed for extended fd %d [i%d o%d]: %.100s
 channel %d: close() failed for fd %d [i%d o%d]: %.100s
+channel %d: closing after %u seconds of inactivity
 channel %d: closing read-efd %d
 channel %d: closing write-efd %d
 channel %d: connected to %s port %d
@@ -1845,6 +1862,7 @@ channel %d: dynamic request: socks5 host %s port %u command %u
 channel %d: exit message, exitval %d
 channel %d: ext data for non open
 channel %d: filter stops
+channel %d: forcibly closing
 channel %d: free: %s, nchannels %u
 channel %d: garbage collecting
 channel %d: gc: notify user
@@ -1863,7 +1881,7 @@ channel %d: method SSH_SOCKS5_NOAUTH not found
 channel %d: must not sent eow on closed output
 channel %d: mux request: %s
 channel %d: mux_rcb failed
-channel %d: new [%s]
+channel %d: new %s [%s] (inactive timeout: %u)
 channel %d: no remote id
 channel %d: no remote_id
 channel %d: not open
@@ -1910,7 +1928,7 @@ channel %d: socks4a request
 channel %d: socks5 auth done
 channel %d: socks5 post auth
 channel %d: status: %s
-channel %d: stdio fwd to %s:%u
+channel %d: stdio fwd to %s:%d
 channel %d: stop listening
 channel %d: terminate request
 channel %d: unexpected fds r%d w%d e%d s%d
@@ -1944,9 +1962,11 @@ channel %u: down->up: type %u
 channel %u: unsupported type %u
 channel %u: up->down: type %u
 channel %u; send window-change
+channel type "%s" timeout %d seconds
 channel: expanding %d
 channel_activate for non-larval channel %d.
 channel_add_permission
+channel_add_timeout
 channel_after_poll
 channel_before_prepare_io_rdynamic
 channel_by_id
@@ -1957,6 +1977,7 @@ channel_cancel_lport_listener_tcpip
 channel_cancel_rport_listener_streamlocal
 channel_cancel_rport_listener_tcpip
 channel_check_window
+channel_clear_timeouts
 channel_connect_by_listen_address
 channel_connect_by_listen_path
 channel_connect_stdio_fwd
@@ -1966,6 +1987,7 @@ channel_connect_to_port
 channel_decode_socks4
 channel_decode_socks5
 channel_find_open
+channel_force_close
 channel_free
 channel_garbage_collect
 channel_handle_efd_read
@@ -2022,6 +2044,7 @@ channel_send_open
 channel_send_open: %d: bad id
 channel_send_window_changes
 channel_set_fds
+channel_set_xtype
 channel_setup_fwd_listener_streamlocal
 channel_setup_fwd_listener_tcpip
 channel_setup_remote_fwd_listener
@@ -2037,6 +2060,7 @@ check_follow_cname
 check_host_key
 check_key_in_hostkeys
 check_load
+check_match_ifaddrs
 check_old_keys_othernames
 checkhostip
 checking CA key
@@ -2062,6 +2086,7 @@ ciphers ctos
 ciphers stoc
 clear hostkey %d
 clearallforwardings
+clearing
 clearing registered forwarding for listen %d, connect %s:%d
 client
 client sent invalid protocol identifier "%.256s"
@@ -2070,7 +2095,7 @@ client-session
 client_check_window_change
 client_cleanup_stdio_fwd
 client_converse
-client_global_hostkeys_private_confirm
+client_global_hostkeys_prove_confirm
 client_input_channel_open
 client_input_channel_open: ctype %s rchan %d win %d max %d
 client_input_channel_req
@@ -2081,6 +2106,7 @@ client_input_global_request: rtype %s want_reply %d
 client_input_hostkeys
 client_loop
 client_register_global_confirm
+client_repledge
 client_request_agent
 client_request_forwarded_streamlocal
 client_request_forwarded_tcpip
@@ -2104,14 +2130,11 @@ cntrl
 command '%.100s' exited abnormally
 command returned status %d
 command-line
+commandline disabled
 communication with agent failed
 compat KEX proposal: %s
-compat cipher proposal: %s
-compat public key proposal: %s
 compat_banner
-compat_cipher_proposal
 compat_kex_proposal
-compat_pkalg_proposal
 compose
 compose %s
 compose end
@@ -2132,13 +2155,11 @@ connect
 connect %.100s port %u: %.100s
 connect %.100s: %.100s
 connect failed
+connect host %.100s ([%.100s]:%s) in progress, fd=%d
 connect to %.100s port %d failed: %s
 connect to address %s port %s: %s
 connect_local_xsocket_path
 connect_next
-connect_next: getnameinfo failed
-connect_next: host %.100s ([%.100s]:%s) in progress, fd=%d
-connect_next: host %.100s ([%.100s]:%s): %.100s
 connect_to %.100s port %d: failed.
 connect_to %.100s: unknown host (%s)
 connect_to_helper
@@ -2165,23 +2186,21 @@ crypto_sign_ed25519_open failed: %d
 ctx->nnew == 0
 curve25519-sha256
 curve25519-sha256@libssh.org
-cygcrypto-1.1.dll
+cygcrypto-3.dll
 cyggcc_s-seh-1.dll
 cyggssapi_krb5-2.dll
 cygwin1.dll
 cygwin_detach_dll
 cygwin_internal
 cygz.dll
-d$0A94$
 d$8E1
+d$8fD
 d$@E1
 d$HE1
-d$PE1
 d$XE1
 d$xE1
 d2i_ASN1_OCTET_STRING
 d2i_ASN1_OCTET_STRING failed
-d2i_ECDSA_SIG failed
 d2i_ECPKParameters
 d2i_ECPKParameters failed
 d2i_X509
@@ -2272,6 +2291,7 @@ elliptic curve does not match
 elliptic curve point is too large
 empty domain name
 empty entry in list "%.100s"
+enableescapecommandline
 enablesshkeysign
 encode
 encode attestation information
@@ -2279,11 +2299,13 @@ encode key
 enqueue
 enqueue packet: %u
 enqueue request
+enter
 entering
 entering for channel %d
 env var ${%s} has no value
 env_permitted
 environ
+environment size mismatch
 environment variable '%s' missing closing '}'
 eow@openssh.com
 error
@@ -2332,6 +2354,8 @@ exponent=
 export_dns_rr
 ext-info-c
 extended data
+extension %s critical %u len %zu
+extension_section
 extract_salt
 extract_salt: bad encoded salt length %u
 extract_salt: expected salt len %zd, got %d
@@ -2351,6 +2375,7 @@ false
 fatal
 fclose
 fcntl
+fcntl F_SETFD: %s
 fcntl(%d, F_GETFL): %s
 fcntl(%d, F_SETFL, O_NONBLOCK): %s
 fcntl(%d, F_SETFL, ~O_NONBLOCK): %s
@@ -2365,6 +2390,7 @@ fdopen
 fdopen: %s
 fflush
 fflush: %s
+fgetc
 fgets
 file changed while reading
 fileno
@@ -2374,7 +2400,6 @@ fingerprint CA key
 fingerprint failed
 fingerprint host key
 fingerprinthash
-first channel unpauses in %d seconds
 first_kex_follows %d 
 fishSwatH
 fopen
@@ -2418,6 +2443,7 @@ fputs
 freeaddrinfo
 freeifaddrs
 from %s to %s
+fseek
 fstat
 fstat %s: %s
 fwd_ident
@@ -2491,6 +2517,7 @@ gssapi-with-mic
 gssapiauthentication
 gssapidelegatecredentials
 h[A\A]A^
+h[^A\A]
 h[^A\A]A^A_
 h[^_A\A]A^
 h[^_]
@@ -2498,8 +2525,8 @@ h[^_]A\A]
 h[^_]A\A]A^A_
 h_errno
 has a different value
+hash: %s # %s
 hash: SHA256:%s
-hash: SHA256:%s # %s
 hashknownhosts
 have %d keys
 have matching best-preference key type %s, using HostkeyAlgorithms verbatim
@@ -2522,6 +2549,7 @@ hmac-sha2-512
 hmac-sha2-512-etm@openssh.com
 host "%s" addr "%s" too long (max %lu)
 host "%s" cname "%s" too long (max %lu)
+host %.100s ([%.100s]:%s): %.100s
 host %s not found in any suffix
 host key algorithms
 host key found in GlobalKnownHostsFile; disabling UpdateHostkeys
@@ -2573,8 +2601,10 @@ identityfile
 identityfile2
 ignore
 ignoreunknown
+ignoring %s agent key
 ignoring authenticator-hosted key %s as no SecurityKeyProvider has been specified
 ignoring authenticator-hosted key certificate %s as no SecurityKeyProvider has been specified
+ignoring bad CNAME "%s" for host "%s": %s
 ignoring certificate %s: not a user certificate
 ignoring duplicate key %s
 ignoring uninitialised token in provider %s slot %lu
@@ -2621,13 +2651,18 @@ input_userauth_service_accept
 input_userauth_success
 insane bitmap gap
 insufficient buffer space
+interface %s addr %s
+interface %s getnameinfo failed: %s
+interface %s: unsupported address family %d
 internal
 internal error
 internal error: askpass undefined
 internal error: buffer is read-only
 internal error: cannot send userauth none request
 internal error: channels_alloc %d too big
+internal error: fuzz %u%% %lldns > interval %lldns
 internal error: initial hostkey not recorded
+interval:
 invalid
 invalid argument
 invalid attribute length
@@ -2641,11 +2676,13 @@ invalid format
 invalid forwarding client %d
 invalid forwarding direction %d
 invalid forwarding type %u
+invalid hostname "%s"; will not record: %s
 invalid listen port
 invalid listen port %u
 invalid marker at %s:%lu
 invalid originator port
 invalid parameter
+invalid port 0x%x
 invalid public DH value (%d/%d)
 invalid public DH value: <= 1
 invalid public DH value: >= p-1
@@ -2692,6 +2729,7 @@ kex_buf2prop
 kex_choose_conf
 kex_derive_keys
 kex_exchange_identification
+kex_ext_info_check_ver
 kex_gen_client
 kex_gen_server
 kex_input_ext_info
@@ -2701,6 +2739,7 @@ kex_load_hostkey
 kex_names_cat
 kex_names_valid
 kex_prop2buf
+kex_proposal_populate_entries
 kex_protocol_error
 kex_send_ext_info
 kex_send_kexinit
@@ -2719,6 +2758,7 @@ key lacks certificate data
 key not found
 key type does not match
 key(s) for %s%s%s exist under other names; skipping UserKnownHostsFile update
+key-ca-sign
 key-cert
 key-plain
 key-sig
@@ -2734,12 +2774,13 @@ l$@E1
 l$HE1
 l$Lf.
 l$PE1
-l$hE1
+l$XE1
 l$yfD
-l$|f.
+labeled channel %d as %s (inactive timeout %u)
 languages ctos
 languages stoc
 last_gc->ref_count = %d
+lib_contains_symbol
 libcrypto error: %s
 link %.100s to %.100s: %s
 link mux listener %s => %s: %s
@@ -2763,6 +2804,7 @@ localcommand
 localforward
 localhost
 localhost:
+localnetwork
 localtime
 localtime_r
 localuser
@@ -2788,10 +2830,12 @@ master session id: %u
 master version %u
 match
 match %sfound
+match localnetwork: getifaddrs failed: %s
 match: %s pat %s compat 0x%08x
 match_cfg_line
 match_filter_denylist failed
 matched SSHFP type %d fptype %d
+matched interface %s: address %s in %s
 matching host key fingerprint found in DNS
 maybe_add_key_to_agent
 mbstowcs
@@ -2806,6 +2850,7 @@ memset
 message authentication code incorrect
 mismatching host key fingerprint found in DNS
 missing
+missing channel %d
 missing connect host
 missing end quote
 missing host in %s
@@ -2821,6 +2866,7 @@ mktemp_proto
 mktime
 mm_receive_fd
 mm_send_fd
+mmap %s: %s
 mnprstvz
 mode %d
 moduli:%d: could not parse generator value
@@ -2833,22 +2879,22 @@ moduli:%d: prime has wrong size: actual %d listed %d
 moduli:%d: truncated
 moduli:%d: type is not %d
 monotime_ts
-multiplex client
 multiplex uid mismatch: peer euid %u != uid %u
 multiplexing control connection
+munmap
 mux digest failed
 mux listener
 mux listener channel %d fd %d
-mux proxy
 mux-control
 mux-down-connect
+mux-proxy
 mux_client_forward
 mux_client_forwards
 mux_client_hello_exchange
 mux_client_proxy
 mux_client_read
-mux_client_read_packet
 mux_client_read_packet: %s
+mux_client_read_packet_timeout
 mux_client_request_alive
 mux_client_request_session
 mux_client_request_stdio_fwd
@@ -2890,6 +2936,7 @@ nistp256
 nistp384
 nistp521
 nl_langinfo
+no active channels
 no algorithms matched; accept original
 no authentication agent, not adding key
 no authentication context
@@ -2923,7 +2970,6 @@ no-more-sessions@openssh.com
 nohostauthenticationforlocalhost
 none,zlib@openssh.com
 none,zlib@openssh.com,zlib
-not a KRL
 not canonicalizing hostname "%s" (max dots %d)
 not installed: %s
 note_key
@@ -2935,6 +2981,7 @@ number is too large
 numberofpasswordprompts
 o2i_ECPublicKey
 o2i_ECPublicKey failed
+oD$ L
 oD$ f
 oD$0D
 oD$0H
@@ -2943,12 +2990,19 @@ oD$`f
 oL$0f
 oL$pI
 oT$@A
+oT$@f
 oT$Pf
 o\$ f
+o\$PL
 o\$`f
+obfuscate_keystroke_timing
+obscurekeystroketiming
 oclose
 od$0H
+od$`f
 od$pH
+ol$0H)
+ol$pI
 open %s: %s
 open a command line
 open confirmation
@@ -2965,13 +3019,12 @@ optind
 optreset
 order_hostkeyalgs
 original KEX proposal: %s
-original cipher proposal: %s
-original public key proposal: %s
 originalhost
 ossl_error
 out of memory
 out of sequence reply: my id %u theirs %u
 outgoing seqnr wraps around
+output buffer filling
 p[A\A]
 p[A\A]A^A_
 p[^A\
@@ -2984,6 +3037,7 @@ padding error: need %d block %d mod %d
 parent %p ptr %p idx %d
 parse
 parse %s
+parse KRL header
 parse KRL key
 parse PID
 parse adjust
@@ -3018,6 +3072,7 @@ passphrase is too short (minimum five characters)
 password
 passwordauthentication
 path "%s" too long for Unix domain socket
+path '%s'
 pathconf
 pclose
 peer %s KEXINIT proposal
@@ -3033,6 +3088,7 @@ permitremoteopen
 perror
 pid=%ld
 pin required
+ping@openssh.com
 pipe: %s
 pkcs11
 pkcs11_add_provider
@@ -3058,8 +3114,10 @@ pkcs11_rsa_start_wrapper
 pkcs11provider
 plain key provided where certificate required
 pledge(): %s
+pledge: agent
 pledge: exec
 pledge: filesystem
+pledge: fork
 pledge: id
 pledge: network
 pledge: proc
@@ -3072,6 +3130,7 @@ port listener
 port not forwarded
 port not found
 port not in permitted opens
+port-listener
 port_open_helper
 posix_memalign
 ppoll
@@ -3091,6 +3150,7 @@ process_config_line_depth
 process_escapes
 process_gssapi_token
 proposal mismatch: my %s peer %s
+proposal missing
 proposals match
 proposals_match
 protocol
@@ -3102,10 +3162,11 @@ provider "%s" refcount %d
 provider "%s" refcount %d valid %d
 provider "%s" slot %lu object %lu: attrib %lu = %d
 provider "%s" still valid
+provider %s is not a PKCS11 library
 provider %s returned no keys
 provider %s returned no slots
-provider %s slot %lu: label <%s> manufacturerID <%s> model <%s> serial <%s> flags 0x%lx
-provider %s: manufacturerID <%s> cryptokiVersion %d.%d libraryDescription <%s> libraryVersion %d.%d
+provider %s slot %lu: label <%.*s> manufacturerID <%.*s> model <%.*s> serial <%.*s> flags 0x%lx
+provider %s: manufacturerID <%.*s> cryptokiVersion %d.%d libraryDescription <%.*s> libraryVersion %d.%d
 provider already registered: %s
 proxied to downstream: %s
 proxy
@@ -3139,7 +3200,6 @@ raise
 rdynamic_connect_finish
 rdynamic_connect_prepare
 re-parsing configuration
-reH;B
 read body failed: %s
 read from master failed: %s
 read header failed: %s
@@ -3176,6 +3236,7 @@ rekey after %llu bytes, %u seconds
 rekeying %s, input %llu bytes %llu blocks, output %llu bytes %llu blocks
 rekeying in progress
 rekeying not supported by peer
+rekeying started
 rekeylimit
 rekeylimit %llu %d
 reliability
@@ -3208,6 +3269,7 @@ requested max size %d
 requested to askpass
 requested twice
 requesttty
+requiredrsasize
 reserve
 reserved %u 
 resolve_addr
@@ -3260,6 +3322,7 @@ send pty-req
 send setenv
 send shell
 send x11-req
+send_chaff
 send_error
 send_pubkey_test
 sendenv
@@ -3272,6 +3335,7 @@ sendmsg: expected sent 1 got %zd
 serial: %llu
 serial: %llu-%llu
 server
+server already sent hostkeys
 server gave bad signature for %s key %zu
 server gave unintelligible signature for %s key %zu
 server host key %s %s matches cached key
@@ -3296,6 +3360,7 @@ set key
 set socket %d IPV6_TCLASS 0x%02x
 set socket %d IP_TOS 0x%02x
 set_control_persist_exit_time
+set_next_interval
 set_nodelay
 set_nonblock
 set_nonblock(%d)
@@ -3315,8 +3380,8 @@ setsockopt IPV6_V6ONLY: %s
 setsockopt SO_KEEPALIVE: %.100s
 setsockopt SO_REUSEADDR fd %d: %s
 setsockopt TCP_NODELAY: %.100s
-setsockopt socket %d IPV6_TCLASS %d: %.100s:
-setsockopt socket %d IP_TOS %d: %s:
+setsockopt socket %d IPV6_TCLASS %d: %s
+setsockopt socket %d IP_TOS %d: %s
 setting to %d
 setting up multiplex master socket
 setup pkcs11 method failed
@@ -3333,6 +3398,7 @@ sign_and_send_pubkey
 signature algorithm not supported
 signing failed for %s "%s"%s
 signing using %s %s
+sigprocmask
 single_connection: closing X11 listener.
 sk-ecdsa-sha2-nistp256-cert-v01@openssh.com
 sk-ecdsa-sha2-nistp256@openssh.com
@@ -3394,6 +3460,7 @@ ssh_ed25519_sk_verify
 ssh_ed25519_verify
 ssh_fetch_identitylist
 ssh_get_authentication_socket
+ssh_get_authentication_socket_path
 ssh_gssapi_buildmic
 ssh_gssapi_error
 ssh_gssapi_init_ctx
@@ -3476,11 +3543,13 @@ sshpkt_vfatal
 sshsk_enroll
 sshsk_load_resident
 sshsk_sign
+start for host %.100s ([%.100s]:%s)
 start over, passed a different list %s
 start_compression_out
 start_helper
 started pid=%ld
 starting %s %s
+starting: interval ~%dms
 status confirm
 stdfd_devnull
 stdfd_devnull failed
@@ -3497,9 +3566,11 @@ stdio rpath wpath cpath unix inet dns proc exec tty
 stdio rpath wpath cpath unix inet dns proc tty
 stdio rpath wpath cpath unix inet dns recvfd sendfd proc exec id tty
 stdio unix inet dns proc tty
+stdio unix proc tty
 stdio-forward
 stop listen refused by user
 stop listening request failed: %s
+stopping: %s (%llu chaff packets sent)
 strcasecmp
 strcasestr
 strchr
@@ -3542,7 +3613,6 @@ syslogfacility %s
 system
 t"<@u
 t#H9p
-t$ E1
 t$ H)
 t$0E1
 t$0H)
@@ -3557,16 +3627,19 @@ t$h9t$lvD
 t$hE1
 t$pD9D$L
 t$xHc
-t%d %s%u i%u/%zu o%u/%zu e[%s]/%zu fd %d/%d/%d sock %d cc %d io 0x%02x/0x%02x
+t%d [%s] %s%u i%u/%zu o%u/%zu e[%s]/%zu fd %d/%d/%d sock %d cc %d io 0x%02x/0x%02x
 t&<ft"<
 t&D9@
-t'H;x
+t'D;@
+t+H9p
+t/D;H
 t/H;p
 t2L9p
 t>I;P
 t?LcD$(D;D$,u3L
-tGf;{
+tOf;^
 taI9P
+tagged
 tcH;A
 tcgetattr
 tcgetattr: %.100s
@@ -3581,11 +3654,13 @@ terminate connection (and any multiplexed sessions)
 terminate session
 termination refused by user
 termination request failed: %s
+te}qL
 thH;A
 this message
 thority
 throughput
 tilde_expand
+timegm
 timeout: %d ms remain after connect
 timeout_connect
 timingsafe_bcmp
@@ -3605,7 +3680,6 @@ towlower
 tpH;A
 trailing data in response
 tried to replace invalid arg %d >= %d
-try_identity
 trying %s hostfile "%s"
 trying hostkey %s %s using sigalg %s
 trying key type %s
@@ -3632,6 +3706,7 @@ unexpected bytes remain after decoding
 unexpected internal error
 unexpected response from master 0x%08x
 unix listener
+unix-listener
 unix:
 unix:%s
 unix_listener
@@ -3658,6 +3733,7 @@ unset
 unset_nonblock
 unsetenv
 unsupported KEX method %s
+unsupported KRL format version %u
 unsupported MAC %s
 unsupported algorithm and/or digest_type
 unsupported cipher %s
@@ -3673,7 +3749,7 @@ unsupported version: got %u, expected %u
 update_known_hosts
 updatehostkeys
 upper
-usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
 useprivilegedport
 user denied adding this key
 user local
@@ -3696,7 +3772,6 @@ using 4k bit group 16
 using 8k bit group 18
 using hostkeyalias: %s
 using private key "%s"%s for certificate
-uw<?~s
 vasprintf
 vdollar_percent_expand
 verify %s key %zu using sigalg %s
@@ -3726,7 +3801,8 @@ write packet: %s
 write: %.100s
 write: %s
 write_host_entry
-x11 listener
+x11-connection
+x11-listener
 x11-req
 x11_connect_display
 x11_create_display_inet
@@ -3754,7 +3830,6 @@ xcalloc: nmemb * size > SIZE_MAX
 xcalloc: out of memory (allocating %zu bytes)
 xcalloc: zero size
 xdigit
-xltzH
 xmalloc
 xmalloc: out of memory (allocating %zu bytes)
 xmalloc: zero size
@@ -3775,6 +3850,7 @@ zlib@openssh.com,zlib,none
 |$(fB
 |$,E8
 |$//I
+|$0D9/
 |$0E1
 |$0Mc
 |$8E1
@@ -3783,11 +3859,13 @@ zlib@openssh.com,zlib,none
 |$@E1
 |$HE1
 |$PE1
+|$XE1
 |$`E1
 |$`Hc
 |$hE1
 |$hHc
 |$pE1
+}	EVP_chacha20
 ~/.ssh
 ~/.ssh/known_hosts
 ~/.ssh/known_hosts2

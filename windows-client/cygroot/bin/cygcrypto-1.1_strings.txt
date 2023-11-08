@@ -315,6 +315,7 @@ $nf	_
 %aIwV
 %bw+s
 %d.%d.%d.%d
+%d.%d.%d.%d%n
 %d.%d.%d.%d/%d.%d.%d.%d
 %daE<<0
 %eyu~
@@ -530,7 +531,6 @@ $nf	_
 , status text: 
 , value=
 ,#,/,5,9,A,W,Y,i,w,
-,+D;l$<
 ,4$8_@
 ,7~5d
 ,9(}ZA
@@ -592,7 +592,6 @@ $nf	_
 .pp@0
 .r&I|C
 .rdata
-.reloc
 .rsrc
 .text
 .yAu[7
@@ -653,7 +652,6 @@ $nf	_
 0tsE1
 1!1'1-191C1E1K1]1a1g1m1s1
 1,)b^
-1.2.12
 11#?*0
 13L$01
 14 (default)
@@ -763,6 +761,7 @@ $nf	_
 3|$xD3l$|H
 3|rN>
 4)#bH
+4+D;t$<
 4.j."
 474E4U4W4c4i4m4
 4vLcr
@@ -869,7 +868,6 @@ $nf	_
 ;>4>se=
 ;?v6I
 ;D$$~M
-;D$Tu
 ;D$pt
 ;D$tu
 ;II9Irp
@@ -986,11 +984,13 @@ $nf	_
 ?~lLc
 @ ``@
 @!@%@+@1@?@C@E@]@a@g@m@
+@"7D	
 @#i4$N
 @.bss
 @.buildid5
 @.idata
 @.pdata
+@.reloc
 @.xdata
 @0H;t$x
 @0t$WH
@@ -2103,6 +2103,7 @@ CMS_DigestedData
 CMS_DigestedData_it
 CMS_EncapsulatedContentInfo
 CMS_EncryptedContentInfo
+CMS_EncryptedContentInfo_it
 CMS_EncryptedData
 CMS_EncryptedData_decrypt
 CMS_EncryptedData_encrypt
@@ -2487,18 +2488,18 @@ D"D$XE
 D#D$H
 D#D)D;D?DEDKDQDSDYDeDoD
 D#T$@9
-D$ 8	
 D$ 9C
 D$ 9E t\
+D$ ?	
 D$ A3H
 D$ E1
 D$ H1D$0H
 D$ H9
-D$ I	
 D$ I1
 D$ IcT$
 D$ M)
-D$ \	
+D$ P	
+D$ c	
 D$$#D$ H
 D$$A1
 D$$H)
@@ -2537,7 +2538,7 @@ D$0H9D$Ht
 D$0H=
 D$0Hc
 D$0Hc\$DH
-D$0I9D$8w
+D$0I9D$8
 D$0L1
 D$0Lc
 D$4A	
@@ -2571,7 +2572,7 @@ D$<;D$8|
 D$<D9
 D$<E9
 D$<HcD$<A
-D$<tO
+D$<tS
 D$? M
 D$@+D$XE1
 D$@9C
@@ -2630,7 +2631,6 @@ D$PM
 D$PfE
 D$T;D$ttZ
 D$TD1
-D$TD9
 D$THc
 D$XE1
 D$XH)
@@ -2654,6 +2654,7 @@ D$`Hc
 D$`L+D$`H
 D$`fD
 D$`fE
+D$dD9
 D$dL)
 D$hA)
 D$hC3
@@ -4088,8 +4089,7 @@ G0Tv~:
 G2xVo\?
 G:   
 GBd<}v
-GCC: (GNU) 11.2.0 20210728 (Fedora Cygwin 11.2.0-2)
-GCC: (GNU) 11.3.0
+GCC: (GNU) 11.4.0
 GENERALIZEDTIME
 GENERALSTRING
 GENERAL_NAME
@@ -4200,6 +4200,7 @@ H5gRR-
 H8L+Z E1
 H9B0t
 H9C0r
+H9C@wzH9CHrtH
 H9D$0u
 H9D$P
 H9S t
@@ -4289,6 +4290,7 @@ HcD$<I
 HcD$DL
 HcD$LI
 HcD$LL
+HcD$T
 HcD$TI
 HcD$\I
 HcD$dA
@@ -4653,9 +4655,9 @@ Lc\$dM
 Lcd$HE
 Lck M
 Lcl$L
-Lcl$tA
 Lct$<
 Lct$DL
+Lct$tA
 Lc{0E
 Lc|$4H
 Lj&&lZ66~A??
@@ -5220,7 +5222,7 @@ Od$$H
 Oh%u'
 Only Some Reasons
 OpenSSL 'dlfcn' shared library method
-OpenSSL 1.1.1q  5 Jul 2022
+OpenSSL 1.1.1w  11 Sep 2023
 OpenSSL CMAC method
 OpenSSL DH Method
 OpenSSL DSA method
@@ -7527,6 +7529,7 @@ Ze2Zh@
 \$8A1
 \$8E1
 \$8L1
+\$8[^
 \$8t$A
 \$<9T$(E
 \$<D1
@@ -7540,7 +7543,6 @@ Ze2Zh@
 \$@H)
 \$@H1
 \$@L9
-\$@McM
 \$@[^A\
 \$HA1
 \$HE1
@@ -7548,6 +7550,7 @@ Ze2Zh@
 \$HI1
 \$HuGH
 \$PA3
+\$PIcl$
 \$XD)
 \$XE1
 \$XH	
@@ -8117,6 +8120,7 @@ bn_cmp_words
 bn_compute_wNAF
 bn_copy_words
 bn_correct_top
+bn_correct_top_consttime
 bn_div_fixed_top
 bn_div_words
 bn_expand2
@@ -8200,7 +8204,7 @@ buffer too small
 buffer_ctrl
 build_chain
 buildingName
-built on: Wed Jul  6 19:14:39 2022 UTC
+built on: Tue Sep 12 17:35:54 2023 UTC
 builtin
 businessCategory
 bwrite_conv
@@ -8439,7 +8443,7 @@ common ok and cancel characters
 commonName
 comp_zlib_cleanup_int
 compatible
-compiler: gcc  -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4 -fdebug-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/build=/usr/src/debug/openssl-1.1.1q-1 -fdebug-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/src/openssl-1.1.1q=/usr/src/debug/openssl-1.1.1q-1 -DTERMIOS -DL_ENDIAN -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DRC4_ASM -DMD5_ASM -DAESNI_ASM -DVPAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DX25519_ASM -DPOLY1305_ASM -DZLIB -DNDEBUG -DDEVRANDOM="\"/dev/urandom\"" -DSYSTEM_CIPHERS_FILE="/etc/crypto-policies/back-ends/openssl.config"
+compiler: gcc  -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4 -fdebug-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/build=/usr/src/debug/openssl-1.1.1w-1 -fdebug-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/src/openssl-1.1.1w=/usr/src/debug/openssl-1.1.1w-1 -DTERMIOS -DL_ENDIAN -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DRC4_ASM -DMD5_ASM -DAESNI_ASM -DVPAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DX25519_ASM -DPOLY1305_ASM -DZLIB -DNDEBUG -DDEVRANDOM="\"/dev/urandom\"" -DSYSTEM_CIPHERS_FILE="/etc/crypto-policies/back-ends/openssl.config"
 compressed-data
 compressionAlgorithm
 compute_key
@@ -12754,6 +12758,7 @@ unsupported certificate purpose
 unsupported cipher
 unsupported cipher type
 unsupported compression algorithm
+unsupported content encryption algorithm
 unsupported content type
 unsupported drbg flags
 unsupported drbg type
@@ -13142,7 +13147,6 @@ zy:HO
 |$PD9
 |$PHc
 |$PfE
-|$XE1
 |$XH	
 |$XH!
 |$XH)
@@ -13174,7 +13178,7 @@ zy:HO
 |47?6
 |7 tt
 |InzT
-|QLca
+|TIc|$
 |c~=;F
 |hdX)
 |k	.T
