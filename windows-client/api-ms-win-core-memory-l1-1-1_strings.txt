@@ -1,0 +1,155 @@
+	microsoft1-0+
+!This program cannot be run in DOS mode.
+"Microsoft Time Source Master Clock0
+$Microsoft Root Certificate Authority
+$Microsoft Root Certificate Authority0
+$`2X`F
+)Microsoft Root Certificate Authority 20100
+)Microsoft Root Certificate Authority 20110
+*31595+04079350-16fa-4c60-b6bf-9d2b1cd059840
+*31642+49e8c3f3-2359-47f6-a3be-6c8c4751c4b60
+*?*kXIc
+.rdata
+.tq[m
+070403125309Z
+1(0&0
+1/0-0
+100701213655Z
+100831221932Z
+110708205909Z
+150604174245Z
+151028203146Z
+160330192423Z
+160503171325Z
+160614043259Z0#
+160904174245Z0
+170128203146Z0
+170630192423Z0
+170803171325Z0
+1=0x7{
+1Jv1=+r
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+200831222932Z0y1
+20160613165741Z
+20160614043305.528Z0
+20160614165741Z0w0=
+210403130309Z0w1
+250701214655Z0|1
+260708210909Z0~1
+2ReU6L,C
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+8http://www.microsoft.com/pki/certs/MicrosoftRootCert.crt0
+;|4Ys
+<http://www.microsoft.com/pki/certs/MicrosoftTimeStampPCA.crt0
+>http://www.microsoft.com/pki/certs/MicCodSigPCA_08-31-2010.crt0
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+?http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl0T
+@.rsrc
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+Chttp://crl.microsoft.com/pki/crl/products/MicrosoftTimeStampPCA.crl0X
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+CreateFileMappingFromApp
+CreateFileMappingNumaW
+CreateMemoryResourceNotification
+D=xz#
+E($+ 
+Ehttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_08-31-2010.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+FWdjI
+GetLargePageMinimum
+GetProcessWorkingSetSizeEx
+GetSystemFileCacheSize
+GetWriteWatch
+H0F0D
+H1LzaG}
+I0G0E
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+Kk;Tr
+L&*H$_Z
+L0J0H
+M0K0I
+MOPR1
+MOPR1'0%
+MOPR1301
+MapViewOfFileFromApp
+Microsoft Code Signing PCA
+Microsoft Code Signing PCA 2011
+Microsoft Code Signing PCA 20110
+Microsoft Code Signing PCA0
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1!0
+Microsoft Corporation1#0!
+Microsoft Corporation1&0$
+Microsoft Corporation1(0&
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp PCA0
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+N0L0J
+N=|)H
+O0M0K
+PADDINGXXPADDINGPADDINGXXPADDINGPADDINGX
+PrefetchVirtualMemory
+QEX82q'
+Qp$Jj
+QueryMemoryResourceNotification
+R0P0N
+RSDS-/
+Redmond1
+ResetWriteWatch
+Richw
+S0Q0O
+SetProcessWorkingSetSizeEx
+SetSystemFileCacheSize
+U0S0Q
+UnmapViewOfFileEx
+VirtualLock
+VirtualUnlock
+VxRa5
+Washington1
+WqVNHE
+XL(Qj
+X_$	<
+[a_aD
+`Ge`@N
+a740Q
+api-ms-win-core-memory-l1-1-1.dll
+api-ms-win-core-memory-l1-1-1.pdb
+d+$.\
+e_.,>
+f-GsV
+http://microsoft.com0
+kernel32.CreateFileMappingFromApp
+kernel32.CreateFileMappingNumaW
+kernel32.CreateMemoryResourceNotification
+kernel32.GetLargePageMinimum
+kernel32.GetProcessWorkingSetSizeEx
+kernel32.GetSystemFileCacheSize
+kernel32.GetWriteWatch
+kernel32.MapViewOfFileFromApp
+kernel32.PrefetchVirtualMemory
+kernel32.QueryMemoryResourceNotification
+kernel32.ResetWriteWatch
+kernel32.SetProcessWorkingSetSizeEx
+kernel32.SetSystemFileCacheSize
+kernel32.UnmapViewOfFileEx
+kernel32.VirtualLock
+kernel32.VirtualUnlock
+nCipher DSE ESN:7AFA-E41C-E1421%0#
+nCipher DSE ESN:B8EC-30A4-71441%0#
+nCipher NTS ESN:4DE9-0C5E-3E091+0)
+oK0D$"<
+rr=;R*
+r~akow
+w(K<t
+xQ2!X
+z.9Wv
+|hK,_
+}*U{LM

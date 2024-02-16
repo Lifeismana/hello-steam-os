@@ -1,0 +1,314 @@
+	PA}dY[!`m!
+	d:0"
+	microsoft1-0+
+!This program cannot be run in DOS mode.
+"Microsoft Time Source Master Clock0
+$Microsoft Root Certificate Authority
+$Microsoft Root Certificate Authority0
+$`2X`F
+)Microsoft Root Certificate Authority 20100
+)Microsoft Root Certificate Authority 20110
+*31595+04079350-16fa-4c60-b6bf-9d2b1cd059840
+*31642+49e8c3f3-2359-47f6-a3be-6c8c4751c4b60
+*?*kXIc
+.rdata
+.tq[m
+070403125309Z
+1(0&0
+1/0-0
+100701213655Z
+100831221932Z
+110708205909Z
+150604174245Z
+151028203146Z
+160330192130Z
+160330192424Z
+160614043319Z0#
+160904174245Z0
+170128203146Z0
+170630192130Z0
+170630192424Z0
+1Jv1=+r
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+200831222932Z0y1
+20160613165626Z
+20160614043321.138Z0
+20160614165626Z0w0=
+210403130309Z0w1
+250701214655Z0|1
+260708210909Z0~1
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+7~s!pZ
+8http://www.microsoft.com/pki/certs/MicrosoftRootCert.crt0
+<http://www.microsoft.com/pki/certs/MicrosoftTimeStampPCA.crt0
+<o,Zv
+>http://www.microsoft.com/pki/certs/MicCodSigPCA_08-31-2010.crt0
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+?http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl0T
+@.rsrc
+AccessCheck
+AccessCheckAndAuditAlarmW
+AccessCheckByType
+AccessCheckByTypeAndAuditAlarmW
+AccessCheckByTypeResultList
+AccessCheckByTypeResultListAndAuditAlarmByHandleW
+AccessCheckByTypeResultListAndAuditAlarmW
+AddAccessAllowedAce
+AddAccessAllowedAceEx
+AddAccessAllowedObjectAce
+AddAccessDeniedAce
+AddAccessDeniedAceEx
+AddAccessDeniedObjectAce
+AddAce
+AddAuditAccessAce
+AddAuditAccessAceEx
+AddAuditAccessObjectAce
+AddMandatoryAce
+AdjustTokenGroups
+AdjustTokenPrivileges
+AllocateAndInitializeSid
+AllocateLocallyUniqueId
+AreAllAccessesGranted
+AreAnyAccessesGranted
+AyQ8*	
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+CheckTokenMembership
+Chttp://crl.microsoft.com/pki/crl/products/MicrosoftTimeStampPCA.crl0X
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+ConvertToAutoInheritPrivateObjectSecurity
+CopySid
+CreatePrivateObjectSecurity
+CreatePrivateObjectSecurityEx
+CreatePrivateObjectSecurityWithMultipleInheritance
+CreateRestrictedToken
+CreateWellKnownSid
+D=xz#
+DeleteAce
+DestroyPrivateObjectSecurity
+DuplicateToken
+DuplicateTokenEx
+E($+ 
+Ehttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_08-31-2010.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+EqualDomainSid
+EqualPrefixSid
+EqualSid
+FindFirstFreeAce
+FreeSid
+GetAce
+GetAclInformation
+GetFileSecurityW
+GetKernelObjectSecurity
+GetLengthSid
+GetPrivateObjectSecurity
+GetSecurityDescriptorControl
+GetSecurityDescriptorDacl
+GetSecurityDescriptorGroup
+GetSecurityDescriptorLength
+GetSecurityDescriptorOwner
+GetSecurityDescriptorRMControl
+GetSecurityDescriptorSacl
+GetSidIdentifierAuthority
+GetSidLengthRequired
+GetSidSubAuthority
+GetSidSubAuthorityCount
+GetTokenInformation
+GetWindowsAccountDomainSid
+H0F0D
+I0G0E
+I>\Kv
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+ImpersonateAnonymousToken
+ImpersonateLoggedOnUser
+ImpersonateSelf
+InitializeAcl
+InitializeSecurityDescriptor
+InitializeSid
+IsTokenRestricted
+IsValidAcl
+IsValidRelativeSecurityDescriptor
+IsValidSecurityDescriptor
+IsValidSid
+IsWellKnownSid
+Kk;Tr
+L&*H$_Z
+L0J0H
+Lb]rJ
+M0K0I
+MOPR1
+MOPR1'0%
+MOPR1301
+MakeAbsoluteSD
+MakeAbsoluteSD2
+MakeSelfRelativeSD
+MapGenericMask
+Microsoft Code Signing PCA
+Microsoft Code Signing PCA 2011
+Microsoft Code Signing PCA 20110
+Microsoft Code Signing PCA0
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1!0
+Microsoft Corporation1#0!
+Microsoft Corporation1&0$
+Microsoft Corporation1(0&
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp PCA0
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+N0L0J
+N=|)H
+O0M0K
+ObjectCloseAuditAlarmW
+ObjectDeleteAuditAlarmW
+ObjectOpenAuditAlarmW
+ObjectPrivilegeAuditAlarmW
+PADDINGXXPADDINGPADDINGXXPADDINGPADDINGX
+PrivilegeCheck
+PrivilegedServiceAuditAlarmW
+QEX82q'
+QUL]s
+QuerySecurityAccessMask
+R0P0N
+Redmond1
+RevertToSelf
+Richw
+S0Q0O
+SetAclInformation
+SetFileSecurityW
+SetKernelObjectSecurity
+SetPrivateObjectSecurity
+SetPrivateObjectSecurityEx
+SetSecurityAccessMask
+SetSecurityDescriptorControl
+SetSecurityDescriptorDacl
+SetSecurityDescriptorGroup
+SetSecurityDescriptorOwner
+SetSecurityDescriptorRMControl
+SetSecurityDescriptorSacl
+SetTokenInformation
+U0S0Q
+Washington1
+WqVNHE
+X_$	<
+_Xt|,
+`Ge`@N
+a740Q
+advapi32.AccessCheck
+advapi32.AccessCheckAndAuditAlarmW
+advapi32.AccessCheckByType
+advapi32.AccessCheckByTypeAndAuditAlarmW
+advapi32.AccessCheckByTypeResultList
+advapi32.AccessCheckByTypeResultListAndAuditAlarmByHandleW
+advapi32.AccessCheckByTypeResultListAndAuditAlarmW
+advapi32.AddAccessAllowedAce
+advapi32.AddAccessAllowedAceEx
+advapi32.AddAccessAllowedObjectAce
+advapi32.AddAccessDeniedAce
+advapi32.AddAccessDeniedAceEx
+advapi32.AddAccessDeniedObjectAce
+advapi32.AddAce
+advapi32.AddAuditAccessAce
+advapi32.AddAuditAccessAceEx
+advapi32.AddAuditAccessObjectAce
+advapi32.AddMandatoryAce
+advapi32.AdjustTokenGroups
+advapi32.AdjustTokenPrivileges
+advapi32.AllocateAndInitializeSid
+advapi32.AllocateLocallyUniqueId
+advapi32.AreAllAccessesGranted
+advapi32.AreAnyAccessesGranted
+advapi32.CheckTokenMembership
+advapi32.ConvertToAutoInheritPrivateObjectSecurity
+advapi32.CopySid
+advapi32.CreatePrivateObjectSecurity
+advapi32.CreatePrivateObjectSecurityEx
+advapi32.CreatePrivateObjectSecurityWithMultipleInheritance
+advapi32.CreateRestrictedToken
+advapi32.CreateWellKnownSid
+advapi32.DeleteAce
+advapi32.DestroyPrivateObjectSecurity
+advapi32.DuplicateToken
+advapi32.DuplicateTokenEx
+advapi32.EqualDomainSid
+advapi32.EqualPrefixSid
+advapi32.EqualSid
+advapi32.FindFirstFreeAce
+advapi32.FreeSid
+advapi32.GetAce
+advapi32.GetAclInformation
+advapi32.GetFileSecurityW
+advapi32.GetKernelObjectSecurity
+advapi32.GetLengthSid
+advapi32.GetPrivateObjectSecurity
+advapi32.GetSecurityDescriptorControl
+advapi32.GetSecurityDescriptorDacl
+advapi32.GetSecurityDescriptorGroup
+advapi32.GetSecurityDescriptorLength
+advapi32.GetSecurityDescriptorOwner
+advapi32.GetSecurityDescriptorRMControl
+advapi32.GetSecurityDescriptorSacl
+advapi32.GetSidIdentifierAuthority
+advapi32.GetSidLengthRequired
+advapi32.GetSidSubAuthority
+advapi32.GetSidSubAuthorityCount
+advapi32.GetTokenInformation
+advapi32.GetWindowsAccountDomainSid
+advapi32.ImpersonateAnonymousToken
+advapi32.ImpersonateLoggedOnUser
+advapi32.ImpersonateSelf
+advapi32.InitializeAcl
+advapi32.InitializeSecurityDescriptor
+advapi32.InitializeSid
+advapi32.IsTokenRestricted
+advapi32.IsValidAcl
+advapi32.IsValidRelativeSecurityDescriptor
+advapi32.IsValidSecurityDescriptor
+advapi32.IsValidSid
+advapi32.IsWellKnownSid
+advapi32.MakeAbsoluteSD
+advapi32.MakeAbsoluteSD2
+advapi32.MakeSelfRelativeSD
+advapi32.MapGenericMask
+advapi32.ObjectCloseAuditAlarmW
+advapi32.ObjectDeleteAuditAlarmW
+advapi32.ObjectOpenAuditAlarmW
+advapi32.ObjectPrivilegeAuditAlarmW
+advapi32.PrivilegeCheck
+advapi32.PrivilegedServiceAuditAlarmW
+advapi32.QuerySecurityAccessMask
+advapi32.RevertToSelf
+advapi32.SetAclInformation
+advapi32.SetFileSecurityW
+advapi32.SetKernelObjectSecurity
+advapi32.SetPrivateObjectSecurity
+advapi32.SetPrivateObjectSecurityEx
+advapi32.SetSecurityAccessMask
+advapi32.SetSecurityDescriptorControl
+advapi32.SetSecurityDescriptorDacl
+advapi32.SetSecurityDescriptorGroup
+advapi32.SetSecurityDescriptorOwner
+advapi32.SetSecurityDescriptorRMControl
+advapi32.SetSecurityDescriptorSacl
+advapi32.SetTokenInformation
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.pdb
+c0\AoW[,9
+eI1PF
+e_.,>
+http://microsoft.com0
+iVuTso6H+Y
+nCipher DSE ESN:5847-F761-4F701%0#
+nCipher DSE ESN:98FD-C61E-E6411%0#
+nCipher NTS ESN:4DE9-0C5E-3E091+0)
+oK0D$"<
+r~akow
+z.9Wv
+|hK,_
+}*U{LM

@@ -1,0 +1,281 @@
+	microsoft1-0+
+!This program cannot be run in DOS mode.
+"Microsoft Time Source Master Clock0
+$Microsoft Root Certificate Authority
+$Microsoft Root Certificate Authority0
+$`2X`F
+)Microsoft Root Certificate Authority 20100
+)Microsoft Root Certificate Authority 20110
+*31595+04079350-16fa-4c60-b6bf-9d2b1cd059840
+*31642+49e8c3f3-2359-47f6-a3be-6c8c4751c4b60
+*?*kXIc
+*q1MEe
+.:	HKY
+.rdata
+.tq[m
+070403125309Z
+1(0&0
+1,0*0
+100701213655Z
+100831221932Z
+110708205909Z
+150604174245Z
+151028203146Z
+160427170619Z
+160503171325Z
+160614043331Z0#
+160904174245Z0
+170128203146Z0
+170727170619Z0
+170803171325Z0
+1Jv1=+r
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+200831222932Z0y1
+20160614002501Z
+20160614043332.007Z0
+20160615002501Z0t0:
+210403130309Z0w1
+250701214655Z0|1
+260708210909Z0~1
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+8http://www.microsoft.com/pki/certs/MicrosoftRootCert.crt0
+<http://www.microsoft.com/pki/certs/MicrosoftTimeStampPCA.crt0
+>http://www.microsoft.com/pki/certs/MicCodSigPCA_08-31-2010.crt0
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+?http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl0T
+@.rsrc
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+CLSIDFromProgID
+CLSIDFromString
+Chttp://crl.microsoft.com/pki/crl/products/MicrosoftTimeStampPCA.crl0X
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+CoAddRefServerProcess
+CoAllowUnmarshalerCLSID
+CoCancelCall
+CoCopyProxy
+CoCreateFreeThreadedMarshaler
+CoCreateGuid
+CoCreateInstance
+CoCreateInstanceEx
+CoCreateInstanceFromApp
+CoDecodeProxy
+CoDecrementMTAUsage
+CoDisableCallCancellation
+CoDisconnectContext
+CoDisconnectObject
+CoEnableCallCancellation
+CoFreeUnusedLibraries
+CoFreeUnusedLibrariesEx
+CoGetApartmentType
+CoGetCallContext
+CoGetCallerTID
+CoGetCancelObject
+CoGetClassObject
+CoGetContextToken
+CoGetCurrentLogicalThreadId
+CoGetCurrentProcess
+CoGetDefaultContext
+CoGetInterfaceAndReleaseStream
+CoGetMalloc
+CoGetMarshalSizeMax
+CoGetObjectContext
+CoGetPSClsid
+CoGetStandardMarshal
+CoGetStdMarshalEx
+CoGetTreatAsClass
+CoImpersonateClient
+CoIncrementMTAUsage
+CoInitializeEx
+CoInitializeSecurity
+CoInvalidateRemoteMachineBindings
+CoIsHandlerConnected
+CoLockObjectExternal
+CoMarshalHresult
+CoMarshalInterThreadInterfaceInStream
+CoMarshalInterface
+CoQueryAuthenticationServices
+CoQueryClientBlanket
+CoQueryProxyBlanket
+CoRegisterClassObject
+CoRegisterPSClsid
+CoRegisterSurrogate
+CoReleaseMarshalData
+CoReleaseServerProcess
+CoResumeClassObjects
+CoRevertToSelf
+CoRevokeClassObject
+CoSetCancelObject
+CoSetProxyBlanket
+CoSuspendClassObjects
+CoSwitchCallContext
+CoTaskMemAlloc
+CoTaskMemFree
+CoTaskMemRealloc
+CoTestCancel
+CoUninitialize
+CoUnmarshalHresult
+CoUnmarshalInterface
+CoWaitForMultipleHandles
+CoWaitForMultipleObjects
+CreateStreamOnHGlobal
+D=xz#
+E($+ 
+Ehttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_08-31-2010.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+FreePropVariantArray
+GetHGlobalFromStream
+H0F0D
+I0G0E
+IIDFromString
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+Kk;Tr
+L&*H$_Z
+L0J0H
+M0K0I
+MOPR1
+MOPR1'0%
+MOPR1301
+Microsoft Code Signing PCA
+Microsoft Code Signing PCA 2011
+Microsoft Code Signing PCA 20110
+Microsoft Code Signing PCA0
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1!0
+Microsoft Corporation1#0!
+Microsoft Corporation1&0$
+Microsoft Corporation1(0&
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp PCA0
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+N0L0J
+N=|)H
+O0M0K
+OB]WK
+PADDINGXXPADDINGPADDINGXXPADDINGPADDINGX
+ProgIDFromCLSID
+PropVariantClear
+PropVariantCopy
+QEX82q'
+R0P0N
+RSDSE
+Redmond1
+Richw
+S0Q0O
+StringFromCLSID
+StringFromGUID2
+StringFromIID
+U0S0Q
+VT[Ac
+VxRa5
+Washington1
+WqVNHE
+X_$	<
+_3G.A
+`Ge`@N
+a740Q
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.pdb
+e_.,>
+http://microsoft.com0
+kL*h~U
+ka|Qq
+n7]^][
+nCipher DSE ESN:31C5-30BA-7C911%0#
+nCipher DSE ESN:B8EC-30A4-71441%0#
+nCipher NTS ESN:57F6-C1E0-554C1+0)
+oK0D$"<
+ole32.CLSIDFromProgID
+ole32.CLSIDFromString
+ole32.CoAddRefServerProcess
+ole32.CoAllowUnmarshalerCLSID
+ole32.CoCancelCall
+ole32.CoCopyProxy
+ole32.CoCreateFreeThreadedMarshaler
+ole32.CoCreateGuid
+ole32.CoCreateInstance
+ole32.CoCreateInstanceEx
+ole32.CoCreateInstanceFromApp
+ole32.CoDecodeProxy
+ole32.CoDecrementMTAUsage
+ole32.CoDisableCallCancellation
+ole32.CoDisconnectContext
+ole32.CoDisconnectObject
+ole32.CoEnableCallCancellation
+ole32.CoFreeUnusedLibraries
+ole32.CoFreeUnusedLibrariesEx
+ole32.CoGetApartmentType
+ole32.CoGetCallContext
+ole32.CoGetCallerTID
+ole32.CoGetCancelObject
+ole32.CoGetClassObject
+ole32.CoGetContextToken
+ole32.CoGetCurrentLogicalThreadId
+ole32.CoGetCurrentProcess
+ole32.CoGetDefaultContext
+ole32.CoGetInterfaceAndReleaseStream
+ole32.CoGetMalloc
+ole32.CoGetMarshalSizeMax
+ole32.CoGetObjectContext
+ole32.CoGetPSClsid
+ole32.CoGetStandardMarshal
+ole32.CoGetStdMarshalEx
+ole32.CoGetTreatAsClass
+ole32.CoImpersonateClient
+ole32.CoIncrementMTAUsage
+ole32.CoInitializeEx
+ole32.CoInitializeSecurity
+ole32.CoInvalidateRemoteMachineBindings
+ole32.CoIsHandlerConnected
+ole32.CoLockObjectExternal
+ole32.CoMarshalHresult
+ole32.CoMarshalInterThreadInterfaceInStream
+ole32.CoMarshalInterface
+ole32.CoQueryAuthenticationServices
+ole32.CoQueryClientBlanket
+ole32.CoQueryProxyBlanket
+ole32.CoRegisterClassObject
+ole32.CoRegisterPSClsid
+ole32.CoRegisterSurrogate
+ole32.CoReleaseMarshalData
+ole32.CoReleaseServerProcess
+ole32.CoResumeClassObjects
+ole32.CoRevertToSelf
+ole32.CoRevokeClassObject
+ole32.CoSetCancelObject
+ole32.CoSetProxyBlanket
+ole32.CoSuspendClassObjects
+ole32.CoSwitchCallContext
+ole32.CoTaskMemAlloc
+ole32.CoTaskMemFree
+ole32.CoTaskMemRealloc
+ole32.CoTestCancel
+ole32.CoUninitialize
+ole32.CoUnmarshalHresult
+ole32.CoUnmarshalInterface
+ole32.CoWaitForMultipleHandles
+ole32.CoWaitForMultipleObjects
+ole32.CreateStreamOnHGlobal
+ole32.FreePropVariantArray
+ole32.GetHGlobalFromStream
+ole32.IIDFromString
+ole32.ProgIDFromCLSID
+ole32.PropVariantClear
+ole32.PropVariantCopy
+ole32.StringFromCLSID
+ole32.StringFromGUID2
+ole32.StringFromIID
+rl{P)
+r~akow
+w(K<t
+z.9Wv
+|@hE0ZD
+|hK,_
+}*U{LM
