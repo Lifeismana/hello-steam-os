@@ -1,109 +1,11 @@
-	Beaverton1#0!
-                        version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
-        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
-      </requestedPrivileges>
-      <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls"
-      <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
-      <requestedPrivileges>
-      <supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>
-      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>
-      <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>
-      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>
-      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/>
-    </application>
-    </dependentAssembly>
-    </security>
-    </windowsSettings>
-    <application>
-    <dependentAssembly>
-    <security>
-    <windowsSettings>
-  </application>
-  </compatibility>
-  </dependency>
-  </trustInfo>
-  <application xmlns="urn:schemas-microsoft-com:asm.v3">
-  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
-  <dependency>
-  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
- !C	}
- %41g
-!This program cannot be run in DOS mode.
-!hn7!
-$*TSm'6
-',=?k
-(f*^[0
-)v}Dn
-+M?*O
-+Xt@(
-,W5y+
 .edata
 .rdata
 .rdata$voltmd
 .rdata$zzzdbg
 .rsrc$01
 .rsrc$02
-/1(0&0$0"
-0w0c1
-0}0i1
-130801120000Z
-20231002151211Z
-210429000000Z
-220117000000Z
-220323000000Z
-220801000000Z
-230714000000Z
-231002151211Z0+
-250115235959Z0|1
-2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
-2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
-2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
-2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
-311109235959Z0b1
-341013235959Z0H1
-360428235959Z0i1
-370322235959Z0c1
-380115120000Z0b1
-4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-5FjiT
-5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
-6*f(_
-6I]Dc
-70503
-7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
-8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
-</assembly>
-<0:08
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
-=rIQU
->0<0:
->Mp$d
-?U!t]qZ
-@.rsrc
-@WhA6o
-BMI3Ls!
 D:\a\1\b\bin\amd64\python3.pdb
-DigiCert Assured ID Root CA0
-DigiCert Inc1
-DigiCert Timestamp 20230
-DigiCert Trusted Root G40
-DigiCert, Inc.1 0
-DigiCert, Inc.1;09
-DigiCert, Inc.1A0?
-G9+uJ
-H-^Eu
-I^0oH*pp
-Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
-J>@G_
-L?n(Zy&
-Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
-Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
-Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
-Oregon1
-PAq=?Mp#
-Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
+GCTL
 PyAIter_Check
 PyArg_Parse
 PyArg_ParseTuple
@@ -926,16 +828,7 @@ Py_UTF8Mode
 Py_VaBuildValue
 Py_Version
 Py_XNewRef
-Python Software Foundation0
-Python Software Foundation1#0!
-Pz}b!
-Q]BL-)F
 RSDSlC
-S0Q0O
-SA|X=G
-Y9"SD
-[K]taM?
-]J<0"0i3
 _PyArg_ParseTupleAndKeywords_SizeT
 _PyArg_ParseTuple_SizeT
 _PyArg_Parse_SizeT
@@ -969,20 +862,6 @@ _Py_RefTotal
 _Py_SwappedOp
 _Py_TrueStruct
 _Py_VaBuildValue_SizeT
-a7hIw
-bH@sW0\
-bsX	V
-http://ocsp.digicert.com0A
-http://ocsp.digicert.com0C
-http://ocsp.digicert.com0X
-http://ocsp.digicert.com0\
-http://www.digicert.com/CPS0
-jj@0HK4
-k,L'A
-k0i0$
-kO>U\
-l2|X/gGe
-m0k0$
 python3.dll
 python311.PyAIter_Check
 python311.PyArg_Parse
@@ -1839,10 +1718,3 @@ python311._Py_RefTotal
 python311._Py_SwappedOp
 python311._Py_TrueStruct
 python311._Py_VaBuildValue_SizeT
-r;<SjB
-v=Y]Bv
-www.digicert.com1!0
-www.digicert.com1$0"
-{un'%
-|Lu?c
-~qj#k"

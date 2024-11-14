@@ -1,76 +1,16 @@
-																									
-	wOHc
-	wRHc
-                          0,      -0.2132,   2.1124,
-                          0,      -0.3441,   1.772,
-                          0,      -0.3918,   2.0172,
-                          1.402,  -0.7141,   0);
-                          1.596,  -0.813,    0);
-                          1.7927, -0.5329,   0);
-        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
-      </requestedPrivileges>
-      <requestedPrivileges>
-     #extension GL_OES_EGL_image_external : require
+     #extension GL_OES_EGL_image_external : require\n    precision mediump float;     uniform samplerExternalOES u_texture;     varying vec4 v_color;     varying vec2 v_texCoord;         void main()     {         gl_FragColor = texture2D(u_texture, v_texCoord);         gl_FragColor *= v_color;     } 
      precision mediump float;     uniform sampler2D u_texture;     varying vec4 v_color;     varying vec2 v_texCoord;         void main()     {         gl_FragColor = texture2D(u_texture, v_texCoord);         gl_FragColor *= v_color;     } 
      precision mediump float;     uniform sampler2D u_texture;     varying vec4 v_color;     varying vec2 v_texCoord;         void main()     {         vec4 abgr = texture2D(u_texture, v_texCoord);         gl_FragColor = abgr;         gl_FragColor.a = 1.0;         gl_FragColor *= v_color;     } 
      precision mediump float;     uniform sampler2D u_texture;     varying vec4 v_color;     varying vec2 v_texCoord;         void main()     {         vec4 abgr = texture2D(u_texture, v_texCoord);         gl_FragColor = abgr;         gl_FragColor.r = abgr.b;         gl_FragColor.b = abgr.r;         gl_FragColor *= v_color;     } 
      precision mediump float;     uniform sampler2D u_texture;     varying vec4 v_color;     varying vec2 v_texCoord;         void main()     {         vec4 abgr = texture2D(u_texture, v_texCoord);         gl_FragColor = abgr;         gl_FragColor.r = abgr.b;         gl_FragColor.b = abgr.r;         gl_FragColor.a = 1.0;         gl_FragColor *= v_color;     } 
      precision mediump float;     varying vec4 v_color;         void main()     {         gl_FragColor = v_color;     } 
      uniform mat4 u_projection;     attribute vec2 a_position;     attribute vec4 a_color;     attribute vec2 a_texCoord;     varying vec2 v_texCoord;     varying vec4 v_color;         void main()     {         v_texCoord = a_texCoord;         gl_Position = u_projection * vec4(a_position, 0.0, 1.0);        gl_PointSize = 1.0;         v_color = a_color;     } 
-    * %s (%s:%d)
-    * always ignore: %s.
-    * triggered %u time%s.
-    // Do the color transform 
-    // Get the U and V values 
-    // Get the Y value 
-    // Get the YUV values 
-    // That was easy. :) 
-    </security>
-    <security>
-    gl_FragColor *= v_color;
-    gl_FragColor = texture2D(tex0, v_texCoord) * v_color;
-    gl_FragColor = texture2D(tex0, v_texCoord);
-    gl_FragColor = v_color;
-    gl_FragColor = vec4(rgb, 1);
-    gl_FragColor = vec4(rgb, 1.0) * v_color;
-    gl_FragColor.a = 1.0;
-    gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
-    lowp vec3 rgb;
-    mediump vec3 yuv;
-    precision mediump float;     uniform samplerExternalOES u_texture;     varying vec4 v_color;     varying vec2 v_texCoord;         void main()     {         gl_FragColor = texture2D(u_texture, v_texCoord);         gl_FragColor *= v_color;     } 
-    rgb = matrix * yuv;
-    rgb.b = dot(yuv, Bcoeff);
-    rgb.g = dot(yuv, Gcoeff);
-    rgb.r = dot(yuv, Rcoeff);
-    tcoord *= UVCoordScale;
-    tcoord = v_texCoord;
-    v_color = gl_Color;
-    v_texCoord = vec2(gl_MultiTexCoord0);
-    vec2 tcoord;
-    vec3 yuv, rgb;
-    yuv += offset;
-    yuv.x = texture2D(tex0, tcoord).r;
-    yuv.x = texture2D(u_texture,   v_texCoord).r;
-    yuv.y = texture2D(tex1, tcoord).r;
-    yuv.y = texture2D(u_texture_u, v_texCoord).r;
-    yuv.yz = texture2D(tex1, tcoord).ar;
-    yuv.yz = texture2D(tex1, tcoord).ra;
-    yuv.yz = texture2D(tex1, tcoord).rg;
-    yuv.yz = texture2D(u_texture_u, v_texCoord).ar;
-    yuv.yz = texture2D(u_texture_u, v_texCoord).ra;
-    yuv.yz = texture2D(u_texture_u, v_texCoord).rg;
-    yuv.z = texture2D(tex2, tcoord).r;
-    yuv.z = texture2D(u_texture_v, v_texCoord).r;
-  '%s'
-  </trustInfo>
-  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
   Shanghai  
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- !"#$******************************************%*******************&'(*****)
  "$&(*,.02468:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtvxz|~
  #%u! (Bug? FIXME?)
  $(,048<@DHLPUY]aeimquy}
- %s file [%s].
+ %s file [%s].\n
  (THIS IS PROBABLY A BUG!)
  (file='%s' timestamp=%u windowid=%u)
  (timestamp=%u touchid=%I64d dtheta=%f ddist=%f x=%f y=%f numfingers=%u)
@@ -94,240 +34,30 @@
  (timestamp=%u windowid=%u which=%u x=%d y=%d direction=%s)
  (timestamp=%u)
  )19AJRZbjs{
- +L$l
- A\_^
- A]A\^][
- A]_[
- A^A\]
- A^A]_^]
- A^][
- A^^[
- A^_[
- A^_]
- A^_^
- A_A\]
- A_A\_^]
- A_A]A\_]
- A_A^A\
- A_A^A\_^
- A_A^A]
- A_A^A]A\_
- A_A^A]A\_^]
- A_A^A]^]
- A_A^A]_^
- A_A^]
- A_A^^
- A_A^_
- A_A^_^]
- A_^[
- A__^
- HcAhH
 !)@:F,@zj/@\G1@|
-!This program cannot be run in DOS mode.
 "3DUfw
-#D$,;C
-#define UVCoordScale 0.5
-#define UVCoordScale 1.0
-#define sampler2D sampler2DRect
-#define texture2D texture2DRect
-$$u,H
-$HcD$
-$IcA(D
-$IcB(D
-$IcG(D
+#define UVCoordScale 1.0\n
+#define sampler2D sampler2DRect\n#define texture2D texture2DRect\n#define UVCoordScale 0.5\n
 %d bpp BMP files not supported
 %d,%d,%d,%d
 %d-bpp BMP images are not supported
-%d.%d
-%s %s
-%s (%d)
 %s (call to %s failed, reporting an error of %s)
 %s (timestamp=%u windowid=%u code=%d data1=%p data2=%p)
 %s not available
-%s%s%s
 %s() DirectX error 0x%8.8lx
 %s, An unsupported SDL pixel format (0x%x) was specified
 %s, Convert Pixels failed: %s
 %s, ID3D11DeviceContext::OMGetRenderTargets failed
 %s, ID3D11View::GetResource failed
 %s, Unexpected feature level: %d
-%s,%s,%s
-%s: %s
 %s: %s (%d): %s %s
 %s: %s (%d): %s %s (0x%X)
 %s: Unknown DirectSound error: 0x%x
 %u-bit IEEE floating-point format not supported
 %u-bit PCM format not supported
-&9o4t	
-(+D$<
-(+D$@
-(A^_^[
-(A_A]A\[
-(A_A^A]A\^]
-(A_A^A]A\_^][
-(A_A^A]_
-(D$ E
-(D$ I
-(D$ f
-(D$03
-(D$0H
-(D$@D
-(D$PD
-(D$PH
-(D$pH
-(D$pL
-(E9S t'
-(L$ D
-(L$ E
-(L$ L
-(L$0D
-(L$@D
-(L$@H
-(L$@L
-(L$PD
-(L$`D
-(L$pD
-(T$ I
-(T$03
-(T$0D
-(T$0H+
-(T$0L
-(T$@D
-(T$PD
-(\$ D
-(\$ H
-(\$ I
-(\$0H
-(\$@v
-(\$pD
-(d$0A
-(d$0vGA
-(d$`H
-(l$ L
-(l$PD
-(l$`A
+'%s'\n    * %s (%s:%d)\n    * triggered %u time%s.\n    * always ignore: %s.\n
 (null)
-(t$ H
-(t$ vIA
-(t$03
-(t$0H
-(t$0L
-(t$@3
-(t$@D
-(t$@H
-(t$@Ic
-(t$@L
-(t$PD
-(t$PH
-(t$`H
-(t$`L
-(t$pD
-(t$pH
-(t$pI
-(t$pL
-(|$ 3
-(|$ H
-(|$ I
-(|$0A
-(|$0D
-(|$0H
-(|$0L9;u
-(|$0L9;u+
-(|$@D
-(|$@H
-(|$`D
-(|$pL
-)D$ A
-)D$ D
-)D$ H
-)D$ I
-)D$03
-)D$0A
-)D$0D
-)D$0H
-)D$0Mc
-)D$@D
-)D$@E
-)D$@H
-)D$PD
-)D$PI
-)D$PfA
-)D$`D
-)D$pD
-)D$pE
-)D$pI
-)L$ D
-)L$ E
-)L$ fD
-)L$08B
-)L$0D
-)L$0H
-)L$@D
-)L$PD
-)L$`D
-)L$pA
-)T$ D
-)T$0E
-)T$@D
-)T$PD
-)\$ A
-)\$@D
-)\$pE
-)d$0D
-)d$`D
-)d$pD
-)l$ D
-)l$ E
-)l$PD
-)l$`D
-)t$ A
-)t$ E
-)t$ H
-)t$ I
-)t$03
-)t$0D
-)t$0H
-)t$0L
-)t$@3
-)t$@H
-)t$@I
-)t$@M
-)t$PD
-)t$PH
-)t$PI
-)t$`L
-)t$pD
-)t$pH
-)t$pIc
-)t$pM
-)|$ A
-)|$ M
-)|$ McB
-)|$0H
-)|$@D
-)|$@fD
-)|$PA
-)|$PE
-)|$`D
-)|$`E
-)|$`f
-)|$pD
-********
-*********
-***********
-*******************
-****************************************************************************
-+D$HL
-,88L(
--NV12t
--NV12t%
--NV12tt
--NV21
--NV21t
--NV21t,-
--NV21t;-
--NV21tW-
--NV21t_-
+.bss
 .data
 .edata
 .idata$2
@@ -341,12 +71,8 @@ $IcG(D
 .rdata$zzzdbg
 .rsrc$01
 .rsrc$02
-.text
 .text$mn
 .xdata
-// RGB coefficients 
-// YUV offset 
-/H;{`u
 000000000000
 00000000000000000000000000007601,Virtual Joystick,a:b0,b:b1,back:b4,dpdown:b12,dpleft:b13,dpright:b14,dpup:b11,guide:b5,leftshoulder:b9,leftstick:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b10,rightstick:b8,righttrigger:a5,rightx:a2,righty:a3,start:b6,x:b2,y:b3,
 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZI64
@@ -660,263 +386,27 @@ $IcG(D
 03000000ff1100003133000000000000,SVEN X-PAD,a:b2,b:b3,back:b4,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,leftshoulder:b6,lefttrigger:b8,leftx:a0,lefty:a1,rightshoulder:b7,righttrigger:b9,rightx:a2,righty:a4,start:b5,x:b0,y:b1,
 03000000ff1100004133000000000000,USB Gamepad,a:b2,b:b1,back:b8,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,leftshoulder:b6,leftstick:b10,lefttrigger:b4,leftx:a0,lefty:a1,rightshoulder:b7,rightstick:b11,righttrigger:b5,rightx:a4,righty:a2,start:b9,x:b3,y:b0,
 03000000ffff00000000000000000000,GameStop Gamepad,a:b0,b:b1,back:b8,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,leftshoulder:b4,leftstick:b10,lefttrigger:b6,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b11,righttrigger:b7,rightx:a2,righty:a3,start:b9,x:b2,y:b3,
-0<wu	
-0<xuL
-0A\^]
-0A\_[
-0A^A]A\_^][
-0A^^]
-0A^_]
-0A^_^
-0A_A]A\_[
-0A_A]A\_^
-0A_A]_^]
-0A_A^A\_^
-0A_A^A]A\_
-0A_A^A]A\_^]
-0A_A^A]^]
-0A_A^A]_^][
-0A_A^_
-0A_A^_][
-0A__[
-0A__^
-0Hc\$`L
-0HcixD
-0fD9@
-0tAD;
 0x%.4X/0x%.4X=
 0x%.4x/0x%.4x
 0x%.4x/0x%.4x=
+0x%x
 3-bit IMA ADPCM currently not supported
 33333
 504944564944
 78696e70757403000000000000000000,Fightstick TES,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b10,leftshoulder:b4,lefttrigger:a2,rightshoulder:b5,righttrigger:a5,start:b7,x:b2,y:b3,
-80tDH
 8859-1
-8< t#
-8A^A\][
-8A^A]^[
-8A_A^A]A\_^][
-8D$ u
-8D$!u
-8D+:D
-8F+tb
-8L$Vu
-8\$ t
-8\$8u
-8fD+L$`Ic
 9333?
-97u:9w
-9;t	H
-9;tTH
-9Chu-H
-9Chu=H
-9D$Pt\H
-9E(u|
-9L$Pu
-9ZPu	
-9\$8~#
-9\$PvdH
-9k,t&H
-9o4u	9o8
-9p0t,I
-9s(u(9{,u#H
-9sTuDH
-9t$8w^
-9t,9+t
-9z\ul
-9{ ~&
-9{0~)ff
-9{h~&H
-9|$PvA
 :%.2x-%.2x-%.2x-%.2x-%.2x-%.2x
-:@:F<@Z
-;3t'H
-;3t,H
-;8u+A
-;;t;H
-;A(}+H
-;D$0u
-;D$8u
-;D$H}/D
-;Ehv-H
-;L$D}
-;S0|ND;C4|H
-;\$0r
-;\$8|
-;\$Pr
-;\$`r
-;datat]
-;i8}qH
-;iX}iH
-;l$`sIf
-;t$P}
-;|$ E
-;|$Pr
-< rl<
-<#t%<+t
-<$HcD$
-<$fff
-</assembly>
-<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <SDL_PREFERRED_LOCALES
-<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+=1cb
 =@zj?@L~@@\GA@l
-=IYUV
-=IYUVt
-=IYUVuUA
-=IYUVuW
-=NV12t
-=NV21
-=NV21t
-=NV21u
-=NV21u)A
-=OES 
-=OES wFt6=
-=OES wYt#=
-=RIFFuQA
-=UYVYuR
-=WAVE
-=YUY2
-=YV12t
-=YV12u
-=fmt u'9E
 =v<y5
->H;C(u8L
-?/lj,D
 ?IUUUUU
-?IYUVH
 ?UUUUUU
+?\rUUUUU
 ?cUUUUU
-@ %z8
-@.data
-@.reloc
-@.rsrc
-@80tP
-@83t&D
-@83t.
-@84+u
-@8;t$A
-@8k%u
-@8l$0
-@8n}t
-@8n~t'D
-@:3u-@
-@A]^[
-@A^A\_^]
-@A^A]A\_^][
-@A^A]_^]
-@A^][
-@A^_[
-@A^_]
-@A^_^
-@A^_^][
-@A_A\_][
-@A_A]A\_^
-@A_A]_^]
-@A_A^A\
-@A_A^A\_^
-@A_A^A]A\]
-@A_A^A]A\_^]
-@A_A^^
-@A_A^_
-@A_A^_^]
-@A__^][
-@CrDA
-@SATAUAVAWD
-@SATAUH
-@SATAWH
-@SAUH
-@SAVAWH
-@SAVH
-@SHcA
-@SLcA
-@SLcI
-@SLce
-@SUATAVH
-@SUAVH
-@SUVATAUAVAWH
-@SUVATAUH
-@SUVAWH
-@SUVH
-@SUVWATAUAVAW
-@SUVWATAUAVAWH
-@SUVWAVH
-@SUVWAWH
-@SUVWH
-@SUWATAWH
-@SUWH
-@SVAUAVAWH
-@SVAVH
-@SVAWH
-@SVWATAUH
-@SVWATH
-@SVWAVH
-@SVWH
-@SWATAUAWH
-@SWATAUH
-@SWATH
-@SWAUAVH
-@SWAUAWH
-@SWAVH
-@SWAWH
-@UATH
-@UAVAWH
-@UAVH
-@UAWH
-@USAVH
-@USVATAWH
-@USVAWH
-@USVWATAUAVAWH
-@USVWATAVAWH
-@USVWATAWH
-@USVWAVH
-@USVWH
-@USWATAWH
-@USWAVH
-@UVATAUAVAWH
-@UVATAUAWH
-@UVATAVAWH
-@UVATAVH
-@UVATH
-@UVAUAVAWH
-@UVAVH
-@UVAWH
-@UVWATAWH
-@UVWAUAVH
-@UVWH
-@UWATAUH
-@UWATAVAWH
-@UWAVH
-@VATAVH
-@VATH
-@VAWH
-@VWATAVAWH
-@VWATAWH
-@VWAWH
-@WATAUAVH
-@WAUAVAWH
-@WAVAWH
-@WAVH
 @result
-@u{IcQ
-@w_tTA
 A BMP image contains a pixel with a color out of the palette
-A$A_A^
-A$A_A^A]A\[
-A/Hck
-A/Lcc
-A8,7u
-A8Lcy
-A9Bxu
-A9B|t+H
-A9mLt
-A9n8t
-A9o @
-A9v ~$H
-A;v |
-A@@uEH
-A@H+A0
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 AC Back
 AC Bookmarks
@@ -927,87 +417,29 @@ AC Search
 AC Stop
 ADVAPI32.dll
 ASCII
-ATAUAVAWH
-ATAUAVH
-ATAUH
-ATAWH
-AUAVH
-AVAWH
-A]A\_]
-A]A\_^]
-A^A\^]
-A^A\^][
-A^A\_[]
-A^A]A\
-A^A]A\]
-A^A]A\^]
-A^A]A\_
-A^A]A\_^[
-A^A]A\_^[]
-A^A][]
-A^A]_
-A^A]_[
-A^A]_][
-A^A]_^[]
-A^_[]
-A^_^[
-A^_^[]
-A^_^][
-A_A\_[]
-A_A\_^
-A_A\_^[]
-A_A\_^]
-A_A]A\^]
-A_A]A\_]
-A_A]A\_^][
-A_A]]
-A_A]_]
-A_A]_^][
-A_A^A\
-A_A^A\]
-A_A^A\^]
-A_A^A\_]
-A_A^A\_^
-A_A^A\_^][
-A_A^A]
-A_A^A]A\
-A_A^A]A\]
-A_A^A]A\][
-A_A^A]A\^
-A_A^A]A\^]
-A_A^A]A\_
-A_A^A]A\_^]
-A_A^A]A\_^][
-A_A^A]^
-A_A^A]_[]
-A_A^A]_]
-A_A^A]_^[]
-A_A^A]_^][
-A_A^]
-A_A^^
-A_A^_
-A_^[]
 Abort
 AcquireSRWLockExclusive
 Acquiring DirectInput device
 AdjustWindowRectEx
 Again
-All SDL assertions between last init/quit:
+All SDL assertions between last init/quit:\n\n
 AltErase
 Always Ignore
 Amazon Luna Controller
 An unknown DisplayOrientation is being used
 An unknown error occured
+Aon9
 Aon9,
 Aon9D
 Aon9p
 Aon9|
-Ap98t
+App1
+App2
 Application
 Application didn't initialize properly, did you include SDL_main.h in the file containing your main() function?
 Application not compiled with SDL %d.%d
 Assertion Failed
-Assertion failure at %s (%s:%d), triggered %u %s:
+Assertion failure at %s (%s:%d), triggered %u %s:\r\n  '%s'
 AttachConsole
 Audio device already open
 Audio device has a callback, queueing not allowed
@@ -1025,9 +457,8 @@ AudioStop
 AuthenticAMD
 AvRevertMmThreadCharacteristics
 AvSetMmThreadCharacteristicsW
-B uLL
-B8t4 u
 BMP file with bad dimensions (%dx%d)
+B\fp\v0
 Backspace
 BeginScene()
 BitBlt
@@ -1036,18 +467,6 @@ Break
 BrightnessDown
 BrightnessUp
 Button name too large: %s
-C H9h(u$H
-C H9x(u
-C$A_A^A]A\[
-C0D9l
-C0HcC8
-C1<0t
-C4uIH
-C<u]H
-C@@uAH
-C@@uCH
-C@D8,
-C@HcCH
 CINTLGNT.IME
 CM_Get_Device_IDA
 CM_Get_Parent
@@ -1058,9 +477,8 @@ COLOR
 CONFLICTINGRENDERSTATE
 CONFLICTINGTEXTUREFILTER
 CONFLICTINGTEXTUREPALETTE
-CPHcCX
 CRITICAL
-C`D8,
+CTAB
 Calculator
 CallNextHookEx
 CallWindowProcW
@@ -1100,6 +518,7 @@ Computer
 Conflicting window flags specified
 Control requested is not available
 Controller
+Copy
 CopyImage
 CopyImage()
 Could not allocate space to read DB into memory
@@ -1212,7 +631,6 @@ Couldn't start USB reports
 Couldn't unregister for raw input events
 Couldn't write Xbox One initialization packet
 Couldn't write init packet
-CpB;<
 CrSel
 CreateBitmap
 CreateCompatibleBitmap
@@ -1248,111 +666,6 @@ CurrencyUnit
 Cursor hot spot doesn't lie within cursor
 Cursor not associated with the current mouse
 Cursors are not currently supported
-D#t$4D;t$8
-D$ 0H
-D$ 0L
-D$ E3
-D$ E;
-D$ I;
-D$ f9
-D$ f;D$$
-D$ f;D$$w
-D$ f;D$$wE
-D$ f;D$$wk
-D$ fA
-D$ fE
-D$$E;
-D$$fff
-D$(+FT
-D$(9C,A
-D$(E+
-D$(E3
-D$(E;
-D$(Hc
-D$(L;
-D$(fA
-D$(ff
-D$(fff
-D$,+FX
-D$,D+D$ 
-D$.f;
-D$0 niWH
-D$09A0
-D$0D;
-D$0E3
-D$0H+
-D$0Hc
-D$0HcE
-D$0L+
-D$1D:
-D$4Hc
-D$8D;
-D$8E3
-D$;:C
-D$<:C
-D$<A+
-D$=:C
-D$>:C
-D$?:C
-D$?A+
-D$@$0
-D$@?L
-D$@A;
-D$@L+
-D$@fA
-D$DA;
-D$DD9D$H}
-D$DD;D$H
-D$DE3
-D$H#0
-D$L?"&
-D$L?"I
-D$P"0
-D$P=`
-D$P@:
-D$PA;
-D$PE3
-D$PH;
-D$PfA
-D$PfD
-D$TX%*
-D$TX%J
-D$X'0
-D$XE3
-D$XH;
-D$\80
-D$`A+
-D$`E3
-D$`Hk
-D$`fA
-D$`fD
-D$b"D$a"D$`
-D$dE3
-D$di,2
-D$di,L
-D$hI#
-D$ha.4
-D$ha.M
-D$ln06
-D$ln0M
-D$p	H
-D$pAk\$ d
-D$pE+
-D$pE3
-D$pHc
-D$pI#
-D$pfA;
-D$pfD
-D$pff
-D$tIcF H
-D$x'7<
-D$x'7O
-D$xD+
-D$xD;
-D$xfA
-D+$$D
-D+5.\
-D+=1\
 D3D11CreateDevice
 D3D11_CreateBlendState, ID3D11Device1::CreateBlendState
 D3D11_CreateDeviceResources
@@ -1387,36 +700,8 @@ D3D11_UpdateTextureInternal, ID3D11DeviceContext1::Map [map staging texture]
 D3D11_UpdateVertexBuffer, ID3D11Device1::CreateBuffer [vertex buffer]
 D3D11_UpdateVertexBuffer, ID3D11DeviceContext1::Map [vertex buffer]
 D3D9.DLL
-D8,.tqD9-
-D80t~
-D81t)H
-D8B t~A
-D8B*tyA
-D8E+t4A
-D8L< u
-D8d$ t
-D8d$8u
-D8l$:
-D8wtt{E
-D90~6M
-D91t%
-D97t>L
-D9=Ka
-D9D$D
-D9X A
-D9d$4
-D9d$@tZD9d$Du[H
-D9g8u
-D9i(~.
-D9klu
-D9l$Pu
-D9m|t	H
-D9olu
-D9pPt
-D9sLt"D9sPt
-D9{,t\H
-D9|$4
 DEBUG
+DEST
 DEVICELOST
 DEVICENOTRESET
 DISABLED
@@ -1428,7 +713,9 @@ DRIVERINTERNALERROR
 DRIVERINVALIDCALL
 DS4Windows.exe
 DSOUND.DLL
+DXBC
 DXBC8
+DXBC\fJ
 DXBC_
 DXBCy
 DXBCz
@@ -1441,7 +728,7 @@ DeleteCriticalSection
 DeleteDC
 DeleteObject
 DescribePixelFormat
-Destination pitch is too small, expected at least %d
+Destination pitch is too small, expected at least %d\n
 Destination rate is equal to or less than zero
 Destination rate is too high
 DestroyIcon
@@ -1467,25 +754,14 @@ DirectSoundCreate8
 DirectSoundEnumerateW
 DispatchMessageW
 DisplaySwitch
+Down
 DragAcceptFiles
 DragFinish
 DragQueryFileW
 DrawTextW
 Dropping back to a slower method.
-E#[1K6
-E+DH~O
-E+u8D+
-E/qW/`
-E84$tG
-E8~tD
-E9T$ 
-E9Y H
-E9q H
 E:\Valve\SDL2-2.0.18\src\render\opengl\SDL_render_gl.c
 E:\Valve\SDL2-2.0.18\src\render\opengles2\SDL_render_gles2.c
-E@t$H
-ED$XH
-EG<X~
 EGL context already created
 EGL implementation does not support sRGB system framebuffers
 EGL not initialized
@@ -1513,10 +789,6 @@ EGL_SUCCESS
 ENABLED
 ERROR
 ERROR: NumPoints = %i
-ET$HH
-EWA;P
-EWD+h
-EWE+_
 Eject
 Empty destination palette
 EmptyClipboard
@@ -1539,15 +811,12 @@ Execute
 ExitProcess
 Extensible WAVE header too small
 ExtractIconExW
-F$A_A^A]A\_^][
-F2489{
 F32LSB
 F32MSB
 F32SYS
 FOURCC pixel formats are not supported
-FXH9E
 Failed loading 
-Failed to compile shader:
+Failed to compile shader:\n%s%s\n%s
 Failed to create message window for joystick autodetect
 Failed to create notify device for joystick autodetect
 Failed to create register class for joystick autodetect
@@ -1558,13 +827,11 @@ Failed to load the shader: %s
 Failed to obtain XInput device capabilities. Device disconnected?
 Fc\t4
 File is not a Windows BMP file
+Find
 FlashWindowEx
 FormatMessageW
 FreeLibrary
 Function not supported
-G D8E<t
-G@D+OHD
-GD3G@
 GDI32.dll
 GL 3.x is not supported
 GLES2_CreateRenderer
@@ -1688,50 +955,10 @@ GlobalLock
 GlobalMemoryStatusEx
 GlobalUnlock
 Google Stadia Controller
-H USWATAVH
-H)wPH;
-H)~ H+
-H8Lca,H
-H9)t 
-H9+t<
-H93u1H
-H93uf
-H95X9
-H95gc
-H9;u,
-H9;uM
-H9C8t
-H9G8u9H
-H9H u
-H9H8t
-H9L$pt
-H9W u
-H9\$`
-H9sHt*H
-H9yPu
-H9{0t!9{8~
-H9{@t
-H9{Ht*H
-H9{Pt
-H9{`u
-H9{hu
-H9}PA
-H;A@H
-H;J(t
-H;KXu	H
-H;Z(t
-H;Z(t'H
-H;_ u
-H;n w
-H;z(u
-HA\_^[
-HA_A\^[
-HA_A^A\_^[
-HA_A^A]A\_^][
 HC333
 HIDAPI Rumble
 HIDClass
-HLD9m\
+HORI
 HORI CO.,LTD
 HORI CO.,LTD.
 HORI Slime Controller
@@ -1758,46 +985,7 @@ Haptic: There are %d haptic devices available
 Haptic: Unknown direction type.
 Haptic: Unknown effect type.
 Haptic: Updating effect type is illegal.
-HcA 3
-HcA(A
-HcC(D
-HcC(H
-HcD$(
-HcD$(M
-HcD$,
-HcD$,M
-HcD$0M
-HcD$8H
-HcD$8M
-HcD$@L
-HcD$@M
-HcD$PH
-HcD$X
-HcD$XH
-HcD$`I
-HcD$`M
-HcD$p
-HcD$pH
-HcEHD
-HcEHH
-HcEPH
-HcE`H
-HcE`L
-HcF(L
-HcH(H
-HcI(D
-HcI,H
-HcI,Hc
-HcK,H
-HcL$pL
-HcQ 3
-HcQlH
-HcV 3
-Hci,H
-Hci,L
-Hcq,A
-Hcs4u
-Hc|$(HcT$
+Help
 HidD_FreePreparsedData
 HidD_GetAttributes
 HidD_GetFeature
@@ -1814,11 +1002,8 @@ HidP_GetCaps
 HidP_GetData
 HidP_GetValueCaps
 HidP_MaxDataListLength
+Home
 HygonGenuine
-I+t$(A
-I9Y u
-I9[ u
-I;VXt
 IDirect3DDevice9_SetPixelShader()
 IDirectInput::CreateDevice
 IDirectInput::Initialize
@@ -1834,26 +1019,12 @@ IDirectInputDevice8::SetProperty
 IDirectInputDevice8::Start
 IDirectInputDevice8::Unacquire
 IMM32.dll
+INFO
 INVALIDCALL
 INVALIDDEVICE
-IP9Qht
-IPD9Aht
 ISGNh
 ISGNl
 ISO-8859-1
-IYUVt
-IYUVt@
-IYUVtYA
-IYUVu
-IYUVuM
-IcD$ H;
-IcD$(L
-IcF(D
-IcF(H
-IcF(L
-IcG(D
-IcG(H
-IcG(L
 Ignore
 ImmAssociateContext
 ImmGetCandidateListW
@@ -1929,16 +1100,10 @@ Joystick only has %d axes
 Joystick only has %d balls
 Joystick only has %d buttons
 Joystick only has %d hats
-K @8q
-K H9i u-H
-K H9y u-H
 KBDIllumDown
 KBDIllumToggle
 KBDIllumUp
 KERNEL32.dll
-KP9Qht
-KP9qhH
-K`H;KXu
 Keypad !
 Keypad #
 Keypad %
@@ -2000,110 +1165,14 @@ Keypad {
 Keypad |
 Keypad ||
 Keypad }
-Kh9sh
 KillTimer
-L$ D9{
-L$ E3
-L$ L+
-L$ SH
-L$ SUATAUAVAWH
-L$ SUVAWH
-L$ SUWAVAWH
-L$ SVAVH
-L$ SVWATAVAWH
-L$ SWH
-L$ UVWATAUAVAWH
-L$ UVWAVAWH
-L$ WATAUAVAWH
-L$$Hc
-L$$IcD$
-L$$fA
-L$&fD
-L$(;0u,A
-L$(A;
-L$(E3
-L$(Hc
-L$(fA
-L$*fA
-L$,D;
-L$,L93
-L$,Lc
-L$0A+
-L$0D+
-L$0E3
-L$0H+
-L$0HcC
-L$0M;
-L$8E3
-L$8E;
-L$8fC
-L$@Hc
-L$@L+
-L$@fA;
-L$@ff
-L$DfA
-L$HE3
-L$PL;
-L$PfD
-L$`A+
-L$`E+
-L$`E3
-L$`H+
-L$`Hc
-L$`IcG(D
-L$hE3
-L$hHc
-L$hIcG(D
-L$lu%E3
-L$pA+
-L$pD+
-L$pH;
-L$pHcD$x
-L$pIcC(D
-L$xD+
-L$xD9K
-L$xD;
-L$xHc
-L9	u)
-L9;rIH
-L9G u
-L9N u
-L9eou-H
-L9hHt
-L9hPt
-L9i8u
-L9xHu
-L9y`u
-L9|$8vV
-L;A u'L
-L;A(u L
+LANG
 LC_ALL
 LC_CTYPE
 LC_MESSAGES
 Late swap tearing currently unsupported
-LcE@L
-LcEHL
-LcEPLcM
-LcL$8
-LcL$`LcT$hMc
-LcMPLcU
-LcMXLcU
-LcQ,A
-LcT$D
-LcT$hLcL$xMc
-Lc\$@Hcl$DD
-Lc\$DLcl$@
-Lcd$DH
-Lcd$pL
-Lcq(H;
-Lcq,H
-Lcq,L
-Lct$pLc
-Lcy,D
-Lcy,L
-Lc|$xf
-Lc}`E
 LeaveCriticalSection
+Left
 Left Alt
 Left Ctrl
 Left GUI
@@ -2116,16 +1185,15 @@ LoadLibraryA
 LoadLibraryW
 LocalFree
 LockRect()
-M9'u/A
-M9'uHD
-M9C u
 MOREDATA
 MPEG formats not supported
 MS ADPCM with the extensible header is not supported
 MSSCIPYA.IME
 MSTCIPHA.IME
+Mail
 MapVirtualKeyW
 MediaSelect
+Menu
 MessageBoxA
 Metal and OpenGL not supported on same window
 Metal and Vulkan not supported on same window
@@ -2143,38 +1211,11 @@ Missing wBitsPerSample field in WAVE fmt chunk
 Mixing buffer was lost
 ModeSwitch
 MulDiv
-N HcT$@Hc
-N$IcF
-ND$pD;
-ND$xD;
+Mute
 NEJ(~
 NOTAVAILABLE
 NOTFOUND
-NP9Yht
-NPD9Aht	
-NPH99u*H
-NT$pD;
 NULL sofile
-NV12A
-NV12t
-NV12t	A
-NV12t0
-NV12t7
-NV12t8
-NV12u
-NV12w-tUA
-NV21t
-NV21t0H
-NV21tQ
-NV21tu
-NV21u 
-NV21u"A
-NV21u0
-NV21w*t`
-NV21w,tB
-NV21w2tFA
-NV21w2tLA
-NV21wb
 NVIDIA Corporation 
 Negative swap interval unsupported in this GL
 Nintendo GameCube Controller
@@ -2211,11 +1252,7 @@ Not enough resources to create thread
 Number of butons exceeds limit of %d
 Number of channels exceeds limit of 255
 Numlock
-O$IcG
 OLEAUT32.dll
-OP9Qh
-OP9Qht
-OPD9Aht
 OPENGL32.DLL
 OSGN,
 OSGNl
@@ -2229,21 +1266,10 @@ OpenGL library already loaded
 OpenGL not initialized
 OpenGL shaders: %s
 OpenGL support is either not configured in SDL or not available in current SDL video driver (%s) or platform
+Oper
 Out of memory
 Output array for SDL_Vulkan_GetInstanceExtensions needs to be at least %d big
 OutputDebugStringW
-PA^_^][
-PA_A\[
-PA_A]_^[
-PA_A^A\^]
-PA_A^A\_]
-PA_A^A]A\_^]
-PA_A^A]^[
-PA_A^[
-PA_A^_
-PA_A^_^]
-PA__[
-PA__^
 PDP Battlefield 1 Controller
 PDP Battlefield 4 Controller
 PDP Deliverer of Truth
@@ -2313,7 +1339,6 @@ Pause
 Pausing the device
 PeekMessageW
 Performance Designed Products
-Ph;8w
 PostMessageW
 PostThreadMessageW
 Power
@@ -2328,10 +1353,9 @@ Process32First
 Process32Next
 PropVariantClear
 PtInRect
-Q8HcA,
 QueryPerformanceCounter
 QueryPerformanceFrequency
-RCRich
+RDEF
 RDEFP
 RIFF form type is not WAVE (not a Waveform file)
 RIFF size truncates chunk
@@ -2381,12 +1405,10 @@ S16SYS
 S32LSB
 S32MSB
 S32SYS
-SATAUAWH
 SDL Dynamic API Failure!
-SDL EVENT QUEUE: Maximum events in-flight: %d
+SDL EVENT QUEUE: Maximum events in-flight: %d\n
 SDL EVENT: %s%s
 SDL Windows video driver
-SDL assertion report.
 SDL dummy audio driver
 SDL dummy video driver
 SDL failed to get a vertex buffer for this Direct3D 9 rendering batch!
@@ -3448,40 +2470,13 @@ SDL_wcsstr
 SDL_window%u-%8.8d.bmp
 SETUPAPI.dll
 SHCORE.DLL
+SHDR
 SHDR8
 SHELL32.dll
 SHGetFolderPathW
 STATt
-SUAWH
-SUVATAUAVAWH
-SUVATAVH
-SUVWATAUAVAWH
-SUVWATAUAVH
-SUVWATAUAWH
-SUVWATAUH
-SUVWATAVAWH
-SUVWAUAVAWH
-SUVWAUAVH
-SUVWAUAWH
-SUVWAVAWH
-SUVWAVH
-SUVWH
-SUWATAUAVAWH
-SUWAUAVAWH
-SUWAUAVH
-SUWAUAWH
-SVATAWH
-SVAUAVH
-SVAUH
-SVWATAUAVH
-SVWAUAWH
-SVWAVH
 SV_POSITION
 SV_TARGET
-SWATAUH
-SWATH
-SWAUH
-SWAWH
 Sample rate exceeds limit of %d
 ScreenToClient
 ScrollLock
@@ -3533,7 +2528,7 @@ Setting cooperative level to exclusive
 Setting data format
 Setting gain
 Setting the swap interval is not supported
-Setting vibration failed: 0x%lx
+Setting vibration failed: 0x%lx\n
 SetupDiDestroyDeviceInfoList
 SetupDiEnumDeviceInfo
 SetupDiEnumDeviceInterfaces
@@ -3556,6 +2551,7 @@ Source rate is too high
 Space
 Steam
 SteelSeries Stratus Duo
+Stop
 Stopping the device
 Surface doesn't have a colorkey
 Surfaces must not be locked during blit
@@ -3568,53 +2564,6 @@ System audio output device
 SystemParametersInfoA
 SystemParametersInfoW
 System\CurrentControlSet\Control\MediaCategories\{%02X%02X%02X%02X-%02X%02X-%02X%02X-%02X%02X-%02X%02X%02X%02X%02X%02X}
-T$ E3
-T$ Hi
-T$ fA
-T$(E;
-T$(Hc
-T$,A;
-T$,Hc
-T$0D+
-T$0E+
-T$0E3
-T$0Hk
-T$2E:
-T$4f#
-T$89P0t[3
-T$8E3
-T$@E3
-T$@IcV
-T$@fA
-T$DE;
-T$HA+
-T$HA;
-T$HE3
-T$HH+
-T$HHc
-T$HHcG
-T$HfA
-T$HfD
-T$Lu A
-T$PE3
-T$PHc
-T$PLc
-T$PfE
-T$XM+
-T$`E3
-T$`E;
-T$`f#
-T$`fA
-T$`fD
-T$`t83
-T$d9]
-T$hE+
-T$pA+
-T$pE3
-T$pIcF(D
-T$pfA#
-T$xA+
-T$xIcC(E
 TEXCOORD
 TINTLGNT.IME
 TOOMANYOPERATIONS
@@ -3660,14 +2609,9 @@ Truncated data chunk
 Truncated data chunk in WAVE file
 TryAcquireSRWLockExclusive
 TryEnterCriticalSection
-U0fD;U$
 U16LSB
 U16MSB
 U16SYS
-UATAUAVAWH
-UATAUAVH
-UATAVAWH
-UAUAWI
 UCS-2
 UCS-2-INTERNAL
 UCS-2BE
@@ -3676,7 +2620,8 @@ UCS-4
 UCS-4-INTERNAL
 UCS-4BE
 UCS-4LE
-UHcCd
+UCS2
+UCS4
 UNKNOWN
 UNKNOWN (bug? fixme?)
 UNSUPPORTEDALPHAARG
@@ -3686,15 +2631,8 @@ UNSUPPORTEDCOLOROPERATION
 UNSUPPORTEDFACTORVALUE
 UNSUPPORTEDTEXTUREFILTER
 US-ASCII
-USAUAVH
 USER32.DLL
 USER32.dll
-USVAWH
-USVWATAUAVH
-USVWAUAVAWH
-USVWAUAVH
-USWAUAVAWH
-USWAVH
 UTF-16
 UTF-16BE
 UTF-16LE
@@ -3708,30 +2646,10 @@ UTF16LE
 UTF32
 UTF32BE
 UTF32LE
+UTF8
 UUUUU
-UUUUUUU
-UVATAUAVAWH
-UVATAUAVH
-UVATAVAWH
-UVAUAVAWH
-UVAVH
-UVWATAUAVAWH
-UVWATAUH
-UVWATAWH
-UVWAUAVH
-UVWAUAWH
-UVWAVAWH
 UVpitch
 UVplane
-UWATAUAWH
-UWAUAVAWH
-UWAUAWH
-UWAVH
-UYVYt
-UYVYt&
-UYVYt&A
-UYVYt0A
-UYVYu
 Unable to create DIB
 Unable to create DXGI interface
 Unable to create Direct3D interface
@@ -3746,6 +2664,7 @@ Unable to make EGL context current
 Unable to set the EGL swap interval
 Unable to stop effect
 Unable to update effect
+Undo
 Unexpected %u-bit PCM data format
 Unexpected YUV conversion mode
 Unexpected controller element %s
@@ -3767,7 +2686,7 @@ Unknown companded encoding
 Unknown gestureId
 Unknown pixel format
 Unknown reason
-Unknown scale mode: %d
+Unknown scale mode: %d\n
 Unknown sensor type
 Unknown texture format
 Unknown touch device id %d, cannot reset
@@ -3781,7 +2700,7 @@ UnregisterClassW
 UnregisterDeviceNotification
 Unsupported YUV conversion
 Unsupported YUV conversion mode
-Unsupported YUV conversion mode: %d
+Unsupported YUV conversion mode: %d\n
 Unsupported YUV destination format: %s
 Unsupported YUV format
 Unsupported audio format
@@ -3796,10 +2715,7 @@ UpdateTexture()
 Upitch
 Uplane
 Use of OpenGL without a window is not supported on this platform
-V=factuO
 V?LUUUUU
-VAUAVAWH
-VAVAWH
 VERBOSE
 VERSION.dll
 VID_%04X&PID_%04X
@@ -3847,13 +2763,6 @@ VK_SUCCESS
 VK_THREAD_DONE_KHR
 VK_THREAD_IDLE_KHR
 VK_TIMEOUT
-VUUUA
-VUUUL
-VWATAUAWH
-VWATAVAWH
-VWAUAVAWH
-VWAVH
-VWAWH
 ValidateRect
 Values of 'indices' out of bounds
 Values of 'uv' out of bounds %f %f at %d/%d
@@ -3881,7 +2790,7 @@ Vulkan and OpenGL not supported on same window
 Vulkan is not loaded
 Vulkan loader library already loaded
 Vulkan support is either not configured in SDL or not available in current SDL video driver (%s) or platform
-W$IcG
+WARN
 WASAPI
 WASAPI CoCreateInstance(MMDeviceEnumerator)
 WASAPI can't activate audio endpoint
@@ -3900,12 +2809,8 @@ WASAPI support requires Windows Vista or later
 WASAPI: CoInitialize() failed
 WASAPI: Unsupported audio format
 WASSTILLDRAWING
-WATAUAVAW
-WATAUAVAWH
-WAVAWH
 WAVE file too big
 WCHAR_T
-WD+GLD
 WGL_ARB_context_flush_control
 WGL_ARB_create_context_no_error
 WGL_ARB_create_context_robustness
@@ -3940,11 +2845,7 @@ Wrong format
 Wrong preset coefficients in MS ADPCM format header
 X-Box
 X360 Controller #%u
-XA_A^A]A\^]
-XA_A^A]A\_^][
-XA_A^_^][
-XA_^[]
-XA_^][
+XBOX
 XInput ArcadePad #%u
 XInput ArcadeStick #%u
 XInput Controller #%u
@@ -3959,6 +2860,7 @@ XInputGetCapabilities
 XInputGetState
 XInputSetState
 XInputSetState() failed
+Xbox
 Xbox 360 Controller
 Xbox 360 Wireless Controller
 Xbox Adaptive Controller
@@ -3970,98 +2872,14 @@ Xbox One S Controller
 Xbox Series X Controller
 Xbox360
 XboxOne
-X|D,_
-YUY2t
-YUY2t9A
-YUY2w
-YUY2wGt=
 YV12, IYUV, NV12, NV21 textures only support full surface locks
-YV12D
 YV12IYUVNV12NV21
-YV12t
-YV12t	A
-YV12t!A
-YV12t6
-YV12tH
-YV12u
-YVYUt
-YVYUt	E
-YVYUt'
-YVYUt'A
-YVYUt(
-YVYUty
-YVYUt|A
-YVYUu
-YVYUu 
-YVYUu$
-You are using the SDL disk i/o audio driver!
+You are using the SDL disk i/o audio driver!\n
 You probably don't have a working Vulkan driver installed. %s %s %s(%d)
 Ypitch
 Yplane
-[HcCT
-\$ AVH
-\$ D+
-\$ I)n0L+
-\$ UATAVH
-\$ UATAWH
-\$ UH
-\$ UVAVH
-\$ UVWATAVH
-\$ UVWATAWH
-\$ UVWAUAVH
-\$ UVWAVAWH
-\$ UVWH
-\$ UWATAVAWH
-\$ VATAUAWE3
-\$ VH
-\$ VWE
-\$ WH
-\$ tEH
-\$$Lc
-\$(fD#
-\$,fD
-\$0A;
-\$0A_A^A\
-\$0E2
-\$0H;
-\$0Hc
-\$0Ic
-\$0L+
-\$0t*
-\$0~<3
-\$4Hc}
-\$8E;
-\$8H+|$8u
-\$8fD
-\$@A_A]A\^
-\$@D+
-\$@E3
-\$@H;
-\$@HcI
-\$HHc
-\$Hy#H
-\$LI9
-\$PE3
-\$PHcF(D
-\$PM+
-\$XE3
-\$XE;
-\$`9Y$
-\$`A+
-\$`E3
-\$`M+
-\$`fA
-\$pM+
-\$pfA
-\$ptgD
-\$pz3u13
-\$tLc
-\$xL;
+\n\nSDL assertion report.\n
 ]U?;oaa
-]_z!u
-^P9s u
-^PfA+
-_ A9n
 _SDL_DummySurface
 _SDL_WAKEUP
 _SDL_WindowRenderData
@@ -4069,24 +2887,6 @@ _SDL_WindowTextureData
 __FUNCTION__, ID3D11Device1::CreateInputLayout
 __FUNCTION__, ID3D11Device1::CreatePixelShader
 __FUNCTION__, ID3D11Device1::CreateVertexShader
-`.rdata
-`A\_[
-`A]A\_^[
-`A^A\^
-`A^A]_^]
-`A^^[
-`A^^]
-`A_A\[
-`A_A]_][
-`A_A^A\^]
-`A_A^A\_^[]
-`A_A^A]A\^][
-`A_A^_^]
-`A__^][
-`L$pfD
-`\$`f
-`\$pf
-a Lcy
 a:b0,b:b1,back:b4,dpdown:b12,dpleft:b13,dpright:b14,dpup:b11,guide:b5,leftshoulder:b9,leftstick:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b10,rightstick:b8,righttrigger:a5,rightx:a2,righty:a3,start:b6,x:b2,y:b3,
 a:b0,b:b1,dpdown:b6,dpleft:b4,dpright:b5,dpup:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b9,righttrigger:a5,rightx:a2,righty:a3,start:b8,x:b2,y:b3,
 a:b0,b:b1,x:b2,y:b3,back:b6,guide:b10,start:b7,leftstick:b8,rightstick:b9,leftshoulder:b4,rightshoulder:b5,dpup:h0.1,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,leftx:a0,lefty:a1,rightx:a2,righty:a3,lefttrigger:a4,righttrigger:a5,
@@ -4096,62 +2896,37 @@ a_position
 a_texCoord
 abort
 adapterIndex
-add_RawGameControllerAdded() failed: 0x%lx
-add_RawGameControllerRemoved() failed: 0x%lx
+add_RawGameControllerAdded() failed: 0x%lx\n
+add_RawGameControllerRemoved() failed: 0x%lx\n
 always_ignore
 audio_buf
 audio_len
+auto
+back
+best
 break
 callback
 calloc_func
 cfgmgr32.dll
 color
 combase.dll
-const mat3 matrix = mat3( 1,       1,        1,
-const mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,
-const vec3 Bcoeff = vec3(1,  1.772,  0.000);
-const vec3 Bcoeff = vec3(1.1644,  2.0172,  0.000);
-const vec3 Bcoeff = vec3(1.1644,  2.1124,  0.000);
-const vec3 Gcoeff = vec3(1, -0.3441, -0.7141);
-const vec3 Gcoeff = vec3(1.1644, -0.2132, -0.5329);
-const vec3 Gcoeff = vec3(1.1644, -0.3918, -0.813);
-const vec3 Rcoeff = vec3(1,  0.000,  1.402);
-const vec3 Rcoeff = vec3(1.1644,  0.000,  1.596);
-const vec3 Rcoeff = vec3(1.1644,  0.000,  1.7927);
-const vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);
-const vec3 offset = vec3(0, -0.501960814, -0.501960814);
 could not read any dollar gesture from rwops
 count
-d$ D;
-d$(Hc
-d$(fA
-d$0Hc@
-d$8E:
-d$@Hc
-d$@u A
-d$DHc
-d$PM+
-d$XA9n4
-d$h=IYUVt
-d$pE3
-d$pLc
-d$ptk
 d3d11.dll
 d3dcompiler_43.dll
 d3dcompiler_46.dll
 d3dcompiler_47.dll
-datat
-datau
 default
-dfD9w 
 direct-to-disk audio
 direct3d
 direct3d11
 directsound
+disk
 displayIndex must be in the range 0 - %d
 dpdown
 dpleft
 dpright
+dpup
 dropblock
 dropframe
 dst_format
@@ -4186,36 +2961,11 @@ eglTerminate
 eglWaitGL
 eglWaitNative
 eglWaitSyncKHR
-f IcV
-f+D$(f
-f+D$,f
-f+D$0f
-f9C u
-f9D$0u
-f9D$Tt*f
-f9D$Tu	
-f9E t"H
-f9E0urH
-f9TMpu.
-f9o4t
-f;l$nsqL
-f;l$ps_L
 f?>UUUUU
-fD90u
-fD93s
-fD9o u
-fD9o"u
-fD9o$
-fD9o&
-fD9o&u
-fD9o*
-fD9}8u
 false
 finger
 flipped
 fmt chunk after data chunk in WAVE file
-fmt tpH
-fmt u
 force
 format
 free_func
@@ -4331,88 +3081,17 @@ glVertex3fv
 glVertexAttribPointer
 glViewport
 guide
-h WAVAWH
-h%i.%i
-hA]A\_^][
-hA^A]_^][
-hA_A\
-hA_A]_[
-hA_A^
-hA_A^A]A\_^[]
-hA_A^A]A\_^][
-h_^[]
-h_^][
-hd$`f
-hd$pf
 height
 hidapi,*,a:b0,b:b1,back:b4,dpdown:b12,dpleft:b13,dpright:b14,dpup:b11,guide:b5,leftshoulder:b9,leftstick:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b10,rightstick:b8,righttrigger:a5,rightx:a2,righty:a3,start:b6,x:b2,y:b3,
 hint:
-h|$pfD
-ibtfD
-id$Pf
-id$`f
 ignore
 ignorezero
 imm32.dll
 index must be -1 or in the range of 0 - %d
 index must be in the range of 0 - %d
+info
 instance
-j9=>7
-k< tg<,u>L
-k=YVYUt
 k_eControllerType_
-kpD9-
-l$ ATAVAWD
-l$ AVH
-l$ E3
-l$ VATAUAVAWH
-l$ VAVAWH
-l$ VH
-l$ VWATAUAVAWL
-l$ VWATH
-l$ VWAVAW
-l$ VWAVH
-l$ VWL
-l$ WH
-l$(A^
-l$0A+
-l$0E3
-l$0H;
-l$0Hc
-l$0IcA(D
-l$0IcF
-l$0_^
-l$0fA
-l$0t	H
-l$4E;
-l$8A_A^A\
-l$8H;
-l$8Hc
-l$8L+
-l$@A_A^_^
-l$HD;
-l$HL9
-l$PA_A^A]A\_^
-l$PI+
-l$PM+
-l$Pr?
-l$XM+
-l$`E3
-l$`Lc
-l$`fA
-l$`fE
-l$`r?
-l$hI+
-l$ht(
-l$pA+
-l$pA9^
-l$pE+
-l$pE3
-l$pfA
-l$pfE
-l$xA+
-l$xu]I
-l< th<,u?L
 leftshoulder
 leftstick
 lefttrigger
@@ -4429,80 +3108,32 @@ max_h
 max_w
 maximum
 messageboxdata
+mgBV
 min_h
 min_w
 misc1
 misc1:b15,
+mode
 model
 mouse_input
 mutex not owned by this thread
 n5SDL_XINPUT_USE_OLD_JOYSTICK_MAPPING
-n95#9
-nD$,M
-nL$`fA
-nL$pf
-nPA9u
+name
 ncolors
 nearest
 no gesture touch devices registered
+none
 none,%s,
 none,*,
 normal
-ns@fD
 num_indices
 num_vertices
 numrects
-o%?p	
-o@0fE
-oA0fD
-oD$Pf
-oD$PfA
-oD$`M
-oD$`f
-oD$`fA
-oD$pf
-oD$pfA
-oL$Pf
-oL$`f
-oL$`fA
-oL$pfA
-oT$PfE
-oT$`fE
-o\$`fA
-o\$`fD
-o\$pfD
-od$Pf
-od$PfA
-od$`f
-od$`fA
-od$`fE
-od$pf
-ol$Pf
-ol$`f
-ol$`fA
-ol$`fD
-ol$pf
-ol$pfD
 ole32.dll
-opD9-
 opengl
 opengles2
 outputIndex
 overscan
-o|$Pf
-o|$`f
-o|$pfD
-p WATAUAVAWH
-p WAVAWH
-pA]A\[
-pA^^[
-pA^_^
-pA_A\^[]
-pA_A]A\_^
-pA_A^A]A\_][
-pA_A^A]A\_^]
-pA_A^A]_^
-pA_A^_^]
 paddle1
 paddle1:b15,paddle2:b17,paddle3:b16,paddle4:b18,
 paddle1:b16,paddle2:b15,
@@ -4516,15 +3147,25 @@ pitch
 pixels
 platform:
 points
-precision mediump float;
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.2132,   2.1124,\n                          1.7927, -0.5329,   0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.y = texture2D(u_texture_u, v_texCoord).r;\n    yuv.z = texture2D(u_texture_v, v_texCoord).r;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.2132,   2.1124,\n                          1.7927, -0.5329,   0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).ar;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.2132,   2.1124,\n                          1.7927, -0.5329,   0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).ra;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.2132,   2.1124,\n                          1.7927, -0.5329,   0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).rg;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.3918,   2.0172,\n                          1.596,  -0.813,    0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.y = texture2D(u_texture_u, v_texCoord).r;\n    yuv.z = texture2D(u_texture_v, v_texCoord).r;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.3918,   2.0172,\n                          1.596,  -0.813,    0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).ar;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.3918,   2.0172,\n                          1.596,  -0.813,    0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).ra;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1.1644,  1.1644,   1.1644,\n                          0,      -0.3918,   2.0172,\n                          1.596,  -0.813,    0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).rg;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(0, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1,       1,        1,\n                          0,      -0.3441,   1.772,\n                          1.402,  -0.7141,   0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.y = texture2D(u_texture_u, v_texCoord).r;\n    yuv.z = texture2D(u_texture_v, v_texCoord).r;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(0, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1,       1,        1,\n                          0,      -0.3441,   1.772,\n                          1.402,  -0.7141,   0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).ar;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
+precision mediump float;\nuniform sampler2D u_texture;\nuniform sampler2D u_texture_u;\nuniform sampler2D u_texture_v;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\n\n// YUV offset \nconst vec3 offset = vec3(0, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst mat3 matrix = mat3( 1,       1,        1,\n                          0,      -0.3441,   1.772,\n                          1.402,  -0.7141,   0);\n\nvoid main()\n{\n    mediump vec3 yuv;\n    lowp vec3 rgb;\n\n    // Get the YUV values \n    yuv.x = texture2D(u_texture,   v_texCoord).r;\n    yuv.yz = texture2D(u_texture_u, v_texCoord).ra;\n\n    // Do the color transform \n    yuv += offset;\n    rgb = matrix * yuv;\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1);\n    gl_FragColor *= v_color;\n}
 pressed
 projectionAndView
 ps_2_0
-q@Lcy
 queue
 qwasapi
-rPH9=8
+ramp
 realloc_func
+rect
 rects
 released
 retry
@@ -4534,17 +3175,14 @@ rightstick
 righttrigger
 rightx
 righty
-s	D8wut=E
-s!IcV
-s=datau
-s]D9s8t
-s`D9sdtYH
 scancode
 sdlaudio-in.raw
 sdlaudio.raw
-sh9D$x
+size
 size_indices
 software
+span
+spec
 specified texture is not a render target
 src_format
 src_pitch
@@ -4552,123 +3190,8 @@ start
 stream
 strict
 surface
-t L9%4
-t#9\$0v
-t#D9;t
-t#H9+t
-t$ ATAVAWD
-t$ ATAVAWH
-t$ AVH
-t$ AWH
-t$ E3
-t$ UAVAWH
-t$ UH
-t$ UWATAUAWH
-t$ WATAUAVAW
-t$ WATAUAVAWD
-t$ WATAUAVAWH
-t$ WATAUAVAWL
-t$ WAUAVH
-t$ WAVAWH
-t$ WD
-t$ WE
-t$ WH
-t$$<0|
-t$$Hc
-t$$fA
-t$&Hc
-t$(E3
-t$0D;
-t$0E3
-t$0Hc
-t$0_]
-t$0f#
-t$0t,3
-t$0u'
-t$4A:
-t$4Hc
-t$6D:
-t$89{@~&
-t$8A_A^A\
-t$8u*
-t$@E3
-t$@Hk
-t$@Lc
-t$@Mc
-t$H8E)
-t$HA_A^A]A\_
-t$HLc
-t$HLk
-t$HcHx
-t$HfD
-t$Ht	H
-t$Lu!E3
-t$PE3
-t$PI;
-t$PtIH
-t$XIc
-t$`A+
-t$`E3
-t$`H;
-t$h9k
-t$h=NV12t
-t$hE3
-t$p9+
-t$pE+
-t$pE3
-t$pH;
-t$pfE
-t$xE3
-t%<0t
-t%H9;u
-t%H9Y8t
-t&;9r"H
-t+H9q t%H
-t+HcG
-t+L9e
-t,f9k
-t.HcHxE3
-t1H;)u
-t1HcC
-t1fD9
-t2M9&u-
-t3HcC
-t6fff
-t7H;{ u
-t7I9>u2
-t7M9&u2A
-t8H;O
-t8I;B
-t8I;J
-t8I;K
-t=9x t
-t@fff
-tAHcC
-tDfA;
-tEHcD$PH
-tI9-U&
-tKD9-w
-tKH;=h5
-tKI9>uF
-tMH9\$ uFH9\$(u?
-tMHcF
-tSLcC
-tTD9-
-tVH)s
-tXIcG
-tZD9x 
-tZMcD
-t[9{ t
-t[fE#
-t^D9c
-t^HcBx
-tbHcH(
-tbIc@
-tbIcG
-tdfff
 tex%d
 texture is already locked
-tg;YHtb
 theSampler
 theSampler+theTextureU
 theSampler+theTextureV
@@ -4678,69 +3201,46 @@ theTextureU
 theTextureUV
 theTextureV
 theTextureY
+time
 timeBeginPeriod
 timeEndPeriod
 times
-tjIcG
 touchpad
 touchpad:b15,
 touchpad:b15,misc1:b16
+true
 truncate
-twHcF
-twIcE
-u A9n<u
-u D;X
-u fD9
-u!f;s
-u";CHt
-u"D8P
-u#HcQ 3
-u&9k<t
-u*F;d
-u*fD9
-u-@8l$2u&
-u-HcQ 3
-u0E9Y H
-u0E9q H
-u3fA;
-u4fD9
-u5H9|$8w.3
-u6HcS
-u8D;y
-u=f9s
-uG@8l$2uq
-uLA8i
-uMD9R
-uZH;J(t
 u_projection
 u_texture
 u_texture_u
 u_texture_v
-udD8k
-uiA9l
-uiH9=
 unable to create an EGL window surface
 unable to show color buffer in an OS-native window
-uniform sampler2D tex0;
-uniform sampler2D tex0; // Y 
-uniform sampler2D tex1; // U 
-uniform sampler2D tex1; // U/V 
-uniform sampler2D tex2; // V 
-uniform sampler2D u_texture;
-uniform sampler2D u_texture_u;
-uniform sampler2D u_texture_v;
-urH95
-uw<0|
+v<y5
 value
-varying vec2 v_texCoord;
-varying vec4 v_color;
+varying vec4 v_color;\n\nvoid main()\n{\n    gl_FragColor = v_color;\n}
+varying vec4 v_color;\n\nvoid main()\n{\n    gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;\n    v_color = gl_Color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\n\nvoid main()\n{\n    gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;\n    v_color = gl_Color;\n    v_texCoord = vec2(gl_MultiTexCoord0);\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U \nuniform sampler2D tex2; // V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.596);\nconst vec3 Gcoeff = vec3(1.1644, -0.3918, -0.813);\nconst vec3 Bcoeff = vec3(1.1644,  2.0172,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.y = texture2D(tex1, tcoord).r;\n    yuv.z = texture2D(tex2, tcoord).r;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U \nuniform sampler2D tex2; // V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.7927);\nconst vec3 Gcoeff = vec3(1.1644, -0.2132, -0.5329);\nconst vec3 Bcoeff = vec3(1.1644,  2.1124,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.y = texture2D(tex1, tcoord).r;\n    yuv.z = texture2D(tex2, tcoord).r;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U \nuniform sampler2D tex2; // V \n\n// YUV offset \nconst vec3 offset = vec3(0, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1,  0.000,  1.402);\nconst vec3 Gcoeff = vec3(1, -0.3441, -0.7141);\nconst vec3 Bcoeff = vec3(1,  1.772,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.y = texture2D(tex1, tcoord).r;\n    yuv.z = texture2D(tex2, tcoord).r;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.596);\nconst vec3 Gcoeff = vec3(1.1644, -0.3918, -0.813);\nconst vec3 Bcoeff = vec3(1.1644,  2.0172,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).ar;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.596);\nconst vec3 Gcoeff = vec3(1.1644, -0.3918, -0.813);\nconst vec3 Bcoeff = vec3(1.1644,  2.0172,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).ra;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.596);\nconst vec3 Gcoeff = vec3(1.1644, -0.3918, -0.813);\nconst vec3 Bcoeff = vec3(1.1644,  2.0172,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).rg;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.7927);\nconst vec3 Gcoeff = vec3(1.1644, -0.2132, -0.5329);\nconst vec3 Bcoeff = vec3(1.1644,  2.1124,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).ar;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.7927);\nconst vec3 Gcoeff = vec3(1.1644, -0.2132, -0.5329);\nconst vec3 Bcoeff = vec3(1.1644,  2.1124,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).ra;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(-0.0627451017, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1.1644,  0.000,  1.7927);\nconst vec3 Gcoeff = vec3(1.1644, -0.2132, -0.5329);\nconst vec3 Bcoeff = vec3(1.1644,  2.1124,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).rg;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(0, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1,  0.000,  1.402);\nconst vec3 Gcoeff = vec3(1, -0.3441, -0.7141);\nconst vec3 Bcoeff = vec3(1,  1.772,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).ar;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0; // Y \nuniform sampler2D tex1; // U/V \n\n// YUV offset \nconst vec3 offset = vec3(0, -0.501960814, -0.501960814);\n\n// RGB coefficients \nconst vec3 Rcoeff = vec3(1,  0.000,  1.402);\nconst vec3 Gcoeff = vec3(1, -0.3441, -0.7141);\nconst vec3 Bcoeff = vec3(1,  1.772,  0.000);\n\nvoid main()\n{\n    vec2 tcoord;\n    vec3 yuv, rgb;\n\n    // Get the Y value \n    tcoord = v_texCoord;\n    yuv.x = texture2D(tex0, tcoord).r;\n\n    // Get the U and V values \n    tcoord *= UVCoordScale;\n    yuv.yz = texture2D(tex1, tcoord).ra;\n\n    // Do the color transform \n    yuv += offset;\n    rgb.r = dot(yuv, Rcoeff);\n    rgb.g = dot(yuv, Gcoeff);\n    rgb.b = dot(yuv, Bcoeff);\n\n    // That was easy. :) \n    gl_FragColor = vec4(rgb, 1.0) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0;\n\nvoid main()\n{\n    gl_FragColor = texture2D(tex0, v_texCoord) * v_color;\n}
+varying vec4 v_color;\nvarying vec2 v_texCoord;\nuniform sampler2D tex0;\n\nvoid main()\n{\n    gl_FragColor = texture2D(tex0, v_texCoord);\n    gl_FragColor.a = 1.0;\n    gl_FragColor *= v_color;\n}
 verystrict
+view
 vkCreateWin32SurfaceKHR
 vkCreateWin32SurfaceKHR failed: %s
 vkEnumerateInstanceExtensionProperties
 vkEnumerateInstanceExtensionProperties returned
 vkGetInstanceProcAddr
-void main()
 vulkan-1.dll
 waveInAddBuffer
 waveInAddBuffer()
@@ -4787,121 +3287,6 @@ windows_file_seek: invalid context/file not opened
 windows_file_size
 windows_file_size: invalid context/file not opened
 winmm
-x	H9-
-x$;X }
-x$;X0}
-x$;X@}
-x<D9gPtW
-xA]A\_[
-xA_A^A]A\_^][
-xA_A^A]_][
-xA_^][
-xU9\$PvO
-xefff
 xinput
 xinput,XInput Controller,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b10,leftshoulder:b4,leftstick:b8,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b9,righttrigger:a5,rightx:a3,righty:a4,start:b7,x:b2,y:b3,
-xqLc]
-xrLc]
-xs;Qh}nE
-xsHcE
-x|D9g,t:I
-y Hci
-z#u!H
-z?u=E
-z\uZM
-z]u[M
-z`u^M
-zbu`K
-zcuaK
-zvut%
-{ AVH
-{@9{8t
-{P;s u	;{$
-{X;s(u	;{,
-|$ ATAUAVAWD
-|$ ATAUAVAWI
-|$ ATAUAVAWL
-|$ ATAVAW
-|$ ATAVAWD
-|$ ATAVAWH
-|$ AUAVAWH
-|$ AV
-|$ AVAW
-|$ AVAWD
-|$ AVAWH
-|$ AVAWL
-|$ AVD
-|$ AVH
-|$ AVL
-|$ E3
-|$ H;
-|$ Hc
-|$ Ic
-|$ Lc|$`M
-|$ UATAUAVAWH
-|$ UAVAWH
-|$ UH
-|$ fA
-|$ ff
-|$ u	
-|$! u
-|$!@2
-|$(A^
-|$(E3
-|$,E2
-|$0A_A^
-|$0D;
-|$0H;
-|$0Hi
-|$0_[
-|$0u'
-|$4A;
-|$8A_A^A\
-|$8fA+
-|$8fff
-|$8udH
-|$@A_A^A]A\
-|$@E3
-|$@Hc
-|$@Hk
-|$@Ic
-|$@fff
-|$HHc
-|$P9y$
-|$PE3
-|$PE87t
-|$PHc
-|$PI;
-|$PIc@
-|$PL;
-|$PMc
-|$PfA
-|$XGu&
-|$XH9
-|$XHcy
-|$XL+
-|$X]u/
-|$XfD
-|$`A+
-|$`D+
-|$`H;
-|$`fA
-|$p1u
-|$pL+
-|$pfA
-|$xD+
-|$xHc
-|$xff
-|=u4A
-}KJct;
-}WD9W
-}\A;w
-}gWAVEt
-}h><P
-~	f;{
-~$D9} 
-~7Lcd$hM
-~@9n(
-~AHct$x
-~PfD9n
-~ZLcd$xL
+zD|3

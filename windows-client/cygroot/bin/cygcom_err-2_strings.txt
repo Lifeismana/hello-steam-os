@@ -1,98 +1,10 @@
- [^_H
-!This program cannot be run in DOS mode.
-([^_]
-.edata
-.gnu_debuglink
-.rdata
-.reloc
-.text
 /dev/tty
-0@.bss
-0@.idata
-0@.pdata
-0@.xdata
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_
-AUATUWVSH
 COMERR_DEBUG
 COMERR_DEBUG_FILE
-Couldn't set FD_CLOEXEC on debug FILE: %s
-D$(H3
-D$XH3
+Couldn't set FD_CLOEXEC on debug FILE: %s\n
 GCC: (GNU) 7.3.0 20180125 (Fedora Cygwin 7.3.0-2)
 GCC: (GNU) 7.4.0
-GetModuleHandleA
-KERNEL32.dll
-P`.data
-T$ E1
-T$(u	1
-UWVSH
-Unknown H
-Unknown f
-__cxa_atexit
-__emutls_get_address
-__errno
-__gcc_deregister_frame
-__gcc_register_frame
-__getreent
-__stack_chk_fail
-__stack_chk_guard
-__stpcpy_chk
-_et_dynamic_list
-_et_list
-_impure_ptr
-`@.buildid5
-add_error_table
-add_error_table: %s (0x%p)
-add_to_error_table
-calloc
-codef
-com_err
-com_err_hook
-com_err_va
-com_right
-com_right_r
-cygcom_err-2.dll
-cygcom_err-2.dll.dbg
-cyggcc_s-seh-1.dll
-cygwin1.dll
-cygwin_detach_dll
-cygwin_internal
-dll_dllcrt0
-error_message
-error_table_name
-et_list_lock
-et_list_unlock
-fclose
-fcntl
-fflush
-fileno
-fopen
-fprintf
-fputc
-fputs
-free_error_table
-fwrite
-getegid
-getenv
-geteuid
-getgid
-getuid
-h[^_]A\A]
-init_error_table
-initialize_error_table_r
-isatty
-malloc
-posix_memalign
-realloc
-remove_error_table
-remove_error_table FAILED: %s (0x%p)
-remove_error_table: %s (0x%p)
-reset_com_err_hook
-set_com_err_gettext
-set_com_err_hook
-strerror
-strlen
-strncpy
-strtoul
-tcgetattr
-vfprintf
+add_error_table: %s (0x%p)\n
+remove_error_table FAILED: %s (0x%p)\n
+remove_error_table: %s (0x%p)\n

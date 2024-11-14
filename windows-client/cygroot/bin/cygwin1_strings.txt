@@ -1,400 +1,58 @@
-					
-	#effect
-	#effectI
-	.	M	
-	NAS	N;
-	NAS;
-	NAS]N;
-	NASkQ;
-	NASmQ;
-	jAwt
                           
                                 
                                  
          (((((                  
-       kI
-       kM
-      qnI
-     ctiI
     name: %s
-    otimI
-    stimI
-  Couldn't compute FAST_CWD pointer.  This typically occurs if you're using
-  Unknown pseudo relocation bit size %d.
-  Unknown pseudo relocation protocol version %d.
-  an older Cygwin version on a newer Windows.  Please update to the latest
-  available Cygwin version from https://cygwin.com/.  If the problem persists,
-  cgid  I
-  ctime
-  dtime I
-  gid  cI
-  please see https://cygwin.com/problems.html
-  size  I
+  Unknown pseudo relocation bit size %d.\n
+  Unknown pseudo relocation protocol version %d.\n
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- &   ! 
  (%d %d %d %u)
  (%d %d %u)
- (%d [%p])
- (deleteH
  (more stack frames may be present)
  0123456789
- 100mhzsA
- 3dnI
- 3dnowexI
- 3dnowprI
- ;u(|
- <LtyM
- A\A]A^
- HcP<
- HiL$ @B
- [A\A]
- [A\A]A^A_
- [A\A]H
- [^A\
- [^A\A]A^
- [^A\H
- [^_A\A]
- [^_A\A]A^A_
- [^_A\A]H
- [^_]A\
- [^_]A\A]A^
- [^_]A\A]A^H
- [^_]A\H
- [_]A\A]
- abmI
- acc_powI
- acpI
  acquired
- adxI
- aesI
- amd_dcmA
- amd_ppiA
- amx_bf1I
- amx_intI
- amx_tilI
- aperfmpA
- apiI
- araI
- arch_caA
- arch_lb
- arch_peA
- artI
- aviI
- avx512_A
- avx512_I
- avx512bA
- avx512cA
- avx512dI
- avx512eA
- avx512fA
- avx512iA
- avx512p
- avx512v
- avx512vA
- avxI
- avx_vnnA
- bmiI
- bpeI
- brsI
- bus_locA
  by handle
- cat_l2
- cat_l3
- cbytes I
- cdp_l2
- cdp_l3
- child loaded: %W
- cidI
- cldemotI
- clflushA
- clwI
- clzero
- cmoI
- cmp_legA
- constanI
- cpbI
- cppI
- cpuI
- cqmI
- cqm_llcA
- cqm_mbmA
- cqm_mbmI
- cqm_occA
- cr8_legA
- cx1I
- cx8I
- dcaI
- debH
- decode_I
- default
- ds_cpl
- dtes64
- dtherm
- dtsI
- eff_freA
- enqcmd
- epbI
- ermI
- estI
- exeH
- extapicA
- extd_apI
- f16I
- fidI
- flush_lA
- flushbyA
- fmaI
- fpuA
- fsgsbasA
- fsrI
- fxsI
- fxsr_op
- gfnI
- groH
- hfiI
- hleI
- hw_pstaA
- hwpI
- hwp_actI
- hwp_eppA
- hwp_notA
- hwp_pkgA
- hwpstat
- hyperviA
- ia6I
- ibpI
- ibrI
- ibrs_enI
- ibsI
- ibtI
- idaI
- intel_pA
- invpcidA
- irperf
- la5I
- lahf_lmA
- lbrI
- lrpid  I
- lwpI
- mbaI
- mcaI
- mceI
- md_cleaA
- misaligA
- mmxI
- mmxext
- monitorA
- movI
- movdir6I
- movdiriA
- mpxI
- msrI
- mtrI
- mwaitx
- nodeid_A
- nonstopI
- nopM
- noseria
- nptI
- nrip_saI
- nsems  I
- ospI
- osvI
- overfloI
- paeI
- patI
- pausefiA
- pbeI
- pciI
- pclmuldA
- pconfigA
- pdcI
- pdpe1gbA
- perfctr
- perfctrA
- perfmonA
- pfthresA
- pgeI
- pkuI
- plnI
- pniI
- popcnt
- proc_feA
- proc_feI
- pseI
- ptsI
- rapI
- rdpI
- rdrand
- rdseed
- rdtI
- rdtscp
- rep_gooI
- ring3mwA
- rtmI
- sdbI
- sepI
- serialiI
- sevI
- sev_es
- sgxI
- sgx_lc
- sha_ni
- shared
- skinit
- smaI
- smcI
- smeI
- smxI
- ssbI
- sse4_1
- sse4_2
- sseI
- sssI
- stcI
- stiI
- succor
- svmI
- svm_locI
- syscallA
- tbmI
- tceI
- tdx_gueI
- terminaH
- tm2I
- tmeI
- topoextA
- tscI
- tsc_adjA
- tsc_deaA
- tsc_knoI
- tsc_relA
- tsc_scaI
- tsxldtrA
- ttpI
- t|E1
- u#L;=
- uid   gI
- umiI
- v_spec_A
- v_vmsavA
- vaeI
- vgiI
- vidI
- virt_ssI
- vmcb_clA
- vmeI
- vmxI
- vpclmulA
- waitpkgA
- wbnoinvA
- wdtI
- x2apic
- xgetbv1A
- xopI
- xsaI
- xsavec
- xsaveerA
- xsaveop
- xsaves
- xtopolo
- xtpI
 !(msglen () && !_buf)
 !)@:F,@zj/@\G1@|
 !<socket >
-!<socketH9
-!<socketH9D$v
-!<symlinH
-!<symlinH9D$v
 !<symlink>
-!This program cannot be run in DOS mode.
 !_hPipe
 !_is_accepted_endpoint
 !_is_listening_endpoint
 !inheap (s)
-"%s" invalid or buffer too short
+"%s" invalid or buffer too short\n
 "/\[]:|<>+=;,?*
 "Aborted"
 "Child exited"
-"H"d"e"
 "I/O possible"
 "Resource lost"
 "`O\MpP
 "can't happen" -- you found a bug
 "mm?7
-#C,9C(}
-#D$<D	
-$,autfA
-$,binfA
-$,dosA
-$,exefE
-$,usefE
-$6D9g
-$:socfE
-$</tT<\tPI
-$A9\$
-$DtL@
-$I;D$
-$I;T$
-$M9l$
-$no tfA
-%$%,%4%<%
-%$%4%,%
 %$%a%b%V%U%c%Q%W%]%\%[%
 %$sniglet^&
-%%% Cygwin api major: 0
-%%% Cygwin api minor: 345
-%%% Cygwin build date: 
-%%% Cygwin cygdrive default prefix: 
-%%% Cygwin cygwin registry name: Cygwin
-%%% Cygwin dll identifier: cygwin1
-%%% Cygwin dll major: 3004
-%%% Cygwin dll minor: 9
-%%% Cygwin installations name: Installations
-%%% Cygwin mount registry: 3
-%%% Cygwin shared data: 5
-%%% Cygwin shared id: cygwin1S5
-%%%02x
-%*.*f
 %+03ld%.2ld
 %.2d/%.2d/%.2d
-%.2d:%.2d
 %.2d:%.2d:%.2d
-%.3s %.3s%3d %.2d:%.2d:%.2d %d
+%.3s %.3s%3d %.2d:%.2d:%.2d %d\n
 %012X  %012X
-%012X %S
-%02lx %02x %02x %02x %s
+%02lx %02x %02x %02x %s\n
 %04hx
+%04x
 %08lx-%08lx %s %08lx %04x:%04x %U   
 %08x-%08x-%08x-%08x
-%10llu %10u %5o %10d %5u %5u %5u %5u %10ld %10ld
-%10llu %10u %5o %10u %5d %5d %6u %5u %5u %5u %5u %10ld %10ld %10ld
-%10llu %10u %5o %11u %10u %5d %5d %5u %5u %5u %5u %10ld %10ld %10ld
-%3d /dev/console
-%3d /dev/ptmx
-%3d /dev/tty
-%3d clipboard
-%3d cons
-%3d fd
-%3d mem
-%3d misc
-%3d sd
-%3d sound
-%3d sr
-%3d st
-%3d tty
-%3d ttyS
-%3d windows
-%4%,%
+%10llu %10u %5o %10d %5u %5u %5u %5u %10ld %10ld\n
+%10llu %10u %5o %10u %5d %5d %6u %5u %5u %5u %5u %10ld %10ld %10ld\n
+%10llu %10u %5o %11u %10u %5d %5d %5u %5u %5u %5u %10ld %10ld %10ld\n
+%3d clipboard\n%3d windows\n
 %5d %5d %9U %s
+%5d %5d %9U %s\n
 %7d [%s] %s 
 %<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
 %D = lseek(%d, %D, %d)
 %D = lseek(%d, %D, %d), errno %d
 %D = times(%p)
-%H:%M
-%H:%M:%S
 %I:%M:%S %p
 %P: *** fatal error %s- 
 %R = %schown(%s,...)
@@ -481,22 +139,18 @@ $no tfA
 %R = utimes(%S, %p)
 %R = wait4(%d, %y, %d, %p)
 %R =getsockname (%d, %p, %p)
-%S %y
 %S+0x%x
 %S, return bin_status %d
 %S, return status = %y
-%U.%02u %U.%02u
-%W %s%s
+%U.%02u %U.%02u\n
 %W (using %W) loaded in wrong place: %p != %p
 %W: Loaded to different address: parent(%p) != child(%p)
-%W:%s:%u:
 %W:*:%u:%u:%s%sU-%W\%W,%s:%s%W:%s
 %W:*:%u:%u:U-%W\%W,%s:/:/sbin/nologin
-%Y-%m-%d
 %a %b %e %H:%M:%S %Y
 %a %b %e %H:%M:%S %Z %Y
-%d %d %d:%d / %s %s - %s %s %s
-%d (%s) %c %d %d %d %d %d %u %lu %lu %u %u %U %U %U %U %d %d %d %d %U %lu %ld %lu
+%d %d %d:%d / %s %s - %s %s %s\n
+%d (%s) %c %d %d %d %d %d %u %lu %lu %u %u %U %U %U %U %d %d %d %d %U %lu %ld %lu\n
 %d (err %d) = ReadFile (%p, %p, to_read %u, read %u, 0)
 %d (err %d) = WriteFile (%p, %p, write %u, written %u, 0)
 %d = (%S,%p)
@@ -528,9 +182,9 @@ $no tfA
 %d = ioctl_socket(%x, %p)
 %d = ioctl_timerfd(%x, %p)
 %d = posix_madvise(%p, %lu, %d)
-%d = pread(%p, %ld, %D, %p)
+%d = pread(%p, %ld, %D, %p)\n
 %d = pthread_sigmask(%d, %p, %p)
-%d = pwrite(%p, %ld, %D, %p)
+%d = pwrite(%p, %ld, %D, %p)\n
 %d = read(%p, %lu)
 %d = read_ea(%S, %s, %p, %lu)
 %d = readdir(%p, %p)
@@ -545,10 +199,8 @@ $no tfA
 %d = ualarm(%ld , %ld)
 %d = write_ea(%S, %s, %p, %lu, %d)
 %d blocks in Qisr2app
-%d"e"
 %d.%d.%d(%d.%d/%d/%d)
 %d=tcflush(%d)
-%e-%b-%
 %hu %c %08x-%08x-%08x-%08x
 %lR = pread(%d, %p, %d, %d)
 %lR = pwrite(%d, %p, %d, %d)
@@ -563,9 +215,8 @@ $no tfA
 %lR = write(%d, %p, %d)
 %lR = writev(%d, %p, %d)
 %ld = fhandler_console::write(...)
-%ls: 
-%lu %lu %lu %lu %lu %lu 0
-%m/%d/%y
+%lld
+%lu %lu %lu %lu %lu %lu 0\n
 %p (status %p) = NtMapViewOfSection (h:%p, addr:%p, len:%lu, off:%Y, protect:%y, type:%y)
 %p (status %p) = NtMapViewOfSectionEx (h:%p, addr:%p, off:%Y, viewsize:%U, alloc_type:%y, protect:%y
 %p = CreateMutexW (%W): %E
@@ -587,15 +238,9 @@ $no tfA
 %p timer signal already queued
 %p timer thread already queued
 %p wait failed, %E
-%p, %ld
-%p: %s
-%s	%s
-%s %p
-%s %s %s %s %d %d
+%s %s %s %s %d %d\n
 %s %s copy failed, %p..%p, done %lu, windows pid %u, %E
 %s %s, %susecount %d
-%s %u
-%s %x
 %s (called func)
 %s - %E, handle %s<%p>
 %s - hp %p low %p, high %p, res %d
@@ -605,53 +250,36 @@ $no tfA
 %s = normalize_win32_path (%s)
 %s S4U LsaLogonUser failed: %y
 %s S4U LsaLogonUser failed: %y (%s)
-%s Section %d Type %u Windows Record Length %u
+%s Section %d Type %u Windows Record Length %u\n
 %s and %s are the same file
 %s failed: %u
 %s failed: %u --> %u from '%W': '%W'
-%s fd %d
 %s handle %p is bad
 %s is a non-directory
 %s is not a valid executable
 %s is possibly a script
 %s magic number mismatch detected - %p/%ly
-%s mismatch detected - %ly/%ly.
+%s mismatch detected - %ly/%ly.\nThis problem is probably due to using incompatible versions of the cygwin DLL.\nSearch for cygwin1.dll using the Windows Start->Find/Search facility\nand delete all but the most recent version.  The most recent version *should*\nreside in x:\cygwin\bin, where 'x' is the drive on which you have\ninstalled the cygwin distribution.  Rebooting is also suggested if you\nare unable to find another cygwin DLL.
 %s name '%s' too long
 %s returns %d, id %y
-%s version %s (%s@%s) (%s) %s
+%s version %s (%s@%s) (%s) %s\n
 %s would have returned NULL
-%s%.*d
-%s%0.*d
 %s%012X
 %s%c%s%c%s%c%s
-%s%s%s		%llu%s	%llu%s	%d
-%s%s: %s
-%s%u %c 
+%s%s%s\t\t%llu%s\t%llu%s\t%d\n
 %s(%s) release %d
 %s, already ready for read
 %s, bg I/O pgid %d, tpgid %d, myctty %s
 %s, pgid %d, sid %d, tsid %d
-%s.%d
-%s.%s
 %s/%s%016X%016X
-%s/%s%s
-%s/%s%x.%x
 %s/.netrc
-%s: %d
-%s: %s
-%s: %y
-%s: 1
 %s: Win32 error %d
-%s: error while loading shared libraries: %s: cannot open shared object file: No such file or directory
+%s: error while loading shared libraries: %s: cannot open shared object file: No such file or directory\n
 %s:%d - winsock error %u -> errno %d
 %s:%d setting errno %d
 %s:%d status %y -> windows error %u
 %s:%d windows error %u
-%s:%d: 
-%s:%s
-%s:%u
 %s[%s], %s[%s], %y
-%ss require the existance of this directory.
 %u %D->%D : %D->%D
 %u = WFSO (%p, %W)
 %u = WFSO (%p, %W, 1)
@@ -671,19 +299,15 @@ $no tfA
 %u = waveOutWrite(%p)
 %u == pgrp %u, send SIG{HUP,CONT} to stopped children
 %u == sid %u, send SIGHUP to children
-%u.%02u %u.%02u %u.%02u %u/%u
+%u.%02u %u.%02u %u.%02u %u/%u\n
 %u.%u.%u.%u
 %u.%u.%u.%u%c
-%u3HcA
-%valu9A
-%x %s
-%y %s
 %y = NtCreateFile (%S)
 %y = NtCreateFile (%p, %W)
 %y = NtCreateFile (%p, %y, %S, io, NULL, %y, %y, %y, %y, NULL, 0)
 %y = NtCreateFile (%p, ... %S ...)
 %y = NtCreateFile (%p, dir %W)
-%y = NtCreateTimer ()
+%y = NtCreateTimer ()\n
 %y = NtFsControlFile(%S, FSCTL_GET_NTFS_VOLUME_DATA)
 %y = NtFsControlFile(%S, FSCTL_SET_SPARSE)
 %y = NtOpenFile (%p, %y, %S, io, %y, %y)
@@ -699,15 +323,10 @@ $no tfA
 %y = NtQueryVolumeInformationFile(%S, FileFsSizeInformation)
 %y = NtReadFile(%S)
 %y = NtSetInformationFile (%p, FileLink %W, iosb.Status %y)
-%y = NtSetTimer (%D)
+%y = NtSetTimer (%D)\n
 'Yck:
-(	9	@	
-(	>	9	@	
-(	M	9	@	
 (!_buf && !_buflen) || (_buf && _buflen)
-(%D, %d)
 (%S, %p, %p), file_attributes %d
-(%S, %y)%s
 (%d): Failed to acquire input_mutex %08x
 (%d): Failed to acquire output_mutex %08x
 (%d): pty output_mutex (%p): waiting %d ms
@@ -721,178 +340,27 @@ $no tfA
 (%s) = cwdstuff::get (%p, %u, %d, %d), errno %d
 (%s), take %s%s
 (%s, %p), file_attributes %d
-(4$fH
-(AZYZAXAY]
-(A\A]
-(A\A]H
-(D$ D
-(D$@D
-(D$@H
-(D$@H	
-(D$PD
-(D$PL
-(D$Pf
-(D$PfA
-(D$`H
-(D$`L
-(D$pD
-(H9Q u
-(L$0D
-(L$0H
-(L$0H	
-(L$PD
-(L$PH
-(L$PfH
-(L$`D
-(L$`H	
-(T$@D
-(T$`D
-(T$`H
-(T$`H	
-(T$`f
-(T$pD
-(T$pH
-([A\A]A^
-([A\H
-([^A\A]
-([^_A\
-([^_A\A]A^
-([^_]
-([^_]A\A]
-([^_]A\A]A^A_
-(\$PD
-(\$PH
-(\$pD
-(\$pH
-(d$`D
-(l$pD
-(l$pH
 (null)
 (pid %d, ppid %d, windows pid %u)
 (s - envblock) <= tl
 (size_t) envc <= (n + winnum + SPENVS_SIZE)
 (srcp - envp) == n
-(t$ 1
-(t$ D
-(t$ H
-(t$ H!
-(t$ I
-(t$ L!
-(t$ f
-(t$0D
-(t$0H
-(t$0L
-(t$PL
-(t$`H
 (windows pid %u)
-(|$01
-(|$0D
-(|$0H
-(|$0H	
-(|$0H!
-(|$0f
-(|$0fH
-(|$@D
-(|$@H
-(|$@L
-(|$PD
-(|$PH
-(|$PL
-(|$`D
-(|$pL
-)4$fH
-)D$ D
-)D$ H
-)D$@D
-)D$@H
-)D$@f
-)D$@fE
-)D$@fH
-)D$PD
-)D$PH
-)D$`H
-)D$h)
-)D$pD
-)L$0D
-)L$0H
-)L$PD
-)L$Pf
-)L$PfD
-)L$PfH
-)L$`D
-)T$@D
-)T$`D
-)T$`H
-)T$`f
-)T$`fE
-)T$`fH
-)T$pD
-)T$pH
-)\$0f
-)\$PD
-)\$Pf
-)\$`f
-)\$pD
-)\$pH
-)\$pf
-)\$pfH
-)d$@f
-)d$`D
-)d$pf
-)l$ f
-)l$Pf
-)l$pD
-)l$pfH
-)t$ H
-)t$ f
-)t$ fH
-)t$0H
-)t$Pf
-)t$`I
-)|$(I
-)|$0D
-)|$0f
-)|$0fH
-)|$0fI
-)|$@D
-)|$@f
-)|$PD
-)|$`D
-)|$pD
-*** STATUS_%y
-*** buffH
-*** continuing pid %u from debugger call (%d)
+)UUU
+*** STATUS_%y\n
+*** continuing pid %u from debugger call (%d)\n
 *** couldn't find pty master
-*** stacH
-*** starting debugger for pid %u, tid %u
+*** starting debugger for pid %u, tid %u\n
 *** unknown regexp error code ***
 **********************************************
-*,4*=
 *current entry strdup %p
 *mutex %p, attr %p, initializer %p
 *native_root != '\0'
 *spinlock %p, pshared %d
-+D$LD
-+D$PfH
-+D$XfH
-+D$hD
-, errno 
 , function: 
 , retrying
-,$YXL
-,$fA9
-,<H9D$(r
-,?]?o
 ,M%d.%d.%d/%d
 ,M3.2.0,M11.1.0
-,cygexecI
-,ihafD
-,noafD
-,notexecI
-,noumounI
-,posix=0I
-,sparse
-,usertemH
 ,~:!@#$%^&'.(){} 
 --protected
 --wordexp
@@ -916,39 +384,29 @@ $no tfA
 -1 [%d] = shmctl ()
 -1 [%d] = shmdt ()
 -1 [%d] = shmget ()
--mounts
--thf;|$t
 ...O/S reports state %d
 ...and DuplicateHandle failed with %E.
 ./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
-.H9l$P
-.autoload_text
+.bat
+.btm
+.cmd
 .cyg_tmp_
-.cygwin_dll_common
-.data
-.edata
-.gnu_debuglink
-.idata
+.dll
+.exe
 .lib section in a.out corrupted
-.lnkA
-.rdata
+.lnk
 .rhosts fstat failed
 .rhosts lstat failed
 .rhosts not regular file
 .rhosts writeable by other than owner
-.rsrc
-.text
-.u0H9
-/.rhostsL
-/>~YH
 /VirtualStore/MACHINE/SOFTWARE
 /VirtualStore/MACHINE/SOFTWARE/Classes
+/bin
 /bin/bash
 /bin/csh
 /bin/cygwin-console-helper.exe
 /bin/sh
 /bin:/usr/bin
-/cygdrivA
 /cygdrive
 /cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/stdlib/dtoa.c
 /cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/stdlib/gdtoa-dmisc.c
@@ -1009,6 +467,7 @@ $no tfA
 /cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/sysconf.cc
 /cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/thread.cc
 /cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/uinfo.cc
+/dev
 /dev/clipboard
 /dev/com1
 /dev/com10
@@ -1178,7 +637,6 @@ $no tfA
 /dev/fd9
 /dev/fifo
 /dev/full
-/dev/logH
 /dev/mqueue
 /dev/mqueue/
 /dev/nst0
@@ -1309,11 +767,8 @@ $no tfA
 /dev/nst97
 /dev/nst98
 /dev/nst99
-/dev/nulA
 /dev/null
-/dev/pipA
 /dev/pipe
-/dev/ptm
 /dev/ptmx
 /dev/pty%d
 /dev/pty0
@@ -1874,17 +1329,17 @@ $no tfA
 /etc/localtime
 /etc/resolv.conf
 /etc/resolv.conf line: %s
-/etc/resolv.conf: %s
+/etc/resolv.conf: %s\n
 /etc/shells
 /home/
 /home/%s
-/mntH
+/lib
+/mnt
+/pdG
 /proc
 /proc/%*d/fd/pipe:[%llu]
 /proc/%*d/fd/socket:[%lld]
 /proc/%d/fd/pipe:[%llu]
-/proc/cy
-/proc/reH
 /proc/registry32
 /proc/registry64
 /proc/self/fd
@@ -1892,12 +1347,11 @@ $no tfA
 /proc/self/fd/1
 /proc/self/fd/2
 /proc/sys
+/tmp
 /usr/bin
 /usr/bin/csh
 /usr/bin/sh
-/usr/binH9
 /usr/lib
-/usr/libH9
 /usr/share/locale/%L/%N.cat:/usr/share/locale/%L/LC_MESSAGES/%N.cat:/usr/share/locale/%L/%N:/usr/share/locale/%L/LC_MESSAGES/%N:/usr/share/locale/%l/%N.cat:/usr/share/locale/%l/LC_MESSAGES/%N.cat:/usr/share/locale/%l/%N:/usr/share/locale/%l/LC_MESSAGES/%N
 /usr/share/locale/locale.alias
 /usr/share/terminfo/%02x/%s
@@ -1915,87 +1369,27 @@ $no tfA
 0123456789ABCDEF
 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 0123456789abcdef
-0<	w 
-0A\A]A^
-0[A\A]
-0[A\A]A^A_
-0[A\A]H
-0[^A\
-0[^A\A]A^
-0[^_A\A]
-0[^_A\A]A^A_
-0[^_]
-0[^_]A\
-0[^_]A\A]A^
-0[^_]A\A]A^H
-0tzvhH=
+03wR
+09\vXJ
+0Him\f
 100ms
 1h!"3
-1wmeH
-2-byte kH
 2023-09-06 11:19
 20866
 21866
-3"]@d
 3.4.9-1
 3.n6 
-33333333H
-3Hct$H
-4$	L$
-4CfA+t$
-4Fu0L
 4K macro buffer exceeded
-4fmafA
-4vnnfA
 5.5G9
 5KdT9j(
 6`/~Kp0
 7e!C7
-8 HcE(M
-8-t\L
-8.tyH
-8.u'H
-8/t	H
-8:t4@
-8:tWH
-8:tbH
-8A\A]
-8A\A]H
-8At}H
+8859
 8D.`=DG
-8Xt9H
-8[A\A]A^
-8[^A\A]
-8[^_A\
-8[^_A\A]A^
-8[^_]
-8[^_]A\A]
-8[^_]A\A]A^A_
-8[^_]A\A]A^A_H
-8[^_]A\A]H
-8qu^I
-9	5	y
-9	K	/	
-99ttH
-9Ch~FH
-9D$ u
-9D$Hu
-9D$Lt,
-9D$Pv
-9Fgb<
-9Q w)H
-9\$\v>Hc
-9\$\w
-9\$\~
-9\$lw
-9^pv8
-9t$HI
-9wpv8
-9zPt(
-: terminH
-::ENAMETH
-:@:F<@Z
-:\%x:%x:%x
+8vpk
+96_5
+9Fgb<\r
+9\t5\ty
 :fifo
 :pipe
 :ptym0
@@ -2127,261 +1521,97 @@ $no tfA
 :ptym98
 :ptym99
 :sock:
-:tGfA
-;*u2H
-;D$TwV
-;D$\u
-;S(|CA
-;S(|DA
-;t$Ps0
-<	wF1
-<	wVD
-<$=t$L
-<$L+e
-<$au{A
-<$dtl
-<%uQH
-<-t8<]t
-<-u.H
-<.ufH
-</t%<\t!
-</t2<\t.
-</t<<\t8A
-</t?<\t;
-</tnE1
-<0=thH
 <2ZGU
-<5weH
 <8bunz8
 <9Gl)
-<:u$H
-<=tnA
-<@En[v
-<@tsH
-<A-@=<A-@
-<CtQL
-<Iu&H
-<J\tj
 <NULL>
-<Nu$A
-<VwSL
-<_t*<.
-<`|~gp}
-<access H
-<defunct
 <defunct>
-<defunctD
-<lt/<tu
 <null!>
 <unknown module>: 
-=	D$4
-=	D$L
+<x5a
 => ptr_s=%p len_s=%d
 =@zj?@L~@@\GA@l
-=CCG A
-=CCG"utE1
-=^<[<xuj>
 =a30?-W
-=u,<8E
-=yhC@
 =~VY-Fd
->%3:>)
-><^~c@)
->Z$\>
->\t	H
 >dw%l
->wRfA
-?*["'(){}
-?/lj,D
+?0yx
+?1cb
+?4\fZ2
 ?8bunz8
-?9P)&p
+?8pz
 ?<TUUUU
-??|+eG
-?@En[v
 ?CD57
 ?IUUUUU
 ?L%Tk
-?Ry	qf
+?NUY
+?Ry\tqf
 ?UUUUUU
 ?XXVx
-?\u\A
-?`/:>
+?\rUUUUU
 ?aCoc
 ?b-qB
-?c"b"
+?bHS
 ?cUUUUU
+?hPK
 ?i!VPCr(
-?r..~
-?v+$|
+?nWr
 ?v<y5
-?x.<,
-?{Q}<
-@ %z8
-@ u	E
 @(knN
-@.bss
-@.buildid5
-@.pdata
-@.reloc
-@.xdata
 @8iYP}
-@A\A]A^
-@LcaDH
-@Y]^3
-@[A\A]
-@[A\A]A^A_
-@[A\]
-@[^A\
-@[^A\A]A^
-@[^_A\A]
-@[^_A\A]A^A_
-@[^_]A\
-@[^_]A\A]A^
-@^A\A]
-@^_]A\A]
+@XMU
 @`M|kpN
 @cjknarrow
 @cyrillic
-@d(~\
 @euro
 @iqtelif
 @latin
-@tDE9
-@wPeH
-A#F,A;F(D
-A#L$$
-A#V0E1
-A+L$(xi9
-A+P(xjM
-A,+A(x
-A,A+A(x=L
-A3\$<
-A8,$u
-A97v@
-A9D$ 
-A9D$ tgA
-A9D$$~
-A9D$PtbA
-A9_ vaH
-A9_T~vH
-A9t$Pu
-A9wPt'A
-A9|$Pu
-A;@(|%A
-A;@(|(A
-A;D$@
-A;FXt
-A;GXt
-A;\$(}yI
-A;_ r
-A< t"H
-A<4wS
+A0PQ
 AAAAAA
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+ABRT
 ACCMODE=%y audio_in=%d audio_out=%d, err=%d, ret=%d
 ACL-Size: %u
 AF_LOCAL: bind failed
 AF_LOCAL: getsockname failed
 AF_LOCAL: socket bound to port %u
+ALRM
 ANSI_X3.4-1968
-AS	N;
 ASCII
-ASCIfA
 ASYNCIO
+AS\tN;
 AS]N;
 ASkQ;
 ASmQ;
-ATUWSH
-ATUWVSH
-ATUWVSHcY
-ATUWVSfI
-ATVSH
-ATWSH
-ATWVSH
-AUATH
-AUATSH
-AUATUWSH
-AUATUWVH
-AUATUWVS
-AUATUWVSH
-AUATVH
-AUATVS
-AUATVSH
-AUATWSH
-AUATWVSH
 AUTHZ_CLIENT_CONTEXT_HANDLE__* authz_ctx_cache::context(PSID)
-AUVSH
-AUWVSH
-AVATWVSH
-AVAUATH
-AVAUATS
-AVAUATSH
-AVAUATUWSH
-AVAUATUWVS
-AVAUATUWVSH
-AVAUATVS
-AVAUATVSH
-AVAUATWH
-AVAUATWSH
-AVAUATWVS
-AVAUATWVSH
-AWAVAUATASAQAPVWRQSPH
-AWAVAUATH
-AWAVAUATSH
-AWAVAUATUWVH
-AWAVAUATUWVSH
-AWAVAUATUWVSfH
-AWAVAUATVSH
-AWAVAUATWH
-AWAVAUATWVS
-AWAVAUATWVSH
-A\A]A^
-A\A]A^A_
-A\A]A^]
-A\A]]
 Aborted
 Accessing a corrupted shared library
 Account disabled
-AcquireSRWLockExclusive
-AcquireSRWLockShared
 Add CREATE_BREAKAWAY_FROM_JOB
-AddVectoredContinueHandler
 Adding <%S> lock failed
 Address already in use
 Address family for hostname not supported
 Address family not supported by protocol
 Advertise error
 Alarm clock
-AllocConsole
 Allocating
-AllocationBase %p, BaseAddress %p, RegionSize %lx, State %x
+AllocationBase %p, BaseAddress %p, RegionSize %lx, State %x\n
 An argument buffer overflowed
 App version:  %d.%d, api: %d.%d
 April
 Argument list too long
 Async I/O on socket %s
-AttachConsole
 Attempt to execute a cleanup handler across threads
 Attempt to push a cleanup handler across threads
 Attempting to link in too many shared libraries
 August
-Authenti
-AuthentiH9
 AuthenticAMD
-AuthzAccessCheck
-AuthzFreeContext
-AuthzInitializeContextFromSid
 AuthzInitializeContextFromSid, %E
-AuthzInitializeContextFromToken
 AuthzInitializeContextFromToken, %E
-AuthzInitializeResourceManager
 AuthzInitializeResourceManager, %E
-AxLcB
-B H+B(H
-B,+B(y
 BBBBBB
-BEGIN_CYGWIN_VERSION_INFO
-BIG5A
+BEGIN_CYGWIN_VERSION_INFO\n%%% Cygwin dll major: 3004\n%%% Cygwin dll minor: 9\n%%% Cygwin api major: 0\n%%% Cygwin api minor: 345\n%%% Cygwin shared data: 5\n%%% Cygwin dll identifier: cygwin1\n%%% Cygwin mount registry: 3\n%%% Cygwin cygwin registry name: Cygwin\n%%% Cygwin installations name: Installations\n%%% Cygwin cygdrive default prefix: \n%%% Cygwin build date: \n%%% Cygwin shared id: cygwin1S5\nEND_CYGWIN_VERSION_INFO\n
+BEz\fB
+BIG5
 BLKALIGNOFF
 BLKGETSIZE
 BLKIOMIN
@@ -2401,17 +1631,15 @@ Bad system call
 Bad value for ai_flags
 Balloc succeeded
 Block device required
-Block devices:
 Broken pipe
 Bus error
-C H;|$8
 C.UTF-8
 CAk[S
-CHI9D$
-CLSID={645FF040-5081-101B-9F08-00AA002F954E}
+CHLD
 COMMONPROGRAMFILES=
 COMSPEC=
 CONOUT$
+CONT
 CP101
 CP102
 CP1251
@@ -2419,19 +1647,15 @@ CP20866
 CP21866
 CP874
 CP932
-CPI9D$
 CPSTW
 CPU time limit exceeded
-CPx86_f
 CQt^;
-CXI9D$ t<H
 CYGWIN
 CYGWIN=
 CYGWIN_%s
 CYGWIN_%s-%u
 CYGWIN_MISMATCH_OK
 CYGWIN_TESTING
-CallNamedPipeA
 Calling ExitProcess n %y, exitcode %y
 Calling dlls.cleanup_forkables n %y, exitcode %y
 Can not access a needed shared library
@@ -2446,7 +1670,8 @@ Can't create reader thread sync event during exec, %E
 Can't create reader thread sync event during fork, %E
 Can't duplicate handle of previous owner, %E
 Can't fetch linked token (%E), use standard token
-Can't initialize Cygwin installation root dir.
+Can't initialize Cygwin installation root dir.\nGetModuleFileNameW(%p, %p, %u), %E
+Can't initialize Cygwin installation root dir.\nInvalid DLL path
 Can't open process of previous owner, %E
 Can't recreate shared timerfd section during %s, status %y!
 Can't recreate timerfd cancel event during %s, status %y!
@@ -2455,14 +1680,10 @@ Can't reopen shared fc_handler memory during exec, %E
 Can't reopen shared fc_handler memory during fork, %E
 Can't reopen shared memory during exec, %E
 Can't reopen shared memory during fork, %E
-Can't start native Windows application from here.
 Can't update shared handlers, %E
-CancelIo
-CancelSynchronousIo
 Cannot access path %S, status %y
 Cannot allocate memory
 Cannot assign requested address
-Cannot continue.
 Cannot delete %S, try delete-on-close
 Cannot exec a shared library directly
 Cannot get dacl, %E
@@ -2470,22 +1691,14 @@ Cannot get volume attributes (%S), %y
 Cannot restore original egid %u
 Cannot restore original euid %u
 Cannot send after transport endpoint shutdown
-ChH9C`
-ChH9C`u
-ChI9D$0u
-Changing record below from question to answer
+Cda`
+Changing record below from question to answer\n
 Channel number out of range
-Character devices:
-CheckTokenMembership
+Character devices:\n%3d mem\n%3d cons\n%3d /dev/tty\n%3d /dev/console\n%3d /dev/ptmx\n%3d st\n%3d misc\n%3d sound\n%3d ttyS\n%3d tty\n\nBlock devices:\n%3d fd\n%3d sd\n%3d sr\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n
 Checking if directory %S is empty failed, status = %y
 Child exited
 Classes
-ClearCommBreak
-ClearCommError
 ClearCommError %E
-CloseClipboard
-CloseDesktop
-CloseHandle
 CloseHandle %E
 CloseHandle (get_handle ()<%p>), %E
 CloseHandle (get_handle_nat ()<%p>), %E
@@ -2497,15 +1710,10 @@ CloseHandle (inuse), %E
 CloseHandle (output_mutex<%p>), %E
 CloseHandle (pipe_sw_mutex<%p>), %E
 CloseHandle failed, %E
-ClosePseudoConsole
-CloseWindowStation
 Closing last master of pty%d
-CoTaskMemFree
 Communication error on send
-CompareStringW
 ConEmuHk64.dll
 ConEmuPID
-ConnectNamedPipe
 Connection refused
 Connection reset by peer
 Connection timed out
@@ -2521,323 +1729,47 @@ Couldn't create/open shared socket mutex %S, %y
 Couldn't realloc() clipboard buffer for write
 Couldn't relock drive after bus reset.
 Couldn't reserve/commit %ld bytes of space for cygwin's heap, %E
-Couldn't set directory to %S temporarily.
-CpI9D$8u
-Create the directory '%s' and set the permissions to 01777.
+Couldn't set directory to %S temporarily.\nCannot continue.
 CreateDesktop failed, %E
-CreateDesktopW
-CreateEnvironmentBlock
 CreateEvent failed. %E
 CreateEvent for %s failed, %E
 CreateEvent, %E
 CreateFile failed, r %p, %E
 CreateFile: name %s
-CreateFileA
 CreateFileMapping %W, %E.  Terminating.
-CreateFileW
-CreateFontW
 CreateMapping failed with %E
 CreateMutex hdl_cnt_mtx failed: %E
 CreateMutex read_mtx failed: %E
-CreateNamedPipeA
-CreatePipe
 CreatePipe for __SIGCOMMUNE failed, %E
 CreateProcess failed, %E
 CreateProcessA
-CreateProcessAsUserW
 CreateProcessW
 CreateProcessW (%W, %W, 0, 0, 1, %y, 0, 0, %p, %p)
 CreateProcessW failed for '%W'
-CreateProfile
 CreateProfile, HRESULT %x
-CreatePseudoConsole
-CreatePseudoConsole() failed. %08x %08x
-CreateRemoteThread
+CreatePseudoConsole() failed. %08x %08x\n
 CreateRemoteThread: %E
 CreateSemaphore failed. %E
-CreateSymbolicLinkW
-CreateTapePartition
-CreateThread
 CreateThread failed for %s - %p<%y>, %E
 CreateThread failed: this %p, %E
 CreateWindowEx %E
-CreateWindowExW
 CreateWindowStation failed, %E
-CreateWindowStationW
 Created SD-Size: %u
 Creating IPC object failed in fork, %E
 Creating event failed, %E
 Creating file %S for overwriting %S (%S) failed, status = %y
-CygwH
 Cygwin
-Cygwin WARNING:
+Cygwin WARNING:\n  Couldn't compute FAST_CWD pointer.  This typically occurs if you're using\n  an older Cygwin version on a newer Windows.  Please update to the latest\n  available Cygwin version from https://cygwin.com/.  If the problem persists,\n  please see https://cygwin.com/problems.html\n\n
 Cygwin runtime failure: 
-Cygwin.1H
-Cygwin.1H9E
-C|<BB*
-D	T$pM
-D!D$$D!D$<
-D"T$y
-D$ 9FPu
-D$ A)
-D$ D)
-D$ E1
-D$ H+D$(L
-D$ H9
-D$ HcB
-D$ HiB
-D$ L)
-D$ eH
-D$ eL
-D$ fE
-D$ fH
-D$$/devf
-D$( @
-D$( u
-D$(!@
-D$(+D$,fH
-D$(,	
-D$(0@
-D$(9G
-D$(A)
-D$(A;D$0~	A
-D$(E1
-D$(G	
-D$(H	
-D$(H9
-D$(H9FH
-D$(HiL$ @B
-D$(L)
-D$(L;
-D$(`@
-D$(`y
-D$(eH
-D$(ua
-D$({	
-D$*dD
-D$,H	
-D$,Hc
-D$,Ic
-D$,eH
-D$0@t
-D$0E1
-D$0H;C`
-D$0HiB
-D$0I)
-D$0Ic@
-D$0IiD$
-D$0L)
-D$0eH
-D$0t=
-D$8D)
-D$8E1
-D$8H9
-D$8I9
-D$8Ic
-D$8Lc
-D$8LcD$PL
-D$8M)
-D$8Mi
-D$8eH
-D$8f.
-D$;D8
-D$<9C
-D$<A9
-D$<E1
-D$<E9
-D$<eH
-D$<u	H
-D$?I9
-D$@ @
-D$@!@
-D$@="
-D$@E1
-D$@H)
-D$@H9
-D$@H9D$8
-D$@Hc
-D$@HcD
-D$@HcG<I
-D$@HcT$,H
-D$@I9
-D$@L9
-D$@L;
-D$@LcL$(L
-D$@`@
-D$@`@ 
-D$@eH
-D$@eL
-D$@fE
-D$@tpeH
-D$D u8
-D$D u9
-D$DE1
-D$DeH
-D$FfA
-D$Fu'
-D$H9D$L
-D$HD9
-D$HE1
-D$HH)
-D$HH9
-D$HH9D$@r
-D$HH9D$@r-
-D$HH;D$`
-D$HH=
-D$HI)
-D$HI9
-D$HL9L$@E
-D$HLc
-D$H`y
-D$Hatedf
-D$HeH
-D$Hf%
-D$Hf.
-D$HfA
-D$Ht3
-D$Hted
-D$Hu*H
-D$Hub
-D$Hx	H
-D$J@t
-D$K L
-D$L u9
-D$L u=
-D$LE1
-D$LH)
-D$LeH
-D$LfH
-D$Nf%?
-D$Nf9
-D$NfD9
-D$P t
-D$P u
-D$P uR
-D$P uy
-D$P+D$pA
-D$PA9
-D$PD)
-D$PE)
-D$PE1
-D$PH9
-D$PH;|$P
-D$PHc
-D$PHiB
-D$PI)
-D$PL;t$P
-D$PL;|$P
-D$PeH
-D$PfE
-D$Pt'H
-D$PtimefA
-D$Pu~A
-D$T;D$PsRH
-D$TD9
-D$TE1
-D$XE1
-D$XH9
-D$XH;T$P
-D$XHiL$P
-D$XL9
-D$XLc
-D$X`y
-D$XeH
-D$\ t
-D$\ uB
-D$\ uG
-D$\ uR
-D$\E)
-D$\E1
-D$\H)
-D$\Hc
-D$\L)
-D$\eH
-D$^Hc
-D$`E1
-D$`E9
-D$`H)
-D$`H9
-D$`HcE,H+D$(H
-D$`HiB
-D$`Ic
-D$`L)
-D$``y
-D$`eH
-D$`f.
-D$`fD
-D$berroI
-D$dD	
-D$h+D$\
-D$hE1
-D$hH)
-D$hH+
-D$hH3
-D$hHcD$lH
-D$hI)
-D$heH
-D$lE1
-D$lH)
-D$mH9
-D$p+D$L
-D$p<0
-D$pD	
-D$pD;@,r
-D$pE1
-D$pH-
-D$pHc
-D$pL)
-D$pLc
-D$pLcK
-D$pbtn 
-D$peH
-D$pfA
-D$pme
-D$xHc
-D$xHiL$p
-D$xI9
-D$x`y
-D$xeH
-D$xfD
-D$xt"H
-D$y1H
-D$|E1
-D$|H9
-D$|L9
-D$|eH
-D$|th
-D)8M9
-D)T$h
-D+D$LD
-D+T$HD
-D+|$H)
+D/vp
 D0D0H0
 D0D0H0|
-D9D$(
-D9T$T
-D9d$8
-D9d$T
-D9k0u
-D9l$(u
-D9l$P
-D9l$Pu
-D9s4u
-D9t$<
-D9t$<w
-D9t$\
-D:L$:
-D;A0rOD
-D;d$Lr
-D;d$Ls1A
-D;d$`u
-D;l$T
-D;t$@
-D<@.L
 DC: server: %W
-DD$ I
 DGRAM
 DIR* opendir(const char*)
 DLL build:    %s
 DLL version:  %d.%d, api: %d.%d
+DNn)
 DWORD aiowaiter(void*)
 DWORD aioworker(void*)
 DWORD child_info::proc_retry(HANDLE)
@@ -2853,25 +1785,13 @@ DWORD thread_pty_slave(void*)
 DWORD thread_socket(void*)
 DWORD timer_tracker::thread_func()
 DWORD winpids::enum_processes(bool)
-D\$dA
-Dd$8L
-DebugBreak
 December
-DecryptFileW
-DefWindowProcW
 Delete %S already pending
-DeleteCriticalSection
-DeleteObject
-DeleteProcThreadAttributeList
 Deleting Critical Section
-DeregisterEventSource
 Desktop: %W
 Destination address required
-DestroyEnvironmentBlock
-DestroyWindow
 Device not a stream
 Device or resource busy
-DeviceIoControl
 DeviceIoControl (%S, IOCTL_DISK_GET_PARTITION_INFO{_EX}) %E
 DeviceIoControl (%W, FSCTL_LOCK_VOLUME) failed, %E
 DeviceIoControl (FSCTL_ALLOW_EXTENDED_DASD_IO) failed, %E
@@ -2881,21 +1801,13 @@ DeviceIoControl(IOCTL_DISK_GET_DRIVE_LAYOUT_EX): %E
 Directory %S not empty, found file <%S>, query status = %y
 Directory not empty
 Discard %d bytes wave header
-DiscardVirtualMemory
-DisconnectNamedPipe
 DisconnectNamedPipe, %E
 Disk quota exceeded
-DispatchMessageW
-DnsFree
-DnsQuery for "%s" %d: %u (Windows)
-DnsQuery_A
+DnsQuery for "%s" %d: %u (Windows)\n
 DsEnumerateDomainTrusts: %E
-DsEnumerateDomainTrustsW
-DsGetDcNameW
 Dumb thinko in pthread handling.  Whip the developer.
 Dumping stack trace to %S
 Duplicate entries
-DuplicateHandle
 DuplicateHandle (from_master), %E
 DuplicateHandle (from_master_nat), %E
 DuplicateHandle (lf_obj): %E
@@ -2908,48 +1820,27 @@ DuplicateHandle failed, %E
 DuplicateHandle for __SIGCOMMUNE failed, %E
 DuplicateTokenEx %E
 DuplicateTokenEx: %E
-E(H+E
-E(H9-
-E(Hcu
-E(Hcu L
 E1cbj<
-E8L+e
-E;D$$
-ED$,H
-EHL+e
+EDC`
 EMT instruction
 ENAMETOOLONG
 ENAMETOOLONG = normalize_posix_path (%s)
-END_CYGWIN_VERSION_INFO
-EST5EDT,M3.2.0,M11.1.0
 EUC-JP
 EUC-KR
 EUCCN
 EUCJP
 EUCKR
-EXL+(I
+EXIT
 EgUUU
-EmptyClipboard
-EncryptFileW
-End of stack trace%s
-EnterCriticalSection
+End of stack trace%s\r\n
 Entered
-EnumFontFamiliesExW
-EnumWindows
-EraseTape
 Error opening the pipe (%u)
 Error: .netrc file is readable by others.
-Error: Current working directory %s.
-EscapeCommFunction
-Et$0L
+Error: Current working directory %s.\nCan't start native Windows application from here.\n\n
 Exception during process exit
-Exception: %s at rip=%012X
+Exception: %s at rip=%012X\r\n
 Exchange full
 Exec format error
-ExitProcess
-ExitThread
-ExpandEnvironmentStringsW
-F H;F(u
 F/dev/null
 FAILURE ! fp_ and message_ both 0!! 
 FILE* open_system_file(const char*)
@@ -2965,247 +1856,31 @@ File locking deadlock error
 File name too long
 File size limit exceeded
 File too large
-Filename				Type		Size		Used		Priority
 Filename exists with different case
-FillConsoleOutputAttribute
-FillConsoleOutputCharacterW
-FindFirstVolumeW
+Filename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n
 FindFirstVolumeW, %E
-FindNextVolumeW
-FindVolumeClose
 Floating point exception
-FlushConsoleInputBuffer
-FlushFileBuffers
-FlushViewOfFile
-Flushed %d bytes
-For instance on the command line: mkdir -m 01777 %s
+Flushed %d bytes\n
 Format tape with %s partition(s)
 Found token %p
-Frame         Function      Args
-FreeAddrInfoW
-FreeConsole
-FreeEnvironmentStringsW
-FreeLibrary
 Friday
 Function not implemented
-G(L+D$8H
 GB2312
 GEORGIAN
 GEORGIAN-PS
 GETFL: %y
+GH@7
 GMT%+d:%02d
-GenerateConsoleCtrlEvent
-GenuineI
-GenuineIH9
 GenuineIntel
-GetAdaptersAddresses
-GetAddrInfoW
-GetBinaryTypeW
-GetClipboardData
-GetCommModemStatus
-GetCommState
-GetCommandLineA@0
-GetCommandLineW
-GetCommandLineW@0
-GetConsoleCP
-GetConsoleCursorInfo
-GetConsoleMode
-GetConsoleOutputCP
-GetConsoleProcessList
-GetConsoleScreenBufferInfo
-GetConsoleWindow
-GetCurrentConsoleFontEx
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentProcessorNumberEx
-GetCurrentThread
-GetCurrentThreadId
-GetDC
 GetEnvironmentStrings returned %p
 GetEnvironmentStrings returned NULL, %E
-GetEnvironmentStringsW
-GetEnvironmentVariableA
-GetEnvironmentVariableW
-GetExitCodeProcess
-GetFileAttributesA
-GetFileSize
-GetFileSizeEx
-GetFileType
-GetFinalPathNameByHandleW
-GetForegroundWindow
-GetGlyphIndicesW
-GetHandleInformation
-GetIfEntry
-GetIpAddrTable
-GetIpForwardTable
-GetKeyboardLayout
-GetLastError
-GetLocaleInfoA
-GetLocaleInfoW
-GetLogicalDriveStringsA
-GetLogicalDrives
-GetLogicalProcessorInformationEx
-GetMessageW
-GetModuleFileNameW
-GetModuleFileNameW(%p, %p, %u), %E
-GetModuleHandleA
-GetModuleHandleExA
-GetModuleHandleExW
-GetNameInfoW
-GetNamedPipeClientProcessId
-GetNetworkParams
-GetNetworkParams: OK
-GetNetworkParams: error %u (Windows)
-GetNumberOfConsoleInputEvents
-GetOverlappedResult
-GetPriorityClass
-GetPriorityClipboardFormat
+GetNetworkParams: OK\n
+GetNetworkParams: error %u (Windows)\n
 GetProcAddress
-GetProcessAffinityMask
-GetProcessGroupAffinity
-GetProcessHeap
-GetProcessId
-GetProcessWindowStation
-GetProcessWorkingSetSize
-GetStartupInfoA
-GetStdHandle
-GetSystemDirectoryW
-GetSystemInfo
-GetSystemTimeAsFileTime
-GetSystemTimePreciseAsFileTime
-GetSystemWindowsDirectoryW
-GetTapeParameters
-GetTapePosition
-GetTapeStatus
 GetTapeStatus: %u, get_mp: %d
-GetTcp6Table
-GetTcpTable
-GetTempPathW
-GetThreadContext
-GetThreadDesktop
-GetThreadGroupAffinity
-GetThreadId
-GetThreadPriority
-GetTickCount
-GetTickCount64
-GetTimeZoneInformation
-GetUdpTable
-GetUserObjectInformationW
-GetVolumeNameForVolumeMountPointW
-GetVolumePathNamesForVolumeNameW
-GetWindowThreadProcessId
-Gid:	%d %d %d %d
 Global
 Global charset set to %s
-GlobalAlloc
-GlobalLock
-GlobalMemoryStatusEx
-GlobalSize
-GlobalUnlock
-Gu$A9
-H I9H
-H#D$`H9
-H#D$dH
-H)D$@L
-H)EpH
-H){pH
-H+C0H
-H+D$(L
-H+D$8H
-H+D$@H
-H+D$@H)
-H+D$P
-H+D$PH
-H+D$XI
-H+EpI
-H+KXH
-H+L$ 
-H+P0H
-H+T$@H9
-H+T$X
-H+V`A)
-H+t$PH;t$`
-H+t$p
-H5UUUUH
-H90v 
-H95Tp
-H9A(t
-H9A(ur
-H9C@u
-H9D$(
-H9D$(u
-H9D$Hw
-H9D$Pv=L
-H9D$PvPH
-H9D$Pw
-H9D$XA
-H9D$Xt
-H9D$p
-H9D$v
-H9J(tC
-H9PHt
-H9Ppt0H
-H9T$ 
-H9T$H~
-H9V(v
-H9V0s
-H9VXvJD
-H9\$(s
-H9\$(t.
-H9\$0s
-H9\$0u
-H9\$8
-H9\$@
-H9\$HtKI
-H9\$x
-H9^(v:H
-H9^(vJH
-H9^(w
-H9l$x
-H9p8u
-H9q t5
-H9s t
-H9s(tBH
-H9t$ u
-H9t$(t
-H9t$Hw
-H9t$P
-H9x(u
-H9{ t
-H9{0u
-H9|$8
-H9|$8v
-H9|$P
-H9|$Pv;L
-H9|$PvNH
-H9|$Pw
-H9|$`
-H9|$`v
-H;C w?I
-H;D$@L
-H;D$@w.H
-H;D$H
-H;D$HubH
-H;D$P
-H;D$X
-H;L$8|
-H;L$@
-H;PHu
-H;T$8u
-H;T$P
-H;l$ t!H
-H;l$(t
-H;l$8r
-H;l$H
-H;l$X
-H;s(t
-H;|$ s
-H;|$0s
-H;|$8
-H;|$8u
-H;|$PssD
-HASH: Out of overflow pages.  Increase page size
-HA\A]
+HASH: Out of overflow pages.  Increase page size\n
 HDIO_GETGEO
 HKEY_CLASSES_ROOT
 HKEY_CURRENT_CONFIG
@@ -3214,115 +1889,18 @@ HKEY_LOCAL_MACHINE
 HKEY_PERFORMANCE_DATA
 HKEY_USERS
 HKEY__* open_key(const char*, REGSAM, DWORD, bool)
+HOME
 HOME is already in the environment %s
 HOME=
 HOMEDRIVE=
 HOMEPATH=
-H[A\A]A^
-H[^A\A]
-H[^A\A]A^A_
-H[^_A\
-H[^_A\A]A^
-H[^_A\H
-H[^_]
-H[^_]A\A]
-H[^_]A\A]A^A_
-H[_A\A]
 Hangup
-Hc@$H
-Hc@<A
-Hc@XH
-Hc@pH
-HcCxH
-HcCxI)
-HcD$ A
-HcD$ H
-HcD$8H
-HcD$8L9
-HcD$<H
-HcD$@E1
-HcD$@H
-HcD$DH
-HcD$H
-HcD$L
-HcD$LH
-HcD$TH
-HcD$XL9
-HcD$\A9
-HcD$\H
-HcD$`H
-HcD$d
-HcD$dH
-HcD$hE1
-HcD$hL9
-HcD$pL9
-HcE(H
-HcE(J
-HcE<H
-HcG0L9
-HcG<H
-HcH<H
-HcK<H
-HcM0H
-HcNHH
-HcP<I
-HcP<L
-HcS(H
-HcSxHc
-HcSxI)
-HcT$,H
-HcT$,Hi
-HcT$@
-HcT$H
-HcT$HH
-HcT$LH
-HcT$PH
-HcT$XH9
-HcT$\I
-HcT$`
-HcT$`H
-HcT$x
-HcU(H
-HcU(J
-HcU,H
-HcU0D
-HcV(H
-Hc\$,Lc
-Hcl$HH
-Hcl$TH
-Hct$PH
-Hct$\H
-HcxpH
-Hc|$DH
-Hc|$TH
-Hc|$\Hc
-Hc|$`H
-HeapAlloc
-HeapCreate
-HeapDestroy
-HeapFree
-HiD$p
-HiD$p@B
-HiL$P
-HiL$p
-Hi\$p
-HighFree:              0 kB
-HighTotal:             0 kB
+HiUL
 Host is down
 Host name lookup failure
-HygonGenH9
 HygonGenuine
-I+<$I
 I,OwA
 I/O possible
-I9D$ 
-I9D$(
-I9L$ u
-I9\$(u
-I;D$Ht1M
-I;P(w
-I?h!"3
-I?~L=
 ISO-8859-
 ISO-8859-1
 ISO-8859-13
@@ -3335,21 +1913,9 @@ ISO-8859-6
 ISO-8859-7
 ISO-8859-8
 ISO-8859-9
-IcD$ A
-IcD$ I
-IcEpH
-IcEpI9
-IcEpL9
-IcGxI
-IcH<A
-IcL$ M
-IcT$ 9
-IcT$ D
-IcT$,A
 Identification requested
 Identifier removed
-IdnToAscii
-IdnToUnicode
+IeA@
 Illegal instruction
 Illegal seek
 ImpersonateLoggedOnUser: %E
@@ -3362,11 +1928,9 @@ Inappropriate ioctl for device
 Incompatible cygwin .dll -- incompatible per_process info %u != %u
 Infinity
 InitializeCriticalSection
-InitializeProcThreadAttributeList
 Inode is remote (not really error)
 Input/output error
 Installation root: <%W> key: <%S>
-IntelTDX
 IntelTDX    
 Internal Error i=%d
 Internal cond mutex is not valid. this %p
@@ -3380,9 +1944,7 @@ Internal rwlock synchronisation mutex is not valid. this %p
 Internal rwlock writers cond is not valid. this %p
 Interrupt
 Interrupted system call
-IntxLNK
 Invalid %s name '%s'
-Invalid DLL path
 Invalid POSIX id %u
 Invalid account name <%s> (backslash/at)
 Invalid account name <%s> (fully qualified/local account)
@@ -3409,187 +1971,21 @@ Invalid t->c_ospeed %u
 Invalid tcflush queue %d
 Invalid value for hints
 Is a directory
-IsBadStringPtrA
-IsDebuggerPresent
-IsProcessInJob
-IsWow64Process2
 JanFebMarAprMayJunJulAugSepOctNovDec
 January
-K8HcQ
-KERNEL32.dll
-KEY_CLASH
-KHH;Kx
-KHH;KxtX
+July
+June
+K=5k
+KILL
+KOI8
 KOI8-R
 KOI8-U
 KerbS4ULogon: ClientUpn: <%S>
 Kerberos
 Killed
-KpL+K
-L$ E1
-L$ H)
-L$ Hc
-L$ M)
-L$ f9
-L$ fA
-L$ fD
-L$( D
-L$( I
-L$(3L$ 
-L$(A)
-L$(L9
-L$(L;
-L$(Mc
-L$(eH
-L$(f%
-L$(f9
-L$(t9
-L$(tQE
-L$,H)
-L$,eH
-L$,fA
-L$0D9
-L$0E1
-L$0eH
-L$0fD
-L$0fE
-L$8<i
-L$8E1
-L$8H9
-L$8H=
-L$8Hc
-L$8HcD$4H
-L$8Lc
-L$8M)
-L$8Mc
-L$8eH
-L$8eL
-L$< H
-L$<E1
-L$<eH
-L$@E1
-L$@H)
-L$@H9
-L$@Hc
-L$@eH
-L$BE1
-L$D A
-L$D@I
-L$DHc
-L$DfE
-L$H H
-L$HA)
-L$HE1
-L$HH+
-L$HH=
-L$HI9
-L$HMc
-L$HeH
-L$HfA
-L$JJ;
-L$L H
-L$L I
-L$L9H
-L$LA)
-L$LHc
-L$LeH
-L$NE1
-L$P A
-L$P I
-L$P9\$X
-L$P@I
-L$PA)
-L$PD;
-L$PE1
-L$PH9
-L$PHc
-L$PL9
-L$PLc
-L$PeH
-L$TA)
-L$TD9
-L$TE)
-L$TeH
-L$X="
-L$XA9
-L$XE1
-L$XL9
-L$XM)
-L$XeH
-L$Xt9H
-L$XwOA
-L$\ A
-L$\ I
-L$\eH
-L$`9\$h
-L$`E1
-L$`H3
-L$`Hc
-L$`Hi
-L$`eH
-L$hE1
-L$hH	
-L$hHc
-L$heH
-L$leH
-L$pA)
-L$pE1
-L$pH9
-L$pHc
-L$pI9L$
-L$pMc
-L$peH
-L$pfD
-L$tHc
-L$xE1
-L$xH)
-L$xLiD$p
-L$xM)
-L$|E1
-L+BpH
-L+D$8E
-L+L$@L9L$H
-L+T$P
-L+d$(I
-L+d$p1
-L+l$0D
-L+t$pD
-L+uPH
-L+|$(A
-L9 tIL
-L95wS
-L9A(v#L
-L9D$8
-L9D$H
-L9D$X
-L9L$@
-L9c(u
-L9d$(
-L9d$8u
-L9d$PvBL
-L9d$PvVI
-L9d$Pw
-L9f t>L
-L9o(L
-L9t$H
-L9t$P
-L9|$(tdI
-L9|$0
-L9|$H
-L; tHL
-L;L$8
-L;YXu
-L;d$xL
-L;g(s
-L;t$(
-L;t$PsiE
-L;|$ r
-L;|$ sMB
-L;|$ tUB
-L;|$PsF
+LANG
 LCID __get_lcid_from_locale(const char*)
 LCID=%04y
-LCMapStringW
 LC_ALL
 LC_COLLATE
 LC_CTYPE
@@ -3602,143 +1998,77 @@ LD_LIBRARY_PATH=
 LD_PRELOAD
 LOGONSERVER=
 LONG get_file_sd(HANDLE, path_conv&, security_descriptor&, bool)
+LOST
 LSP handle: %p
-LcCpL)
-LcD$,L)
-LcD$LH
-LcFpH)
-LcK D
-LcK L
-LcL$<H
-LcT$X
-Lc`pI
-Lcd$pA
-LdapGetLastError
-LdapMapErrorToWin32
-LeaveCriticalSection
 Leaving
 Level 2 halted
 Level 2 not synchronized
 Level 3 halted
 Level 3 reset
-LiD$ 
-LiD$P
-LiL$ @B
 Limit of 16 macros have already been defined
 Link has been severed
 Link number out of range
 Linked Token is not a primary token!
 Linked Token: %p
-Lit$P
-LoadLibraryExA
-LoadLibraryExW
-LoadLibraryW
-LoadUserProfileW
 LoadUserProfileW, %E
-Loaded different DLL with same basename in forked child,
-Loaded modules:
+Loaded modules:\r\n
 Local time zone must be set--see zic manual page
-LocalFree
-LocaleNameToLCID
-LocalizedResourceName=@%SystemRoot%\system32\shell32.dll,-8964
 Logon at this machine not allowed
 Logon outside allowed hours
-LogonUserW
 LogonUserW (%W, %W, ...)
-LookupAccountNameW
 LookupAccountNameW (%W), %E
 LookupAccountSid(%W), %E
-LookupAccountSidW
 LookupAccountSidW (%W), %E
-LowFree:      %10llu kB
-LowTotal:     %10llu kB
-LsaClose
 LsaConnectUntrusted
-LsaDeregisterLogonProcess
-LsaEnumerateAccountRights
-LsaFreeMemory
-LsaFreeReturnBuffer
-LsaLogonUser
-LsaLookupAuthenticationPackage
 LsaLookupAuthenticationPackage: %y
-LsaLookupSids
-LsaOpenPolicy
-LsaQueryInformationPolicy
 LsaQueryInformationPolicy(Account) %y
 LsaQueryInformationPolicy(Primary) %y
 LsaRegisterLogonProcess
-LsaRetrievePrivateData
-LsaStorePrivateData
-M;Hhw
 MEM_COMMIT failed, %E
 MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+MU\fj
 Machine is not on the network
 Macro definition missing null line terminator.
-Make sure to remove the offending DLL before trying again.
 MapView: address shift with MAP_FIXED given
-MapViewOfFile
-MapViewOfFileEx
 MapViewOfFileEx '%W'(%p, size %u, m %d, created %d), %E.  Terminating.
 MapViewOfFileEx h0 %p, i %d failed, %E
-Mapping message queue failed in fork, status 0x%x
+Mapping message queue failed in fork, status 0x%x\n
 March
-Mc4$E
-McD$ B
-McFpH)
-McGTH
-MemFree:      %10llu kB
-MemTotal:     %10llu kB
+MemTotal:     %10llu kB\nMemFree:      %10llu kB\nHighTotal:             0 kB\nHighFree:              0 kB\nLowTotal:     %10llu kB\nLowFree:      %10llu kB\nSwapTotal:    %10llu kB\nSwapFree:     %10llu kB\n
 Memory allocation failure
 Message too long
-MessageBeep
-MessageBoxW
 Missing macdef name argument.
 Missing or wrong entry
 Monday
 Move %S to %S failed, status = %y
-Mp9]x
 MsV1_0
 MsV1_0S4ULogon: DomainName: <%S> UserPrincipalName: <%S>
-MsgWaitForMultipleObjectsEx
-MultiByteToWideChar
 Multihop attempted
 Multiple entries
-NAS	N;
+M|kp
+NAS;
+NAS\tN;
 NAS]N;
 NASkQ;
 NASmQ;
 NLSPATH
 NOTUSED
-NT-%d.%d
 NTSTATUS _unlink_nt(path_conv&, bool)
 NTSTATUS check_dir_not_empty(HANDLE, path_conv&)
+NULL
 NULL owner value
 Name not unique on network
 Name or service not known
-Name:	%s
-NetApiBufferFree
-NetGroupEnum
-NetLocalGroupEnum
-NetLocalGroupGetInfo
+Name:\t%s\nState:\t%c (%s)\nTgid:\t%d\nPid:\t%d\nPPid:\t%d\nUid:\t%d %d %d %d\nGid:\t%d %d %d %d\nVmSize:\t%8lu kB\nVmLck:\t%8lu kB\nVmRSS:\t%8lu kB\nVmData:\t%8lu kB\nVmStk:\t%8lu kB\nVmExe:\t%8lu kB\nVmLib:\t%8lu kB\nSigPnd:\t%016lx\nSigBlk:\t%016lx\nSigIgn:\t%016lx\n
 NetLocalGroupGetInfo(%W) %u
-NetUseGetInfo
-NetUserEnum
-NetUserGetGroups
-NetUserGetInfo
 NetUserGetInfo(%W) %u
 NetUserGetInfo, %u
-NetUserGetLocalGroups
 Network dropped connection on reset
 Network is down
 Network is unreachable
 New UTMP file: %s
 New thread object access mutex is not valid. this %p
 NfsActOnLink
-NfsSymli
-NfsSymlif
-NfsV3AttH
-NfsV3AttI
-NfsV3AttL
 No %W value for %W
 No CSI structure available
 No ROOTDSE entry for %W
@@ -3761,7 +2091,7 @@ No pty allocated
 No route to host
 No sid found for gid %u
 No space left on device
-No structure for wType %u
+No structure for wType %u\n
 No such device
 No such device or address
 No such file or directory
@@ -3773,52 +2103,23 @@ Not supported
 Not waiting for sigcomplete.  its_me %d signal %d
 Nothing happens
 November
-NtAccessCheck
 NtAccessCheck, %y
-NtAdjustPrivilegesToken
-NtAllocateLocallyUniqueId
-NtAssignProcessToJobObject
-NtCancelTimer
-NtClose
-NtCommitTransaction
-NtCreateDirectoryObject
 NtCreateDirectoryObject(%S): %y
 NtCreateDirectoryObject(inode): %y
-NtCreateEvent
 NtCreateEvent(lock): %y
-NtCreateFile
 NtCreateFile (%S) failed, status = %y
 NtCreateFile(%W): %y
-NtCreateJobObject
-NtCreateKey
-NtCreateMutant
 NtCreateMutant(%S), %y
 NtCreateMutant(inode): %y
-NtCreateNamedPipeFile
-NtCreateSection
-NtCreateSemaphore
-NtCreateSymbolicLinkObject
-NtCreateTimer
-NtCreateTransaction
-NtDuplicateToken
-NtFlushBuffersFile
 NtFlushBuffersFile (%S), status %y
-NtFsControlFile
 NtFsControlFile STATUS_PENDING, then %y
 NtFsControlFile got STATUS_PIPE_CLOSING...
 NtFsControlFile got unexpected status %y
 NtFsControlFile status %y after failing to connect bogus client or real client
 NtFsControlFile status %y, no STATUS_PENDING
 NtFsControlFile(FSCTL_GET_REPARSE_POINT) failed, %y
-NtLockFile
-NtLockVirtualMemory
-NtMapViewOfSection
-NtMapViewOfSectionEx
-NtOpenDirectoryObject
 NtOpenDirectoryObject, status %y
 NtOpenDirectoryObject: %y
-NtOpenEvent
-NtOpenFile
 NtOpenFile (%S) failed, status = %y
 NtOpenFile (%S) for reopening in renamed case failed, status = %y
 NtOpenFile (%S), status %y
@@ -3827,58 +2128,33 @@ NtOpenFile(%S) failed, status %y
 NtOpenFile(%S), status %y
 NtOpenFile: %y
 NtOpenFile: name %S
-NtOpenJobObject
-NtOpenKey
-NtOpenMutant
-NtOpenProcessToken
-NtOpenSection
-NtOpenSemaphore
-NtOpenSymbolicLinkObject
 NtOpenSymbolicLinkObject: %y
 NtOpenSymbolicLinkObject: %y, PID %u, ret 0
-NtOpenThreadToken
 NtOpenThreadToken, %y
-NtPrivilegeCheck
-NtQueryAttributesFile
 NtQueryAttributesFile: %y
-NtQueryDirectoryFile
 NtQueryDirectoryFile failed, status %y, win32 error %u
-NtQueryDirectoryObject
 NtQueryDirectoryObject, status %y
-NtQueryEaFile
-NtQueryEvent
-NtQueryInformationFile
 NtQueryInformationFile (%S, FileInternalInformation) failed, status = %y
 NtQueryInformationFile (%S, FileNameInformation) failed, status = %y
 NtQueryInformationFile status %y
 NtQueryInformationFile(FilePositionInformation): %y
 NtQueryInformationFile: %y
-NtQueryInformationJobObject
-NtQueryInformationProcess
 NtQueryInformationProcess(ProcessQuotaLimits): status %y
 NtQueryInformationProcess(ProcessTimes): status %y
 NtQueryInformationProcess(ProcessVmCounters): status %y
 NtQueryInformationProcess: status %y
-NtQueryInformationThread
 NtQueryInformationThread(ThreadBasicInformation), status %y
-NtQueryInformationToken
 NtQueryInformationToken (TokenGroups) %y
 NtQueryInformationToken (TokenPrimaryGroup), %y
 NtQueryInformationToken (TokenUser), %y
 NtQueryInformationToken(), %y
 NtQueryInformationToken(TokenGroups) %y
 NtQueryInformationToken(my_token, TokenGroups), %y
-NtQueryObject
 NtQueryObject failed, %y
 NtQueryObject: %y
-NtQueryQuotaInformationFile
-NtQuerySecurityObject
 NtQuerySecurityObject (%S), status %y
 NtQuerySecurityObject(), %y
 NtQuerySecurityObject: %y
-NtQuerySemaphore
-NtQuerySymbolicLinkObject
-NtQuerySystemInformation
 NtQuerySystemInformation(SystemPagefileInformation), status %y
 NtQuerySystemInformation(SystemPerformanceInformation), status %y
 NtQuerySystemInformation(SystemProcessorPerformanceInformation), status %y
@@ -3887,24 +2163,10 @@ NtQuerySystemInformation(SystemTimeOfDayInformation): status %y
 NtQuerySystemInformation, %y
 NtQuerySystemInformation: status %y, %E
 NtQuerySystemInformation: status %y, %u
-NtQuerySystemTime
-NtQueryTimer
-NtQueryTimerResolution
-NtQueryValueKey
-NtQueryVirtualMemory
 NtQueryVirtualMemory: status %y
-NtQueryVolumeInformationFile
 NtQueryVolumeInformationFile: %y
-NtReadFile
-NtRollbackTransaction
-NtSetEaFile
-NtSetEvent
 NtSetEvent, %y
-NtSetInformationFile
 NtSetInformationFile(FilePipeInformation): %y
-NtSetInformationJobObject
-NtSetInformationThread
-NtSetInformationToken
 NtSetInformationToken (TokenDefaultDacl), %y
 NtSetInformationToken (TokenOwner), %y
 NtSetInformationToken (TokenPrimaryGroup), %y
@@ -3913,35 +2175,23 @@ NtSetInformationToken (primary_token, TokenPrimaryGroup), %y
 NtSetInformationToken (token, TokenPrimaryGroup), %y
 NtSetInformationToken (user.token, TokenOwner), %y
 NtSetInformationToken (user.token, TokenPrimaryGroup),%y
-NtSetQuotaInformationFile
-NtSetSecurityObject
 NtSetSecurityObject %y
 NtSetSecurityObject, %y
 NtSetSecurityObject: %y
-NtSetTimer
-NtSetValueKey
-NtSetVolumeInformationFile
-NtUnlockFile
-NtUnlockVirtualMemory
-NtUnmapViewOfSection
-NtWaitForSingleObject
-NtWriteFile
 NtWriteFile (%S) failed, status = %y
-Null byte count has an unexpected value
+Null byte count has an unexpected value\n
 Numerical argument out of domain
 Numerical result out of range
-OOLONG::
+O8M2
 OS version:   Windows %s
+O\Mp
 O_TEXT/O_BINARY set in flags %y
 Object is remote
 October
-OpenClipboard
-OpenProcess
 OpenProcess (%u): %E
 OpenProcess failed, %E
 OpenProcess, %E
 OpenProcess: ret %u; pid: %d
-OpenThread
 Opening %S for delete failed, status = %y
 Opening %S for removing R/O failed, status = %y
 Opening %S for removing R/O succeeded
@@ -3954,21 +2204,20 @@ Operation canceled
 Operation not permitted
 Operation not supported
 Operation now in progress
+Os1i
 Out of streams resources
-OutputDebugStringA
 Overwriting %S (%S) with %S failed, status = %y
 P%Q%R%Q
-P(H;Pht
+PATH
 PATH=
-PA\A]A^
-PD9T$Pu
-PHcU(H
-PID %u: 
+PC6+
+PIPE
 PIPER
 PIPEW
 PIPE_TYPE_BYTE
 PIPE_TYPE_MESSAGE
 POLICY_LOOKUP_NAMES right not given?
+POLL
 POSIX
 POSIX message queue
 POSIX semaphore
@@ -3976,48 +2225,19 @@ POSIX shared memory object
 POSIXLY_CORRECT
 POSIXLY_CORRECT=1
 POSIX_V6_LP64_OFF64
-PPH;0
-PPH;0s
-PPH;8s&
-PPL; 
-PPid:	%d
+PROF
 PROGRAMFILES=
 PT154
-PX98~
-PXH;8
-P[A\A]
-P[^A\
-P[^A\A]A^
-P[^_A\A]
-P[^_A\A]A^A_
-P[^_]A\
-P[^_]A\A]A^
-P`v1L
 Package not installed
 Parameter string not correctly encoded
 Password expired
-PdhAddEnglishCounterW
 PdhAddEnglishCounterW(queue length), status %y
 PdhAddEnglishCounterW(time), status %y
-PdhCollectQueryData
-PdhGetFormattedCounterValue
-PdhOpenQueryW
 PdhOpenQueryW, status %y
 PeekConsoleInput failed, %E
-PeekConsoleInputA
-PeekConsoleInputW
-PeekMessageW
-PeekNamedPipe
 PeekNamedPipe(%p) failed, %E
 Permission denied
-PhL;(r>I
-Pid:	%d
-PostMessageW
-PostQuitMessage
 Power failure
-PpA;D$ 
-PrefetchVirtualMemory
-PrepareTape
 Previous owner died
 ProfileImagePath for %W not found, status %y
 ProfileImagePath for %W: %W
@@ -4030,23 +2250,10 @@ Protocol not available
 Protocol not supported
 Protocol wrong type for socket
 Pseudo console is disabled because the legacy console mode is enabled.
-PthH=
-PurgeComm
-Q(H9Q
-Q0H9Q u
-QSIZE:%-10lu NOTIFY:%-5d SIGNO:%-5d NOTIFY_PID:%-6d
-QXI9U
-Qt9Qps?H
-QueryDosDeviceW
-QueryInformationJobObject
-QueryInterruptTime
-QueryInterruptTimePrecise
-QueryPerformanceCounter
-QueryPerformanceFrequency
-QueryUnbiasedInterruptTime
-QueryUnbiasedInterruptTimePrecise
+QSIZE:%-10lu NOTIFY:%-5d SIGNO:%-5d NOTIFY_PID:%-6d\n
+QUIT
 Queue overflow
-QueueUserAPC
+Quit
 REG_0x%x
 REG_ASSERT
 REG_BADBR
@@ -4072,20 +2279,14 @@ RTMAX-%d
 RTMIN
 RTMIN+
 RTMIN+%d
-RaiseException
 Read-only file system
-ReadConsoleInputA
-ReadConsoleInputW
-ReadConsoleOutputW
 ReadConsoleOutputWrapper(h, ...) failed during save, %E
-ReadFile
 ReadFile failed, %E
 ReadFile for forwarding failed, %E
 ReadFile on echo pipe failed, %E
 ReadFile, %E
 ReadFile1 failed %y
 ReadFile2 failed
-ReadProcessMemory
 ReadProcessMemory failed for MAP_PRIVATE address %p, %E
 ReadTotalTimeoutConstant %u, ReadIntervalTimeout %u, ReadTotalTimeoutMultiplier %u
 Real-time signal 0
@@ -4126,25 +2327,8 @@ Received eid credentials: pid: %d, uid: %d, gid: %d
 Receiving af_local secret failed
 Receiving af_local secret mismatch
 Receiving eid credentials failed
-RegCloseKey
-RegCreateKeyExW
-RegEnumKeyExW
-RegEnumValueW
-RegGetKeySecurity
-RegOpenCurrentUser
-RegOpenKeyExW
-RegOpenUserClassesRoot
-RegQueryInfoKeyW
-RegQueryValueExW
 RegisterClass %E
-RegisterClassW
-RegisterClipboardFormatW
-RegisterEventSourceW
 RegisterEventSourceW, %E
-ReleaseMutex
-ReleaseSRWLockExclusive
-ReleaseSRWLockShared
-ReleaseSemaphore
 Remote address changed
 Remove account or make file unreadable by others.
 Remove password or make file unreadable by others.
@@ -4153,103 +2337,39 @@ Removing the TEMPORARY attrib failed, status = %y
 Renaming dir %S back to %S failed, status = %y
 Reopen by handle requested but FS doesn't support it
 Reply: from %p, to %p, error %u
-ReportEventW
 ReportEventW, %E
 RequestTermConnector
 Reset SIO_UDP_CONNRESET: WinSock error %u
-ResetEvent
-ResizePseudoConsole
 Resolv: 
 Resolved protocol is unknown
 Resolver error 0 (no error)
 Resolver internal error
 Resource deadlock avoided
 Resource temporarily unavailable
-ResumeThread
 RevertToSelf, %E
-RtlAbsoluteToSelfRelativeSD
-RtlAddAccessAllowedAce
+Rg/O\r
 RtlAddAccessAllowedAce(admin) %y
 RtlAddAccessAllowedAce(original) %y
 RtlAddAccessAllowedAce(sid1) %y
 RtlAddAccessAllowedAce(sid2) %y
 RtlAddAccessAllowedAce(system) %y
 RtlAddAccessAllowedAce: %y
-RtlAddAccessAllowedAceEx
-RtlAddAccessDeniedAceEx
-RtlAllocateHeap
 RtlAllocateHeap failed
-RtlAppendUnicodeStringToString
-RtlAppendUnicodeToString
-RtlCaptureContext
-RtlCheckRegistryKey
-RtlCheckRegistryKey: status 0x%08X
-RtlCompareUnicodeString
-RtlConvertSidToUnicodeString
-RtlCopySid
-RtlCopyUnicodeString
-RtlCreateAcl
+RtlCheckRegistryKey: status 0x%08X\n
 RtlCreateAcl: %y
-RtlCreateQueryDebugBuffer
-RtlCreateSecurityDescriptor
-RtlDestroyQueryDebugBuffer
-RtlDowncaseUnicodeString
 RtlEnterCriticalSection
-RtlEqualPrefixSid
-RtlEqualSid
-RtlEqualUnicodeString
-RtlFirstFreeAce
 RtlFirstFreeAce: %y
-RtlFreeHeap
-RtlFreeUnicodeString
 RtlGenRandom() = FALSE
-RtlGetAce
-RtlGetControlSecurityDescriptor
 RtlGetCurrentDirectory_U
-RtlGetCurrentTransaction
-RtlGetDaclSecurityDescriptor
-RtlGetGroupSecurityDescriptor
 RtlGetGroupSecurityDescriptor(), %y
-RtlGetNtVersionNumbers
-RtlGetOwnerSecurityDescriptor
-RtlGetVersion
-RtlIdentifierAuthoritySid
-RtlInitAnsiString
-RtlInitUnicodeString
-RtlInitializeSid
-RtlLeaveCriticalSection
-RtlLengthSid
-RtlLookupFunctionEntry
-RtlNtStatusToDosError
-RtlPrefixUnicodeString
-RtlQueryProcessDebugInformation
-RtlQueryRegistryValues
-RtlQueryRegistryValues: status 0x%08X
-RtlRestoreContext
-RtlSetControlSecurityDescriptor
-RtlSetCurrentDirectory_U
+RtlQueryRegistryValues: status 0x%08X\n
 RtlSetCurrentDirectory_U(%S) failed, %y
-RtlSetCurrentTransaction
-RtlSetDaclSecurityDescriptor
 RtlSetDaclSecurityDescriptor %y
-RtlSetGroupSecurityDescriptor
-RtlSetOwnerSecurityDescriptor
-RtlSubAuthorityCountSid
-RtlSubAuthoritySid
-RtlUnicodeStringToAnsiString
-RtlUnwindEx
-RtlUpcaseUnicodeChar
-RtlUpcaseUnicodeString
-RtlVirtualUnwind
-S H;S(w
-S HcS
 S%T%U%V%W%X%Y%Z%[%\%]%^%_%`%a%
-S-1-L
 S16LE_S16BE
 S16LE_U16BE
 S16LE_U16LE
-SES_ROOTH
-SHGetDesktopFolder
+SEGV
 SIGABRT
 SIGALRM
 SIGBUS
@@ -4322,6 +2442,7 @@ SIG_ERR = sigaddset signal %d out of range
 SIG_ERR = sigdelset signal %d out of range
 SIG_ERR = signal (%d, %p)
 SIG_ERR = sigset (%d, %p)
+SJIS
 SNDCTL_DSP_CHANNELS
 SNDCTL_DSP_GETBLKSIZE
 SNDCTL_DSP_GETCAPS
@@ -4364,17 +2485,13 @@ STATUS_TIMEOUT
 STATUS_USER_APC
 STATUS_WAIT_0
 STILL_ACTIVE?  How'd we get here?
+STOP
 STREAM
 SYSTEM
 SYSTEMDRIVE=
 SYSTEMROOT=
 Saturday
-ScrollConsoleScreenBufferA
-ScrollConsoleScreenBufferW
-Search for cygwin1.dll using the Windows Start->Find/Search facility
 Segmentation fault
-SelectObject
-SendNotifyMessageW
 Sending af_local secret %s
 Sending eid credentials failed
 Sending eid credentials succeeded
@@ -4383,54 +2500,17 @@ Servname not supported for ai_socktype
 Set HOME (from account db) to %s
 Set HOME to default /home/USER
 Set nice to %d
-SetClipboardData
-SetCommBreak
-SetCommMask
-SetCommState
 SetCommState() failed, %E
-SetCommTimeouts
 SetCommTimeouts() failed, %E
-SetComputerNameExW
-SetConsoleCP
-SetConsoleCtrlHandler
 SetConsoleCtrlHandler failed, %E
-SetConsoleCursorInfo
 SetConsoleCursorInfo(%p, ...) failed during save, %E
 SetConsoleCursorInfo(%p, cob) failed during restore, %E
 SetConsoleCursorInfo(%p, save_cursor) failed during restore, %E
-SetConsoleCursorPosition
-SetConsoleMode
-SetConsoleOutputCP
-SetConsoleTextAttribute
-SetConsoleTitleW
-SetConsoleWindowInfo
-SetEnvironmentVariableW
-SetErrorMode
-SetEvent
 SetEvent failed, %E
-SetFilePointerEx
-SetHandleInformation
 SetHandleInformation failed, %E
-SetLastError
-SetNamedPipeHandleState
-SetParent
-SetPriorityClass
-SetProcessAffinityMask
-SetProcessWindowStation
 SetProcessWindowStation failed, %E
-SetProcessWorkingSetSize
-SetStdHandle
-SetSystemTime
-SetTapeParameters
-SetTapePosition
-SetThreadContext
-SetThreadDescription
-SetThreadDescription() failed. %08x %08x
-SetThreadDesktop
-SetThreadGroupAffinity
+SetThreadDescription() failed. %08x %08x\n
 SetThreadGroupAffinity(%x,%d (%x/%d)) failed %E
-SetThreadPriority
-SetThreadStackGuarantee
 Setting UTMP file failed
 Setting attributes failed, status = %y
 Setting delete disposition %S (%S) in renamed case failed, status = %y
@@ -4440,20 +2520,15 @@ Setting delete dispostion failed, status = %y
 Setting delete-on-close on %S failed, status = %y
 Setting process group leader to %d since %W(%d) is not a cygwin process
 Sharing violation when opening %S
-SigBlk:	%016lx
-SigIgn:	%016lx
-SigPnd:	%016lx
-Signal %d at rip=%012X
-Sleep
+Signal %d at rip=%012X\r\n
 Socket operation on non-socket
 Socket type not supported
 Software caused connection abort
 Srmount error
-Stack trace:
+Stack trace:\r\nFrame         Function      Args\r\n
 Stale NFS file handle
 Started.
 State not recoverable
-State:	%c (%s)
 StdHandles=%p,%p
 Stopped
 Stopped (signal)
@@ -4463,138 +2538,28 @@ Streams pipe error
 Success
 SunMonTueWedThuFriSat
 Sunday
-SuspendThread
-SwapFree:     %10llu kB
-SwapTotal:    %10llu kB
 Switch back from restricted token
 Switch to restricted token
-SwitchToThread
 System error
-SystemFunction036
-T$ 9T$$
-T$ E1
-T$ I)
-T$ IcP
-T$ L)
-T$ eH
-T$ fD
-T$"fD
-T$$E1
-T$$Ic
-T$(A9
-T$(D)
-T$(E1
-T$(H	
-T$(Hc
-T$(L;
-T$(eH
-T$(fA
-T$(fE
-T$,E1
-T$,eH
-T$0E1
-T$0M9
-T$0eH
-T$0f%
-T$0fD
-T$8E1
-T$8H=
-T$8Hc
-T$8eH
-T$8fE
-T$<A)
-T$<H9
-T$<H;
-T$<eH
-T$@E1
-T$@Hi
-T$@I)
-T$@I9
-T$@eH
-T$@eL
-T$@fA
-T$@fE
-T$D9T$`
-T$DE1
-T$DeH
-T$HA)
-T$HD8hT
-T$HE1
-T$HH=
-T$HHc
-T$HHiL$p
-T$HI)
-T$HL)
-T$HLc
-T$HMi
-T$HeH
-T$HfE
-T$HtTL
-T$HtvL
-T$LE1
-T$LeH
-T$OH9
-T$PE1
-T$PHc
-T$PHi
-T$PL)
-T$PeH
-T$TM)
-T$TfD
-T$XE1
-T$XI9
-T$XMi
-T$XeH
-T$\Hc
-T$\eH
-T$`E1
-T$`H9
-T$`Hc
-T$`LcD$d
-T$`eH
-T$hH)
-T$hH9
-T$hHc
-T$hL)
-T$heH
-T$leH
-T$pD+T$HH
-T$pE1
-T$pHc
-T$peH
-T$pfD
-T$pfH
-T$teH
-T$xE1
-T$xH!
-T$xH9
-T$xeH
-T$|E1
-T$|eH
 TEMP=
+TERM
 TERM=
-TERM=cygH
-TERM=xteH
 TIS-620
-TLB size	: %d 4K pages
+TLB size\t: %d 4K pages\n
+TMP=
 TMPDIR
 TMPDIR=
+TRAP
+TSTP
+TTIN
+TTOU
 TZif2
 Temporary failure in name resolution
-TerminateProcess
 TerminateProcess failed, %E
-TerminateThread
 Terminated
 Text file busy
-Tgid:	%d
-The DLLs differ, so it's not safe to run the forked child.
-This problem is probably due to using incompatible versions of the cygwin DLL.
 Thursday
 Timer expired
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Too many levels of nesting for %s
 Too many levels of symbolic links
 Too many links
@@ -4606,10 +2571,8 @@ Too many users
 Trace/breakpoint trap
 Transaction failure %y.  Retry open.
 Transaction failure.  Retry open.
-TranslateNameW
 TranslateNameW(%W, NameCanonical) %E
 TranslateNameW(%W, NameUserPrincipal) %E
-TransmitCommChar
 Transport endpoint is already connected
 Transport endpoint is not connected
 Try %S again
@@ -4617,24 +2580,11 @@ Try logon for %W\%W
 Try to connect to named pipe: %W
 Try to read mounts from %W
 Try-to-bin %S
-Trying %s...
+Trying %s...\n
 Trying to delete %S, isdir = %d
 Tuesday
 U8_S8
-UAQAPRQ
-UATSH
-UATVSH
-UATWVSH
-UAUATH
-UAUATVSH
-UAUATWVSH
-UAVAUATH
-UAVAUATVSH
-UAVAUATWVSH
-UAWAVAUATVSH
-UAWAVAUATWSH
-UAWAVAUATWVSH
-UDP socket sockfd %d
+UDP socket sockfd %d\n
 ULONG cyg_ldap::connect_non_ssl(PCWSTR)
 ULONG cyg_ldap::connect_ssl(PCWSTR)
 ULONG cyg_ldap::next_page_s()
@@ -4643,20 +2593,18 @@ ULONG get_obj_handle_count(HANDLE)
 USERDOMAIN=
 USERNAME=
 USERPROFILE=
+USR1
+USR2
 UTF-8
+UTF8
 UUUUU
-UUUUUUUUH
-UWVSH
-UWVSI
-UWVSf
-UWVSfI
-Uid:	%d %d %d %d
+UVPw
 Unable to determine the native mapping for %ls (error %u)
 Unexpected errno for flushing recvfrom: %s
-Unexpected section order for "%s" %d
+Unexpected section order for "%s" %d\n
 Unknown
 Unknown .netrc keyword %s
-Unknown code %u
+Unknown code %u\n
 Unknown domain %W
 Unknown error
 Unknown error %d
@@ -4664,45 +2612,27 @@ Unknown host
 Unknown resolver error
 Unknown server error
 Unknown signal %d
-UnmapViewOfFile
 UnmapViewOfFile %E
-UnregisterClassW
-UpdateProcThreadAttribute
 Urgent I/O condition
 User defined signal 1
 User defined signal 2
-V H+V
 V?LUUUUU
-VAS	N;
+VAS;
+VAS\tN;
 VAS]N;
 VASkQ;
 VASmQ;
 VTALRM
-V_(?S~c
 Value too large for defined data type
 Virtual timer expired
-VirtualAlloc
 VirtualAlloc failed for MAP_PRIVATE address %p, %E
-VirtualAlloc2
 VirtualAlloc: address shift with MAP_FIXED given
-VirtualFree
 VirtualFree in unmap_pages () failed, %E
-VirtualProtect
 VirtualProtect failed for address %p, parentstate: %y, state: %y, parentprot: %y, prot: %y, %E
 VirtualProtect in unmap_pages () failed, %E
-VirtualProtectEx
 VirtualProtectEx failed for MAP_PRIVATE address %p, %E
-VirtualQuery
-VirtualQueryEx
 VirtualQueryEx failed for MAP_PRIVATE address %p, %E
-VmData:	%8lu kB
-VmExe:	%8lu kB
-VmLck:	%8lu kB
-VmLib:	%8lu kB
-VmRSS:	%8lu kB
-VmSize:	%8lu kB
-VmStk:	%8lu kB
-W%X%Y%Z%[%
+W4vC
 WARNING: %y = NtQueryInformationFile (%p, InternalInfo, io.Status %y)
 WARNING: Can't reopen CWD %y '%S', status %y
 WARNING: Unable (ntstatus %y) to open real file %W
@@ -4711,9 +2641,11 @@ WARNING: VirtualProtectEx to return to PAGE_NOACCESS state in parent failed for 
 WARNING: invalid path name '%W'
 WCHAR* cyg_ldap::fetch_unix_name_from_rfc2307(uint32_t, bool)
 WCHAR* get_user_profile_directory(PCWSTR, PWCHAR, SIZE_T)
+WFMO
 WFMO failed waiting for cygthread '%s', %E
 WFMO failed, %E
 WFMO returns %d, aio %p
+WFSO
 WFSO (%p, %W, inf)...
 WFSO failed %s, fork_finished %p, %E
 WFSO failed - %u, %E
@@ -4874,61 +2806,34 @@ WM_VSCROLLCLIPBOARD
 WM_WINDOWPOSCHANGED
 WM_WINDOWPOSCHANGING
 WM_WININICHANGE
-WNetCloseEnum
-WNetEnumResourceW
 WNetGetLastError failed: %u
-WNetGetLastErrorW
 WNetGetProviderNameW
 WNetGetResourceInformationW
 WNetOpenEnum
 WNetOpenEnumW
-WSAAsyncSelect
 WSADuplicateSocket succeeded (%x)
-WSADuplicateSocketW
-WSAEnumNetworkEvents
-WSAEventSelect
 WSAEventSelect, %E
-WSAGetLastError
-WSAIoctl
 WSAIoctl: %u
-WSARecv
-WSARecvFrom
-WSASendMsg
-WSASendTo
-WSASetLastError
 WSASocket succeeded (%p)
-WSASocketW
 WSAStartup
-WSAWaitForMultipleEvents
 WU36.
-WaitCommEvent
 WaitCommEvent %E
-WaitForMultipleObjects
 WaitForMultipleObjects failed, %E
-WaitForSingleObject
 WaitForSingleObject(%p) for thread exit returned %u
-WaitNamedPipeW
 WaitSingleObject returned %d
 Waiting for pack.wakeup %p
 Warning, can't handle more than %d locks per file.
-Warning: '%s' does not exists or is not a directory.
+Warning: '%s' does not exists or is not a directory.\n\n%ss require the existance of this directory.\nCreate the directory '%s' and set the permissions to 01777.\nFor instance on the command line: mkdir -m 01777 %s\n
 Warning: Fixup mapping beyond EOF failed
 Warning: Mapping beyond EOF failed, %E
 Warning: VirtualProtect (addr: %p, len: %ly, new_prot: %y, old_prot: %y), %E
 WeRT@
 Wednesday
-WideCharToMultiByte
-Win32 erI
-Win32 working directory
 WinSock SO_ERROR = %d
 Window changed
 WnetEnumResource
 Write to echo pipe failed, %E
-WriteConsoleInputW
-WriteConsoleOutputW
 WriteConsoleOutputW failed, %E
-WriteConsoleW
-WriteFile
 WriteFile failed, %E
 WriteFile for forwarding failed, %E
 WriteFile for pipe %p failed, %E
@@ -4946,159 +2851,39 @@ WritePipeOverlapped sizeof fd failed, %E
 WritePipeOverlapped sizeof fds failed, %E
 WritePipeOverlapped sizeof hdl failed, %E
 WritePipeOverlapped sizeof root failed, %E
-WriteProcessMemory
-WriteTapemark
-WvDH-
 X!DoH
-XA\A]
-XA\A]A^A_
-XB M!
-XD$PL
+XCPU
+XFSZ
+XJSr
 XM`8q
-X[A\A]A^
-X[YZ_^AXAYA[A\A]A^A_H
-X[^A\A]
-X[^A\A]A^A_
-X[^_A\
-X[^_A\A]A^
-X[^_]
-X[^_]A\A]
-X[^_]A\A]A^A_
-Y-%m-%d
-YD$(f
-YD$0L
-YL'~|
-YZAXAY]A
+Y.ja
+Y3MI
 Z%T%i%f%`%P%l%
 Z%T%i%f%`%P%l%}
-[%d;%d%c
-[%d;%d;%dM
-[%d;%dR
+Zpg'
 [%s (tid %ld)
-[.ShellClassInfo]
+[.ShellClassInfo]\r\nCLSID={645FF040-5081-101B-9F08-00AA002F954E}\r\nLocalizedResourceName=@%SystemRoot%\system32\shell32.dll,-8964\r\n
 [0QUUU
 [1;2A
 [1;2B
 [1;2C
 [1;2D
 [1;2G
-[1;2~
 [1;5A
 [1;5B
 [1;5C
 [1;5D
 [1;5G
-[1;5~
 [1;6A
 [1;6B
 [1;6C
 [1;6D
 [1;6G
-[1;6~
-[2;2~
-[2;5~
-[2;6~
-[3;2~
-[3;5~
-[3;6~
-[4;2~
-[4;5~
-[4;6~
-[5;2~
-[5;5~
-[5;6~
-[6;2~
-[6;5~
-[6;6~
-[:<:]]
-[:>:]]
 [<%d;%d;%d%c
 [>67;%d%02d;0c
-[A\A]
-[A\A]A^
-[A\A]A^A_
-[M%c%c%c
-[^A\A]
-[^A\A]A^
-[^A\A]A^A_
-[^A\A]A^A_]
-[^A\A]A^]
-[^A\A]]
-[^A\]
-[^_A\
-[^_A\A]
-[^_A\A]A^
-[^_A\A]A^A_
-[^_A\A]A^A_]
-[^_A\A]A^]
-[^_A\A]]
-[^_A\A^
-[^_A\A^H
-[^_A\]
-[^_A]
-[^_]A\
-[^_]A\A]
-[^_]A\A]A^
-[^_]A\A]A^A_
-[^_]A\A]A^A_H
-[_A\A]
-[_A\A]A^
-[_A\A]A^A_]
-[_]A\
-[_]A\A]A^
-[cygheap
-[cygwin-
-[cygwin-H
-[heaf
-[path to
-[path toH
-[pebf
-[pebfD
-[procinf
-[shared-A
 [teb (tid %ld)]
 [win heap %ld
-\$ E1
-\$ Lc
-\$ fA
-\$ fD
-\$(E1
-\$(t,
-\$,E)
-\$0D9
-\$0E1
-\$0f.
-\$8A)
-\$8Hc
-\$8I9
-\$@E1
-\$@L)
-\$@eH
-\$D9\$`
-\$DeH
-\$HD)
-\$HE1
-\$HH)
-\$HL)
-\$PE1
-\$PL)
-\$TE1
-\$THc
-\$VI9
-\$XHc
-\$XL9
-\$\+\$x
-\$\u5
-\$`H+\$p1
-\$lH9
-\$pE1
-\$pM)
-\$t<-u
-\$xH9
-\$xMc
-\$|D)
-\?*[]
-\??\COM1
+\040
 \??\COM10
 \??\COM100
 \??\COM101
@@ -5138,7 +2923,6 @@ Z%T%i%f%`%P%l%}
 \??\COM17
 \??\COM18
 \??\COM19
-\??\COM2
 \??\COM20
 \??\COM21
 \??\COM22
@@ -5149,7 +2933,6 @@ Z%T%i%f%`%P%l%}
 \??\COM27
 \??\COM28
 \??\COM29
-\??\COM3
 \??\COM30
 \??\COM31
 \??\COM32
@@ -5160,7 +2943,6 @@ Z%T%i%f%`%P%l%}
 \??\COM37
 \??\COM38
 \??\COM39
-\??\COM4
 \??\COM40
 \??\COM41
 \??\COM42
@@ -5171,7 +2953,6 @@ Z%T%i%f%`%P%l%}
 \??\COM47
 \??\COM48
 \??\COM49
-\??\COM5
 \??\COM50
 \??\COM51
 \??\COM52
@@ -5182,7 +2963,6 @@ Z%T%i%f%`%P%l%}
 \??\COM57
 \??\COM58
 \??\COM59
-\??\COM6
 \??\COM60
 \??\COM61
 \??\COM62
@@ -5193,7 +2973,6 @@ Z%T%i%f%`%P%l%}
 \??\COM67
 \??\COM68
 \??\COM69
-\??\COM7
 \??\COM70
 \??\COM71
 \??\COM72
@@ -5204,7 +2983,6 @@ Z%T%i%f%`%P%l%}
 \??\COM77
 \??\COM78
 \??\COM79
-\??\COM8
 \??\COM80
 \??\COM81
 \??\COM82
@@ -5215,7 +2993,6 @@ Z%T%i%f%`%P%l%}
 \??\COM87
 \??\COM88
 \??\COM89
-\??\COM9
 \??\COM90
 \??\COM91
 \??\COM92
@@ -5226,7 +3003,6 @@ Z%T%i%f%`%P%l%}
 \??\COM97
 \??\COM98
 \??\COM99
-\@Q^o
 \D)2SD
 \Device\CdRom0
 \Device\CdRom1
@@ -5392,255 +3168,59 @@ Z%T%i%f%`%P%l%}
 \Device\Tape99
 \\.\pipe\cygwin-%S-
 \\.\pipe\cygwin-%S-pty%d-master-ctl
-\binL
 \bin\cygwin-console-helper.exe
 \l#mW
-\libL
-\tPH9
-\tXH9
-]NAS	N;
+\nEST5EDT,M3.2.0,M11.1.0\n
+\nLoaded different DLL with same basename in forked child,\nparent loaded: %W\n child loaded: %W\nThe DLLs differ, so it's not safe to run the forked child.\nMake sure to remove the offending DLL before trying again.
+\nin function 
+\tNAS
+\tNAS;
+\tNAS\tN;
+\tNAS]N;
+\tNASkQ;
+\tNASmQ;
+\vHMI
+\v\v\v\v\v\v\v\v\v\v\v\v
+]NAS
 ]NAS;
+]NAS\tN;
 ]NAS]N;
 ]NASkQ;
 ]NASmQ;
-]t6A9
-^%_%`%a%
-^[nN]
-^[yY]
-^_]A\A]A^A_
-_%s%s
-_A\A]A^A_
-_Exit
 _SECURITY_ATTRIBUTES* __sec_user(PVOID, PSID, PSID, DWORD, BOOL)
 __acl_t* acl_copy_int(const void*)
 __acl_t* acl_dup(acl_t)
 __acl_t* acl_from_text(const char*)
 __acl_t* acl_get_file(const char*, acl_type_t)
 __acl_t* acl_init(int)
-__argc
-__argv
-__assert
-__assert_func
-__assertfail
-__b64_ntop
-__b64_pton
-__bsd_qsort_r
-__check_rhosts_file
-__chk_fail
-__cpuset_alloc
-__cpuset_free
-__ctype_ptr__
-__cxa_atexit
-__cxa_finalize
-__cygwin_user_data
-__dn_comp
-__dn_expand
-__dn_skipname
 __dumpstack_overflow
-__eprintf
-__errno
-__fbufsize
-__flbf
-__fpclassifyd
-__fpclassifyf
-__fpending
-__fpurge
-__freadable
-__freading
-__fsetlocking
-__fwritable
-__fwriting
-__getpagesize
-__getreent
-__gets_chk
-__gnu_basename
-__infinity
-__isinfd
-__isinff
-__isnand
-__isnanf
-__locale_ctype_ptr
-__locale_ctype_ptr_l
-__locale_mb_cur_max
-__main
-__mb_cur_max
-__memcpy_chk
-__memmove_chk
-__mempcpy
-__mempcpy_chk
-__memset_chk
-__opendir_with_d_ino
-__progname
-__rcmd_errstr
-__res_close
-__res_init
-__res_mkquery
-__res_nclose
-__res_ninit
-__res_nmkquery
-__res_nquery
-__res_nquerydomain
-__res_nsearch
-__res_nsend
-__res_query
-__res_querydomain
-__res_search
-__res_send
-__res_state
-__sched_getaffinity_sys
-__signbitd
-__signbitf
-__signgam
-__snprintf_chk
-__sprintf_chk
-__srget
-__srget_r
-__stack_chk_fail
-__stack_chk_fail_local
-__stack_chk_guard
-__stpcpy_chk
-__stpncpy_chk
-__strcat_chk
-__strcpy_chk
-__strncat_chk
-__strncpy_chk
-__swbuf
-__swbuf_r
-__vsnprintf_chk
-__vsprintf_chk
-__wrap__ZdaPv
-__wrap__ZdaPvRKSt9nothrow_t
-__wrap__ZdlPv
-__wrap__ZdlPvRKSt9nothrow_t
-__wrap__Znam
-__wrap__ZnamRKSt9nothrow_t
-__wrap__Znwm
-__wrap__ZnwmRKSt9nothrow_t
-__xdrrec_getrec
-__xdrrec_setnonblock
-__xpg_sigpause
-__xpg_strerror_r
-_alloca
-_check_for_executable
-_corI
-_ctype_
-_daylight
-_dll_crt0
-_exit
-_fe_dfl_env
-_fe_nomask_env
-_feinitialise
-_fscanf_r
-_get_osfhandle
 _hPipe
 _hPipe != INVALID_HANDLE_VALUE
 _hashXXXXXX
-_impure_ptr
-_llcI
-_locfE
-_longjmp
-_pipe
-_pthread_cleanup_pop
-_pthread_cleanup_push
-_reqI
-_setjmp
-_setmode
-_sys_errlist
-_sys_nerr
-_t7M9g s1A
-_timezone
-_totI
-_tscA
-_tsc_s3
-_tzname
-_window
-`;t$`|
-`A\A]A^
+`1gg
+`3GI
 `Q</pRu
 `UUUUU
-`[A\A]
-`[^A\
-`[^A\A]A^
-`[^A]
-`[^_A\A]
-`[^_]A\
-`t3H9
-`t8H9
-`~^Ip
 aG>am
 aa_DJ
 aa_ER
 aa_ER@saaho
 aa_ET
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 :+-._
-abort
 aborting due to test_and_set error
 about to call do_exit (%x)
 about to write %u chars to slave
 accept
 accept from unauthorized server
 accept4
-access
 account
-acl_add_perm
-acl_calc_mask
-acl_check
-acl_clear_perms
-acl_cmp
-acl_copy_entry
-acl_copy_ext
-acl_copy_int
-acl_create_entry
-acl_delete_def_file
-acl_delete_entry
-acl_delete_perm
-acl_dup
-acl_entries
-acl_equiv_mode
-acl_error
-acl_extended_fd
-acl_extended_file
-acl_extended_file_nofollow
-acl_free
-acl_from_mode
-acl_from_text
-acl_get_entry
-acl_get_fd
-acl_get_file
-acl_get_perm
-acl_get_permset
-acl_get_qualifier
-acl_get_tag_type
-acl_init
-acl_set_fd
-acl_set_file
-acl_set_permset
-acl_set_qualifier
-acl_set_tag_type
-acl_size
-acl_to_any_text
-acl_to_text
-acl_valid
-aclcheck
-aclfrommode
-aclfrompbits
-aclfromtext
-aclsort
-acltomode
-acltopbits
-acltotext
-acosf
-acosh
-acoshf
-acoshl
-acosl
 action %d
 activated name '%s', thread_sync %p for id %y
 add-slash
 add_item ("%s", "/", ...) failed, errno %d
 added pid %d to proc table, slot %d
 addr %p, len %lu, prot %y, flags %y, fd %d, off %Y
-address sizes	: %u bits physical, %u bits virtual
+address sizes\t: %u bits physical, %u bits virtual\n
 address space needed by '%W' (%p) is already occupied
 af_ZA
 af_local_accept called, no_getpeereid=%d
@@ -5652,36 +3232,23 @@ ai_socktype not supported
 aio %p is already busy in slot %d
 aio vaquita thread creation failed, %E
 aio%d
-aio_cancel
-aio_error
-aio_fsync
-aio_read
-aio_return
-aio_suspend
-aio_write
 aiowaiter fatal error, %E
 aiowaiter unexpected WFMO result %d
 ak_GH
-alarm
 alert
-alfdf
 aliases alloc %p
-aligned_alloc
 all other handles closed
 alltrusted
 alnum
 alpha
-alphasort
 already ready
 am_ET
 ambiguous option -- %.*s
 ampersand
 an_ES
-and delete all but the most recent version.  The most recent version *should*
-anon_inoH
 anonymous
 anp_IN
-apicid		: %d
+apicid\t\t: %d\ninitial apicid\t: %d\n
 apostrophe
 ar_AE
 ar_BH
@@ -5702,57 +3269,17 @@ ar_SS
 ar_SY
 ar_TN
 ar_YE
-arc4random
-arc4random_addrandom
-arc4random_buf
-arc4random_stir
-arc4random_uniform
-are unable to find another cygwin DLL.
 argc %d
 args: %x, %d
 argv is NULL
 argv[%d] = '%s'
-argz_add
-argz_add_sep
-argz_append
-argz_count
-argz_create
-argz_create_sep
-argz_delete
-argz_extract
-argz_insert
-argz_next
-argz_replace
-argz_stringify
 armed signal_arrived %p, signal %d
-array bound exceeded %d
+array bound exceeded %d\n
 as_IN
-asctime
-asctime_r
-asidI
-asinf
-asinh
-asinhf
-asinhl
-asinl
-asnprintf
-asprintf
 assertion "%s" failed: file "%s", line %d%s%s
-assists
+assertion "%s" failed: file "%s", line %d%s%s\n
 ast_ES
 asterisk
-at_quick_exit
-atan2
-atan2f
-atan2l
-atanf
-atanh
-atanhf
-atanhl
-atanl
-atexit
-atoff
-atoll
 attaching %s sid %d, pid %d, pgid %d, tty->pgid %d, tty->sid %d
 attempt to access outside of chroot '%s - %s'
 attempt to use destroyed mutex
@@ -5760,6 +3287,7 @@ attempts
 audio_in=%p audio_out=%p
 audio_in=%p audio_out=%p, close_on_exec %d
 authz_ctx::operator AUTHZ_RESOURCE_MANAGER_HANDLE()
+auto
 awake
 ayc_PE
 az-AZ
@@ -5769,34 +3297,28 @@ b%c%d%e%f%g%h%i%j%k%l%
 backslash
 backspace
 bad .rhosts owner
-basename
-bcopy
+bash
 be_BY
 be_BY@latin
 bem_ZM
 ber_DZ
 ber_MA
-bf16I
 bg ioctl pgid %d, tpgid %d, %s
 bg_BG
 bho_IN
 bho_NP
 bi_VU
 bin_status try_to_bin(path_conv&, void*&, ACCESS_MASK, ULONG)
-binaf
 binary
-bind: %s
-bindresvport
-bindresvport_sa
-binmode
-bitaI
+bind
+bind: %s\n
 blank
 blk_lock
 bn_BD
 bn_IN
 bo_CN
 bo_IN
-bogomips	: %d.00
+bogomips\t: %d.00\n
 bool NT_readline::init(POBJECT_ATTRIBUTES, CHAR*, ULONG)
 bool _cygtls::inside_kernel(CONTEXT*)
 bool _pinfo::alert_parent(char)
@@ -5883,23 +3405,11 @@ break here
 brx_IN
 bs-BA
 bs_BA
-bsearch
-btime %u
-btn1 dowH
-btn2 dowfD
-btn3 dowA
-btowc
 buf %s, suffix found '%s'
 buf=%p frags=%d fragsize=%d bytes=%d
 builtin
 byn_ER
 bytes read %u
-bzero
-c%Q%W%]%
-c%Q%W%]%.
-c%Q%W%]%9
-c%Q%W%]%{
-cAMDu
 cYg%08x
 cYg%8x %lx %d
 cYg%8x %x
@@ -5911,22 +3421,11 @@ ca_ES@euro
 ca_ES@valencia
 ca_FR
 ca_IT
-cabsf
-cabsl
 cache
-cache size	: %d KB
-cache_alignment	: %d
-cacos
-cacosf
-cacosh
-cacoshf
-cacoshl
-cacosl
-call_once
+cache size\t: %d KB\n
 called detach but inuse %d, thread %y?
 calling cleanup routines
 calling proc_subproc, pid %d, options %d
-calloc
 calloc failed
 can't call master, %E
 can't commit child memory for stack %p(%ly), %E
@@ -5941,44 +3440,10 @@ can't set output_handle(%p) to non-blocking mode
 cancelled
 cannot register window class, %E
 cannot wait for mutex %W: %E
-canonicalize_file_name
-cargf
-cargl
 carriage-return
-casin
-casinf
-casinh
-casinhf
-casinhl
-casinl
-catan
-catanf
-catanh
-catanhf
-catanhl
-catanl
-catclose
-catgets
-catopen
-cbrtf
-cbrtl
 ccalloc
-ccosf
-ccosh
-ccoshf
-ccoshl
-ccosl
 ce_RU
-ceilf
-ceill
-cexpf
-cexpl
-cfgetispeed
-cfgetospeed
-cfmakeraw
-cfsetispeed
-cfsetospeed
-cfsetspeed
+cgM`
 char %0c state is %d
 char %0o
 char* __acltotext(aclent_t*, int, const char*, char, int)
@@ -5998,24 +3463,18 @@ char* strerror_r(int, char*, size_t)
 char* ttyname(int)
 char** build_env(const char* const*, WCHAR*&, int&, bool, HANDLE)
 char** win32env_to_cygenv(PWCHAR, bool)
-chdir
 checking %s before '..'
 checking pgid %d, my sid %d, my parent %d
-checking pid %d - has pgid %d
+checking pid %d - has pgid %d\n
 child %d - %s, errno %d
 child is alive (but stopped)
 child is running.  pid %d, ppid %d, stack here %p
 child_info* get_cygwin_startup_info()
 child_info::child_info(unsigned int, child_info_types, bool)
 child_procs count %d
-chmod
-chown
 chr-US
 chr_US
-chroot
-cimag
-cimagf
-cimagl
+cifs
 circumflex
 circumflex-accent
 cjknarrow
@@ -6024,37 +3483,19 @@ cjkwide
 ckb_IQ
 cleaning up for mutex %W
 clear waiting threads
-clearenv
-clearerr
-clearerr_unlocked
-clflush size	: %d
+clflush size\t: %d\ncache_alignment\t: %d\n
 client buffer too small for reply body: have %lu bytes and need %lu
 client_request::client_request(client_request::request_code_t, void*, size_t)
 client_request::header_t::header_t(client_request::request_code_t, size_t)
 client_request_attach_tty::client_request_attach_tty(DWORD, HANDLE, HANDLE)
-clock
-clock_getcpuclockid
-clock_getres
-clock_gettime
-clock_nanosleep
 clock_nanosleep (%ld.%09ld)
-clock_setres
-clock_settime
 clock_t times(tms*)
-clog10
-clog10f
-clog10l
-clogf
-clogl
 clone failed
 close
-close sockfd %d: %s
+close sockfd %d: %s\n
 close(%d)
 closed
 closed by master
-closedir
-closelog
-closesocket
 closing '%s' handle %p
 closing archetype
 closing cygheap->ctty %p
@@ -6067,12 +3508,6 @@ closing: %p, %p
 cmalloc
 cmdline
 cmn_TW
-cnd_broadcast
-cnd_destroy
-cnd_init
-cnd_signal
-cnd_timedwait
-cnd_wait
 cntrl
 colon
 comma
@@ -6083,13 +3518,11 @@ commune
 commune_result _pinfo::commune_request(__uint32_t, ...)
 completed aio %p
 concatenated line allocated %p
-confstr
-conjf
-conjl
+conn
 connect
 connect from unauthorized client
 connect to address %s: 
-connect(TCP): %s
+connect(TCP): %s\n
 considering pid %d, pgid %d, w->pid %d
 consm
 console device allocation failure - too many consoles in use, max consoles is 32
@@ -6104,15 +3537,10 @@ conv_to_win32_path (%s)
 conversion error, handle %p
 copying data/bss for a loaded dll
 copying data/bss of a linked dll
-copysign
-copysignf
-copysignl
-core id		: %d
-core id		: 0
-coshf
-coshl
+core id\t\t: %d\ncpu cores\t: %d\n
+core id\t\t: 0\ncpu cores\t: 1\n
 couldn't allocate heap, %E, base %p, top %p, reserve_size %ld, allocsize %ld, page_const %d
-couldn't allocate memory %p(%d) for '%W' alignment, %E
+couldn't allocate memory %p(%d) for '%W' alignment, %E\n
 couldn't allocate muto '%s', %E
 couldn't copy linked dll data/bss
 couldn't create %s
@@ -6137,28 +3565,14 @@ couldn't interrupt.  trying again.
 couldn't make stderr distinct from stdout, %E
 couldn't open file '%s', %E
 couldn't open inuse event %s, %E
-couldn't release memory %p for '%W' alignment, %E
+couldn't release memory %p for '%W' alignment, %E\n
 couldn't set initial state for %s, %E
 couldn't wake up wait event %p, %E
-cpid  lpI
-cpowf
-cpowl
-cproj
-cprojf
-cprojl
-cpu %U %U %U %U
-cpu MHz		: %d.000
-cpu cores	: %d
-cpu cores	: 1
-cpu family	: %d
-cpu%d %U %U %U %U
-cpuid level	: %d
+cpu %U %U %U %U\n
+cpu family\t: %d\nmodel\t\t: %d\nmodel name\t: %s\nstepping\t: %d\nmicrocode\t: 0x%X\ncpu MHz\t\t: %d.000\n
+cpu%d %U %U %U %U\n
 cpuinfo
-creal
-crealf
-creall
 crealloc
-creat
 create of writer failed
 created an archetype (%p) for %s(%d/%d)
 created event %s
@@ -6167,36 +3581,16 @@ created new fhandler_base for handle %p, bin %d
 created tracking thread for pid %d, winpid %y, rd_proc_pipe %p
 created: pid = %u, master_pid = %u, from_master = %p, to_master = %p
 crh_UA
-cs=%04x ds=%04x es=%04x fs=%04x gs=%04x ss=%04x
+cs=%04x ds=%04x es=%04x fs=%04x gs=%04x ss=%04x\r\n
 cs_CZ
 csb_PL
 csc-cache
-csinf
-csinh
-csinhf
-csinhl
-csinl
-csqrt
-csqrtf
-csqrtl
-ctanf
-ctanh
-ctanhf
-ctanhl
-ctanl
-cted ***H
-ctermid
-ctime
-ctime_r
-ctrlI
+ctty
 ctty %p, usecount %d
 ctty %s
 ctty was NULL
-ctxt %u
-current match '%W' = '%W'
-cuserid
+current match '%W' = '%W'\n
 cv_RU
-cwait
 cwcsdup would have returned NULL
 cy_GB
 cyg.loadavg.mutex
@@ -6224,64 +3618,12 @@ cygwait failed. %E
 cygwin
 cygwin DLL and APP are out of sync -- API version mismatch %u > %u
 cygwin1.dll
-cygwin1.dll.dbg
 cygwin1S5
-cygwin_attach_handle_to_fd
-cygwin_conv_path
-cygwin_conv_path_list
-cygwin_create_path
-cygwin_detach_dll
-cygwin_dll_init
 cygwin_getnameinfo
-cygwin_internal
-cygwin_logon_user
-cygwin_posix_path_list_p
-cygwin_set_impersonation_token
-cygwin_split_path
-cygwin_stackdump
-cygwin_umount
-cygwin_winpid_to_pid
-d      aI
-d$ E1
-d$ H-
-d$(E1
-d$,<-tI<+t=E1
-d$0E1
-d$0Hc
-d$0eH
-d$8E1
-d$8Hc
-d$@A)
-d$@E1
-d$@t	fA
-d$Ff.
-d$LA)
-d$PA)
-d$PE1
-d$PHc
-d$XE1
-d$XeH
-d$`E1
-d$`HcG
-d$heH
-d$pE1
-d$xHc
-d$xeH
 d%04x
+d\rxp
 da_DK
-daemon
-dbm_clearerr
-dbm_close
-dbm_delete
-dbm_dirfno
-dbm_error
-dbm_fetch
-dbm_firstkey
-dbm_nextkey
-dbm_open
-dbm_store
-de:[signH
-de:[timeH
+data
 de_AT
 de_AT@euro
 de_BE
@@ -6298,50 +3640,29 @@ default
 default:
 deleting element %d for %s(%d/%d)
 deleting select records
-denied>
 derived path '%W', posix '%s'
+desc
 determining /dev/tty assignment for ctty %p
 dev_=%p
 devices
 died waiting for dll loading
-difftime
 digit
-dir '%s'
 directly
 dirent* readdir(DIR*)
-dirfd
-dirname
 disable_pcon
 disabled, missing or not on NTFS %W
 disk geometry: (%D cyl)*(%u trk)*(%u sec)*(%u bps)
-dladdr
-dlclose
-dlerror
-dlfork
-dline_tiI
 dll bss
 dll data
-dll_crt0__FP11per_process
-dll_dllcrt0
-dll_entry
 dll_list
-dlopen
-dlsym
-dn_comp
-dn_expand
-dn_skipname
 do_exit (%d), exit_state %d
 doi_IN
 dollar-sign
 domain
-domain|search "%s"
+domain|search "%s"\n
+done
 dos_drive_mappings::dos_drive_mappings()
-dprintf
-drand48
-dremf
-dreml
 drive size: %D
-drivers\H
 dsb_DE
 dup handles directly since I'm the owner
 dup handles via master control pipe %s
@@ -6362,21 +3683,13 @@ duplicated from_master %p->%p from pty_owner
 duplicated from_master_nat %p->%p from pty_owner
 duplicated to_master %p->%p from pty_owner
 duplicated to_master_nat %p->%p from pty_owner
-duplocale
 dv_MV
 dz_BT
-e      cI
-e      rI
-e"d" #!#
+e"CW
+e%ld
 e86@m
-e_vmloadI
-eaccess
+e<bN
 echo pipe
-ecvtbuf
-ecvtf
-edbaI
-edbafE
-efetfA
 eight
 el_CY
 el_GR
@@ -6403,17 +3716,8 @@ en_ZM
 en_ZW
 enabled
 end nBytes=%d
-endgrent
-endhostent
-endmntent
-endprotoent
 endprotoent ()
-endpwent
-endservent
 endservent ()
-endusershell
-endutent
-endutxent
 entering
 entering ReadFile loop, my_readsig %p, my_sendsig %p
 enum:
@@ -6422,22 +3726,11 @@ env var converted to %s
 environ
 envp %p
 envp %p, envc %d
-envz_add
-envz_entry
-envz_get
-envz_merge
-envz_remove
-envz_strip
 equals-sign
-er overfH
-erand48
 erase
-erfcf
-erfcl
 err %E
 errno
 erroneous thread activation, name is NULL
-error
 error %y reading system process information
 error closing from_master %p, %E
 error closing from_master_nat %p, %E
@@ -6456,10 +3749,6 @@ error while loading shared libraries: %s: cannot open shared object file: %s
 error writing to pipe %p %E
 error writing to pipe, error = %u
 error: utmp_fd %d
-error_at_line
-error_message_count
-error_one_per_line
-error_print_progname
 error_start
 es_AR
 es_BO
@@ -6484,18 +3773,11 @@ es_US
 es_UY
 es_VE
 et_EE
-etc\L
 eu_ES
 eu_ES@euro
-euidaccess
 exclamation-mark
-execl
-execle
-execlp
-execv
+exec
 execve
-execvp
-execvpe
 exename
 exfat
 exists %d
@@ -6506,33 +3788,10 @@ exiting due to signal %d
 exiting on fatal error
 exiting thread
 exiting wait thread for pid %d
-exp10
-exp10f
-exp10l
-exp2f
-exp2l
-expand 3H
-explicit_bzero
-expm1
-expm1f
-expm1l
 export
 external
-ey      I
-ey      M
-f%g%h%i%j%
-f+D$*f
-f+D$H
-f+T$,f
-f9HTt
-f;|$v
 f?;UUUUU
-fB+Dc
-fXuDH
 fa_IR
-fabsf
-fabsl
-faccessat
 failed
 failed to acquire input mutex after input event arrived
 failed to allocate memory for syslog_globals.process_ident
@@ -6543,19 +3802,8 @@ failed to open /dev/null
 failed, %E
 failing message %y due to priority mask %y
 failure in cygserver version request: %d
-fchdir
-fchmod
-fchmodat
-fchown
-fchownat
-fclose
-fcloseall
-fcntl
 fcntl(%d, %d, ...)
-fcntl: %s
-fcvtbuf
-fcvtf
-fd %d (%s)
+fcntl: %s\n
 fd %d not open
 fd %d, %s, NtQueryInformationFile failed, status %y
 fd %d, %s, read avail %u
@@ -6565,46 +3813,8 @@ fd %d, handle %p
 fd %d: defaulting to text
 fd %d: not open
 fd %d: opened as binary
-fdatasync
-fdimf
-fdiml
-fdopen
-fdopendir
-feclearexcept
-fedisableexcept
-feenableexcept
-fegetenv
-fegetexcept
-fegetexceptflag
-fegetprec
-fegetround
-feholdexcept
-feof_unlocked
-feraiseexcept
-ferror
-ferror_unlocked
-fesetenv
-fesetexceptflag
-fesetprec
-fesetround
-fetestexcept
-feupdateenv
-fexecve
 ff-SN
 ff_SN
-fflush
-fflush_unlocked
-ffsll
-fgetc
-fgetc_unlocked
-fgetpos
-fgets
-fgets_unlocked
-fgetwc
-fgetwc_unlocked
-fgetws
-fgetws_unlocked
-fgetxattr
 fh %p, dev %08x
 fhandler size
 fhandler_base* build_fh_name(const char*, unsigned int, suffix_info*)
@@ -6623,11 +3833,10 @@ fifo_client_connect_state fifo_client_handler::query_and_set_state()
 fifo_reader
 fifosel
 fil_PH
+file
 file '%S' exists?
 file was %s now %s
 filemode set to %s
-fileno
-fileno_unlocked
 files
 filesystems
 fill_filebuf (%s)
@@ -6635,35 +3844,15 @@ find_exec (%s)
 finished clearing
 finished dll_crt0_0 initialization
 finished processing terminated/stopped child
-finite
-finitef
-finitel
-fiprintf
+five
 fixup_after_fork
 fixup_before_fork_exec
 fixup_shms_after_fork: NtMapViewOfSection (%p), status %y.  Terminating.
-flags		:M
 flags %y, ret %d
 flags %y, supplied_bin %y
-flistxattr
-flock
-flockfile
-floor
-floorf
-floorl
-flsll
 flushed file buffers
-fmaxf
-fmaxl
-fmemopen
-fminf
-fminl
-fmodf
-fmodl
-fnmatch
 fo_FO
-fopen
-fopencookie
+fork
 fork failed - child pid %d, errno %d
 fork: can't reserve memory for parent stack %p - %p, (child has %p - %p), %E
 fork: couldn't allocate new stack guard page %p, %E
@@ -6671,25 +3860,12 @@ forkables dir %W
 forkables mutex %W
 forked pid %u
 forked process %u died unexpectedly, retry %d, exit code %y
-forkpty
 form-feed
 found /dev/log, fd = %d, type = %s
 found an archetype for %s(%d/%d) io_handle %p
 found it
-fp16I
-fpathconf
-fprintf
-fpu		: %s
-fpu_exception	: %s
-fpurge
-fputc
-fputc_unlocked
-fputs
-fputs_unlocked
-fputwc
-fputwc_unlocked
-fputws
-fputws_unlocked
+four
+fpu\t\t: %s\nfpu_exception\t: %s\ncpuid level\t: %d\nwp\t\t: yes\n
 fr_BE
 fr_BE@euro
 fr_CA
@@ -6698,182 +3874,40 @@ fr_FR
 fr_FR@euro
 fr_LU
 fr_LU@euro
-fread
-fread_unlocked
-freeaddrinfo
 freed console, res %d
-freeifaddrs
-freelocale
-fremovexattr
-freopen
-frexp
-frexpf
-frexpl
-fscanf
-fseek
-fseeko
-fsetpos
-fsetxattr
 fsi_lock
-fstat
 fstat (%s)
-fstatat
-fstatfs
-fstatvfs
-fsync
-ftell
-ftello
-ftime
-ftruncate
-ftrylockfile
-fts_children
-fts_close
-fts_get_clientptr
-fts_get_stream
-fts_open
-fts_read
-fts_set
-fts_set_clientptr
 full-stop
-funlockfile
-funopen
 fur_IT
-futimens
-futimes
-futimesat
 fv-az89-603
-fwide
-fwprintf
-fwrite
-fwrite_unlocked
-fwscanf
 fy_DE
 fy_NL
-g@f"(
+gK?A
 ga_IE
 ga_IE@euro
-gai_strerror
-gamma
-gamma_r
-gammaf
-gammaf_r
 garbled signal pipe data nb %u, sig %d
 gcc version 11.4.0 (GCC) 
-gcvtf
 gd_GB
-gdrive/
 gecos:
-get_avphys_pages
-get_current_dir_name
 get_dp
 get_mp
-get_nprocs
-get_nprocs_conf
 get_object_sd, %E
-get_phys_pages
 get_pos
 get_proc_fhandler(%s)
-getaddrinfo
-getc_unlocked
-getchar
-getchar_unlocked
-getcontext
-getcwd
-getdelim
-getdomainname
-getdomainname "%s"
+getdomainname "%s"\n
 getdomainname %s
-getdtablesize
-getegid
-getentropy
-getenv
-geteuid
-getgid
-getgrent
-getgrgid
-getgrgid_r
-getgrnam
-getgrnam_r
-getgrouplist
-getgroups
-gethostbyaddr
-gethostbyname
-gethostbyname2
-gethostid
-gethostname
 gethostname %s
-getifaddrs
-getitimer
-getline
-getloadavg
-getlogin
-getlogin_r
-getmntent
-getmntent_r
-getmode
-getnameinfo
-getopt
-getopt_long
-getopt_long_only
-getpagesize
-getpass
-getpeereid
 getpeername
-getpgid
-getpgrp
-getpid
-getppid
-getpriority
-getprogname
-getprotobyname
-getprotobynumber
-getprotoent
-getpt
-getpwent
-getpwnam
-getpwnam_r
-getpwuid
-getpwuid_r
-getrandom
-getrlimit
-getrusage
-getservbyname
-getservbyport
-getservent
-getsid
 getsockname
 getsockopt
-getsockopt (SO_KEEPALIVE) failed, %u
-getsubopt
-gettimeofday
-getuid
-getusershell
-getutent
-getutid
-getutline
-getutxent
-getutxid
-getutxline
-getwc
-getwc_unlocked
-getwchar
-getwchar_unlocked
-getwd
-getxattr
+getsockopt (SO_KEEPALIVE) failed, %u\n
 gez_ER
 gez_ER@abegede
 gez_ET
 gez_ET@abegede
-gfff)
-gfffA
-gfffffffH
-gistry/H
 gl_ES
 gl_ES@euro
-glob_pattern_p
-globfree
-gmtime
-gmtime_r
+glob
 got %d
 got %d error from build_fh_name
 got %d error from build_fh_pc
@@ -6881,7 +3915,6 @@ got %d error from path_conv
 got %u bytes from ReadFile
 got STATUS_PIPE_CLOSING when trying to connect bogus client...
 got interrupt %d, sending signal %d
-grantpt
 graph
 grave-accent
 greater-than-sign
@@ -6890,46 +3923,29 @@ group* getgr_cp(group*)
 group:
 gu_IN
 gv_GB
-h   uid I
-hA\A]
 hOy'=
 hParent %p, load_dlls %d
-hV/M)|
-h[A\A]A^
-h[^A\A]
-h[^_A\
-h[^_A\A]A^
-h[^_]
-h[^_]A\A]
-h[^_]A\A]A^A_
-h[_A\A]
-h_errno
 h_name %s
 ha-NG
 ha_NG
 hak_TW
-hancfA
 handle %p already opened
 handle to netdb file %s: %p
 hardlinks created
-has a path longer than allowed for a
-has restricted permissions which render it
-hcreate
-hcreate_r
-hdestroy
-hdestroy_r
+has a path longer than allowed for a\nWin32 working directory
+has restricted permissions which render it\ninaccessible as Win32 working directory
 hdl_cnt_mtx
 he_IL
 heap allocated at wrong address %p (mapped) != %p (expected)
 heap base %p, heap top %p, heap size %ly (%lu)
+here
 here for '%s'
-herror
 hi_IN
 hif_FJ
 hmm.  pgid %d pid %d
 hne_IN
-holdI
 home:
+host
 hostent* cygwin_gethostbyaddr(const void*, socklen_t, int)
 hostent* cygwin_gethostbyname(const char*)
 hostent* gethostby_helper(const char*, int, int, int, int)
@@ -6938,32 +3954,18 @@ hostent* gethostbyname2(const char*, int)
 hostid %08y from MachineGuid %W
 hr_HR
 hsb_DE
-hsearch
-hsearch_r
-hstrerror
 ht_HT
-htonl
-htons
 hu_HU
 hy_AM
 hyphen
 hyphen-minus
-hypot
-hypotf
-hypotl
+i3FB
 iMaxSockets %d
 iMaxUdpDg %d
 ia_FR
-iablI
-id  cuidI
-id nattcI
 id_ID
-if_freenameindex
-if_indextoname
 if_inet6
-if_nameindex
 if_nameindex* if_nameindex()
-if_nametoindex
 iflag %y, oflag %y, cflag %y, lflag %y, VMIN %d, VTIME %d
 ifr == NULL
 ig_NG
@@ -6971,47 +3973,22 @@ ignorecase
 ihash
 ik_CA
 illegal byte sequence
-ilogb
-ilogbf
-ilogbl
-imaxabs
-imaxdiv
 improbable, but %d != %d
 impure
 in fhandler_base dup
 in forked process 
-in function 
-in use bytes     = %10lu
-in6addr_any
-in6addr_loopback
-inaccessible as Win32 working directory
+in use bytes     = %10lu\n
 incoming lastaccess %ly %ly
 incoming utime act %lx
 incompatible version of cygwin server: client version %d.%d.%d.%d, server version %d.%d.%d.%d
-index
 inet6
-inet_addr
-inet_aton
-inet_makeaddr
-inet_netof
-inet_network
-inet_ntoa
-inet_ntop
-inet_pton
-infinity
-infinityf
 inherited
 inherited master
 inheriting '%s' from parent
 init_events
-initgroups
-initial apicid	: %d
-initstate
 inity
 input pipe
 insert mode %sabled
-insque
-installed the cygwin distribution.  Rebooting is also suggested if you
 int __acl_extended_fh(fhandler_base*)
 int __acl_extended_file(path_conv&)
 int __aclsort(int, aclent_t*)
@@ -7395,8 +4372,6 @@ int write_ea(HANDLE, path_conv&, const char*, const char*, size_t, int)
 internal
 internal error reading the windows environment - too many environment variables?
 into buffer
-intr %u
-invalid
 invalid argument to regex routine
 invalid backreference number
 invalid character class
@@ -7408,106 +4383,38 @@ invalid fstab option - '%s'
 invalid pid %d(%x), signal %d
 invalid regular expression
 invalid repetition count(s)
-invalid server "%s"
+invalid server "%s"\n
 invisible_console %d
 io_handle
 ioctl
 ioctl (%x)
 ioctl(fd %d, cmd %y)
-ioctlsocket
 iovcnt >= 1
-iprintf
-iruserok
-iruserok_sa
 is a device
-is a virtual Cygwin directory which does
+is a virtual Cygwin directory which does\nnot exist for a native Windows application
 is not accessible for some unknown reason
 is_IS
-isalnum
-isalnum_l
-isalpha
-isalpha_l
-isascii
-isascii_l
-isatty
-isblank
-isblank_l
-iscntrl
-iscntrl_l
-isdigit
-isdigit_l
-isgraph
-isgraph_l
-isinf
-isinff
-isinfl
-islower
-islower_l
-isnan
-isnanf
-isnanl
 iso9660
-isprint
-isprint_l
-ispunct
-ispunct_l
-issetugid
-isspace
-isspace_l
-isupper
-isupper_l
-iswalnum
-iswalnum_l
-iswalpha
-iswalpha_l
-iswblank
-iswblank_l
-iswcntrl
-iswcntrl_l
-iswctype
-iswctype_l
-iswdigit
-iswdigit_l
-iswgraph
-iswgraph_l
-iswlower
-iswlower_l
-iswprint
-iswprint_l
-iswpunct
-iswpunct_l
-iswspace
-iswspace_l
-iswupper
-iswupper_l
-iswxdigit
-iswxdigit_l
-isxdigit
-isxdigit_l
 it_CH
 it_IT
 it_IT@euro
 itimer
 iu-CA
 iu_CA
-ive:H
-ive:H9
+jR\f5a@
+jW6 
 ja_JP
-jrand48
-k smashiH
-kQAS	N;
+kQAS
 kQAS;
+kQAS\tN;
 kQAS]N;
 kQASkQ;
 kQASmQ;
-k_detectI
 ka_GE
 kab_DZ
 kerb %d, domain member %d, user domain <%W>, machine <%W>
-key "%ls"
 kill (%d, %d)
 killing pid %d, pgrp %d, p->%s, %s
-killpg
 kk_KZ
 kl_GL
 km_KH
@@ -7521,78 +4428,20 @@ ku-IQ
 ku_TR
 kw_GB
 ky_KG
-l$ E1
-l$ LcK
-l$(E1
-l$(fE
-l$0+D$ 
-l$0E1
-l$0H-
-l$0H9
-l$0I)
-l$0ux
-l$6E1
-l$8E1
-l$8H9
-l$8L+d$8
-l$8eH
-l$@E1
-l$@eH
-l$@tkH
-l$DeH
-l$HE1
-l$HHc
-l$PD9|$Du
-l$PE1
-l$PH9
-l$PeH
-l$XA)
-l$XE1
-l$^HcL$@
-l$`E1
-l$pE)
-l$pE1
-l$pHc
-l$pIc
-l$peH
-l$pfD
-l$xLc
 l,kg<i
+lMR:
 lb_LU
-lchown
-lcong48
 ldap_bind(%W) 0x%02x
-ldap_bind_s
-ldap_count_entries
-ldap_count_valuesW
-ldap_first_entry
-ldap_get_next_page_s
-ldap_get_valuesW
-ldap_get_values_lenW
 ldap_init
 ldap_init(%W) error 0x%02x
-ldap_initW
-ldap_msgfree
-ldap_next_entry
 ldap_next_page
 ldap_result() error 0x%02x
 ldap_search
 ldap_search(%W, ROOTDSE) error 0x%02x
-ldap_search_abandon_page
-ldap_search_init_pageW
 ldap_search_init_pageW(%W,%W) error 0x%02x
-ldap_search_sW
 ldap_search_sW(%W,%W) error 0x%02x
-ldap_set_option
 ldap_set_option(LDAP_OPT_ENCRYPT) error 0x%02x
 ldap_set_option(LDAP_OPT_SIGN) error 0x%02x
-ldap_sslinitW
-ldap_unbind
-ldap_value_freeW
-ldap_value_free_len
-ldexp
-ldexpf
-ldexpl
 leaving
 leaving thread_socket
 left-brace
@@ -7602,67 +4451,28 @@ left-square-bracket
 len (%U) > 256
 len < (u_int)LONG_MAX
 less-than-sign
-lf_findoverlap: default
-lfind
+lf_findoverlap: default\n
 lg_UG
-lgamma
-lgamma_r
-lgammaf
-lgammaf_r
-lgammal
-lgammal_r
-lgetxattr
 li_BE
 li_NL
 lij_IT
 line %d:  %s<%p> usecount + %d = %d
 line fragment allocated %p
-line: <%s>
 line_edit_status fhandler_termios::line_edit(const char*, size_t, termios&, ssize_t*)
-linkat
 linked dll bss
 linked dll data
-lio_listio
 listen
-listxattr
-llabs
-lldiv
-llistxattr
-llrint
-llrintf
-llrintl
-llround
-llroundf
-llroundl
 ln_CD
 lo_LA
 loadavg
 loaded dll bss
 loaded dll data
 local
-localeconv
-localhosA
-localtime
-localtime_r
 lock_process
 lock_ttys::lock_ttys(DWORD)
-lockf
 lockf_guard
 lockf_t* inode_t::get_all_locks_list()
-log10
-log10f
-log10l
-log1p
-log1pf
-log1pl
-log2f
-log2l
-logbf
-logbl
 login
-login_tty
-logout
-logwtmp
 long int _get_osfhandle(int)
 long int get_avphys(int)
 long int gethostid()
@@ -7670,183 +4480,95 @@ long int pathconf(const char*, int)
 long int sysconf(int)
 long int telldir(DIR*)
 long unsigned int setlsapwd(const char*, const char*)
-longjmp
 looking for processes to reap, count %d
 looping
 looping because pid %d, procinfo->pid %d, procinfo->dwProcessid %u has PID_EXITED|PID_REAPED set
 lost connection to cygserver, error = %u
-low deteH
 low-line
 lower
-lrand48
-lremovexattr
-lrint
-lrintf
-lrintl
-lround
-lroundf
-lroundl
 lsa_open_policy(NULL) failed
 lsaprivkeyauth failed, try s4uauth.
-lsearch
-lseek
-lsetxattr
-lstat
 lt_LT
-lterI
-lutimes
 lv_LV
 lzh_TW
 m %d, us %U, wmfo_timeout %d
 m0_dA
+m<Pk
 mB?3h-l
-mQAS	N;
+mQAS
 mQAS;
+mQAS\tN;
 mQAS]N;
 mQASkQ;
 mQASmQ;
 macdef
 machine
-madvise
 mag_IN
 mai_IN
 mai_NP
-major miI
-makecontext
-mallinfo
+main
 mallinfo mallinfo()
-malloc
 malloc failed, %E
-malloc_stats
-malloc_trim
-malloc_usable_size
-mallopt
 map_pages (addr=%p, len=%lu)
 map_pages (fd=%d, len=%lu)
+maps
 mask:
-max system bytes = %10lu
-mblen
-mbrlen
-mbrtowc
-mbsinit
-mbsnrtowcs
-mbsrtowcs
-mbstowcs
-mbtowc
-me   winI
+max system bytes = %10lu\n
 me %p, testing fd %d (%s)
-memalign
-memccpy
-memchr
-memcmp
-memcpy
 meminfo
-memmem
-memmove
-mempcpy
-memrchr
-memset
 mfe_MU
 mg_MG
 mhr_RU
 mi_NZ
-microcode	: 0x%X
 miq_NI
+misc
 mjw_IN
 mk_MK
-mkdir
-mkdirat
-mkdtemp
-mkfifo
-mkfifoat
-mknod
-mknodat
-mkostemp
-mkostemps
-mkstemp
-mkstemps
-mktemp
-mktime
 ml_IN
-mlock
 mn-CN
 mn-MN
 mn_MN
 mni_IN
 mnw_MM
 mode = %d, prog_arg = %.9500s
-model		: %d
-model name	: %s
-modff
-modfl
-mount
 mountinfo
 mounts
 mouse: %s at (%d,%d)
 mouse: double-click -> click
-moveA
-mprotect
 mprotect (addr: %p, len %lu, prot %y)
-mq_close
-mq_getattr
-mq_notify
-mq_open
-mq_receive
 mq_receive: curmsgs = %ld; head = 0
-mq_send
 mq_send: curmsgs = %ld; free = 0
-mq_setattr
-mq_timedreceive
-mq_timedsend
-mq_unlink
 mqd_t mq_open(const char*, int, ...)
 mr_IN
-mrand48
 ms_MY
-msgctl
 msgctl (msqid = %d, cmd = %y, buf = %p)
-msgget
 msgget (key = %U, msgflg = %y)
 msglen () <= _buflen
-msgrcv
 msgrcv (msqid = %d, msgp = %p, msgsz = %ld, msgtyp = %d, msgflg = %y)
-msgsnd
 msgsnd (msqid = %d, msgp = %p, msgsz = %ld, msgflg = %y)
-msqid peI
-msync
 msync (addr: %p, len %lu, flags %y)
 mt_MT
 mt_mtx
-mtx_destroy
-mtx_init
-mtx_lock
-mtx_timedlock
-mtx_trylock
-mtx_unlock
 multibyte sequence write failed, handle %p
-munlock
-munmap
 munmap (addr %p, len %lu)
 mutex %p
 mutex %p, owner %p, self %p, lock_counter %d, recursion_counter %u, type %d, res %d
 mutex %p, self %p, owner %p, lock_counter %d, recursion_counter %u
+mvfs
 my_MM
 myself dwProcessId %u
-myself->ctty %d, myself->sid %d, myself->pid %d, arg %d, tc()->getsid () %d
+myself->ctty %d, myself->sid %d, myself->pid %d, arg %d, tc()->getsid () %d\n
 n %d, waiting for subproc_ready(%p) and child process(%p)
-n<V/>
-nagementI
 name %W, shared %p (wanted %p), h %p, m %d, created %d
 name %W, size %u, mode %s
 name %s, id %y, this %p
 name %s, size %u, mode %s
-name too long during search
+name too long during search\n
 nameserver
-nameserver "%s"
+nameserver "%s"\n
 naming context <%W>
 nan_TW
 nan_TW@latin
-nanosleep
 native
 native %s
 nb_NO
@@ -7854,9 +4576,6 @@ ncfsd
 nds_DE
 nds_NL
 ne_NP
-nearbyint
-nearbyintf
-nearbyintl
 needed, since last fork loaded %W
 netapp
 new alias alloc %p
@@ -7865,35 +4584,24 @@ new fd out of bounds: %d
 new process name %W
 newfh->io_handle %p, oldfh->io_handle %p, new win32_name %p, old win32_name %p
 newline
-newlocale
-nextafter
-nextafterf
-nextafterl
-nexttoward
-nexttowardf
-nexttowardl
-ng detecH
 ngroups != NULL
 nhn_MX
+nine
 niu_NU
 niu_NZ
-nkTarget
 nl_AW
 nl_BE
 nl_BE@euro
 nl_NL
 nl_NL@euro
-nl_langinfo
-nl_langinfo_l
 nn_NO
 no /dev/tty assigned
 no client buffer for reply body: %lu bytes needed
-no ctty
-no dns server found
+no dns server found\n
 no matching terminated children found
 no problems
-no space for "%s"
-no space for server "%s"
+no space for "%s"\n
+no space for server "%s"\n
 no-NO
 no-add-slash
 no_NO
@@ -7901,61 +4609,32 @@ no_envblock %d
 no_getpeereid set
 noacl
 nodev
-nor  #blI
+none
 normal
 nosuid
+not 
 not (%s), skip %s%s
 not a symlink
 not called from open for /dev/tty
 not clearing: %d, master_pid %d
 not closing archetype
 not closing passed in archetype %p, usecount %d
-not exist for a native Windows application
 not really ready
 notexec
 nouser
 nr_ZA
-nrand48
 nso_ZA
-nsseI
 nt->Name.Buffer == NULL
 nt_read status %y
 ntdll.dll
-ntelu
-ntohl
-ntohs
+ntfs
 number-sign
-o long]
+nwfs
+o0D0
 o0D0|
-oD$ H
-oD$ f
-oD$0H
-oD$@L
-oD$PH
-oD$Pf
-oD$PfA
-oD$`H
-oD$`f
-oD$pH
-oL$0f
-oL$@A
-oL$PH
-oL$`f
-oL$pf
-oT$@f
-oT$PA
-oT$Pf
-oT$pH
-oT$pI
-o\$@A
-o\$Pf
-o\$`f
-o^M<+
+o@Rn
+oEZ(
 oc_FR
-ocks  naI
-od$Pf
-od$`f
-od$pf
 off_t format_proc_cpuinfo(void*, char*&)
 off_t format_proc_partitions(void*, char*&)
 off_t format_proc_stat(void*, char*&)
@@ -7965,48 +4644,33 @@ off_t format_process_maps(void*, char*&)
 off_t format_process_stat(void*, char*&)
 off_t lseek(int, off_t, int)
 off_t mmap_record::map_pages(SIZE_T)
-okPH)
-ol$`I
-ol$pf
 old %s, ctty device number %y, tc.ntty device number %y flags & O_NOCTTY %y
-old %sent structure "%s" %p
+old %sent structure "%s" %p\n
 oldfh->dup failed
 oldmask %lx, newmask %lx, deltamask %lx
 oldmask %ly, newmask %ly
-om H)
 om_ET
 om_KE
-on_exit
 only found non-terminated children
+open
 open input event failed, %E
 open input mutex failed, %E
 open output mutex failed, %E
 open pipe switch mutex failed, %E
 open(%s, %y)
-open_memstream
 open_setup failed, %E
-open_wmemstream
-openat
-opendir
 opened
 opened conin$ %p, conout$ %p
 opened pty master for pty%d
-opening UDP socket
-opening loadavg mutexfailed
+opening UDP socket\n
+opening loadavg mutexfailed\n
 opening user shared for '%W' at %p
-openlog
 openlog called with (%s, %d, %d)
-openpty
 operation aborted
-optarg
-opterr
-optind
 option doesn't take an argument -- %.*s
 option requires an argument -- %c
 option requires an argument -- %s
 options
-optopt
-optreset
 or_IN
 os_RU
 osquery
@@ -8022,26 +4686,16 @@ owner_found_evt
 owner_found_evt signaled, but I'm not the owner
 owner_needed_evt
 p >= path
-pA\A]A^
 pCda`D/vpEDC`E
 pHdr=%p bytes=%d
 pSampleData=%p nBytes=%d
-p[A\A]
-p[A\A]A^A_
-p[^A\
-p[^A\A]A^
-p[^_A\A]
-p[^_]A\
-p[^_]A\A]A^
 pa-PK
 pa_IN
 pa_PK
-pabilitiI
-page %u %u
+page %u %u\nswap %u %u\nintr %u\nctxt %u\nbtime %u\n
 pap_AW
 pap_CW
-params server "%s"
-parent loaded: %W
+params server "%s"\n
 parent=%p
 parentheses not balanced
 partition
@@ -8051,19 +4705,16 @@ passwd
 passwd* getpw_cp(passwd*)
 passwd:
 password
-pathconf
-pause
 pc %p, h %p, inside_kernel %d
-pcgM`d
-pclose
+pcgM`d\rxpeG/`e
 pep->p_name strdup %p
 percent-sign
 performed fork fixups and dynamic dll loading
 period
-perror
+pgid
 pglock
 phi->NumberOfHandles <= n_handle
-physical id	: %d
+physical id\t: %d\n
 pid %d wants some information
 pid %d, exit value - old %y, windows %y, cygwin %y
 pid %d, pgid %d, process_state %y
@@ -8091,7 +4742,6 @@ pipe read handle %p
 pipe write handle %p
 pipe write handle NULL
 pipe-%p
-pipe2
 pipe:[
 pipe:[%D]
 pipe:[%U]
@@ -8099,57 +4749,24 @@ pipe_byte
 pipesel
 pl_PL
 plus-sign
-popen
 posix %s
 posix=0
 posix=1
-posix_fadvise
-posix_fallocate
-posix_madvise
-posix_memalign
-posix_openpt
-posix_spawn
-posix_spawn_file_actions_addclose
-posix_spawn_file_actions_adddup2
-posix_spawn_file_actions_addopen
-posix_spawn_file_actions_destroy
-posix_spawn_file_actions_init
-posix_spawnattr_destroy
-posix_spawnattr_getflags
-posix_spawnattr_getpgroup
-posix_spawnattr_getschedparam
-posix_spawnattr_getschedpolicy
-posix_spawnattr_getsigdefault
-posix_spawnattr_getsigmask
-posix_spawnattr_init
-posix_spawnattr_setflags
-posix_spawnattr_setpgroup
-posix_spawnattr_setschedparam
-posix_spawnattr_setschedpolicy
-posix_spawnattr_setsigdefault
-posix_spawnattr_setsigmask
-posix_spawnp
 posixrules
 potential attempt to reinitialise a semaphore
-pow10
-pow10f
-pow10l
-power ma
-power mafA
+ppid
 ppid->pgid %d, ppid->sid %d
-ppoll
-pread
 prefork: couldn't create pipe process tracker, %E
 prefork: couldn't set process pipe(%p) inherit state, %E
 prepare
 primary
 print
-printf
 priority class %d
 prlfs
+proc
 proc intro
 proc size
-proc table overflow: hit %d processes, pid %d
+proc table overflow: hit %d processes, pid %d\n
 proc_retry
 proc_subproc returned 0
 process %d stopped by signal %d
@@ -8164,153 +4781,31 @@ processing PICOM_FILE_PATHCONV
 processing PICOM_PIPE_FHANDLER
 processing PICOM_ROOT
 processing PICOM_SIGINFO
-processor	: %d
+processor\t: %d\n
 prog '%s'
 prog_arg is NULL
 prog_arg is empty
-program=%W, pid %u, thread %s
-program_invocation_name
-program_invocation_short_name
+program=%W, pid %u, thread %s\r\n
 proto
 protocol
 protoent %s %p %y
 protoent* cygwin_getprotobyname(const char*)
 protoent* cygwin_getprotoent()
 ps_AF
-pselect
 pselect (%d, %p, %p, %p, %p, %p)
-psiginfo
-psignal
 pt_BR
 pt_PT
 pt_PT@euro
-pthread_atfork
-pthread_attr_destroy
-pthread_attr_getdetachstate
-pthread_attr_getguardsize
-pthread_attr_getinheritsched
-pthread_attr_getschedparam
-pthread_attr_getschedpolicy
-pthread_attr_getscope
-pthread_attr_getstack
-pthread_attr_getstackaddr
-pthread_attr_getstacksize
-pthread_attr_init
-pthread_attr_setdetachstate
-pthread_attr_setguardsize
-pthread_attr_setinheritsched
-pthread_attr_setschedparam
-pthread_attr_setschedpolicy
-pthread_attr_setscope
-pthread_attr_setstack
-pthread_attr_setstackaddr
-pthread_attr_setstacksize
-pthread_barrier_destroy
-pthread_barrier_init
-pthread_barrier_wait
-pthread_barrierattr_destroy
-pthread_barrierattr_getpshared
-pthread_barrierattr_init
-pthread_barrierattr_setpshared
-pthread_cancel
 pthread_cond::_fixup_after_fork () failed to recreate win32 semaphore
 pthread_cond::pthread_cond(pthread_condattr*)
-pthread_cond_broadcast
-pthread_cond_clockwait
-pthread_cond_destroy
-pthread_cond_init
-pthread_cond_signal
-pthread_cond_timedwait
-pthread_cond_wait
-pthread_condattr_destroy
-pthread_condattr_getclock
-pthread_condattr_getpshared
-pthread_condattr_init
-pthread_condattr_setclock
-pthread_condattr_setpshared
-pthread_continue
-pthread_create
-pthread_detach
-pthread_equal
-pthread_exit
-pthread_getaffinity_np
-pthread_getattr_np
-pthread_getconcurrency
-pthread_getcpuclockid
-pthread_getname_np
-pthread_getschedparam
-pthread_getsequence_np
-pthread_getspecific
-pthread_join
 pthread_key::recreate_key_from_buffer () failed to reallocate Tls storage
-pthread_key_create
-pthread_key_delete
-pthread_kill
 pthread_mutex::_fixup_after_fork () doesn't understand PROCESS_SHARED mutex's
 pthread_mutex::_fixup_after_fork () failed to recreate win32 event for mutex
-pthread_mutex_clocklock
-pthread_mutex_destroy
 pthread_mutex_destroy (%p) = %d
-pthread_mutex_getprioceiling
-pthread_mutex_init
-pthread_mutex_lock
-pthread_mutex_setprioceiling
-pthread_mutex_timedlock
-pthread_mutex_trylock
-pthread_mutex_unlock
 pthread_mutex_unlock (%p) = %d
-pthread_mutexattr_destroy
-pthread_mutexattr_getprioceiling
-pthread_mutexattr_getprotocol
-pthread_mutexattr_getpshared
-pthread_mutexattr_gettype
-pthread_mutexattr_init
-pthread_mutexattr_setprioceiling
-pthread_mutexattr_setprotocol
-pthread_mutexattr_setpshared
-pthread_mutexattr_settype
-pthread_once
 pthread_rwlock::_fixup_after_fork () failed to recreate mutex
 pthread_rwlock::pthread_rwlock(pthread_rwlockattr*)
-pthread_rwlock_clockrdlock
-pthread_rwlock_clockwrlock
-pthread_rwlock_destroy
-pthread_rwlock_init
-pthread_rwlock_rdlock
-pthread_rwlock_timedrdlock
-pthread_rwlock_timedwrlock
-pthread_rwlock_tryrdlock
-pthread_rwlock_trywrlock
-pthread_rwlock_unlock
-pthread_rwlock_wrlock
-pthread_rwlockattr_destroy
-pthread_rwlockattr_getpshared
-pthread_rwlockattr_init
-pthread_rwlockattr_setpshared
-pthread_self
-pthread_setaffinity_np
-pthread_setcancelstate
-pthread_setcanceltype
-pthread_setconcurrency
-pthread_setname_np
-pthread_setschedparam
-pthread_setschedprio
-pthread_setspecific
-pthread_sigmask
-pthread_sigqueue
-pthread_spin_destroy
-pthread_spin_init
-pthread_spin_lock
-pthread_spin_trylock
-pthread_spin_unlock
-pthread_suspend
-pthread_testcancel
-pthread_timedjoin_np
-pthread_tryjoin_np
-pthread_yield
 ptr=%p len=%ld
-ptsname
-ptsname_r
 pty %d was not allocated
 pty handles have been closed
 pty master control pipe
@@ -8323,63 +4818,44 @@ pty%d-from-master
 pty%d-from-master-nat
 pty%d-to-master
 pty%d-to-master-nat
+ptym
 ptymf
 ptyssel
 punct
 pure virtual method called
-putc_unlocked
-putchar
-putchar_unlocked
-putenv
-pututline
-pututxline
-putwc
-putwc_unlocked
-putwchar
-putwchar_unlocked
 pw_gecos %p (%s)
-pwrite
-q_roI
-qsort
-qsort_r
+q/Ro
 quc-GT
-query "%s" type %d
+query "%s" type %d\n
 query_hdl
 query_hdl_close_req_evt
-querydomain "%s"  "%s" type %d
-querydomain: name too long
+querydomain "%s"  "%s" type %d\n
+querydomain: name too long\n
 question-mark
 queued aio %p
-quick_exit
-quotactl
 quotation-mark
 quz_PE
 r-event.%08x.%016X
-r11=%016X r12=%016X r13=%016X
-r14=%016X r15=%016X
-r8 =%016X r9 =%016X r10=%016X
-rJHcC I
-raise
+r11=%016X r12=%016X r13=%016X\r\n
+r14=%016X r15=%016X\r\n
+r8 =%016X r9 =%016X r10=%016X\r\n
 raj_IN
-rand_r
-random
-random: not enough state (%lu bytes); ignored.
+random: not enough state (%lu bytes); ignored.\n
 raw keyboard mode %sabled
 raw_read
 raw_write
-rawmemchr
-rax=%016X rbx=%016X rcx=%016X
-rbp=%016X rsp=%016X
-rcmd: %s: %s
-rcmd: accept: %s
-rcmd: getaddrinfo: %s
-rcmd: select (setting up stderr): %s
-rcmd: socket: %s
-rcmd: socket: All ports in use
-rcmd: too many files
-rcmd: write (setting up stderr): %s
-rcmd_af
-rdx=%016X rsi=%016X rdi=%016X
+rax=%016X rbx=%016X rcx=%016X\r\n
+rbp=%016X rsp=%016X\r\n
+rcmd: %s: %s\n
+rcmd: accept: %s\n
+rcmd: getaddrinfo: %s\n
+rcmd: select (setting up stderr): %s\n
+rcmd: socket: %s\n
+rcmd: socket: All ports in use\n
+rcmd: too many files\n
+rcmd: write (setting up stderr): %s\n
+rdx=%016X rsi=%016X rdi=%016X\r\n
+read
 read %lu bytes from buffer (rest %lu)
 read %lu bytes from tape (one block)
 read %lu bytes from tape (rest %lu)
@@ -8390,8 +4866,8 @@ read failed, %E
 read(%d, %p, %d) %sblocking
 read(%p, %lu) handle %p
 read(%p,%d)
-read(TCP) %d out of %d
-read(TCP): %s
+read(TCP) %d out of %d\n
+read(TCP): %s\n
 read: %s, n %d
 read: %s, ready for read
 read: %s, ready for read: avail %d
@@ -8401,61 +4877,33 @@ read_mtx
 read_ready
 read_ready: %d, write_ready: %d, except_ready: %d
 readahead
-readdir
-readdir_r
 reader
 reading %lu bytes (vtime %d)
-readlink
-readlinkat
-readv
 readv(%d, %p, %d) %sblocking
 ready %d
 real: %d, effective: %d
 real: %u, effective: %u
-realloc
-reallocarray
-reallocf
-realpath
 recalculating us
 recreate_mmaps_after_fork_failed
 recreate_shm areas after fork failed
 recursion_counter %u res %d
 recursive exit?
 recv_internal
-recvfrom
-recvfrom sockfd %d: %s
-recvfrom: %d bytes from %08X:%hu sockfd %d
-recvmsg
+recvfrom sockfd %d: %s\n
+recvfrom: %d bytes from %08X:%hu sockfd %d\n
 recvsize < (u_int)INT_MAX
-red]H
-reent_data
-regcomp
-regerror
-regexec
+refs
 regexec() failed to match
-regfree
 registry
-registry search "%s"
-registry server "%s"
+registry search "%s"\n
+registry server "%s"\n
 registry32
 registry64
 released a thread that was not inuse
 released waiting thread
 releasing blocked space at %p
-remainder
-remainderf
-remainderl
 remote drive
-remove
-removexattr
 removing chld_procs[%d], pid %d, child_procs count %d
-remque
-remquo
-remquof
-remquol
-rename
-renameat
-renameat2
 repetition-operator operand invalid
 reply body read failure: only %ld bytes received of %lu, error = %d(%u)
 reply header read failure: only %ld bytes received of %lu, error = %d(%u)
@@ -8467,27 +4915,12 @@ request_code >= 0 && request_code < CYGSERVER_REQUEST_LAST
 requested %p != %p mem alloc base %p, state %y, size %lu, %E
 res %d
 res after verify %d
-res_close
-res_init
-res_mkquery
-res_nclose
-res_ninit
-res_nmkquery
-res_nquery
-res_nquerydomain
-res_nsearch
-res_nsend
-res_query
-res_querydomain
-res_search
-res_send
 reset_com
-reside in x:\cygwin\bin, where 'x' is the drive on which you have
 ret %p
 retired aio %p; slot %d released
 retrans
 retry
-retrying with TCP
+retrying with TCP\n
 return -1, set errno to ENOSPC
 returning
 returning %d
@@ -8497,40 +4930,22 @@ returning %p from sending signal %d
 returning -1
 returning signal %d
 reverse-solidus
-revoke
-rewind
 rewind in position 0
-rewinddir
 rewinding
-rexec
 rexec: socket
-rfmoI
-ributes
 right-brace
 right-curly-bracket
 right-parenthesis
 right-square-bracket
-rindex
-rintf
-rintl
 rlimit_stack_guard
-rm-256coH
-rmdir
-rms     I
 ro_RO
+root
 root_idx %d, user_shared magic %y, nmounts %d
-round
-roundf
-roundl
-rpmatch
-rresvport
-rresvport_af
 ru_RU
 ru_UA
 runnable
 runneradmin
 running
-ruserok
 rw_RW
 s4uauth failed, bail out
 sa_IN
@@ -8538,71 +4953,31 @@ sah_RU
 sat_IN
 saw EOF
 sc_IT
-scalb
-scalbf
-scalbl
-scalbln
-scalblnf
-scalblnl
-scalbn
-scalbnf
-scalbnl
-scandir
-scandirat
-scanf
-sched_get_priority_max
-sched_get_priority_min
-sched_getaffinity
-sched_getcpu
-sched_getparam
-sched_getscheduler
-sched_rr_get_interval
-sched_setaffinity
-sched_setparam
-sched_setscheduler
-sched_yield
 sd-IN
 sd-PK
 sd_IN
 sd_IN@devanagari
 se_NO
 search
-search "%s" type %d
+search "%s" type %d\n
 searchpath %s
-secure_getenv
-seed48
-seekdir
 sel.always_ready %d
 sel.wait returns %d
-select
-select sockfd %d: %s
-select: protocol failure in circuit setup
+select sockfd %d: %s\n
+select: protocol failure in circuit setup\n
 select_sem
 select_stuff::wait_states select_stuff::wait(fd_set*, fd_set*, fd_set*, LONGLONG)
+self
 self/mounts
 sem %p
-sem_clockwait
-sem_close
-sem_destroy
-sem_getvalue
-sem_init
-sem_open
-sem_post
-sem_timedwait
-sem_trywait
-sem_unlink
-sem_wait
+sem.
 semaphore
 semaphore** sem_open(const char*, int, ...)
 semaphore.%08x.%016X
 semaphore/%016X%08x%08x
-semctl
 semctl (semid = %d, semnum = %d, cmd = %d, arg = %p)
-semget
 semget (key = %U, nsems = %d, semflg = %y)
 semicolon
-semid peI
-semop
 semop (semid = %d, sops = %p, nsops = %ld)
 send_internal
 sending %d notification to parent failed, %E
@@ -8611,10 +4986,10 @@ sendmsg
 sendsig %p, pid %d, signal %d, its_me %d
 sendsig handle never materialized
 sendsize < (u_int)INT_MAX
-sendto
-sendto: server %08X:%hu sockfd %d %s
+sendto: server %08X:%hu sockfd %d %s\n
 sep->s_name strdup %p
 sep->s_proto strdup %p
+serv
 servent* cygwin_getservbyname(const char*, const char*)
 servent* cygwin_getservbyport(int, const char*)
 servent* cygwin_getservent()
@@ -8628,96 +5003,37 @@ set_keepalive
 set_options
 set_partition
 set_pos
-setbuf
-setbuffer
-setcontext
-setdtablesize
-setegid
-setenv
-seteuid
-setgid
-setgrent
-setgroups
 setgroups (%d)
-sethostent
-sethostname
-setitimer
-setjmp
-setlinebuf
-setlocale
-setlogmask
 setmask %lx, newmask %lx, mask_bits %lx
-setmntent
-setpassent
-setpgid
-setpgrp
-setpriority
-setprogname
-setprotoent
 setprotoent (%d)
-setpwent
-setregid
-setreuid
-setrlimit
-setservent
 setservent (%d)
-setsid
 setsockopt
-setsockopt (SO_KEEPALIVE) failed, %u
+setsockopt (SO_KEEPALIVE) failed, %u\n
 setsockopt optval=%x
-setstate
-settimeofday
 setting file pointer to %U
 setting initial state on %s (reset_com %d)
-setuid
-setusershell
-setutent
-setutxent
-setvbuf
-setxattr
 seven
 sgs_LT
-shared]
 shared_fc_hdl
 shell:
-shm_open
-shm_unlink
-shmat
 shmat (shmid = %d, shmaddr = %p, shmflg = %y)
-shmctl
 shmctl (shmid = %d, cmd = %d, buf = %p)
-shmdt
 shmdt (shmaddr = %p)
 shmem created
 shmem existed; ok if we're not the first reader
 shmem_handle
-shmget
 shmget (key = %U, size = %d, shmflg = %y)
-shmid peI
 shn_MM
 shs_CA
 shut up gcc
 shutdown
 si %p si->thread %p
 si_LK
-siblings	: %u
-siblings	: 1
+siblings\t: %u\n
+siblings\t: 1\n
 sid %d, pgid %d, %s
 sid_ET
-sig %d
-sig2str
-sigaction
-sigaddset
-sigaltstack
-sigdelset
-sigemptyset
-sigfillset
-sighold
-sigignore
-siginterrupt
-sigismember
-siglongjmp
-signal
+sig %d\n
 signal %d %sdelivered
 signal %d blocked
 signal %d default is currently ignore
@@ -8731,7 +5047,6 @@ signal received
 signal received but ignored
 signal received, set EINTR
 signal_arrived
-signalfd
 signalfd %d not ready
 signalfd %d ready
 signalfd (%d, %p, %y)
@@ -8739,27 +5054,9 @@ signalled %p that I was ready
 signalled child
 signalling pack.wakeup %p
 signalling parent: %s
-significand
-significandf
-sigpause
-sigpending
-sigprocmask
-sigqueue
-sigrelse
-sigset
 sigset_t set_process_mask_delta()
 sigset_t sig_send(_pinfo*, siginfo_t&, _cygtls*)
-sigsetjmp
-sigsuspend
-sigtimedwait
 sigwait
-sigwaitinfo
-sincos
-sincosf
-sincosl
-sinhf
-sinhl
-siprintf
 size %ld, fds %p
 size of shared memory region changed from %lu to %u
 size_t confstr(int, char*, size_t)
@@ -8770,25 +5067,22 @@ size_t wcsxfrm_l(wchar_t*, const wchar_t*, size_t, __locale_t*)
 sk_SK
 sl_SI
 slash
-sleep
 sleeping
 slot %d released
 slot %d%s
 sm_WS
 smallprint_buf
 smbfs
-snprintf
 so_DJ
 so_ET
 so_KE
 so_SO
-sockatmark
 socket
 socket (%d, %d (flags %y), %d)
 socket is now %sblocking
-socket(TCP): %s
-socket(UDP): %s
-socket: protocol failure in circuit setup.
+socket(TCP): %s\n
+socket(UDP): %s\n
+socket: protocol failure in circuit setup.\n
 socket:[
 socket:[%lu]
 socketpair
@@ -8798,23 +5092,12 @@ some disk file
 space
 sparse
 spawned windows pid %d
-spawnl
-spawnle
-spawnlp
-spawnlpe
-spawnv
-spawnve
 spawnve (%s, %s, %p)
-spawnvp
-spawnvpe
 spinlock %p, owner %p, self %p, res %d
 spinlock %p, self %p, owner %p
 splitlock != NULL
-sprintf
 sq_AL
 sq_MK
-sqrtf
-sqrtl
 sr-BA
 sr-ME
 sr-RS
@@ -8824,14 +5107,10 @@ sr_RS
 sr_RS@latin
 sr_SP
 sr_SP@latin
-srand
-srand48
-srandom
 src %s
 src '%s', dst '%s'
 src_path %s, dst %s, flags %y, rc %d
 ss_ZA
-sscanf
 ssize_t acl_copy_ext(void*, acl_t, ssize_t)
 ssize_t acl_size(acl_t)
 ssize_t aio_return(aiocb*)
@@ -8873,7 +5152,7 @@ stack - bottom %p, top %p, addr %p, guardsize %ly
 started
 started thread %p %p %p %p %p %p
 starting aio %p
-statfs
+stat
 static BOOL fhandler_pty_common::process_opost_output(HANDLE, const void*, ssize_t&, bool, tty*, bool)
 static DWORD cygthread::stub(void*)
 static DWORD fhandler_pipe::create(LPSECURITY_ATTRIBUTES, PHANDLE, PHANDLE, DWORD, const char*, DWORD, int64_t*)
@@ -8907,78 +5186,10 @@ static void* dll_list::ntopenfile(PCWCHAR, NTSTATUS*, ULONG, ACCESS_MASK, HANDLE
 statm
 status
 status %y
-statvfs
-stepping	: %d
-stime
 stopped
 stopped child, stop signal %d
 stopping
-stpcpy
-stpncpy
-str2sig
-strcasecmp
-strcasecmp_l
-strcasestr
-strcat
-strchr
-strchrnul
-strcmp
-strcoll
-strcoll_l
-strcpy
-strcspn
-strdup
-strerror
-strerror_l
-strerror_r
-strfmon
-strfmon_l
-strftime
-strftime_l
 strict
-strlcat
-strlcpy
-strlen
-strlwr
-strncasecmp
-strncasecmp_l
-strncat
-strncmp
-strncpy
-strndup
-strnlen
-strnstr
-strpbrk
-strptime
-strptime_l
-strrchr
-strsep
-strsignal
-strspn
-strstr
-strtod
-strtod_l
-strtof
-strtof_l
-strtoimax
-strtok
-strtok_r
-strtol
-strtol_l
-strtold
-strtold_l
-strtoll
-strtoll_l
-strtosigno
-strtoul
-strtoul_l
-strtoull
-strtoull_l
-strtoumax
-strupr
-strverscmp
-strxfrm
-strxfrm_l
 stub called
 stuff_start %p
 stuff_start %p, timeout %u
@@ -8991,158 +5202,37 @@ sv_FI@euro
 sv_SE
 sw_KE
 sw_TZ
-swap %u %u
-swapcontext
 swaps
-swprintf
-swscanf
-symlink
 symlink (%s, %S) wsym_type %d
 symlink string too long
-symlinkat
 sync on %W
 sync_proc_subproc
 sync_proc_subproc is NULL
 synchronized with pid %d
-sys_errlist
-sys_nerr
-sys_sigabbrev
-sys_siglist
-sysconf
-sysinfo
-syslog
-system
-system bytes     = %10lu
+system bytes     = %10lu\n
 system shared memory version
 sysvipc
 szDescription %s
 szSystemStatus %s
 szl_PL
-t	HcC
-t$ D	
-t$ E1
-t$ L)
-t$ L9
-t$ Lc
-t$ fA
-t$(E1
-t$,L9
-t$0D 
-t$0E1
-t$0I)
-t$0eH
-t$8D 
-t$8E1
-t$8H)
-t$@E1
-t$@H9
-t$@I9
-t$@L)
-t$@tL
-t$D9t$`tUH
-t$HE1
-t$HLc
-t$L+t$p
-t$LE1
-t$Nf.
-t$PD9
-t$PI9
-t$X+D$X
-t$XA9
-t$XHc
-t$XL9d$P
-t$`9F
-t$`A)
-t$`Hc
-t$`Lc
-t$hE1
-t$hHc
-t$hL+t$pI
-t$hfD
-t$kT$,<Hc
-t$lD#s
-t$pE1
-t$pMc
-t$xD#s
-t$xI9
-t&HcS8H
-t'</t1<\t-I
-t'H9s0u
-t.<%tDH
-t/IcD$
-t1HcV
-t6x$D
-t8HcT$DL
-t9HcE
-t:92u6H
-t=L9-
-tAA9@h~#H
-tAHcS
-tE</tA<\t=
-tFHcD$(
-tGHcH
-tGIcD$
-tOE9l$ u
-tOHcP
-tPD9`
-tQIcL$
-tRHcS
-tS})H
-tUA+B
-tX9sDu
-t[;CXtVH
-t]IiT$
-t_H9o(t1D9
-t_HcCpH
-t_tsE1
-taD96~\
 ta_IN
 ta_LK
-tanhf
-tanhl
 target filename too long
+tcK-
 tcdrain
-tcflow
-tcflush
 tcflush(%d) handle %p
-tcgetattr
-tcgetpgrp
-tcgetsid
-tcsendbreak
-tcsetattr
-tcsetpgrp
-tdelete
-tdestroy
 te_IN
-ted ***:H
-telldir
-tempnam
 temporary buffer too small for %d bytes
-tepsI
 terminating captive process
 testname: %s
+text
 text write
-textmode
-tfHcT$,Hi
-tfind
 tg-TJ
-tgH9s0u
 tg_TJ
-tgamma
-tgammaf
-tgammal
 th_TH
 the_NP
 this %p, pty%d opened - from_pty <%p,%p>, to_pty %p
 this->path(%s), has_acls(%d)
-thrd_create
-thrd_current
-thrd_detach
-thrd_equal
-thrd_exit
-thrd_join
-thrd_sleep
-thrd_yield
 thread '%s', id %y, inuse %d, stack_ptr %p
 thread '%s', id %y, stack_ptr %p
 thread canceled
@@ -9154,112 +5244,54 @@ threadcount %d.  locking
 threadcount %d.  unlocked
 threadlist_t* init_cygheap::find_tls(int, bool&)
 three
-tiIcC
 ti_ER
 ti_ET
 tid %p
 tig_ER
 tilde
-time    I
 time_t time(time_t*)
 timed out
 timed out after verification
-timegm
-timelocal
 timeout
-timeout for server %08X:%hu sockfd %d
-timer_create
-timer_delete
-timer_getoverrun
-timer_gettime
-timer_settime
+timeout for server %08X:%hu sockfd %d\n
 timerfd
 timerfd %d not ready
 timerfd %d ready
-timerfd_create
 timerfd_create (%lu, %y)
-timerfd_gettime
-timerfd_settime
-times
-timezone
-timingsafe_bcmp
-timingsafe_memcmp
 title '%W'
 tk_TM
-tl<:thH
 tl_PH
-tmpfile
-tmpnam
 tn_ZA
 to NULL, us %D
 to->tv_sec %ld, to->tv_nsec %ld, us %D
 to_TO
 to_slave pipe is full
-toascii
-toascii_l
 tolower
-tolower_l
-too many retries
-tot >= 0
+too many retries\n
 toupper
-toupper_l
-towctrans
-towctrans_l
-towlower
-towlower_l
-towupper
-towupper_l
 tpi_PG
 tr_CY
 tr_TR
 trailing backslash (\)
 transport
-trunc
-truncate
-truncf
-truncl
 try_connect_guard
 trying %s
 trying to send signal %d but signal %d already armed
 ts_ZA
-tsearch
-tss_create
-tss_delete
-tss_get
-tss_set
 tt_RU
 tt_RU@iqtelif
 tty_list::mutex
-ttyname
-ttyname_r
 ttynum (%d) out of range
-ttyslot
-twalk
 two_addr_t wsock_init(func_info*)
 type %d disable %W
-tzE;a
 tzm-DZ
 tzm-MA
-tzset
-t{L9H
-t|Hcs
-t~L9H
-u	HcC
-u H+u
-u&I9\$
-uTIcEpI9
-uWLcd$,Lc
-ualarm
 ug_CN
-uid  cgiI
 uid: %u myself->uid: %u myself->gid: %u
 uint32_t cyg_ldap::fetch_posix_offset_for_domain(PCWSTR)
 uintptr_t cygwin_internal(cygwin_getinfo_types, ...)
 uk_UA
 ulen %ld, vmin_ %u, vtime_ %u
-um lspidI
-umask
-umount
 unable to allocate forker_finished event
 unable to allocate heap, heap_chunk_size %ly, %E
 unable to allocate subproc_ready event, %E
@@ -9272,13 +5304,10 @@ unable to release protective reservation (%p) for %W, %E
 unable to release protective reservation for %W (%p), %E
 unable to remap %W (using %W) to same address as parent (%p) - try running rebaseall
 unable to unload interim mapping of %W (using %W), %E
-uname
-uname_x
 underscore
-unexpected answer
-ungetc
-ungetwc
+unexpected answer\n
 unit: %d
+unix
 unixfs
 unknown
 unknown (%y)
@@ -9286,83 +5315,55 @@ unknown exec type %u
 unknown h/l command: %d
 unknown option -- %c
 unknown option -- %s
-unknown option: "%s"
+unknown option: "%s"\n
 unknown value %d on proc pipe
 unknown windows error %u, setting errno to %d
-unlink
-unlinkat
 unlinking a directory
 unlinking a nonexistent file
-unlockpt
 unm_US
-unsetenv
 unsigned int alarm(unsigned int)
-up_lI
 update_needed_evt
-updwtmp
-updwtmpx
 upper
 uptime
 ur_IN
 ur_PK
 us now %D
 useconds_t ualarm(useconds_t, useconds_t)
-uselocale
+user
 user != NULL
 user heap
 user not found in passwd DB
 user shared memory size
 user shared memory version
 user shared version %x
-user-datH
-user-shaH
 user.
 user:
 user: <%W> <%W> <%W>
 usertemp
 using %s malloc
 using computed value for '%s'
-using dnsapi.dll
+using dnsapi.dll\n
 using tls %p
 using value from GetEnvironmentVariable for '%W'
-usleep
-ut->ut_type %d, ut->ut_pid %d, ut->ut_line '%s', ut->ut_id '%s'
-ut->ut_user '%s', ut->ut_host '%s'
-utL)%
-utime
-utimensat
-utimes
+ut->ut_type %d, ut->ut_pid %d, ut->ut_line '%s', ut->ut_id '%s'\n
+ut->ut_user '%s', ut->ut_host '%s'\n
 utmp* getutid(const utmp*)
 utmp* getutline(const utmp*)
 utmp* pututline(const utmp*)
-utmpname
 utmpx* getutxid(const utmpx*)
 utmpx* getutxline(const utmpx*)
 utmpx* pututxline(const utmpx*)
-utmpxname
 uz-UZ
 uz_UZ
 uz_UZ@cyrillic
-v<'*6
-valloc
-vasnprintf
-vasprintf
-vbmiI
-vdprintf
+v<y5
+vH7B
 ve_ZA
-vendor_id	: %s
-verrx
+vendor_id\t: %s\n
 version
-versionsort
 vertical-line
 vertical-tab
-vfiprintf
-vfork
-vfprintf
-vfscanf
-vfwprintf
-vfwscanf
-vhangup
+vfat
 vi_VN
 virtual DIR* fhandler_base::opendir(int)
 virtual DIR* fhandler_dev::opendir(int)
@@ -9628,7 +5629,6 @@ virtual void* fhandler_disk_file::mmap(char**, size_t, int, int, off_t)
 virtual void* pg_ent::enumerate_ad()
 virtual_ftype_t fhandler_procsys::exists(stat*)
 vmin_ %u, vtime_ %u
-vnniI
 void (* signal(int, _sig_func_ptr))(int)
 void (* sigset(int, _sig_func_ptr))(int)
 void SetThreadName(DWORD, const char*)
@@ -9780,27 +5780,11 @@ void* tty::create_inuse(PSECURITY_ATTRIBUTES)
 void* tty::get_event(const char*, PSECURITY_ATTRIBUTES, BOOL)
 void* user_heap_info::sbrk(ptrdiff_t)
 void* valloc(size_t)
-vp2interI
-vpopcntdI
-vprintf
-vscanf
-vsnprintf
-vsprintf
-vsscanf
-vswprintf
-vswscanf
-vsyslog
 vtime %u, vmin %u
 vtime_ %u, vmin_ %u, read_bytes %u, tot %D
-vwarn
-vwarnx
-vwprintf
-vwscanf
-w-HcD
 wHighVersion %d
 wUUUUU
 wVersion %d
-w_recov
 wa_BE
 wa_BE@euro
 wae_CH
@@ -9811,95 +5795,14 @@ wait for input event failed, %E
 wait for input mutex failed, %E
 wait for mutex caught signal
 wait timed out, time_to_wait %u
-wait3
-wait4
 wait_ret %d, m = %d.  verifying
 waiting thread found no children
-waitpid
 waitproc
 wakeup %p
 wal_ET
 warning: %s not present in environment
-warnx
-waveInAddBuffer
-waveInClose
-waveInGetNumDevs
-waveInOpen
-waveInPrepareHeader
-waveInReset
-waveInStart
-waveInUnprepareHeader
-waveOutClose
-waveOutGetNumDevs
-waveOutGetVolume
-waveOutOpen
-waveOutPrepareHeader
-waveOutReset
-waveOutSetVolume
-waveOutUnprepareHeader
-waveOutWrite
-wcpcpy
-wcpncpy
-wcrtomb
-wcscasecmp
-wcscasecmp_l
-wcscat
-wcschr
-wcscmp
-wcscoll
-wcscoll_l
-wcscpy
-wcscspn
-wcsdup
 wcsdup(%W, %W) %d
-wcsftime
-wcsftime_l
-wcslcat
-wcslcpy
-wcslen
-wcsncasecmp
-wcsncasecmp_l
-wcsncat
-wcsncmp
-wcsncpy
-wcsnlen
-wcsnrtombs
-wcspbrk
-wcsrchr
-wcsrtombs
-wcsspn
-wcsstr
-wcstod
-wcstod_l
-wcstof
-wcstof_l
-wcstoimax
-wcstok
-wcstol
-wcstol_l
-wcstold
-wcstold_l
-wcstoll
-wcstoll_l
-wcstombs
-wcstoul
-wcstoul_l
-wcstoull
-wcstoull_l
-wcstoumax
-wcswidth
-wcsxfrm
-wcsxfrm_l
-wctob
-wctomb
-wctrans
-wctrans_l
-wctype
-wctype_l
-wcwidth
 what %d, pw %p
-wheel doA
-wheel up
 win_env* getwinenv(const char*, const char*, win_env*)
 wincmdln
 window %d(%p) not ready
@@ -9911,201 +5814,49 @@ winexename
 wininfo_lock
 winpid
 winsymlinks
-wmemchr
-wmemcmp
-wmemcpy
-wmemmove
-wmempcpy
-wmemset
-wn_freq
 wndproc %d %s %d %d
 wndproc %d unknown  %d %d
 wo_SN
-wordexp
-wordfree
-wp		: yes
-wprintf
 wq;=7
 write
 write failed, handle %p
 write(%d, %p, %d)
-write(TCP): %s
+write(TCP): %s\n
 write: %s, n %d
 write_ea (%S, %s, %p, %lu, %d)
 write_marks
 write_ready
 writer
 writer_opening
-writev
 writev(%d, %p, %d)
 writing filemark
 wsa_event* search_wsa_event_slot(LONG)
-wscanf
 wsock_evt
 wsock_mtx
 wt >= cnt (%u >= %u)
 wval->pid %d, wval->options %d
-x?uMH
-x?uPH
-xA\A]
-xA\A]A^A_
-xBuMH
-xBuQH
-xBuRH
-xVtLI
-x[A\A]A^
-x[^A\A]
-x[^A\A]A^A_
-x[^_A\
-x[^_]
-x[^_]A\A]
-x[^_]A\A]A^A_
 xdigit
 xdr-routines: 
-xdr_array
 xdr_array: out of memory
-xdr_bool
-xdr_bytes
 xdr_bytes: out of memory
-xdr_char
-xdr_double
-xdr_enum
-xdr_float
-xdr_free
-xdr_hyper
-xdr_int
-xdr_int16_t
-xdr_int32_t
-xdr_int64_t
-xdr_int8_t
-xdr_long
-xdr_longlong_t
-xdr_netobj
-xdr_opaque
-xdr_pointer
-xdr_reference
 xdr_reference: out of memory
-xdr_short
-xdr_sizeof
-xdr_string
 xdr_string: out of memory
-xdr_u_char
-xdr_u_hyper
-xdr_u_int
-xdr_u_int16_t
-xdr_u_int32_t
-xdr_u_int64_t
-xdr_u_int8_t
-xdr_u_long
-xdr_u_longlong_t
-xdr_u_short
-xdr_uint16_t
-xdr_uint32_t
-xdr_uint64_t
-xdr_uint8_t
-xdr_union
-xdr_vector
-xdr_void
-xdr_wrapstring
-xdrmem_create
 xdrrec_create
 xdrrec_create: out of memory
-xdrrec_endofrecord
-xdrrec_eof
 xdrrec_inline
-xdrrec_skiprecord
-xdrstdio_create
 xh_ZA
-xpeG/`e
-xu;^(}pH
 yi_US
 yo_NG
 yue_HK
 yuw_PG
-z%u#A
-z/u-A
-zAu?f
-zGuEf
-zYuWH
-z_u]D
+zero
 zero length file, treat as script.
 zh_CN
 zh_HK
 zh_SG
 zh_TW
 zombie
-zturA
 zu_ZA
-zw>eH
 {%u;%u;%u;%u;%u;%luK
-|$ E1
-|$ L)
-|$ eH
-|$ fD
-|$(9x
-|$(E1
-|$(I9
-|$(L+t$(
-|$(uuH
-|$0E1
-|$0H)
-|$4_A
-|$4_t
-|$8E1
-|$8H9|$0wk
-|$8L)
-|$8L9
-|$8fA
-|$<_A
-|$@Hc
-|$@cH
-|$DLcL$<L
-|$H+L
-|$H+u
-|$HA9
-|$HE1
-|$HH)
-|$HHcC
-|$HL)
-|$LA9
-|$LHc
-|$PE1
-|$PE9
-|$PI)
-|$PI9
-|$TD)
-|$TE)
-|$THc
-|$XE1
-|$XeH
-|$Xu;
-|$\A9
-|$\E1
-|$\Hc
-|$`D+|$xE
-|$`D+|$xH
-|$`E)
-|$`E1
-|$`Hi\$p
-|$`IcG
-|$`L)
-|$`cf
-|$pA)
-|$pD)
-|$pE1
-|$pHc
-|$peH
-|$r2H
-|$roL
-|$s-H
-|$x-H
-|$xHL
-|$xHc
-|$xSt
-|$xaH
-|$~ >
-|$~k>
-|TP\H
+|JF9
 }CQMR:
-~-A;D$
-~\HcI

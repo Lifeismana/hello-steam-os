@@ -1,67 +1,36 @@
- %s:%s
  (master)
  (tcp only)
- <^wA1
  AF_UNSPEC
- LiD$ 
- [^_H
- [^_]A\
- [^_]A\A]A^
- [^_]A^
  af%d
+ not
 !(opt->flags & GIC_OPT_SHALLOW_COPY)
-!This program cannot be run in DOS mode.
-$;EHt+
-%.*s%.*s
-%.*s%s%s.  Please try again.
+%.*s%s%s.  Please try again.\n
+%02X
 %02X%02X
 %04d%02d%02d%02d%02d%02dZ
-%H%M%S
-%Y%m%d%H%M
 %Y%m%d%H%M%S
 %Y-%m-%dT%H:%M
 %Y-%m-%dT%H:%M:%S
 %Y.%m.%d.%H.%M.%S
 %d %b %Y %T
-%d %s
 %d %s %02d:%02d:%02d
 %d-%b-%Y:%R
 %d-%b-%Y:%T
 %d:%02d:%02d
-%ld/%s
-%s	%d. %s %.*s
-%s %.*s
 %s (filename: %s)
 %s contains invalid filename
 %s%.*s%s%.*s
-%s%s%s
 %s%skrb5_RCXXXXXX
 %s.  Please try again.
-%s.$$$
-%s.%s
 %s.XXXXXX
 %s.bak
-%s/%s
-%s/%s%s
 %s/.k5login
-%s: %s
-%s:%s
 %sXXXXXX
+%s\t%d. %s %.*s\n
 %s_%s_initvt
-%x %R
-%x %T
-%x %X
-%x:%X
-%y%m%d%H%M
 %y%m%d%H%M%S
 %y.%m.%d.%H.%M.%S
-&#'!"#
 (*auth_context)->negotiated_etype != ENCTYPE_NULL
-(HcyHD
-([^_]
-([^_]A\A]
-([^_]A\A]A^A_
-([^_]H
 (authdata[0]->ad_type & AD_TYPE_FIELD_TYPE_MASK) == KRB5_AUTHDATA_WIN2K_PAC
 (buffer->Offset % PAC_ALIGNMENT) == 0
 (data->data == NULL) == zerofill
@@ -73,17 +42,12 @@ $;EHt+
 (ptrinfo)->storeptr != NULL
 (root)
 *out_creds != NULL
-+D$@H
 -%03o
 .conf
-.edata
-.gnu_debuglink
+.dll
 .k5identity
-.rdata
-.reloc
-.text
-/D9s L
 /etc/krb5.conf
+/tmp
 /tmp/tkt
 /usr/bin
 /usr/lib
@@ -120,39 +84,10 @@ $;EHt+
 /var/tmp
 01234567890.
 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-0@.bss
-0@.idata
-0@.pdata
-0@.xdata
-0[^_]A\
-0[^_]A\A]A^
 17, 16, 15, 14
 19700101000000Z
-8:tjL
-8[^_]
-8[^_]A\A]
-8[^_]A\A]A^A_
-8f;~*s_
-8fA9l$
-9/t|A
-97~'H
-9D$\u
-9k ~hH
-9l$T~&H
-9t$x~HH
-;D$ u
-;D$0t!H
-;\$0H
-;t$(r
-<any> 
 <bol-anchor> 
 <eol-anchor> 
->:uNI
-@(+D$`H
-@89D$D
-@G@t"
-@[^_]A\
-@[^_]A\A]A^
 A profile section header has a non-zero value
 A service is not available that is required to process the request
 ANONYMOUS
@@ -174,12 +109,6 @@ ASN.1 structure is missing a required field
 ASN.1 type numbers are inconsistent
 ASN.1 unexpected field number
 ASN.1 value too large
-ATUWVSH
-AUATUWVS
-AUATUWVSH
-AVAUATUWVSH
-AVUWVSH
-AWAVAUATUWVSH
 Access denied
 Additional pre-authentication required
 Also storing {creds} based on ticket
@@ -277,14 +206,7 @@ Bad principal name while trying to forward credentials
 Bad response (during sendauth exchange)
 Bad sendauth version was sent
 Bad value of {str} from [{str}] in conf file: {kerr}
-BhHcT$P
-C H9D$`H
-C%hd = 
-C(t;H
-C(tjL
-C(u%H
-C0tXH
-Cache-Control: no-cache
+Cache-Control: no-cache\r\n
 Can't create new subsidiary cache
 Can't create new subsidiary cache because default cache is not a directory collection
 Can't destroy replay cache: %s
@@ -347,8 +269,8 @@ Client/server realm mismatch in initial ticket request
 Clock skew too great
 Clock skew too great in KDC reply
 Configuration file does not specify default realm
-Content-Length: %d
-Content-type: application/kerberos
+Content-Length: %d\r\n\r\n
+Content-type: application/kerberos\r\n
 Conversion to service principal undefined for name type
 Could not find %s plugin module named '%s'
 Couldn't lookup etypes in keytab: {kerr}
@@ -363,84 +285,10 @@ Credentials cache permissions incorrect
 Credentials cache type is already registered.
 Credentials for server have been revoked
 Cryptosystem internal error
-D$ E1
-D$ Mc
-D$ fE
-D$ tvH
-D$$E1
-D$&f-
-D$(E1
-D$(H3
-D$(H3E
-D$(I+D$
-D$(L;k 
-D$(fD
-D$(t6
-D$(utH
-D$,u/H
-D$,u]H
-D$0H9
-D$0L9
-D$0fD
-D$0tqH
-D$0ttL
-D$49D$0
-D$49D$0t~
-D$8E1
-D$8H3
-D$8H9D$(w
-D$8tEH
-D$8udH
-D$<A9
-D$<E1
-D$<u;H
-D$@H)D$HI
-D$@H;E
-D$@fA
-D$@t:
-D$D9E
-D$D;B
-D$DE1
-D$DHc
-D$HE1
-D$HH9D$8w
-D$HH;E
-D$HtaI
-D$HtfH
-D$JA9
-D$L9E
-D$Lu7H
-D$LuMH
-D$LurH
-D$NfE
-D$PE1
-D$X;E
-D$XH3
-D$XHc
-D$`E1
-D$hE1
-D$hLcD$TH
-D$t9D$Ds
-D$xE1
-D$|D)
-D$|~RD
-D9>~@H
-D9D$|
-D9R u
-D9d$@
-D9d$|
-D9l$0D
-D9l$0E
-D9s(u
-D9|$ ~~Ic
-D9|$0
-D9|$D
-D;n |
-D;t$PIc
-DD$HH
 DEFAULT
 DES key has bad parity
 DES key is a weak key
+DIR:
 DIR::
 Database format error
 Database has already been initialized
@@ -463,9 +311,6 @@ Decrypted AS reply; session key is: {keyblock}
 Destroying ccache {ccache}
 Digest in certificate not accepted
 Digest in signed-data not accepted
-E L;C u
-ET$PL
-ET$xL
 Encoding request body and padata into FAST request
 Encoding too large
 Encrypted timestamp (for {long}.{int}): plain {hexdata}, encrypted {hexdata}
@@ -485,13 +330,13 @@ Error writing to credentials cache
 Error writing to key table
 Expecting FX_ERROR pa-data inside FAST container
 Extra closing brace in profile
-E|$HH
 FAST armor ccache: {str}
 FAST armor key: {keyblock}
 FAST negotiation: {str}available
 FAST protected pre-authentication required but not supported by KDC
 FAST reply key: {keyblock}
 FAST response missing finish message in KDC reply
+FILE
 FILE:
 FILE:/etc/krb5.keytab
 FILE:/tmp/krb5cc_%{uid}
@@ -499,7 +344,6 @@ FILE:/var/krb5/user/%{euid}/client.keytab
 Failed to decrypt AP-REQ ticket: {kerr}
 Failed to decrypt FAST reply
 Failed to store credentials
-FdD;Gd
 Field is too long for this implementation
 Filtering out unverified MS PAC
 Following referral TGT {princ}
@@ -507,15 +351,8 @@ Following referral to realm {data}
 Followup preauth for next request: {patypes}
 Found cached TGT for intermediate realm: {creds}
 Found cached TGT for service realm: {creds}
-G"f;C"
-G09F0
-G49F4
-G89F8
-G<9F<
-G@9F@u
 GCC: (GNU) 6.4.0
 GCC: (GNU) 6.4.0 20170704 (Fedora Cygwin 6.4.0-1)
-GD9FDtc
 Generated subkey for TGS request: {keyblock}
 Generating new unique ccache based on {ccache}
 Generic error (see e-text)
@@ -524,84 +361,19 @@ Generic unknown RC error
 Generic unknown RC/IO error
 Generic update log error
 Get cred via TGT {princ} after requesting {princ} (canonicalize {str})
-GetModuleHandleA
-GetProcAddress
 Getting AS key, salt "{data}", params "{data}"
 Getting credentials {creds} using ccache {ccache}
 Getting initial TGT with changed password
 Getting initial credentials for {princ}
 Got cred; {kerr}
-H+L$@L
-H+T$@H
-H+\$8
-H+l$8
-H33u.H
-H37u H
-H37uDH
-H37uNH
-H37uiH
-H3;uBH
-H9D$H
-H9D$x
-H9Z8u
-H9\$0A
-H9\$hH
-H9l$(u#H
-H9t$@u
-H9|$HL
-H;D$Pv7
-H;Hxt
-H;T$Pw
-H;l$0v
-H;s(uJH
-H;t$ 
-H;t$ D
-H;t$ t
-H;t$@u
+HOME
 HTTPS error connecting to {raddr}
 HTTPS error receiving from {raddr}
 HTTPS error sending to {raddr}
 HTTPS error: {str}
-H[^_]
-H[^_]A\A]
-H[^_]A\A]A^A_
-HcD$,H
-HcD$0L
-HcD$8
-HcD$<H
-HcD$<I
-HcD$\
-HcD$|L
-HcF,L
-HcG A
-HcG,I
-HcH8L
-HcKXH9
-HcL$4H
-HcL$4L
-HcL$<L
-HcO H
-HcO(H
-HcOXH9
-HcSXH9
-HcT$,E1
-HcT$0I
-HcT$<I
-HcT$<L
-HcT$DA
-HcT$PA
-HcT$\M
-HcW8H
-Host: %s:%s
+Host: %s:%s\r\n
 Hostname cannot be canonicalized
 I/O error in replay cache i/o code
-I34$uaH
-I3<$u=H
-I3<$u>H
-I3<$u\H
-I3<$ucH
-I9A tvH
-IcM H
 Ignoring localauth module {str} because it conflicts with an2ln type {str} from module {str}
 Illegal character in component name
 Illegal cross-realm ticket
@@ -651,6 +423,7 @@ Invalid syntax of module declaration in profile
 Invalid token
 Iteration through all top level section not supported
 KCM daemon reply too big
+KCM:
 KDC can't fulfill requested option
 KDC has no support for checksum type
 KDC has no support for encryption type
@@ -662,7 +435,6 @@ KDC policy rejects request
 KDC policy rejects transited path
 KDC reply did not match expectations
 KDC returned error string: %.*s
-KERNEL32.dll
 KEYEXCHANGE
 KEYRING
 KRB5 error code 101
@@ -725,7 +497,6 @@ KRB5_KTNAME
 KRB5_SENDAUTH_V1.0
 KRB5_TRACE
 KVNO of new master key does not match expected value
-Kerberos
 Kerberos V4 error
 Kerberos V5 magic number table
 Kerberos database constraints violated
@@ -744,46 +515,7 @@ Key version number for principal in key table is incorrect
 Keytab %s is nonexistent or empty
 Keytab contains no suitable keys for %s
 Keytab name too long
-L$ E1
-L$ u!
-L$(E1
-L$(H3
-L$(I3
-L$(tuHc{HH
-L$(~{H
-L$,;L
-L$0E1
-L$0L)
-L$0tjL
-L$0tkL
-L$4E9
-L$8E1
-L$8H)
-L$8H3
-L$8H9
-L$8uuH
-L$@H9L$0w
-L$@Hc
-L$Dtt
-L$HH3
-L$XH3
-L$XHc
-L$`E1
-L$hA	
-L$hH3
-L$xH3
-L$xH3M
-L+|$@
-L9l$8
-L9|$(
-L9|$(L
-L9|$(u
-L;t$0L
-L;t$8
 LIBDIR
-Lc@ M
-LcD$HD
-Lc|$|H
 Local realm referral failed; trying fallback realm {data}
 Looked up etypes in keytab: {etypes}
 Looping detected inside krb5_get_in_tkt
@@ -806,8 +538,6 @@ More preauthentication data is required
 More than 256 authdata matched a query
 Moving contents of ccache {src} to {dst}
 Mutual authentication failed
-ND$0H
-ND$0L
 NT 4 style name
 NT 4 style name and SID
 Negotiated enctype based on authenticator: {etype}
@@ -840,13 +570,9 @@ OTP Challenge:
 OTP Token PIN
 OTP value doesn't match any token formats
 Operation not supported on this profile
-P$+T$`E1
 PAC checksum verification failed: {kerr}
 PKINIT
-POST /%s HTTP/1.0
-P[^_]A\
-P[^_]A\A]A^
-P`.data
+POST /%s HTTP/1.0\r\n
 Password change failed
 Password change rejected
 Password expired.  You must change it now.
@@ -855,13 +581,13 @@ Password has expired
 Password mismatch
 Password read interrupted
 Permission denied in replay cache code
-Please choose from the following:
+Please choose from the following:\n
 Plugin does not support interface version
 Plugin does not support the operation
 Plugin module name not found
 Policy is in use
 Policy rejects transited path
-Pragma: no-cache
+Pragma: no-cache\r\n
 Pre-authentication failed
 Preauth module %s
 Preauth module {str} ({int}) ({str}) returned: {kerr}
@@ -886,7 +612,7 @@ Program lacks support for encryption type
 Program lacks support for key type
 Protocol version mismatch
 Public key encryption not supported
-RSDSC
+RULE
 Read AP-REP, time {long}.{int}, subkey {keyblock}, seqnum {int}
 Read DCE-style AP-REP, time {long}.{int}, seqnum {int}
 Read config in {ccache} for {princ}: {str}: {data}
@@ -940,8 +666,7 @@ Retrying {creds} with result: {kerr}
 Revocation status unavailable
 Revocation status unknown
 Revoked certificate
-S%hd = 
-S@H9SH
+S%hd
 SAM Authentication
 SBINDIR
 SHA256:
@@ -981,44 +706,10 @@ Success
 Supplied data not handled by this plugin
 Syntax error in profile relation
 Syntax error in profile section header
-T$ E1
-T$&fD
-T$(H3
-T$(I3U
-T$(L9
-T$(t,I
-T$0E1
-T$0Hc
-T$0t/H
-T$0ubH
-T$8;T$<
-T$8E1
-T$8H3
-T$8HcD$\H
-T$8u-L
-T$<yN
-T$@H9T$0
-T$Dt)D
-T$HH3
-T$HH3U
-T$Hu,
-T$Hu0H
-T$NH9
-T$PD)
-T$PE1
-T$Pu)M
-T$PuJH
-T$XE1
-T$XH3
-T$XtZH
-T$`H9
-T$hE1
-T$hH3
-T$hI3
-T$xH3
 TCP error connecting to {raddr}: {errno}
 TCP error receiving from {raddr}: {errno}
 TCP error sending to {raddr}: {errno}
+TEMP
 TGS reply didn't decode with subkey; trying session key ({keyblock)}
 TGS reply is for {princ} -> {princ} with session key {keyblock}
 TGS request result: {kerr}
@@ -1054,7 +745,6 @@ Trying next closer realm in path: {data}
 UDP error receiving from {raddr}: {errno}
 UDP error sending to {raddr}: {errno}
 USERID
-UWVSH
 Unable to access Kerberos database
 Unable to find requested database type
 Unable to initialize preauth context
@@ -1075,14 +765,11 @@ Update log is corrupt
 Update log is unstable
 Upgrading to FAST due to presence of PA_FX_FAST in reply
 User to user required
-User-Agent: kerberos/1.0
+User-Agent: kerberos/1.0\r\n
 Using FAST due to KRB5_FAST_REQUIRED flag
 Using FAST due to armor ccache negotiation result
 V5 realm name longer than V4 maximum
-VUUUUUUUH
 Vendor:
-W D9S tY1
-W@I9WH
 WELLKNOWN
 WELLKNOWN:ANONYMOUS
 WRFILE
@@ -1095,106 +782,38 @@ Wrong principal in request
 Wrong protocol version
 X-CACHECONF:
 X.509
-X[^_]
-X[^_]A\A]
-X[^_]A\A]A^A_
-[%d] %u.%d: %s
-[C%hd] 
-[^_]A\
-[^_]A\A]
-[^_]A\A]A^
-[^_]A\A]A^A_
-\$ E1
-\$$~*
-\$(I3
-\$(t H
-\$(t#L
-\$(t$H
-\$0E1
-\$8H3
-\$8tg
-\$8t|H
-\$@H9
-\$@t>
-\$HH3
-\$TtWH
-\$XH3
-\$`u5L
-\$hH3
-\$xH3
-\$xt/H
+[%d] %u.%d: %s\n
 \x%02x
 \x%04hX\x%04hX
 \x%04hX\x%04hX 
 \x%04lX
 \x%04lX 
 _Jv_RegisterClasses
-__assert_func
-__chk_fail
-__cxa_atexit
-__dn_expand
-__dn_skipname
-__errno
-__gcc_deregister_frame
-__gcc_register_frame
-__getreent
-__locale_ctype_ptr
-__memcpy_chk
-__memset_chk
-__res_nclose
-__res_ninit
-__res_nsearch
-__stack_chk_fail
-__stack_chk_guard
-__strncat_chk
-__strncpy_chk
-_et_list
 _forw
-_impure_ptr
 _kerberos
 _kerberos-adm
 _kerberos-master
 _kpasswd
 _krb524
-_krb5_conf_boolean
-_krb5_use_dns_kdc
-_krb5_use_dns_realm
 _priv
 _safe
-_ure_matches_properties
-_ure_tolower
-`@.buildid5
-`[^_]A\
-`[^_]A\A]A^
+_tcp
+_udp
 a->tinfo != NULL
 a->type != atype_nonempty_nullterm_sequence_of
 a->type != atype_nullterm_sequence_of
 a->type < atype_max
 a->type == atype_ptr
 a->type > atype_min
-abort
-access
 add_connection
-add_error_table
 admin_server
 afpserver
+afs3
 algID
 allow_weak_crypto
-alphasort
 an2ln
-anon_princ
 ap_req_checksum_type
 appdefaults
-asn12krb5_buf
-asn1buf_create
-asn1buf_destroy
-asn1buf_ensure_space
-asn1buf_expand
-asn1buf_free
-asn1buf_insert_bytestring
-asn1buf_insert_octet
-asn1buf_len
-asprintf
 audit
 auth-indicators
 auth_context->negotiated_etype != ENCTYPE_NULL
@@ -1203,36 +822,11 @@ auth_to_local_names
 authdata[0] != NULL
 authdata_client_0
 authentication-indicators
-aux_info_address_1_untagged
-aux_info_authdata_1_untagged
-aux_info_authdata_types
-aux_info_bitstring_data
-aux_info_checksum_1_untagged
-aux_info_der_data
-aux_info_encryptionkey_1_untagged
-aux_info_etype_info2_1_def_untagged
-aux_info_etype_info_1_def_untagged
-aux_info_etype_list
-aux_info_gstring_data
-aux_info_keyblock_1_untagged
-aux_info_krbsalt_salt
-aux_info_ldap_key_seq_4_untagged
-aux_info_oid_data
-aux_info_ostring_checksum
-aux_info_ostring_data
-aux_info_pa_data_2_untagged
-aux_info_pa_pk_as_rep
-aux_info_pa_pk_as_rep_draft9
-aux_info_princname_1_untagged
-aux_info_req_body_8_untagged
-aux_info_typed_data_1_untagged
-aux_info_utf8_data
 buffer->Offset + buffer->cbBufferSize <= pac->data.length
 buffer->Offset >= header_len
 build_pa_s4u_x509_user
 c->type < cntype_max
 c->type > cntype_min
-calloc
 camellia
 canonicalize
 capaths
@@ -1245,29 +839,18 @@ ccselect module {str} chose cache {ccache} with client principal {princ} for ser
 ccselect module {str} chose client principal {princ} for server principal {princ} but found no cache
 ccselect module {str} failed to init: {kerr}
 ccselect module {str} yielded error {kerr} for server principal {princ}
-ccselect_hostname_initvt
-ccselect_k5identity_initvt
-ccselect_realm_initvt
 certauth
 challenge
 challengelongterm
 changepw
 check_atype_tag
-chmod
 cksum
 clientchallengearmor
 clockskew
-close
-closedir
 clpreauth
-clpreauth_encrypted_challenge_initvt
-clpreauth_encrypted_timestamp_initvt
-clpreauth_otp_initvt
-clpreauth_sam2_initvt
 conn->service_connect != NULL
 conn->service_read != NULL
 conn->service_write != NULL
-connect
 constrained-delegation
 counted->basetype != NULL
 create
@@ -1276,92 +859,16 @@ ctx->reply != NULL
 ctx->request->server != NULL
 cur_data != &princ->realm
 cur_data - princ->data + 1 < princ->length
-cygcom_err-2.dll
 cyggcj-16.dll
-cygintl-8.dll
-cygk5crypto-3.dll
-cygkrb5-3.dll
-cygkrb5-3.dll.dbg
-cygkrb5support-0.dll
-cygwin1.dll
-cygwin_detach_dll
-cygwin_internal
-d$$E1
-d$(E1
-d$HE1
-d$Xt/
-d$hE1
 daemon
+data
 data->length >= pac->data.length
 data->root != NULL
+days
 decode_ad_policy_info
 decode_atype
 decode_cntype
-decode_krb5_ad_kdcissued
-decode_krb5_ad_signedpath
-decode_krb5_ap_rep
-decode_krb5_ap_rep_enc_part
-decode_krb5_ap_req
-decode_krb5_as_rep
-decode_krb5_as_req
-decode_krb5_auth_pack
-decode_krb5_auth_pack_draft9
-decode_krb5_authdata
-decode_krb5_authenticator
-decode_krb5_cammac
-decode_krb5_checksum
-decode_krb5_cred
-decode_krb5_enc_cred_part
-decode_krb5_enc_data
-decode_krb5_enc_kdc_rep_part
-decode_krb5_enc_priv_part
-decode_krb5_enc_sam_response_enc_2
-decode_krb5_enc_tkt_part
-decode_krb5_encryption_key
-decode_krb5_error
-decode_krb5_etype_info
-decode_krb5_etype_info2
-decode_krb5_etype_list
-decode_krb5_fast_req
-decode_krb5_fast_response
-decode_krb5_iakerb_finished
-decode_krb5_iakerb_header
-decode_krb5_kdc_dh_key_info
-decode_krb5_kdc_req_body
-decode_krb5_kkdcp_message
-decode_krb5_otp_tokeninfo
-decode_krb5_pa_enc_ts
-decode_krb5_pa_for_user
-decode_krb5_pa_fx_fast_reply
-decode_krb5_pa_fx_fast_request
-decode_krb5_pa_otp_challenge
-decode_krb5_pa_otp_enc_req
-decode_krb5_pa_otp_req
-decode_krb5_pa_pac_req
-decode_krb5_pa_pk_as_rep
-decode_krb5_pa_pk_as_req
-decode_krb5_pa_pk_as_req_draft9
-decode_krb5_pa_s4u_x509_user
-decode_krb5_padata_sequence
-decode_krb5_principal_name
-decode_krb5_priv
-decode_krb5_reply_key_pack
-decode_krb5_reply_key_pack_draft9
-decode_krb5_safe
-decode_krb5_safe_with_body
-decode_krb5_sam_challenge_2
-decode_krb5_sam_challenge_2_body
-decode_krb5_sam_response_2
-decode_krb5_secure_cookie
-decode_krb5_setpw_req
-decode_krb5_td_dh_parameters
-decode_krb5_td_trusted_certifiers
-decode_krb5_tgs_rep
-decode_krb5_tgs_req
-decode_krb5_ticket
-decode_krb5_typed_data
 decode_sequence
-decode_utf8_strings
 decrypt_fast_reply
 default
 default_ccache_name
@@ -1371,10 +878,10 @@ default_keytab_name
 default_realm
 default_tgs_enctypes
 default_tkt_enctypes
+des3
 dgram
 disable
 discuss
-dll_dllcrt0
 dns_canonicalize_hostname
 dns_fallback
 dns_lookup_kdc
@@ -1386,1266 +893,74 @@ dst_module->ftable->internalize != NULL
 dst_module->request_context_pp == &dst_module->request_context
 dstctx != NULL
 dstctx->pac == NULL
+ecat
 eltinfo->size != 0
 eltinfo->type == atype_ptr
 enable_only
 encode_atype
 encode_cntype
-encode_krb5_ad_kdcissued
-encode_krb5_ad_signedpath
-encode_krb5_ad_signedpath_data
-encode_krb5_ap_rep
-encode_krb5_ap_rep_enc_part
-encode_krb5_ap_req
-encode_krb5_as_rep
-encode_krb5_as_req
-encode_krb5_auth_pack
-encode_krb5_auth_pack_draft9
-encode_krb5_authdata
-encode_krb5_authenticator
-encode_krb5_cammac
-encode_krb5_checksum
-encode_krb5_cred
-encode_krb5_enc_cred_part
-encode_krb5_enc_data
-encode_krb5_enc_kdc_rep_part
-encode_krb5_enc_priv_part
-encode_krb5_enc_sam_response_enc_2
-encode_krb5_enc_tkt_part
-encode_krb5_encryption_key
-encode_krb5_error
-encode_krb5_etype_info
-encode_krb5_etype_info2
-encode_krb5_etype_list
-encode_krb5_fast_req
-encode_krb5_fast_response
-encode_krb5_iakerb_finished
-encode_krb5_iakerb_header
-encode_krb5_kdc_dh_key_info
-encode_krb5_kdc_req_body
-encode_krb5_kkdcp_message
-encode_krb5_otp_tokeninfo
-encode_krb5_pa_enc_ts
-encode_krb5_pa_for_user
-encode_krb5_pa_fx_fast_reply
-encode_krb5_pa_fx_fast_request
-encode_krb5_pa_otp_challenge
-encode_krb5_pa_otp_enc_req
-encode_krb5_pa_otp_req
-encode_krb5_pa_pac_req
-encode_krb5_pa_pk_as_rep
-encode_krb5_pa_pk_as_rep_draft9
-encode_krb5_pa_pk_as_req
-encode_krb5_pa_pk_as_req_draft9
-encode_krb5_pa_s4u_x509_user
-encode_krb5_padata_sequence
-encode_krb5_pkinit_supp_pub_info
-encode_krb5_priv
-encode_krb5_reply_key_pack
-encode_krb5_reply_key_pack_draft9
-encode_krb5_s4u_userid
-encode_krb5_safe
-encode_krb5_safe_with_body
-encode_krb5_sam_challenge_2
-encode_krb5_sam_challenge_2_body
-encode_krb5_sam_response_2
-encode_krb5_secure_cookie
-encode_krb5_setpw_req
-encode_krb5_sp80056a_other_info
-encode_krb5_td_dh_parameters
-encode_krb5_td_trusted_certifiers
-encode_krb5_tgs_rep
-encode_krb5_tgs_req
-encode_krb5_ticket
-encode_krb5_typed_data
 encode_sequence_of
-encode_utf8_strings
 encrypted_challenge
 encrypted_timestamp
 err_fmt
 errno
 error != NULL
-error_message
-et_asn1_error_table
-et_k524_error_table
-et_k5e1_error_table
-et_kdb5_error_table
-et_krb5_error_table
-et_kv5m_error_table
-et_prof_error_table
 etype
 etypes
 etypes requested in TGS request: {etypes}
+euid
 explicitarmor
 extra_addresses
-f9~(H
-f9~(v/
-f;~*r
-fA9A:t/
-fA;t$H
-fD;*u
-fD;] 
-fE9HZt A
-fE9l$ w^H
-fE;w"r
 false
 fast_avail
-fchmod
-fclose
-fcntl
-fdopen
-fflush
-fgets
-fileno
 flags
-flock
 fn->check_tag != NULL
 fn->dec != NULL
 fn->enc != NULL
-fnmatch
-fopen
 format
 forwardable
-fprintf
-fputc
-fputs
-fread
 free_atype
 free_atype_ptr
 free_cntype
 free_sequence_of
-freeifaddrs
-fseek
 fstat
-fsync
-ftell
-fwrite
+gdss
 get_nullterm_sequence_len
-getenv
-geteuid
-gethostname
-getifaddrs
-getnameinfo
-getpeername
-getpid
-getpwnam_r
-getpwuid_r
-getservbyname
-getsockname
-getsockopt
-gettimeofday
-getuid
-gmtime_r
 gnats
-h[^_]
-h[^_]A\A]
-h[^_]A\A]A^A_
 hashlenstr
 hexdata
 hexlenstr
 hook_reply != NULL
+host
 host/domain name not found
 hostname
 hostname != NULL && port != NULL
 hostrealm
 hostrealm module failed to init vtable: {kerr}
 hostrealm module {str} failed to init: {kerr}
-hostrealm_dns_initvt
-hostrealm_domain_initvt
-hostrealm_profile_initvt
-hostrealm_registry_initvt
+http
 http_anchors
 https
 https://
 ignore_acceptor_hostname
-in6addr_any
+imap
 include
 includedir
+info
 init_creds_step_reply
 init_creds_validate_reply
 init_realm_path
-initialize_asn1_error_table
-initialize_asn1_error_table_r
-initialize_k524_error_table
-initialize_k524_error_table_r
-initialize_k5e1_error_table
-initialize_k5e1_error_table_r
-initialize_kdb5_error_table
-initialize_kdb5_error_table_r
-initialize_krb5_error_table
-initialize_krb5_error_table_r
-initialize_kv5m_error_table
-initialize_kv5m_error_table_r
-initialize_prof_error_table
-initialize_prof_error_table_r
 integrity_error
-interface_names
-ioctl
-isalnum
-isatty
-isdigit
-isxdigit
 iteration_error
 k5_ad_size
-k5_asn1_decode_atype
-k5_asn1_decode_bitstring
-k5_asn1_decode_bool
-k5_asn1_decode_bytestring
-k5_asn1_decode_generaltime
-k5_asn1_decode_int
-k5_asn1_decode_uint
-k5_asn1_encode_atype
-k5_asn1_encode_bitstring
-k5_asn1_encode_bool
-k5_asn1_encode_bytestring
-k5_asn1_encode_generaltime
-k5_asn1_encode_int
-k5_asn1_encode_uint
-k5_asn1_full_decode
-k5_asn1_full_encode
-k5_atype_ad_kdc_issued
-k5_atype_ad_kdcissued_0
-k5_atype_ad_kdcissued_0_untagged
-k5_atype_ad_kdcissued_1
-k5_atype_ad_kdcissued_1_untagged
-k5_atype_ad_kdcissued_2
-k5_atype_ad_kdcissued_2_untagged
-k5_atype_ad_kdcissued_3
-k5_atype_ad_kdcissued_3_untagged
-k5_atype_ad_signedpath
-k5_atype_ad_signedpath_data
-k5_atype_address
-k5_atype_address_0
-k5_atype_address_0_untagged
-k5_atype_address_1
-k5_atype_address_1_untagged
-k5_atype_address_ptr
-k5_atype_algid_0
-k5_atype_algid_1
-k5_atype_algorithm_identifier
-k5_atype_ap_rep
-k5_atype_ap_rep_0
-k5_atype_ap_rep_1
-k5_atype_ap_rep_2
-k5_atype_ap_rep_2_untagged
-k5_atype_ap_rep_enc_part
-k5_atype_ap_rep_enc_part_0
-k5_atype_ap_rep_enc_part_0_untagged
-k5_atype_ap_rep_enc_part_1
-k5_atype_ap_rep_enc_part_1_untagged
-k5_atype_ap_rep_enc_part_2
-k5_atype_ap_rep_enc_part_2_untagged
-k5_atype_ap_rep_enc_part_3
-k5_atype_ap_rep_enc_part_3_untagged
-k5_atype_ap_rep_msg_type
-k5_atype_ap_req
-k5_atype_ap_req_0
-k5_atype_ap_req_1
-k5_atype_ap_req_2
-k5_atype_ap_req_2_untagged
-k5_atype_ap_req_3
-k5_atype_ap_req_3_untagged
-k5_atype_ap_req_4
-k5_atype_ap_req_4_untagged
-k5_atype_ap_req_msg_type
-k5_atype_as_rep
-k5_atype_as_req
-k5_atype_as_req_2
-k5_atype_as_req_encode
-k5_atype_as_req_msg_type
-k5_atype_auth_data
-k5_atype_auth_data_ptr
-k5_atype_auth_pack
-k5_atype_auth_pack9_0
-k5_atype_auth_pack9_0_untagged
-k5_atype_auth_pack9_1
-k5_atype_auth_pack9_1_untagged
-k5_atype_auth_pack_0
-k5_atype_auth_pack_0_untagged
-k5_atype_auth_pack_1
-k5_atype_auth_pack_1_untagged
-k5_atype_auth_pack_2
-k5_atype_auth_pack_2_untagged
-k5_atype_auth_pack_3
-k5_atype_auth_pack_3_untagged
-k5_atype_auth_pack_4
-k5_atype_auth_pack_4_untagged
-k5_atype_auth_pack_draft9
-k5_atype_authdata_0
-k5_atype_authdata_0_untagged
-k5_atype_authdata_1
-k5_atype_authdata_1_untagged
-k5_atype_authdata_elt
-k5_atype_authdata_elt_ptr
-k5_atype_authdata_elt_type
-k5_atype_authdata_elt_type_0
-k5_atype_authdata_types
-k5_atype_authenticator
-k5_atype_authenticator_0
-k5_atype_authenticator_1
-k5_atype_authenticator_1_untagged
-k5_atype_authenticator_2
-k5_atype_authenticator_2_untagged
-k5_atype_authenticator_3
-k5_atype_authenticator_3_untagged
-k5_atype_authenticator_4
-k5_atype_authenticator_4_untagged
-k5_atype_authenticator_5
-k5_atype_authenticator_5_untagged
-k5_atype_authenticator_6
-k5_atype_authenticator_6_untagged
-k5_atype_authenticator_7
-k5_atype_authenticator_7_untagged
-k5_atype_authenticator_8
-k5_atype_authenticator_8_untagged
-k5_atype_bitstring_data
-k5_atype_boolean
-k5_atype_cammac
-k5_atype_cammac_0
-k5_atype_cammac_0_untagged
-k5_atype_cammac_1
-k5_atype_cammac_1_untagged
-k5_atype_cammac_2
-k5_atype_cammac_2_untagged
-k5_atype_cammac_3
-k5_atype_cammac_3_untagged
-k5_atype_checksum
-k5_atype_checksum_0
-k5_atype_checksum_0_untagged
-k5_atype_checksum_1
-k5_atype_checksum_1_untagged
-k5_atype_checksum_ptr
-k5_atype_cred_0
-k5_atype_cred_1
-k5_atype_cred_2
-k5_atype_cred_2_untagged
-k5_atype_cred_3
-k5_atype_cred_3_untagged
-k5_atype_cred_info
-k5_atype_cred_info_0
-k5_atype_cred_info_0_untagged
-k5_atype_cred_info_1
-k5_atype_cred_info_10
-k5_atype_cred_info_10_untagged
-k5_atype_cred_info_1_untagged
-k5_atype_cred_info_2
-k5_atype_cred_info_2_untagged
-k5_atype_cred_info_3
-k5_atype_cred_info_3_untagged
-k5_atype_cred_info_4
-k5_atype_cred_info_4_untagged
-k5_atype_cred_info_5
-k5_atype_cred_info_5_untagged
-k5_atype_cred_info_6
-k5_atype_cred_info_6_untagged
-k5_atype_cred_info_7
-k5_atype_cred_info_7_untagged
-k5_atype_cred_info_8
-k5_atype_cred_info_8_untagged
-k5_atype_cred_info_9
-k5_atype_cred_info_9_untagged
-k5_atype_cred_info_ptr
-k5_atype_cred_msg_type
-k5_atype_der_data
-k5_atype_dh_key_0
-k5_atype_dh_key_0_untagged
-k5_atype_dh_key_1
-k5_atype_dh_key_1_untagged
-k5_atype_dh_key_2
-k5_atype_dh_key_2_untagged
-k5_atype_dh_rep_info
-k5_atype_dh_rep_info_0
-k5_atype_dh_rep_info_0_untagged
-k5_atype_dh_rep_info_1
-k5_atype_dh_rep_info_1_untagged
-k5_atype_dh_rep_info_2
-k5_atype_dh_rep_info_2_untagged
-k5_atype_enc_as_rep_part
-k5_atype_enc_cred_part
-k5_atype_enc_cred_part_0
-k5_atype_enc_cred_part_0_untagged
-k5_atype_enc_cred_part_1
-k5_atype_enc_cred_part_1_untagged
-k5_atype_enc_cred_part_2
-k5_atype_enc_cred_part_2_untagged
-k5_atype_enc_cred_part_3
-k5_atype_enc_cred_part_3_def
-k5_atype_enc_cred_part_3_def_untagged
-k5_atype_enc_cred_part_4
-k5_atype_enc_cred_part_4_untagged
-k5_atype_enc_cred_part_5
-k5_atype_enc_cred_part_5_untagged
-k5_atype_enc_data_0
-k5_atype_enc_data_0_untagged
-k5_atype_enc_data_1
-k5_atype_enc_data_1_untagged
-k5_atype_enc_data_2
-k5_atype_enc_data_2_untagged
-k5_atype_enc_kdc_rep_0
-k5_atype_enc_kdc_rep_0_untagged
-k5_atype_enc_kdc_rep_1
-k5_atype_enc_kdc_rep_10
-k5_atype_enc_kdc_rep_10_untagged
-k5_atype_enc_kdc_rep_11
-k5_atype_enc_kdc_rep_11_untagged
-k5_atype_enc_kdc_rep_12
-k5_atype_enc_kdc_rep_12_untagged
-k5_atype_enc_kdc_rep_1_untagged
-k5_atype_enc_kdc_rep_2
-k5_atype_enc_kdc_rep_2_untagged
-k5_atype_enc_kdc_rep_3
-k5_atype_enc_kdc_rep_3_untagged
-k5_atype_enc_kdc_rep_4
-k5_atype_enc_kdc_rep_4_untagged
-k5_atype_enc_kdc_rep_5
-k5_atype_enc_kdc_rep_5_untagged
-k5_atype_enc_kdc_rep_6
-k5_atype_enc_kdc_rep_6_def
-k5_atype_enc_kdc_rep_6_def_untagged
-k5_atype_enc_kdc_rep_7
-k5_atype_enc_kdc_rep_7_untagged
-k5_atype_enc_kdc_rep_8
-k5_atype_enc_kdc_rep_8_def
-k5_atype_enc_kdc_rep_8_def_untagged
-k5_atype_enc_kdc_rep_9
-k5_atype_enc_kdc_rep_9_untagged
-k5_atype_enc_kdc_rep_part
-k5_atype_enc_sam_response_enc_2
-k5_atype_enc_tgs_rep_part
-k5_atype_enc_tkt_0
-k5_atype_enc_tkt_0_untagged
-k5_atype_enc_tkt_1
-k5_atype_enc_tkt_10
-k5_atype_enc_tkt_10_untagged
-k5_atype_enc_tkt_1_untagged
-k5_atype_enc_tkt_2
-k5_atype_enc_tkt_2_untagged
-k5_atype_enc_tkt_3
-k5_atype_enc_tkt_3_untagged
-k5_atype_enc_tkt_4
-k5_atype_enc_tkt_4_untagged
-k5_atype_enc_tkt_5
-k5_atype_enc_tkt_5_untagged
-k5_atype_enc_tkt_6
-k5_atype_enc_tkt_6_untagged
-k5_atype_enc_tkt_7
-k5_atype_enc_tkt_7_untagged
-k5_atype_enc_tkt_8
-k5_atype_enc_tkt_8_untagged
-k5_atype_enc_tkt_9
-k5_atype_enc_tkt_9_untagged
-k5_atype_enc_tkt_part
-k5_atype_encrypted_data
-k5_atype_encryption_key
-k5_atype_encryptionkey
-k5_atype_encryptionkey_0
-k5_atype_encryptionkey_0_untagged
-k5_atype_encryptionkey_1
-k5_atype_encryptionkey_1_untagged
-k5_atype_error_0
-k5_atype_error_1
-k5_atype_error_10
-k5_atype_error_10_untagged
-k5_atype_error_11
-k5_atype_error_11_untagged
-k5_atype_error_12
-k5_atype_error_12_untagged
-k5_atype_error_2
-k5_atype_error_2_untagged
-k5_atype_error_3
-k5_atype_error_3_untagged
-k5_atype_error_4
-k5_atype_error_4_untagged
-k5_atype_error_5
-k5_atype_error_5_untagged
-k5_atype_error_6
-k5_atype_error_6_untagged
-k5_atype_error_7
-k5_atype_error_7_untagged
-k5_atype_error_8
-k5_atype_error_8_untagged
-k5_atype_error_9
-k5_atype_error_9_untagged
-k5_atype_error_msg_type
-k5_atype_esre_0
-k5_atype_esre_0_untagged
-k5_atype_esre_1
-k5_atype_esre_1_untagged
-k5_atype_etype_info
-k5_atype_etype_info2
-k5_atype_etype_info2_1
-k5_atype_etype_info2_1_def
-k5_atype_etype_info2_1_def_untagged
-k5_atype_etype_info2_2
-k5_atype_etype_info2_2_untagged
-k5_atype_etype_info2_entry
-k5_atype_etype_info2_entry_ptr
-k5_atype_etype_info_0
-k5_atype_etype_info_0_untagged
-k5_atype_etype_info_1
-k5_atype_etype_info_1_def
-k5_atype_etype_info_1_def_untagged
-k5_atype_etype_info_entry
-k5_atype_etype_info_entry_ptr
-k5_atype_etype_list
-k5_atype_external_principal_identifier
-k5_atype_external_principal_identifier_ptr
-k5_atype_extprinc_0
-k5_atype_extprinc_0_untagged
-k5_atype_extprinc_1
-k5_atype_extprinc_1_untagged
-k5_atype_extprinc_2
-k5_atype_extprinc_2_untagged
-k5_atype_fast_armor
-k5_atype_fast_armor_0
-k5_atype_fast_armor_0_untagged
-k5_atype_fast_armor_1
-k5_atype_fast_armor_1_untagged
-k5_atype_fast_armored_req
-k5_atype_fast_armored_req_0
-k5_atype_fast_armored_req_0_untagged
-k5_atype_fast_armored_req_1
-k5_atype_fast_armored_req_1_untagged
-k5_atype_fast_armored_req_2
-k5_atype_fast_armored_req_2_untagged
-k5_atype_fast_finished
-k5_atype_fast_finished_0
-k5_atype_fast_finished_0_untagged
-k5_atype_fast_finished_1
-k5_atype_fast_finished_1_untagged
-k5_atype_fast_finished_2
-k5_atype_fast_finished_2_untagged
-k5_atype_fast_finished_3
-k5_atype_fast_finished_3_untagged
-k5_atype_fast_finished_4
-k5_atype_fast_finished_4_untagged
-k5_atype_fast_rep
-k5_atype_fast_rep_0
-k5_atype_fast_req
-k5_atype_fast_req_0
-k5_atype_fast_req_0_untagged
-k5_atype_fast_req_1
-k5_atype_fast_req_1_untagged
-k5_atype_fast_req_2
-k5_atype_fast_req_2_untagged
-k5_atype_fast_req_padata
-k5_atype_fast_response
-k5_atype_fast_response_0
-k5_atype_fast_response_0_untagged
-k5_atype_fast_response_1
-k5_atype_fast_response_1_untagged
-k5_atype_fast_response_2
-k5_atype_fast_response_2_untagged
-k5_atype_fast_response_3
-k5_atype_fast_response_3_untagged
-k5_atype_gstring_data
-k5_atype_gstring_data_ptr
-k5_atype_iakerb_finished
-k5_atype_iakerb_finished_0
-k5_atype_iakerb_finished_0_untagged
-k5_atype_iakerb_header
-k5_atype_iakerb_header_1
-k5_atype_iakerb_header_1_untagged
-k5_atype_iakerb_header_2
-k5_atype_iakerb_header_2_untagged
-k5_atype_int16
-k5_atype_int32
-k5_atype_int32_ptr
-k5_atype_inttime
-k5_atype_kdc_dh_key_info
-k5_atype_kdc_rep
-k5_atype_kdc_rep_0
-k5_atype_kdc_rep_1
-k5_atype_kdc_rep_1_untagged
-k5_atype_kdc_rep_2
-k5_atype_kdc_rep_2_untagged
-k5_atype_kdc_rep_3
-k5_atype_kdc_rep_3_untagged
-k5_atype_kdc_rep_4
-k5_atype_kdc_rep_4_untagged
-k5_atype_kdc_rep_5
-k5_atype_kdc_rep_5_untagged
-k5_atype_kdc_rep_6
-k5_atype_kdc_rep_6_untagged
-k5_atype_kdc_req
-k5_atype_kdc_req_1
-k5_atype_kdc_req_2
-k5_atype_kdc_req_2_untagged
-k5_atype_kdc_req_3
-k5_atype_kdc_req_3_untagged
-k5_atype_kdc_req_4
-k5_atype_kdc_req_body
-k5_atype_kdc_req_body_hack
-k5_atype_kdf_alg_id
-k5_atype_kdf_alg_id_0
-k5_atype_kerberos_time
-k5_atype_key_data
-k5_atype_key_data_0
-k5_atype_key_data_1
-k5_atype_key_data_salt_if_present
-k5_atype_key_pack9_0
-k5_atype_key_pack9_0_untagged
-k5_atype_key_pack9_1
-k5_atype_key_pack9_1_untagged
-k5_atype_keyblock_0
-k5_atype_keyblock_0_untagged
-k5_atype_keyblock_1
-k5_atype_keyblock_1_untagged
-k5_atype_kkdcp_message
-k5_atype_kkdcp_message_0
-k5_atype_kkdcp_message_0_untagged
-k5_atype_kkdcp_message_1
-k5_atype_kkdcp_message_1_untagged
-k5_atype_kkdcp_message_2
-k5_atype_kkdcp_message_2_untagged
-k5_atype_krb5_cred
-k5_atype_krb5_error
-k5_atype_krb5_flags
-k5_atype_krb5_version
-k5_atype_krbsalt
-k5_atype_krbsalt_0
-k5_atype_krbsalt_0_untagged
-k5_atype_krbsalt_1
-k5_atype_krbsalt_salt
-k5_atype_krbsalt_salt_if_present
-k5_atype_kvno
-k5_atype_last_req
-k5_atype_last_req_0
-k5_atype_last_req_0_untagged
-k5_atype_last_req_1
-k5_atype_last_req_1_untagged
-k5_atype_last_req_ent
-k5_atype_last_req_ent_ptr
-k5_atype_last_req_ptr
-k5_atype_last_req_type
-k5_atype_ldap_key_seq
-k5_atype_ldap_key_seq_0
-k5_atype_ldap_key_seq_1
-k5_atype_ldap_key_seq_2
-k5_atype_ldap_key_seq_2_untagged
-k5_atype_ldap_key_seq_3
-k5_atype_ldap_key_seq_3_untagged
-k5_atype_ldap_key_seq_4
-k5_atype_ldap_key_seq_4_untagged
-k5_atype_octet
-k5_atype_oid_data
-k5_atype_oid_data_ptr
-k5_atype_oinfo_0
-k5_atype_oinfo_0_untagged
-k5_atype_oinfo_1
-k5_atype_oinfo_1_untagged
-k5_atype_oinfo_2
-k5_atype_oinfo_2_untagged
-k5_atype_oinfo_notag
-k5_atype_one
-k5_atype_opt_address_ptr
-k5_atype_opt_auth_data_ptr
-k5_atype_opt_checksum_ptr
-k5_atype_opt_der_data
-k5_atype_opt_encrypted_data
-k5_atype_opt_gstring_data
-k5_atype_opt_int32
-k5_atype_opt_int32_minus1
-k5_atype_opt_kerberos_time
-k5_atype_opt_krb5_flags
-k5_atype_opt_kvno
-k5_atype_opt_ostring_data
-k5_atype_opt_ostring_data_ptr
-k5_atype_opt_principal
-k5_atype_opt_ptr_algorithm_identifier
-k5_atype_opt_ptr_encryption_key
-k5_atype_opt_ptr_fast_armor
-k5_atype_opt_ptr_fast_finished
-k5_atype_opt_ptr_kdf_alg_id
-k5_atype_opt_ptr_seqof_algorithm_identifier
-k5_atype_opt_ptr_seqof_external_principal_identifier
-k5_atype_opt_ptr_seqof_host_addresses
-k5_atype_opt_ptr_seqof_pa_data
-k5_atype_opt_ptr_seqof_princ_plus_realm
-k5_atype_opt_ptr_seqof_ticket
-k5_atype_opt_ptr_supported_kdfs
-k5_atype_opt_realm_of_principal
-k5_atype_opt_s4u_principal
-k5_atype_opt_seqno
-k5_atype_opt_subject_pk_info_ptr
-k5_atype_opt_uint
-k5_atype_opt_utf8_data
-k5_atype_opt_vmac_ptr
-k5_atype_opt_vmacs_ptr
-k5_atype_ostring_checksum
-k5_atype_ostring_data
-k5_atype_ostring_data_ptr
-k5_atype_otp_ch_0
-k5_atype_otp_ch_0_untagged
-k5_atype_otp_ch_1
-k5_atype_otp_ch_1_untagged
-k5_atype_otp_ch_2
-k5_atype_otp_ch_2_untagged
-k5_atype_otp_ch_3
-k5_atype_otp_ch_3_untagged
-k5_atype_otp_ch_4
-k5_atype_otp_ch_4_untagged
-k5_atype_otp_req_0
-k5_atype_otp_req_0_untagged
-k5_atype_otp_req_1
-k5_atype_otp_req_10
-k5_atype_otp_req_10_untagged
-k5_atype_otp_req_11
-k5_atype_otp_req_11_untagged
-k5_atype_otp_req_12
-k5_atype_otp_req_12_untagged
-k5_atype_otp_req_13
-k5_atype_otp_req_13_untagged
-k5_atype_otp_req_1_untagged
-k5_atype_otp_req_2
-k5_atype_otp_req_2_untagged
-k5_atype_otp_req_3
-k5_atype_otp_req_3_untagged
-k5_atype_otp_req_4
-k5_atype_otp_req_4_untagged
-k5_atype_otp_req_5
-k5_atype_otp_req_5_untagged
-k5_atype_otp_req_6
-k5_atype_otp_req_6_untagged
-k5_atype_otp_req_7
-k5_atype_otp_req_7_untagged
-k5_atype_otp_req_8
-k5_atype_otp_req_8_untagged
-k5_atype_otp_req_9
-k5_atype_otp_req_9_untagged
-k5_atype_otp_tokeninfo
-k5_atype_otp_tokeninfo_ptr
-k5_atype_pa_data
-k5_atype_pa_data_1
-k5_atype_pa_data_1_untagged
-k5_atype_pa_data_2
-k5_atype_pa_data_2_untagged
-k5_atype_pa_data_ptr
-k5_atype_pa_enc_ts
-k5_atype_pa_enc_ts_0
-k5_atype_pa_enc_ts_0_untagged
-k5_atype_pa_enc_ts_1
-k5_atype_pa_enc_ts_1_untagged
-k5_atype_pa_for_user
-k5_atype_pa_for_user_0
-k5_atype_pa_for_user_0_untagged
-k5_atype_pa_for_user_1
-k5_atype_pa_for_user_1_untagged
-k5_atype_pa_for_user_2
-k5_atype_pa_for_user_2_untagged
-k5_atype_pa_for_user_3
-k5_atype_pa_for_user_3_untagged
-k5_atype_pa_fx_fast_reply
-k5_atype_pa_fx_fast_request
-k5_atype_pa_otp_challenge
-k5_atype_pa_otp_enc_req
-k5_atype_pa_otp_enc_req_0
-k5_atype_pa_otp_req
-k5_atype_pa_pac_req
-k5_atype_pa_pac_req_0
-k5_atype_pa_pac_req_0_untagged
-k5_atype_pa_pk_as_rep
-k5_atype_pa_pk_as_rep9_0
-k5_atype_pa_pk_as_rep9_1
-k5_atype_pa_pk_as_rep_0
-k5_atype_pa_pk_as_rep_1
-k5_atype_pa_pk_as_rep_draft9
-k5_atype_pa_pk_as_req
-k5_atype_pa_pk_as_req9_0
-k5_atype_pa_pk_as_req9_0_untagged
-k5_atype_pa_pk_as_req9_2
-k5_atype_pa_pk_as_req9_2_untagged
-k5_atype_pa_pk_as_req_0
-k5_atype_pa_pk_as_req_0_untagged
-k5_atype_pa_pk_as_req_1
-k5_atype_pa_pk_as_req_1_untagged
-k5_atype_pa_pk_as_req_2
-k5_atype_pa_pk_as_req_2_untagged
-k5_atype_pa_pk_as_req_draft9
-k5_atype_pa_pk_as_req_draft9_decode
-k5_atype_pa_s4u_x509_user
-k5_atype_pa_s4u_x509_user_0
-k5_atype_pa_s4u_x509_user_0_untagged
-k5_atype_pa_s4u_x509_user_1
-k5_atype_pa_s4u_x509_user_1_untagged
-k5_atype_pk_authenticator
-k5_atype_pk_authenticator_0
-k5_atype_pk_authenticator_0_untagged
-k5_atype_pk_authenticator_1
-k5_atype_pk_authenticator_1_untagged
-k5_atype_pk_authenticator_2
-k5_atype_pk_authenticator_2_untagged
-k5_atype_pk_authenticator_3
-k5_atype_pk_authenticator_3_untagged
-k5_atype_pk_authenticator_draft9
-k5_atype_pkauth9_0
-k5_atype_pkauth9_0_untagged
-k5_atype_pkauth9_1
-k5_atype_pkauth9_1_untagged
-k5_atype_pkauth9_2
-k5_atype_pkauth9_2_untagged
-k5_atype_pkauth9_3
-k5_atype_pkauth9_3_untagged
-k5_atype_pkauth9_4
-k5_atype_pkauth9_4_untagged
-k5_atype_pkinit_krb5_principal_name
-k5_atype_pkinit_krb5_principal_name_data
-k5_atype_pkinit_krb5_principal_name_wrapped
-k5_atype_pkinit_princ_0
-k5_atype_pkinit_princ_1
-k5_atype_pkinit_supp_pub_info
-k5_atype_princ_plus_realm
-k5_atype_princ_plus_realm_0
-k5_atype_princ_plus_realm_1
-k5_atype_princ_plus_realm_data
-k5_atype_principal
-k5_atype_principal_data
-k5_atype_princname_0
-k5_atype_princname_0_untagged
-k5_atype_princname_1
-k5_atype_princname_1_untagged
-k5_atype_priv
-k5_atype_priv_0
-k5_atype_priv_1
-k5_atype_priv_3
-k5_atype_priv_3_untagged
-k5_atype_priv_enc_part
-k5_atype_priv_enc_part_0
-k5_atype_priv_enc_part_0_untagged
-k5_atype_priv_enc_part_1
-k5_atype_priv_enc_part_1_untagged
-k5_atype_priv_enc_part_2
-k5_atype_priv_enc_part_2_def
-k5_atype_priv_enc_part_2_def_untagged
-k5_atype_priv_enc_part_3
-k5_atype_priv_enc_part_3_untagged
-k5_atype_priv_enc_part_4
-k5_atype_priv_enc_part_4_untagged
-k5_atype_priv_enc_part_5
-k5_atype_priv_enc_part_5_untagged
-k5_atype_priv_msg_type
-k5_atype_ptr_algorithm_identifier
-k5_atype_ptr_authdata_elt_type
-k5_atype_ptr_encryption_key
-k5_atype_ptr_fast_armor
-k5_atype_ptr_fast_finished
-k5_atype_ptr_fast_req_padata
-k5_atype_ptr_kdc_req_body
-k5_atype_ptr_kdf_alg_id
-k5_atype_ptr_key_data
-k5_atype_ptr_seqof_algorithm_identifier
-k5_atype_ptr_seqof_checksum
-k5_atype_ptr_seqof_external_principal_identifier
-k5_atype_ptr_seqof_host_addresses
-k5_atype_ptr_seqof_otp_tokeninfo
-k5_atype_ptr_seqof_pa_data
-k5_atype_ptr_seqof_princ_plus_realm
-k5_atype_ptr_seqof_ticket
-k5_atype_ptr_supported_kdfs
-k5_atype_ptrseqof_cred_info
-k5_atype_realm_of_principal
-k5_atype_realm_of_principal_data
-k5_atype_reply_key_pack
-k5_atype_reply_key_pack_0
-k5_atype_reply_key_pack_0_untagged
-k5_atype_reply_key_pack_1
-k5_atype_reply_key_pack_1_untagged
-k5_atype_reply_key_pack_draft9
-k5_atype_req_body_0
-k5_atype_req_body_0_untagged
-k5_atype_req_body_1
-k5_atype_req_body_10
-k5_atype_req_body_10_untagged
-k5_atype_req_body_11
-k5_atype_req_body_11_untagged
-k5_atype_req_body_1_untagged
-k5_atype_req_body_2
-k5_atype_req_body_2_untagged
-k5_atype_req_body_3
-k5_atype_req_body_3_untagged
-k5_atype_req_body_4
-k5_atype_req_body_4_untagged
-k5_atype_req_body_5
-k5_atype_req_body_5_untagged
-k5_atype_req_body_6
-k5_atype_req_body_6_untagged
-k5_atype_req_body_7
-k5_atype_req_body_7_untagged
-k5_atype_req_body_8
-k5_atype_req_body_8_untagged
-k5_atype_req_body_9
-k5_atype_req_body_9_untagged
-k5_atype_s4u_userid
-k5_atype_s4u_userid_0
-k5_atype_s4u_userid_0_untagged
-k5_atype_s4u_userid_1
-k5_atype_s4u_userid_1_untagged
-k5_atype_s4u_userid_2
-k5_atype_s4u_userid_2_untagged
-k5_atype_s4u_userid_3
-k5_atype_s4u_userid_3_untagged
-k5_atype_s4u_userid_4
-k5_atype_s4u_userid_4_untagged
-k5_atype_safe
-k5_atype_safe_0
-k5_atype_safe_1
-k5_atype_safe_2
-k5_atype_safe_3
-k5_atype_safe_3_untagged
-k5_atype_safe_body
-k5_atype_safe_body_0
-k5_atype_safe_body_0_untagged
-k5_atype_safe_body_1
-k5_atype_safe_body_1_untagged
-k5_atype_safe_body_2
-k5_atype_safe_body_2_def
-k5_atype_safe_body_2_def_untagged
-k5_atype_safe_body_3
-k5_atype_safe_body_3_untagged
-k5_atype_safe_body_4
-k5_atype_safe_body_4_untagged
-k5_atype_safe_body_5
-k5_atype_safe_body_5_untagged
-k5_atype_safe_checksum_only
-k5_atype_safe_checksum_only_ptr
-k5_atype_safe_msg_type
-k5_atype_safe_with_body
-k5_atype_safe_with_body_2
-k5_atype_safe_with_body_2_untagged
-k5_atype_safe_with_body_3
-k5_atype_safe_with_body_3_untagged
-k5_atype_sam_challenge_2
-k5_atype_sam_challenge_2_body
-k5_atype_sam_resp_0
-k5_atype_sam_resp_0_untagged
-k5_atype_sam_resp_1
-k5_atype_sam_resp_1_untagged
-k5_atype_sam_resp_2
-k5_atype_sam_resp_2_untagged
-k5_atype_sam_resp_3
-k5_atype_sam_resp_3_untagged
-k5_atype_sam_resp_4
-k5_atype_sam_resp_4_untagged
-k5_atype_sam_response_2
-k5_atype_saved_safe_body_ptr
-k5_atype_sch_0
-k5_atype_sch_0_untagged
-k5_atype_sch_1
-k5_atype_sch_1_untagged
-k5_atype_schb_0
-k5_atype_schb_0_untagged
-k5_atype_schb_1
-k5_atype_schb_1_untagged
-k5_atype_schb_2
-k5_atype_schb_2_untagged
-k5_atype_schb_3
-k5_atype_schb_3_untagged
-k5_atype_schb_4
-k5_atype_schb_4_untagged
-k5_atype_schb_5
-k5_atype_schb_5_untagged
-k5_atype_schb_6
-k5_atype_schb_6_untagged
-k5_atype_schb_7
-k5_atype_schb_7_untagged
-k5_atype_schb_8
-k5_atype_schb_8_untagged
-k5_atype_schb_9
-k5_atype_schb_9_untagged
-k5_atype_secure_cookie
-k5_atype_secure_cookie_0
-k5_atype_secure_cookie_1
-k5_atype_seqno
-k5_atype_seqof_algorithm_identifier
-k5_atype_seqof_checksum
-k5_atype_seqof_cred_info
-k5_atype_seqof_external_principal_identifier
-k5_atype_seqof_host_addresses
-k5_atype_seqof_otp_tokeninfo
-k5_atype_seqof_pa_data
-k5_atype_seqof_princ_plus_realm
-k5_atype_seqof_ticket
-k5_atype_seqof_typed_data
-k5_atype_seqof_utf8_data
-k5_atype_setpw_0
-k5_atype_setpw_0_untagged
-k5_atype_setpw_1
-k5_atype_setpw_1_untagged
-k5_atype_setpw_2
-k5_atype_setpw_2_untagged
-k5_atype_setpw_req
-k5_atype_signedpath_0
-k5_atype_signedpath_0_untagged
-k5_atype_signedpath_1
-k5_atype_signedpath_1_untagged
-k5_atype_signedpath_2
-k5_atype_signedpath_2_untagged
-k5_atype_signedpath_3
-k5_atype_signedpath_3_untagged
-k5_atype_sp80056a_other_info
-k5_atype_spdata_0
-k5_atype_spdata_0_untagged
-k5_atype_spdata_1
-k5_atype_spdata_1_untagged
-k5_atype_spdata_2
-k5_atype_spdata_2_untagged
-k5_atype_spdata_3
-k5_atype_spdata_3_untagged
-k5_atype_spdata_4
-k5_atype_spdata_4_untagged
-k5_atype_spki_0
-k5_atype_spki_1
-k5_atype_subject_pk_info
-k5_atype_subject_pk_info_ptr
-k5_atype_supp_pub_0
-k5_atype_supp_pub_0_untagged
-k5_atype_supp_pub_1
-k5_atype_supp_pub_1_untagged
-k5_atype_supp_pub_2
-k5_atype_supp_pub_2_untagged
-k5_atype_supported_kdfs
-k5_atype_tgs_rep
-k5_atype_tgs_req
-k5_atype_tgs_req_2
-k5_atype_tgs_req_encode
-k5_atype_tgs_req_msg_type
-k5_atype_ticket
-k5_atype_ticket_0
-k5_atype_ticket_1
-k5_atype_ticket_1_untagged
-k5_atype_ticket_2
-k5_atype_ticket_2_untagged
-k5_atype_ticket_3
-k5_atype_ticket_3_untagged
-k5_atype_ticket_ptr
-k5_atype_tokinfo_0
-k5_atype_tokinfo_0_untagged
-k5_atype_tokinfo_1
-k5_atype_tokinfo_1_untagged
-k5_atype_tokinfo_2
-k5_atype_tokinfo_2_untagged
-k5_atype_tokinfo_3
-k5_atype_tokinfo_3_untagged
-k5_atype_tokinfo_4
-k5_atype_tokinfo_4_untagged
-k5_atype_tokinfo_5
-k5_atype_tokinfo_5_untagged
-k5_atype_tokinfo_6
-k5_atype_tokinfo_6_untagged
-k5_atype_tokinfo_7
-k5_atype_tokinfo_7_untagged
-k5_atype_tokinfo_8
-k5_atype_tokinfo_8_untagged
-k5_atype_transited
-k5_atype_transited_0
-k5_atype_transited_0_untagged
-k5_atype_transited_1
-k5_atype_transited_1_untagged
-k5_atype_typed_data
-k5_atype_typed_data_0
-k5_atype_typed_data_0_untagged
-k5_atype_typed_data_1
-k5_atype_typed_data_1_untagged
-k5_atype_typed_data_ptr
-k5_atype_ui_4
-k5_atype_uint
-k5_atype_uint16
-k5_atype_untagged_ap_rep
-k5_atype_untagged_ap_rep_enc_part
-k5_atype_untagged_ap_req
-k5_atype_untagged_as_req
-k5_atype_untagged_authenticator
-k5_atype_untagged_cred
-k5_atype_untagged_enc_cred_part
-k5_atype_untagged_enc_tkt_part
-k5_atype_untagged_krb5_error
-k5_atype_untagged_priv
-k5_atype_untagged_priv_enc_part
-k5_atype_untagged_safe
-k5_atype_untagged_safe_with_body
-k5_atype_untagged_tgs_req
-k5_atype_untagged_ticket
-k5_atype_utf8_data
-k5_atype_utf8_data_ptr
-k5_atype_vmac
-k5_atype_vmac_0
-k5_atype_vmac_0_untagged
-k5_atype_vmac_1
-k5_atype_vmac_1_untagged
-k5_atype_vmac_2
-k5_atype_vmac_2_untagged
-k5_atype_vmac_3
-k5_atype_vmac_3_untagged
-k5_atype_vmac_ptr
-k5_atype_vmacs
-k5_atype_vmacs_ptr
-k5_authind_ad_client_ftable
-k5_authind_decode
-k5_buf_add
-k5_buf_add_fmt
-k5_buf_add_len
-k5_buf_free
-k5_buf_get_space
-k5_buf_init_dynamic
-k5_buf_init_fixed
-k5_buf_status
-k5_build_conf_principals
-k5_cc_mutex_assert_locked
-k5_cc_mutex_assert_unlocked
-k5_cc_mutex_finish_init
-k5_cc_mutex_force_unlock
-k5_cc_mutex_init
-k5_cc_mutex_lock
-k5_cc_mutex_unlock
-k5_cc_retrieve_cred_default
-k5_cccol_force_unlock
-k5_ccselect_free_context
-k5_change_error_message_code
-k5_clean_hostname
-k5_clear_error
-k5_client_realm_path
-k5_cntype_cseqof_authdata_elt_type
-k5_cntype_cseqof_gstring_data
-k5_cntype_cseqof_int32
-k5_cntype_cseqof_key_data
-k5_cntype_der
-k5_cntype_generalstring
-k5_cntype_object_identifier
-k5_cntype_octetstring
-k5_cntype_pa_pk_as_rep_choice
-k5_cntype_pa_pk_as_rep_draft9_choice
-k5_cntype_s_bitstring
-k5_cntype_s_octetstring
-k5_cntype_u_generalstring
-k5_cntype_ui2_octetstring
-k5_cntype_utf8string
 k5_copy_ad_module_data
-k5_copy_creds_contents
-k5_copy_etypes
-k5_count_etypes
-k5_create_secure_file
-k5_encrypt_keyhelper
-k5_etypes_contains
-k5_expand_path_tokens
-k5_expand_path_tokens_extra
-k5_free_algorithm_identifier
-k5_free_cammac
-k5_free_data_ptr_list
-k5_free_error
-k5_free_kkdcp_message
-k5_free_otp_tokeninfo
-k5_free_pa_otp_challenge
-k5_free_pa_otp_req
-k5_free_preauth_context
-k5_free_secure_cookie
-k5_free_serverlist
-k5_generate_and_save_subkey
-k5_get_error
-k5_get_init_creds
-k5_gic_opt_get_expire_cb
-k5_gic_opt_get_fast_ccache_name
-k5_gic_opt_get_fast_flags
-k5_gic_opt_get_in_ccache
-k5_gic_opt_get_out_ccache
-k5_gic_opt_get_responder
-k5_gic_opt_pac_request
-k5_gic_opt_shallow_copy
-k5_hostrealm_free_context
-k5_init_creds_current_time
-k5_init_creds_get
-k5_init_preauth_context
-k5_init_trace
-k5_is_numeric_address
-k5_is_string_numeric
-k5_json_array_add
-k5_json_array_create
-k5_json_array_get
-k5_json_array_length
-k5_json_decode
-k5_json_encode
-k5_json_get_tid
-k5_json_number_create
-k5_json_number_value
-k5_json_object_count
-k5_json_object_create
-k5_json_object_get
-k5_json_object_iterate
-k5_json_object_set
-k5_json_release
-k5_json_string_create
-k5_json_string_create_len
-k5_json_string_utf8
-k5_kdc_is_master
-k5_kt_client_default_name
-k5_kt_get_principal
-k5_localauth_free_context
-k5_locate_kdc
-k5_locate_server
-k5_make_realmlist
-k5_make_tgs_req
-k5_make_uri_query
-k5_marshal_cred
-k5_marshal_mcred
-k5_marshal_princ
 k5_mk_rep
-k5_mspac_ad_client_ftable
 k5_mutex_lock
 k5_mutex_unlock
-k5_os_free_context
-k5_os_hostaddr
-k5_os_init_context
 k5_pac_add_buffer
 k5_pac_encode_header
 k5_pac_locate_buffer
-k5_pac_validate_client
 k5_pac_zero_signature
-k5_parse_host_string
-k5_path_join
-k5_path_split
-k5_plugin_free_context
-k5_plugin_free_modules
-k5_plugin_load
-k5_plugin_load_all
-k5_plugin_register
-k5_plugin_register_dyn
-k5_populate_gic_opt
-k5_preauth
-k5_preauth_prepare_request
-k5_preauth_request_context_fini
-k5_preauth_request_context_init
-k5_preauth_tryagain
-k5_privsafe_check_addrs
-k5_privsafe_check_seqnum
-k5_reset_preauth_types_tried
-k5_response_items_ask_question
-k5_response_items_empty
-k5_response_items_free
-k5_response_items_get_answer
-k5_response_items_get_challenge
-k5_response_items_list_questions
-k5_response_items_new
-k5_response_items_reset
-k5_response_items_set_answer
-k5_restore_ctx_error
-k5_s4u2proxy_ad_client_ftable
-k5_save_ctx_error
-k5_seconds_since_1970_to_time
-k5_sendto
-k5_set_error
-k5_set_error_info_callout_fn
-k5_set_prompt_types
-k5_sha256
-k5_strerror_r
-k5_sync_disk_file
-k5_time_with_offset
-k5_try_realm_txt_rr
-k5_unmarshal_cred
-k5_unmarshal_princ
-k5_unwrap_cammac_svc
-k5_upgrade_to_fast_p
-k5_vset_error
-k5_write_messages
-k5_zapfree_pa_data
 k5identity
 k5int_i->did_run != 0
 k5login
@@ -2664,6 +979,7 @@ kdcauthdata
 kdcchallengearmor
 kdcpolicy
 kdcpreauth
+kerr
 keyblock
 keytab
 keytab_fetch_error
@@ -2671,687 +987,35 @@ khttp
 kkdcp
 kpasswd_server
 krb524
-krb524_convert_creds_kdc
-krb524_init_ets
 krb524_server
-krb5_425_conv_principal
-krb5_524_conv_principal
-krb5_524_convert_creds
-krb5_address_compare
-krb5_address_order
-krb5_address_search
-krb5_allow_weak_crypto
-krb5_aname_to_localname
-krb5_anonymous_principal
-krb5_anonymous_realm
-krb5_appdefault_boolean
-krb5_appdefault_string
-krb5_auth_con_free
-krb5_auth_con_genaddrs
-krb5_auth_con_get_authdata_context
-krb5_auth_con_get_checksum_func
-krb5_auth_con_get_subkey_enctype
-krb5_auth_con_getaddrs
-krb5_auth_con_getauthenticator
-krb5_auth_con_getflags
-krb5_auth_con_getivector
-krb5_auth_con_getkey
-krb5_auth_con_getkey_k
-krb5_auth_con_getlocalseqnumber
-krb5_auth_con_getlocalsubkey
-krb5_auth_con_getpermetypes
-krb5_auth_con_getrcache
-krb5_auth_con_getrecvsubkey
-krb5_auth_con_getrecvsubkey_k
-krb5_auth_con_getremoteseqnumber
-krb5_auth_con_getremotesubkey
-krb5_auth_con_getsendsubkey
-krb5_auth_con_getsendsubkey_k
-krb5_auth_con_init
-krb5_auth_con_initivector
-krb5_auth_con_set_authdata_context
-krb5_auth_con_set_checksum_func
-krb5_auth_con_set_req_cksumtype
-krb5_auth_con_set_safe_cksumtype
-krb5_auth_con_setaddrs
-krb5_auth_con_setflags
-krb5_auth_con_setivector
-krb5_auth_con_setpermetypes
-krb5_auth_con_setports
-krb5_auth_con_setrcache
-krb5_auth_con_setrecvsubkey
-krb5_auth_con_setrecvsubkey_k
-krb5_auth_con_setsendsubkey
-krb5_auth_con_setsendsubkey_k
-krb5_auth_con_setuseruserkey
-krb5_auth_to_rep
-krb5_authdata_context_copy
-krb5_authdata_context_free
-krb5_authdata_context_init
-krb5_authdata_delete_attribute
-krb5_authdata_export_attributes
-krb5_authdata_export_authdata
-krb5_authdata_export_internal
-krb5_authdata_free_internal
-krb5_authdata_get_attribute
-krb5_authdata_get_attribute_types
-krb5_authdata_import_attributes
-krb5_authdata_set_attribute
-krb5_brand
-krb5_build_principal
-krb5_build_principal_alloc_va
-krb5_build_principal_ext
-krb5_build_principal_va
-krb5_c_checksum_length
-krb5_c_decrypt
-krb5_c_encrypt
-krb5_c_encrypt_length
-krb5_c_enctype_compare
-krb5_c_fx_cf2_simple
-krb5_c_init_state
-krb5_c_is_coll_proof_cksum
-krb5_c_is_keyed_cksum
-krb5_c_keyed_checksum_types
-krb5_c_make_checksum
-krb5_c_make_checksum_iov
-krb5_c_make_random_key
-krb5_c_random_add_entropy
-krb5_c_random_make_octets
-krb5_c_random_os_entropy
-krb5_c_string_to_key
-krb5_c_string_to_key_with_params
-krb5_c_valid_cksumtype
-krb5_c_valid_enctype
-krb5_c_verify_checksum
-krb5_cc_cache_match
-krb5_cc_close
-krb5_cc_copy_creds
-krb5_cc_default
-krb5_cc_default_name
-krb5_cc_destroy
-krb5_cc_dfl_ops
-krb5_cc_dup
-krb5_cc_end_seq_get
-krb5_cc_file_ops
-krb5_cc_gen_new
-krb5_cc_get_config
-krb5_cc_get_flags
-krb5_cc_get_full_name
-krb5_cc_get_name
-krb5_cc_get_principal
-krb5_cc_get_type
-krb5_cc_initialize
-krb5_cc_last_change_time
-krb5_cc_lock
-krb5_cc_move
-krb5_cc_new_unique
-krb5_cc_next_cred
-krb5_cc_register
-krb5_cc_remove_cred
-krb5_cc_resolve
-krb5_cc_retrieve_cred
-krb5_cc_select
-krb5_cc_set_config
-krb5_cc_set_default_name
-krb5_cc_set_flags
-krb5_cc_start_seq_get
-krb5_cc_store_cred
-krb5_cc_support_switch
-krb5_cc_switch
-krb5_cc_unlock
 krb5_ccache_conf_data
-krb5_cccol_cursor_free
-krb5_cccol_cursor_new
-krb5_cccol_cursor_next
-krb5_cccol_have_content
-krb5_cccol_last_change_time
-krb5_cccol_lock
-krb5_cccol_unlock
-krb5_change_cache
-krb5_change_password
-krb5_check_clockskew
-krb5_check_transited_list
-krb5_chpw_message
-krb5_chpw_result_code_string
-krb5_clear_error_message
-krb5_copy_addr
-krb5_copy_addresses
-krb5_copy_authdata
-krb5_copy_authenticator
-krb5_copy_checksum
-krb5_copy_context
-krb5_copy_creds
-krb5_copy_data
-krb5_copy_error_message
-krb5_copy_keyblock
-krb5_copy_keyblock_contents
-krb5_copy_principal
-krb5_copy_ticket
-krb5_crypto_us_timeofday
-krb5_dcc_ops
-krb5_decode_authdata_container
-krb5_decode_ticket
-krb5_decrypt_tkt_part
-krb5_deltat_to_string
-krb5_encode_authdata_container
-krb5_encode_kdc_rep
-krb5_encrypt_helper
-krb5_encrypt_tkt_part
-krb5_enctype_to_name
-krb5_enctype_to_string
-krb5_expand_hostname
-krb5_externalize_data
-krb5_externalize_opaque
-krb5_fcc_ops
-krb5_find_authdata
-krb5_find_serializer
-krb5_free_ad_kdcissued
-krb5_free_ad_signedpath
-krb5_free_address
-krb5_free_addresses
-krb5_free_ap_rep
-krb5_free_ap_rep_enc_part
-krb5_free_ap_req
-krb5_free_authdata
-krb5_free_authenticator
-krb5_free_authenticator_contents
-krb5_free_checksum
-krb5_free_checksum_contents
-krb5_free_cksumtypes
-krb5_free_config_files
-krb5_free_context
-krb5_free_cred
-krb5_free_cred_contents
-krb5_free_cred_enc_part
-krb5_free_creds
-krb5_free_data
-krb5_free_data_contents
-krb5_free_default_realm
-krb5_free_enc_data
-krb5_free_enc_kdc_rep_part
-krb5_free_enc_sam_response_enc_2
-krb5_free_enc_sam_response_enc_2_contents
-krb5_free_enc_tkt_part
-krb5_free_enctypes
-krb5_free_error
-krb5_free_error_message
-krb5_free_etype_info
-krb5_free_fast_armor
-krb5_free_fast_armored_req
-krb5_free_fast_finished
-krb5_free_fast_req
-krb5_free_fast_response
-krb5_free_host_realm
-krb5_free_iakerb_finished
-krb5_free_iakerb_header
-krb5_free_kdc_rep
-krb5_free_kdc_req
-krb5_free_keyblock
-krb5_free_keyblock_contents
-krb5_free_keytab_entry_contents
-krb5_free_last_req
-krb5_free_octet_data
-krb5_free_pa_data
-krb5_free_pa_enc_ts
-krb5_free_pa_for_user
-krb5_free_pa_pac_req
-krb5_free_pa_s4u_x509_user
-krb5_free_principal
-krb5_free_priv
-krb5_free_priv_enc_part
-krb5_free_realm_tree
-krb5_free_s4u_userid_contents
-krb5_free_safe
-krb5_free_sam_challenge_2
-krb5_free_sam_challenge_2_body
-krb5_free_sam_challenge_2_body_contents
-krb5_free_sam_challenge_2_contents
-krb5_free_sam_response_2
-krb5_free_sam_response_2_contents
-krb5_free_string
-krb5_free_tgt_creds
-krb5_free_ticket
-krb5_free_tickets
-krb5_free_tkt_authent
-krb5_free_unparsed_name
-krb5_fwd_tgt_creds
-krb5_gen_portaddr
-krb5_gen_replay_name
-krb5_generate_seq_number
-krb5_generate_subkey
-krb5_generate_subkey_extended
-krb5_get_as_key_password
-krb5_get_cred_via_tkt
-krb5_get_cred_via_tkt_ext
-krb5_get_credentials
-krb5_get_credentials_for_proxy
 krb5_get_credentials_for_user
-krb5_get_credentials_renew
-krb5_get_credentials_validate
-krb5_get_default_config_files
-krb5_get_default_in_tkt_ktypes
-krb5_get_default_realm
-krb5_get_error_message
-krb5_get_fallback_host_realm
-krb5_get_host_realm
-krb5_get_in_tkt_with_keytab
-krb5_get_in_tkt_with_password
-krb5_get_in_tkt_with_skey
-krb5_get_init_creds_keytab
-krb5_get_init_creds_opt_alloc
 krb5_get_init_creds_opt_free
-krb5_get_init_creds_opt_free_pa
-krb5_get_init_creds_opt_get_fast_flags
-krb5_get_init_creds_opt_get_pa
-krb5_get_init_creds_opt_init
-krb5_get_init_creds_opt_set_address_list
-krb5_get_init_creds_opt_set_anonymous
-krb5_get_init_creds_opt_set_canonicalize
-krb5_get_init_creds_opt_set_change_password_prompt
-krb5_get_init_creds_opt_set_etype_list
-krb5_get_init_creds_opt_set_expire_callback
-krb5_get_init_creds_opt_set_fast_ccache
 krb5_get_init_creds_opt_set_fast_ccache_name
-krb5_get_init_creds_opt_set_fast_flags
-krb5_get_init_creds_opt_set_forwardable
-krb5_get_init_creds_opt_set_in_ccache
-krb5_get_init_creds_opt_set_out_ccache
 krb5_get_init_creds_opt_set_pa
-krb5_get_init_creds_opt_set_pac_request
-krb5_get_init_creds_opt_set_preauth_list
-krb5_get_init_creds_opt_set_proxiable
-krb5_get_init_creds_opt_set_renew_life
-krb5_get_init_creds_opt_set_responder
-krb5_get_init_creds_opt_set_salt
-krb5_get_init_creds_opt_set_tkt_life
-krb5_get_init_creds_password
-krb5_get_notification_message
-krb5_get_permitted_enctypes
-krb5_get_profile
-krb5_get_prompt_types
-krb5_get_realm_domain
-krb5_get_renewed_creds
-krb5_get_server_rcache
-krb5_get_tgs_ktypes
-krb5_get_time_offsets
-krb5_get_validated_creds
-krb5_init_context
-krb5_init_context_profile
-krb5_init_creds_free
-krb5_init_creds_get
-krb5_init_creds_get_creds
-krb5_init_creds_get_error
-krb5_init_creds_get_times
-krb5_init_creds_init
-krb5_init_creds_set_keytab
-krb5_init_creds_set_password
-krb5_init_creds_set_service
 krb5_init_creds_step
-krb5_init_keyblock
-krb5_init_secure_context
-krb5_internalize_opaque
-krb5_is_config_principal
-krb5_is_permitted_enctype
-krb5_is_referral_realm
-krb5_is_thread_safe
-krb5_k_create_key
-krb5_k_decrypt
-krb5_k_encrypt
-krb5_k_free_key
-krb5_k_key_enctype
-krb5_k_key_keyblock
-krb5_k_make_checksum
-krb5_k_reference_key
-krb5_k_verify_checksum
-krb5_kcm_ops
-krb5_kdc_rep_decrypt_proc
-krb5_krcc_ops
-krb5_kt_add_entry
-krb5_kt_client_default
-krb5_kt_close
-krb5_kt_default
-krb5_kt_default_name
-krb5_kt_dfl_ops
-krb5_kt_dup
-krb5_kt_end_seq_get
-krb5_kt_free_entry
-krb5_kt_get_entry
-krb5_kt_get_name
-krb5_kt_get_type
-krb5_kt_have_content
-krb5_kt_next_entry
-krb5_kt_read_service_key
-krb5_kt_register
-krb5_kt_remove_entry
-krb5_kt_resolve
-krb5_kt_start_seq_get
-krb5_kta_ops
-krb5_ktf_ops
-krb5_ktf_writable_ops
-krb5_ktfile_ser_entry
-krb5_kts_ops
-krb5_kuserok
-krb5_lock_file
-krb5_make_authdata_kdc_issued
-krb5_make_full_ipaddr
-krb5_make_fulladdr
-krb5_mcc_ops
-krb5_merge_authdata
-krb5_mk_1cred
-krb5_mk_error
-krb5_mk_ncred
-krb5_mk_priv
-krb5_mk_rep
-krb5_mk_rep_dce
-krb5_mk_req
-krb5_mk_req_extended
-krb5_mk_safe
-krb5_mkt_add
-krb5_mkt_close
-krb5_mkt_end_get
-krb5_mkt_get_entry
-krb5_mkt_get_name
-krb5_mkt_get_next
-krb5_mkt_ops
-krb5_mkt_remove
-krb5_mkt_resolve
-krb5_mkt_start_seq_get
-krb5_net_read
-krb5_net_write
-krb5_os_localaddr
-krb5_overridekeyname
-krb5_pac_add_buffer
-krb5_pac_free
-krb5_pac_get_buffer
-krb5_pac_get_types
-krb5_pac_init
-krb5_pac_parse
 krb5_pac_sign
-krb5_pac_verify
-krb5_parse_name
-krb5_parse_name_flags
-krb5_preauth_supply_preauth_data
-krb5_prepend_error_message
-krb5_principal2salt
-krb5_principal2salt_norealm
-krb5_principal_compare
-krb5_principal_compare_any_realm
-krb5_principal_compare_flags
-krb5_prompter_posix
-krb5_rc_close
-krb5_rc_default
-krb5_rc_default_name
-krb5_rc_default_type
-krb5_rc_destroy
-krb5_rc_dfl_close
-krb5_rc_dfl_close_no_free
-krb5_rc_dfl_destroy
-krb5_rc_dfl_expunge
-krb5_rc_dfl_get_name
-krb5_rc_dfl_get_span
-krb5_rc_dfl_init
-krb5_rc_dfl_ops
-krb5_rc_dfl_recover
-krb5_rc_dfl_recover_or_init
-krb5_rc_dfl_resolve
-krb5_rc_dfl_store
-krb5_rc_expunge
-krb5_rc_free_entry
-krb5_rc_get_lifespan
-krb5_rc_get_name
-krb5_rc_get_type
-krb5_rc_hash_message
-krb5_rc_initialize
-krb5_rc_io_close
-krb5_rc_io_creat
-krb5_rc_io_destroy
-krb5_rc_io_mark
-krb5_rc_io_move
-krb5_rc_io_open
-krb5_rc_io_read
-krb5_rc_io_size
-krb5_rc_io_sync
-krb5_rc_io_unmark
-krb5_rc_io_write
-krb5_rc_none_ops
-krb5_rc_recover
-krb5_rc_recover_or_initialize
-krb5_rc_register_type
-krb5_rc_resolve
-krb5_rc_resolve_full
-krb5_rc_resolve_type
-krb5_rc_store
-krb5_rd_cred
-krb5_rd_error
-krb5_rd_priv
-krb5_rd_rep
-krb5_rd_rep_dce
-krb5_rd_req
-krb5_rd_req_decoded
-krb5_rd_req_decoded_anyflag
-krb5_rd_safe
-krb5_read_message
-krb5_read_password
-krb5_realm_compare
-krb5_recvauth
-krb5_recvauth_version
-krb5_register_serializer
-krb5_responder_get_challenge
-krb5_responder_list_questions
-krb5_responder_otp_challenge_free
-krb5_responder_otp_get_challenge
-krb5_responder_otp_set_answer
-krb5_responder_pkinit_challenge_free
-krb5_responder_pkinit_get_challenge
-krb5_responder_pkinit_set_answer
-krb5_responder_set_answer
-krb5_salttype_to_string
-krb5_sendauth
 krb5_sendto_kdc
-krb5_ser_address_init
-krb5_ser_auth_context_init
-krb5_ser_authdata_context_init
-krb5_ser_authdata_init
-krb5_ser_authenticator_init
-krb5_ser_ccache_init
-krb5_ser_checksum_init
-krb5_ser_context_init
-krb5_ser_keyblock_init
-krb5_ser_keytab_init
-krb5_ser_pack_bytes
-krb5_ser_pack_int32
-krb5_ser_pack_int64
-krb5_ser_principal_init
-krb5_ser_rcache_init
-krb5_ser_unpack_bytes
-krb5_ser_unpack_int32
-krb5_ser_unpack_int64
-krb5_server_decrypt_ticket_keytab
-krb5_set_config_files
-krb5_set_debugging_time
-krb5_set_default_in_tkt_ktypes
-krb5_set_default_realm
-krb5_set_default_tgs_enctypes
-krb5_set_default_tgs_ktypes
-krb5_set_error_message
-krb5_set_kdc_recv_hook
-krb5_set_kdc_send_hook
-krb5_set_password
-krb5_set_password_using_ccache
-krb5_set_principal_realm
-krb5_set_real_time
-krb5_set_time_offsets
-krb5_set_trace_callback
-krb5_set_trace_filename
-krb5_size_opaque
-krb5_sname_match
-krb5_sname_to_principal
-krb5_string_to_deltat
-krb5_string_to_enctype
-krb5_string_to_salttype
-krb5_string_to_timestamp
-krb5_timeofday
-krb5_timestamp_to_sfstring
-krb5_timestamp_to_string
-krb5_tkt_creds_free
-krb5_tkt_creds_get
-krb5_tkt_creds_get_creds
-krb5_tkt_creds_get_times
-krb5_tkt_creds_init
-krb5_tkt_creds_step
-krb5_unlock_file
-krb5_unpack_full_ipaddr
-krb5_unparse_name
-krb5_unparse_name_ext
-krb5_unparse_name_flags
-krb5_unparse_name_flags_ext
-krb5_us_timeofday
-krb5_use_natural_time
-krb5_verify_authdata_kdc_issued
-krb5_verify_init_creds
-krb5_verify_init_creds_opt_init
-krb5_verify_init_creds_opt_set_ap_req_nofail
-krb5_vprepend_error_message
-krb5_vset_error_message
-krb5_vwrap_error_message
-krb5_walk_realm_tree
-krb5_wrap_error_message
-krb5_write_message
-krb5int_accessor
 krb5int_authdata_verify
-krb5int_c_combine_keys
-krb5int_c_copy_keyblock
-krb5int_c_copy_keyblock_contents
-krb5int_c_free_keyblock
-krb5int_c_free_keyblock_contents
-krb5int_c_init_keyblock
-krb5int_c_mandatory_cksumtype
-krb5int_c_weak_enctype
-krb5int_cc_creds_match_request
-krb5int_cc_default
-krb5int_cc_file_mutex
-krb5int_cc_finalize
-krb5int_cc_initialize
-krb5int_cc_typecursor_free
-krb5int_cc_typecursor_new
-krb5int_cc_typecursor_next
-krb5int_cc_user_set_default_name
-krb5int_cleanup_library
-krb5int_close_plugin
-krb5int_close_plugin_dirs
-krb5int_construct_matching_creds
-krb5int_copy_authdatum
-krb5int_copy_data_contents
-krb5int_copy_data_contents_add0
-krb5int_decode_tgs_rep
-krb5int_dns_expand
-krb5int_dns_fini
-krb5int_dns_init
-krb5int_dns_nextans
-krb5int_fast_as_armor
-krb5int_fast_free_state
-krb5int_fast_make_state
 krb5int_fast_prep_req
 krb5int_fast_prep_req_body
-krb5int_fast_process_error
-krb5int_fast_process_response
-krb5int_fast_reply_key
-krb5int_fast_tgs_armor
-krb5int_fast_verify_nego
-krb5int_fcc_new_unique
-krb5int_find_pa_data
-krb5int_foreach_localaddr
-krb5int_free_data_list
-krb5int_free_plugin_dir_data
-krb5int_free_srv_dns_data
-krb5int_freeaddrinfo
-krb5int_get_authdata_containee_types
-krb5int_get_fq_local_hostname
-krb5int_get_plugin_dir_data
-krb5int_get_plugin_func
-krb5int_getaddrinfo
-krb5int_getnameinfo
-krb5int_gmt_mktime
-krb5int_init_context_kdc
 krb5int_initialize_library
-krb5int_kt_finalize
-krb5int_kt_initialize
-krb5int_ldap_decode_sequence_of_keys
-krb5int_ldap_encode_sequence_of_keys
-krb5int_libdefault_boolean
-krb5int_libdefault_string
-krb5int_make_srv_query_realm
-krb5int_mcc_mutex
-krb5int_mk_chpw_req
-krb5int_mk_setpw_req
-krb5int_mkt_finalize
-krb5int_mkt_initialize
 krb5int_net_writev
-krb5int_open_plugin
-krb5int_open_plugin_dirs
-krb5int_parse_enctype_list
-krb5int_process_tgs_reply
-krb5int_random_string
-krb5int_rc_finish_init
-krb5int_rc_terminate
-krb5int_rd_chpw_rep
-krb5int_tgtname
-krb5int_trace
-krb5int_ucs2lecs_to_utf8s
-krb5int_ucs4_to_utf8
-krb5int_ucstr2upper
-krb5int_ucstrncasechr
-krb5int_ucstrncasecmp
-krb5int_ucstrnchr
-krb5int_ucstrncmp
-krb5int_us_time_mutex
-krb5int_utf8_lentab
-krb5int_utf8_mintab
-krb5int_utf8_normalize
-krb5int_utf8_normcmp
-krb5int_utf8_to_ucs4
-krb5int_utf8s_to_ucs2les
-krb5int_validate_times
 krb5srv
 krbtgt
-l$ I)
-l$0Hc
-l$8E1
-l$@E1
-l$Hu]H
-l$`E1
-l$dLc
-l$hE1
 length
 lenstr
 libdefaults
-libintl_bindtextdomain
-libintl_dgettext
-libintl_ngettext
 localauth
 localauth module failed to init vtable: {kerr}
 localauth module {str} failed to init: {kerr}
-localauth_an2ln_initvt
-localauth_k5login_initvt
-localauth_names_initvt
-localauth_rule_initvt
-localtime_r
-lseek
+long
 lstat
 make_full_list
-malloc
 mandarin
 mandarin-agent
 master_kdc
-memchr
-memcmp
-memcpy
-memmove
-memset
 mit-krb5
-mkdir
-mkstemp
-mktime
 module
 module->ftable->externalize != NULL
 moira
@@ -3359,22 +1023,23 @@ mspac
 mspac_copy
 mspac_import_authdata
 names
+news
 no data available for host/domain name
 noaddresses
 nomatch_error
 nonce modified in FAST response: KDC response modified
+none
 norealm
 normal
 nrealms > 1
 nsg > 0 || cc == 0
+null
 null_terminate
 off->basetype != NULL
 onlyrealm
-opendir
+open
 opt->is_present != NULL
 p == data->data + AD_POLICY_INFO_LENGTH
-p[^_]A\
-p[^_]A\A]A^
 pa_config_data
 pa_type
 pac->data.length >= header_len
@@ -3391,7 +1056,6 @@ plugins
 pos < cur_data->length
 pos == count
 pos == cur_data->length
-posix_memalign
 preauth
 preferred_preauth_types
 primary
@@ -3400,114 +1064,40 @@ princ != NULL
 principal
 principal != NULL
 privsvr_cksum.length > PAC_SIGNATURE_DATA_LENGTH
+prms
 profile
-profile_abandon
-profile_add_node
-profile_add_relation
-profile_clear_relation
-profile_close_file
-profile_copy
-profile_create_node
-profile_dereference_data
-profile_dereference_data_locked
-profile_file_is_writable
-profile_find_node
-profile_find_node_relation
-profile_find_node_subsection
-profile_flush
-profile_flush_file_data
-profile_flush_file_data_to_buffer
-profile_flush_file_data_to_file
-profile_flush_to_buffer
-profile_flush_to_file
-profile_free_buffer
-profile_free_file
-profile_free_list
-profile_free_node
-profile_get_boolean
-profile_get_integer
-profile_get_node_name
-profile_get_node_parent
-profile_get_node_value
-profile_get_relation_names
-profile_get_string
-profile_get_subsection_names
-profile_get_value
-profile_get_values
-profile_init
-profile_init_flags
-profile_init_path
-profile_init_vtable
-profile_is_modified
-profile_is_node_final
-profile_is_writable
-profile_iterator
-profile_iterator_create
-profile_iterator_free
-profile_lock_global
-profile_make_node_final
-profile_make_prf_data
 profile_module_init
 profile_node_iterator
-profile_node_iterator_create
-profile_node_iterator_free
 profile_open_file
-profile_parse_file
-profile_process_directory
-profile_release
-profile_release_string
-profile_remove_node
-profile_rename_node
-profile_rename_section
-profile_ser_externalize
-profile_ser_internalize
-profile_ser_size
-profile_set_relation_value
-profile_unlock_global
-profile_update_file_data
 profile_update_file_data_locked
-profile_update_relation
-profile_verify_node
-profile_write_tree_file
-profile_write_tree_to_buffer
 prompt_for_token
 proxiable
-pthread_mutex_destroy
-pthread_mutex_init
-pthread_mutex_lock
-pthread_mutex_unlock
-pthread_once
 ptr->basetype != NULL
 ptrinfo->basetype != NULL
 ptype
-putchar
 pwqual
-r == 0
-r*v5E
 raddr
 rcache not a file %s
 rcache not owned by %d
+rcmd
 rd_req_decoded_opt
-readdir
-realloc
+rdns
+real
 realm
 realm_try_domains
 realms
-regcomp
-regexec
-regfree
 register
 registry
-rename
 renew_lifetime
 replykey
 req_pos == req_len
+rule
 rvdsrv
 s4u2proxy_get_attribute
 s4u_user->cksum.contents == NULL
 safe_checksum_type
+sam2
 sample
-scandir
 section != NULL
 seq->n_fields > 0
 seq->size != 0
@@ -3521,14 +1111,7 @@ service with host as components
 service with host as instance
 service_dispatch
 service_locator
-setbuf
-setsockopt
-setvbuf
-sigaction
-sigemptyset
 sname != NULL
-snprintf
-socket
 sort_enctypes
 special
 src_module->ftable->externalize != NULL
@@ -3537,110 +1120,13 @@ src_module->request_context_pp == &src_module->request_context
 state != NULL
 state->armor_key
 state->fast_outer_request.padata == NULL
-strcasecmp
-strchr
-strcmp
 strcmp(dst_module->name, src_module->name) == 0
-strcspn
-strdup
 stream
 strengthenkey
-strerror
-strftime
 string->dec != NULL
 string->enc != NULL
-strlcpy
-strlen
-strncasecmp
-strncmp
-strncpy
-strptime
-strrchr
-strspn
-strstr
-strtok_r
-strtol
-strtoul
 subkeyarmor
-t	9H,
-t	;G<
-t	;H(
-t	A;7
-t$ E1
-t$(E1
-t$(H33u
-t$(H33u"H
-t$(H33uLH
-t$(H37
-t$(H37u'H
-t$(I34$u
-t$(I34$uAH
-t$8E1
-t$8H32u2H
-t$8H33
-t$8H33D
-t$8H33H
-t$8H33u
-t$8H33u(H
-t$8H33u1H
-t$8H33u;H
-t$8H37
-t$8H37uNH
-t$8H3u
-t$8t!H
-t$@E1
-t$@u3H
-t$HE1
-t$HH33u
-t$HH33uOH
-t$HH33umH
-t$HH37
-t$HH37u&H
-t$HH37u1H
-t$HH37udH
-t$HH3u
-t$HI37
-t$HI37u.H
-t$HI3u
-t$Ht@H
-t$I9]
-t$PE1
-t$XA9
-t$XH32
-t$XH33
-t$XH33u
-t$XH37
-t$XH37D
-t$XH37u(H
-t$XH37uCH
-t$XH37uRH
-t$fD9
-t$hE1
-t$hH32u!H
-t$hH33
-t$hH37
-t$pE1
-t$xH33
-t$xH37
-t$xH3u
-t%;3u
-t%<"t!<\u
-t+HcJ
-t1=4:
-t1D;v
-t3fD9s
-t4HcD$8;D$<|
-t7v=E
-t;HcT$4I
-t;v$H
-tCHcT$4I
-tKv)H
-tUL9l$Xt
-t[v4H
-t^HcT$4I
-tcgetattr
-tcsetattr
-tgfD9U
+tftp
 tgsarmor
 tgsreq->padata != NULL
 ti != NULL
@@ -3650,49 +1136,13 @@ tktXXXXXX
 tokenID
 tokenInfo
 tokeninfo
-tolower
-toupper
 transport%d
-twfE9 u
+true
 type == KRB5_PAC_SERVER_CHECKSUM || type == KRB5_PAC_PRIVSVR_CHECKSUM
-u"+|$ 1
-u"fD9
-u#+\$$Hc
-u#LcD$<E
-u1D;F
-uOHcD$8D
-uSHcD$D
-uccanoncomp
-uccanondecomp
-uccombining_class
-uccomp
-uccomp_hangul
-uccompatdecomp
-ucdata_load
-ucdata_reload
-ucdata_unload
-ucdecomp
-ucdecomp_hangul
-ucdigit_lookup
-ucgetdigit
-ucgetnumber
-ucisprop
-uckdecomp
-ucnumber_lookup
-uctolower
-uctotitle
-uctoupper
 udp_preference_limit
 unique ID
 unknown
 unknown getaddrinfo failure
-unlink
-ure_buffer_create
-ure_buffer_free
-ure_compile
-ure_dfa_free
-ure_exec
-ure_write_dfa
 urn:constrained-delegation:transited-services
 urn:mspac:
 urn:mspac:%d
@@ -3708,18 +1158,10 @@ v4_instance_convert
 v4_realm
 value
 variable missing }
-vasprintf
 vendor
 verify_ap_req_nofail
-w L9s tt
-wRuAI
 well-known
 write
-writev
-x>H;D$Pw7
-x[^_]
-x[^_]A\A]
-x[^_]A\A]A^A_
 zephyr
 {etype}
 {etype}/{hashlenstr}
@@ -3727,79 +1169,3 @@ zephyr
 {int}/{hexdata}
 {keyblock}
 {princ} -> {princ}
-|$ E1
-|$(H3;
-|$(H3;t
-|$(H3;u
-|$(H3;u*H
-|$(H3>
-|$(H3>u
-|$(H3>u	H
-|$(H3>u<H
-|$(H3}
-|$(I3<$
-|$(I3<$u
-|$8H3;
-|$8H3;u
-|$8H3;u	H
-|$8H3;u"H
-|$8H3;u0H
-|$8H3;u1H
-|$8H3;u?H
-|$8H3;uHH
-|$8H3;uiH
-|$8H3>
-|$8H3>D
-|$8H3>u
-|$8H3}
-|$8I3<$
-|$8I3<$D
-|$8I3<$uoH
-|$8I3>u#H
-|$8I3}
-|$@H9|$0
-|$@f.
-|$HH3;
-|$HH3;u
-|$HH3;u"H
-|$HH3;uKH
-|$HH3;ucH
-|$HH3>
-|$HH3>u
-|$HH3>ujH
-|$HH3>u|H
-|$HH3}
-|$HI3<$
-|$PL)
-|$XH3;
-|$XH3;u=H
-|$XH3;uKH
-|$XH3;uSH
-|$XH3;unH
-|$XH3>
-|$XH3>D
-|$XH3>H
-|$XH3}
-|$XI3<$
-|$XI3}
-|$`L)
-|$dD;|$ }
-|$hH39
-|$hH3;
-|$hH3;u
-|$hH3>
-|$hH3>u
-|$hH3>u4H
-|$hH3>uPH
-|$hH3}
-|$hI3<$
-|$hI3>
-|$hI3>u<H
-|$xH38
-|$xH3;
-|$xH3;u
-|$xH3>
-|$xH3>u
-|$xH3}
-|$xI3>
-~(9z4t*

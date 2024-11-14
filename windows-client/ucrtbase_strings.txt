@@ -1,164 +1,46 @@
-						
-											
-	 	!	"	#	$	%	&	'	(	)	*	+	,	-	.	/	0	1	2	3	4	5	6	7	8	9	:	;	<	=	>	?	@	A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	[	\	]	^	_	`	a	b	c	d	e	f	g	h	i	j	k	l	m	n	o	p	q	r	s	t	u	v	w	x	y	z	{	|	}	~	
-	JR>8o
-	kE>fvw
-	ucrtbase.dll
-	wIE3
                           
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- 'L>[
- 8}+M8
- @38`>
- A\_^
- A^A\_
- A^A]A\_^
- A^A]_
- A^_^
- A_A^A\
- A_A^A\_^
- A_A^A]
- A_A^A]A\_
- A_A^A]A\_^]
- A_A^_
  B\kji2
  Base Class Array'
  Base Class Descriptor at (
  C>TQ
  Class Hierarchy Descriptor'
  Complete Object Locator'
- H3E H3E
- HcA<E
- Microsoft Operations Puerto Rico1&0$
  Type Descriptor'
  delete
  delete[]
- http://www.microsoft.com/windows0
- new[]
+ new
  noexcept
- t(<#t
- t8<#t+<+t
- tDE3
- t^D9
- v.H+
  volatile
-!>6'Y
-!This program cannot be run in DOS mode.
-!\$$E3
-!\$(H
-!\>G[
-!|$(H
-",X< 
 "e?<<<<<<l?
-"tGH9l$@tnH
-"usE3
 #4o>w
+#9fm
 #Ib?AG
-#Vx"&6
 $Ib?s
-$Microsoft Ireland Operations Limited1
-$`2X`F
-% moa
-%GoU?*
-%fD;B
-&	$@06p
 &?PPPPPPP?
-&fD;B
-(%D3	
-(-p:	
-(D$ H
-(D$0D
-(D$0H
-(D$0f
-(D$@D
-(D$PD
-(D$PH
-(L$ H
-(L$0D
-(L$@D
+&Sgw
 (Press Retry to debug the application - JIT must be enabled)
-(T$ H
-(T$0D
-(T?j?Y
-(\$ H
 (null)
-(t$ H
-(t$0H
-(t$@H
-(t$@L
-(t$@fH
-(t$PD
-(t$PH
-(t$PL
-(t$`H
-(t$`I
-(t$`L
-(|$ H
-(|$0D
-(|$0H
-(|$0I
-(|$@D
-(|$@E
-(|$@H
-(|$@I
-(|$PD
-(|$PI
-(|$`D
-(|$`E
-(|$pE
-)/o>	
-)>6{1n
-)D$0L
-)D$PH
-)H+}0D8m
-)Microsoft Root Certificate Authority 20100
-)\$pH
-)t$ A
-)t$ H
-)t$ H#
-)t$ I
-)t$0H
-)t$0I
-)t$PH
-)t$PH#
-)t$pH
-)u%D8)t
-)|$ H
-)|$ I
-)|$0D
-)|$@H
-)|$`H#
-)|B?d!
+(yaX
+)3M3
+)g5C
+)yIx
 *StO9>T
 *Vc>L
 *Yp3.CP+
 *Zp3.;P
-+M<7>
-+f)>0'
-+fD90
-+h->|
-,/<-w
-,0<	w!A
-,0<	w\
-,0<	wsH
++i9O
 ,<ellipsis>
-,D$Hf
 ,HR><y5
 ,HR>O
-,I<%v"H
-,I<%w
-,X< w
-,sPY7xPB7hT5g5HHrYt8rDLSM9VuZRuWZaef2e22Rs54=0Z
 -64OS
--9D	/9a
+-9D\t/9a
 -BH>t
--ey(`
 -t~kWA
-..om?
 .00cfg
-.>PJ;I:qE>
+.>\rfJBGo
 .?AVDNameNode@@
 .?AVDNameStatusNode@@
 .?AV__non_rtti_object@std@@
@@ -183,11 +65,16 @@ $`2X`F
 .CRT$XPZ
 .CRT$XTA
 .CRT$XTZ
+.VDE
+.bat
+.bss
 .bss$00
 .bss$03
 .bss$dk00
 .bss$pr00
 .bss$zz
+.cmd
+.com
 .data
 .data$00
 .data$00$brc
@@ -197,10 +84,9 @@ $`2X`F
 .data$r$brc
 .data$zz
 .edata
-.ffffff
+.exe
 .gehcont
 .gfids
-.i?0@I
 .idata$2
 .idata$3
 .idata$4
@@ -218,7 +104,6 @@ $`2X`F
 .rdata$zzzdbg
 .rsrc$01
 .rsrc$02
-.text
 .text$lp00ucrtbase.dll!20_pri7
 .text$lp01ucrtbase.dll!20_pri7
 .text$lp03ucrtbase.dll!30_clientonly
@@ -233,340 +118,103 @@ $`2X`F
 .xJ>Hf
 .xdata
 .xdata$x
-/%+)	
-/%,Y	
-/%.9	
-/%G0	
-/%P$	
-/%S5	
-/%m/	
-/%v=	
-/&A2/
-/-7/	
-/-X5	
 /2GG>!B
-/5[0	
-/=^8	
-/=~Z	
-/>58d%
-/@89~
-/h<P+
 /jfmodf
-/}(v-
-0><[cZUg^>
-0@8)u
-0A^A\_
-0A^A]A\_^
-0A^_]
-0A^_^
-0A_A^A\
-0A_A^A\_^
-0A_A^A\_^][
-0A_A^A]
-0A_A^A]A\_
-0A_A^A]A\_^[
-0A_A^A]A\_^]
-0A_A^A]_^
-0A_A^_
-0A_A^_^]
-0A_^]
+0E>X
 0X8b?~
-0f99v
-0ffffff
 0iN>/
-0twA+
 1#IND
 1#INF
 1#QNAN
 1#SNAN
-1(0&0
-1/0-0
-100701213655Z
-100706204017Z
-191219011505Z
-1<.	/>:
-1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
-200304182929Z
-20201202085824Z
-20201202133042.902Z0
-20201203085824Z0w0=
-210303182929Z0t1
-210317011505Z0
-230865+4584940
-250701214655Z0|1
-250706205017Z0~1
-2]fQ	?5!
+11UT
+11Y@
+3 FB
 3+5<t
 333333
+333@
+37>k
 3>N;kU
 3>fvw
-4nH;t$8t
-5?>0Vr
-5Rich
+3?tr
+3A~a
+4D/1
+4\tgA
+51>W
+5?>0Vr\n
 5m8>8=t
-7Z>@B1
+6NK>
+6\fXO>
+6\fXO>\ntA
+7>I0
+7?GX
 7h>?8
-8"t:H
-8"tCH
-8$u'D
-80t%2
-80tWD
+7yp>
+7~xh
 82Pa8
-8?u$H
 8@d'K
-8@tFH
-8@t`D
-8@taH
-8@u4H
-8A_A^A]A\_^][
 8Bexpf
-8C,u	
-8C4u	
-8Dv2f
-8Ht+I
 8J;@ts
-8K,u	E
-8K,uSH
-8K4u	E
-8K4uSH
-8O~/A
-8Xtwf
-8Xu;H
-8_^][
-8dv&f
-8hu-A
 8ke?;
-8lulH
-8pt,f
-9	t	H
-9	tYH
-9$t>H
-9$uFH
-9)~P3
 93oc=O
 99jd9
-99~CE
-9CuSfD9q
-9D$LtNH
-9X@u+
+9>70
 9Z=K7
-9\$Pu	
-9\$P|
+9a>d
 9g>@3
-9|$Xt
-9|$XtiH
-:>)*	v
-:>t6k'
-:rMf;
-:r]f;
-:rmf;
-:u!A8O
-:u$fA9W
-:u(f9Q
-;.u1L
-;9E0t
+;1cb
 ;BIb?
-;H9>&X
-;I9}(tiH
-;\$0|
-;\$p|
-<	w	@
-<	w`I
-< t+<#t
-< u`A
-< v4<"t'
-< w	H
-<(t'H
-<-td,I<%w
-<-u^H
-<0t/<2t
-<0|LE
-<1~1<3~$<4t9<5t
-<>#n2
-<?uNH
-<Ct,<D
-<Ct-<D
-<D~b<G
-<It4<L
-<Kt',L
-<StK<XtX<Zt
-<StLA:
-<\t	<.u	H
-<_u{H
-<`t'H
-<att<c
 <ellipsis>
-<htl<jt\<lt4<tt$<wt
-<nt?<ot#<pt
-<p=t;fD94pt4H
 <program name unknown>
 <unknown>
-<ut@@:
-<wtC<ItH<htx<L
-= {[8V
+=1cb
+=87M
 =?7N1>m
+=cQ6
+=e2m
 =imb;D
->+>ZQ"v
->+>b]>q
->1tLI
->D	s0
+>0Av
 >UUUUUU
->ffffff
->http://www.microsoft.com/pki/certs/MicCodSigPCA_2010-07-06.crt0
->http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
->http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+>cQ6
 >jtm}S
->uZ>`
->}|Az
-? ;aDi
 ?!5WOo
-?#a|Vn
-?+>^m
+?1cb
 ?333333
+?3Fx
 ?49HoKC
 ?7zQ6$
-?7{KV
+?7{KV\nU
 ?8UUUUU
 ?8bunz8
-?:kP<
-?:u=M
-?:u@M
-?;#]>Jb
 ?@En[vP
 ?BUUUUU
-?E=$% B
 ?JIE]0\
 ?JV8f
 ?Ji@9
 ?N]TUUU
-?QY^&
 ?R0I?
-?TY,>5
 ?UUUUUU
-?U[y[
-?W(~N
 ?WUUUUU
-?XuYH
-?Xu`I
+?\rz0w
+?\vxMW
+?exp
 ?f`Y4
+?id7
 ?kxG2)
+?lZE
 ?logf
-?t_v>
-?{Q}<
-@ D!H
-@ D!P
-@ D!X
-@.data
-@.reloc
-@.rsrc
-@8(t)
-@8)u&I
-@83t-
-@84)u
-@87t2
-@88u	
-@89u*M
-@8<.u
-@8j(t
-@8l$8t
-@8l$Ht
-@8q*uSH
-@8q,uKH
-@8q2uSH
-@8q4uKH
-@8q<uKH
-@8t$8t
-@8|$@
-@8|$@t
-@8}Ot
-@>%>b
-@A^_^
-@A_A]A\_]
-@A_A^A\
-@A_A^A\_^
-@A_A^A]A\_
-@A_A^A]A\_^[
-@A_A^A]A\_^]
-@A_A^]
-@A_A^_
-@A_A^_^[
-@A_A^_^]
-@A__]
-@HcAPH
-@HcC(H
-@SATH
-@SUVH
-@SUVWATAUAVAWH
-@SUVWATAVAWH
-@SUVWAVH
-@SVWATAUAVAWH
-@SVWATAUAWH
-@SVWATAVAWH
-@SVWAVAWH
-@SVWH
-@UATAUAVAWH
-@UATAUAVH
-@UAVAWH
-@USVWATAUAVAWH
-@USVWATAVAWH
-@USVWAVH
-@USWATAVH
-@USWH
-@UVWATAUAVAWH
-@UVWAVAWH
-@UWAVH
-@UWAWH
-@WAVAWH
+?qBJ
+?rAj
+?xw7
+?ysB
 @^8U)zj
-@acosf
-@b;zO]
-@ffffff
 @hcjz
 @pn>6
-@tpf;
-@vfA;
-@~dV=x
-A#	Hc
-A03>A|
-A8,6u
-A84,u
-A84/u
-A:8ucI
-A>l$/
+A0<D
 A>pP&
-AA,A$
-AA<Fu
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 AK>(v
-ATAUAWH
-ATAVAWH
-AUAVAWH
 AUUUUUU
-A^A\_[]
-A^A\_^]
-A^A]A\]
-A^A]A\_^
-A^_^[]
-A^_^][
-A_A\]
-A_A\_
-A_A]A\
-A_A]A\_]
-A_A]A\_^[
-A_A^A\
-A_A^A\_]
-A_A^A\_^
-A_A^A\_^[]
-A_A^A\_^][
-A_A^A]A\]
-A_A^A]A\_
-A_A^A]A\_^[
-A_A^A]A\_^[]
-A_A^A]A\_^]
-A_A^A]A\_^][
-A_A^]
-A_A^_
-A_A^_^]
 A`1w>
 Access violation - no RTTI data!
 Adr?V
@@ -578,37 +226,27 @@ April
 AreFileApisANSI
 Arg list too long
 Assertion failed!
-Assertion failed: %Ts, file %Ts, line %d
+Assertion failed: %Ts, file %Ts, line %d\n
 Attempted a typeid of nullptr pointer!
 August
-B HcU
-B(I9A(u
-B0HcU
-B84(u
+B,fK
 BC1%M
-BC?>6t9^	c:>
+BC?>6t9^\tc:>
 BF>^G
 Bad address
 Bad dynamic_cast!
 Bad file descriptor
 Bad read pointer - no RTTI data!
-Bgt	3
+Beep
 Broken pipe
-C Hcx
-C0Hc	H
-C5R?	
+C5R?\t
 C6;R&
-C84>u
-C@8.u
-CA, <Zw
-CA< t(<#t
-CBfA;
 CI%B*
+CK\vI
 CL:>8
 COMSPEC
 CWD>~3
-C]O	WQ?
-C^][v
+C]O\tWQ?
 Ccoshf
 CloseHandle
 CompareStringEx
@@ -621,170 +259,19 @@ CreateProcessW
 CreateThread
 Csinhf
 Cy2@K>
-D	x`I
-D W?{W
-D$  H
-D$ -l
-D$ E3
-D$ H;
-D$ H;F
-D$ f#
-D$ fA#
-D$ fA;
-D$$f;
-D$(E3
-D$(H+
-D$(H;
-D$(I#
-D$(fA;
-D$(fD
-D$(fE#
-D$*fE
-D$,f;
-D$,fE
-D$.fA;
-D$0=H
-D$0A9h
-D$0A9p
-D$0A9x
-D$0D9`
-D$0E3
-D$0H!L$ H
-D$0H#
-D$0H+
-D$0H9D$8
-D$0H;
-D$0HcH
-D$0f#
-D$0fH
-D$2t)
-D$4+D$P
-D$49C
-D$4f;
-D$6t)
-D$8E3
-D$8HcJ
-D$8I;
-D$8L9
-D$<f;
-D$<fA;
-D$@=@W
-D$@E3
-D$@H!D$ 3
-D$@H+
-D$@H;
-D$@H;E
-D$@L+
-D$@f#
-D$BH;
-D$Df;
-D$HE3
-D$HI+
-D$HL9gXt
-D$Hf#
-D$L;D$t}nD
-D$Lf;
-D$P I
-D$P: H
-D$PA#
-D$PE3
-D$PH;
-D$PH;G
-D$PI;
-D$PI;F
-D$PL;
-D$PfA#
-D$Tf;
-D$X-H
-D$XI+
-D$XI;
-D$\f;
-D$`: H
-D$`A+
-D$`H;
-D$`Hc
-D$`L;
-D$``H
-D$`f+
-D$h9t$P
-D$hH;C
-D$hf#
-D$pfD
-D$tp	
-D$xA;
-D$~t%
-D+AHH
-D+d$4
-D+d$@L
-D8 t_3
-D8(tXH
-D8)u#L
-D8/udA
-D81u%L9r
-D88t'H
-D88tEH
-D8?t	H
-D8?t"
-D8A:u]H
-D8D$5t2
-D8D$8t
-D8K<u
-D8L$0uP
-D8d$8
-D8d$8t
-D8d$Ht
-D8d$X
-D8d$Xu#
-D8d$ht
-D8i*uKH
-D8i2uKH
-D8i:uTH
-D8k*u
-D8k2u
-D8k2u-M
-D8k:u
-D8l$H
-D8l$X
-D8l$ht
-D8qTuYD9qP~SH
-D8qTuaD9qP~[H
-D8qTubD9qP~\H
-D8t$8t
-D8uOt
-D8|$(t
-D8|$Ht
-D8|$`
-D8|$`t
-D9%T!
-D9-$S
-D9c(|
-D9d$x
-D9l$$
-D;d$x
-D<P0A:
 December
 DeleteCriticalSection
 DeleteFileW
 Directory not empty
+Dk|o
 Domain error
+Dt@B
 DuplicateHandle
-E#[_:
-E+KHH
-E.@8}.t @8x
-E.@8}.t#L
-E0HcH
-E0Lc`
-E8 tY
-E8!t>
-E8"tD
-E8&t,H
-E8,4u
-E8B:u
-E9:.@
 E>nEA
-Ehttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_2010-07-06.crl0Z
-Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
-Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+ET5>
+E[\rn?gc
+EiU>
+EiUL
 EncodePointer
 EnterCriticalSection
 EnumSystemLocalesEx
@@ -793,17 +280,12 @@ Exec format error
 ExitProcess
 ExitThread
 Expression: 
-F 	x`H
-F D	`
-F D	x
-F D	x`I
-F E	~
-F8,?u
-F8<'u
-F8<(u
 F>qUxv
-FD$PI
+FEMh\f
+FF\n@acosf
+FMVk
 February
+FfW?
 File exists
 File too large
 File: 
@@ -818,18 +300,14 @@ FlsFree
 FlsGetValue
 FlsSetValue
 FlushFileBuffers
-For information on how your program can cause an assertion
+For information on how your program can cause an assertion\nfailure, see the Visual C++ documentation on asserts
 FreeEnvironmentStringsW
 FreeLibrary
 FreeLibraryAndExitThread
 Friday
 Function not implemented
-G 3C`
-G0 u{
-G1@(\/@
-GA,A$
+G>US
 G_logbf
-GenuD
 GetACP
 GetActiveWindow
 GetCPInfo
@@ -885,55 +363,11 @@ GetUserObjectInformationW
 GetXStateFeaturesMask
 GfZ+?p
 GrJoq>@
-H AVH
-H VWATAVAWH
-H WATAUAVAWH
-H!D$ H
-H#L$0H;
-H+D$(L
-H99u+
-H9>tlH
-H9D$PuCH
-H9L$HuOA
-H9Q(t
-H9Q8t
-H9\$X
-H9k u
-H;D$Pu
-H;D$`
-H;XXs
-H;t$(u
-H;t$8t H
-H;t$pu
-H;xXu5
-HA^_^[
+H NQ
+H.3T
+H>r1
 HH:mm:ss
-H[><y5
-Hc;9E0t
-HcC0H
-HcD$0H
-HcD$@H
-HcD$HH
-HcD$PH
-HcD$pH
-HcE H
-HcE H+
-HcE0H
-HcE8H
-HcG H
-HcK H
-HcL$@H
-HcL$`H
-HcM@H
-HcMDH
-HcMHH
-HcMPH
-HcM`H
-HcO H
-HcS8H
-Hcl$0
-Hc{ H
-Hc}`M
+HMXB
 HeapAlloc
 HeapCompact
 HeapFree
@@ -942,11 +376,6 @@ HeapReAlloc
 HeapSize
 HeapValidate
 HeapWalk
-HfA;(
-I LcA
-I$E9B
-I$E;B
-I0G1-0+
 I:!A9
 I;u>A
 IND)S
@@ -971,141 +400,48 @@ IsProcessorFeaturePresent
 IsValidCodePage
 IsValidLocale
 IsValidLocaleName
-I|$X3
-J `>,
 JIE]0\
+JPO@
 JanFebMarAprMayJunJulAugSepOctNovDec
 January
-K&>.yC
-K0HcQ
-K0Hcq
-K0t$A
-KnILk
+July
+June
 Kp'n7P%
 Kp/n7P+
-KyIE3
-K~Je#>!
-L!d$(L!d$@D
-L!|$(L!
-L$ E3
-L$ SH
-L$ SUVWH
-L$ UVWATAUAVAWH
-L$ UWAVH
-L$ VWATAVAWH
-L$ VWAVH
-L$ WAVAWH
-L$ WH
-L$ fD
-L$$f;
-L$&D8d$&t4A
-L$(D;
-L$(H3
-L$(f;
-L$,f;
-L$0E3
-L$0H3
-L$0H;
-L$0f#
-L$0fH
-L$0fI
-L$4+L$@
-L$4f;
-L$8E3
-L$8H3
-L$8fE
-L$<f;
-L$@;|
-L$@@8}
-L$@A+
-L$@D8]
-L$@E3
-L$@H3
-L$@H;K
-L$@tJ
-L$@uU
-L$Df;
-L$HE3
-L$HH3
-L$Lf;
-L$PE3
-L$PH+
-L$PH3
-L$PLc
-L$Tf;
-L$XE3
-L$XH+
-L$XfD
-L$\f;
-L$`;M
-L$`H3
-L$`f;
-L$h;M
-L$hE3
-L$pE3
-L$pfA;
-L$xE3
 L-n>4
-L97tzH
-L9A u
-L9d$p
-L9s A
-L9s0A
-L9s8t
-L9{ A
-L9{0A
-L;l$PrCH
-L;t$ u
-L;t$X
-L;|$8u
+L>ev
+L>p8
 L?UUUUUUU?
 LCIDToLocaleName
 LCMapStringEx
 LCMapStringW
-LcA<E3
-LccPE
-LcmPA
+LWG>
+LWW>
 LeaveCriticalSection
 Line: 
-Lj[;>
 LoadLibraryExW
 LocaleNameToLCID
 LocateXStateFeature
 LockFileEx
-M H1E
 M'y>0y
-M+<$I
-M9&toA
-M9/tJE
 MM/dd/yy
-MXfA+
 March
 MessageBoxA
 MessageBoxW
-Microsoft Code Signing PCA 2010
-Microsoft Code Signing PCA 20100
-Microsoft Corporation0
-Microsoft Corporation1
-Microsoft Corporation1&0$
-Microsoft Corporation1(0&
-Microsoft Corporation1)0'
-Microsoft Corporation1200
-Microsoft Time-Stamp PCA 2010
-Microsoft Time-Stamp PCA 20100
-Microsoft Time-Stamp Service
-Microsoft Time-Stamp Service0
 Microsoft Visual C++ Runtime Library
 Monday
 MoveFileExW
 Mp'n_
 Mp/n_
 MultiByteToWideChar
-N D	y
-N0L0J
 N3`d?
 N>O=I9
+N>VF
 NAN(IND)
 NAN(SNAN)
+NKeb
+NQ?s
+NULL
 NUXMM
 No child processes
 No error
@@ -1118,40 +454,28 @@ No such process
 Not a directory
 Not enough space
 November
-O0LcQ
-O0M0K
-OF>;^
+OZQ%
+O_yI
 October
 Op'n5P%
 Op/n5P+
 Operation not permitted
 OutputDebugStringW
-P>q_Y~
-PATHH
-PA^_]
-PA^_^
-PA_A^A]A\_^]
-PA_A^]
-PA_A^^
+PATH
 PeekConsoleInputA
 PeekNamedPipe
 Permission denied
 Program: 
-P|> ,o
 Q5rHg,>
-Q>.3Z<
-QD$`H
-QS_z,R#1
+QAf?
 QueryPerformanceCounter
 QueryPerformanceFrequency
-R8HcH
 RSDSx(p
 RaiseException
 Read-only file system
 ReadConsoleInputW
 ReadConsoleW
 ReadFile
-Redmond1
 RemoveDirectoryW
 Resource deadlock avoided
 Resource device
@@ -1166,16 +490,11 @@ RtlPcToFileHeader
 RtlUnwind
 RtlUnwindEx
 RtlVirtualUnwind
+S9>H
+S;uD
 S>$hkDh$h>[2
 SAy:=A
 SNAN)
-SUVWATAUAVAWH
-SUVWATAUAVAWL
-SUVWH
-SUWATAUAVAWH
-SVWATAUAVAWH
-SVWAVH
-S^>#/
 Saturday
 September
 SetConsoleCtrlHandler
@@ -1193,46 +512,18 @@ SetStdHandle
 SetThreadStackGuarantee
 SetUnhandledExceptionFilter
 Sleep
-StFfA;
-StdfA;
+Sp'n
+Sp/n
 SunMonTueWedThuFriSat
 Sunday
-Sw7th
-Syst3
 SystemFunction036
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
-T$ D)s
-T$ E2
-T$ E3
-T$ Lc
-T$$L+
-T$(E3
-T$09j
-T$0@2
-T$0E3
-T$0H+
-T$0I;
-T$0L+
-T$8E3
-T$8fA
-T$PD+
-T$PE3
-T$PH3
-T$`fA
-T$xD;D$x
-T$xE2
-T%,3	
-T%,T	
-T%90	
-T%[+	
-T%bH	
-T-)1	
-T5;9	
-T=16	
+T9K<
+TCjA
+TUUU
 TUUUU
 TerminateProcess
-Thales TSS ESN:32BD-E3D5-3B1D1%0#
 Thursday
 TlsAlloc
 TlsFree
@@ -1244,165 +535,70 @@ Too many open files in system
 Tuesday
 TzSpecificLocalTimeToSystemTime
 UA>N0Wl
-UATAUAVAWH
-UAVAWH
 UNKNOWN
-USVWATAUAVAWH
-USVWAVH
-USVWH
 UTF-16LEUNICODE
 UTF-8
+UUUU
 UUUUU
 UUUUUU
-UVAWH
-UVWATAUAVAWH
-UVWATAVH
-UVWAVAWH
-UWATAUAWH
-UWATAVAWH
-UWAVH
 UnhandledExceptionFilter
 Unknown error
 Unknown exception
 UnlockFileEx
 Up'n1P%
 Up/n1P+
-V6E>`"(5
-VAVAWH
-VD$Pf
-VT$PD
-VUUUD
-VWATAUAVAWL
-VWATAUAVH
-VWATAVAW
-VWATAVAWH
-VWAUAVAWH
-VWAUH
-VWAVH
+V=9c
 VirtualAlloc
 VirtualProtect
 VirtualQuery
 Visual C++ CRT: Not enough memory to complete call to strerror.
+W 7x
+W5C,
 W?fff?
-WATAUAVAWH
-WATAVH
-WATAWH
-WAUAVH
-WAVAWH
 WPAIS_4
 WaNd?
 WaitForSingleObject
 Wak>E
-Washington1
 Wednesday
 WideCharToMultiByte
+Wpgn
+Wpon
 WriteConsoleW
 WriteFile
-WtHv:A
 X 843"8
-X UVWATAUAVAWH
-X!t5~
-X%.,	
-X%Ji	
-X%T8	
-X%]M	
-X%rV	
-X-#.	
-X-(4	
-X-3.	
-X-:@	
-X-< 	
-X->$	
-X-G7	
-X-O7	
-X-W7	
-X-_7	
-X-f$	
-X-wy	
-X-}"	
-X5G7	
-X5O7	
-X5W7	
-X5_7	
-X=}"	
-XA_A^A]A\_^[]
-Y% 3	
-Y%YM	
-Y%ZG	
-Y%j@	
-Y-$N	
-Y-;.	
-Y-FH	
-Y-H=	
-Y-L4	
-Y-\7	
-Y-p)	
-Y5_7	
-Y=#^	
-Y=?*	
-Y=q*	
+X/4B
+X>0S
+XV"9
+Y8a:
 Y>kX>
 Y>kX>M
-YD$@f
+YZ4(
+Yu!m
+YxN(
 Z>w_F
+ZSq>
 Z\>z8
-Zod(^?
-[ UVWATAUAVAWH
 [*ncd>0
 [*ncd>TQ
 [aOni*{
 [thunk]:
-\$ @8;t
-\$ D8t$(uhH
-\$ E3
-\$ H!D$(L
-\$ H;
-\$ I;
-\$ UH
-\$ UVWATAUAVAWH
-\$ UVWAVAWH
-\$ UVWH
-\$ VAVAWH
-\$ VWATH
-\$ WH
-\$(E;
-\$(I+
-\$(I;
-\$(fD
-\$0H;
-\$0L+
-\$5L3
-\$8D8|$ t$L
-\$8D8|$@t$L
-\$@H;
-\$Hu^
-\$XI9
-\$`A+
-\$`A;
-\$afD
-\$gm?
-\$ps0
-\%	+	
-\%6,	
-\%_/	
-\%b2	
-\-#.	
-\-6G	
-\-V@	
-\5|+	
-\=;*	
-\=?*	
-\=m*	
-\=q*	
-\>$hkDh$h>
-\ffff
-])6M>&
-]-?Z8
-]>)2X
-^8U)zj
+\nMP9
+\nh?oT
+\nk>oB
+\r&gwQ
+\t \t!\t"\t#\t$\t%\t&\t'\t(\t)\t*\t+\t,\t-\t.\t/\t0\t1\t2\t3\t4\t5\t6\t7\t8\t9\t:\t;\t<\t=\t>\t?\t@\tA\tB\tC\tD\tE\tF\tG\tH\tI\tJ\tK\tL\tM\tN\tO\tP\tQ\tR\tS\tT\tU\tV\tW\tX\tY\tZ\t[\t\\t]\t^\t_\t`\ta\tb\tc\td\te\tf\tg\th\ti\tj\tk\tl\tm\tn\to\tp\tq\tr\ts\tt\tu\tv\tw\tx\ty\tz\t{\t|\t}\t~\t
+\t9sv
+\tJR>8o
+\t\t\t\n\t\v\t\f\t\r\t
+\tcQr
+\tkE>fvw
+\tucrtbase.dll
+\vA03>A|
+\veBV
+]u9g
 ^<V7w
-^>&qN
 ^RfN>
+^axb
 _Cbuild
 _Cmulcc
 _Cmulcr
@@ -1495,8 +691,6 @@ __iscsym
 __iscsymf
 __iswcsym
 __iswcsymf
-__p___argc
-__p___argv
 __p___wargv
 __p__acmdln
 __p__commode
@@ -1560,7 +754,6 @@ __unaligned
 __uncaught_exception
 __uncaught_exceptions
 __vectorcall
-__w64 
 __wcserror
 __wcserror_s
 __wcsncnt
@@ -1646,12 +839,14 @@ _dsign
 _dsin
 _dtest
 _dunscale
+_dup
 _dup2
 _dupenv_s
 _ecvt
 _ecvt_s
 _endthread
 _endthreadex
+_eof
 _errno
 _except1
 _execl
@@ -2429,9 +1624,6 @@ _o__itoa
 _o__itoa_s
 _o__itow
 _o__itow_s
-_o__j0
-_o__j1
-_o__jn
 _o__kbhit
 _o__ld_int
 _o__ldclass
@@ -2867,9 +2059,6 @@ _o__wtoll_l
 _o__wunlink
 _o__wutime32
 _o__wutime64
-_o__y0
-_o__y1
-_o__yn
 _o_abort
 _o_acos
 _o_acosf
@@ -3455,15 +2644,6 @@ _wtoll_l
 _wunlink
 _wutime32
 _wutime64
-` AUAVAWH
-` UAVAWH
-`+!]?
-`.rdata
-`>n>w%
-`A^_^
-`A^_^[]
-`A_A^A]A\_][
-`A_A^A]A\_^]
 `RTTI
 `adjustor{
 `anonymous namespace'
@@ -3512,9 +2692,10 @@ _wutime64
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-aD	k0
+a6>r
 abcdefghijklmnopqrstuvwxyz
 abort
+acos
 acosf
 acosh
 acoshf
@@ -3552,33 +2733,36 @@ api-ms-win-core-timezone-l1-1-0.dll
 api-ms-win-core-util-l1-1-0.dll
 asctime
 asctime_s
+asin
 asinf
 asinh
 asinhf
 asinhl
+atan
 atan2
 atan2f
 atanf
 atanh
 atanhf
 atanhl
+atof
+atoi
+atol
 atoll
-b?^Cy
 bad exception
 bad message
 blank
-bp(=>?g
+bool
 bsearch
 bsearch_s
 btowc
 b~6>c3W
-c [1>H'
-c(>\,
-c0&>`
 c16rtomb
 c32rtomb
-c>v	k
+c>F2
+c>v\tk
 c?FA@s}
+cabs
 cabsf
 cabsl
 cacos
@@ -3588,6 +2772,7 @@ cacoshf
 cacoshl
 cacosl
 calloc
+carg
 cargf
 cargl
 casin
@@ -3602,16 +2787,21 @@ catanh
 catanhf
 catanhl
 catanl
+cbrt
 cbrtf
 cbrtl
+ccos
 ccosf
 ccosh
 ccoshf
 ccoshl
 ccosl
+ceil
 ceilf
+cexp
 cexpf
 cexpl
+char
 char 
 char16_t
 char32_t
@@ -3624,6 +2814,7 @@ clearerr_s
 cli::array<
 cli::pin_ptr<
 clock
+clog
 clog10
 clog10f
 clog10l
@@ -3633,6 +2824,7 @@ cmd.exe
 cntrl
 coclass 
 cointerface 
+conj
 conjf
 conjl
 connection aborted
@@ -3644,7 +2836,10 @@ const
 copysign
 copysignf
 copysignl
+cosf
+cosh
 coshf
+cpow
 cpowf
 cpowl
 cproj
@@ -3653,6 +2848,7 @@ cprojl
 creal
 crealf
 creall
+csin
 csinf
 csinh
 csinhf
@@ -3661,156 +2857,47 @@ csinl
 csqrt
 csqrtf
 csqrtl
+ctan
 ctanf
 ctanh
 ctanhf
 ctanhl
 ctanl
-d$ D!
-d$ E3
-d$ UAVAWH
-d$0E3
-d$8A;
-d$8D;d$`
-d$8E3
-d$9fD
-d$dD;d$l
-d$pD!d$t
+d8-t
+d8L2
 d?000000`?
+dRL>
 dddd, MMMM dd, yyyy
 destination address required
+dgf|
 digit
 double
-dt0fA;
 e+000
-e0A_A^A]A\_^]
-e0A_A^]
+e>US
+eF>t
 eLK(w
-eXA_A^A]A\_^[]
-emRoH
 enum 
-eofA;
-epA_A^]
+erfc
 erfcf
 erfcl
+erff
+erfl
+exit
+exp2
 exp2f
 exp2l
+expf
 expm1
 expm1f
 expm1l
 extern "C" 
-f3EZf
-f3E^f
-f9)u$H9j
-f9)u1H
-f9)uOH
-f9,Hu
-f9,H}
-f9,Ju
-f9,Xu
-f9,Yu
-f9,^u
-f9,pu
-f9,~u
-f94Au
-f94Cu
-f9<Au
-f9<Ju
-f9<Pu
-f9<Qu
-f9\$ t
-f9\$Bu
-f9\$x
-f9t$b
-f;C(t
-f;C0t
-f;\$ r
-f;\$ s
-f;\$(
-f;\$(r
-f;\$0
-f;\$8
-f;\$@
-f;\$hs
-f;\$ls
-f;\$ps
-f;\$ts
-fA9	t	I
-fA9,Iu
-fA94@u
-fA94Du
-fA94nu
-fA99u
-fA9<Hu
-fA9<^u
-fA9LG
-fA9TM
-fA;(t(fA98t
-fA;8unI
-fB9,Nu
-fB94Bu
-fB94Ou
-fB9<@u
-fB9<Hu
-fB9\u
-fB9tm
-fC94gu
-fC94~u
-fD9	t(L
-fD9"u
-fD9#A
-fD9$Ou
-fD9$wu
-fD9't
-fD9(u
-fD9*r&
-fD9,Cu
-fD9,Hu
-fD9,ku
-fD9,yu
-fD90t
-fD90u	
-fD92t
-fD93s
-fD94Au
-fD94Gu
-fD94H|;D
-fD94Ku
-fD94Nu
-fD94Vu
-fD94iu
-fD96s
-fD97t
-fD9;u
-fD9<Au
-fD9<Bu
-fD9<Gu
-fD9<qu
-fD9>s
-fD9?t
-fD9?td@
-fD9\$pt
-fD9t$b
-fD9|G
-fD9|H
-fE9,Du
-fE9,Fu
-fE9,vu
-fE9,wu
-fE9,|u
-fE91t>A
-fE94Au
-fE94Gu
-fE98t'
-fE9<~u
-fE9>s
-fE9|E
-fF94{u
-fF9<fu
-fG94Hu
-fJBGo
-failure, see the Visual C++ documentation on asserts
+f1M\r
+fD>b
+fGa>
+fWi?
+fabs
 fclose
+fdim
 fdimf
 fdiml
 feclearexcept
@@ -3818,14 +2905,12 @@ fegetenv
 fegetexceptflag
 fegetround
 feholdexcept
+feof
 ferror
 fesetenv
 fesetexceptflag
 fesetround
 fetestexcept
-fffff
-ffffff
-fffffff
 fflush
 fgetc
 fgetpos
@@ -3835,10 +2920,15 @@ fgetws
 float
 floor
 floorf
+fmaf
+fmal
+fmax
 fmaxf
 fmaxl
+fmin
 fminf
 fminl
+fmod
 fmodf
 fopen
 fopen_s
@@ -3848,6 +2938,7 @@ fputwc
 fputws
 fread
 fread_s
+free
 freopen
 freopen_s
 frexp
@@ -3856,34 +2947,35 @@ fsetpos
 ftell
 fwrite
 g9@x!8
+gd>Z
 generic-type-
+getc
 getchar
 getenv
 getenv_s
+gets
 gets_s
 getwc
 getwchar
-gfffA
-gfffE
-gfffL
-gfffffffH
 graph
+h0'D
 h>1my
-hA_A^A]A\_^[]
 hX%}9
 hj>>d
 host unreachable
+hp'n
+hp/n
 hypot
-i/l.q
-iD	c0
-iD	{0
+i>VF
 identifier removed
 ilogb
 ilogbf
 ilogbl
 imaxabs
 imaxdiv
+ind)
 inity
+int 
 ip'nEP%
 ip/nEP+
 is_wctype
@@ -3914,32 +3006,21 @@ iswspace
 iswupper
 iswxdigit
 isxdigit
-iu+-,
-j>>A?1
-j?V()
-j?{$*
-k(+sP+
-k(+sPL
-k4+kP+
-k>4	F
+jeTb
+jp'n
+jp/n
+k=yI
+k>4\tF
+k>RU
+kNB'
+kU'9
 kw= g
-kwG9AW
-l$ E3
-l$ VWATAVAWH
-l$ VWAVH
-l$"fA
-l$(+L$<
-l$0E;
-l$2fE
-l$@E3
-l$HA_A^A]A\_^
-l$IfD
-l$PE3
-l$`E3
-l$`I;
-l$`M;
-l$pE3
+l8r9
+lT19
+lWi]
+labs
 ldexp
+ldiv
 lgamma
 lgammaf
 lgammal
@@ -3957,10 +3038,14 @@ log10f
 log1p
 log1pf
 log1pl
+log2
 log2f
 log2l
+logb
 logbf
 logbl
+logf
+long
 long 
 longjmp
 lower
@@ -3970,7 +3055,10 @@ lrintl
 lround
 lroundf
 lroundl
-l|0fA;
+m?H7
+mG4>
+mO-B
+m\nXo
 malloc
 mblen
 mbrlen
@@ -3990,12 +3078,18 @@ memmove
 memmove_s
 memset
 message size
+modf
 modff
+mpgn
+mpon
+n"h9
 n03>Pu
 n>log2
 n]?iJ
 nan(ind)
 nan(snan)
+nanf
+nanl
 nearbyint
 nearbyintf
 nearbyintl
@@ -4014,15 +3108,17 @@ no message
 no message available
 no protocol option
 no stream resources
+norm
 normf
 norml
 not a socket
 not a stream
 not connected
 not supported
-ntelA
+o9sp
+o?GS
 oI>O7
-oK0D$"<
+oI>b
 obwQ4
 operation canceled
 operation in progress
@@ -4032,26 +3128,13 @@ operator
 operator "" 
 operator co_await
 operator<=>
-ot$ H
-ot$0H
-ot$@H
-ot$PH
+owM&
 owner dead
-oypfD
-o|$0f
-o|$Pf
-o|$`f
-p AWH
-p WATAUAVAWH
-p WAVAWH
-p<g~g<itQ<ntF<ot-<pt
 p>.G1
-pA^_]
-pA_A^A]A\_^[
-pA_A^A]A\_^]
-pLc}X
+p>Y3
 perror
 pm>6/
+powf
 print
 private: 
 protected: 
@@ -4059,7 +3142,9 @@ protocol error
 protocol not supported
 public: 
 punct
+putc
 putchar
+puts
 putwc
 putwchar
 q!@Xx
@@ -4068,27 +3153,11 @@ qS>g?h3
 qsort
 qsort_s
 quick_exit
-r	Vr.>T
-r#f;T$(
-r)fA;
-r2f;U
-r4f;M
-r7f;U
-r7f;\$`
-r9f;\$`
-rBf;M
-rEf;U
-rKf;\$X
-rMf;\$X
+r9T6
 rNm>)
-rOD8f
-rPf;M
-rSf;U
-r^f;M
-r_f;\$P
-raf;U
-raf;\$P
+r\tVr.>T
 raise
+rand
 rand_s
 realloc
 remainder
@@ -4100,46 +3169,36 @@ remquof
 remquol
 rename
 rewind
-ri9O vdH
+rint
 rintf
 rintl
-rlf;M
-rlfA;
 ro?!M
-rof;U
 round
 roundf
 roundl
-rsf;\$H
-ruf;\$H
-rzf;M
-r}f;U
-r~akow
-s WATAUAVAWH
-s%fD9
-s(+kPH
-s4+sP+
+sHF'
 scalbln
 scalblnf
 scalblnl
 scalbn
 scalbnf
 scalbnl
-sefA;
 set_terminate
 set_unexpected
 setbuf
 setjmp
 setlocale
 setvbuf
-sfD9\$pu
 short
 short 
 signal
 signed 
+sinf
+sinh
 sinhf
 snan)
 space
+sqrt
 sqrtf
 srand
 state not recoverable
@@ -4183,82 +3242,9 @@ strtoumax
 struct 
 strxfrm
 system
-t	H9Q
-t	H9Q(t
-t	H9Q8t
-t	L9{
-t	L9{8t
-t	f97
-t D8#t5H
-t fA;
-t!E8B:u
-t"HcM`H
-t$ <`
-t$ E3
-t$ UWATAUAWH
-t$ UWATAVAWH
-t$ UWAVH
-t$ WATAUAVAW
-t$ WATAUAVAWH
-t$ WATAVH
-t$ WAVAWH
-t$ WH
-t$(fE
-t$0A9~
-t$0E3
-t$8H;
-t$8I;
-t$8L;
-t$8xTH
-t$@8)t
-t$@Hc
-t$HA_A^A]A\_
-t$XE2
-t$Xu/2
-t$`L3
-t$hD9D$t
-t$pE3
-t$xfD
-t%D9N
-t%E8e
-t%LceoI;
-t%fE9
-t&A88t
-t'HcV
-t)IcV
-t*8K4u
-t*f9:t%I+
-t+D8!t+I+
-t-8K,u
-t-fA;
-t2;\$0t%
-t4@8+t*
-t4A90}
-t4I90}
-t5A9~
-t5HcP
-t5LcF
-t7H9t$PH
-t7f;C8u
-t;@8+u
-t<@8/tZ
-t?<.t
-t@HcS
-tD@8/u
-tED;]
-tEHcR
-tFA8)tAI
-tG9t$HtAf9\$h
-tGD8k*u-M
-tGD8k:u-M
-tLfA99tFH
-tNH+y
-tRLcY
-tX<Zt
-t^fD9}
-taD86t\I
+tanf
+tanh
 tanhf
-tefD96t_I
 template-parameter-
 terminate
 text file busy
@@ -4266,8 +3252,6 @@ tgamma
 tgammaf
 tgammal
 timed out
-tjf90te
-tjf91teH
 tmpfile
 tmpfile_s
 tmpnam
@@ -4278,37 +3262,12 @@ toupper
 towctrans
 towlower
 towupper
-trD8?u
 trunc
 truncf
 truncl
-tsD8>u
-twIcF
-t~y#H
-u HcA<H
-u"HcMDH
-u"HcMHH
-u$HcC(H
-u,HcH<H
-u-Ic@(I
-u1!D$0H
-u1D9v
-u4I9}(
-u5!D$0eH
-u?D9Z
-uD@87u)H
-uD@8>u)I
-uDM99t?H
-uL9\$0~!H
-uW;S 
-uX9D$0tRL
-uYD9v
-u[9D$0tUL
-u[M9}
 ub8c@
 ucrtbase.pdb
-ufH9|$PL
-ugH9}ot
+uh0>
 ujGs?
 unexpected
 ungetc
@@ -4316,21 +3275,15 @@ ungetwc
 union 
 unsigned 
 upper
-utAf;
-uuL9:tf
 uzKs@>
-v.D9R
 v2!L.2
 value too large
 virtual 
 vo@GVl
+void
 void 
 volatile
 volatile 
-vwD9R
-v}`[>
-w0HcG
-wV+} H
 wchar_t
 wcrtomb
 wcrtomb_s
@@ -4378,85 +3331,20 @@ wctype
 wmemcpy_s
 wmemmove_s
 wrong protocol type
-x ATAUH
-x ATAVAWH
-x AUAVAWH
-x AVH
-x AVHcA
-x UATAUAVAWH
-x UATAWH
-x UAVAWH
-x8}0	9
-x=[4n
-xA_A^A\_^[
-xA_A^A]A\_^[]
+x8}0\t9
+xT?V
 xdigit
-xkI97tfI
-xlI97tgI
-x|;=q
-yBgt	3
+y.Iu
 yE>cb
-y\PD>!
-z%u#H
-z&u$H
 z)Y@ase
-z.9Wv
-z5u3H
-z7u5H
-z>@G'h
+z=vf
+z>h4
 z?aUY
-zY;>u:m	
+z\r8Pf
 zc%C1
-zy	GTAGu
-{&1q>
-{@	t	8C*u
+zy\tGTAGu
+{5A1
+{DA5
 {flat}
 {for 
-{w8&-
-|#tAM
-|$ ;=O
-|$ AVH
-|$ AWH
-|$ D!
-|$ E3
-|$ E;
-|$ UATAUAVAWH
-|$ UAVAWH
-|$ UH
-|$ VE
-|$(A^
-|$(D88
-|$(fA
-|$0-D
-|$0A]A\
-|$0E3
-|$0H+
-|$0H;
-|$0M;
-|$8;3
-|$8wu	A
-|$:bu
-|$:tD
-|$>u,f
-|$>uhf
-|$@-D
-|$@E3
-|$@I+
-|$@eH
-|$PfI
-|$Pwu
-|$Qbu
-|$QtD
-|$XHcU
-|$`CI
-|$pE3
-|$x+sP
-|(tFM
-|>fj;
-|b=})>
-|hK,_
-||0fA;
-}XfA;
 }_Bq&vs
-~ $s%r
-~bj'e

@@ -1,35 +1,16 @@
- A_A^A]A\_
- A_A^A]A\_^]
  Base Class Array'
  Base Class Descriptor at (
  Class Hierarchy Descriptor'
  Complete Object Locator'
- H3E H3E
- Microsoft Operations Puerto Rico1
- Microsoft Operations Puerto Rico1&0$
  Type Descriptor'
  delete
  delete[]
- new[]
-!This program cannot be run in DOS mode.
-!TkjE
-!]_0t
-"ghmL
-$Microsoft Ireland Operations Limited1&0$
-%IP:A
-&S|9a
-(D$0f
-(t$ A
-(t$ H
-)Microsoft Root Certificate Authority 20100
-)Microsoft Root Certificate Authority 20110
-*?*kXIc
-+gVU>N
--B}ljv 
+ new
 .00cfg
 .?AVbad_exception@std@@
 .?AVexception@std@@
 .?AVtype_info@@
+.bss
 .data
 .data$r
 .data$rs
@@ -48,176 +29,50 @@ $Microsoft Ireland Operations Limited1&0$
 .rdata$zzzdbg
 .rsrc$01
 .rsrc$02
-.text
 .text$mn
 .text$mn$00
 .text$x
 .xdata
 .xdata$x
-/Microsoft Windows Third Party Component CA 2013
-/Microsoft Windows Third Party Component CA 20130
-0A_A^A]
-1(0&0
-1,0*0
-1/0-0
-110708205909Z
-130501204402Z
-1?\d*W
-20221212222640Z
-20221213060728.583Z0
-20221213060729.857Z0
-20221213100511Z
-20221213222640Z0w0=
-20221214100511Z0t0:
-210930182225Z
-220302185129Z
-220512203207Z
-220512204604Z
-220920202211Z
-230217+4705320
-230511185129Z0
-230511203207Z0
-230511204604Z0t1
-230889+4705680
-231214202211Z0
-260708210909Z0~1
-280501205402Z0
-2Microsoft Windows Software Compatibility Publisher0
-300930183225Z0|1
-3http://www.microsoft.com/pkiops/Docs/Repository.htm0
-3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
-6u282
-9)~P3
-99~CE
-9p@u+
-9t$Pu	
-:MU;f
-;e#~Q
->NGdx
->http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
-@.data
-@.reloc
-@.rsrc
-@<3hLKz
-@SUWH
-@SVWH
-@USVWATAUAVAWH
-@gJ<|IZ
-AUAVAWH
-A_A]A\_^[
-A_A^A]A\_^[
-A_A^A]A\_^[]
-A_A^_
-B(I9A(
-BA-'KM
-B\W0"
-Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
-Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
-D$ I9P
-D$ I;R
-D$8H9D$ t
-D$HL9gXt
-D$pHc
-D8L$0uP
 D:\a\_work\1\s\binaries\amd64ret\bin\amd64\\vcruntime140_1.amd64.pdb
-D=xz#
 DeleteCriticalSection
-E0C1)0'
-E0HcH
-E0Lc`
-Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
-Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
 EncodePointer
 FlsAlloc
 FlsFree
 FlsGetValue
 FlsSetValue
 FreeLibrary
+GCTL
 GetCurrentProcess
 GetCurrentProcessId
 GetCurrentThreadId
 GetLastError
 GetProcAddress
 GetSystemTimeAsFileTime
-H;XXs
-H;xXu
-HcE_L
-HcEgH
-I9}(t9H
-Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
 IsProcessorFeaturePresent
-J>f;O
-Je|4x$
-K0HcQ
 KERNEL32.dll
-L!d$(L!d$@D
-L$`;M
-L$h;M
-L;|$X
-LRich
 LoadLibraryExW
-M H1E
-M0K0I
-Microsoft Code Signing PCA 2011
-Microsoft Code Signing PCA 20110
-Microsoft Corporation0
-Microsoft Corporation1
-Microsoft Corporation1&0$
-Microsoft Corporation1(0&
-Microsoft Corporation1)0'
-Microsoft Corporation1-0+
-Microsoft Corporation1200
-Microsoft Corporation1806
-Microsoft Corporation1;09
-Microsoft Time-Stamp PCA 2010
-Microsoft Time-Stamp PCA 20100
-Microsoft Time-Stamp Service
-Microsoft Time-Stamp Service0
-N0L0J
-NS;bL
-Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
-O0M0K
-Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
-QEX82q'
 QueryPerformanceCounter
-R0P0N
+RSDS
 RaiseException
-Redmond1
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlPcToFileHeader
 RtlUnwindEx
 RtlVirtualUnwind
-S0Q0O
-SAok&Oo
-SVWATAUAVAWH
-SVWATAUAWH
 SetLastError
 SetUnhandledExceptionFilter
 TerminateProcess
-Thales TSS ESN:179E-4BB0-82461%0#
-Thales TSS ESN:D9DE-E39A-43FE1%0#
 TlsAlloc
 TlsFree
 TlsGetValue
 TlsSetValue
-U0S0Q
-UVWATAUAVAWH
 UnhandledExceptionFilter
 Unknown exception
 VCRUNTIME140.dll
 VCRUNTIME140_1.dll
-WATAUAVAWH
-WAVAWH
-Washington1
-WqVNHE
-X0V0T
-Z3ww?D
-\$ UH
-^&\	Du0
-^&\	Du0t
 __C_specific_handler
 __CxxFrameHandler4
 __NLG_Dispatch2
@@ -240,9 +95,6 @@ __thiscall
 __unaligned
 __vectorcall
 _local_unwind
-`.rdata
-`0^0\
-`A_A^A]A\_^]
 `RTTI
 `anonymous namespace'
 `copy constructor closure'
@@ -283,57 +135,17 @@ abort
 api-ms-win-crt-heap-l1-1-0.dll
 api-ms-win-crt-runtime-l1-1-0.dll
 api-ms-win-crt-string-l1-1-0.dll
-as.,k{n?,	x
-bNeg53='
 bad exception
 calloc
-chttp://www.microsoft.com/pkiops/crl/Microsoft%20Windows%20Third%20Party%20Component%20CA%202013.crl0
-cj'Q?
-d$ D!
-d$dD;d$ltY
-e_.,>
-ehttp://www.microsoft.com/pkiops/certs/Microsoft%20Windows%20Third%20Party%20Component%20CA%202013.crt0
-fg:SM
-frq*yC
-g)k_	
-http://www.microsoft.com0
-ineID
-lO2&[!
-m0k0i
+free
 malloc
 memcpy
 memmove
-ntelA
 operator
 operator "" 
 operator co_await
 operator<=>
-q9W3T
-q\Q17
-q}k8V
 restrict(
 strcpy_s
-t!Ic^
-t$ WATAUAVAWH
-t$ WH
-t'HcW
-t)IcV
-t4McF
-t7HcP
-t?HcS
-tEHcR
-tG@<*_m
 terminate
-u0s0q
-u2I9}(t&H
 wcsncmp
-wwH9Q
-x AVH
-xSu$W
-yYPJN
-y{?*9
-z#:PB]
-z'@Mb
-|$(A^
-|$8L;
-|2HcW

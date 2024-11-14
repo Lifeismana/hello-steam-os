@@ -1,45 +1,14 @@
- A_A^A\_^
- A_A^A]A\_
- A_A^A]A\_^]
  Base Class Array'
  Base Class Descriptor at (
  Class Hierarchy Descriptor'
  Complete Object Locator'
- H3E H3E
- MR^o
- Microsoft Operations Puerto Rico1
- Microsoft Operations Puerto Rico1&0$
  Type Descriptor'
  delete
  delete[]
- new[]
+ new
  noexcept
- tDE3
  volatile
-!This program cannot be run in DOS mode.
-!TkjE
-!]_0t
-"XkU-
-$u"8K
-%IP:A
-%by,$
-&S|9a
-(D$ f
-(D$0H
-(D$0f
-(D$PH
-(D$Pf
-(t$ A
-(t$ H
-(t$0H
-)D$0L
-)Microsoft Root Certificate Authority 20100
-)Microsoft Root Certificate Authority 20110
-)u"D8)t
-*?*kXIc
-,0<	w[H
 ,<ellipsis>
--B}ljv 
 .00cfg
 .?AVDNameNode@@
 .?AVDNameStatusNode@@
@@ -54,6 +23,7 @@ $u"8K
 .?AVpairNode@@
 .?AVpcharNode@@
 .?AVtype_info@@
+.bss
 .data
 .data$r
 .data$rs
@@ -73,134 +43,19 @@ $u"8K
 .rdata$zzzdbg
 .rsrc$01
 .rsrc$02
-.text
 .text$mn
 .text$mn$00
 .text$x
 .xdata
 .xdata$x
-/Microsoft Windows Third Party Component CA 2013
-/Microsoft Windows Third Party Component CA 20130
-0A_A^A]
-0A_A^A]A\_^[
-0tHA+
-1(0&0
-1/0-0
-110708205909Z
-130501204402Z
-20221213060728.76Z0
-20221213060729.859Z0
-20221213061829Z
-20221214061829Z0w0=
-210930182225Z
-220302185121Z
-220512203207Z
-220512204604Z
-230217+4705320
-230511185121Z0
-230511203207Z0
-230511204604Z0t1
-230889+4705680
-260708210909Z0~1
-280501205402Z0
-2Microsoft Windows Software Compatibility Publisher0
-300930183225Z0|1
-3http://www.microsoft.com/pkiops/Docs/Repository.htm0
-3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
-6u282
-8$u-E
-8$uFH
-8?u$H
-8@t?E3
-8@tTL
-8@tvD
-8@u4H
-8@u?H
-8@uqH
-8Hv7N
-8XugH
-8_^][
-9	tYH
-9)~P3
-99~CE
-9?uR3
-9@u6H
-9p@u+
-9t$Pu	
-:$t>H
-;	t/H
-;$(^4
-<0t0<2t
-<0|=<9
-<>u:D8t$(
-<>u<D8e
-<?u@H
-<`t-L
 <ellipsis>
 <unknown>
->	t.H
->NGdx
->http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
-?uRE3
-@.data
-@.reloc
-@.rsrc
-@8l$(
-@<3hLKz
-@SUWH
-@SVWATAUAVAWH
-@SVWATAVAWH
-@SVWH
-@USVWATAUAVAWH
-@_RDATA
-A#	Hc
-A:8ucI
-AUAVAWH
-A^A\]
-A^A]]
-A_A]A\_^[
-A_A^A]A\]
-A_A^A]A\_
-A_A^A]A\_^[
-A_A^A]A\_^[]
-A_A^A]A\_^]
-A_A^A]A\_^][
-A_A^]
-A_A^_
 Access violation - no RTTI data!
-At"A+
 Attempted a typeid of nullptr pointer!
-B(I9A(
-B_u0"
 Bad dynamic_cast!
 Bad read pointer - no RTTI data!
-Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
-C0Hc	H
-Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
-D$ I9P
-D$ I;R
-D$0HcH
-D$8E3
-D$8HcJ
-D$8L9
-D$HL9gXt
-D$PE3
-D$pHc
-D,BpH
-D8(tLH
-D8)u#L
-D88tS3
-D8L$0uP
-D8t$(
-D8|$"t
 D:\a\_work\1\s\binaries\amd64ret\bin\amd64\\vcruntime140.amd64.pdb
-D=xz#
 DeleteCriticalSection
-E0C1)0'
-E0HcH
-E0Lc`
-Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
-Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
 EncodePointer
 EnterCriticalSection
 FlsAlloc
@@ -208,6 +63,7 @@ FlsFree
 FlsGetValue
 FlsSetValue
 FreeLibrary
+GCTL
 GetCurrentProcess
 GetCurrentProcessId
 GetCurrentThreadId
@@ -216,132 +72,36 @@ GetModuleFileNameW
 GetModuleHandleW
 GetProcAddress
 GetSystemTimeAsFileTime
-H!|$ H
-H9D$Pu>I
-H;D$Pu
-H;D$`
-H;XXs
-H;xXu
-HcE_H
-HcE_L
-HcEgH
-HcG H
-HcK H
-HcO H
-HcQ<H
-HfA;(
-I9}(t9H
-Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
 InterlockedFlushSList
 InterlockedPushEntrySList
 IsProcessorFeaturePresent
-I{dja
-J>f;O
-Je|4x$
-K0HcQ
-K0Hcq
 KERNEL32.dll
-Kwvt,
-L!d$(L!d$@D
-L!l$pH
-L!|$(L!
-L$ !|$(
-L$ E3
-L$ SUVWH
-L$0t(
-L$8H3
-L$@;|
-L$`;M
-L$`H3
-L$h;M
-L$pD!l$x
-L97t{L
-L9:tgH
-L9?tb
-L;|$X
-LcA<E3
 LeaveCriticalSection
 LoadLibraryExW
-M H1E
-M0K0I
-M9/tA
-M9<$t;
-MGD;}
-Microsoft Code Signing PCA 2011
-Microsoft Code Signing PCA 20110
-Microsoft Corporation0
-Microsoft Corporation1
-Microsoft Corporation1&0$
-Microsoft Corporation1(0&
-Microsoft Corporation1)0'
-Microsoft Corporation1200
-Microsoft Corporation1806
-Microsoft Corporation1;09
-Microsoft Time-Stamp PCA 2010
-Microsoft Time-Stamp PCA 20100
-Microsoft Time-Stamp Service
-Microsoft Time-Stamp Service0
-N0L0J
-Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
-O0M0K
-Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
-Q6_3N
-QEX82q'
+NULL
 QueryPerformanceCounter
-R#w0:
-R0P0N
-R8HcH
 RSDSE
 RaiseException
-Redmond1
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlPcToFileHeader
 RtlUnwind
 RtlUnwindEx
 RtlVirtualUnwind
-S0Q0O
-SAok&Oo
-SUVWATAUAVAWH
-SVWATAUAVAWH
-SVWATAUAWH
 SetLastError
 SetUnhandledExceptionFilter
-T$PE3
-T>fuQa\
 TerminateProcess
-Thales TSS ESN:60BC-E383-26351%0#
 TlsAlloc
 TlsFree
 TlsGetValue
 TlsSetValue
-U0S0Q
-UATAUAVAWH
-UATAVH
-UAUAVH
-UAVAWH
 UNKNOWN
-UVWATAUAVAWH
-UWAVH
 UnhandledExceptionFilter
 Unknown exception
 VCRUNTIME140.dll
-VWATAUAVAWL
-VWATAVAWH
-WATAUAVAWH
-WAVAWH
-Washington1
-WqVNHE
-X0V0T
 [thunk]:
-\$ UH
-\$ fI
-\$5L3
-\$HE3
-^&\	Du0
-^&\	Du0t
 _CreateFrameInfo
 _CxxThrowException
 _FindAndUnlinkFrame
@@ -415,7 +175,6 @@ __vcrt_GetModuleHandleW
 __vcrt_InitializeCriticalSectionEx
 __vcrt_LoadLibraryExW
 __vectorcall
-__w64 
 _get_purecall_handler
 _get_unexpected
 _is_exception_typeof
@@ -423,12 +182,7 @@ _local_unwind
 _purecall
 _set_purecall_handler
 _set_se_translator
-` UAVAWH
-`.rdata
-`0^0\
-`A_A^A]A\_^]
 `RTTI
-``PJn
 `adjustor{
 `anonymous namespace'
 `copy constructor closure'
@@ -484,14 +238,16 @@ api-ms-win-crt-heap-l1-1-0.dll
 api-ms-win-crt-runtime-l1-1-0.dll
 api-ms-win-crt-stdio-l1-1-0.dll
 api-ms-win-crt-string-l1-1-0.dll
-as.,k{n?,	x
+atol
+auto
 bad exception
+bool
 calloc
+char
 char 
 char16_t
 char32_t
 char8_t
-chttp://www.microsoft.com/pkiops/crl/Microsoft%20Windows%20Third%20Party%20Component%20CA%202013.crl0
 class 
 cli::array<
 cli::pin_ptr<
@@ -499,52 +255,32 @@ coclass
 cointerface 
 const
 const 
-d$ D!
-d$dD;d$ltY
 decltype(auto)
 double
-e_.,>
-ehttp://www.microsoft.com/pkiops/certs/Microsoft%20Windows%20Third%20Party%20Component%20CA%202013.crt0
 enum 
 extern "C" 
-fA;(t(fA98t
-fA;8unI
-fffff
-ffffff
-fffffff
-fg:SM
 float
-frPy=?=
+free
 generic-type-
-http://www.microsoft.com0
-iL97u
-ineID
-l$HA_A^A]A\_^
+int 
 lambda
+long
 long 
 longjmp
-m0k0i
 malloc
 memchr
 memcmp
 memcpy
 memmove
 memset
-mwtMH
-ntelA
 nullptr
 operator
 operator "" 
 operator co_await
 operator<=>
-oypfD
-pA_A^A]A\_^[
 private: 
 protected: 
 public: 
-qY% %
-q\Q17
-q}k8V
 restrict(
 set_unexpected
 short
@@ -559,38 +295,14 @@ strncmp
 strrchr
 strstr
 struct 
-t D8h
-t!Ic^
-t$ D8t$(uZH
-t$ WATAUAVAWH
-t$ WH
-t$(E3
-t$8;;
-t$pE3
-t%D8h
-t%fE9
-t&A88t
-t'HcW
-t)IcV
-t-Lck
-t4McF
-t7HcP
-t?HcS
-tEHcR
-tRLcY
 template-parameter-
 terminate
 this 
-twIcF
-u0s0q
-u2I9}(t&H
-uTM9<$tN
 unexpected
 union 
 unsigned 
-u|I9U
-vKfffff
 virtual 
+void
 void 
 volatile
 volatile 
@@ -599,21 +311,5 @@ wcschr
 wcsncmp
 wcsrchr
 wcsstr
-wwH9Q
-x AVH
-x AVHcA
-xA_A^A\_^[
-xSu$W
-z#:PB]
 {flat}
 {for 
-|$ D!
-|$ D8t$(
-|$ UAVAWH
-|$(A^
-|$8L;
-|$HD8|$ tB
-|$XHcU
-|2HcW
-|jyd&1
-}&-\=
