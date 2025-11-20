@@ -1,0 +1,6261 @@
+                    
+                          
+    $name, $comm, $user_comm, $id, $pid, $tgid, $ts, $cpu, $duration\n
+    This gets set if so many events happened within a nested event (ring buffer is re-entrant),
+    that it fills the buffer and starts dropping events.
+  $buf =~ "[Compositor] Warp"\n
+  $duration >= 5.5\n
+  $pid = 4615\n
+  $ring_name = 0xffff971e9aa6bdd0\n
+  $ts >= 11.1 && $ts < 12.5\n
+  ( $timeline = gfx ) && ( $id < 10 || $id > 100 )
+  ( $timeline = gfx ) && ( $id < 10 || $id > 100 )\n
+  Bytes: Bytes actually read (not overwritten).
+  Commit overrun: Should always be zero.
+  Dropped events: Events lost due to overwrite option being off.
+  Entries: The number of events that are still in the buffer.
+  Left frame: $buf =~ "[Compositor] Sleep - begin"\n
+  Left frame: $name = drm_vblank_event && $crtc = 0\n
+  Now ts: The current timestamp.
+  Oldest event ts: The oldest timestamp in the buffer.
+  Overrun: The number of lost events due to overwriting when the buffer was full.
+  Read events: The number of events read.
+  Right frame: $buf =~ "[Compositor] Sleep - end"\n
+  Right frame: $name = drm_vblank_event && $crtc = 0\n\n
+  gfx, gfx hw, sdma0, print, etc.
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ " & 0 3 : < D 
+ " & 0 3 : < D t 
+ " . H b | 
+ %'&lgVFI\tG
+ %s[ctx=%u]%s
+ (Frame #%d)
+ (Time Pct:%.2f%%)
+ (kakikukeko)
+ (nihongo)
+ 0AM
+ 2,345 bytes
+ 2007, Google Corporation.Droid SansRegularAscender - 
+ 2Pj
+ 2ly
+ 303
+ 3AG\tB
+ 3Ao\tr
+ 3CF
+ 3I3\tL
+ 3J3
+ 3qi
+ 4Mw
+ 5AB
+ 5OV
+ 5dL
+ 5xY
+ 7AF
+ 7AU
+ 7HV
+ 9Q3\V
+ <W7)9eM,
+ AAO
+ AID
+ BB7\tE'
+ Base Class Array'
+ Base Class Descriptor at (
+ BfF
+ C>TQ
+ ChildMenu
+ ChildWindow
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+ DhHFkH$'If?
+ F had
+ F161
+ FIM
+ GAg
+ GDk
+ HC3
+ HHC
+ Interpolation
+ KVb9HiF"
+ MPQ%
+ Type Descriptor'
+ Udo9Xp@
+ You can update settings in Font Options dialog.
+ [%.*lf ms]
+ cBI
+ cKU
+ context-complete-delay: 
+ custom...
+ delete
+ delete[]
+ duration
+ duration...
+ execute-delay: 
+ execute: 
+ ffffffff
+ gkey:[%s%s%s]
+ gkey:[%s%u%s]
+ hAB\t
+ hCc
+ kAg
+ key:[%s%s%s-%s%u%s]
+ ktw
+ nAg
+ new
+ oHL
+ qEK
+ queue: 
+ submit-delay: 
+ vblank 
+ vdo
+! !0!@!P!`!p!
+!"&5463
+!'1&%HR`>W~Q'fx
+!'3KI
+!'7WE
+!(#h6OS
+!01B7
+!01G%
+!01T
+!01l
+!04B
+!04Bn
+!04N
+!05E
+!10B
+!1EB
+!1EBg
+!1EC
+!1EF
+!1ES
+!1ETl
+!1FR
+!20C
+!20C%
+!20F
+!21D
+!2654&#
+!32Cj
+!40E
+!4AA}
+!4AP|
+!50Ao
+!5353
+!53665'#53
+!536655#53'
+!53L
+!55A
+!57J
+!5J.)QME
+!5J.*QLE
+!66K
+!75_z
+!77E
+!92tL
+!99C
+!?HU86[A$
+!BDZW
+!BN`?EtU0
+!CeC
+!DhJGfD#
+!F*CW
+!FBL
+!FBP\f
+!FFE2
+!GnMLmG!OK;_
+!GnN
+!LcM1[
+!SQA_
+!TuA
+!\nZBC
+!a9X
+!bjB]
+!cnDh
+!h,fK
+!hy~7
+!jna
+!nHJ
+!q3Z
+!qCA
+!qMw
+" sta:%pM" 
+" vif:%p(%d)" 
+"%/28;=#$019:>?Proggy Tiny (10)
+"%s" Time: %s\nGraph 
+"&55B
+"&SIJCqO@ /
+"'32k
+".:/1DA5yP;
+"01!U
+"01%A
+"041Gn
+"046
+"04D
+"04F
+"051
+"10B
+"162
+"210H
+"211
+"21A
+"326
+"32>C
+"3D1
+"403
+"404
+"408
+"40B
+"40C
+"40D
+"421
+"467
+"4F1
+"4F1A
+"500
+"510
+"511
+"546D?\f
+"554
+"563
+"612B
+"7'7H
+"737A
+":,2c]S!BG\r\t"(,
+"AA1
+"D2v
+"FFC
+"FjH
+"FnKMmF!!GmL
+"JpK
+"KQX
+"KTX
+"P)>OON
+"PI7#v!
+"PTV(E%ONI
+"Psi
+"QQL
+"T00T"
+"a77a"
+"a88a"
+"e?<<<<<<l?
+"f(h8:FKDC86i)\t)h79EARA:7h(
+"imgui" letters
+"min
+"six
+"v2v
+"z3\fm
+"zer
+##532
+##532K
+##5726
+##77265
+##Brighten
+##ColorButton
+##Combo_%02d
+##End
+##GotoEvent
+##Line
+##MainMenuBar
+##Menu_%02d
+##Overlay
+##Popup_%08x
+##RefColor
+##ScrollingRegion
+##Start
+##Text
+##Tooltip_%02d
+##Value
+##alpha_val
+##color
+##current
+##dummy
+##dummypicker
+##edit
+##extra_spacing
+##font
+##hex
+##hsv
+##imgui_input_text
+##imgui_input_text2
+##int
+##left
+##line
+##log-filter
+##max
+##menubar
+##min
+##opt_valf
+##original
+##output_type
+##oversample_h
+##palette
+##picker
+##pos_y
+##preview
+##previous
+##resize_graph
+##rgb
+##selectable
+##size
+##source
+##ttf_filename
+##value
+##values
+#%02X%02X%02X
+#%02X%02X%02X%02X
+#%02X%02X%02X%02X\nR:%d, G:%d, B:%d, A:%d\n(%.3f, %.3f, %.3f, %.3f)
+#%02X%02X%02X\nR: %d, G: %d, B: %d\n(%.3f, %.3f, %.3f)
+#%467
+#&&#"mp\v%73
+#'+'gcUEK
+#'463A'
+#+#5><bE%#*#4><aE&
+#-TA(8d
+#01F0
+#03D1
+#153
+#1EB0
+#1x2
+#2000
+#2001
+#2002
+#2015
+#21\fGC
+#30F
+#33/3A
+#39/3
+#4632
+#5&&773
+#5&'&554A
+#5267
+#5353
+#535463[I\n
+#53KB
+#53a|
+#54632
+#5467O
+#56632
+#56673
+#573
+#5773
+#5D1
+#6$32
+#625
+#632
+#6632
+#753
+#773
+#910
+#9fm
+#=T12R;!!;R20T>#u?12?981?
+#BB7
+#CLOSE
+#COLLAPSE
+#EgEHd@
+#EiSX
+#F0\nA
+#FEFF
+#HDw
+#I%?By4
+#L?)\lcdgidcj
+#MOVE
+#PQL
+#Psi\f
+#RESIZE
+#SCROLLX
+#SCROLLY
+#SourceExtern
+#Vers
+#\tTbaB
+#\tTbaE!
+#\tfiv
+#\tnbJ
+#\tzer
+#]q83
+#colors
+#graph_scrollbar
+#grav
+#image
+#mEL
+#ojip\
+#sup
+#version 150\nuniform mat4 ProjMtx;\nin vec2 Position;\nin vec2 UV;\nin vec4 Color;\nout vec2 Frag_UV;\nout vec4 Frag_Color;\nvoid main()\n{\n\tFrag_UV = UV;\n\tFrag_Color = Color;\n\tgl_Position = ProjMtx * vec4(Position.xy,0,1);\n}\n
+#version 150\nuniform sampler2D Texture;\nuniform float Gamma;\nin vec2 Frag_UV;\nin vec4 Frag_Color;\nout vec4 Out_Color;\nvoid main()\n{\n   float a = texture( Texture, Frag_UV.st ).a;\n   Out_Color = vec4( Frag_Color.rgb, Frag_Color.a * pow( a, 1.0/Gamma ) );\n}\n
+$ $0$@$P$`$p$
+$"01%BE
+$%2655pZ
+$,s\vcommaaccent
+$.lix
+$013
+$0D5
+$267
+$310
+$326
+$32677
+$5!54
+$5$=%\f%#%~%
+$54633S
+$632
+$654&#H
+$6632
+$6654&A\v
+$77265
+$810
+$=/AaSQ2+B1#\f
+$?V21V@%%@V12V?$
+$BC5
+$Ib?s
+$J2p2p
+$JsOIpL&#IqNKqM'
+$KqN
+$Rcvt 
+$WF@F
+$Wacut
+$Z'e3O3o3
+$\ffour
+$\fzero
+$\nEdotC
+$\tLdot
+$\tfour
+$\vAgra
+$\vAgraE#
+$\vGbreB+
+$alpha
+$buf =~ "%s"
+$buf =~ "[Compositor] After wait query"
+$buf =~ "[Compositor] Before wait query"
+$comm = "%s"
+$duration
+$framemarkers_filters$
+$graph_plots$
+$graph_rows_add$
+$graph_rows_move_after$
+$graph_rows_scale_ts$
+$graphrow_filters$
+$graphrow_row_filters$
+$imgui_colors$
+$imgui_eventcolors$
+$imgui_font_main$
+$imgui_font_small$
+$left
+$nFz
+$name != "%s"
+$name != "sched_switch"
+$name = "%s"
+$name = %s && $crtc == %d
+$name = drm_vblank_event
+$name = drm_vblank_event && $crtc = 0
+$name = drm_vblank_event && $crtc = 1
+$name == "%s"
+$name == "sched_switch"
+$name=drm_vblank_event
+$options$
+$q1074
+$row_sizes$
+$settings$
+$tI(knNr
+$tgid != %d
+$tgid == %d
+% %0%@%P%`%p%
+%#four
+%%d62E,
+%)\tnsuperior
+%*sHello, sailor! Making this line long enough for the example.
+%*sThis is line %d
+%.*s%s%.*s &&
+%.02f
+%.06f ns
+%.0f deg
+%.0fx%.0f
+%.2654.
+%.2f\nsec
+%0.3f
+%02X%02X%02X
+%02X%02X%02X%02X
+%02lu
+%02u
+%02x
+%04d
+%04d: scrollable region
+%08X
+%08x
+%103
+%2654&#
+%2675T
+%2675`
+%3.0f
+%310
+%3265
+%467#5!
+%4xY
+%546335V>
+%5467&&E
+%9La:-I4!
+%9\PM*)CEO50O9
+%AW23YB&&BY32WA%
+%AZ6
+%Aj\rT
+%Dcroat
+%EG\fAK
+%Ead
+%F ha
+%FRX#Y 
+%GfABoQ-/a
+%GjE
+%H0W=
+%Id#Ei
+%\nseven
+%\vAtild
+%\vAtildEL
+%]103
+%d (%.02f secs)
+%d allocations
+%d some text
+%d vertices, %d indices (%d triangles)
+%d: %8.4g\n%d: %8.4g
+%i The quick brown fox jumps over the lazy dog
+%i The quick brown fox jumps over the lazy dog\n
+%lld
+%llu
+%llu / %llu
+%llu\n
+%llu\n%.2f b/event\n
+%llx
+%lu events found
+%s %04d: pos (%8.2f,%8.2f), uv (%.6f,%.6f), col %08X\n
+%s '%s', %d @ 0x%p
+%s (%.2f MB)
+%s (%lu events)
+%s (%lu thread%s)
+%s duration
+%s events %u...
+%s hw_id=%u
+%s%.*s%s%.*s%s%s
+%s%.*s%s:%s
+%s%.2f ms/frame (%.1f FPS)%s
+%s%s%s && (%s)
+%s("%s") failed: %s (%d)\n
+%s(%lu) failed\n
+%s/%08X
+%s: '%s' %d vtx, %d indices, %d cmds
+%s: File possibly truncated. Need at least %llu, but file size is %zu.\n
+%s: Latency traces not supported.\n
+%s: Page ref count is zero.\n
+%s: Something freed the record.\n
+%s: bad page offset %llx\n
+%s: bad page read, with size of %d\n
+%s: bad ref count on handle.\n
+%s: could not retrieve handle %s.\n
+%s: could not seek to back to offset %ld\n
+%s: could not seek to buffer %s offset %lu.\n
+%s: expected a long long type for timestamp.\n
+%s: failed to read system string.\n
+%s: flyrecord not found.\n
+%s: freeing record when it is locked.\n
+%s: handle_options failed.\n
+%s: header_event not found.\n
+%s: header_page not found.\n
+%s: invalid option -- '%c'\n
+%s: kbuffer_alloc failed.\n
+%s: new cpu_data_t failed.\n
+%s: option '%s%s' doesn't allow an argument\n
+%s: option '--%s' requires an argument\n
+%s: option requires an argument -- '%c'\n
+%s: pages still allocated on cpu %d\n
+%s: pevent_parse_event failed.\n
+%s: printk format with empty entry.\n
+%s: record ref count is zero.\n
+%s: unknown option %d\n
+%s: unrecognized option '%s'\n
+%s: unrecognized option '-%s'\n
+%s_gpuvis_%s%s
+%tic
+%u event%s
+%u frames found
+%ull
+&#tild
+&& %.*s%s%.*s
+&&'463cB
+&&5463!
+&(\t\n\f\v\t\n\t\v\r
+&*01%2655
+&2/10!!5X
+&6632
+&7667
+&?PPPPPPP?
+&A3\tq
+&Aw3W
+&CVC
+&FiF:jQ0.a14_-
+&MuOc
+&NuN5Q7
+&PXQX
+&Sgw
+&[JRQ
+&\fGcomma
+&\funi010C}
+&\nEdotac
+&\vCcaron
+&\vOslash
+&aron
+&gA5S!
+&liga
+&lnum
+&lopk
+&mNGoM(! 
+&maxp
+&n$4(r$4&x$J
+&xxu
+&{jlyzlk
+' LTSH
+'!1EO
+'"&54673
+'"040Ae
+'"six
+'#53&45465
+'#hook
+'&caron
+''5265D
+''66'56&#Bq
+'013
+'2/33
+'399
+'4632
+'55++55
+'654.
+'6632
+'6654&#72
+'667.
+'7#53
+'753
+'9/10
+'B20D+
+'F3\tgrave
+'F98X=!8e
+'Hd>6S:
+'He=6S:
+'NZDMY
+'Q{R\V&uL
+'R3Si$e?
+'SEPQQPET
+'UWV
+'Utilde
+'\fglyf
+'\funi010A
+'in certa
+'jurisdic
+'smcp
+'the Apac
+($hmtx
+($hmtxz<u3
+($stt_s
+(%.3ff, %.3ff, %.3ff, %.3ff)
+(%d,%d,%d,%d)
+(.smcp
+(0VxG=[@)\r\v
+(21\fGcomma
+(339/3
+(6632
+(888H8
+(<-- right-click here)
+(B1YS
+(Click and drag)
+(Idi 
+(Jf=4R9
+(OLF -0
+(This is testing the vertical alignment that occurs on text to keep it at the same baseline as widgets. Lines only composed of text or "small" widgets fit in less vertical spaces than lines with normal widgets)
+(U/FAz;
+(Use ImGui::SameLine() to keep adding items to the right of the preceding item)
+(Use SetScrollHere() or SetScrollFromPosY() to scroll to a given position.)
+(Using ImGui::BeginGroup()/EndGroup() to layout items. BeginGroup() basically locks the horizontal position. EndGroup() bundles the whole group so that you can use functions such as IsItemHovered() on it.)
+(XXR#
+(XXS"
+(\fglyf
+(\rCcedilla
+(dummy menu)
+(h7;CNG@
+(hkzk
+(minval:%.2f maxval:%.2f)
+(null)
+(print)
+) EeD
+)'36654&##XBj
+)*VNB
+)10%3
+)22+2?33+
+)632
+)6653
+)8!\r?\vEJwX9
+)>7J0Bd
+)>H>)!<S31XB'
+)B01B(
+)F`73\QG
+)F`73aWM
+)G#U4
+)H`7<bF&&HiDGe?
+)Kj.+jBvu
+)M3\fAD
+)MmD?jN+)LmD>kN,
+)MmD?kM,
+)N)N8
+)]kqm
+)gjtiWtd
+)q8310
+)r the Apac
+)yIx
+*#30F
+*'6654&#72
+**011
+*.dat;*.trace;*.etl;*.zip;*.json
+*218
+*2\rcyrillicb
+*467665
+*:30F
+*M#<ySSW
+*NoD@nR/E~
+*StO9>T
+*Unknown item*
+*{2UsAAsV22V
++ VjI
++!$QiY<BS
++!.odL0
++"&54672
++$hmtx
++$left\f
++,\vcyrillictic
++210!
++285
++52655467
++5>%8S7
++5Be
++5UY
++>P2FmJ&\t
++Alts
++FB04
++H8?U5
++H_bJHJK
++IhE#
++MnF
++TH<O\rXBBPKwTCI!"
++baY"
++cRV
++dbl\rquoterev
++mppm
++q`9SC;!$L`~
++zQw
+, name
+,#5353
+,$\nOmeg
+,0fpgm/
+,2fpgm3
+,338
+,467
+,5#53
+,7FF76AA
+,8A9,
+,8GP.
+,A7\t%01
+,BZ>CuV1#"
+,BgS
+,HR>O
+,LNml
+,MmGImI'
+,Ncmap
+,PU^:NzR+
+,RuHAsV1kp0N8
+,SxKNxR+
+,Tcvt 
+,\nAlphatonos\fEQ8
+,\nthree.lnum
+,locaT
+,rs6U;
+,smcp
+- Load additional fonts with io.Fonts->AddFontFromFileTTF().\n- The font atlas is built when calling io.Fonts->GetTexDataAsXXXX() or io.Fonts->Build().\n- Read FAQ and documentation in misc/fonts/ for more details.\n- If you need to add/remove fonts at runtime (e.g. for DPI change), do it before calling NewFrame().
+- or me
+-%HgB
+-,h2%L@CI
+-.comChristian 
+-54..99
+-76632
+-@($;8:#(DCF*6O?6:C,*>)
+-@\r0"@"P"`"p"
+-BH>t
+-PLM*
+-T&<yULR
+-\f-"->-T-n-
+-\tafii00208\rundJH
+-\vCcircumflex\vc
+-\vnapostrophe
+-j7e
+-sSO\
+.#tME
+..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...XXX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..XX.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.XX..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XXX...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           X.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            X..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       ------------------------------------X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -                 X..X          -  X...X  -         X...X         -  X..X           X..X  -                  XX           -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           ------------        -    X    -           X           -X.....................X-                               ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                 -  X..X           X..X  -                                                                 -   X.X           X.X   -                                                                 -    XX           XX    -           
+..1 101
+.00cfg
+.2(JlCDa?
+.2.0http://www.a
+.3265
+.36676&'3
+.52655467
+.76676&'3
+.9310
+.>\rfJBGo
+.>fff?ff
+.?AU_Crt_new_delete@std@@
+.?AUctype_base@std@@
+.?AV<lambda_0574c39bd42acd875ac6123d4c5055d5>@@
+.?AV<lambda_81ab64879d8994c3555a2c74247373e8>@@
+.?AV?$_Binder@U_Unforced@std@@A6APEBDPEAUtrace_info_t@@PEBUtrace_event_t@@PEBDAEAY0EA@D@ZPEAU3@PEAU4@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@
+.?AV?$_Binder@U_Unforced@std@@A6APEBDPEAVStrPool@@PEBD_K@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@
+.?AV?$_Binder@U_Unforced@std@@P8TraceEvents@@EAAHAEBUtrace_event_t@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@
+.?AV?$_Binder@U_Unforced@std@@P8TraceEvents@@EAAXAEBUtrace_event_t@@_JM@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBU?$_Ph@$02@2@@std@@
+.?AV?$_Binder@U_Unforced@std@@P8TraceWin@@EAAIAEAVgraph_info_t@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@
+.?AV?$_Func_base@HAEBUtrace_event_t@@@std@@
+.?AV?$_Func_base@IAEAVgraph_info_t@@@std@@
+.?AV?$_Func_base@PEBDPEBDAEAY0EA@D@std@@
+.?AV?$_Func_base@PEBDPEBD_K@std@@
+.?AV?$_Func_base@XAEBUtrace_event_t@@_JM@std@@
+.?AV?$_Func_base@_NAEAUsave_info_t@MainApp@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_0574c39bd42acd875ac6123d4c5055d5>@@_NAEAUsave_info_t@MainApp@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_81ab64879d8994c3555a2c74247373e8>@@_NAEAUsave_info_t@MainApp@@@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@A6APEBDPEAUtrace_info_t@@PEBUtrace_event_t@@PEBDAEAY0EA@D@ZPEAU3@PEAU4@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@PEBDPEBDAEAY0EA@D@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@A6APEBDPEAVStrPool@@PEBD_K@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@PEBDPEBD_K@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8TraceEvents@@EAAHAEBUtrace_event_t@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@HAEBUtrace_event_t@@@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8TraceEvents@@EAAXAEBUtrace_event_t@@_JM@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBU?$_Ph@$02@2@@std@@XAEBUtrace_event_t@@_JM@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8TraceWin@@EAAIAEAVgraph_info_t@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@IAEAVgraph_info_t@@@std@@
+.?AV?$_Iosb@H@std@@
+.?AV?$basic_filebuf@DU?$char_traits@D@std@@@std@@
+.?AV?$basic_fstream@DU?$char_traits@D@std@@@std@@
+.?AV?$basic_ios@DU?$char_traits@D@std@@@std@@
+.?AV?$basic_iostream@DU?$char_traits@D@std@@@std@@
+.?AV?$basic_istream@DU?$char_traits@D@std@@@std@@
+.?AV?$basic_istringstream@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@
+.?AV?$basic_ostream@DU?$char_traits@D@std@@@std@@
+.?AV?$basic_streambuf@DU?$char_traits@D@std@@@std@@
+.?AV?$basic_stringbuf@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@
+.?AV?$codecvt@DDU_Mbstatet@@@std@@
+.?AV?$ctype@D@std@@
+.?AV_Facet_base@std@@
+.?AV_Iostream_error_category2@std@@
+.?AV_Locimp@locale@std@@
+.?AV_System_error@std@@
+.?AVbad_alloc@std@@
+.?AVbad_array_new_length@std@@
+.?AVbad_cast@std@@
+.?AVbad_exception@std@@
+.?AVbad_function_call@std@@
+.?AVcodecvt_base@std@@
+.?AVerror_category@std@@
+.?AVexception@std@@
+.?AVfacet@locale@std@@
+.?AVfailure@ios_base@std@@
+.?AVinvalid_argument@std@@
+.?AVios_base@std@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.?AVruntime_error@std@@
+.?AVsystem_error@std@@
+.?AVtype_info@@
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCC
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIC
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.CRT$XPA
+.CRT$XPX
+.CRT$XPXA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.E,9:CI
+.FRK
+.H\vV1
+.StG
+.breve
+.bss
+.cb[&%blo1B
+.dat
+.data
+.data$r
+.data$rs
+.etl
+.i915-dat
+.i915-trace
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.json
+.lnum
+.null
+.pdata
+.rdata
+.rdata$T
+.rdata$r
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls
+.tls$
+.tls$ZZZ
+.trace
+.wN\f9
+.xJ>Hf
+.xdata
+.xdata$x
+.zip
+/ /6/R/^/j/
+/ 6Ic
+/ EAj\tM
+/"1F4
+/*\n The Pentium F00F bug, shorthand for F0 0F C7 C8,\n the hexadecimal encoding of one offending instruction,\n more formally, the invalid operand with locked CMPXCHG8B\n instruction bug, is a design flaw in the majority of\n Intel Pentium, Pentium MMX, and Pentium OverDrive\n processors (all in the P5 microarchitecture).\n*/\n\nlabel:\n\tlock cmpxchg8b eax\n
+/+ name
+/.smcp\tdasiaoxia\t
+//8399
+//second\texclamdbl
+/210
+/2GG>!B
+/3!6632
+/33+2
+/3AH
+/3CB44==
+/82/83d
+/822Oq\f*9=/3]33]
+/83+]MS
+/83/8^]3Jt
+/8]]2/839=/33+++]10!#
+/9712<<
+/:4N2Bp
+/; name
+/>zjnx4?D61\r
+/B*Vd
+/B3\t.01
+/DB5 
+/H\nW3
+/IO7
+/K6nj
+/Li\tA
+/Nf7er-Ok>"'!U.>
+/Pm=X
+/S$II
+/SsD
+/TsD
+/\rOhungarumlaut\ro
+/\vH77L
+/]210
+/`7p7
+/electronic commu
+/imgui.ini
+/path/one
+/path/three
+/path/two
+/rEr
+0#5353
+0$0>0J0f0|0
+0$5s%
+0%.3f
+0&1$1
+0*1W.
+0*1kH
+0..255
+0.00..1.00
+0.qJ
+00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+01!!5
+01%6
+01%I
+0123456789ab
+0123456789abcdefghijklmnopqrstuvwxyz
+0364
+070N0e0~1
+08= R
+0A*%JE>
+0C,$A3"
+0D,$A3!
+0E>X
+0GDEF
+0GX(:
+0HY)5
+0K9(\rnW%G8
+0LCA%%ACI-
+0Qhon/2V@$
+0Rn{
+0SAh
+0U{:4b
+0Version 1.100141;
+0X8b?~
+0[MY
+0\n00
+0_NT
+0edSpjZ
+0fcTqi[
+0h)H)V(n)
+0hm/
+0iN>/
+0rG\t
+0t3N
+0t@K'
+0x%02X%02X%02X
+0x%02X%02X%02X%02X
+0x%llx
+0x%x
+0x%xll
+0zzs
+1 event in graph
+1 is a trademark of
+1!2U3
+1#IND
+1#INF
+1#QNAN
+1#SNAN
+1$1;1Q1h1
+1+MmB]
+1. I am selectable
+1.60 WIP
+10!gS
+10%2>
+10%N?\vI
+10%Y
+10%Z(
+101!#
+10Lo\v
+10is a trademark of
+11Y@
+11\v7H%
+12,345 bytes
+1310
+15<#f
+162.
+19B)
+1ASC
+1D-gYT
+1EX5
+1LE^BPo
+1Lg=
+1P;i_
+1P;i`
+1P;j_
+1Qh7
+1UNJ%'KOU1
+1UqAN`;"E6
+1\f4G!W;
+1`l|Ni
+1e47e.
+1liga
+1q3/10!
+1v@O\r
+1x2$1x
+2 77
+2 events grouped in graph
+2 name
+2!ni
+2#P{4
+2$262H2Z
+2*2F2R2^2t2
+2+2?33/]33
+2. I am selectable
+2.2x2
+2/2]10
+2/310
+2009
+200x200
+210!
+210$
+22+?33
+22/]9/]]]10
+22/]9]]]q10
+2210
+2210!'#
+22210~
+22222222
+222C
+222T
+223/3]]
+229]2
+22Qd
+2596
+2654&#!5!2
+2654&#"
+2655!
+2655&&p
+2655P
+2655l
+265B*
+267!
+267'!
+267B
+267B;
+267EG
+26Io&5!
+26bE
+27&&5X
+29/310%3
+2910
+2910%265
+29910
+2?33
+2?39/
+2?3AC
+2@{imv8GN?9\f
+2A#%B1
+2B~\rB
+2D(#V]a-*J6
+2Kw\r
+2L5+I7"
+2L5,I6"
+2LE]BOo
+2LLJ CC>
+2Nd8
+2O7ob
+2R;S
+2X+}<#nB.-0
+2Y2}
+2Y|J$K
+2]10+
+2]10HX
+2_s\nUW
+2aU\r
+2f`T !W`e/Y
+2h=\X
+2o<A2
+3 (tab skip)
+3 303
+3 4Q
+3 5b\v
+3 8C
+3 FB
+3 events grouped in graph
+3!0D
+3!5467
+3#53
+3%Xs
+3++AM
+3+5<t
+3+:lv[8
+3. I am not selectable
+3/103a\r
+3/22/
+3/310
+3/33/
+3/3E
+3/8+]3+]q]]
+3/8+]q3
+3/8+]q33
+3/833
+3/8]33
+3/8]q
+3/8^]338
+3/]33
+3/]3l
+3/]83
+310!
+310!#
+310!CZ
+310#
+3103P
+310AB
+3265
+3265!
+32654&[
+326554&#
+3265Ak
+3266
+3267
+3267&
+3267'7
+32673
+32677
+326K
+326ng
+326v
+32BE
+32{s
+32{t
+33/+832
+3310
+3310!
+332HV
+333+
+333?333?333?333?333?
+33?I
+34?52M
+34?52N
+35NH
+3632
+3663
+36673
+366A
+373V
+37>k
+382/8310
+3: ;R21T>#\f
+3>N;kU
+3>fvw
+3?2/3
+3?33
+3?3]33
+3?tr
+3Af\r#29+
+3Bp\f"54&A>
+3D&$B2
+3F+,R?&5l
+3F+2S<"
+3K#QX
+3M3fl
+3WPL'(LQW`s
+3WQL'(MQW`r
+3X*lB(|G159
+3Xt@
+3Y3q3
+3Z##cE
+3Z6eA
+3[lf
+3[}KW
+3\fAy
+3\n3"3T3`3l3
+3\n3j3
+3\rG\nT
+3]10
+3]33]
+3]]10
+3^LIsP)
+3below
+3c[R!!Ybc*O|V.
+3l/7437/p6
+3mBR(X5@]o
+3mllnmmm
+3qk7]C
+3u3\r#U]U]rt
+3z(l3
+3z0\r!J
+3z2v0
+3{Q"2
+4 (tab skip)
+4 4z4
+4#'73
+4#5773
+4#nine
+4&#526
+4&'&&546753
+4&5C
+4. I am selectable
+4/4F4^4u4
+40AX
+4210]]!
+432654&'
+4399
+44/$P
+4632
+463{=
+467!
+467&&5
+467&&5A
+467'7
+4675&&
+4676654&#"
+46766N
+46767#
+4950
+4:TTA_
+4@K*Zh
+4AA4
+4Av3!53f
+4BT6ej
+4E'(G5
+4F((F5
+4R4j4
+4]TT]
+4_6*0
+4ad\n"5
+4d3j65k3dMd8j-
+4smcp
+5 serif typeface design
+5!57
+5"5"2p4
+5#53
+5&&53
+5&&773
+5. I am double clickable
+5/5?5O5
+500x500
+510%
+51256304
+51>W
+53~:J
+53~:J[TT[
+54&Ok\n 
+5463!
+54654&#"
+54676654.
+546775d 
+54M8
+55#53
+55)CQb
+55S|
+56632
+5667
+5<5h5
+5?q=J?H
+5A:G
+5AB4%r
+5Ak\r+
+5CX<
+5D0^\v41
+5D2v5D0^
+5F0%
+5OnN#J
+5Q64B&
+5Y?##A\84TH@
+5[tt[
+5\HHsP+7d
+5\K9
+5\vnapostrophe
+5^QC5%\n\n);I*>fO:%
+5bXk`bb\T
+5by Tristan GrimmerRegularTTX ProggyTinyTT2004/
+5kfLn
+5mdNm
+5rU11UrA'E4
+5sD_&Y6=^q
+6!20DF
+6!6~p
+6&6=6S6j6
+6.Xe
+62~9L
+6454&#"
+64633
+6632
+6636
+665&&
+6653
+6653Z
+6654&
+6654&##
+6673
+6676
+6676A
+6676Fs
+667C
+66Bi
+6B6B
+6CC6
+6Fb\f!
+6GY5MwR+;o
+6H\vV9'
+6J,)J7 H
+6M51GJ\Fh
+6MjKMJiM4
+6NK>
+6P64B&
+6ZxB
+6\fXO>\ntA
+6^GK[TFd
+6^HIZTFd
+6qqY
+6vyz:b
+7 1N
+7 EE
+7!23
+7!57!
+7"=6F;C4
+7#=T12R;  ;R20T>#t@12?981@
+7&&5467L$\t 
+7310\t
+75#5!
+7654&
+76653
+767#
+76753
+76767
+774\tnsuperior
+7754.
+7=XI
+7>;9K
+7>I0
+7?GX
+7B\runderscoredbl\rquoterev
+7FO\r&
+7G1Ub?b
+7Iu\n!66Iu
+7Q4S
+7T8%>2(
+7YE3
+7ZX[
+7\nKK
+7\uu\
+7]D&L
+7mban
+7y}z8<
+7~xh
+8'7'3
+8,8C8Z8q8
+8-NW
+800x200
+82+]q2/
+828N8Z8f8|8
+8310!
+8Csinf
+8H8|8
+8J!HP
+8O3A
+8YX[
+8\fglyf
+8\n"017
+8]C%3\}JDq`Q#J IQ[3*<'
+8]CF
+8^FHqP*
+8g.J
+8kR2.X
+8ke?;
+8pi^&&Zcg1
+8y@A>
+9#sup
+9%kern
+9(C_G3
+9(bGu
+9)aNQX
+9,9C9V9i9
+9/10
+9/33
+9/3K
+9/810
+9/93
+9/99
+9/B1
+9/]10
+9/]33
+9/]99
+9/]qC
+9210
+93/8
+93\f"A
+94+:0
+95!5!
+96\testimated\toneeighth\fthre
+975!5!
+99++EJ
+99++m
+99//10
+99//8810
+99//Hz
+99//KU
+99//]83
+99//lF
+99/K;
+9910
+99\n1P(
+99]10
+9<ertsonLicensed under the Apac
+9<zx
+9=/33
+9=/3310
+9=/]]33]3]10
+9=/]q33Q-
+9>70
+9>KF
+9?BP
+9A5\v 
+9B9\t"
+9H8=>A
+9J1UrA@oR.
+9NiJMJgP6
+9R5:~hD&IiC
+9U8S
+9X>r
+9Y5 #
+9YI<76
+9_FHqN*
+9a&g
+9za\t
+9}~{8JP
+:#%!2654&#!
+:5%75'r
+:632
+:A?\fY1\fCj
+:KVUKKUVK
+:S6>dH'
+:SU#R
+:V!2m
+:ZA=jS9\r
+:[=DtV1
+:\nQQbtq232'
+:aVN'N
+:bTH 
+:ica1]
+:o/|AE@eVBB@|0\t0|@BBVe@EA|/
+:ss01
+;#sst
+;$hmtxX
+;%;;;O;b;y;
+;107
+;116\testimated\toneeighth\fthre
+;1cb
+;39{G
+;46767#
+;5FU
+;5FV
+;6AW
+;L)_<EqP+.\
+;M]53WI<
+;Y;xh
+;\tFzo
+;a3E
+;crossbar\tringacute\tdasiaoxia
+;jefi
+;lS1*OoEc
+<!2cS=X
+<67A><f
+<8z}y7
+<DN/BobU)
+<DnN+%In
+<DsrR
+<JaCFmJ&*"
+<New Graph Row Name>
+<None>
+<VR\n\n"\O<,N
+<[+fTEEA
+<`cmap
+<bGU
+<cH'!BcBCoN+%In
+<idle>
+<not enough memory for cmdlines!>
+<paL
+<unknown>
+=+3zBok+wM
+=1cb
+=2K2[2k2
+=61352\testimated\toneeighth\fthre
+=7E9
+=87M
+=AbA D3\t#.b
+=DL,EiF#
+=DrtU{&
+=H.VE
+=LgK#D
+=cQ6
+=e2m
+=imb;D
+=wZG
+=wod+V
+>"L_tJG{Z4
+>%2655
+>%>8>L>d>|>
+>333?
+>CC JL
+>DB<D
+>Dyn25
+>H??HEBB
+>II>@II
+>Tk@c
+>UC;"A@2&^0A!?[92VU[7
+>VHXw
+>Y01
+>YIE
+>Yus
+>\tanoteleia
+>aDBiJ(
+>cQ6
+>fVia
+>fff?
+>fff?333?
+>fff?ff
+>jtm}S
+? 3AG
+? xGc
+?!5WOo
+?&5467665
+?)CB(nDLDLA
+?*?=?Q?h?z?
+?0o0
+?1cb
+?1o1
+?21?31\f2?
+?2Xo
+?3/Eh
+?33+3
+?333/
+?333?
+?333?3
+?333?333?333?
+?333?333?fff?
+?33?A-\f"+]_A/
+?39/^]3KT
+?3?3B7
+?3Fx
+?49HoKC
+?555
+?7])#######hV0qs'/###[),##/l:$#Q6>##5[n42>c-TH`->>#/e>11NNV=Bv(*:.F?uu#(gRU.o0XGH`$vhLG1hxt9?W`#,5LsCp#-i>.r$<$6pD>Lb';9Crc6tgXmKVeU2cD4Eo3R/2*>]b(MC;$jPfY.;h^`IWM9<Lh2TlS+f-s$o6Q<BWH`YiU.xfLq$N;$0iR/GX:U(jcW2p/W*q?-qmnUCI;jHSAiFWM.R*kU@C=GH?a9wp8f$e.-4^Qg1)Q-GL(lf(r/7GrRgwV%MS=C#`8ND>Qo#t'X#(v#Y9w0#1D$CIf;W'#pWUPXOuxXuU(H9M(1<q-UE31#^-V'8IRUo7Qf./L>=Ke$$'5F%)]0^#0X@U.a<r:QLtFsLcL6##lOj)#.Y5<-R&KgLwqJfLgN&;Q?gI^#DY2uLi@^rMl9t=cWq6##weg>$FBjVQTSDgEKnIS7EM9>ZY9w0#L;>>#Mx&4Mvt//L[MkA#W@lK.N'[0#7RL_&#w+F%HtG9M#XL`N&.,GM4Pg;-<nLENhvx>-VsM.M0rJfLH2eTM`*oJMHRC`NkfimM2J,W-jXS:)r0wK#@Fge$U>`w'N7G#$#fB#$E^$#:9:hk+eOe--6x)F7*E%?76%^GMHePW-Z5l'&GiF#$956:rS?dA#fiK:)Yr+`&#0j@'DbG&#^$PG.Ll+DNa<XCMKEV*N)LN/N*b=%Q6pia-Xg8I$<MR&,VdJe$<(7G;Ckl'&hF;;$<_=X(b.RS%%)###MPBuuE1V:v&cX&#2m#(&cV]`k9OhLMbn%s$G2,B$BfD3X*sp5#l,$R#]x_X1xKX%b5U*[r5iMfUo9U`N99hG)tm+/Us9pG)XPu`<0s-)WTt(gCRxIg(%6sfh=ktMKn3j)<6<b5Sk_/0(^]AaN#(p/L>&VZ>1i%h1S9u5o@YaaW$e+b<TWFn/Z:Oh(Cx2$lNEoN^e)#CFY@@I;BOQ*sRwZtZxRcU7uW6CXow0i(?$Q[cjOd[P4d)]>ROPOpxTO7Stwi1::iB1q)C_=dV26J;2,]7op$]uQr@_V7$q^%lQwtuHY]=DX,n3L#0PHDO4f9>dC@O>HBuKPpP*E,N+b3L#lpR/MrTEH.IAQk.a>D[.e;mc.x]Ip.PH^'/aqUO/$1WxLoW0[iLA<QT;5HKD+@qQ'NQ(3_PLhE48R.qAPSwQ0/WK?Z,[x?-J;jQTWA0X@KJ(_Y8N-:/M74:/-ZpKrUss?d#dZq]DAbkU*JqkL+nwX@@47`5>w=4h(9.`GCRUxHPeR`5Mjol(dUWxZa(>STrPkrJiWx`5U7F#.g*jrohGg`cg:lSTvEY/EV_7H4Q9[Z%cnv;JQYZ5q.l7Zeas:HOIZOB?G<Nald$qs]@]L<J7bR*>gv:[7MI2k).'2($5FNP&EQ(,)U]W]+fh18.vsai00);D3@4ku5P?DP8aJt+;qUM]=+b'8@;mViBKx0DE[-auGl8:PJ&Dj+M6OC]O^((##]`0i)drT;-7X`=-H3[igUnPG-NZlo.#k@h#=Ork$m>a>$-?Tm$UV(?#P6YY#'/###xe7q.73rI3*pP/$1>s9)W,JrM7SN]'/4C#v$U`0#V.[0>xQsH$fEmPMgY2u7Kh(G%siIfLSoS+MK2eTM$=5,M8p`A.;_R%#u[K#$x4AG8.kK/HSB==-'Ie/QTtG?-.*^N-4B/ZM_3YlQC7(p7q)&](`6_c)$/*JL(L-^(]$wIM`dPtOdGA,U3:w2M-0<q-]L_?^)1vw'.,MRsqVr.L;aN&#/EgJ)PBc[-f>+WomX2u7lqM2iEumMTcsF?-aT=Z-97UEnXglEn1K-bnEO`guFt(c%=;Am_Qs@jLooI&NX;]0#j4#F14;gl8-GQpgwhrq8'=l_f-b49'UOqkLu7-##oDY2L(te+Mch&gLYtJ,MEtJfLh'x'M=$CS-ZZ%P]8bZ>#S?YY#%Q&q'3^Fw&?D)UDNrocM3A76//oL?#h7gl85[qW/NDOk%16ij;+:1a'iNIdb-ou8.P*w,v5#EI$TWS>Pot-R*H'-SEpA:g)f+O$%%`kA#G=8RMmG1&O`>to8bC]T&$,n.LoO>29sp3dt-52U%VM#q7'DHpg+#Z9%H[K<L%a2E-grWVM3@2=-k22tL]4$##6We'8UJCKE[d_=%wI;'6X-GsLX4j^SgJ$##R*w,vP3wK#iiW&#*h^D&R?jp7+/u&#(AP##XU8c$fSYW-J95_-Dp[g9wcO&#M-h1OcJlc-*vpw0xUX&#OQFKNX@QI'IoPp7nb,QU//MQ&ZDkKP)X<WSVL(68uVl&#c'[0#(s1X&xm$Y%B7*K:eDA323j998GXbA#pwMs-jgD$9QISB-A_(aN4xoFM^@C58D0+Q+q3n0#3U1InDjF682-SjMXJK)(h$hxua_K]ul92%'BOU&#BRRh-slg8KDlr:%L71Ka:.A;%YULjDPmL<LYs8i#XwJOYaKPKc1h:'9Ke,g)b),78=I39B;xiY$bgGw-&.Zi9InXDuYa%G*f2Bq7mn9^#p1vv%#(Wi-;/Z5ho;#2:;%d&#x9v68C5g?ntX0X)pT`;%pB3q7mgGN)3%(P8nTd5L7GeA-GL@+%J3u2:(Yf>et`e;)f#Km8&+DC$I46>#Kr]]u-[=99tts1.qb#q72g1WJO81q+eN'03'eM>&1XxY-caEnOj%2n8)),?ILR5^.Ibn<-X-Mq7[a82Lq:F&#ce+S9wsCK*x`569E8ew'He]h:sI[2LM$[guka3ZRd6:t%IG:;$%YiJ:Nq=?eAw;/:nnDq0(CYcMpG)qLN4$##&J<j$UpK<Q4a1]MupW^-sj_$%[HK%'F####QRZJ::Y3EGl4'@%FkiAOg#p[##O`gukTfBHagL<LHw%q&OV0##F=6/:chIm0@eCP8X]:kFI%hl8hgO@RcBhS-@Qb$%+m=hPDLg*%K8ln(wcf3/'DW-$.lR?n[nCH-eXOONTJlh:.RYF%3'p6sq:UIMA945&^HFS87@$EP2iG<-lCO$%c`uKGD3rC$x0BL8aFn--`ke%#HMP'vh1/R&O_J9'um,.<tx[@%wsJk&bUT2`0uMv7gg#qp/ij.L56'hl;.s5CUrxjOM7-##.l+Au'A&O:-T72L]P`&=;ctp'XScX*rU.>-XTt,%OVU4)S1+R-#dg0/Nn?Ku1^0f$B*P:Rowwm-`0PKjYDDM'3]d39VZHEl4,.j']Pk-M.h^&:0FACm$maq-&sgw0t7/6(^xtk%LuH88Fj-ekm>GA#_>568x6(OFRl-IZp`&b,_P'$M<Jnq79VsJW/mWS*PUiq76;]/NM_>hLbxfc$mj`,O;&%W2m`Zh:/)Uetw:aJ%]K9h:TcF]u_-Sj9,VK3M.*'&0D[Ca]J9gp8,kAW]%(?A%R$f<->Zts'^kn=-^@c4%-pY6qI%J%1IGxfLU9CP8cbPlXv);C=b),<2mOvP8up,UVf3839acAWAW-W?#ao/^#%KYo8fRULNd2.>%m]UK:n%r$'sw]J;5pAoO_#2mO3n,'=H5(etHg*`+RLgv>=4U8guD$I%D:W>-r5V*%j*W:Kvej.Lp$<M-SGZ':+Q_k+uvOSLiEo(<aD/K<CCc`'Lx>'?;++O'>()jLR-^u68PHm8ZFWe+ej8h:9r6L*0//c&iH&R8pRbA#Kjm%upV1g:a_#Ur7FuA#(tRh#.Y5K+@?3<-8m0$PEn;J:rh6?I6uG<-`wMU'ircp0LaE_OtlMb&1#6T.#FDKu#1Lw%u%+GM+X'e?YLfjM[VO0MbuFp7;>Q&#WIo)0@F%q7c#4XAXN-U&VB<HFF*qL($/V,;(kXZejWO`<[5??ewY(*9=%wDc;,u<'9t3W-(H1th3+G]ucQ]kLs7df($/*JL]@*t7Bu_G3_7mp7<iaQjO@.kLg;x3B0lqp7Hf,^Ze7-##@/c58Mo(3;knp0%)A7?-W+eI'o8)b<nKnw'Ho8C=Y>pqB>0ie&jhZ[?iLR@@_AvA-iQC(=ksRZRVp7`.=+NpBC%rh&3]R:8XDmE5^V8O(x<<aG/1N$#FX$0V5Y6x'aErI3I$7x%E`v<-BY,)%-?Psf*l?%C3.mM(=/M0:JxG'?7WhH%o'a<-80g0NBxoO(GH<dM]n.+%q@jH?f.UsJ2Ggs&4<-e47&Kl+f//9@`b+?.TeN_&B8Ss?v;^Trk;f#YvJkl&w$]>-+k?'(<S:68tq*WoDfZu';mM?8X[ma8W%*`-=;D.(nc7/;)g:T1=^J$&BRV(-lTmNB6xqB[@0*o.erM*<SWF]u2=st-*(6v>^](H.aREZSi,#1:[IXaZFOm<-ui#qUq2$##Ri;u75OK#(RtaW-K-F`S+cF]uN`-KMQ%rP/Xri.LRcB##=YL3BgM/3MD?@f&1'BW-)Ju<L25gl8uhVm1hL$##*8###'A3/LkKW+(^rWX?5W_8g)a(m&K8P>#bmmWCMkk&#TR`C,5d>g)F;t,4:@_l8G/5h4vUd%&%950:VXD'QdWoY-F$BtUwmfe$YqL'8(PWX(P?^@Po3$##`MSs?DWBZ/S>+4%>fX,VWv/w'KD`LP5IbH;rTV>n3cEK8U#bX]l-/V+^lj3;vlMb&[5YQ8#pekX9JP3XUC72L,,?+Ni&co7ApnO*5NK,((W-i:$,kp'UDAO(G0Sq7MVjJsbIu)'Z,*[>br5fX^:FPAWr-m2KgL<LUN098kTF&#lvo58=/vjDo;.;)Ka*hLR#/k=rKbxuV`>Q_nN6'8uTG&#1T5g)uLv:873UpTLgH+#FgpH'_o1780Ph8KmxQJ8#H72L4@768@Tm&Qh4CB/5OvmA&,Q&QbUoi$a_%3M01H)4x7I^&KQVgtFnV+;[Pc>[m4k//,]1?#`VY[Jr*3&&slRfLiVZJ:]?=K3Sw=[$=uRB?3xk48@aeg<Z'<$#4H)6,>e0jT6'N#(q%.O=?2S]u*(m<-V8J'(1)G][68hW$5'q[GC&5j`TE?m'esFGNRM)j,ffZ?-qx8;->g4t*:CIP/[Qap7/9'#(1sao7w-.qNUdkJ)tCF&#B^;xGvn2r9FEPFFFcL@.iFNkTve$m%#QvQS8U@)2Z+3K:AKM5isZ88+dKQ)W6>J%CL<KE>`.d*(B`-n8D9oK<Up]c$X$(,)M8Zt7/[rdkqTgl-0cuGMv'?>-XV1q['-5k'cAZ69e;D_?$ZPP&s^+7])$*$#@QYi9,5P&#9r+$%CE=68>K8r0=dSC%%(@p7.m7jilQ02'0-VWAg<a/''3u.=4L$Y)6k/K:_[3=&jvL<L0C/2'v:^;-DIBW,B4E68:kZ;%?8(Q8BH=kO65BW?xSG&#@uU,DS*,?.+(o(#1vCS8#CHF>TlGW'b)Tq7VT9q^*^$$.:&N@@$&)WHtPm*5_rO0&e%K&#-30j(E4#'Zb.o/(Tpm$>K'f@[PvFl,hfINTNU6u'0pao7%XUp9]5.>%h`8_=VYbxuel.NTSsJfLacFu3B'lQSu/m6-Oqem8T+oE--$0a/k]uj9EwsG>%veR*hv^BFpQj:K'#SJ,sB-'#](j.Lg92rTw-*n%@/;39rrJF,l#qV%OrtBeC6/,;qB3ebNW[?,Hqj2L.1NP&GjUR=1D8QaS3Up&@*9wP?+lo7b?@%'k4`p0Z$22%K3+iCZj?XJN4Nm&+YF]u@-W$U%VEQ/,,>>#)D<h#`)h0:<Q6909ua+&VU%n2:cG3FJ-%@Bj-DgLr`Hw&HAKjKjseK</xKT*)B,N9X3]krc12t'pgTV(Lv-tL[xg_%=M_q7a^x?7Ubd>#%8cY#YZ?=,`Wdxu/ae&#w6)R89tI#6@s'(6Bf7a&?S=^ZI_kS&ai`&=tE72L_D,;^R)7[$s<Eh#c&)q.MXI%#v9ROa5FZO%sF7q7Nwb&#ptUJ:aqJe$Sl68%.D###EC><?-aF&#RNQv>o8lKN%5/$(vdfq7+ebA#u1p]ovUKW&Y%q]'>$1@-[xfn$7ZTp7mM,G,Ko7a&Gu%G[RMxJs[0MM%wci.LFDK)(<c`Q8N)jEIF*+?P2a8g%)$q]o2aH8C&<SibC/q,(e:v;-b#6[$NtDZ84Je2KNvB#$P5?tQ3nt(0d=j.LQf./Ll33+(;q3L-w=8dX$#WF&uIJ@-bfI>%:_i2B5CsR8&9Z&#=mPEnm0f`<&c)QL5uJ#%u%lJj+D-r;BoF&#4DoS97h5g)E#o:&S4weDF,9^Hoe`h*L+_a*NrLW-1pG_&2UdB86e%B/:=>)N4xeW.*wft-;$'58-ESqr<b?UI(_%@[P46>#U`'6AQ]m&6/`Z>#S?YY#Vc;r7U2&326d=w&H####?TZ`*4?&.MK?LP8Vxg>$[QXc%QJv92.(Db*B)gb*BM9dM*hJMAo*c&#b0v=Pjer]$gG&JXDf->'StvU7505l9$AFvgYRI^&<^b68?j#q9QX4SM'RO#&sL1IM.rJfLUAj221]d##DW=m83u5;'bYx,*Sl0hL(W;;$doB&O/TQ:(Z^xBdLjL<Lni;''X.`$#8+1GD:k$YUWsbn8ogh6rxZ2Z9]%nd+>V#*8U_72Lh+2Q8Cj0i:6hp&$C/:p(HK>T8Y[gHQ4`4)'$Ab(Nof%V'8hL&#<NEdtg(n'=S1A(Q1/I&4([%dM`,Iu'1:_hL>SfD07&6D<fp8dHM7/g+tlPN9J*rKaPct&?'uBCem^jn%9_K)<,C5K3s=5g&GmJb*[SYq7K;TRLGCsM-$$;S%:Y@r7AK0pprpL<Lrh,q7e/%KWK:50I^+m'vi`3?%Zp+<-d+$L-Sv:@.o19n$s0&39;kn;S%BSq*$3WoJSCLweV[aZ'MQIjO<7;X-X;&+dMLvu#^UsGEC9WEc[X(wI7#2.(F0jV*eZf<-Qv3J-c+J5AlrB#$p(H68LvEA'q3n0#m,[`*8Ft)FcYgEud]CWfm68,(aLA$@EFTgLXoBq/UPlp7:d[/;r_ix=:TF`S5H-b<LI&HY(K=h#)]Lk$K14lVfm:x$H<3^Ql<M`$OhapBnkup'D#L$Pb_`N*g]2e;X/Dtg,bsj&K#2[-:iYr'_wgH)NUIR8a1n#S?Yej'h8^58UbZd+^FKD*T@;6A7aQC[K8d-(v6GI$x:T<&'Gp5Uf>@M.*J:;$-rv29'M]8qMv-tLp,'886iaC=Hb*YJoKJ,(j%K=H`K.v9HggqBIiZu'QvBT.#=)0ukruV&.)3=(^1`o*Pj4<-<aN((^7('#Z0wK#5GX@7u][`*S^43933A4rl][`*O4CgLEl]v$1Q3AeF37dbXk,.)vj#x'd`;qgbQR%FW,2(?LO=s%Sc68%NP'##Aotl8x=BE#j1UD([3$M(]UI2LX3RpKN@;/#f'f/&_mt&F)XdF<9t4)Qa.*kTLwQ'(TTB9.xH'>#MJ+gLq9-##@HuZPN0]u:h7.T..G:;$/Usj(T7`Q8tT72LnYl<-qx8;-HV7Q-&Xdx%1a,hC=0u+HlsV>nuIQL-5<N?)NBS)QN*_I,?&)2'IM%L3I)X((e/dl2&8'<M:^#M*Q+[T.Xri.LYS3v%fF`68h;b-X[/En'CR.q7E)p'/kle2HM,u;^%OKC-N+Ll%F9CF<Nf'^#t2L,;27W:0O@6##U6W7:$rJfLWHj$#)woqBefIZ.PK<b*t7ed;p*_m;4ExK#h@&]>_>@kXQtMacfD.m-VAb8;IReM3$wf0''hra*so568'Ip&vRs849'MRYSp%:t:h5qSgwpEr$B>Q,;s(C#$)`svQuF$##-D,##,g68@2[T;.XSdN9Qe)rpt._K-#5wF)sP'##p#C0c%-Gb%hd+<-j'Ai*x&&HMkT]C'OSl##5RG[JXaHN;d'uA#x._U;.`PU@(Z3dt4r152@:v,'R.Sj'w#0<-;kPI)FfJ&#AYJ&#//)>-k=m=*XnK$>=)72L]0I%>.G690a:$##<,);?;72#?x9+d;^V'9;jY@;)br#q^YQpx:X#Te$Z^'=-=bGhLf:D6&bNwZ9-ZD#n^9HhLMr5G;']d&6'wYmTFmL<LD)F^%[tC'8;+9E#C$g%#5Y>q9wI>P(9mI[>kC-ekLC/R&CH+s'B;K-M6$EB%is00:+A4[7xks.LrNk0&E)wILYF@2L'0Nb$+pv<(2.768/FrY&h$^3i&@+G%JT'<-,v`3;_)I9M^AE]CN?Cl2AZg+%4iTpT3<n-&%H%b<FDj2M<hH=&Eh<2Len$b*aTX=-8QxN)k11IM1c^j%9s<L<NFSo)B?+<-(GxsF,^-Eh@$4dXhN$+#rxK8'je'D7k`e;)2pYwPA'_p9&@^18ml1^[@g4t*[JOa*[=Qp7(qJ_oOL^('7fB&Hq-:sf,sNj8xq^>$U4O]GKx'm9)b@p7YsvK3w^YR-CdQ*:Ir<($u&)#(&?L9Rg3H)4fiEp^iI9O8KnTj,]H?D*r7'M;PwZ9K0E^k&-cpI;.p/6_vwoFMV<->#%Xi.LxVnrU(4&8/P+:hLSKj$#U%]49t'I:rgMi'FL@a:0Y-uA[39',(vbma*hU%<-SRF`Tt:542R_VV$p@[p8DV[A,?1839FWdF<TddF<9Ah-6&9tWoDlh]&1SpGMq>Ti1O*H&#(AL8[_P%.M>v^-))qOT*F5Cq0`Ye%+$B6i:7@0IX<N+T+0MlMBPQ*Vj>SsD<U4JHY8kD2)2fU/M#$e.)T4,_=8hLim[&);?UkK'-x?'(:siIfL<$pFM`i<?%W(mGDHM%>iWP,##P`%/L<eXi:@Z9C.7o=@(pXdAO/NLQ8lPl+HPOQa8wD8=^GlPa8TKI1CjhsCTSLJM'/Wl>-S(qw%sf/@%#B6;/U7K]uZbi^Oc^2n<bhPmUkMw>%t<)'mEVE''n`WnJra$^TKvX5B>;_aSEK',(hwa0:i4G?.Bci.(X[?b*($,=-n<.Q%`(X=?+@Am*Js0&=3bh8K]mL<LoNs'6,'85`0?t/'_U59@]ddF<#LdF<eWdF<OuN/45rY<-L@&#+fm>69=Lb,OcZV/);TTm8VI;?%OtJ<(b4mq7M6:u?KRdF<gR@2L=FNU-<b[(9c/ML3m;Z[$oF3g)GAWqpARc=<ROu7cL5l;-[A]%/+fsd;l#SafT/f*W]0=O'$(Tb<[)*@e775R-:Yob%g*>l*:xP?Yb.5)%w_I?7uk5JC+FS(m#i'k.'a0i)9<7b'fs'59hq$*5Uhv##pi^8+hIEBF`nvo`;'l0.^S1<-wUK2/Coh58KKhLjM=SO*rfO`+qC`W-On.=AJ56>>i2@2LH6A:&5q`?9I3@@'04&p2/LVa*T-4<-i3;M9UvZd+N7>b*eIwg:CC)c<>nO&#<IGe;__.thjZl<%w(Wk2xmp4Q@I#I9,DF]u7-P=.-_:YJ]aS@V?6*C()dOp7:WL,b&3Rg/.cmM9&r^>$(>.Z-I&J(Q0Hd5Q%7Co-b`-c<N(6r@ip+AurK<m86QIth*#v;-OBqi+L7wDE-Ir8K['m+DDSLwK&/.?-V%U_%3:qKNu$_b*B-kp7NaD'QdWQPKYq[@>P)hI;*_F]u`Rb[.j8_Q/<&>uu+VsH$sM9TA%?)(vmJ80),P7E>)tjD%2L=-t#fK[%`v=Q8<FfNkgg^oIbah*#8/Qt$F&:K*-(N/'+1vMB,u()-a.VUU*#[e%gAAO(S>WlA2);Sa>gXm8YB`1d@K#n]76-a$U,mF<fX]idqd)<3,]J7JmW4`6]uks=4-72L(jEk+:bJ0M^q-8Dm_Z?0olP1C9Sa&H[d&c$ooQUj]Exd*3ZM@-WGW2%s',B-_M%>%Ul:#/'xoFM9QX-$.QN'>[%$Z$uF6pA6Ki2O5:8w*vP1<-1`[G,)-m#>0`P&#eb#.3i)rtB61(o'$?X3B</R90;eZ]%Ncq;-Tl]#F>2Qft^ae_5tKL9MUe9b*sLEQ95C&`=G?@Mj=wh*'3E>=-<)Gt*Iw)'QG:`@IwOf7&]1i'S01B+Ev/Nac#9S;=;YQpg_6U`*kVY39xK,[/6Aj7:'1Bm-_1EYfa1+o&o4hp7KN_Q(OlIo@S%;jVdn0'1<Vc52=u`3^o-n1'g4v58Hj&6_t7$##?M)c<$bgQ_'SY((-xkA#Y(,p'H9rIVY-b,'%bCPF7.J<Up^,(dU1VY*5#WkTU>h19w,WQhLI)3S#f$2(eb,jr*b;3Vw]*7NH%$c4Vs,eD9>XW8?N]o+(*pgC%/72LV-u<Hp,3@e^9UB1J+ak9-TN/mhKPg+AJYd$MlvAF_jCK*.O-^(63adMT->W%iewS8W6m2rtCpo'RS1R84=@paTKt)>=%&1[)*vp'u+x,VrwN;&]kuO9JDbg=pO$J*.jVe;u'm0dr9l,<*wMK*Oe=g8lV_KEBFkO'oU]^=[-792#ok,)i]lR8qQ2oA8wcRCZ^7w/Njh;?.stX?Q1>S1q4Bn$)K1<-rGdO'$Wr.Lc.CG)$/*JL4tNR/,SVO3,aUw'DJN:)Ss;wGn9A32ijw%FL+Z0Fn.U9;reSq)bmI32U==5ALuG&#Vf1398/pVo1*c-(aY168o<`JsSbk-,1N;$>0:OUas(3:8Z972LSfF8eb=c-;>SPw7.6hn3m`9^Xkn(r.qS[0;T%&Qc=+STRxX'q1BNk3&*eu2;&8q$&x>Q#Q7^Tf+6<(d%ZVmj2bDi%.3L2n+4W'$PiDDG)g,r%+?,$@?uou5tSe2aN_AQU*<h`e-GI7)?OK2A.d7_c)?wQ5AS@DL3r#7fSkgl6-++D:'A,uq7SvlB$pcpH'q3n0#_%dY#xCpr-l<F0NR@-##FEV6NTF6##$l84N1w?AO>'IAOURQ##V^Fv-XFbGM7Fl(N<3DhLGF%q.1rC$#:T__&Pi68%0xi_&[qFJ(77j_&JWoF.V735&T,[R*:xFR*K5>>#`bW-?4Ne_&6Ne_&6Ne_&n`kr-#GJcM6X;uM6X;uM(.a..^2TkL%oR(#;u.T%fAr%4tJ8&><1=GHZ_+m9/#H1F^R#SC#*N=BA9(D?v[UiFY>>^8p,KKF.W]L29uLkLlu/+4T<XoIB&hx=T1PcDaB&;HH+-AFr?(m9HZV)FKS8JCw;SD=6[^/DZUL`EUDf]GGlG&>w$)F./^n3+rlo+DB;5sIYGNk+i1t-69Jg--0pao7Sm#K)pdHW&;LuDNH@H>#/X-TI(;P>#,Gc>#0Su>#4`1?#8lC?#<xU?#@.i?#D:%@#HF7@#LRI@#P_[@#Tkn@#Xw*A#]-=A#a9OA#d<F&#*;G##.GY##2Sl##6`($#:l:$#>xL$#B.`$#F:r$#JF.%#NR@%#R_R%#Vke%#Zww%#_-4&#3^Rh%Sflr-k'MS.o?.5/sWel/wpEM0%3'/1)K^f1-d>G21&v(35>V`39V7A4=onx4A1OY5EI0;6Ibgr6M$HS7Q<)58C5w,;WoA*#[%T*#`1g*#d=#+#hI5+#lUG+#pbY+#tnl+#x$),#&1;,#*=M,#.I`,#2Ur,#6b.-#;w[H#iQtA#m^0B#qjBB#uvTB##-hB#'9$C#+E6C#/QHC#3^ZC#7jmC#;v)D#?,<D#C8ND#GDaD#KPsD#O]/E#g1A5#KA*1#gC17#MGd;#8(02#L-d3#rWM4#Hga1#,<w0#T.j<#O#'2#CYN1#qa^:#_4m3#o@/=#eG8=#t8J5#`+78#4uI-#m3B2#SB[8#Q0@8#i[*9#iOn8#1Nm;#^sN9#qh<9#:=x-#P;K2#$%X9#bC+.#Rg;<#mN=.#MTF.#RZO.#2?)4#Y#(/#[)1/#b;L/#dAU/#0Sv;#lY$0#n`-0#sf60#(F24#wrH0#%/e0#TmD<#%JSMFove:CTBEXI:<eh2g)B,3h2^G3i;#d3jD>)4kMYD4lVu`4m`:&5niUA5@(A5BA1]PBB:xlBCC=2CDLXMCEUtiCf&0g2'tN?PGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CP-qekC`.9kEg^+F$kwViFJTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5o,^<-28ZI'O?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xp;7q-#lLYI:xvD=#
+?7zQ6$
+?7{KV\nU
+?815\runderscoredbl\rquoterev
+?8EBOC;7g)
+?8UUUUU
+?8bunz8
+??33BC$A9
+??33X
+?@En[vP
+?H!\fVD8O
+?Ji@9
+?Label1
+?MQ#e
+?MQ#y
+?POP_P
+?Q`3Y
+?R0I?
+?UUUUUU
+?W4A
+?\rz0w
+?\vxMW
+?bu69
+?dGFd?
+?f`Y4
+?fff?
+?fff?333?
+?fff?fff?fff?
+?id7
+?kxG2)
+?lZE
+?prep
+?qBJ
+?rAj
+?rW4is0O8
+?ysB
+@20o
+@4P4
+@6767
+@BXV
+@EBCp2
+@EYXUTSRQPONMLKJIHGFEDCBA@?>=<;:9876510/.-,('&%$#"!
+@FPF
+@GATL$
+@HN&f
+@JpF
+@MX.Jt^M"H$Sn
+@OS/2
+@PX|Yh
+@VtP4L
+@Y#XeY
+@\r0,@,P,`,p,
+@fPf
+@hK6W=!5\|G
+@iZb
+@k`gEEZgO@PPP
+@uY4
+@v6".^=_{*vH
+A A0A
+A lighter hinting algorithm for gray-level modes.\nMany generated glyphs are fuzzier butbetter resemble their original shape.\nThis is achieved by snapping glyphs to the pixel gridonly vertically (Y-axis),\nas is done by Microsoft's ClearType and Adobe's proprietaryfont renderer.\nThis preserves inter-glyph spacing in horizontal text.
+A"W`f2
+A&A9ALAcAzA
+A(A>AHA
+A)SX
+A053
+A1 E}i
+A1\tA
+A3\tC7
+A3\tEW
+A654&#
+A7G<
+A:%0.3f
+A:%3.0f
+A:cm
+A;\f!x1AG\t
+A>pP&
+AAAA
+AA\f4
+AB Delta:
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+AC#C'/J
+ACTION
+AC\vU
+ADVAPI32.dll
+AEDA(
+AE\fbq\f
+AFLiA
+AG\fH
+AHL%8Q4
+AK>(v
+ALAtA
+ALT 
+ANa>4UD1
+AO\tO
+AR#^C
+ARRAY[
+AUUA?RR?
+AU\fV
+AVtP4L
+AW\tQ
+AY\vB
+AZ\n+rotate
+AZ\t \nAZ
+A[Ob
+A[\fgG
+A[\fgo
+A\r\r7n
+A\v\n'rotate
+A\v\tEo
+Abad allocation
+About Dear ImGui
+Abreve
+AcquireSRWLockExclusive
+Active DrawLists (%d)
+Active: %d, WriteAccessed: %d
+ActiveId: 0x%08X/0x%08X (%.2f sec), ActiveIdSource: %s
+ActiveIdWindow: '%s'
+Add '$name != %s' filter
+Add '$name == %s' filter
+Add '$pid != %d' filter
+Add '$pid == %d' filter
+Add 1000 lines
+Add Dummy Error
+Add Dummy Text
+Add New Graph Row
+Add New Graph Row...
+Add a new row with filtered events\n\n
+Add another modal..
+AdvanceX: %.1f
+Advanced, with Selectable nodes
+Ai\t7QHm~
+Ak#(53
+AkT&0
+Align every glyph to pixel boundary.
+Align label with current X position)
+Align to right edge
+Align to right edge minus 100
+Aligned
+Alignment
+Alignment applies when a button is larger than its text content.
+All Inputs
+All Rows
+All those beautiful files will be deleted.\nThis operation cannot be undone!\n\n
+Alpha
+Alpha Bar
+Alt down
+Alt+
+Alt+F4
+Amacron
+An extra line here.
+And now some textured buttons..
+Animate
+Animated title %c %d###AnimatedTitle
+Anti-aliased fill
+Anti-aliased lines
+Aogonek
+AppPolicyGetProcessTerminationMethod
+AppPolicyGetThreadInitializationType
+Apple
+Application average %.3f ms/frame (%.1f FPS)
+April
+Aquarium
+Are you running on a high resolution display?
+AreFileApisANSI
+Arg list too long
+Arrow
+Artificially embolden the font.
+As(Ak\fAg
+Ascent: %f, Descent: %f, Height: %f
+Atlas texture
+Atlas texture (%dx%d pixels)
+August
+Auto-resize
+Auto-resizing window
+Auto/Current
+Avg frame time: %s
+Az\rAw%I
+A{\vcg\vl
+B#JiO?
+B&\vAacute
+B'4632
+B'JmEEyZ4A{
+B(OLG
+B*B6BBBNBZBfBrB~B
+B2BHB{B
+B3**%NXd:
+B3.B/
+B63]-N6
+B7#w
+B7K>
+B7\f"A
+B7\n*v
+B7\t!]qQG
+B8@N
+B9\fE\n
+B:%0.3f
+B:%3.0f
+B:bm
+B<&X1
+B=kO-
+BA:bm
+BAD SIZE:%d 0x%x
+BBBB
+BC1%M
+BC?>6t9^\tc:>
+BF>^G
+BHQQGGQQHc
+BJ00jK
+BK7$
+BLOCK_SOFTIRQ
+BM BI3BEN
+BNV*\
+BO7q
+BOY.x
+BRSA
+BSkH!7-&
+BTTB
+BUnJCoS5\t
+BYss^stu+
+BY|66
+B[Ai
+Bad address
+Bad file descriptor
+Banana
+Basic
+Basic Horizontal Layout
+Basic trees
+BcU\n
+Below we are displaying the font texture (which is the only texture we have access to in this demo). Use the 'ImTextureID' type as storage to pass pointers or identifier to your own texture data. Hover the texture for a zoomed view!
+Below we are testing adding menu items to a regular window. It's rather unusual but should work!
+Beta
+BfF$
+Bf\t(01
+Bh\tBr\f
+Bi\nD
+BkMMlE
+Blah blah blah
+Blah blah\nBlah Blah
+Bo\fJ
+Bold
+Bonjour
+Border
+BorderShadow
+BorderSize
+Borders
+Both
+Bottom
+Bottom-left
+Bottom-right
+Bream
+Brighten: %.2f
+Broken pipe
+Bs\tDc
+Bu\vC'
+Buffer contents: %d lines, %d bytes
+Bullet point 1
+Bullet point 2\nOn multiple lines
+Bullet point 3 (two calls)
+Bullet text
+Bullets
+Button
+Button##1
+Button##2
+Button##3
+Button##4
+Button: %s###Button
+ButtonActive
+ButtonHovered
+ButtonTextAlign
+Buzz
+Bx%5\n(03
+Bx\f#01
+By Omar Cornut and all dear imgui contributors.
+Bytes: %llu
+C!:rIy
+C"CdC
+C(E3
+C(ertsonLic
+C)s/LICENSE-
+C+\n 3Ak
+C0rGr
+C51E
+C5R?\t
+C6}0K
+C7\fS
+CAIE8E
+CCCC
+CC\f xJ
+CE#AB
+CFF 
+CJGE
+CJK text will only appears if the font was loaded with the appropriate CJK character ranges. Call io.Font->LoadFromFileTTF() manually to load extra character ranges.
+CJ\f[Q
+CKO%}
+CKWK
+CK\rS
+CK\t &CK
+CL:>8
+CLASSIFY
+CLEAR
+COMDLG32.dll
+CPU Graph: Toggle hiding sched_switch 'system' events
+CPU Info
+CPU: %u
+CS1D
+CSGn
+CTRL 
+CTRL+A or double-click to select all.
+CTRL+C
+CTRL+Click on a slider or drag box to input value as text.
+CTRL+Left/Right to word jump.
+CTRL+M
+CTRL+Mouse Wheel to zoom window contents.
+CTRL+V
+CTRL+X
+CTRL+X,CTRL+C,CTRL+V to use clipboard.
+CTRL+Y
+CTRL+Z
+CTRL+Z,CTRL+Y to undo/redo.
+CTRL+click to input value.
+CTXKS#KQZX8
+CURRENTLY APPENDING
+CWD>~3
+CY@49H
+C`BY
+CaS\r
+Callback %p, user_data %p
+Cancel
+Canvas example
+Capture screenshot
+Capture/Logging
+Category A
+Category B
+Category C
+CdA B<
+Cd\fO7
+Cdot
+Center
+Center event %u on graph
+Cg867607
+Check
+Check filters
+CheckMark
+Checked
+Cherry
+Chi\f
+Child
+Child 
+Child %d
+Child regions
+Child1
+Child2
+ChildBg
+ChildBorderSize
+ChildMenu 
+ChildRounding
+ChildWindows
+Ci\fa
+Classic
+Clear
+Clear %s Filter: %d
+Clear Filter
+Clear Frame Markers
+Clear Marker
+Click
+Click and drag on any empty space to move window.
+Click and drag on lower right corner to resize window\n(double-click to auto fit window to its contents).
+Click and drag to edit value.\nHold SHIFT/ALT for faster/slower edit.\nDouble-click or CTRL+click to input value.
+Click me
+Click on the colored square to open a color picker.\nCTRL+click on individual component to input value.\n
+Click on the colored square to open a color picker.\nRight-click on the colored square to show options.\nCTRL+click on individual component to input value.\n
+Clipping
+Close
+CloseButton
+CloseButtonActive
+CloseButtonHovered
+CloseClipboard
+CloseHandle
+CloseThreadpoolTimer
+CloseThreadpoolWait
+CloseThreadpoolWork
+CnP%2
+Cn\fA
+CoO,
+Co\t&T
+Codepoint: U+%04X
+Collapsed=%d
+Collapsed=%d\n
+Collapsing Headers
+Color
+Color Configuration
+Color button only:
+Color button with Custom Picker Popup:
+Color button with Picker:
+Color picker:
+Color widget HSV with Alpha:
+Color widget with Float Display:
+Color widget:
+Color/Picker Widgets
+Colored Text
+Colors
+Colors##Selector
+Columns
+Combo
+Comm
+Commands:
+Commit overrun: %llu
+CompareStringEx
+CompareStringW
+Connection
+Console
+Constrained-resizing window
+Constraint
+Context menus
+Copy
+Copy as..
+CopyFileA
+CorExitProcess
+Corniflower
+Count
+Cp\nX
+Create
+Create New Row Filter
+Create Plot
+Create Plot for 
+Create Row Filter...
+CreateEventExW
+CreateEventW
+CreateFileW
+CreateSemaphoreExW
+CreateSemaphoreW
+CreateSymbolicLinkW
+CreateThread
+CreateThreadpoolTimer
+CreateThreadpoolWait
+CreateThreadpoolWork
+Ctrl+
+Ctrl+O
+Ctrl+S
+Ctrl+click drag
+Cu\tC
+Current
+Current mouse cursor = %d: %s
+Currently all this does is to lift the 0..1 limits on dragging widgets.
+Curve
+Curve Tessellation Tolerance
+Custom rendering
+Custom: Always Square
+Custom: Fixed Steps (100)
+Cw%P\t
+Cw\t_W
+C}{DB
+D"DND
+D"DRDZD
+D#2&a
+D'&C1
+D0is a trademark of
+D5\t(3?3
+D673
+D77\n
+D7>=>368\f
+D<OV
+D=OV
+DB7\rB2\r(
+DD+O[
+DDDD
+DEEoP
+DFJb 
+DFLT
+DHGD
+DJ20pT
+DJHF
+DM\rB
+DNG>CS
+DOW0BmM+
+DTMG'?-
+DVJL&?-
+D[yQ]
+Dark
+Dc)E)
+DdN:%
+Dear ImGui %s
+Dear ImGui is licensed under the MIT License, see LICENSE for more information.
+Dear ImGui, %s
+Debug##Default
+December
+DecodePointer
+Delete..
+Delete?
+DeleteCriticalSection
+DeleteFileW
+Delta
+Depth
+Description
+DiL7%
+Digitized data copyright 
+Directory not empty
+Disable Menu
+Disable Mouse Wheel
+Disable Row Filters
+Disable auto-hinter.
+Disable hinting.\nThis generally generates 'blurrier' bitmap glyphs when\nthe glyph are rendered in any of the anti-aliased modes.
+Disabled
+Display Scaling
+Display all characters as '*'.\nDisable clipboard cut and copy.\nDisable logging.\n
+Display trace information
+Dloijjjnl
+Do\fB
+Domain error
+Don't ask me next time
+Double-click on title bar to collapse window.
+Dp%KV\f'
+Dq2 
+DqP,
+Drag Me
+DragDrop: %d, SourceId = 0x%08X, Payload "%s" (%d bytes)
+DragDropTarget
+Dragging
+Draw %4d %s vtx, tex 0x%p, clip_rect (%4.0f,%4.0f)-(%4.0f,%4.0f)
+DrawList
+Droid Sans
+Dropped events: %llu
+DuplicateHandle
+Duration
+Duration: 
+Dw\tT
+D|2q
+E#GbreB+
+E$E,E
+E'`cmap
+E,I)2I
+E,Lfv
+E,`cmapR
+E6\f&01
+E=OW
+E>nEA
+EA\vD
+EBz2'-\=z
+ECZ7
+EEEE
+EF3.rM
+EH\f601
+EKIF
+EK\n q
+EL;l
+EO\vEW
+ERROR: %s not found.
+ERROR: Failed parsing filter string
+ERROR: JSON file is not recognized as a perf data export.
+ERROR: JSON samples array is corrupt!
+ERROR: Mismatched parens
+ERROR: No events found.
+ERROR: No ops found
+ERROR: Parsing filter string failed
+ERROR: Unexpected end token
+ERROR: Unexpected right paren
+ERROR: Unexpected token left of arg
+ERROR: Unexpected token left of left paren
+ERROR: Unexpected token left of op
+ERROR: Unexpected token left of right paren
+ERROR: copy_file to %s failed
+ERROR: save_file to %s failed
+ER\0
+ER\0[
+ESCAPE to revert.
+ET5>
+EXIT_DEAD
+EXIT_ZOMBIE
+E[\rn?gc
+Edit
+Edit Frame Markers...
+Edit name:
+Edw\f
+Ef(\jvA`
+Eh\t2
+EiUL
+Ei\n$01
+EjH$
+EkG;"
+ElMMkB
+Em\fCN
+Embed everything inside a child window (for additional testing)
+Embedded Fonts:
+EmptyClipboard
+Enable Row Filters
+Enable extra group
+Enabled
+EncodePointer
+Enter 'HELP' for help, press TAB to use text completion.
+EnterCriticalSection
+Entries: %llu
+EnumSystemLocalesEx
+EnumSystemLocalesW
+EoE8#
+Ep\fQ
+Error loading file %s...\n
+Error. SDL_Init failed: %s\n
+Error: expected '%s' but read '%s'
+Euro
+Ev^C
+Event
+Event Colors
+Event Filter:
+Event Filter\n\n
+Event Graph
+Event List
+Event List Size: %.0f
+Event Name
+Event info
+Event list hovered graph events
+Event list selected text
+Event list text
+Events
+Events read: %lu (Load:%.2fms Init:%.2fms) (string chunks:%lu size:%lu)
+EventsListPopup
+Example: Auto-resizing window
+Example: Console
+Example: Constrained Resize
+Example: Custom rendering
+Example: Fixed Overlay
+Example: Layout
+Example: Log
+Example: Long text display
+Example: Property editor
+Examples
+Examples:\n
+Exec format error
+Execution
+ExitProcess
+ExitThread
+Export Unsaved
+Extra Spacing: %.2f
+Extra spacing (in pixels) between glyphs.
+Ey3?x_KP
+EyZ45\}H3d !
+EydV
+F F,F8FDFPFhF
+F)\nAW
+F+AC
+F-IJ,F
+F.5G
+F15C
+F7\fR
+F>qUxv
+F@AFGB?E
+FDJLL6N
+FEMh\f
+FF'$P+8R
+FFFF
+FGGOR
+FI\tEs\t 
+FLo\nB
+FNF{F
+FNS+AnO-+NoCU
+FO-3
+Failed to allocate memory for event info (size=%lu).\n
+Failed to extract property: complex types unsupported\n
+Failed to extract property: error calculating array size\n
+Failed to extract property: error calculating property size\n
+Failed to extract property: error retriving property\n
+Failed to extract property: retriving map info\n
+Failed to extract property: type mismatch\n
+Failed to get event information failed with %lu\n
+Failed to open etl trace %s: %lu\n
+Failed to open file: %s
+Failed to process trace: %lu\n
+Fallback character: '%c' (%d)
+Fb_CJU
+Fe3\rs
+February
+FfW?
+Ff\r 3FX\f=
+Field_%d
+File
+File Menu
+File Size
+File exists
+File too large
+FilePopup
+FileTimeToSystemTime
+Filename too long
+Filter
+Filter ("incl,-excl") ("error")
+Filter (inc,-exc)
+Filter colors
+Filter process '%s' events
+Filter usage:\n  ""         display all lines\n  "xxx"      display lines containing "xxx"\n  "xxx,yyy"  display lines containing "xxx" or "yyy"\n  "-xxx"     hide lines containing "xxx"
+Filtered Text Input
+Filtering
+FindClose
+FindFirstFileExW
+FindNextFileW
+First group hovered
+Fixed width.
+Fizz
+FizzBuzz
+Flags: 0x%08X (%s%s%s%s%s%s..)
+Float + HDR
+Float3
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+FlushFileBuffers
+FlushProcessWriteBuffers
+Focus from code
+Focus on 1
+Focus on 2
+Focus on 3
+Focus on X
+Focus on Y
+Focus on Z
+Focused & Hovered Test
+Font %d: '%s', %.2f px, %d glyphs
+Font Gamma: %.1f
+Font Options
+Font Scale: %.1f
+Font atlas texture
+Font data copyright Google 2012RobotoRegular
+Font offset
+Font scale
+Fonts
+Fonts (%d)
+Fonts##Selector
+Force auto-hint
+FrT7\f
+Frame Marker Background #0
+Frame Marker Background #1
+Frame Times
+Frame marker filters
+Frame marker filters\n\n
+FrameBg
+FrameBgActive
+FrameBgHovered
+FrameBorder
+FrameBorderSize
+FramePadding
+FrameRounding
+FreeEnvironmentStringsW
+FreeLibrary
+FreeLibraryAndExitThread
+FreeLibraryWhenCallbackReturns
+Friday
+FsT[
+Ftrace print text color
+Function not implemented
+Fy,R+\nK
+G GPGpG
+G!17
+G!1E
+G!30
+G!41
+G!65
+G"047
+G"C<2
+G$CH
+G(TB
+G))-G *0*@*`*
+G)eo
+G/8941
+G44?=n[HD
+G:%0.3f
+G:%3.0f
+G>FL
+G>US
+G@\n101
+GA5H
+GDn\t
+GF4.tU
+GFDGGDFG
+GFFG
+GGGG
+GK6C
+GPOS
+GPOS*
+GPUVis
+GQg\r
+GSUB1
+GSUBl
+GSUBn
+Gamma
+GetACP
+GetCPInfo
+GetClipboardData
+GetCommandLineA
+GetCommandLineW
+GetConsoleMode
+GetConsoleOutputCP
+GetCurrentDirectoryW
+GetCurrentPackageId
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentProcessorNumber
+GetCurrentThreadId
+GetDateFormatEx
+GetDriveTypeW
+GetEnvironmentStringsW
+GetFileAttributesExW
+GetFileInformationByHandle
+GetFileInformationByHandleEx
+GetFileSizeEx
+GetFileType
+GetFullPathNameA
+GetFullPathNameW
+GetLastError
+GetLocaleInfoEx
+GetLocaleInfoW
+GetModuleFileNameW
+GetModuleHandleExW
+GetModuleHandleW
+GetOEMCP
+GetOpenFileNameA
+GetProcAddress
+GetProcessHeap
+GetStartupInfoW
+GetStdHandle
+GetStringTypeW
+GetSystemTimeAsFileTime
+GetSystemTimePreciseAsFileTime
+GetTempPathW
+GetTickCount64
+GetTimeFormatEx
+GetTimeZoneInformation
+GetUserDefaultLCID
+GetUserDefaultLocaleName
+Gfm&D_9
+Gg\fD
+GlobPool
+Global Alpha
+Global alpha value
+GlobalAlloc
+GlobalLock
+GlobalUnlock
+Gls'Hd=
+GlyphExtraSpacing
+Glyphs
+Glyphs (%d)
+Gm\v2
+Goog
+Goto
+Goto Event:
+Goto Marker
+Goto Time:
+GpuVis Colors
+GpuVis Help
+Gpuvis Console
+Gpuvis Settings
+Gpuvis bright text color
+Gq\A@J
+GrabMinSize
+GrabRounding
+Graph Background
+Graph Row Info
+Graph Size: %.1f
+Graph hovered event
+Graph marker A
+Graph marker B
+Graph mouse location line
+Graph mouse zoom selection
+Graph ms time ticks
+Graph only filtered (%lu events)
+Graph only filtered events
+Graph print row bar alpha
+Graph print row label saturation
+Graph print row label text alpha
+Graph row background
+Graph row label text
+Graph row label text background
+Graph selected event
+Graph timeline bar text
+Graph timeline hw queue bar
+Graph timeline hw running bar
+Graph timeline row label saturation
+Graph timeline row label text alpha
+Graph timeline selected bar rectangle
+Graph timeline userspace bar
+Graph: 
+Graph: Goto marker A
+Graph: Goto marker B
+Graph: Hide hovered row
+Graph: Hide labels
+Graph: Page / event list down
+Graph: Page / event list up
+Graph: Pin current graph tooltip
+Graph: Restore location 1
+Graph: Restore location 2
+Graph: Restore location 3
+Graph: Restore location 4
+Graph: Restore location 5
+Graph: Save location 1
+Graph: Save location 2
+Graph: Save location 3
+Graph: Save location 4
+Graph: Save location 5
+Graph: Scroll  event list right
+Graph: Scroll / event list down
+Graph: Scroll / event list left
+Graph: Scroll / event list to end
+Graph: Scroll / event list to start
+Graph: Scroll / event list up
+Graph: Select area
+Graph: Set marker A
+Graph: Set marker B
+Graph: Show and fit next frame marker frame
+Graph: Show and fit previous frame marker frame
+Graph: Show next frame marker frame
+Graph: Show previous frame marker frame
+Graph: Toggle Frame Filters
+Graph: Toggle hovered location zoom to 3ms / restore pre-zoom
+Graph: Toggle hovered row timeline fullscreen
+Graph: Toggle showing Frame Markers
+Graph: Toggle showing hardware vblank timestamps
+Graph: Toggle showing vblank 0 markers
+Graph: Toggle showing vblank 1 markers
+Graph: Zoom in / out
+Graph: Zoom selected area
+GraphPopup
+Grid
+Groups
+Gu\fIE\vNQ
+Gv\nY
+G}ut==rw
+H#MWV!
+H$VG<28P9*
+H$]RM
+H+?MR"y
+H,PU^:NzR+
+H.Hvi
+H01%3
+H:%0.3f
+H:%3.0f
+H?H_H
+H?JJ?WO{O
+HB7\t
+HDOODpENNE
+HDOODpFMNE
+HEJ;
+HELP
+HEX Input
+HE\vA
+HEy\n
+HH:mm:ss
+HHHH
+HISTORY
+HI_SOFTIRQ
+HK\v&017!
+HM\t.q
+HO1Ak3M+\vAs'"
+HOP##1
+HOP##2
+HRIJQ
+HRTIMER_NORESTART
+HRTIMER_RESTART
+HRTIMER_SOFTIRQ
+HSV Input
+HT!d!
+HW queue
+HXHW 4\vRP`rm110&
+HYbYQMMGQ;[glQgD5g
+H[OSYF
+H\v7\v%P1
+H\vVm
+H__HH\\H#10$%33
+H`aGG\\G%11%&44
+Haddock
+Half of available width.\n(~ right-cursor_pos)\n(works within a column set)
+Half of window width.
+Hbar
+Hbar\fkgreenlandic
+Hdlolm^C
+Header
+Header with a close button
+HeaderActive
+HeaderHovered
+HeapAlloc
+HeapFree
+HeapReAlloc
+HeapSize
+Height 400-500
+Hello
+Hello Left
+Hello Right
+Hello from Stacked The First\nUsing style.Colors[ImGuiCol_ModalWindowDarkening] for darkening.
+Hello from Stacked The Second!
+Hello!
+Hello, world!
+Hello.cpp
+Hello.h
+Hello\nWorld
+Help
+Help dialog
+Hg\vN
+Hhhbl
+Hide empty filtered comm rows
+Hide process '%s' events
+Hide row '%s'
+Hide row '%s' and below
+Hide rows for process '%s'
+Hide sched_switch events
+Hiragana: 
+Histogram
+Hloca2
+Hold CTRL and click to select multiple items.
+Hold SHIFT or use mouse to select text.
+Hold SHIFT or use mouse to select text.\nCTRL+Left/Right to word jump.\nCTRL+A or double-click to select all.\nCTRL+X,CTRL+C,CTRL+V clipboard.\nCTRL+Z,CTRL+Y undo/redo.\nESCAPE to revert.\n
+Holding me clears the\nthe keyboard capture flag
+Horizontal Scrolling
+Horizontal scrolling for a window has to be enabled explicitly via the ImGuiWindowFlags_HorizontalScrollbar flag.
+Hotkey
+Hover over me
+Hover to see mouse cursors:
+Hovered
+HoveredId: 0x%08X/0x%08X (%.2f sec)
+HoveredRootWindow: '%s'
+HoveredWindow: '%s'
+Hovering me sets the\nkeyboard capture flag
+Hue bar + SV rect
+Hue wheel + SV triangle
+H{Y3
+H}6n
+I am a fancy tooltip
+I am a tooltip
+I am a tooltip over a popup
+I&773
+I(I0I8IjI
+I,IH\nG6AGB B
+I1\rU
+I2\f-01
+I39MM:3H
+I54GH35I
+I68?<
+I915 performance counters
+I9\tA`
+I>IV
+I@JW
+IC\tAn
+IFBM
+IIII
+II\f#5#53
+IMM32.dll
+IND)ind)
+INITY
+IRQ_POLL_SOFTIRQ
+ITEM
+IW`2
+IZmBW
+IcW&*
+Id: %u\nTime: %s\nComm: %s\nCpu: %u\nEvent: %s\n
+IiQ7)
+Il?333333c?
+Illegal byte sequence
+ImGui
+ImGui Colors
+ImGui Demo
+ImGui Metrics
+ImGui Style Editor
+ImGui Test Window
+ImGui active Button
+ImGui active close button
+ImGui active collapsed title background
+ImGui active column
+ImGui active frame background
+ImGui active hader
+ImGui active resize grip
+ImGui active scrollbar grab
+ImGui active slider grab
+ImGui active title background
+ImGui background menu bar
+ImGui background of checkbox, radio button, plot, slider, text input
+ImGui background of child windows
+ImGui background of normal windows
+ImGui background of popups, menus, tooltips windows
+ImGui border
+ImGui border Shadow
+ImGui button
+ImGui check mark
+ImGui closed button
+ImGui column
+ImGui darken entire screen when a modal window is active
+ImGui disabled text
+ImGui header
+ImGui hovered Button
+ImGui hovered close button
+ImGui hovered column
+ImGui hovered frame background
+ImGui hovered header
+ImGui hovered resize grip
+ImGui hovered scrollbar grab
+ImGui resize grip
+ImGui scrollbar background
+ImGui scrollbar grab
+ImGui selected text background
+ImGui slider grab
+ImGui text
+ImGui title background
+ImVec4* colors = ImGui::GetStyle().Colors;\r\n
+Images
+ImmGetContext
+ImmSetCompositionWindow
+Improper link
+In columns
+Inappropriate I/O control operation
+Incorrect hex digit after \u escape in string.
+IndentSpacing
+Info
+Info for '%s'
+InitOnceExecuteOnce
+InitializeConditionVariable
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeSListHead
+InitializeSRWLock
+Initializing
+Input
+Input %d: '%s', Oversample: (%d,%d), PixelSnapH: %d
+Input/output error
+Inputs Mode
+Inputs, Navigation & Focus
+Internal state
+Interrupted function call
+Invalid argument
+Invalid encoding in string.
+Invalid escape character in string.
+Invalid seek
+Invalid value.
+Is a directory
+IsDebuggerPresent
+IsItemHovered() = %d\nIsItemHovered(_AllowWhenBlockedByPopup) = %d\nIsItemHovered(_AllowWhenBlockedByActiveItem) = %d\nIsItemHovered(_AllowWhenOverlapped) = %d\nIsItemhovered(_RectOnly) = %d\n
+IsItemHovered: %d
+IsMouseDragging(%d):\n  w/ default threshold: %d,\n  w/ zero threshold: %d\n  w/ large threshold: %d
+IsProcessorFeaturePresent
+IsValidCodePage
+IsValidLocale
+IsValidLocaleName
+IsWindowFocused() = %d\nIsWindowFocused(_ChildWindows) = %d\nIsWindowFocused(_ChildWindows|_RootWindow) = %d\nIsWindowFocused(_RootWindow) = %d\nIsWindowFocused(_AnyWindow) = %d\n
+IsWindowHovered() = %d\nIsWindowHovered(_AllowWhenBlockedByPopup) = %d\nIsWindowHovered(_AllowWhenBlockedByActiveItem) = %d\nIsWindowHovered(_ChildWindows) = %d\nIsWindowHovered(_ChildWindows|_RootWindow) = %d\nIsWindowHovered(_RootWindow) = %d\nIsWindowHovered(_AnyWindow) = %d\n
+Item %d
+Item %d..
+Item with focus: %d
+Item with focus: <none>
+ItemInnerSpacing
+ItemSpacing
+Itilde
+Iucs
+Iw#!zV
+Ix5K
+Ix\f0
+Iz]Y
+I~aG
+J)sE[
+J*TpC
+J0qq
+J2J:JBJ
+J2UlY[8X5!1
+J67|
+J7;H\r
+J7\t&9
+J8]O\n
+J;9FG#
+J=JEJMJ
+J?\fmE
+JCs\t
+JE\fE
+JFA\r#
+JFy^
+JJJJ
+JKMN
+JLTSH
+JR\fk
+JSON parse error in file %s: %s (%zu)
+J_`GKV
+January
+Je\n%01
+JgfKMJiiJ
+JihKMKjjK
+JjfNNLhhLN
+JjgMNLhhL
+Jl\fI
+JoL3&
+Jpn^k
+JsO)'NwQ
+Ju%%uJ
+Jugm
+July
+June
+Jx^C
+K 8N-
+K R2
+K!BR
+K)K1KyK
+K0R<!
+K1\ff
+K7,n 
+K7=OQ<5L
+K?(MRZ5V
+K?9kA
+K?HTII
+K@@JJB?J
+KD`k
+KERNEL32.dll
+KGD\r7K]3
+KKA=1
+KKKK
+KOQ$
+KQZX#
+KS\f$T
+KTB-,
+KU7d
+KU\nH
+KXXKYp
+K\&bt
+K\fKbK
+Kanjis: 
+Kappa
+Keyboard, Mouse & Navigation State
+Keys down:
+Keys mods: %s%s%s%s
+Keys pressed:
+Keys release:
+KggKNJhhJ
+KggKNJhhJN
+KhhKMKjjK
+Kiwi
+Kv%%tI
+L 4N
+L'I8!Ba\t#+T{O
+L/LOL
+L5\nL
+L5mJ
+L7\tA+
+L:\f0r
+L;Z? M<w$?.
+L>33
+L>ev
+L?33
+L?UUUUUUU?
+L?ff
+LAWI
+LCIDToLocaleName
+LCMapStringEx
+LCMapStringW
+LEVERAGE\nBUZZWORD
+LJGLMHHL
+LLLLLLL
+LOCAL_PR_FMT
+LQP#
+LQQ"
+LQQ""QQL
+LTY,A[9
+LVVL
+LW%A)
+LWG>
+LWW>
+LWa37`F)
+L_vI\
+Lacute
+Lambda
+Layout
+LcS7BO
+Lcaron
+LeaveCriticalSection
+Left Frame: 
+Left-click and drag to add lines,\nRight-click to undo
+Length:
+Lhead
+Light
+Light hinting
+LightHouse
+Like this one
+Line %d
+Line %d Column %d...
+Line 1 hello\nLine 2 clip me!
+Line = %.0f
+Lines
+Linux-perf
+List
+Lists:
+Lk\n[s
+LlE\nA
+Llnnl
+Lmp(b
+LoadLibraryA
+LoadLibraryExW
+Loading
+Loading OK\n
+LocaleNameToLCID
+Log Filter:
+Log To Clipboard
+Log To File
+Log To TTY
+LogButtons
+Long text display
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+LpcJWP
+M'66
+M'xi
+M)MBMXMnM
+M*Je?
+M0\fQ
+M5\v H
+M8PN
+M:0.000
+M:000
+MGiI
+MJOM
+MJPJCU
+MKWM
+MK\vO
+MM/dd/yy
+MMMM
+MNnG!
+MQP!
+MUdd\l
+MY CUSTOM COLOR PICKER WITH AN AMAZING PALETTE!
+MZ\XNV
+M\nMtM
+Mackerel
+Main Font
+Main menu bar
+Mango
+Manipulating window titles
+March
+Marin
+Marker %c:
+Marker A: 
+Marker B: 
+Max frame time: %s
+Max ts
+Max: %.0f units
+Max: %.1f %%
+Max: (%.2f, %.2f)
+Maybe
+Menu
+Menu inside a regular window
+Menu item
+MenuBarBg
+Menus inside a regular window
+Metrics
+Min frame time: %s
+Min ts
+Min: %.0f units
+Min: %.1f %%
+Min: (%.2f, %.2f)
+Miss exponent in number.
+Miss fraction part in number.
+Missing a closing quotation mark in string.
+Missing a colon after a name of object member.
+Missing a comma or ']' after an array element.
+Missing a comma or '}' after an object member.
+Missing a name for object member.
+Mixed items
+MmF!
+MnmRb_
+Modal 
+Modal windows are like popups but the user cannot close them by clicking outside the window.
+ModalWindowDarkening
+Modals
+Monday
+Mono hinting
+More content %d
+More spacing: Hello
+More..
+Mouse
+Mouse Position: (%.1f,%.1f)
+Mouse Wheel to scroll.
+Mouse clicked:
+Mouse cursor %d: %s
+Mouse cursors
+Mouse dbl-clicked:
+Mouse down:
+Mouse pos: (%g, %g)
+Mouse pos: <INVALID>
+Mouse released:
+Mouse wheel: %.1f
+Mousewheel
+Move
+Move '%s' after
+Ms\vS
+Multi-component Widgets
+Multi-line Text Input
+MultiByteToWideChar
+Multiple calls to Text(), clipped manually
+Multiple calls to Text(), not clipped (slow)
+MyColor##1
+MyColor##2
+MyColor##2f
+MyColor##3
+MyColor##3b
+MyColor##3c
+MyColor##4
+MyObject %d
+MyObject: %d
+N!)Hb9
+N!0 4`i
+N#\r'013
+N'NUa;
+N'NVa:
+N,NTNzN
+N3`d?
+N7\rJ
+N>O=I9
+N>VF
+NAN(IND)
+NAN(SNAN)
+NB: Cursor & selection are preserved when refocusing last used item in code.
+NB: Tree node must be poped before ending the cell. There's no storage of state per-cell.
+NEPT
+NET_RX_SOFTIRQ
+NET_TX_SOFTIRQ
+NFIOF]
+NQ?s
+NQEXX(S~VF{9?
+NQ\r"\r>YRa
+NQ\vD
+NR\rG
+NS\fR
+NULL
+NVV 
+NVVN
+NWSK^
+NWV 
+N[f6GwV07c
+N]QM
+N]tnpl
+Na\fB
+Na\vZ=
+Name
+NavActivateId: 0x%08X, NavInputId: 0x%08X
+NavActive: %d, NavVisible: %d
+NavDisableHighlight: %d, NavDisableMouseHover: %d
+NavGamepad
+NavHighlight
+NavId: 0x%08X, NavLayer: %d
+NavInputs down:
+NavInputs duration:
+NavInputs pressed:
+NavKeyboard
+NavLastChildNavWindow: %s
+NavLastIds: 0x%08X,0x%08X, NavLayerActiveMask: %X
+NavRectRel[0]: (%.1f,%.1f)(%.1f,%.1f)
+NavRectRel[0]: <None>
+NavWindow: '%s'
+NavWindowingHighlight
+Nbk\f 
+New Filename:
+NhgO
+NjjNPefO)76*+89
+NmymP
+NnG!
+No Inputs
+No auto-hint
+No child processes
+No close
+No collapse
+No error
+No error.
+No hinting
+No locks available
+No match for "%.*s"!\n
+No menu
+No move
+No nav
+No resize
+No scrollbar
+No space left on device
+No such device
+No such device or address
+No such file or directory
+No such process
+No titlebar
+NoSavedSettings 
+Node
+Node##1
+Node##2
+None
+Normal buttons
+Not Selected
+Not a directory
+Not enough space
+Note than the default embedded font is NOT meant to be scaled.\n\nFont are currently rendered into bitmaps at a given size at the time of building the atlas. You may oversample them to get some flexibility with scaling. You can also render at multiple sizes and select which one to use at runtime.\n\n(Glimmer of hope: the atlas system should hopefully be rewritten in the future to make scaling more natural and automatic.)
+November
+Now ts: %s
+NqJ$
+Nq\vS
+Number of buffers lost: %lu\n
+Number of events lost:  %lu\n
+Number of lines
+Number too big to be stored in double.
+NvQ)'PwP9I)
+Nw\tr
+NzdV*$MWc9KwS++SwK@m]O$
+O 1f
+O!80
+O%lnum
+O'\fEB
+O+2F3\tdasiaoxiA
+O67&&5467#5
+O8Mr
+OAS\nB
+OA\v&q
+OA\vO=
+OGCM
+OJwX9\f
+OK z
+ONNO
+OOKe
+OOOOOOO
+OP3w
+OPENGL32.dll
+OPg\f
+OS/2
+OUTP
+OZQ%
+O\QM
+O^^OWg
+Ob\fD8
+Object
+Object %d
+Obreve
+Oc\tQ
+October
+OfMRwN%&D_
+OggO
+OghN
+Ohorn
+Ok0B[\t 
+OlcOYS
+Oldest event ts: %s
+On a per-widget basis we are occasionally clipping text CPU-side if it won't fit in its frame. Otherwise we are doing coarser clipping + passing a scissor rectangle to the renderer. The system is designed to try minimizing both execution and CPU/GPU rendering cost.
+One\nTwo\nThree
+Only Modified Colors
+Opaque
+Open
+Open Popups Stack (%d)
+Open Recent
+Open Trace File dialog
+Open Trace File...
+OpenClipboard
+OpenTraceA
+Operation not permitted
+Operators: &&, ||, !=, =, >, >=, <, <=, =~\n\n
+Options
+Options Menu
+Options for '%s'
+Or\n2
+Orange
+Original
+OverSampleH
+OverSampleH: %.0f
+OverSampleV
+Overrun: %llu
+OversampleH
+OversampleV
+Ox'&'g:lmu
+P.smcp
+P08~D#\f
+P54&
+P5\na
+P6H+
+P;0q"
+P?FC|
+PD;D
+PJP]
+PMC8:
+PMWL
+POSIXLY_CORRECT
+PPPP
+PPPPPPPP
+PP]og
+PPrX7N
+PQXED
+PRQQ
+PWce^j
+P\r2P\v*F
+Palette
+Password input
+Paste
+Path
+Pc?N
+PeekNamedPipe
+Permission denied
+PffP
+Picker Mode
+Pineapple
+Pink
+Pinned Tooltip
+PixelSnapH
+Pj\fkU\f 
+Plot Filter:
+Plot Name:
+Plot Scan Str:
+Plot Scan Str: 
+PlotHistogram
+PlotHistogramHovered
+PlotLines
+PlotLinesHovered
+Plots widgets
+PmlTe]
+Pollock
+Popup 
+Popup Menu..
+PopupBg
+PopupBorder
+PopupBorderSize
+PopupID: %08x, Window: '%s'%s%s
+PopupRounding
+Popups
+Popups & Modal windows
+Pos: (%.1f,%.1f), Size: (%.1f,%.1f), SizeContents (%.1f,%.1f)
+Pos: (%.2f,%.2f)->(%.2f,%.2f)
+Pos=%f,%f
+Position
+Possible matches:\n
+PrI"
+Prefer auto-hinter over the font's native hinter.
+Pressed %d times.
+Previous
+Previous Filters
+Primitives
+Printing unusually long amount of text.
+Process '%s' (%lu threads)
+ProcessTrace
+Proggy Clean (13)
+ProggyClean.ttf, 13px
+Programmatically set defaults/options:
+Progress Bar
+ProjMtx
+Property editor
+Ps7\n_
+Ps\n&s
+PushItemWidth(-1)
+PushItemWidth(-100)
+PushItemWidth(100)
+PushItemWidth(GetContentRegionAvailWidth() * 0.5f)
+PushItemWidth(GetWindowWidth() * 0.5f)
+Q Q^QfQ
+Q!03A
+Q#2j
+Q&9g
+Q*6HD
+Q*6LFtF>MB
+Q+ZWR"RD~8?>'REJ
+Q.PnA
+Q5\r4
+Q5rHg,>
+QAf?
+QB4%
+QCpR.T
+QDE\n
+QEoYI
+QFs\n
+QJQXQ
+QKIPQ
+QKJPRJJP
+QK\t\rH
+QLIPQJKP
+QMKS
+QOPP
+QQQQQQQQQQ
+QSSQ
+QXcbEventReader
+QY\rB
+Q[\vDW
+Q\fQrQzQ
+Qkkbal
+Qm++jP_
+Qm\ra
+QokkoQ
+Qr''sN
+Qs''sO
+QueryPerformanceCounter
+QueryPerformanceFrequency
+QueuePacket
+Quit
+Quit GpuVis
+Q~U,$B\8k
+R#2$32O
+R$JqN
+R0RrS
+R3/IS
+R3\vR/
+R4^F*
+R5=Y*
+R:%0.3f
+R:%3.0f
+R<aD%
+R@30[
+RCU_SOFTIRQ
+RDB3!
+RDNLMCAC
+RE=IPC
+REACTION
+RGB Input
+RItR0
+RJqn
+RPE]
+RQ\vK
+RR`k
+RRbHh
+RW[[W
+R\nRpR
+RaiseException
+Range Widgets
+Rasterize at higher quality for sub-pixel positioning.
+RasterizerFlags
+RasterizerMultiply
+Raw (%.1f, %.1f), WithLockThresold (%.1f, %.1f), MouseDelta (%.1f, %.1f)
+Read events: %llu
+Read-only
+Read-only file system
+ReadConsoleW
+ReadFile
+Reading trace file %s...
+Recurse..
+Redo
+ReleaseSRWLockExclusive
+RenderThread
+Rendering
+Rendering more text into the same line
+Request ImGui to move your move cursor when using gamepad/keyboard navigation. NewFrame() will change io.MousePos and set the io.WantMoveMouse flag, your backend will need to apply the new mouse position.
+Request ImGui to render a mouse cursor for you in software. Note that a mouse cursor rendered via your application GPU rendering path will feel more laggy than hardware cursor, but will be more in sync with your other visuals.\n\nSome desktop applications may use both kinds of cursors (e.g. enable software cursor only when resizing/dragging something).
+Request queued waiting to be added
+Requests executing on the GPU
+Requests waiting on fences and dependencies before they are runnable
+Reset All to Defaults
+Reset to Defaults
+ResetEvent
+Resize horizontal only
+Resize vertical only
+ResizeEW
+ResizeGrip
+ResizeGripActive
+ResizeGripHovered
+ResizeNESW
+ResizeNS
+ResizeNWSE
+Resource deadlock avoided
+Resource device
+Resource temporarily unavailable
+Restore Location
+Result too large
+Revert
+Revert Ref
+RhCc
+RiN>CI
+Rich
+Right Frame: 
+Right-click on the individual color widget to show options.
+Ring buffer stats:
+Rn&c8
+RoInitialize
+RoUninitialize
+Roboto Condensed
+Roboto Regular
+RootWindow
+Rounding
+Row Filter:  
+Row Filters
+Row Name
+Row Name:  
+Row filter expression\n\n
+Row height: %%.0f
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlPcToFileHeader
+RtlUnwind
+RtlUnwindEx
+RtlVirtualUnwind
+Runnable requests waiting for a slot on GPU
+RyyR
+R~U+3[}KW
+S!01
+S%+ $5467&&54$!
+S'Xs.
+S97 b
+S9>H
+S:%0.3f
+S:%3.0f
+S<74\tnsuperior
+S>$hkDh$h>[2
+SCHED_SOFTIRQ
+SCu\t!
+SD3\n*
+SDL2.dll
+SDL_AtomicAdd
+SDL_AtomicCAS
+SDL_AtomicGet
+SDL_AtomicSet
+SDL_CaptureMouse
+SDL_CreateMutex
+SDL_CreateRGBSurfaceFrom
+SDL_CreateSystemCursor
+SDL_CreateThread
+SDL_CreateWindow
+SDL_DestroyMutex
+SDL_DestroyWindow
+SDL_FreeCursor
+SDL_GL_CreateContext
+SDL_GL_DeleteContext
+SDL_GL_GetDrawableSize
+SDL_GL_SetAttribute
+SDL_GL_SetSwapInterval
+SDL_GL_SwapWindow
+SDL_GetClipboardText
+SDL_GetError
+SDL_GetKeyName
+SDL_GetModState
+SDL_GetMouseState
+SDL_GetPerformanceCounter
+SDL_GetPerformanceFrequency
+SDL_GetPrefPath
+SDL_GetWindowBordersSize
+SDL_GetWindowFlags
+SDL_GetWindowPosition
+SDL_GetWindowSize
+SDL_GetWindowWMInfo
+SDL_Init
+SDL_LockMutex
+SDL_PollEvent
+SDL_PushEvent
+SDL_Quit
+SDL_SetClipboardText
+SDL_SetCursor
+SDL_SetWindowIcon
+SDL_ShowCursor
+SDL_ThreadID
+SDL_UnlockMutex
+SDL_WaitThread
+SDSLS
+SG\vH
+SHIFT 
+SHLWAPI.dll
+SHRUURGS(
+SHm(
+SJe\t$
+SKY/
+SLPO
+SMQ_
+SNAN)
+SNB57
+SNMT
+SNQ^
+SPLU
+SQQS
+SSSS
+ST:z8Ds5
+STA_PR_FMT
+STZZ
+STv/N
+SUPER 
+SW queue
+SYbt
+Sailor
+Same title as another window##1
+Same title as another window##2
+Sample count
+Saturday
+Save
+Save '%s' as...
+Save '%s' as:
+Save As..
+Save Filename
+Save Location
+Save Ref
+Save gpuvis screenshot (%dx%d) as:
+Save/Revert in local non-persistent storage. Default Colors definition are not affected. Use "Export Colors" below to save them somewhere.
+Scale row time: %sx
+Sched_switch task running block
+Sched_switch task sleeping block
+Scroll To Pos
+Scroll from code
+Scroll to bottom
+Scroll: (%.2f/%.2f,%.2f/%.2f)
+ScrollbarBg
+ScrollbarGrab
+ScrollbarGrabActive
+ScrollbarGrabHovered
+ScrollbarRounding
+ScrollbarSize
+Scrolling
+Scrolling Text %d
+ScrollingRegion
+Select..
+Selectable Leaf %d
+Selectable Node %d
+Selectables
+Selected
+Selected Frame Marker Background
+Selection State: Multiple Selection
+Selection State: Single Selection
+Separator
+SeparatorActive
+SeparatorHovered
+September
+Set Frame Markers
+Set Frame Markers...
+Set Marker
+Set as default
+Set focus to event list
+Set focus to events graph
+Set pid filter: %d
+Set tgid filter: %d
+Set to PI
+Set to zero
+SetClipboardData
+SetColorEditOptions() is designed to allow you to set boot-time default.\nWe don't have Push/Pop functions because you can force options on a per-widget basis if needed, and the user can change non-forced ones with the options menu.\nWe don't have a getter to avoid encouraging you to persistently save values that aren't forward-compatible.
+SetEndOfFile
+SetEnvironmentVariableW
+SetEvent
+SetFileInformationByHandle
+SetFilePointerEx
+SetFileTime
+SetLastError
+SetProcessDpiAwareness
+SetStdHandle
+SetThreadpoolTimer
+SetThreadpoolWait
+SetUnhandledExceptionFilter
+Settings
+Sg|nk}95
+ShC,
+ShC-
+Shcore.dll
+Shift+
+Shift+click drag
+Show clipping rectangles when hovering draw commands
+Show frame rate
+Show gfx timeline events
+Show gfx timeline labels
+Show gfx timeline userspace
+Show i915-perf counters
+Show print prefixes (like [Compositor])
+Show print timeline labels
+Show render frame markers
+Show row
+Show vblank crtc%d markers
+Show vblank crtc%u markers (~%s)
+Sigma
+Simple layout
+Simple overlay
+Simple overlay\nin the corner of the screen.\n(right-click to change position)
+Single call to TextUnformatted()
+Size
+Size: %.1f
+Size=%d,%d\n
+Size=%f,%f
+SleepConditionVariableCS
+SleepConditionVariableSRW
+SliderGrab
+SliderGrabActive
+Small Font
+Small buttons
+Some content %d
+Sq7`
+St9\nk
+Stacked 1
+Stacked 2
+Stacked Popup
+Stacked modals..
+Start:%s Length:%s
+Stats
+Storage: %d bytes
+StrStrIA
+Strawberry
+Strong hinting algorithm that should be used for monochrome output.
+Style
+Style Editor
+Sub-menu
+SubmitThreadpoolWork
+Sunday
+Sw\n(7
+Swyywxss
+Sync event list to graph mouse location
+SystemTimeToFileTime
+SystemTimeToTzSpecificLocalTime
+T%L9
+T&Sp
+T01!#
+T0F.
+T45 +
+T62(7
+T=eM1\t
+T?\vA1
+TAB/SHIFT+TAB to cycle through keyboard editable fields.
+TASKLET_SOFTIRQ
+TASK_DEAD
+TASK_INTERRUPTIBLE
+TASK_PARKED
+TASK_RUNNING
+TASK_STOPPED
+TASK_TRACED
+TASK_UNINTERRUPTIBLE
+TD\nC
+TE5\n
+TEST
+TEST##1
+TEST##2
+TIMER_SOFTIRQ
+TJTZ
+TKPb
+TK\tZ
+TOCB
+TOT_T
+TP@Z
+TQST
+TS++K
+TTF Filename:
+TUUUU
+TWY[
+TX\n1
+TZTX
+Tabbing
+Tailor
+Tbar
+TdhGetEventInformation
+TdhGetEventInformation failed with 0x%x.\n
+TdhGetEventMapInformation
+TdhGetProperty
+TdhGetPropertySize
+Terminate parsing due to Handler error.
+TerminateProcess
+Test paragraph 1:
+Test paragraph 2:
+Test type
+Text
+Text Baseline Alignment
+Text aligned to Widget
+TextDisabled
+TextInput
+TextSelectedBg
+Texture
+Texture surface: %d pixels (approx) ~ %dx%d
+Thanks for clicking me!
+The TextDisabled color is stored in ImGuiStyle.
+The document is empty.
+The document root must not be followed by other values.
+The lazy dog is a good dog. This paragraph is made to fit within %.0f pixels. Testing a 1 character word. The quick brown fox jumps over the lazy dog.
+The logging API redirects all text output so you can easily capture the content of a window or a block. Tree nodes can be automatically expanded. You can also call ImGui::LogText() to output directly to the log without a visual output.
+The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog.
+The surrogate pair in string is invalid.
+Theta
+This example implements a console with basic coloring, completion and history. A more elaborate implementation may want to store entries along with extra data such as timestamp, emitter, etc.
+This example shows how you may implement a property editor using two columns.\nAll objects/fields data are dummies here.\nRemember that in many simple cases, you can use ImGui::SameLine(xxx) to position\nyour cursor horizontally instead of using the Columns() API.
+This is a more standard looking tree with selectable nodes.\nClick to select, CTRL+Click to toggle, click on arrows or double-click to open.
+This is another child window for testing IsWindowHovered() flags.
+This is window 1.\nMy title is the same as window 2, but my identifier is unique.
+This is window 2.\nMy title is the same as window 1, but my identifier is unique.
+This text should automatically wrap on the edge of the window. The current implementation for text wrapping follows simple rules suitable for English and possibly other languages.
+This window has a changing title.
+This window is being created by the ShowDemoWindow() function. Please refer to the code in imgui_demo.cpp for reference.\n\n
+Three
+Thursday
+Tilefish
+Time Stamp
+Time: 
+Tip: Left-click on colored square to open color picker,\nRight-click to open edit options menu.
+TitleBg
+TitleBgActive
+TitleBgCollapsed
+Tje9R@3
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+To Clipboard
+To TTY
+Toggle showing event list
+Toggle showing only first hovered pid events
+Toggle showing only first hovered tgid events
+Toggle..
+Too many links
+Too many open files
+Too many open files in system
+Tooltip 
+Tooltip here
+Top-left
+Top-right
+Total Events: %lu\n
+TouchExtraPadding
+Trace cpus: %u
+Trace time start: %s
+Trace time: %s
+Trace uname: %s
+Trace version: %s
+Track
+Tree within single cell
+Trees
+Trim Trace to align CPU buffers
+TrqUVllV+=;-->>
+TryAcquireSRWLockExclusive
+Tuesday
+Tw\t NS
+Two items: Hello
+TzSpecificLocalTimeToSystemTime
+U UPUpU
+U!KR
+U%&Lt
+U* @ P ` p 
+U+%04X..U+%04X (%d %s)
+U,second\texclam
+U4UJURU
+U:`4Ba
+U;b2C_
+UA>N0Wl
+UE\fD
+UEoE
+UF4<
+UIEngineAnimati
+UIEngineRenderT
+UL}Z1
+UQ\v dO
+URRU
+USER GUIDE:
+USER32.dll
+USSU
+USTT
+UTF-16LEUNICODE
+UTF-8
+UTF-8 Text
+UTF-8 input
+UUUU
+UUUUUU
+UUmmUXkk
+UV: (%.3f,%.3f)->(%.3f,%.3f)
+UWIdpL
+UZ[X
+U]WY
+Uint8 + HSV
+UjynN
+Um+bG
+UmHc
+Undo
+UnhandledExceptionFilter
+Unknown
+Unknown command: '%s'\n
+Unknown error
+Unknown error.
+Unknown exception
+Unspecific syntax error.
+Unzoom '%s'
+Unzoom row '%s'
+Uring
+Use Freetype
+Use TAB/SHIFT+TAB to cycle through keyboard editable fields.
+Use high-precision HW vblank timestamps (if available)
+User can right-click the picker to change mode.
+User interrupt to context complete
+Utilde
+Uv\f801
+Ux%%xW
+UyyU
+V mV
+V"up\t
+V#"&773
+V2(-Q7\n
+V3/3
+V4ry
+V5ZRM(?K
+V6&)P
+V6+P\v
+V6765
+V8A\r\v/2/5P
+V:%0.3f
+V:%3.0f
+V<2P
+VAcC"
+VBlank crtc0
+VBlank crtc1
+VBlank crtc2
+VDGTJ
+VF4:
+VIF_PR_FMT
+VKRenderThread
+VN\vD
+VTooTWmm
+VXNdlO
+VZVIaOx
+V\fV>VVV
+V\n7A9+
+Value
+Value = %.3f (<-- right-click here)
+Vars: Any field in Info column plus:\n
+Vertical Sliders
+Vertical sync
+Vg6M
+Visual C++ CRT: Not enough memory to complete call to strerror.
+Vk#N
+Vy?\tD
+W 7x
+W FAw
+W!45
+W!50
+W!91
+W"up
+W)5b
+W.nL
+W2WKWaWwW
+W4673
+W4vC
+W7 7
+W7?7_7
+W9jdbj@[
+W:WxW
+W>id
+W?15\r
+WARNING: %s exists
+WARNING: AddFontFromFileTTF %s failed.\n
+WARNING: No events found.
+WARNING: No plot data values found.
+WCiZT/-C?B,
+WD\t`E\rA
+WE@E
+WFoN*/K`0C
+WJc\fY
+WJxT-
+WL_\fC
+WLi/,iCvu#JrN U)
+WMLUIy
+WNw'
+WODE
+WPdk
+WQSa
+WQzpotgdd
+WROR_R
+WS0'
+WV>a
+WVVW
+WW\fC
+WaNd?
+Wa\nAG\v,
+Wa^Z
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WakeAllConditionVariable
+WakeConditionVariable
+WantCaptureKeyboard: %d
+WantCaptureMouse: %d
+WantMoveMouse: %d
+WantTextInput: %d
+Watermelon
+Wc\t L
+Wednesday
+Welcome to ImGui!
+Welcome to gpuvis\n
+Wgrave
+When a popup is active, it inhibits interacting with windows that are behind the popup. Clicking outside the popup closes it.
+When disabling anti-aliasing lines, you'll probably want to disable borders in your style as well.
+While editing text:\n
+WideCharToMultiByte
+Widget
+Widget##1
+Widget##2
+Widget##3
+Widgets
+Widgets Width
+Width %.2f\nOffset %.2f
+Width 400-500
+Width > 100, Height > 100
+Window
+Window background clear color
+Window options
+Window will resize every-frame to the size of its content.\nNote that you probably don't want to query the window size to\noutput your content because that would create a feedback loop.
+WindowBg
+WindowBorder
+WindowBorderSize
+WindowPadding
+WindowRounding
+WindowTitleAlign
+Windows
+With Alpha
+With Alpha Bar
+With Alpha Preview
+With HDR
+With Half Alpha Preview
+With Options Menu
+With Ref Color
+With Side Preview
+With border:
+With the ImGuiColorEditFlags_NoInputs flag you can hide all the slider/text inputs.\nWith the ImGuiColorEditFlags_NoLabel flag you can pass a non-empty label which will only be used for the tooltip and picker popup.
+Without border:
+Word Wrapping
+Word-wrapping
+WppWHYmmY
+Wrap width
+WriteConsoleW
+WriteFile
+Wz\tB
+X Aw
+X"5x?ug
+X$XjX
+X(X?X
+X,/14N
+X.smcp\n
+X/4B
+X5AHx
+X5\vF
+X8z>
+X@8\nG
+XClWE
+XDhZT/-C>C+
+XH$SX].z
+XKYp
+XMy(M3
+XQIY
+XVSYZTTX
+XZ\t,3
+XbP9
+Xe7 
+Xi\n qXi
+XijWuTkkT
+Xk\nG
+XppX<YmnX
+XqkY
+XqqX
+Xw\f^O\rI
+Xx&&yU
+Y 3A
+Y = %.0f px
+Y#L.4\rL
+Y)\v'uAA8}4
+Y0Y\Y
+Y2654.
+Y5\vx_
+Y8a:
+Y>kX>M
+YAr0
+YEkJ'
+YEyx
+YLBJ
+YNNXYOMX
+YP_f
+YSYN
+YU8v6Hj2
+YUVF
+YUkf~
+YVWX
+YWXX
+Yb+R*
+Yellow
+You can apply arithmetic operators +,*,/ on numerical values.\n  e.g. [ 100 ], input '*2', result becomes [ 200 ]\nUse +- to subtract.\n
+You can apply arithmetic operators +,*,/ on numerical values.\nUse +- to subtract.
+You can use ImGui::GetMouseDragDelta(0) to query for the dragged amount on any widget.
+You may want to explicitly specify content width by calling SetNextWindowContentWidth() before Begin().
+Your application can render a different mouse cursor based on what ImGui::GetMouseCursor() returns. If software cursor rendering (io.MouseDrawCursor) is set ImGui will draw the right cursor for you, otherwise your backend needs to handle it.
+YppZ
+YrrY
+Yx'&zV
+Z$ZzZ
+Z%\neight
+Z/ZFZ]Z
+Z0%T
+Z1K&Ni
+Z7\fE
+Z7\n$32
+Z;iss
+Z>jd
+Z@26
+ZCA3
+ZLkt
+ZMju
+ZNkv
+ZRVU
+ZTKc
+Z\>z8
+Za[L
+ZbbZ
+Zjz\v
+Zoom In
+Zoom Out
+Zoom in to 3.00ms
+Zoom out to %s
+Zoom row '%s'
+Zoomed Graph Size: %.1f
+ZzI a
+Zz\fEx\f 
+[!n8H
+[%s:%s] %s: field %s not found
+[%s:%s] %s: unknown op '%s'
+[%s:%s] Error: function '%s()' expects %d arguments but event %s only uses %d
+[%s:%s] Error: function '%s()' only expects %d arguments but event %s has more
+[%s:%s] bad op token %s
+[%s:%s] function %s not defined
+[%s:%s] unexpected type %d
+[%s:%s] unknown op '%s'
+[%s] Hello, time is %.1f, frame count is %d\n
+[*QmU
+[*ncd>0
+[02Tm<
+[AgQ=
+[Compositor Client] 
+[Compositor Client] Begin AcquireSync
+[Compositor Client] Begin ReleaseSync
+[Compositor Client] End AcquireSync
+[Compositor Client] End ReleaseSync
+[Compositor Client] Flush (D3D11) - Begin
+[Compositor Client] Flush (D3D11) - End
+[Compositor Client] PostPresentHandoff 
+[Compositor Client] PostPresentHandoff Begin
+[Compositor Client] PostPresentHandoff End
+[Compositor Client] PostPresentHandoff begin
+[Compositor Client] PostPresentHandoff end
+[Compositor Client] Received Idx 
+[Compositor Client] Submit End
+[Compositor Client] Submit Left
+[Compositor Client] Submit Right
+[Compositor Client] WaitGetPoses 
+[Compositor] 
+[Compositor] After flush
+[Compositor] After flush: Compute
+[Compositor] After flush: Graphics
+[Compositor] After wait query
+[Compositor] Before flush
+[Compositor] Before flush: Compute
+[Compositor] Before flush: Graphics
+[Compositor] Before wait query
+[Compositor] Begin Present(nowait)
+[Compositor] Begin Present(wait)
+[Compositor] Begin Running Start
+[Compositor] End Present
+[Compositor] End Running Start
+[Compositor] Mirror Begin Present
+[Compositor] Mirror End Present
+[Compositor] Predicting( 
+[Compositor] Present() 
+[Compositor] Re-predicting( 
+[Compositor] Sleep - begin: 0
+[Compositor] Sleep - begin: 6
+[Compositor] Sleep - end
+[Compositor] frameTimeout( 
+[Error] %s
+[Error] %s (%s) failed: %s
+[Error] %s could not open archive %s.
+[Error] %s failed to extract from %s (src: %s, dest: %s).
+[Error] %s failed, currently loading %s.
+[Error] %s: SDL_CreateThread failed.
+[Error] %s: failed to read tracing string.\n
+[Error] %s: failed to read version string.\n
+[Error] %s: header memcheck failed.\n
+[Error] %s: new tracecmd_input_t failed.\n
+[Error] %s: open("%s") failed: %d\n
+[Error] %s: pevent_alloc failed.\n
+[Error] %s: setjmp error called for %s.\n
+[Error] SDL_CreateMutex() failed.
+[Error] compiling '%s': %s
+[Error] load_trace_file(%s) failed.
+[GGD
+[Lju
+[NCW
+[NewFrameHandler] Begin AcquireSync
+[NewFrameHandler] Begin ReleaseSync
+[NewFrameHandler] End AcquireSync
+[NewFrameHandler] End ReleaseSync
+[NvEnc]CalculateMotion run(begin)
+[NvEnc]CalculateMotion run(end)
+[NvEnc]Lock output(begin)
+[NvEnc]Lock output(end)
+[NvEnc]MapResource(begin)
+[NvEnc]MapResource(end)
+[Rfm
+[\nfK8/JJ(DP=
+[aOni*{
+[error]
+[error] something went wrong
+[qwW$
+\;hts
+\Cie
+\Cig
+\IIU
+\IIU\t
+\Kx`J
+\Teq
+\VRZ
+\aI.l)/au\v 
+\f 1Dl
+\f 3He
+\f!01hw
+\f"013uA
+\f"326E
+\f"Ds.Ie
+\f$013
+\f$left\v
+\f&013
+\f&\vCcaron
+\f'01%2655&u
+\f'4&'&$54$I
+\f/\f?\fO\f_\fo\f
+\f001
+\f001%2653
+\f010
+\f02653
+\f0LlGNyQ*
+\f110
+\f201
+\f3greenlandic
+\f7uxxu
+\f9Xw
+\f>Y01
+\f>YcY
+\fAK'E
+\fCM\fM
+\fES\fX
+\fEh\fH
+\fG-U3
+\fG\rT1 P
+\fG\rT:352/
+\fHoo`ZNN
+\fIj\fg
+\fKPLO
+\fKkL4%
+\fPs\vIQ\v`C
+\fSv\nB
+\fVc|rj|;3
+\faG\vCA
+\fsbbu
+\fxs\ft
+\ipQnC
+\jQ[i
+\mp34
+\n  %s%u%s %s duration: %s
+\n#2$32Q2
+\n$3353
+\n%s%u%s %c%s
+\n%s%u%s sched_switch %s%s-%d%s %sCpu:%d%s (%s) %s
+\n)\tafii10023
+\n,3353
+\n.\tanoteleia\fEpsi
+\n/\n?\nO\n_\no\n
+\n06EBBQ"
+\n1\tanoteleia\fEpsilon
+\n201
+\n88\nBP)
+\n>Y01
+\nFilter: 
+\nGPU frequency: %.02f MHz
+\nH77
+\nLXMU
+\nMarker A: 
+\nMarker B: 
+\nNext vblank: 
+\nPid filter: %d
+\nPrev vblank: -
+\nProcess: %s (Time: %s)
+\nRV\rCL#
+\nR\tpd
+\nRow Filters (disabled):
+\nRow Filters (enabled):
+\nTgid filter: %d
+\n\nFrame %d (
+\nh?oT
+\nk>oB
+\oo\l
+\r"013K
+\r$442
+\r%NvQ
+\r%\nAlpha
+\r(2662
+\r/\r?\rO\r_\ro\r
+\r0F3\tgravecomb\tacut
+\r>Y01
+\rF-LO
+\rH;7J
+\rJH\fC
+\rT\ifi~i
+\r\QaL
+\r\f\v\v\n\n\t\t\t\t\t
+\r\n--------------------------------
+\r\v\v\n\n\t\v\t\r\n\r\n
+\re[id
+\rifej
+\rjefi
+\rmojg\v
+\ruyyu
+\t fBY
+\t#\tLdoG
+\t#tild
+\t%\fOmicr
+\t&JmF2M;)
+\t'\fOmicron
+\t(acutecomb
+\t(ipQnC
+\t,KSXE
+\t-1269)
+\t/\t?\tO\t_\to\t
+\t6;JGER$ 
+\t6N3
+\t<#5353
+\tAC"A
+\tFJ\f"01
+\tKgQ6(
+\t\r$0=&<`D$)KlCArT0
+\t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+\tcQr
+\tkE>fvw
+\tsc+E
+\v 2AQ
+\v!01pL
+\v"rot
+\v$s\vfiv
+\v%\nUring
+\v&7667
+\v&FfA
+\v(MoGPuM%
+\v)DaC
+\v+of\f5J]4
+\v/\v?\vO\v_\vo\v
+\v/uxxu
+\v2H-$W8
+\v6x2J0
+\v9YwHJhA
+\v9YwH`
+\v<N-5AF8
+\v>uxxu
+\vA03>A|
+\vC3\rb
+\vD:QY
+\vFRP+
+\vHVVGl4`O5
+\vQm\tR
+\vUU\fS
+\vVS\rn
+\vj0\f$01
+\ysK
+\~bC1
+]#FEFF
+]01P
+]2/q3
+]210
+]2210
+]22Ak
+];\f6(MRZ5V
+]?33s?r
+]@\tL\f\\fl\f|\f
+]KN[SS
+]PK`K
+]Uc$V
+]X^TRm$lBdri]e
+]ZXc
+]q10
+]q2]10
+]rHa
+^"#34Im
+^"i06
+^;H^wGGK
+^<V7w
+^OWg
+^QtJ#
+^RfN>
+^VNh`M
+^WDD
+^Wft
+^XLX
+^XTd
+^af]Yl
+^e\nAh
+^r_IKU*5
+^wwn7[
+_!1EC
+_"237
+_30DI
+_6765
+_Bdo
+_COL3F
+_COL4F
+_G:|)"-X^I-
+_Obf
+_OoO
+_RDATA
+_TLh`G
+__based(
+__cdecl
+__clrcall
+__data_loc
+__eabi
+__fastcall
+__free_page
+__get_bitmask
+__get_dynamic_array
+__get_dynamic_array_len
+__get_str
+__pascal
+__print_array
+__print_flags
+__print_hex
+__print_hex_str
+__print_symbolic
+__ptr64
+__restrict
+__stdcall
+__swift_1
+__swift_2
+__thiscall
+__unaligned
+__vectorcall
+_oD>Kg
+_request_add
+_request_in
+_request_out
+_request_queue
+_request_submit
+_request_wait_begin
+_request_wait_end
+_tt_u\uu\
+_vov
+_z;UmvY
+_zX\vD
+`0p0
+`2pp
+`Do|to
+`Eka
+`En{vp
+`F3O8
+`IxX9\f
+`Mg\tM
+`OYVXNKN
+`QSVQT
+`RTTI
+`anonymous namespace'
+`copy constructor closure'
+`default constructor closure'
+`dynamic atexit destructor for '
+`dynamic initializer for '
+`eh vector constructor iterator'
+`eh vector copy constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`eh vector vbase copy constructor iterator'
+`local static guard'
+`local static thread guard'
+`local vftable constructor closure'
+`local vftable'
+`m\f:013
+`managed vector constructor iterator'
+`managed vector copy constructor iterator'
+`managed vector destructor iterator'
+`n{pe
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`scalar deleting destructor'
+`spow{tx
+`string'
+`typeof'
+`udt returning'
+`vbase destructor'
+`vbtable'
+`vcall'
+`vector constructor iterator'
+`vector copy constructor iterator'
+`vector deleting destructor'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`vector vbase copy constructor iterator'
+`vftable'
+`virtual displacement map'
+a 6g#
+a&017'
+a2%D_:n
+a4*PqG<[B*\v
+a6>r
+a9II:a
+a=dH'slG
+aB5q&
+aH:BCLT
+aMaUkk
+aMkfel|
+aOu1
+aSWYZw
+aU\nX=
+aX+a6
+aY#XeY
+aZOl
+a^fY
+aaa1.c
+aaa2.cpp
+aaaa
+aaaaaaaa bbbbbbbb, c cccccccc,dddddddd. d eeeeeeee   ffffffff. gggggggg!hhhhhhhh
+aalt
+abc.h
+abcdefghijklmnopqrstuvwxyz
+abf=
+acosf
+address family not supported
+address in use
+address not available
+ad{zgb|
+aj\c
+ak\n$j
+alpha
+already connected
+amdgpu
+amdgpu_cs_ioctl
+amdgpu_job_msg
+amdgpu_sched_run_job
+another popup
+ar>TqsS
+argument list too long
+argument out of domain
+auG8
+avg 0.0
+axwm8\
+az\tH
+b$for u
+b%d (%.02f secs)
+b-ZRE
+b1YT^
+b45a
+b4tZd
+b55b
+b:zyv6
+b@oP.Q
+bDqP,
+bR-K6
+bTSb
+b[ZjC
+bad address
+bad arg in filter tree
+bad array new length
+bad cast
+bad exception
+bad file descriptor
+bad function call
+bad locale name
+bad message
+bad op token %s
+bbb1.c
+bbb2.cpp
+bbbb
+begin_ctx=
+begin_gctx=
+bj?Z
+bjB]
+blah blah
+blah.trace
+blue
+bnMG
+bn{qd
+bonc
+bprint
+breve
+breveP
+broken pipe
+buf error
+button
+bytes:
+byybp`{{`
+bzo=
+c #ZW\fD
+c 5z
+c!10
+c!14
+c"10A
+c(cHc
+c3+$t
+c3_P[
+c67b
+c75.
+c7D*
+c8dK, NRR$PoF
+c=80Z*03u<}w
+c?FA@s}
+cB\fj
+cE[kA+
+cFxcM
+cJ6Z@$
+cQ-K6
+cRta
+cRtaa
+cSQe
+cWO p
+cWYY'~
+cZjn
+callchain
+can fit within a text block.
+cannot reparent other than OP
+canvas
+caroI
+ccc1.c
+ccc2.cpp
+cccc
+ccyy
+cdA}
+ce\vf
+cecmc
+char
+checkbox
+child
+chrome
+ciMh?
+circumflex
+ckD_
+class
+click on a button to set focus
+cmap
+col_BrightText
+col_ClearColor
+col_EventList_Hov
+col_EventList_Sel
+col_EventList_Text
+col_FrameMarkerBk0
+col_FrameMarkerBk1
+col_FrameMarkerSelected
+col_FtracePrintText
+col_Graph_1Event
+col_Graph_2Event
+col_Graph_3Event
+col_Graph_4Event
+col_Graph_5Event
+col_Graph_6Event
+col_Graph_BarHwQueue
+col_Graph_BarHwRunning
+col_Graph_BarSelRect
+col_Graph_BarText
+col_Graph_BarUserspace
+col_Graph_Bari915CtxCompleteDelay
+col_Graph_Bari915Execute
+col_Graph_Bari915ExecuteDelay
+col_Graph_Bari915Queue
+col_Graph_Bari915ReqWait
+col_Graph_Bari915SubmitDelay
+col_Graph_Bk
+col_Graph_HovEvent
+col_Graph_MarkerA
+col_Graph_MarkerB
+col_Graph_MousePos
+col_Graph_PrintBarAlpha
+col_Graph_PrintLabelAlpha
+col_Graph_PrintLabelSat
+col_Graph_RowBk
+col_Graph_RowLabelText
+col_Graph_RowLabelTextBk
+col_Graph_SelEvent
+col_Graph_TaskRunning
+col_Graph_TaskSleeping
+col_Graph_TimeTick
+col_Graph_TimelineLabelAlpha
+col_Graph_TimelineLabelSat
+col_Graph_ZoomSel
+col_ImGui_Border
+col_ImGui_BorderShadow
+col_ImGui_Button
+col_ImGui_ButtonActive
+col_ImGui_ButtonHovered
+col_ImGui_CheckMark
+col_ImGui_ChildBg
+col_ImGui_CloseButton
+col_ImGui_CloseButtonActive
+col_ImGui_CloseButtonHovered
+col_ImGui_FrameBg
+col_ImGui_FrameBgActive
+col_ImGui_FrameBgHovered
+col_ImGui_Header
+col_ImGui_HeaderActive
+col_ImGui_HeaderHovered
+col_ImGui_MenuBarBg
+col_ImGui_ModalWindowDarkening
+col_ImGui_PopupBg
+col_ImGui_ResizeGrip
+col_ImGui_ResizeGripActive
+col_ImGui_ResizeGripHovered
+col_ImGui_ScrollbarBg
+col_ImGui_ScrollbarGrab
+col_ImGui_ScrollbarGrabActive
+col_ImGui_ScrollbarGrabHovered
+col_ImGui_Separator
+col_ImGui_SeparatorActive
+col_ImGui_SeparatorHovered
+col_ImGui_SliderGrab
+col_ImGui_SliderGrabActive
+col_ImGui_Text
+col_ImGui_TextDisabled
+col_ImGui_TextSelectedBg
+col_ImGui_TitleBg
+col_ImGui_TitleBgActive
+col_ImGui_TitleBgCollapsed
+col_ImGui_WindowBg
+col_ThemeAlpha
+col_VBlank0
+col_VBlank1
+col_VBlank2
+color
+color 1
+color 2
+color_list
+color_picker
+color_sample
+colorpicker##alpha
+colorpicker##argb
+colors[ImGuiCol_%s]%*s= ImVec4(%.2ff, %.2ff, %.2ff, %.2ff);\r\n
+column_width_%s%lu
+columns
+combo
+combo 2
+comm
+commit
+commit overrun:
+common_flags
+common_pid
+common_type
+comp_%d.%d.%d
+comp_%d.%d.%d hw
+connection aborted
+connection already in progress
+connection refused
+connection reset
+context
+copy
+cosf
+cpu graph
+cpu_stats
+cross device link
+crossbar
+crtc
+cvt 9~>L
+d#QM?
+d0&O[7`
+d3l46j3e3u0
+d4i\f
+d6\f6
+d8L2
+d8{uf"
+d?000000`?
+dEdg;
+dJb^NMcc
+dLTSH
+dL`]ONab
+dQNcdOPc
+dRL>
+dYR 
+d\ndtd
+daj?Y
+data
+data error
+dc\tGm\fwq
+dcroat
+dd\n"01
+dddd
+dddd, MMMM dd, yyyy
+dddddddd
+de`vv`dc
+dear imgui says hello. (%s)
+decimal
+default
+delete
+delta
+destination address required
+device or resource busy
+dg1M6
+diIfA
+directory not empty
+display very important message here!
+djoRnC
+dkB]
+do_read
+do_read_check
+dotbelow
+dotlessj
+drag float
+drag float2
+drag float3
+drag float4
+drag int
+drag int 0..100
+drag int2
+drag int3
+drag int4
+drag small float
+drm sched
+drm sched %s
+drm_run_job
+drm_sched_job
+drm_sched_process_job
+drm_vblank_event
+drm_vblank_event_queued
+dropped events:
+drws
+dt\vL
+dtime=
+dtyms
+dummy
+duration
+duration=
+e e~e
+e!80
+e!80_
+e).lnum\tzero
+e+000
+e.?2?399//]
+e1Ac
+e2E|
+e2\nF0
+e2and may be register
+e36i
+e4)Hb9
+e4)V
+e55_
+e:eZeze
+e=OE
+eF>t
+eG\te?
+eLJ\X
+eLK(w
+eSDeQ
+eU7N2
+e]a]Um
+eat$\v
+eax~Z
+eeee
+eeyb
+ekhHD
+elle
+embeddingchild
+end_ctx=
+end_gctx=
+engine%u:
+entries:
+eo,(06i\
+epsilon
+error
+eval_num_arg
+event_filter_buf
+event_info
+event_list
+eventgraph
+eventlist_rows
+eventlistbox
+eventloader
+ew\vx
+executable format error
+extract_archive
+f!2{}u,>dH)
+f"A9\f
+f$f,fkfsf
+f$human
+f00e
+f1\nA
+fAoP--X
+fC%#>@F)$=,
+fD>b
+fE\Wer
+fF773
+fIFdcGIfX3$"11"$3
+fI\fO'
+fLJn
+fSD`N
+fVfy
+fWODU
+fWi?
+f\CA[[AC\S+!
+f^nj
+failed to allocate field name for ftrace
+failed to allocate memory
+failed to parse event
+failed to read event format
+failed to read event id
+failed to read event print fmt
+failed to reparent filter OP
+fatal
+fd\r'67&&54>
+fence
+fence_signaled
+fff?
+fg\tN[
+field
+file error
+file exists
+file too large
+filename
+filename too long
+fish_hat.c
+fish_hat.h
+fish_hat.inl
+float##1
+float##2
+float##3
+float##4
+float##5
+flyrecord
+fmodf
+fnchGG\hQ@RPR`R
+font_options
+format
+fpgms
+fpj*j0(hjJ
+framemarker_presets
+free_record
+ftrace
+ftrace-function
+ftrace-print
+func
+function
+function not supported
+g GqQ
+g NP
+g!50
+g#1E3E
+g.alt
+g/g?g
+g2]Z
+g2grg
+g3]Y
+g9_D&,W
+g>lR7\t\n\f-OxVd
+gBoQ-
+gE\fZN
+gHj#
+gQ5D
+gR'\tY
+gWO__O\
+gYYfgYXg
+g[io
+ga,H3
+gamma
+gasp
+gbgz
+gbx9I
+gcW`
+germandbls
+get_page
+gfx hw
+gfx_0.0.0
+gfx_0.0.0 hw
+ghwq
+gjjg
+gk\fy
+glActiveShaderProgram
+glActiveTexture
+glAttachShader
+glBeginConditionalRender
+glBeginQuery
+glBeginQueryIndexed
+glBeginTransformFeedback
+glBindAttribLocation
+glBindBuffer
+glBindBufferBase
+glBindBufferRange
+glBindFragDataLocation
+glBindFragDataLocationIndexed
+glBindFramebuffer
+glBindImageTexture
+glBindProgramPipeline
+glBindRenderbuffer
+glBindSampler
+glBindTexture
+glBindTransformFeedback
+glBindVertexArray
+glBindVertexBuffer
+glBlendColor
+glBlendEquation
+glBlendEquationSeparate
+glBlendEquationSeparatei
+glBlendEquationSeparateiARB
+glBlendEquationi
+glBlendEquationiARB
+glBlendFunc
+glBlendFuncSeparate
+glBlendFuncSeparatei
+glBlendFuncSeparateiARB
+glBlendFunci
+glBlendFunciARB
+glBlitFramebuffer
+glBufferData
+glBufferSubData
+glCheckFramebufferStatus
+glClampColor
+glClear
+glClearBufferData
+glClearBufferSubData
+glClearBufferfi
+glClearBufferfv
+glClearBufferiv
+glClearBufferuiv
+glClearColor
+glClearDepth
+glClearDepthf
+glClearNamedBufferDataEXT
+glClearNamedBufferSubDataEXT
+glClearStencil
+glClientWaitSync
+glColorMask
+glColorMaski
+glColorP3ui
+glColorP3uiv
+glColorP4ui
+glColorP4uiv
+glCompileShader
+glCompileShaderIncludeARB
+glCompressedTexImage1D
+glCompressedTexImage2D
+glCompressedTexImage3D
+glCompressedTexSubImage1D
+glCompressedTexSubImage2D
+glCompressedTexSubImage3D
+glCopyBufferSubData
+glCopyImageSubData
+glCopyTexImage1D
+glCopyTexImage2D
+glCopyTexSubImage1D
+glCopyTexSubImage2D
+glCopyTexSubImage3D
+glCreateProgram
+glCreateShader
+glCreateShaderProgramv
+glCreateSyncFromCLeventARB
+glCullFace
+glDebugMessageCallback
+glDebugMessageCallbackARB
+glDebugMessageControl
+glDebugMessageControlARB
+glDebugMessageInsert
+glDebugMessageInsertARB
+glDeleteBuffers
+glDeleteFramebuffers
+glDeleteNamedStringARB
+glDeleteProgram
+glDeleteProgramPipelines
+glDeleteQueries
+glDeleteRenderbuffers
+glDeleteSamplers
+glDeleteShader
+glDeleteSync
+glDeleteTextures
+glDeleteTransformFeedbacks
+glDeleteVertexArrays
+glDepthFunc
+glDepthMask
+glDepthRange
+glDepthRangeArrayv
+glDepthRangeIndexed
+glDepthRangef
+glDetachShader
+glDisable
+glDisableVertexAttribArray
+glDisablei
+glDispatchCompute
+glDispatchComputeIndirect
+glDrawArrays
+glDrawArraysIndirect
+glDrawArraysInstanced
+glDrawArraysInstancedBaseInstance
+glDrawBuffer
+glDrawBuffers
+glDrawElements
+glDrawElementsBaseVertex
+glDrawElementsIndirect
+glDrawElementsInstanced
+glDrawElementsInstancedBaseInstance
+glDrawElementsInstancedBaseVertex
+glDrawElementsInstancedBaseVertexBaseInstance
+glDrawRangeElements
+glDrawRangeElementsBaseVertex
+glDrawTransformFeedback
+glDrawTransformFeedbackInstanced
+glDrawTransformFeedbackStream
+glDrawTransformFeedbackStreamInstanced
+glEnable
+glEnableVertexAttribArray
+glEnablei
+glEndConditionalRender
+glEndQuery
+glEndQueryIndexed
+glEndTransformFeedback
+glFenceSync
+glFinish
+glFlush
+glFlushMappedBufferRange
+glFramebufferParameteri
+glFramebufferRenderbuffer
+glFramebufferTexture
+glFramebufferTexture1D
+glFramebufferTexture2D
+glFramebufferTexture3D
+glFramebufferTextureLayer
+glFrontFace
+glGenBuffers
+glGenFramebuffers
+glGenProgramPipelines
+glGenQueries
+glGenRenderbuffers
+glGenSamplers
+glGenTextures
+glGenTransformFeedbacks
+glGenVertexArrays
+glGenerateMipmap
+glGetActiveAtomicCounterBufferiv
+glGetActiveAttrib
+glGetActiveSubroutineName
+glGetActiveSubroutineUniformName
+glGetActiveSubroutineUniformiv
+glGetActiveUniform
+glGetActiveUniformBlockName
+glGetActiveUniformBlockiv
+glGetActiveUniformName
+glGetActiveUniformsiv
+glGetAttachedShaders
+glGetAttribLocation
+glGetBooleani_v
+glGetBooleanv
+glGetBufferParameteri64v
+glGetBufferParameteriv
+glGetBufferPointerv
+glGetBufferSubData
+glGetCompressedTexImage
+glGetDebugMessageLog
+glGetDebugMessageLogARB
+glGetDoublei_v
+glGetDoublev
+glGetError
+glGetFloati_v
+glGetFloatv
+glGetFragDataIndex
+glGetFragDataLocation
+glGetFramebufferAttachmentParameteriv
+glGetFramebufferParameteriv
+glGetGraphicsResetStatusARB
+glGetInteger64i_v
+glGetInteger64v
+glGetIntegeri_v
+glGetIntegerv
+glGetInternalformati64v
+glGetInternalformativ
+glGetMultisamplefv
+glGetNamedFramebufferParameterivEXT
+glGetNamedStringARB
+glGetNamedStringivARB
+glGetObjectLabel
+glGetObjectPtrLabel
+glGetPointerv
+glGetProgramBinary
+glGetProgramInfoLog
+glGetProgramInterfaceiv
+glGetProgramPipelineInfoLog
+glGetProgramPipelineiv
+glGetProgramResourceIndex
+glGetProgramResourceLocation
+glGetProgramResourceLocationIndex
+glGetProgramResourceName
+glGetProgramResourceiv
+glGetProgramStageiv
+glGetProgramiv
+glGetQueryIndexediv
+glGetQueryObjecti64v
+glGetQueryObjectiv
+glGetQueryObjectui64v
+glGetQueryObjectuiv
+glGetQueryiv
+glGetRenderbufferParameteriv
+glGetSamplerParameterIiv
+glGetSamplerParameterIuiv
+glGetSamplerParameterfv
+glGetSamplerParameteriv
+glGetShaderInfoLog
+glGetShaderPrecisionFormat
+glGetShaderSource
+glGetShaderiv
+glGetString
+glGetStringi
+glGetSubroutineIndex
+glGetSubroutineUniformLocation
+glGetSynciv
+glGetTexImage
+glGetTexLevelParameterfv
+glGetTexLevelParameteriv
+glGetTexParameterIiv
+glGetTexParameterIuiv
+glGetTexParameterfv
+glGetTexParameteriv
+glGetTransformFeedbackVarying
+glGetUniformBlockIndex
+glGetUniformIndices
+glGetUniformLocation
+glGetUniformSubroutineuiv
+glGetUniformdv
+glGetUniformfv
+glGetUniformiv
+glGetUniformuiv
+glGetVertexAttribIiv
+glGetVertexAttribIuiv
+glGetVertexAttribLdv
+glGetVertexAttribPointerv
+glGetVertexAttribdv
+glGetVertexAttribfv
+glGetVertexAttribiv
+glGetnCompressedTexImageARB
+glGetnTexImageARB
+glGetnUniformdvARB
+glGetnUniformfvARB
+glGetnUniformivARB
+glGetnUniformuivARB
+glHint
+glInvalidateBufferData
+glInvalidateBufferSubData
+glInvalidateFramebuffer
+glInvalidateSubFramebuffer
+glInvalidateTexImage
+glInvalidateTexSubImage
+glIsBuffer
+glIsEnabled
+glIsEnabledi
+glIsFramebuffer
+glIsNamedStringARB
+glIsProgram
+glIsProgramPipeline
+glIsQuery
+glIsRenderbuffer
+glIsSampler
+glIsShader
+glIsSync
+glIsTexture
+glIsTransformFeedback
+glIsVertexArray
+glLineWidth
+glLinkProgram
+glLogicOp
+glMapBuffer
+glMapBufferRange
+glMemoryBarrier
+glMinSampleShading
+glMinSampleShadingARB
+glMultiDrawArrays
+glMultiDrawArraysIndirect
+glMultiDrawElements
+glMultiDrawElementsBaseVertex
+glMultiDrawElementsIndirect
+glMultiTexCoordP1ui
+glMultiTexCoordP1uiv
+glMultiTexCoordP2ui
+glMultiTexCoordP2uiv
+glMultiTexCoordP3ui
+glMultiTexCoordP3uiv
+glMultiTexCoordP4ui
+glMultiTexCoordP4uiv
+glNamedFramebufferParameteriEXT
+glNamedStringARB
+glNormalP3ui
+glNormalP3uiv
+glObjectLabel
+glObjectPtrLabel
+glPatchParameterfv
+glPatchParameteri
+glPauseTransformFeedback
+glPixelStoref
+glPixelStorei
+glPointParameterf
+glPointParameterfv
+glPointParameteri
+glPointParameteriv
+glPointSize
+glPolygonMode
+glPolygonOffset
+glPopDebugGroup
+glPrimitiveRestartIndex
+glProgramBinary
+glProgramParameteri
+glProgramUniform1d
+glProgramUniform1dv
+glProgramUniform1f
+glProgramUniform1fv
+glProgramUniform1i
+glProgramUniform1iv
+glProgramUniform1ui
+glProgramUniform1uiv
+glProgramUniform2d
+glProgramUniform2dv
+glProgramUniform2f
+glProgramUniform2fv
+glProgramUniform2i
+glProgramUniform2iv
+glProgramUniform2ui
+glProgramUniform2uiv
+glProgramUniform3d
+glProgramUniform3dv
+glProgramUniform3f
+glProgramUniform3fv
+glProgramUniform3i
+glProgramUniform3iv
+glProgramUniform3ui
+glProgramUniform3uiv
+glProgramUniform4d
+glProgramUniform4dv
+glProgramUniform4f
+glProgramUniform4fv
+glProgramUniform4i
+glProgramUniform4iv
+glProgramUniform4ui
+glProgramUniform4uiv
+glProgramUniformMatrix2dv
+glProgramUniformMatrix2fv
+glProgramUniformMatrix2x3dv
+glProgramUniformMatrix2x3fv
+glProgramUniformMatrix2x4dv
+glProgramUniformMatrix2x4fv
+glProgramUniformMatrix3dv
+glProgramUniformMatrix3fv
+glProgramUniformMatrix3x2dv
+glProgramUniformMatrix3x2fv
+glProgramUniformMatrix3x4dv
+glProgramUniformMatrix3x4fv
+glProgramUniformMatrix4dv
+glProgramUniformMatrix4fv
+glProgramUniformMatrix4x2dv
+glProgramUniformMatrix4x2fv
+glProgramUniformMatrix4x3dv
+glProgramUniformMatrix4x3fv
+glProvokingVertex
+glPushDebugGroup
+glQueryCounter
+glReadBuffer
+glReadPixels
+glReadnPixelsARB
+glReleaseShaderCompiler
+glRenderbufferStorage
+glRenderbufferStorageMultisample
+glResumeTransformFeedback
+glSampleCoverage
+glSampleMaski
+glSamplerParameterIiv
+glSamplerParameterIuiv
+glSamplerParameterf
+glSamplerParameterfv
+glSamplerParameteri
+glSamplerParameteriv
+glScissor
+glScissorArrayv
+glScissorIndexed
+glScissorIndexedv
+glSecondaryColorP3ui
+glSecondaryColorP3uiv
+glShaderBinary
+glShaderSource
+glShaderStorageBlockBinding
+glStencilFunc
+glStencilFuncSeparate
+glStencilMask
+glStencilMaskSeparate
+glStencilOp
+glStencilOpSeparate
+glTexBuffer
+glTexBufferRange
+glTexCoordP1ui
+glTexCoordP1uiv
+glTexCoordP2ui
+glTexCoordP2uiv
+glTexCoordP3ui
+glTexCoordP3uiv
+glTexCoordP4ui
+glTexCoordP4uiv
+glTexImage1D
+glTexImage2D
+glTexImage2DMultisample
+glTexImage3D
+glTexImage3DMultisample
+glTexParameterIiv
+glTexParameterIuiv
+glTexParameterf
+glTexParameterfv
+glTexParameteri
+glTexParameteriv
+glTexStorage1D
+glTexStorage2D
+glTexStorage2DMultisample
+glTexStorage3D
+glTexStorage3DMultisample
+glTexSubImage1D
+glTexSubImage2D
+glTexSubImage3D
+glTextureBufferRangeEXT
+glTextureStorage1DEXT
+glTextureStorage2DEXT
+glTextureStorage2DMultisampleEXT
+glTextureStorage3DEXT
+glTextureStorage3DMultisampleEXT
+glTextureView
+glTransformFeedbackVaryings
+glUniform1d
+glUniform1dv
+glUniform1f
+glUniform1fv
+glUniform1i
+glUniform1iv
+glUniform1ui
+glUniform1uiv
+glUniform2d
+glUniform2dv
+glUniform2f
+glUniform2fv
+glUniform2i
+glUniform2iv
+glUniform2ui
+glUniform2uiv
+glUniform3d
+glUniform3dv
+glUniform3f
+glUniform3fv
+glUniform3i
+glUniform3iv
+glUniform3ui
+glUniform3uiv
+glUniform4d
+glUniform4dv
+glUniform4f
+glUniform4fv
+glUniform4i
+glUniform4iv
+glUniform4ui
+glUniform4uiv
+glUniformBlockBinding
+glUniformMatrix2dv
+glUniformMatrix2fv
+glUniformMatrix2x3dv
+glUniformMatrix2x3fv
+glUniformMatrix2x4dv
+glUniformMatrix2x4fv
+glUniformMatrix3dv
+glUniformMatrix3fv
+glUniformMatrix3x2dv
+glUniformMatrix3x2fv
+glUniformMatrix3x4dv
+glUniformMatrix3x4fv
+glUniformMatrix4dv
+glUniformMatrix4fv
+glUniformMatrix4x2dv
+glUniformMatrix4x2fv
+glUniformMatrix4x3dv
+glUniformMatrix4x3fv
+glUniformSubroutinesuiv
+glUnmapBuffer
+glUseProgram
+glUseProgramStages
+glValidateProgram
+glValidateProgramPipeline
+glVertexArrayBindVertexBufferEXT
+glVertexArrayVertexAttribBindingEXT
+glVertexArrayVertexAttribFormatEXT
+glVertexArrayVertexAttribIFormatEXT
+glVertexArrayVertexAttribLFormatEXT
+glVertexArrayVertexBindingDivisorEXT
+glVertexAttrib1d
+glVertexAttrib1dv
+glVertexAttrib1f
+glVertexAttrib1fv
+glVertexAttrib1s
+glVertexAttrib1sv
+glVertexAttrib2d
+glVertexAttrib2dv
+glVertexAttrib2f
+glVertexAttrib2fv
+glVertexAttrib2s
+glVertexAttrib2sv
+glVertexAttrib3d
+glVertexAttrib3dv
+glVertexAttrib3f
+glVertexAttrib3fv
+glVertexAttrib3s
+glVertexAttrib3sv
+glVertexAttrib4Nbv
+glVertexAttrib4Niv
+glVertexAttrib4Nsv
+glVertexAttrib4Nub
+glVertexAttrib4Nubv
+glVertexAttrib4Nuiv
+glVertexAttrib4Nusv
+glVertexAttrib4bv
+glVertexAttrib4d
+glVertexAttrib4dv
+glVertexAttrib4f
+glVertexAttrib4fv
+glVertexAttrib4iv
+glVertexAttrib4s
+glVertexAttrib4sv
+glVertexAttrib4ubv
+glVertexAttrib4uiv
+glVertexAttrib4usv
+glVertexAttribBinding
+glVertexAttribDivisor
+glVertexAttribFormat
+glVertexAttribI1i
+glVertexAttribI1iv
+glVertexAttribI1ui
+glVertexAttribI1uiv
+glVertexAttribI2i
+glVertexAttribI2iv
+glVertexAttribI2ui
+glVertexAttribI2uiv
+glVertexAttribI3i
+glVertexAttribI3iv
+glVertexAttribI3ui
+glVertexAttribI3uiv
+glVertexAttribI4bv
+glVertexAttribI4i
+glVertexAttribI4iv
+glVertexAttribI4sv
+glVertexAttribI4ubv
+glVertexAttribI4ui
+glVertexAttribI4uiv
+glVertexAttribI4usv
+glVertexAttribIFormat
+glVertexAttribIPointer
+glVertexAttribL1d
+glVertexAttribL1dv
+glVertexAttribL2d
+glVertexAttribL2dv
+glVertexAttribL3d
+glVertexAttribL3dv
+glVertexAttribL4d
+glVertexAttribL4dv
+glVertexAttribLFormat
+glVertexAttribLPointer
+glVertexAttribP1ui
+glVertexAttribP1uiv
+glVertexAttribP2ui
+glVertexAttribP2uiv
+glVertexAttribP3ui
+glVertexAttribP3uiv
+glVertexAttribP4ui
+glVertexAttribP4uiv
+glVertexAttribPointer
+glVertexBindingDivisor
+glVertexP2ui
+glVertexP2uiv
+glVertexP3ui
+glVertexP3uiv
+glVertexP4ui
+glVertexP4uiv
+glViewport
+glViewportArrayv
+glViewportIndexedf
+glViewportIndexedfv
+glWaitSync
+global
+global scale
+global_seqno
+glyf
+glyph
+glyphs
+gpu-trace
+gpuvis
+gpuvis.ini
+gpuvis.png
+gpuvis_help
+graph_height
+graph_height_zoomed
+graph_only_filtered
+graph_rows_hide_str
+gs\t*0
+h!GnN
+h#KQX# E d
+h0'D
+h122/
+h86e
+h;FF;
+h>1my
+hGT.
+hMwP)'OwP9H)
+hN:lso(
+hNZYWX
+hR5N^
+hZ*K@4
+hZgh]~
+h\r4j
+handle_options
+hcnjTr
+hdmx
+head
+hello, world
+hexadecimal
+hg^^ff^^g
+hgzf
+hhea
+hide_empty_filtered_rows
+hide_sched_switch_events
+high_prec
+hkwgn
+hmtx
+hook
+horizontal
+host unreachable
+hw\rw
+hw_id
+hw_job_count
+h{-Z_e8
+i zU
+i032.Q
+i0\f"01
+i40@
+i915 reqwait bar
+i915-perf
+i915-perf info
+i915-perf-freq
+i915_
+i915_req 
+i915_req %s%u
+i915_req ring%u
+i915_request_add
+i915_request_in
+i915_reqwait 
+i915_reqwait %s
+i915_reqwait %s%u
+i915_reqwait ring%u
+i9\f!01Np
+i;7b
+iJPnnRJg
+iPM\S
+iVcdhaVU
+iXYj
+i]Wb
+i`pl
+ibbg
+ibbgibah
+ibma
+icma
+identifier removed
+ihA\
+ij\vJ
+ik,Z
+illegal byte sequence
+illegal comparison for integer
+illegal comparison for string
+illegal lvalue for string comparison
+illegal rvalue
+illegal token
+imgui
+imgui.ini
+imgui_log.txt
+in\fI
+inappropriate io control operation
+indexed
+info
+inity
+input float
+input float2
+input float3
+input float4
+input int
+input int2
+input int3
+input int4
+input text
+instance
+intel_engine_notify
+interrupted
+invalid argument
+invalid argument type
+invalid event name
+invalid expression type
+invalid hash bucket count
+invalid operator type
+invalid seek
+invalid stoull argument
+invalid string position
+invalid vector subscript
+io error
+io.ConfigFlags: NavEnableGamepad
+io.ConfigFlags: NavEnableKeyboard
+io.ConfigFlags: NavMoveMouse
+io.MouseDrawCursor
+ios_base::badbit set
+ios_base::eofbit set
+ios_base::failbit set
+iostream
+iostream stream error
+ipQnC
+irXUx
+is a directory
+item context menu
+item view
+iv-V
+i{-Z^f8
+j j`j
+j!As
+j!Nby
+j/TsD
+j2#Q
+j5'BW/*6@E+G1
+j7\r901
+j9\fJb
+jDF'
+jFFE
+jK8)A
+jKJhgKLi]3%$00$%3
+jN<dG(
+jSKAU
+jSjkj
+jVcdhaVU
+jWa]\
+j\r9M[0LV.j
+j\tgR<1\vhQ;
+jaebUm
+jmnT
+joQnC
+job_count
+j}#>W30U?$~
+k \fGy
+k!SgH
+k*do^
+k0V(
+k22j
+k5(CY0+I5
+k=yI
+k@E\fF
+kG\f%01
+kI4MFJ
+kK8*@
+kLkTk\kuk}k
+k]Rl
+k_oaD
+kern
+kgzz
+kill-
+ksoftirqd
+ksoftirqd/
+kw\vF
+kworker
+kworker/
+l3<p
+l44k
+l5&?R,+F3
+l6lDlZ
+l773
+l7HH77KK
+l;ON<<QQ
+l>BA=
+lI4N=D-
+lK\fC
+lPOY
+lUYhjYVi
+lVXlkWVn9
+lWi]
+label
+larg
+largeright
+latency
+latn
+ld^E'
+lduration=
+left pane
+li\vR
+li_h
+linux-perf-json-version
+lira
+listbox\n(single select)
+lmml@x
+load_file
+loca
+locaE
+local
+log10
+lolmmmnl
+long
+longs
+longs\nA
+ltime=
+ludh
+m#DeA
+m5!76
+m<Aw
+m?H7
+m@J\rG
+mG4>
+mH{iZ&\K
+mOA^FKD
+mQB^RZ4
+mS\fH
+mYE&
+mZqqZf.
+m\f\n,766
+m\nXo
+m_60
+m_ls
+macron
+main.c
+map/set too long
+maxp
+menu_console
+menu_tracewin
+message size
+migration/
+min:%.2f max:%.2f
+minute
+mixed
+mnlmmnml
+mono
+mp--83m^
+mr"iR
+msm ring
+msm ring%d
+msm ring%d hw
+msm_gpu_submit_flush
+msm_gpu_submit_retired
+must have number field
+my sailor is rich
+mycolumns
+mycolumns3
+mypicker
+mysqld
+m|ys
+n!04A
+n(n@n[nvn
+n-PpD?nQ/,PqD>nR/
+n03>Pu
+n5\ndr
+n7dL,
+n<ZRmju
+n=9l
+nI\f-01
+nQ:B
+n]?iJ
+name
+nan(ind)
+nan(snan)
+need dictionary
+network down
+network reset
+network unreachable
+next_comm
+next_pid
+ngflnffm
+nine
+nlln
+nme}\v
+nnodr
+no blank
+no buffer space
+no child process
+no event found
+no filter found
+no filters exists
+no link
+no lock available
+no message
+no message available
+no protocol option
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
+non-indexed
+not a directory
+not a socket
+not a stream
+not connected
+not enough memory
+not supported
+notice
+now ts:
+nqURz
+nu24
+nw\f(01
+nw~^NUT
+o oPo
+o zA
+o!45
+o!50
+o!91
+o!A0
+o'AU-6Q%F
+o01%
+o0Yl@#
+o3Z%%Y45RB8
+o:oJo
+o?GS
+o?q1
+oA3N9=9
+oDoro
+oI>O7
+oI{F/I)3F
+oRDv
+oZJYYJ
+obwQ4
+ocodK
+odby 
+oeUqh
+offset
+offset=
+oldest event ts:
+omeg
+omega\fAi\v 
+omega\fAs\v 
+one.lnum
+open parenthesis cannot come here
+opengl32.dll
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+operator
+operator "" 
+operator co_await
+operator<=>
+options
+out of memory
+overrun:
+overwrite
+ow'w
+owM&
+owner dead
+oygppz`zoTHHpo
+o{\v9429\fymnx\f9249\v{o
+o}bD
+p6V[
+p6pPpjp
+p7\fH
+p>-PpD
+p@DC?
+p@H8g
+pB\fJ
+pH_r
+pLx(
+pMIg
+pQJ]
+pQLi
+pRMI^_J
+pW\f1
+p[v~Wt
+p\u~Yjrc`
+pa`q
+parameter error
+parent_ip
+parse_ftrace_printk
+password
+password (clear)
+password123
+pc2g
+pdUqg
+perf
+periodcentered
+permission denied
+peseta
+picker
+pidof-
+plot:
+pmmp
+pnBx;
+pnnp
+post
+postB
+powf
+prep
+prepF\f
+prepi
+prev_comm
+prev_pid
+prev_state
+previous_filters
+print
+print %s:%d
+print pid:
+print tgid:
+print_render_prefixes
+print_str_arg
+print_timeline_gfx_labels
+process
+protocol error
+protocol not supported
+q!01
+q$q<qpq
+q/VMA0
+q93[}KW
+q94+:0(
+q=dH'slG
+q@KV\f
+qB(F`8:oW5Cy
+qBg\n"
+qKffKq
+qS>g?h3
+q\tGs
+q]H4
+q]funq
+qbonb
+qd\fzZ\r$
+qdu}
+qf3q?
+qif 
+qjZt
+qq\frW
+quAt
+r01Dc
+r4Z&&Y\t\vl
+r5V\
+r@@45233* 
+rA_U 
+rBg#!
+rC\rEk
+rUW\f 
+r\tVr.>T
+r]bojk
+r]s*s2s:sms
+r`}6F
+raB3G
+radio a
+radio b
+radio c
+range
+range int (no bounds)
+ratio = %.3f
+rcvt 
+read events:
+read only file system
+read_cpu_data
+read_event_file
+read_event_files
+read_ftrace_file
+read_header_files
+read_trace_file
+record does not match to filter
+regex did not compute
+render
+render_crtc%d
+render_framemarkers
+render_i915_perf_counters
+resource deadlock would occur
+resource unavailable try again
+restrict(
+result out of range
+ring
+ringid
+rkrd
+row_info
+rs\rP
+s*E8+
+s,Mhz
+s2sRs
+s4sJs
+s6015522560\f
+s7_}E(]YK
+s93o
+sEg\f 
+sG FrQ
+sGN2
+sHF'
+sPshs
+samples
+scWT
+scale
+sched_process_exec
+sched_process_exit
+sched_switch
+sched_switch %
+schwa
+scrolling
+sdma
+sdma%d
+sdma%d hw
+second\texclam
+select
+sepU<
+seqno
+set1
+set2
+set3
+short
+show_event_list
+show_fps
+signed
+size
+sleep-
+slider angle
+slider float
+slider float2
+slider float3
+slider float4
+slider int
+slider int2
+slider int3
+slider int4
+slider log float
+small_font
+snC#
+snan)
+snapd
+some more text
+special
+sqrt
+sqrtf
+state not recoverable
+steam
+steamvr
+stoull argument out of range
+stream end
+stream error
+stream timeout
+string too long
+struct
+svut
+swapper/
+symbol
+sync_eventlist_to_graph
+syntax error
+system
+syzr
+t t0t
+t83o
+t953
+t=XH8iR3
+tC7Ddx
+tC\t$t
+tPpi
+tdh.dll
+tdopexpr_compile("%s"): %.2fms\n
+text file busy
+tgid
+this window scale
+tid=
+time
+timed out
+timeline
+timeline_gfx_events
+timeline_gfx_labels
+timeline_gfx_userspace
+timestamp
+tj_w
+toggle
+tonos\rdieresis
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
+trace-cmd
+trace-cmd files (*.dat;*.trace;*.etl;*.zip;*.json)
+trace_malloc
+trace_realloc
+tracecmd_alloc
+tracecmd_alloc_fd
+tracecmd_buffer_instance_handle
+tracecmd_close
+tracecmd_peek_data
+tracelen
+tracestart
+tree items
+trim_trace_to_cpu_buffers
+tsst
+u=-Lh:1V?%Cr
+u@GM\rC
+uBH3
+uC1/AA/1C
+uHfI1
+uTP]
+u\nu6u
+udv*v
+uit2CC
+unbalanced number of parenthesis
+unexpected type (not a value)
+uni00AD
+uni00AD\toverscore
+uni0219
+uni0237
+uni0394
+uni03BC
+uniFB01
+unicode#0x0001
+unknown error
+unknown op '%s'
+unknown token
+unordered_map/set too long
+unsigned 
+uovi
+uowi
+update_page_info
+uppercase
+uptime
+upxi
+use_freetype
+user_comm
+uvd hw
+uvd_%d
+uvd_%d hw
+uvd_enc%d
+uvd_enc%d hw
+uvd_enc_%d.%d
+uvd_enc_%d.%d hw
+uw\rmN\f$01
+uwwu
+uz*B
+uzKs@>
+v1ND=
+v2!L.2
+v32:@
+v<vfv
+v@OI
+vE\tO
+vH7B
+v[\sq`[t bOP_`QO`
+v\ae8B
+value too large
+vblank_high_prec_timestamps
+vce%d
+vce%d hw
+vcn_dec
+vcn_dec hw
+vcn_dec_%d
+vcn_dec_%d hw
+vcn_enc%d
+vcn_enc%d hw
+vcn_enc_%d.%d
+vcn_enc_%d.%d hw
+ve'!bw
+vector too long
+version error
+vertical
+vertical_sync
+vhyCZy
+videnh
+vkXv
+vmgp
+vo,H
+vrcompositor
+vrdashboard
+vrmonitor
+vrserver
+vu\nBw\f$
+w!11
+w!20
+w!31
+w!41
+w!51
+w!61
+w!71
+w!81
+w!90
+w!A1
+w!B1
+w!C1
+w!F1
+w"501
+w$wbw
+w-SsE
+w.xAP
+w1\nq
+w2002w
+w?G EC
+w@N\nG
+wBE\n)
+wBwTw
+wD\f.01
+wVIZ
+w[cc:E
+w]df
+waM\f!
+warning
+watchdog
+watchdog/
+wbifZ
+wglGetProcAddress
+win_h
+win_w
+win_x
+win_y
+window_context
+windows
+wjN.
+wlolmmmnl
+wn>Jj
+word-wrapping
+wp:m|
+wqrw
+wrong protocol type
+wssw
+wyzs
+x#RM?
+x(xnx
+x/B0?
+x8\v"01
+x=150
+x=300
+xD7.B
+xDxPx\xhxtx
+xE?o
+xFont data copyright Google 2012Roboto CondensedRegular
+xOKD^bF
+xQHT
+xT?V
+xVA\r
+x\v.Fs
+xb\tT;
+xfce4-
+xg^Jp5|
+xjppi
+xp6PC?%#Sh
+xpqw
+xy<8
+xz<9
+xz<9HW
+y 1D
+y yVypy
+y#QM@
+y3a6
+y3b6
+y3j64l3y
+y3l46j3y
+y7i"
+y@ID
+yAypy
+yMzw\n
+yO\r0
+yTQV]]VRR
+yWUxwVWyg>+*<<*+>
+yXF59
+yY]i
+y_l~on
+ylvu
+ypUw7@3
+yrxx
+ytux
+z,ook\fcyrillich
+z?33
+z?33s?
+zF[D$
+zQk)!
+zS!PE\tL
+zdcz
+zklxymjy
+znprqqn
+zqWS5
+zt}mk
+zwwz
+{B.$)0;J1%&4
+{cvroefc
+{k8aG)/e
+{kax6B
+{nR0
+{oUw5A4
+{qTx6@3
+{trt
+{urt
+{zel#|67
+|'h1L6
+|`WEF
+|m:pw
+|n9pxA
+|w7s9
+}(MoG
+}4P7
+}7`3hr}Go
+}7cK,
+}J\t8xNs
+~"049
+~3V>##>V34U=!!=U
+~L(\r-TxKG_:
+~U\nCY
+~bct
+~bct\n
+~cZjm
+~kpQ
+~lxp
+~pvuy
+~qssqrmm
+~tN}a

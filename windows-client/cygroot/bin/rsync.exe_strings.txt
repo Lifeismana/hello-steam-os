@@ -1,0 +1,1996 @@
+                         repeated: --filter='- .rsync-filter'\n
+                    \r
+  %-11s%10zd   (always 0)\n
+  %-11s%10zd   (bytes free)\n
+  %-11s%10zd   (bytes from mmap)\n
+  %-11s%10zd   (bytes from sbrk + mmap)\n
+  %-11s%10zd   (bytes from sbrk)\n
+  %-11s%10zd   (bytes in freed fastbin blocks)\n
+  %-11s%10zd   (bytes in releasable chunk)\n
+  %-11s%10zd   (bytes used)\n
+  %-11s%10zd   (chunks from mmap)\n
+  %-11s%10zd   (chunks not in use)\n
+  %-11s%10zd   (free fastbin blocks)\n
+  %12ld  %5ld\n
+  Alloc count:       %12.0f\n
+  Alloc quantum:     %12ld\n
+  Bytes allocated:   %12.0f\n
+  Bytes freed:       %12.0f\n
+  Extent size:       %12ld\n
+  Extents created:   %12ld\n
+  Extents freed:     %12ld\n
+  Free Count:        %12.0f\n
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST\n
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST\n
+  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST\n
+  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]\n
+  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]\n
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]\n
+ "%s%s": %s%.*s%s%s
+ "'&;|[]()$#!*?^\
+ %d files...\r
+ (%d args)\n
+ (%s: %s%s)
+ (BATCH ONLY)
+ (DRY RUN)
+ (attr change)
+ (file change)
+ (may try again)
+ (seek)
+ (sum change)
+ (type change)
+ (uptodate)
+ (will try again)
+ (xfr#%d, %s-chk=%d/%d)\n
+ -- CAUTION: trailing whitespace!
+ -- switching to --delete-after
+ INVALID
+ [-%c|-%s%s%s%s]
+ [-%s%s%s%s]
+ [daemon]
+ [global CVS]
+ [implied]
+ [not found]
+ [per-dir %s]
+ deflate 1.2.8 Copyright 1995-2013 Jean-loup Gailly and Mark Adler 
+ gid=%s%u%s
+ inflate 1.2.8 Copyright 1995-2013 Mark Adler 
+ is uptodate
+ negotiated
+ not
+ or 0 for unlimited
+ resend of
+ uid=%u
+!#$&;|<>(){}"' \t\
+!AxU
+!is_utf8
+"%s%s%s"%s%s%s
+#bML"
+#early_input=
+#early_input=%d\n
+#list
+%%.%ds\n%%%ds
+%03d
+%4d/%02d/%02d %02d:%02d:%02d
+%4u:%02u:%02u
+%c\n  "%s": "%s"
+%d file%sto consider\n
+%d-bit files
+%d-bit inums
+%d-bit long ints
+%d-bit timestamps
+%o %d,%d %d:%d
+%o %h [%a] %m (%u) %f %l
+%o %u,%u %u:%u
+%s  version %s  protocol version %d%s\n
+%s %*s %s%*s%*s %s%s%s\n
+%s %s -> "%s"
+%s %s failed
+%s Badly formed line in config file: %s\n
+%s Empty section name in config file.\n
+%s Failed.  Error returned from params.c:parse().\n
+%s Ignoring badly formed line in config file: %s\n
+%s Invalid parameter name in config file.\n
+%s No config filename specified.\n
+%s Unexpected EOF in the config file: %s\n
+%s Unexpected end-of-file at: %s\n
+%s arg does not exist: %s\n
+%s arg is not a dir: %s\n
+%s exists%s\n
+%s has vanished: %s\n
+%s in %s at line %d\n
+%s is > %d bytes.\n
+%s is newer\n
+%s is not a known address for "%s": spoofed address?\n
+%s is over max-size\n
+%s is under min-size\n
+%s is uptodate\n
+%s is very old version of rsync, upgrade recommended.\n
+%s list: %s\n
+%s list:%s\n
+%s returned failure (%d)%s%s%s\n%s
+%s specify the --iconv option to use this batch file.\n
+%s with --inplace requires protocol 29 or higher (negotiated %d).\n
+%s%s checksum: %s\n
+%s%s compress: %s (level %d)\n
+%s%s is uptodate\n
+%s/.popt
+%s: %s failed verification -- update %s%s.\n
+%s: response family %d != %d\n
+%s: too short sockaddr_in6; length=%d\n
+%sALL
+%sALL%d
+%sNONE
+%sid %u(%s) maps to %u\n
+%sing the %s option to match the batchfile.\n
+%sopening tcp connection to %s port %d\n
+&include
+&merge
+'!' rule has trailing characters: %s\n
+(%s) Protocol versions: remote=%d, negotiated=%d\n
+(NONE)
+(No batched update for%s "%s")\n
+(Skipping batched update for%s "%s")\n
+(Type "rsync --daemon --help" for assistance with daemon mode.)\n
+(new) backup_dir is %s\n
+(see the rsync manpage for an explanation)\n
+*** Skipping any contents from this failed directory ***\n
+*** Try using "--old-d" if remote rsync is <= 2.6.3 ***\n
+*.3g2 *.3gp *.7z *.aac *.ace *.apk *.avi *.bz2 *.deb *.dmg *.ear *.f4v *.flac *.flv *.gpg *.gz *.iso *.jar *.jpeg *.jpg *.lrz *.lz *.lz4 *.lzma *.lzo *.m1a *.m1v *.m2a *.m2ts *.m2v *.m4a *.m4b *.m4p *.m4r *.m4v *.mka *.mkv *.mov *.mp1 *.mp2 *.mp3 *.mp4 *.mpa *.mpeg *.mpg *.mpv *.mts *.odb *.odf *.odg *.odi *.odm *.odp *.ods *.odt *.oga *.ogg *.ogm *.ogv *.ogx *.opus *.otg *.oth *.otp *.ots *.ott *.oxt *.png *.qt *.rar *.rpm *.rz *.rzip *.spx *.squashfs *.sxc *.sxd *.sxg *.sxm *.sxw *.sz *.tbz *.tbz2 *.tgz *.tlz *.ts *.txz *.tzo *.vob *.war *.webm *.webp *.xz *.z *.zip *.zst
+*.conf
+*.inc
+*5KS
+*?[]!#$&;|<>(){}"' \t\
+*Capabilities
+*Optimizations
+*deleting  
+*getnameinfo failure: %s*
+*missing
+,\n  "%c%s": {\n
+,\n  "%s": [\n   
+- .rsync-filter
+--%s cannot be used with --%s\n
+--%s=%s is %s
+--8-bit-output, -8       leave high-bit chars unescaped in output\n
+--POPTargs=
+--POPTdesc=
+--acls (-A)
+--acls requires protocol 30 or higher (negotiated %d).\n
+--acls, -A               preserve ACLs (implies --perms)\n
+--address=ADDRESS        bind address for outgoing socket to daemon\n
+--address=ADDRESS        bind to the specified address\n
+--append
+--append                 append data onto shorter files\n
+--append-verify
+--append-verify          --append w/old data in file checksum\n
+--archive, -a            archive mode is -rlptgoD (no -A,-X,-U,-N,-H)\n
+--atimes, -U             preserve access (use) times\n
+--backup, -b             make backups (see --suffix & --backup-dir)\n
+--backup-dir
+--backup-dir=DIR         make backups into hierarchy based in DIR\n
+--block-size=SIZE, -B    force a fixed checksum block-size\n
+--blocking-io            use blocking I/O for the remote shell\n
+--bwlimit=%d
+--bwlimit=RATE           limit socket I/O bandwidth\n
+--checksum (-c)
+--checksum, -c           skip based on checksum, not mod-time & size\n
+--checksum-choice
+--checksum-choice=STR    choose the checksum algorithm (aka --cc)\n
+--checksum-seed=%d
+--checksum-seed=NUM      set block/file checksum seed (advanced)\n
+--chmod=CHMOD            affect file and/or directory permissions\n
+--chown conflicts with prior --groupmap.\n
+--chown conflicts with prior --usermap.\n
+--chown=USER:GROUP       simple username/groupname mapping\n
+--compare-dest
+--compare-dest=DIR       also compare destination files relative to DIR\n
+--compress (-z)
+--compress, -z           compress file data during the transfer\n
+--compress-choice
+--compress-choice=STR    choose the compression algorithm (aka --zc)\n
+--compress-level=%d
+--compress-level=NUM     explicitly set compression level (aka --zl)\n
+--config=FILE            specify alternate rsyncd.conf file\n
+--contimeout=SECONDS     set daemon connection timeout in seconds\n
+--copy-as=USER[:GROUP]   specify user & optional group for the copy\n
+--copy-dest
+--copy-dest=DIR          ... and include copies of unchanged files\n
+--copy-devices
+--copy-devices           copy device contents as a regular file\n
+--copy-dirlinks, -k      transform symlink to dir into referent dir\n
+--copy-links, -L         transform symlink into referent file/dir\n
+--copy-unsafe-links
+--copy-unsafe-links      only "unsafe" symlinks are transformed\n
+--crtimes, -N            preserve create times (newness)\n
+--cvs-exclude, -C        auto-ignore files in the same way CVS does\n
+--daemon
+--daemon                 run as an rsync daemon\n
+--debug
+--debug=
+--debug=FLAGS            fine-grained debug verbosity\n
+--del                    an alias for --delete-during\n
+--delay-updates
+--delay-updates          put all updated files into place at end\n
+--delete
+--delete                 delete extraneous files from dest dirs\n
+--delete-after
+--delete-after           receiver deletes after transfer, not during\n
+--delete-before
+--delete-before          receiver deletes before xfer, not during\n
+--delete-delay
+--delete-delay           find deletions during, delete after\n
+--delete-during
+--delete-during          receiver deletes during the transfer\n
+--delete-excluded
+--delete-excluded        also delete excluded files from dest dirs\n
+--delete-missing-args
+--delete-missing-args    delete missing source args from destination\n
+--devices                preserve device files (super-user only)\n
+--devices (-D)
+--dirs (-d)
+--dirs, -d               transfer directories without recursing\n
+--dparam value is missing an '=': %s\n
+--dparam=OVERRIDE, -M    override global daemon config parameter\n
+--dry-run, -n            perform a trial run with no changes made\n
+--early-input=FILE       use FILE for daemon's early exec input\n
+--exclude
+--exclude-from
+--exclude-from=FILE      read exclude patterns from FILE\n
+--exclude=PATTERN        exclude files matching PATTERN\n
+--executability, -E      preserve executability\n
+--existing
+--existing               skip creating new files on receiver\n
+--fake-super             store/recover privileged attrs using xattrs\n
+--files-from
+--files-from cannot be remote when the transfer is local\n
+--files-from hostname is not the same as the transfer hostname\n
+--files-from=-
+--files-from=FILE        read list of source-file names from FILE\n
+--filter
+--filter=RULE, -f        add a file-filtering RULE\n
+--force
+--force                  force deletion of dirs even if not empty\n
+--from0
+--from0, -0              all *-from/filter files are delimited by 0s\n
+--fsync
+--fsync                  fsync every written file\n
+--fuzzy requires protocol 29 or higher (negotiated %d).\n
+--fuzzy, -y              find similar file for basis if no dest file\n
+--group (-g)
+--group, -g              preserve group\n
+--groupmap
+--groupmap=STRING        custom groupname mapping\n
+--hard-links (-H)
+--hard-links, -H         preserve hard links\n
+--help, -h               show this help (when used with --daemon)\n
+--help, -h (*)           show this help (* -h is help only on its own)\n
+--human-readable, -h     output numbers in a human-readable format\n
+--iconv
+--iconv=CONVERT_SPEC     request charset conversion of filenames\n
+--ignore-errors
+--ignore-errors          delete even if there are I/O errors\n
+--ignore-existing
+--ignore-existing        skip updating files that exist on receiver\n
+--ignore-missing-args
+--ignore-missing-args    ignore missing source args without error\n
+--ignore-times, -I       don't skip files that match size and time\n
+--include
+--include-from=FILE      read include patterns from FILE\n
+--include=PATTERN        don't exclude files matching PATTERN\n
+--info
+--info=
+--info=FLAGS             fine-grained informational verbosity\n
+--inplace
+--inplace                update destination files in-place\n
+--ipv4, -4               prefer IPv4\n
+--ipv6, -6               prefer IPv6\n
+--itemize-changes, -i    output a change-summary for all updates\n
+--keep-dirlinks, -K      treat symlinked dir on receiver as dir\n
+--link-dest
+--link-dest=DIR          hardlink to files in DIR when unchanged\n
+--links (-l)
+--links, -l              copy symlinks as symlinks\n
+--list-only
+--list-only              list the files instead of copying them\n
+--log-file-format=FMT    log updates using the specified FMT\n
+--log-file-format=FMT    override the "log format" setting\n
+--log-file=FILE          log what we're doing to the specified FILE\n
+--log-file=FILE          override the "log file" setting\n
+--log-format=%i
+--log-format=%i%I
+--log-format=%o
+--log-format=X
+--max-alloc
+--max-alloc=SIZE         change a limit relating to memory alloc\n
+--max-delete=%d
+--max-delete=-1
+--max-delete=NUM         don't delete more than NUM files\n
+--max-size
+--max-size=SIZE          don't transfer any file larger than SIZE\n
+--min-size
+--min-size=SIZE          don't transfer any file smaller than SIZE\n
+--mkpath
+--mkpath                 create destination's missing path components\n
+--modify-window=%d
+--modify-window=NUM, -@  set the accuracy for mod-time comparisons\n
+--msgs2stderr
+--munge-links            munge symlinks to make them safe & unusable\n
+--new-compress
+--no-OPTION              turn off an implied OPTION (e.g. --no-D)\n
+--no-detach              do not detach from the parent\n
+--no-implied-dirs
+--no-implied-dirs        don't send implied dirs with --relative\n
+--no-motd                suppress daemon-mode MOTD\n
+--no-msgs2stderr
+--no-relative
+--no-specials
+--numeric-ids
+--numeric-ids            don't map uid/gid values by user/group name\n
+--old-args               disable the modern arg-protection idiom\n
+--old-compress
+--old-dirs, --old-d      works like --dirs when talking to old rsync\n
+--omit-dir-times, -O     omit directories from --times\n
+--omit-link-times, -J    omit symlinks from --times\n
+--one-file-system, -x    don't cross filesystem boundaries\n
+--only-write-batch
+--only-write-batch=FILE  like --write-batch but w/o updating dest\n
+--only-write-batch=X
+--open-noatime
+--open-noatime           avoid changing the atime on opened files\n
+--out-format=FORMAT      output updates using the specified FORMAT\n
+--outbuf=N|L|B           set out buffering to None, Line, or Block\n
+--owner (-o)
+--owner, -o              preserve owner (super-user only)\n
+--partial
+--partial                keep partially transferred files\n
+--partial-dir
+--partial-dir=DIR        put a partially transferred file into DIR\n
+--password-file=FILE     read daemon-access password from FILE\n
+--perms, -p              preserve permissions\n
+--port=PORT              listen on alternate port number\n
+--port=PORT              specify double-colon alternate port number\n
+--preallocate
+--preallocate            allocate dest files before writing them\n
+--progress               show progress during transfer\n
+--protocol must be at least %d on the %s.\n
+--protocol must be no more than %d on the %s.\n
+--protocol=NUM           force an older protocol version to be used\n
+--prune-empty-dirs requires protocol 29 or higher (negotiated %d).\n
+--prune-empty-dirs, -m   prune empty directory chains from file-list\n
+--quiet, -q              suppress non-error messages\n
+--read-batch
+--read-batch cannot be used with --remove-%s-files\n
+--read-batch=FILE        read a batched update from FILE\n
+--recurse (-r)
+--recursive, -r          recurse into directories\n
+--relative, -R           use relative path names\n
+--remote-option=OPT, -M  send OPTION to the remote side only\n
+--remove-sent-files
+--remove-source-files
+--remove-source-files    sender removes synchronized files (non-dir)\n
+--rsh=COMMAND, -e        specify the remote shell to use\n
+--rsync-path=PROGRAM     specify the rsync to run on remote machine\n
+--safe-links
+--safe-links             ignore symlinks that point outside the tree\n
+--secluded-args, -s      use the protocol to safely send the args\n
+--sender
+--server
+--size-only
+--size-only              skip files that match in size\n
+--skip-compress
+--skip-compress=LIST     skip compressing files with suffix in LIST\n
+--sockopts=OPTIONS       specify custom TCP options\n
+--sparse, -S             turn sequences of nulls into sparse blocks\n
+--specials
+--specials               preserve special files\n
+--stats
+--stats                  give some file-transfer stats\n
+--stderr mode "%s" is not one of errors, all, or client\n
+--stderr=e|a|c           change stderr output mode (default: errors)\n
+--stop-after=MINS        Stop rsync after MINS minutes have elapsed\n
+--stop-at time is not in the future: %s\n
+--stop-at=y-m-dTh:m      Stop rsync at the specified point in time\n
+--suffix
+--suffix cannot be empty %s\n
+--suffix cannot contain slashes: %s\n
+--suffix=SUFFIX          backup suffix (default ~ w/o --backup-dir)\n
+--super
+--super                  receiver attempts super-user activities\n
+--temp-dir
+--temp-dir=DIR, -T       create temporary files in directory DIR\n
+--timeout=%d
+--timeout=SECONDS        set I/O timeout in seconds\n
+--times, -t              preserve modification times\n
+--trust-sender           trust the remote sender's file list\n
+--update, -u             skip files that are newer on the receiver\n
+--use-qsort
+--usermap
+--usermap=STRING         custom username mapping\n
+--verbose, -v            increase verbosity\n
+--version, -V            print the version + other info and exit\n
+--whole-file, -W         copy files whole (w/o delta-xfer algorithm)\n
+--write-batch
+--write-batch=FILE       write a batched update to FILE\n
+--write-devices
+--write-devices          write to devices as files (implies --inplace)\n
+--xattrs (-X)
+--xattrs requires protocol 30 or higher (negotiated %d).\n
+--xattrs, -X             preserve extended attributes\n
+-D                       same as --devices --specials\n
+-F                       same as --filter='dir-merge /.rsync-filter'\n
+-P                       same as --partial --progress\n
+.0123456789
+.cvsignore
+.rsync
+/P8i
+/dev/null
+/etc/popt
+/etc/rsyncd.conf
+/inc
+/rsyncd-munged/
+/var/run/rsyncd.lock
+/yQA
+0.0.0.0
+0123456789
+0123456789-
+1.2.8
+1A26b
+1wsHp
+3.2.7
+52F*
+7~8A
+8-bit-output
+9a&g
+: /.rsync-filter
+: unknown option
+<NULL>
+@ERROR
+@ERROR: %s\n
+@ERROR: Unknown command '%s'\n
+@ERROR: Unknown module '%s'\n
+@ERROR: access denied to %s from %s (%s)\n
+@ERROR: auth failed on module %s\n
+@ERROR: chdir failed\n
+@ERROR: chroot failed\n
+@ERROR: daemon security issue -- contact admin\n
+@ERROR: early exec failed\n
+@ERROR: early exec preparation failed\n
+@ERROR: failed to open lock file\n
+@ERROR: fork failed\n
+@ERROR: invalid early_input length\n
+@ERROR: invalid gid %s\n
+@ERROR: invalid uid %s\n
+@ERROR: max connections (%d) reached -- try again later\n
+@ERROR: name-converter exec preparation failed\n
+@ERROR: no path setting.\n
+@ERROR: pre-xfer exec preparation failed\n
+@ERROR: protocol startup error\n
+@ERROR: setgid failed\n
+@ERROR: setgroups failed\n
+@ERROR: setuid failed\n
+@ERROR: your client does not support one of our daemon-auth checksums: %s\n
+@ERROR: your client omitted the digest name list: %s\n
+@ERROR: your client omitted the subprotocol value: %s\n
+@RSYNCD: %d.%d
+@RSYNCD: %d.%d %s\n
+@RSYNCD: AUTHREQD 
+@RSYNCD: EXIT
+@RSYNCD: EXIT\n
+@RSYNCD: OK
+@RSYNCD: OK\n
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+ABORTING due to invalid path from sender: %s/%s\n
+ABORTING due to unsafe pathname from sender: %s\n
+ACL,BACKUP,CONNECT2,DELTASUM2,DEL2,EXIT,FILTER2,FLIST2,FUZZY,GENR,OWN,RECV,SEND,TIME
+ACL_TYPE_ACCESS
+ACL_TYPE_DEFAULT
+ACLs
+ARG0
+All source args must come from the same machine.\n
+All source args must use the same hostspec format.\n
+All source args must use the same port number.\n
+Attempt to hack rsync thwarted!\n
+BACKUP
+BACKUP,MISC2,MOUNT,NAME2,REMOVE,SKIP
+BCDHIKLPRSTWabceghlnopqrtuvxz
+BIND
+BIND,CMD,CONNECT,DEL,DELTASUM,DUP,FILTER,FLIST,ICONV
+Bad logcode in rwrite(): %d [%s]\n
+Badly formed boolean in configuration file: "%s".\n
+Batch file %s open error
+Batch file %s.sh write error
+Both rsync versions must be at least 3.2.0 for --crtimes.\n
+C-Yn
+CHDIR
+CHDIR,DELTASUM4,FLIST4,FUZZY2,HASH,HLINK
+CMD2,DELTASUM3,DEL3,EXIT2,FLIST3,ICONV2,OWN2,PROTO,TIME2
+CONNECT
+CONNECT %s:%d HTTP/1.0%s%s\r\n\r\n
+COPY
+COPY,DEL,FLIST,MISC,NAME,STATS,SYMSAFE
+COUNT_DEBUG
+COUNT_INFO
+CVSIGNORE
+Checksum list
+Clear
+Client
+Client %s list (on client): %s\n
+Client %s list (on server): %s\n
+Client negotiated %s: %s\n
+Compress list
+Connected to %s (%s)\n
+Connection to name-converter failed.\n
+Copyright %s\n
+Corrupt %s xattr attached to %s: "%s"\n
+DEBUG_
+DEFAULT
+DELTASUM
+DISPLAY
+DOUBLE
+Daemon auth list
+Daemon option(s) used without --daemon.\n
+Debug I/O routines (levels 1-4)
+Debug backup actions (levels 1-2)
+Debug commands+options that are issued (levels 1-2)
+Debug connection events (levels 1-2)
+Debug delete actions (levels 1-3)
+Debug delta-transfer checksumming (levels 1-4)
+Debug exit events (levels 1-3)
+Debug extra ACL info
+Debug file-list operations (levels 1-4)
+Debug filter actions (levels 1-3)
+Debug fuzzy scoring (levels 1-2)
+Debug generator functions
+Debug hard-link actions (levels 1-3)
+Debug hashtable code
+Debug iconv character conversions (levels 1-2)
+Debug negotiation strings
+Debug ownership changes in users & groups (levels 1-2)
+Debug protocol information
+Debug receiver functions
+Debug sender functions
+Debug setting of modified times (levels 1-2)
+Debug socket bind actions
+Debug weeding of duplicate names
+Debug when the current directory changes
+Deletions stopped due to --max-delete limit (%d skipped)\n
+Display brief usage message
+Do not
+ERROR
+ERROR: --remove-%s-files cannot be used with a read-only module\n
+ERROR: Skipping sender remove for changed file: %s\n
+ERROR: Skipping sender remove of destination file: %s\n
+ERROR: The remote path must start with a module name not a /\n
+ERROR: The remote path must start with a module name\n
+ERROR: at most %d %s args may be specified\n
+ERROR: cannot overwrite non-directory with a directory\n
+ERROR: cannot stat destination %s
+ERROR: daemon has excluded destination "%s"\n
+ERROR: daemon refused to receive %s "%s"\n
+ERROR: destination must be a directory when copying more than 1 file\n
+ERROR: destination path is not a directory\n
+ERROR: do_server_sender called without args\n
+ERROR: failed to read a password from %s\n
+ERROR: filename too long in delete-delay file.\n
+ERROR: invalid data in delete-delay file.\n
+ERROR: module is read only\n
+ERROR: module is write only\n
+ERROR: password file must be owned by root when running as root\n
+ERROR: password file must not be other-accessible\n
+ERROR: rejecting excluded file-list name: %s\n
+ERROR: rejecting file transfer request for daemon excluded file: %s\n
+ERROR: rejecting unrequested file-list name: %s\n
+ERROR: the %s option conflicts with the %s option\n
+ERROR: unexpected EOF in delete-delay file.\n
+EXIT
+Early EOF in %s\n
+Empty destination arg specified (use "." or see --old-args).\n
+Empty source arg specified.\n
+Error parsing options: option may be supported on client but not on server?\n
+FATAL I/O ERROR: dying to avoid a --delete-%s issue with a pre-3.0.7 receiver.\n
+FILE_STRUCT_LEN=%d, EXTRA_LEN=%d\n
+FILTER
+FLIST
+FLOAT
+FREE
+FUZZY
+Failed to add a new module\n
+Failed to close
+Failed to dup/close
+Failed to exec %s
+Failed to negotiate a %s choice.\n
+Failed to parse config file: %s\n
+Failed to run "%s"\n
+Failed to stat %s: %s\n
+Failed to stat temp-dir %s: %s\n
+File list generation time: %s seconds\n
+File list size: %s\n
+File list transfer time: %s seconds\n
+File-list index %d not in %d - %d (%s) [%s]\n
+GB/s
+GCC: (GNU) 11.3.0
+GENR
+GPLv3
+General Public Licence for details.\n
+Global parameter %s found in module section!\n
+H$6t
+H*0"ZOW
+HASH
+HELP
+HLINK
+HOME
+HTTP/
+Hlink node data for %d already has path=%s (%s)\n
+Hlink node data for %d is NULL (%s)\n
+ICONV
+IGNORING unknown parameter "%s"\n
+INFO_
+INVALID
+IO error encountered -- skipping file deletion\n
+IPTOS_LOWDELAY
+IPTOS_THROUGHPUT
+IPv6
+If arg is a remote file/dir, prefix it with a colon (:).\n
+If you were not trying to invoke rsync as a daemon, avoid using any of the\n
+Ignoring "log file" setting.\n
+IiGM>nw
+Incompatible options specified for inc-recursive %s.\n
+Internal hashtable error: illegal key supplied!\n
+Invalid "%sing chmod" directive: %s\n
+Invalid --files-from remote filename\n
+Invalid ID number: %s\n
+Invalid argument passed to --chmod (%s)\n
+Invalid block length %ld [%s]\n
+Invalid checksum count %ld [%s]\n
+Invalid checksum length %d [%s]\n
+Invalid checksum-choice for --checksum: %s (%d)\n
+Invalid copy-as group: %s\n
+Invalid copy-as user: %s\n
+Invalid daemon gid: %s\n
+Invalid daemon uid: %s\n
+Invalid dir index: %d (%d - %d) [%s]\n
+Invalid file index: %d (%d - %d) [%s]\n
+Invalid flist flag: %x\n
+Invalid gid %s\n
+Invalid number in --%smap: %s\n
+Invalid packet at end of run (%d) [%s]\n
+Invalid packet at end of run [%s]\n
+Invalid remainder length %ld [%s]\n
+Invalid uid %s\n
+Invalid xattr name received (missing trailing \0).\n
+KEEP
+LOGNAME
+LONG
+Literal data: %s bytes\n
+M8MF
+MB/s
+MGiI
+MISC
+MOUNT
+Matched data: %s bytes\n
+MbP?
+Mention 1) per-file progress or 2) total transfer progress
+Mention 1) updated file/dir names, 2) unchanged names
+Mention deletions on the receiving side
+Mention file-list receiving/sending (levels 1-2)
+Mention files backed up
+Mention files copied locally on the receiving side
+Mention files removed on the sending side
+Mention files skipped due to transfer overrides (levels 1-2)
+Mention miscellaneous information (levels 1-2)
+Mention mounts that were found or skipped
+Mention skipped non-regular files (default 1, 0 disables)
+Mention statistics at end of run (levels 1-3)
+Mention symlinks that are unsafe
+Missing abbreviated xattr value, %s, for %s\n
+Missing trailing-%c in remote-shell command.\n
+NAME
+NJ2"v
+NONE
+NONREG
+NOTE: Unable to create delete-delay temp file%s.\n
+NSTR
+No colon found in --%smap: %s\n
+No match for refuse-options string "%s"\n
+No name found after colon --%smap: %s\n
+No path specified for module %s\n
+Number of created files
+Number of deleted files
+Number of files
+Number of regular files transferred: %s\n
+O*9y]
+OZw3(?
+Offset underflow: file-length is negative\n
+Options added at each level of verbosity:\n
+Options\n
+Output this help message
+Overflow in read_varint()\n
+Overflow in read_varlong()\n
+Overflowed buf in expand_vars() trying to expand: %s\n
+PATH
+POSIXLY_CORRECT
+POSIX_ME_HARDER
+PROGRESS
+PROTO
+PROXY
+Password: 
+Pe6^
+Please
+Please see the rsync(1) and rsyncd.conf(5) manpages for full documentation.\n
+Qkkbal
+R1h58
+RCS SCCS CVS CVS.adm RCSLOG cvslog.* tags TAGS .make.state .nse_depinfo *~ #* .#* ,* _$* *$ *.old *.bak *.BAK *.orig *.rej .del-* *.a *.olb *.o *.obj *.so *.exe *.Z *.elc *.ln core .svn/ .git/ .hg/ .bzr/
+RECV
+REMOTE_HOST
+REMOVE
+RSYNC_ARG
+RSYNC_CHECKSUM_LIST
+RSYNC_COMPRESS_LIST
+RSYNC_CONNECT_PROG
+RSYNC_EXIT_STATUS
+RSYNC_HOST_ADDR
+RSYNC_HOST_NAME
+RSYNC_ICONV
+RSYNC_MAX_ALLOC
+RSYNC_MODULE_NAME
+RSYNC_MODULE_PATH
+RSYNC_NO_XFER_EXEC
+RSYNC_OLD_ARGS
+RSYNC_PARTIAL_DIR
+RSYNC_PASSWORD
+RSYNC_PID
+RSYNC_PORT
+RSYNC_PROTECT_ARGS
+RSYNC_PROXY
+RSYNC_RAW_STATUS
+RSYNC_REQUEST
+RSYNC_RSH
+RSYNC_SHELL
+RSYNC_USER_NAME
+Receiver
+Remote option must start with a dash: %s\n
+Running socket program: "%s"\n
+SEND
+SKIP
+SKyu
+SO_BROADCAST
+SO_KEEPALIVE
+SO_RCVBUF
+SO_RCVLOWAT
+SO_RCVTIMEO
+SO_REUSEADDR
+SO_SNDBUF
+SO_SNDLOWAT
+SO_SNDTIMEO
+SSH2_CLIENT
+SSH_CLIENT
+SSH_CONNECTION
+STATS
+STRING
+SYMSAFE
+See https://rsync.samba.org/ for updates, bug reports, and answers\n
+Server
+Server %s list (on client): %s\n
+Server %s list (on server): %s\n
+Set all %s options (e.g. all%d)
+Sett
+Setting --timeout=%d to match server\n
+Show this help message
+Silence all %s options (same as all0)
+Symlink munging is unsafe when a %s directory exists.\n
+TCP4
+TCP6
+TCP_NODELAY
+TIME
+The ':' usages connect via remote shell, while '::' & 'rsync://' usages connect\n
+The --contimeout option may only be used when connecting to an rsync daemon.\n
+The --files-from sent to the server cannot specify a host.\n
+The --password-file option may only be used when accessing an rsync daemon.\n
+The backup-dir is not a directory: %s\n
+The protocol version in the batch file is too new (%d > %d).\n
+The server does not support
+The server is configured to refuse
+The source and destination cannot both be remote.\n
+The temp-dir does not exist: %s\n
+The temp-dir is not a directory: %s\n
+This rsync does not support
+Total bytes received: %s\n
+Total bytes sent: %s\n
+Total file size: %s bytes\n
+Total transferred file size: %s bytes\n
+Try using --ipv4 or --ipv6 to avoid this listen() error.\n
+UNDETERMINED
+UNKNOWN
+USER
+UTF-8
+Unable to create partial-dir for %s -- discarding %s.\n
+Unable to find a hlink node for %d (%s)\n
+Unable to set group to daemon gid %ld
+Unable to set user to daemon uid %ld
+Unexpected local arg: %s\n
+Unexpected remote arg: %s\n
+Unknown %s item: "%.*s"\n
+Unknown --groupmap name on receiver: %s\n
+Unknown --usermap name on receiver: %s\n
+Unknown Parameter encountered: "%s"\n
+Unknown ai_family value
+Unknown alt_dest_opt type
+Unknown directive: %s.\n
+Unknown do_compression value
+Unknown filter rule: `%s'\n
+Unknown parameter "%s"\n
+Unknown socket option %s\n
+Usage:
+Usage: rsync --daemon [OPTION]...\n
+Usage: rsync [OPTION]... SRC [SRC]... DEST\n
+Use "rsync --daemon --help" to see the daemon-mode command-line options.\n
+Use OPT or OPT1 for level 1 output, OPT2 for level 2, etc.; OPT0 silences.\n
+Using RSYNC_CONNECT_PROG instead of 
+Using more than one %s option requires protocol 29 or higher (negotiated %d).\n
+Vc0a
+WARNING
+WARNING: file is too large for checksum sending: %s\n
+WARNING: parent dir is absent in the file list: %s\n
+Warning: invalid section name in configuration file: %s\n
+Web site: %s\n
+XsBI
+Y@opening connection using:
+You can only specify a group-affecting --chown once.\n
+You can only specify a user-affecting --chown once.\n
+Your --%s-choice value (%s) was refused by the server.\n
+Your options have been rejected by the server.\n
+ZSTD decomp returned %d (%d bytes)\n
+ZSTD_compressStream returned %d\n
+ZSTD_createDStream failed\n
+Zjz\v
+[%s] #%d hard-links #%d (%sabbrev)\n
+[%s] %s sent=%zd\n
+[%s] %sing %s %s because of pattern %s%s%s\n
+[%s] Invalid dir index: %d (%d - %d)\n
+[%s] _exit_cleanup(code=%d, file=%s, line=%d): about to call exit(%d)%s\n
+[%s] _exit_cleanup(code=%d, file=%s, line=%d): entered\n
+[%s] activating mergelist #%d%s\n
+[%s] add_implied_include(%s%s)\n
+[%s] add_implied_include(%s)\n
+[%s] add_implied_include(%s/)\n
+[%s] add_rule(%s%.*s%s)%s%s\n
+[%s] buffer overflow: %s (file=%s, line=%d)\n
+[%s] cannot convert filename: %s (%s)\n
+[%s] cannot convert symlink data for: %s (%s)\n
+[%s] change_dir(%s)\n
+[%s] charset: %s\n
+[%s] clearing filter list%s\n
+[%s] completed parent_dirscan for mergelist #%d%s\n
+[%s] converted msg len=%zd\n
+[%s] copy_as=%s\n
+[%s] could not find xattr #%d for %s\n
+[%s] created hashtable %lx (%ssize: %d, keys: %d-bit)\n
+[%s] created hashtable for dev %s\n
+[%s] deactivating mergelist #%d%s\n
+[%s] destroyed hashtable %lx (size: %d, keys: %d-bit)\n
+[%s] dev:inode for #%d is %s:%s\n
+[%s] exceeded --max-alloc=%s setting (file=%s, line=%d)\n
+[%s] expand %s to %s bytes, did%s move\n
+[%s] expand file_list pointer array to %s bytes, did%s move\n
+[%s] files-from read=%zd\n
+[%s] flist start=%d, used=%d, low=%d, high=%d\n
+[%s] flist_eof=1\n
+[%s] freeing parent_dirscan filters of mergelist #%d%s\n
+[%s] got MSG_ERROR_EXIT with %zd bytes\n
+[%s] got msg=%d, len=%zd\n
+[%s] growing hashtable %lx (size: %d, keys: %d-bit)\n
+[%s] i=%d %s %s%s%s%s mode=0%o len=%s%s%s flags=%x\n
+[%s] internal abbrev error on %s (%s, len=%ld)!\n
+[%s] io timeout after %d seconds -- exiting\n
+[%s] io_end_buffering_in(IOBUF_%s_BUFS)\n
+[%s] io_end_buffering_out(IOBUF_%s_BUFS)\n
+[%s] io_end_multiplex_in(mode=%d)\n
+[%s] io_end_multiplex_out(mode=%d)\n
+[%s] io_start_buffering_in(%d)\n
+[%s] io_start_buffering_out(%d)\n
+[%s] io_start_multiplex_in(%d)\n
+[%s] io_start_multiplex_out(%d)\n
+[%s] make_file(%s,*,%d)\n
+[%s] out of memory: %s (file=%s, line=%d)\n
+[%s] parse_filter_file(%s,%x,%x)%s\n
+[%s] perform_io(%zd, %d)\n
+[%s] perform_io(%zd, %sinput)\n
+[%s] perform_io(%zd, msgroom) needs to flush %zd\n
+[%s] perform_io(%zd, outroom) needs to flush %zd\n
+[%s] performing parent_dirscan for mergelist #%d%s\n
+[%s] popping local filters\n
+[%s] popping mergelist #%d%s\n
+[%s] pushing local filters for %s\n
+[%s] pushing mergelist #%d%s\n
+[%s] receiving flist for dir %d\n
+[%s] recv=%zd\n
+[%s] reduced size of %s (-%d)\n
+[%s] restored size of %s (+%d)\n
+[%s] safe_read(%d)=%zd\n
+[%s] send_msg(%d, %zd)\n
+[%s] send_msg_int(%d, %d)\n
+[%s] send_msg_success(%d)\n
+[%s] sending MSG_ERROR_EXIT (len 0)\n
+[%s] sending MSG_ERROR_EXIT with exit_code %d\n
+[%s] skipping mount-point dir %s\n
+[LOCALE]
+[OPTION...]
+[ardlptgoD]
+[h1R
+\r%15s %3d%% %7.2f%s %s%s
+\r\nProxy-Authorization: Basic 
+\r\nQUIT\n
+\rmj>zjZ
+\t\t\n\n\v\v\f\f\f\f\r\r\r\r
+\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+]pop
+]push
+]reset
+^oEZ_
+aacl
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-_=+@/
+access.c
+acl_duo
+acls
+acls.c
+add_rule
+address
+alias
+aliases nested too deeply
+all_vars
+allmem:
+alnum
+alpha
+am_sender
+append
+append-verify
+archive
+are welcome to redistribute it under certain conditions.  See the GNU\n
+arena:
+argc > 0 && *argv != NULL
+argc is zero!\n
+argc overflow in server_options().\n
+atimes
+attempt to copy device contents without --copy-devices\n
+attempting to send over-long vstring (%d > %d)\n
+auth
+auth failed on module %s from %s (%s) for %s: %s\n
+auth failed on module %s from %s (%s): invalid challenge response\n
+auth users
+authenticate.c
+authentication information is too long\n
+authpriv
+auto
+auto,auto
+avoid file overwrite race for
+backed up %s to %s\n
+backup
+backup filename too long\n
+backup lstat %s failed
+backup mkdir %s failed
+backup stat %s failed
+backup-dir
+backup_dir is %s\n
+bad response from proxy -- %s\n
+batch file
+batch.c
+batchfiles
+bind() failed: %s (address-family %d)\n
+bits
+blank
+block-size
+blocking-io
+buffer error
+buffer overflow expanding %%%c -- exiting\n
+building file list
+building file list\n
+built hash table\n
+bwlimit
+calling match_sums %s%s%s\n
+cannot add local filter rules in long-named directory: %s\n
+cannot delete mount point: %s\n
+cannot delete non-empty directory: %s\n
+cannot send file with empty name in %s\n
+caveat
+change_dir %s failed
+change_dir#1 %s failed
+change_dir#2 %s failed
+change_dir#3 %s failed
+change_dir#4 %s failed
+change_local_filter_dir
+change_sacl_perms: %s()
+char *
+charset
+chdir %s failed
+chdir("/") failed
+check_for_finished_files
+check_for_finished_files.1
+check_for_finished_files.2
+check_prior
+checksum
+checksum-choice
+checksum-seed
+checksum.c
+chgrp
+chmod
+chmod.c
+chown
+chroot test failed: %s. Switching 'use chroot' from unset to false.\n
+chroot("%s") failed
+chunk[%d] len=%d offset=%s sum1=%08x\n
+chunk[%d] of size %ld at %s offset=%s%s\n
+chunk[%s] offset=%s len=%ld sum1=%08lx\n
+clear
+client
+client_run waiting on %d\n
+client_run2 waiting on %d\n
+clientname.c
+clientserver.c
+close failed on %s
+cmd=%s machine=%s user=%s path=%s\n
+cmd[%d]=%s 
+cntrl
+comment
+compare-dest
+compat.c
+completed file
+compress
+compress returned %d\n
+compress-choice
+compress-level
+compression init failed\n
+config
+connect from %s (%s)\n
+connection
+connection via http proxy %s port %s\n
+consume&
+contimeout
+copy
+copy-as
+copy-dest
+copy-devices
+copy-dirlinks
+copy-links
+copy-unsafe-links
+copy_file %s => %s
+copy_xattrs: lsetxattr(%s,"%s") failed
+copying unsafe symlink "%s" -> "%s"\n
+copyright
+could not create child server process
+could not make way for %s %s: %s\n
+could not open password file %s
+count=%s n=%ld rem=%ld\n
+count=%s rem=%ld blength=%ld s2length=%d flength=%s\n
+create
+created %d director%s for %s\n
+created directory %s\n
+cron
+crtimes
+csum_evp_md
+cvs-exclude
+dQy/
+dacl
+daemon
+daemon 
+daemon auth checksum
+daemon chdir("/") failed
+daemon chroot
+daemon chroot("%s") failed
+daemon gid
+daemon uid
+daemon-specific rsync options.  See also the rsyncd.conf(5) manpage.\n
+data error
+data recv %d at %s\n
+debug
+decompressor lost sync!\n
+default
+default_perms_for_dir: sys_acl_get_file(%s, %s): %s, falling back on umask\n
+default_perms_for_dir: unpack_smb_acl failed, falling back on umask\n
+deflate on token returned %d (%d bytes left)\n
+deflate returned %d\n
+del.
+delay
+delay-updates
+deldelay
+delete
+delete of stat xattr failed for %s
+delete-after
+delete-before
+delete-delay
+delete-during
+delete-excluded
+delete-missing-args
+delete.c
+delete_dir_contents(%s) flags=%d\n
+delete_file: %s(%s) failed
+delete_in_dir(%s)\n
+delete_item(%s) mode=%o flags=%d\n
+deleting %n
+deleting in %s\n
+delta-transmission %s\n
+denied by rule
+detach
+device file
+devices
+digit
+dir-merge
+dir_depth < MAXPATHLEN/2+1
+directory
+dirs
+disabled for local transfer or --whole-file
+discarded
+discarding over-long filter: %.*s\n
+discarding over-long filter: %s...\n
+do_fallocate %s
+done hash search\n
+done\n
+dont compress
+dparam
+dry-run
+during
+early exec
+early exec failed
+early exec preparation failed
+early-input
+enabled
+error allocating core memory buffers
+error in IPC code
+error in file IO
+error in parameter quoting
+error in perform_io: no fd for input.\n
+error in perform_io: no fd for output.\n
+error in rsync protocol data stream
+error in socket IO
+error matching address %s: %s\n
+error starting client-server protocol
+errors
+errors selecting input/output files, dirs
+errors with program diagnostics
+establish_proxy_connection
+ewh/?y
+exclude
+exclude from
+exclude-from
+exclude.c
+exec
+executability
+existing
+expand_item_list
+expand_vars
+fP~V
+f_in == iobuf.in_fd
+f_out == iobuf.out_fd
+failed to %s pid file %s: %s\n
+failed to connect to %s (%s)
+failed to fork: %s\n
+failed to get device size via seek: %s
+failed to hard-link %s with %s
+failed to modify permissions on %s
+failed to open %s
+failed to open %s, continuing
+failed to open %sclude file %s
+failed to open files-from file %s: %s\n
+failed to open lock file %s
+failed to open log-file %s
+failed to re-read xattr %s for %s\n
+failed to re-stat %s
+failed to read from proxy
+failed to read xattr %s for %s
+failed to seek device back to start: %s
+failed to set permissions on %s
+failed to set socket option %s
+failed to set times on %s
+failed to write to proxy
+failed to write xattr %s for %s
+fake super
+fake-super
+false
+false_alarms=%d hash_hits=%d matches=%d\n
+fd != iobuf.in_fd
+fd != iobuf.out_fd
+fd %d
+file
+file error
+file has vanished: %s\n
+file list sent\n
+file->flags & FLAG_HLINKED
+file_checksum
+file_extra_cnt == 0
+fileio.c
+filename overflows max-path len by %u: %s/%s\n
+files-from
+filter
+filter rules are too modern for remote rsync.\n
+find small
+finish_hard_link
+finishing %s\n
+flist != NULL
+flist.c
+flist2,progress
+flush of delete-delay buffer
+force
+fordblks:
+fork
+fork failed
+fork failed in do_recv
+forward lookup
+forward name lookup for %s failed: %s\n
+found ".." dir in relative path: %s\n
+from0
+fsmblks:
+fstat %s
+fstat %s failed
+fstat failed
+fstat opened
+fstat(%s)
+fsync
+fsync failed on %s
+ftruncate %s
+ftruncate failed on %s
+fu`z
+full_fname
+fuzzy
+fuzzy basis selected for %s: %s\n
+fuzzy distance for %s = %d.%05d\n
+fuzzy size/modtime match for %s\n
+gen mapped %s of size %s\n
+generate_files finished\n
+generate_files phase=%d\n
+generating and sending sums for %d\n
+generator
+generator starting pid=%d\n
+generator.c
+get_acl: sys_acl_get_file(%s, %s)
+get_acl: unpack_smb_acl(%s)
+get_checksum2
+get_dirlist
+get_local_name count=%d %s\n
+get_xattr_data
+get_xattr_data: lgetxattr(%s,"%s",%ld) failed
+get_xattr_data: lgetxattr(%s,"%s",%ld) returned %ld\n
+get_xattr_data: lgetxattr(%s,"%s",0) failed
+get_xattr_names: llistxattr(%s,%s) failed
+getcwd()
+getgrouplist failed
+getpeername on fd%d failed
+getpwuid failed
+gid 4294967295 (-1) is impossible to set on %s\n
+gid_t
+glob_expand_module
+global
+gnum >= hlink_flist->ndx_start
+got ACL-based default perms %o for directory %s\n
+got file_sum\n
+got transfer request in phase 2 [%s]\n
+got_flist_entry_status
+gqr<
+graph
+group
+groupmap
+hPU3
+hard-link reference out of range: %d (%d)\n
+hard-links
+hard_link_check
+hardlink-symlinks
+hardlinks
+hash search b=%ld len=%s\n
+hash search s->blength=%ld len=%s count=%s\n
+hashtable.c
+hblkhd:
+hblks:
+header crc mismatch
+help
+hide
+hlink for %d (%s,%d): found flist match (alt %d)\n
+hlink for %d (%s,%d): leader is %d (%s)\n
+hlink for %d (%s,%d): looking for a leader\n
+hlink for %d (%s,%d): virtual first\n
+hlink for %d (%s,%d): waiting for %d\n
+hlink.c
+hosts allow
+hosts deny
+human-readable
+i91k
+i]Wb
+iconv
+iconv_open("%s", "%s") failed\n
+id_access
+ifuncs.h
+ignore errors
+ignore nonreadable
+ignore-errors
+ignore-existing
+ignore-missing-args
+ignore-non-existing
+ignore-times
+ignoring --%s-batch option sent to server\n
+ignoring secrets file
+ignoring unsafe symlink "%s" -> "%s"\n
+implied-dirs
+inc-recursive
+include
+include from
+include-from
+incom
+incoming chmod
+incompatible version
+incorrect data check
+incorrect header check
+incorrect length check
+inflate (token) returned %d\n
+inflate flush returned %d (%d bytes)\n
+inflate init failed\n
+inflate returned %d (%d bytes)\n
+info
+initgroups failed
+inplace
+insufficient memory
+internal: args[] overflowed in do_cmd()\n
+internal: try_dests_non() called with invalid mode (%o)\n
+invalid
+invalid --stop-after value: %s\n
+invalid --stop-at format: %s\n
+invalid basis_dir index: %d.\n
+invalid bit length repeat
+invalid block type
+invalid code -- missing end-of-block
+invalid code lengths set
+invalid distance code
+invalid distance too far back
+invalid distances set
+invalid len passed to map_ptr: %ld\n
+invalid literal/length code
+invalid literal/lengths set
+invalid modifier '%c' at position %d in filter rule: %s\n
+invalid multi-message %d:%lu [%s%s]\n
+invalid numeric value
+invalid proxy specification: should be HOST:PORT\n
+invalid proxy specification: should be USER:PASS@HOST:PORT\n
+invalid read_size of %ld in map_ptr\n
+invalid stored block lengths
+invalid username
+invalid window size
+io.c
+io_end_multiplex_in
+io_printf() was too long for the buffer.\n
+io_start_buffering_in
+io_start_buffering_out
+iobuf.in_multiplexed > 0
+iobuf.msg
+iobuf.out
+iobuf.raw_input_ends_before == 0
+ipv4
+ipv6
+istring
+itemize-changes
+kB/s
+keep-dirlinks
+keep_backup failed: %s -> "%s"
+keepcost:
+kern
+l6qnk
+lDa>
+len > 0 && len < (int)sizeof buffer
+levels[j] <= MAX_OUT_LEVEL
+lib/pool_alloc.c
+license
+link
+link %s -> "%s"
+link %s => %s failed
+link-dest
+link_stat %s failed
+links
+list
+list-only
+listen backlog
+listen() on socket failed
+loadparm.c
+local0
+local1
+local2
+local3
+local4
+local5
+local6
+local7
+local_child
+local_vars
+lock
+lock file
+log file
+log format
+log-file
+log-file*
+log-file-format
+log-format
+log-format string is WAY too long!\n
+log.c
+log_init
+logfile_name
+lower
+lseek of %s returned %s, not %s
+lseek returned %s, not %s
+lstat
+mail
+main
+main.c
+make_backup
+make_backup: COPY %s successful.\n
+make_backup: DEVICE %s successful.\n
+make_backup: HLINK %s successful.\n
+make_backup: RENAME %s successful.\n
+make_backup: SYMLINK %s successful.\n
+make_bak: skipping non-regular file %s\n
+make_file
+make_output_option
+malformed address %s: %s\n
+malformed mask in %s\n
+match at %s last_match=%s j=%d len=%ld n=%ld\n
+match.c
+match_gnums
+max connections
+max connections (%d) reached\n
+max verbosity
+max-alloc
+max-delete
+max-size
+memory allocation failed
+merge
+merge-file name overflows: %s\n
+message fd
+min-size
+missing argument
+mkdir %s failed
+mknod %s failed
+mknod(%s, 0%o, [%ld,%ld])\n
+mkpath
+mkstemp %s failed
+modify-window
+module-list request from %s (%s)\n
+motd
+motd file
+mount point, %s, pins parent directory\n
+msg checking charset: %s\n
+msg checking via isprint() (iconv_open("%s", "%s") errno: %d)\n
+msgs2stderr
+multiplexing overflow %d:%lu [%s%s]\n
+munge symlinks
+munge-links
+mutually exclusive logical operations requested
+my_alloc caller
+name
+name converter
+name lookup failed for %s: %s\n
+name-converter exec preparation failed
+namecvt_call() request was too large.\n
+need dictionary
+need to read %zd bytes, iobuf.in.buf is only %zd bytes.\n
+need to write %zd bytes, iobuf.msg.buf is only %zd bytes.\n
+need to write %zd bytes, iobuf.out.buf is only %zd bytes.\n
+new-compress
+news
+no SIMD-roll
+no asm-MD5
+no asm-roll
+no hardlink-specials
+no known address for "%s": spoofed address?\n
+no matching rule
+no secrets file
+no-8
+no-8-bit-output
+no-A
+no-D
+no-H
+no-J
+no-N
+no-O
+no-R
+no-S
+no-U
+no-W
+no-X
+no-acls
+no-append
+no-atimes
+no-backup
+no-blocking-io
+no-bwlimit
+no-c
+no-checksum
+no-compress
+no-contimeout
+no-crtimes
+no-d
+no-delay-updates
+no-detach
+no-devices
+no-dirs
+no-force
+no-from0
+no-fuzzy
+no-g
+no-group
+no-h
+no-hard-links
+no-human-readable
+no-i
+no-i-d
+no-i-r
+no-iconv
+no-ignore-errors
+no-implied-dirs
+no-inc-recursive
+no-inplace
+no-itemize-changes
+no-l
+no-links
+no-m
+no-mkpath
+no-motd
+no-msgs2stderr
+no-munge-links
+no-numeric-ids
+no-o
+no-old-args
+no-omit-dir-times
+no-omit-link-times
+no-one-file-system
+no-open-noatime
+no-owner
+no-p
+no-partial
+no-perms
+no-progress
+no-protect-args
+no-prune-empty-dirs
+no-r
+no-recursive
+no-relative
+no-s
+no-secluded-args
+no-sparse
+no-specials
+no-super
+no-t
+no-timeout
+no-times
+no-v
+no-verbose
+no-whole-file
+no-write-devices
+no-x
+no-xattrs
+no-y
+no-z
+no_batched_update
+nobody
+node->data != NULL
+none
+normalize_path(%s) failed\n
+not backing up unsafe symlink "%s" -> "%s"\n
+not creating new %s "%s"\n
+null
+number too large or too small
+numeric ids
+numeric-ids
+offset=%s sum=%04x%04x\n
+old-args
+old-compress
+old-d
+old-dirs
+omit-dir-times
+omit-link-times
+on remote machine: 
+one-file-system
+only-write-batch
+open
+open %s
+open %s failed
+open noatime
+open-noatime
+open_socket_in
+opendir %s failed
+openssl-crypto
+opt->arg should not be NULL
+option does not take an argument
+option type (%d) not implemented in popt\n
+optional secluded-args
+options.c
+ordblks:
+orig
+out-format
+out_of_memory in finish_pre_exec\n
+outbuf
+outgo
+outgoing chmod
+over-long vstring received (%d > %d)\n
+overflow in add_e_flags().\n
+overflow: linkname_len=%d\n
+overflow: xflags=0x%x l1=%d l2=%d lastname=%s [%s]\n
+overflowed iobuf.msg buffer in send_msg
+owner
+pack_smb_acl %s()
+pack_smb_acl: sys_acl_init()
+params.c
+params.c:OpenConfFile() -
+params.c:Parameter() -
+params.c:Section() -
+params.c:pm_process() -
+parse_arguments
+partial
+partial file
+partial-dir
+password mismatch
+password-file
+path
+perms
+pid file
+pipe
+pipe failed in do_recv
+pipe.c
+port
+post-xfer exec
+potential match at %s i=%ld sum=%08x\n
+pre-xfer exec
+pre-xfer exec preparation failed
+prealloc
+preallocate
+print
+process has %d gid%s: 
+program
+progress
+protect
+protect-args
+protected args:
+protocol
+protocol incompatibility
+protocol version mismatch -- is your shell clean?\n
+proxy protocol
+prune-empty-dirs
+punct
+push
+put into partial-dir
+qsort
+quiet
+re-lstat
+read
+read %s
+read error
+read errors mapping %s
+read only
+read-batch
+read_a_msg
+read_line_old
+read_ndx_and_attrs
+readdir(%s)
+reading delete-delay file
+readlink_stat(%s) failed
+receive_xattr
+receive_xattr: xa index %d out of range for %s\n
+received %d names\n
+received SIGINT, SIGTERM, or SIGHUP
+received SIGUSR1
+received request to transfer non-regular file: %d [%s]\n
+receiver
+receiver.c
+receiving file list
+receiving file list\n
+receiving incremental file list\n
+recursive
+recv
+recv mapped %s of size %s\n
+recv_acl_access: value out of range: %x\n
+recv_acl_index: %s ACL index %d > %d\n
+recv_file_entry
+recv_file_list
+recv_file_list done\n
+recv_file_name(%s)\n
+recv_files finished\n
+recv_files phase=%d\n
+recv_files(%d) starting\n
+recv_files(%s)\n
+recv_files: %s is a directory\n
+recv_generator(%s,%d)\n
+recv_generator: failed to stat %s
+recv_generator: mkdir %s failed
+recv_rules
+recv_xattr_request
+recv_xattr_request: internal data error!\n
+refuse options
+regular file
+relative
+relnamecache *
+remote command could not be run
+remote command not found
+remote destination is not allowed with --read-batch\n
+remote shell failed
+remote shell killed
+remote-option
+remove
+remove-sent-files
+remove-source-files
+removing duplicate name %s from file list (%d)\n
+remsh
+rename
+rename %s -> "%s"
+rename %s -> "%s" failed
+rename failed for %s (from %s)
+renaming %s to %s because of text busy\n
+renaming %s to %s\n
+requested action not supported
+reset
+retained
+reverse lookup
+risk
+rmdir
+root
+rsync
+rsync %s %s from %s (%s)\n
+rsync %s %s from %s@%s (%s)\n
+rsync allowed access on module %s from %s (%s)\n
+rsync comes with ABSOLUTELY NO WARRANTY
+rsync comes with ABSOLUTELY NO WARRANTY.  This is free software, and you\n
+rsync denied on module %s from %s (%s)\n
+rsync error: %s (code %d) at %s(%d) [%s=%s]\n
+rsync is a file transfer program capable of efficient remote update\n
+rsync warning: %s (code %d) at %s(%d) [%s=%s]\n
+rsync-path
+rsync.c
+rsync: %s
+rsync: %s: %s (in daemon mode)\n
+rsync: [%s] 
+rsync: connection unexpectedly closed (%s bytes received so far) [%s]\n
+rsync: did not see server greeting\n
+rsync: didn't get server startup line\n
+rsync: getaddrinfo %s: %s\n
+rsync: getaddrinfo: %s %s: %s\n
+rsync: getaddrinfo: bind address %s: %s\n
+rsync: internal error on %s%s: %d != %d\n
+rsync: internal error: %s is wrong! (%d != %d)\n
+rsync: on remote machine: -
+rsync: server sent "%s" rather than greeting\n
+rsync: the server omitted the digest name list: %s\n
+rsync: the server omitted the subprotocol value: %s\n
+rsync://
+rsync[%d] (%s%s%s) heap statistics:\n
+rsync_acl
+rsync_xa
+rsync_xa_list
+rsync_xal_set: lremovexattr(%s,"%s") failed
+rsync_xal_set: lsetxattr(%s,"%s") failed
+rsyncd
+rsyncd version %s starting, listening on port %d\n
+rsyncd.conf
+ru&o
+rwrite
+rwxrwxrwx
+safe-links
+safe_read
+safe_read failed to read %zd bytes
+safe_read select failed
+safe_write
+safe_write failed to write %zd bytes to %s
+safe_write select failed on %s
+secluded-args
+secret not found
+secrets file
+secrets file must be owned by root when running as root (see strict modes)\n
+secrets file must not be other-accessible (see strict modes option)\n
+security
+send
+send files finished\n
+send_extra_file_list
+send_file_list
+send_file_list done\n
+send_files failed to open %s
+send_files mapped %s%s%s of size %s\n
+send_files phase=%d\n
+send_files starting\n
+send_files(%d, %s%s%s)\n
+send_implied_dirs
+send_xattr_request
+sender
+sender failed to %s %s
+sender file already removed: %s\n
+sender finished %s%s%s\n
+sender removed %s\n
+sender.c
+sending daemon args:
+sending file_sum\n
+sending incremental file list\n
+sent
+sent %s bytes  received %s bytes  %s bytes/sec\n
+sent %s bytes  received %s bytes  total size %s\n
+server
+server 
+server_options
+server_recv(%d) starting pid=%d\n
+server_recv: recv_file_list error\n
+server_sender starting pid=%d\n
+set gid of %s from %u to %u\n
+set modtime, atime of %s to (%ld) %s, (%ld) %s\n
+set uid of %s from %u to %u\n
+set_acl: sys_acl_delete_def_file(%s)
+set_acl: sys_acl_set_file(%s, %s)
+set_env_str
+set_xattr_acl: lsetxattr(%s,"%s") failed
+setgid %ld failed
+setgid failed
+setgroups failed
+setuid %ld failed
+setuid failed
+setup_protocol
+sha1
+sha256
+sha512
+show
+sibling process crashed
+sibling process terminated abnormally
+size-only
+skip-compress
+skipped diminished file: %s\n
+skipping directory %s\n
+skipping file with bogus (zero) st_mode: %s\n
+skipping non-regular file "%s"\n
+skipping overly long name: %s\n
+skipping symlink with 0-length value: %s\n
+smblks:
+socket
+socket options
+socket(%d,%d,%d) failed: %s\n
+socket.c
+socketpair_tcp failed
+socketpairs
+sockopts
+some files vanished before they could be transferred
+some files/attrs were not transferred (see previous errors)
+source
+space
+sparse
+special
+special file
+specials
+specified-side merge file contains specified-side filter: %s\n
+start == fname
+start_inband_exchange
+stat
+stat %s failed
+stat(%s)
+stats
+stats2
+stats3
+stderr
+stop-after
+stop-at
+stopping at requested limit\n
+store_access_in_entry sys_acl_set_access_bits()
+stream end
+stream error
+strict modes
+successful_send
+suffix
+sum=%.8x k=%ld\n
+sum_as_hex
+sum_init
+sum_len*2 < (int)sizeof buf
+super
+symlink
+symlink %s -> "%s" failed
+symlink has no referent: %s\n
+symlinks
+symtimes
+syntax error -- %s does not take a value\n
+syntax or usage error
+sys_acl_create_entry
+sys_acl_get_entry
+sys_acl_get_info
+sys_acl_get_tag_type
+sys_acl_set_info
+syscall.c
+syslog
+syslog facility
+syslog tag
+system.
+temp dir
+temp-dir
+temporary filename too long: %s\n
+the 'temp dir' value for %s is WAY too long -- ignoring.\n
+the --max-delete limit stopped deletions
+the batch-file name must be %d characters or less.\n
+time-limit
+timeout
+timeout in data send/receive
+timeout waiting for daemon connection
+times
+to an rsync daemon, and require SRC or DEST to start with a module name.\n
+token.c
+too large
+too many length or distance symbols
+too many remote options specified.\n
+too small
+total size is %s  speedup is %s%s\n
+total: matches=%d  hash_hits=%d  false_alarms=%d data=%s\n
+touch_up_dirs: %s (%d)\n
+transfer logging
+true
+truncate
+trust-sender
+uid 4294967295 (-1) is impossible to set on %s\n
+uidlist.c
+unable to bind any inbound sockets on port %d\n
+unable to open config dir "%s"
+unable to open config file "%s"
+unable to stat config file "%s"
+uncompress failed: %d\n
+unexpected end of filter rule: %s\n
+unexpected error from iconv()
+unexpected tag %d [%s%s]\n
+unexplained error
+unknown checksum name: %s\n
+unknown compress name: %s\n
+unknown compression method
+unknown error
+unknown family %u\n
+unknown header flags set
+unknown module '%s' tried from %s (%s)\n
+unknown option
+unlink
+unlink %s
+unpack_smb_acl: %s()
+unpack_smb_acl: warning: duplicate GROUP_OBJ entry ignored\n
+unpack_smb_acl: warning: duplicate MASK entry ignored\n
+unpack_smb_acl: warning: duplicate OTHER entry ignored\n
+unpack_smb_acl: warning: duplicate USER_OBJ entry ignored\n
+unpack_smb_acl: warning: entry with unrecognized tag type ignored\n
+unset
+uordblks:
+update
+upper
+usage
+usage.c
+use chroot
+user
+user.
+user.rsync.
+user.rsync.%aacl
+user.rsync.%dacl
+user.rsync.%stat
+usermap
+usmblks:
+util1.c
+util2.c
+uucp
+vQO+t
+verbose
+verify stat info for
+version
+via a fast differencing algorithm.\n
+w+OQvr
+w3Xc
+wXR\r
+waitpid
+waitpid() failed
+when --backup-dir is the same as the dest dir
+whole-file
+without a --backup-dir
+wn>Jj
+write
+write %s
+write error
+write failed on %s
+write only
+write-batch
+write-devices
+xattr
+xattrs
+xattrs.c
+xdigit
+xxh128
+xxh3
+xxh64
+xxhash
+y9*O
+zlib
+zlibx
+zstd
+{kHw

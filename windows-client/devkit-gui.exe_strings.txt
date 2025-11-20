@@ -1,0 +1,155 @@
+%s\nException: %s\nOriginal Exception: %s
+.00cfg
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.bss
+.data
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text$mn
+.text$mn$00
+.text$x
+.xdata
+Cannot create args tuple.
+Cannot create caption string object.
+Cannot create context message string object.
+Cannot create default caption string.
+Cannot create empty string object.
+Cannot create format args tuple.
+Cannot create format string object.
+Cannot format exception values.
+Cannot get format_exception method.
+Cannot get string representation of messsage.
+Cannot import traceback module.
+Cannot join exception strings.
+Error in sys.excepthook.
+Exception raised when calling format_exception.
+GCTL
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetModuleFileNameW
+GetModuleHandleW
+GetStartupInfoW
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+IsProcessorFeaturePresent
+KERNEL32.dll
+LoadLibraryExW
+MessageBoxA
+MessageBoxW
+Out of memory creating sys.path!
+PyErr_Clear
+PyErr_ExceptionMatches
+PyErr_Fetch
+PyErr_NormalizeException
+PyExc_SystemExit
+PyImport_ImportModule
+PyLong_AsLong
+PyMem_Free
+PyMem_RawFree
+PyMem_RawMalloc
+PyObject_CallObject
+PyObject_GetAttrString
+PyObject_Str
+PySys_GetObject
+PySys_SetArgvEx
+PyTuple_New
+PyUnicode_AsWideCharString
+PyUnicode_Format
+PyUnicode_FromString
+PyUnicode_Join
+Py_Exit
+Py_Finalize
+Py_FrozenFlag
+Py_IgnoreEnvironmentFlag
+Py_Initialize
+Py_NoSiteFlag
+Py_SetPath
+Py_SetProgramName
+QueryPerformanceCounter
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+SetDllDirectoryW
+SetUnhandledExceptionFilter
+TerminateProcess
+USER32.dll
+Unable to calculate directory of executable!
+Unable to change DLL search path!
+Unable to get executable name!
+Unable to load python3.dll!
+UnhandledExceptionFilter
+VCRUNTIME140.dll
+_Py_Dealloc
+_Py_NoneStruct
+__C_specific_handler
+__current_exception
+__current_exception_context
+__excepthook__
+__p___wargv
+__p__commode
+__setusermatherr
+__startup__
+__stdio_common_vswprintf
+_c_exit
+_cexit
+_configthreadlocale
+_configure_wide_argv
+_crt_atexit
+_exit
+_get_wide_winmain_command_line
+_initialize_onexit_table
+_initialize_wide_environment
+_initterm
+_initterm_e
+_register_onexit_function
+_register_thread_local_exe_atexit_callback
+_seh_filter_exe
+_set_app_type
+_set_fmode
+_set_new_mode
+api-ms-win-crt-heap-l1-1-0.dll
+api-ms-win-crt-locale-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+caption
+code
+cx_Freeze Fatal Error
+cx_Freeze: Application Terminated
+cx_Freeze: Python error in main script
+cx_Freeze: Python error in main script (traceback unavailable)
+excepthook
+exit
+format_exception
+init
+memcpy
+memset
+python311.dll
+terminate
+traceback
+wcsrchr
