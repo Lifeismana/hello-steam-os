@@ -105,7 +105,6 @@ Unable to calculate directory of executable!
 Unable to change DLL search path!
 Unable to convert path to string!
 Unable to get executable name!
-Unable to load python3.dll!
 UnhandledExceptionFilter
 VCRUNTIME140.dll
 _Py_Dealloc
