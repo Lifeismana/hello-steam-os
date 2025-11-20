@@ -209,9 +209,10 @@ def session_config():
     return SessionConfig.ERROR
 
 def get_os_info():
-    os_info = None
+    os_info = {}
     try:
-        os_info = dict([ s.split('=') for s in open('/etc/os-release').read().split('\n') if len(s) > 0 ])
+        for k, v in [ s.split('=') for s in open('/etc/os-release').read().split('\n') if len(s) > 0 ]:
+            os_info[k] = v.strip('"')
     except Exception as e:
         logger.error(e)
         logger.error('Failed to parse OS release file')

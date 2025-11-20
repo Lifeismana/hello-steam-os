@@ -42,7 +42,7 @@ Cannot create format args tuple.
 Cannot create format string object.
 Cannot format exception values.
 Cannot get format_exception method.
-Cannot get string representation of messsage.
+Cannot get string representation of message.
 Cannot import traceback module.
 Cannot join exception strings.
 Error in sys.excepthook.

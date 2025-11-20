@@ -12,7 +12,7 @@ logging.basicConfig(format='%(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 DEVKIT_TOOL_FOLDER = os.path.expanduser('~/devkit-game')
-RESTART_SDDM = '/usr/bin/steamos-session-select gamescope'
+RESTART_SESSION = '/usr/bin/steamos-session-select gamescope'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -51,5 +51,5 @@ if __name__ == '__main__':
         # wipe the local Steam install
         subprocess.check_call(f'rm -rf ~/.local/share/Steam', shell=True)
 
-        # restart SDDM, which will initiate a reinstall of Steam from the OS client
-        subprocess.check_call(RESTART_SDDM, shell=True)
+        # restart the session, which will initiate a reinstall of Steam from the OS client
+        subprocess.check_call(RESTART_SESSION, shell=True)

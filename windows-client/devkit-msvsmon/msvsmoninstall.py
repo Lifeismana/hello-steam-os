@@ -1,5 +1,4 @@
 #!/bin/env python3
-from distutils.dir_util import copy_tree
 import glob
 import os
 import subprocess
@@ -45,7 +44,7 @@ class MSVSMonPatcher:
         for msvsmon_dir in self.msvsmon_dirs:
             proton_folder_msvsmon = os.path.join(proton_folder, os.path.basename(msvsmon_dir))
             logger.info(f'Copying {msvsmon_dir} to {proton_folder_msvsmon}')
-            copy_tree(msvsmon_dir, proton_folder_msvsmon)
+            shutil.copytree(msvsmon_dir, proton_folder_msvsmon, dirs_exist_ok=True)
 
         # No longer used, was pretty fragile anyway. The proton script has all needed functionality now.
         if self.patch_path is not None and not self.conf.no_patch:
