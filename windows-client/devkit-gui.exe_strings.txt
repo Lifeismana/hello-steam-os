@@ -62,7 +62,9 @@ KERNEL32.dll
 LoadLibraryExW
 MessageBoxA
 MessageBoxW
-Out of memory creating sys.path!
+Out of memory creating executable!
+Out of memory creating lib_dir!
+Out of memory creating sys_path!
 PyErr_Clear
 PyErr_ExceptionMatches
 PyErr_Fetch
@@ -83,6 +85,7 @@ PyUnicode_AsWideCharString
 PyUnicode_Format
 PyUnicode_FromString
 PyUnicode_Join
+Py_DecodeLocale
 Py_Exit
 Py_Finalize
 Py_FrozenFlag
@@ -100,6 +103,7 @@ TerminateProcess
 USER32.dll
 Unable to calculate directory of executable!
 Unable to change DLL search path!
+Unable to convert path to string!
 Unable to get executable name!
 Unable to load python3.dll!
 UnhandledExceptionFilter
@@ -114,7 +118,6 @@ __p___wargv
 __p__commode
 __setusermatherr
 __startup__
-__stdio_common_vswprintf
 _c_exit
 _cexit
 _configthreadlocale
@@ -132,6 +135,7 @@ _seh_filter_exe
 _set_app_type
 _set_fmode
 _set_new_mode
+_wfopen
 api-ms-win-crt-heap-l1-1-0.dll
 api-ms-win-crt-locale-l1-1-0.dll
 api-ms-win-crt-math-l1-1-0.dll
@@ -145,11 +149,13 @@ cx_Freeze: Python error in main script
 cx_Freeze: Python error in main script (traceback unavailable)
 excepthook
 exit
+fclose
 format_exception
+fread
 init
 memcpy
 memset
-python311.dll
+python312.dll
 terminate
 traceback
 wcsrchr
