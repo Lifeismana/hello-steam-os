@@ -4,85 +4,55 @@
 #export PS4='${LINENO}: '
 #set -x
 
-set -o pipefail
+set -uo pipefail
 shopt -s failglob
-set -u
 
-me="$(readlink -f "$0")"
-here="${me%/*}"
-me="${me##*/}"
-
+me=$(basename "$(readlink -f "$0")")
 log () {
     echo "${me}[$$]: $*" >&2 || :
 }
 
 if [ -n "${STEAM_RUNTIME-}" ]; then
-    # The devkit tool is setup to run at host level, possibly started from the CLI
-    # The tool expects a suitable version of python installed
-    if [ -n "${SRT_LAUNCHER_SERVICE_ALONGSIDE_STEAM-}" ]; then
-	log 'Running in SLR environment, relaunching at host level'
-	log "${STEAM_RUNTIME}/amd64/usr/bin/steam-runtime-launch-client" --alongside-steam --host -- "$0" "$@"
-	exec "${STEAM_RUNTIME}/amd64/usr/bin/steam-runtime-launch-client" --alongside-steam --host -- "$0" "$@"
-	# unreachable
-    fi
-    log 'Running in LDLP environment, relaunching with runtime disabled'
-    log "${STEAM_RUNTIME}/scripts/switch-runtime.sh" --runtime="" -- "$0" "$@"
-    exec "${STEAM_RUNTIME}/scripts/switch-runtime.sh" --runtime="" -- "$0" "$@"
+  # The devkit tool is setup to run at host level, possibly started from the CLI
+  # The tool expects a suitable version of python installed
+  if [ -n "${SRT_LAUNCHER_SERVICE_ALONGSIDE_STEAM-}" ]; then
+    log 'Running in SLR environment, relaunching at host level'
+    log "${STEAM_RUNTIME}/amd64/usr/bin/steam-runtime-launch-client" --alongside-steam --host -- "$0" "$@"
+    exec "${STEAM_RUNTIME}/amd64/usr/bin/steam-runtime-launch-client" --alongside-steam --host -- "$0" "$@"
     # unreachable
+  fi
+  log 'Running in LDLP environment, relaunching with runtime disabled'
+  log "${STEAM_RUNTIME}/scripts/switch-runtime.sh" --runtime="" -- "$0" "$@"
+  exec "${STEAM_RUNTIME}/scripts/switch-runtime.sh" --runtime="" -- "$0" "$@"
+  # unreachable
 fi
 
 # Find a suitable OS-level python interpreter
 for p in python3.12 python3.11 python3.10 python3.9 python3 python; do
-  if [ -n "$(which $p 2>/dev/null)" ]; then
-    if $($p -c 'import sys; sys.exit(0) if sys.version_info.major == 3 and sys.version_info.minor == 12 else sys.exit(1)'); then
-      PYTHON=$p
-      PYZ=devkit-gui-cp312.pyz
-      break
-    fi
-    if $($p -c 'import sys; sys.exit(0) if sys.version_info.major == 3 and sys.version_info.minor == 11 else sys.exit(1)'); then
-      PYTHON=$p
-      PYZ=devkit-gui-cp311.pyz
-      break
-    fi
-    if $($p -c 'import sys; sys.exit(0) if sys.version_info.major == 3 and sys.version_info.minor == 10 else sys.exit(1)'); then
-      PYTHON=$p
-      PYZ=devkit-gui-cp310.pyz
-      break
-    fi
-    if $($p -c 'import sys; sys.exit(0) if sys.version_info.major == 3 and sys.version_info.minor == 9 else sys.exit(1)'); then
-      PYTHON=$p
-      PYZ=devkit-gui-cp39.pyz
-      break
-    fi
+  if which "$p" &>/dev/null; then
+    VERS=$("$p" 2>/dev/null -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')
+    for v in 12 11 10 9; do
+      if [ "$VERS" == "3.$v" ]; then
+        PYTHON=( "$p" )
+        PYZ=devkit-gui-cp3${v}.pyz
+        break 2
+      fi
+    done
   fi
 done
 
 # No suitable python found, check for a working pyenv
 if [ -z "${PYTHON-}" ]; then
-  if [ -n "$(which pyenv 2>/dev/null)" ]; then
-    PYENV_VERSION="$(pyenv versions | grep -o '3\.12\.[^ ]*')"
-    if [ -n "${PYENV_VERSION-}" ]; then
-      PYTHON="pyenv exec python3.12"
-      PYZ=devkit-gui-cp312.pyz
-    else
-      PYENV_VERSION="$(pyenv versions | grep -o '3\.11\.[^ ]*')"
+  if which pyenv >/dev/null; then
+    for v in 12 11 10 9; do
+      PYENV_VERSION=$(pyenv versions | grep -o -m1 "3\.${v}\.[0-9]*")
       if [ -n "${PYENV_VERSION-}" ]; then
-        PYTHON="pyenv exec python3.11"
-        PYZ=devkit-gui-cp311.pyz
-      else
-        PYENV_VERSION="$(pyenv versions | grep -o '3\.10\.[^ ]*')"
-        if [ -n "${PYENV_VERSION-}" ]; then
-          PYTHON="pyenv exec python3.10"
-          PYZ=devkit-gui-cp310.pyz
-        else
-          PYENV_VERSION="$(pyenv versions | grep -o '3\.9\.[^ ]*')"
-          if [ -n "${PYENV_VERSION-}" ]; then
-            PYTHON="pyenv exec python3.9"
-            PYZ=devkit-gui-cp39.pyz
-          fi
-        fi
+        export PYENV_VERSION
+        PYTHON=( pyenv exec "python3.${v}" )
+        PYZ=devkit-gui-cp3${v}.pyz
+        break
       fi
-    fi
+    done
 
     if [ -z "${PYTHON-}" ]; then
       pyenv versions | grep '^\s*3\.\(12\|11\|10\|9\)'
@@ -101,11 +71,11 @@ if [ -z "${PYTHON-}" ]; then
   exit
 fi
 
-pushd "$(dirname "$0")/linux-client" > /dev/null
+pushd "$(dirname "$0")/linux-client" > /dev/null || exit 1
 if [ -z "${DEVKIT_DEBUG-}" ]; then
-  $PYTHON $PYZ &>/dev/null &
+  "${PYTHON[@]}" "$PYZ" &>/dev/null &
   disown %1
 else
-  $PYTHON $PYZ
+  "${PYTHON[@]}" "$PYZ"
 fi
-popd > /dev/null
+popd > /dev/null || exit 1

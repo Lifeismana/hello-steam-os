@@ -89,6 +89,8 @@ def execute_steam_client_command(cmd):
     except IOError:
         raise Exception('cannot open steam client pipe')
     session_token = open(os.path.expanduser('~/.steam/steam.token')).read()
+    #pipe_cmd = 'steam://{0}'.format(cmd)
+    # ^ hack to execute a normal command over the IPC directly - sometimes useful
     pipe_cmd = 'devkit-1 steam://devkit-1/{0}/{1}'.format(
         session_token,
         cmd

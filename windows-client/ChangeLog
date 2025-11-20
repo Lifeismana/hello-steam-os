@@ -1,3 +1,26 @@
+2025-11-19 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20251119.0
+	* First public release with Steam Frame support.
+	* Config paramiko to be more robust to OS ssh keys when checking if a device is paired.
+
+2025-09-15 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20250915.0-steamvr
+	* Add support for launching a title (manually or automatically upon upload).
+
+2025-09-04 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Update SteamOS detection to support the new VR variant.
+	* Improve Steam client restart support on the VR variant.
+	* Support screenshots on the VR variant.
+	* Add support for specifying the runtime to use with devkit titles.
+
+2025-06-11 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20250609.0
+	* Fix Proton remote debugging, and other misc. issues to support SteamOS 3.7.x
+
 2025-04-23 Timothee Besset <ttimo@valvesoftware.com>
 
 	* Release v0.20250423.0

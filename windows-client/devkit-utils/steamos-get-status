@@ -11,7 +11,6 @@ import json
 import shlex
 import datetime
 
-
 logging.basicConfig(format='%(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
@@ -19,15 +18,12 @@ DEVKIT_TOOL_FOLDER = os.path.expanduser('~/devkit-game')
 
 WIRELESS_DISABLE_POWER_MANAGEMENT = '/usr/bin/steamos-polkit-helpers/steamos-disable-wireless-power-management'
 
-FOXNET_HOSTNAME = '/var/local/foxnet-hostname.txt'
-
 class SteamStatus(enum.Enum):
     NOT_RUNNING = 0
     ERROR = 1
     OS = 2
     OS_DEV = 3
     SIDE = 4
-    VSCODE = 5
 
     @property
     def description(self):
@@ -36,7 +32,6 @@ class SteamStatus(enum.Enum):
             SteamStatus.OS: 'OS client',
             SteamStatus.OS_DEV: 'OS client dev mode',
             SteamStatus.SIDE: 'sideloaded client',
-            SteamStatus.VSCODE: 'vscode sideloaded client',
             SteamStatus.ERROR: 'error',
         }
         return DESCRIPTIONS[self]
@@ -48,7 +43,6 @@ class SteamConfig(enum.Enum):
     OS = 2
     OS_DEV = 3
     SIDE = 4
-    VSCODE = 5
 
     @property
     def description(self):
@@ -56,7 +50,6 @@ class SteamConfig(enum.Enum):
             SteamConfig.OS: 'OS client',
             SteamConfig.OS_DEV: 'OS client dev mode',
             SteamConfig.SIDE: 'sideloaded client',
-            SteamConfig.VSCODE: 'vscode sideloaded client',
             SteamConfig.ERROR: 'error',
         }
         return DESCRIPTIONS[self]
@@ -119,11 +112,8 @@ def steam_status():
         if os.path.exists(os.path.expanduser('~/devkit-game/devkit-steam')):
             return SteamStatus.OS_DEV
         return SteamStatus.OS
-    if s.find('devkit-game/steam/') != -1:
+    if s.find('devkit-game/steam/') != -1 or s.find('devkit-game/steamdeckard/') != -1:
         return SteamStatus.SIDE
-    if s.find('devkit-game/steam-vscode/') != -1:
-        # not sure this custom VSCode upload path is still valid
-        return SteamStatus.VSCODE
     logger.warning(f'could not interpret pgrep result to determine steam client status: {s!r}')
     return SteamStatus.ERROR
 
@@ -137,34 +127,43 @@ def steam_configuration():
         return SteamConfig.OS_DEV
     if t.find('SteamStatus.SIDE') != -1:
         return SteamConfig.SIDE
-    if t.find('/steam-vscode') != -1:
-        return SteamConfig.VSCODE
     logger.warning(f'could not determine what {devkit_steam_trampoline_path} means to do')
     return SteamConfig.ERROR
 
-def osclient_branch():
+def osclient_branch(is_deckard):
     '''Which branch is the default Steam 'OS client' configured to use?'''
     # makes more sense to return strings here
     beta_path = os.path.expanduser('~/.steam/steam/package/beta')
     if not os.path.exists(beta_path):
         return 'default' # not sure that's valid actually - would be the desktop client, which will only run in desktop mode ..
     t = open(beta_path, 'rt').readline().strip('\n')
-    p1 = 'steamdeck_(.*)'
-    p2 = 'steampal_(.*)_.*'
     try:
-        if re.match(p1, t):
-            branch = re.split(p1, t)[1]
-        else:
-            # legacy pattern, only used for internal builds
-            assert re.match(p2, t)
-            branch = 'internal ' + re.split(p2, t)[1]
-        return branch
-    except:
+        p = 'steamdeck_(.*)'
+        if re.match(p, t):
+            branch = re.split(p, t)[1]
+            return branch
+        # internal builds
+        p = 'steampal_(.*)_.*'
+        if re.match(p, t):
+            branch = re.split(p, t)[1]
+            return branch
+        if is_deckard:
+            p = 'linux_arm64_(.*)_.*'
+            if re.match(p, t):
+                branch = re.split(p, t)[1]
+                return branch
+        raise Exception('no match')
+    except:  # noqa: E722
         logger.warning(f'could not determine the OS client branch config: {t!r}')
     return 'error'
 
-def osclient_version():
-    '''Which version is the 'OS client'?'''
+def osclient_version(conf):
+    '''Which version is the Steam 'OS client'?'''
+    if conf.is_deckard:
+        try:
+            return open(os.path.expanduser('~/.steam/steam/linuxarm64/builddate.txt'),'rt').read()
+        except:  # noqa: E722
+            return 'Unknown - no builddate.txt'
     beta_path = os.path.expanduser('~/.steam/steam/package/beta')
     if not os.path.exists(beta_path):
         logger.warning(f'not found: {beta_path}')
@@ -218,8 +217,12 @@ def get_os_info():
         logger.error('Failed to parse OS release file')
     return os_info
 
-def steam_default_args():
-    ret = ['-steamos3', '-steampal', '-steamdeck', '-gamepadui']
+def steam_default_args(conf):
+    if conf.is_deckard:
+        # Steam Frame supports additional arguments, which by default are empty
+        ret = []
+    else:
+        ret = ['-steamos3', '-steampal', '-steamdeck', '-gamepadui']
     try:
         output = subprocess.check_output('cat /usr/bin/gamescope-session | grep ^steamargs',
                                          shell=True,
@@ -251,6 +254,7 @@ def steam_launch_flags():
         ret[fn] = open(os.path.join(env_folder, fn), 'rt').read().strip('\n')
     return ret
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--verbose', required=False, action='store_true')
@@ -264,15 +268,16 @@ if __name__ == '__main__':
 
     os_info = get_os_info()
     assert os_info is not None
+    conf.is_deckard = os_info.get('VARIANT_ID', None) == 'vr'
     # Expecting this to be stable across SteamOS, whitelabel 'Holo' etc.
-    is_steamos = os_info.get('ID', None) == 'steamos'
+    is_steamos = os_info.get('ID', None) == 'steamos' or conf.is_deckard
     os_name = os_info.get('PRETTY_NAME', None)
     os_version = os_info.get('BUILD_ID', None)
 
     _steam_launch_flags = steam_launch_flags()
 
     if not is_steamos:
-        # the rest of this script pulls status info that is very specific to Jupiter
+        # the rest of this script pulls status info that is very specific to Holo
         if conf.json:
             ret = {
                 'is_steamos': is_steamos,
@@ -288,11 +293,13 @@ if __name__ == '__main__':
             logger.info(f"Steam launch flags     : {_steam_launch_flags}")
         sys.exit(0)
 
-    try:
-        # disable wireless power management for devkit usage: less latency on commands
-        subprocess.check_call(WIRELESS_DISABLE_POWER_MANAGEMENT)
-    except subprocess.CalledProcessError as e:
-        logger.warning(e)
+    if not conf.is_deckard:
+        # this bit of cargo cult is Steam Deck only
+        try:
+            # disable wireless power management for devkit usage: less latency on commands
+            subprocess.check_call(WIRELESS_DISABLE_POWER_MANAGEMENT)
+        except subprocess.CalledProcessError as e:
+            logger.warning(e)
 
     session_config = session_config()
     # enum -> human readable
@@ -303,15 +310,19 @@ if __name__ == '__main__':
     if steam_status != SteamStatus.NOT_RUNNING:
         cef_debugging_enabled = cef_debugging()
     steam_configuration = steam_configuration()
-    osclient_branch = osclient_branch()
-    osclient_version = osclient_version()
+    osclient_branch = osclient_branch(conf.is_deckard)
+    osclient_version = osclient_version(conf)
 
     steam_status_description = steam_status.description
     if steam_status in (SteamStatus.OS, SteamStatus.OS_DEV) :
         steam_status_description += f', on branch {osclient_branch!r}'
         if osclient_version is not None:
-            utc_date_string = datetime.datetime.fromtimestamp(osclient_version, datetime.UTC).isoformat()
-            steam_status_description += f', version {osclient_version} {utc_date_string}'
+            if conf.is_deckard:
+                # we get builddate.txt
+                steam_status_description += f', {osclient_version}'
+            else:
+                utc_date_string = datetime.datetime.fromtimestamp(osclient_version, datetime.UTC).isoformat()
+                steam_status_description += f', version {osclient_version} {utc_date_string}'
 
     has_side_loaded_client = os.path.exists(
         os.path.join(
@@ -320,18 +331,12 @@ if __name__ == '__main__':
         )
     )
 
-    ret = subprocess.run('/usr/bin/nmcli connection show --active foxnet > /dev/null', shell=True)
-    has_foxnet_connectivity = ( ret.returncode == 0 )
-
-    foxnet_hostname = None
-    if os.path.exists(FOXNET_HOSTNAME):
-        foxnet_hostname = open(FOXNET_HOSTNAME).read().strip()
-
     _user_password_is_set = user_password_is_set()
 
     if conf.json:
         ret = {
             'is_steamos': is_steamos,
+            'is_deckard': conf.is_deckard,
             'os_name': os_name,
             'os_version': os_version,
             'os_info': os_info,
@@ -344,10 +349,8 @@ if __name__ == '__main__':
             'steam_osclient_branch': osclient_branch,
             'steam_osclient_version': osclient_version,
             'has_side_loaded_client': has_side_loaded_client,
-            'steam_default_args': steam_default_args(),
+            'steam_default_args': steam_default_args(conf),
             'steam_current_args': steam_process_get_args(),
-            'has_foxnet_connectivity': has_foxnet_connectivity,
-            'foxnet_hostname': foxnet_hostname,
             'user_password_is_set': _user_password_is_set,
             'steam_launch_flags': _steam_launch_flags,
         }
@@ -362,10 +365,7 @@ if __name__ == '__main__':
         logger.info(f'Steam client config    : {steam_configuration.description}')
         logger.info(f'Steam OS client branch : {osclient_branch}')
         logger.info(f'Steam OS client version: {osclient_version}')
-        logger.info(f"Sideloaded client     : {'available' if has_side_loaded_client else 'not installed'}")
-        logger.info(f'OS client arguments    : {steam_default_args()!r}')
-        logger.info(f"Foxnet backend         : {'yes' if has_foxnet_connectivity else 'no'}")
-        logger.info(f"Foxnet hostname        : {foxnet_hostname}")
+        logger.info(f"Sideloaded client      : {'available' if has_side_loaded_client else 'not installed'}")
+        logger.info(f'OS client arguments    : {steam_default_args(conf)!r}')
         logger.info(f"User password is set   : {'yes' if _user_password_is_set else 'no'}")
         logger.info(f"Steam launch flags     : {_steam_launch_flags}")
-
