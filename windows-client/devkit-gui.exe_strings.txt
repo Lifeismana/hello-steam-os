@@ -32,6 +32,7 @@
 .text$mn$00
 .text$x
 .xdata
+AddDllDirectory
 Cannot create args tuple.
 Cannot create caption string object.
 Cannot create context message string object.
@@ -94,7 +95,6 @@ QueryPerformanceCounter
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlVirtualUnwind
-SetDllDirectoryW
 SetUnhandledExceptionFilter
 TerminateProcess
 USER32.dll
