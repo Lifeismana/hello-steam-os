@@ -16,9 +16,18 @@ log () {
 }
 
 if [ -n "${STEAM_RUNTIME-}" ]; then
-    log 'Undo steam runtime to avoid interference'
+    # The devkit tool is setup to run at host level, possibly started from the CLI
+    # The tool expects a suitable version of python installed
+    if [ -n "${SRT_LAUNCHER_SERVICE_ALONGSIDE_STEAM-}" ]; then
+	log 'Running in SLR environment, relaunching at host level'
+	log "${STEAM_RUNTIME}/amd64/usr/bin/steam-runtime-launch-client" --alongside-steam --host -- "$0" "$@"
+	exec "${STEAM_RUNTIME}/amd64/usr/bin/steam-runtime-launch-client" --alongside-steam --host -- "$0" "$@"
+	# unreachable
+    fi
+    log 'Running in LDLP environment, relaunching with runtime disabled'
     log "${STEAM_RUNTIME}/scripts/switch-runtime.sh" --runtime="" -- "$0" "$@"
     exec "${STEAM_RUNTIME}/scripts/switch-runtime.sh" --runtime="" -- "$0" "$@"
+    # unreachable
 fi
 
 # Find a suitable OS-level python interpreter
