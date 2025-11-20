@@ -12,7 +12,7 @@ logging.basicConfig(format='%(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 DEVKIT_TOOL_FOLDER = os.path.expanduser('~/devkit-game')
-RESTART_SDDM = '/usr/bin/steamos-polkit-helpers/steamos-restart-sddm'
+RESTART_SDDM = '/usr/bin/steamos-session-select gamescope'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -33,8 +33,8 @@ if __name__ == '__main__':
         gamepath = os.path.expanduser( os.path.join( '~/devkit-game', conf.delete_title ) )
         if not os.path.isdir(gamepath):
             print(f'Not found: {gamepath}')
-            sys.exit(1)
-        subprocess.check_call(f'rm -r {gamepath}', shell=True)
+        else:
+            subprocess.check_call(f'rm -r {gamepath}', shell=True)
 
     # synchronize the Steam client's view of the devkit games with the on disk state
     try:
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         logger.warning(f'Steam client sync of devkit games failed: {e}')
 
     if conf.reset_steam_client:
-        # first make sure any side loaded trampoline has been deleted
+        # first make sure any sideloaded trampoline has been deleted
         devkit_steam_trampoline_path = os.path.join(DEVKIT_TOOL_FOLDER, 'devkit-steam')
         if os.path.exists(devkit_steam_trampoline_path):
             os.unlink(devkit_steam_trampoline_path)
@@ -52,4 +52,4 @@ if __name__ == '__main__':
         subprocess.check_call(f'rm -rf ~/.local/share/Steam', shell=True)
 
         # restart SDDM, which will initiate a reinstall of Steam from the OS client
-        subprocess.check_call(RESTART_SDDM)
+        subprocess.check_call(RESTART_SDDM, shell=True)

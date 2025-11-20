@@ -35,8 +35,8 @@ class SteamStatus(enum.Enum):
             SteamStatus.NOT_RUNNING: 'not running',
             SteamStatus.OS: 'OS client',
             SteamStatus.OS_DEV: 'OS client dev mode',
-            SteamStatus.SIDE: 'side loaded client',
-            SteamStatus.VSCODE: 'vscode side loaded client',
+            SteamStatus.SIDE: 'sideloaded client',
+            SteamStatus.VSCODE: 'vscode sideloaded client',
             SteamStatus.ERROR: 'error',
         }
         return DESCRIPTIONS[self]
@@ -55,8 +55,8 @@ class SteamConfig(enum.Enum):
         DESCRIPTIONS = {
             SteamConfig.OS: 'OS client',
             SteamConfig.OS_DEV: 'OS client dev mode',
-            SteamConfig.SIDE: 'side loaded client',
-            SteamConfig.VSCODE: 'vscode side loaded client',
+            SteamConfig.SIDE: 'sideloaded client',
+            SteamConfig.VSCODE: 'vscode sideloaded client',
             SteamConfig.ERROR: 'error',
         }
         return DESCRIPTIONS[self]
@@ -107,7 +107,7 @@ def steam_process_get_args():
     try:
         (_, args) = steam_process_get_path_and_args()
     except:
-        return None
+        return ''
     return args
 
 def steam_status():
@@ -263,17 +263,18 @@ if __name__ == '__main__':
 
     os_info = get_os_info()
     assert os_info is not None
-    steamdeck = os_info.get('VARIANT_ID', None).startswith('steamdeck')
+    # Expecting this to be stable across SteamOS, whitelabel 'Holo' etc.
+    is_steamos = os_info.get('ID', None) == 'steamos'
     os_name = os_info.get('PRETTY_NAME', None)
     os_version = os_info.get('BUILD_ID', None)
 
     _steam_launch_flags = steam_launch_flags()
 
-    if not steamdeck:
+    if not is_steamos:
         # the rest of this script pulls status info that is very specific to Jupiter
         if conf.json:
             ret = {
-                'steamdeck': steamdeck,
+                'is_steamos': is_steamos,
                 'os_name': os_name,
                 'os_version': os_version,
                 'os_info': os_info,
@@ -308,7 +309,7 @@ if __name__ == '__main__':
     if steam_status in (SteamStatus.OS, SteamStatus.OS_DEV) :
         steam_status_description += f', on branch {osclient_branch!r}'
         if osclient_version is not None:
-            utc_date_string = datetime.datetime.utcfromtimestamp(osclient_version).isoformat()
+            utc_date_string = datetime.datetime.fromtimestamp(osclient_version, datetime.UTC).isoformat()
             steam_status_description += f', version {osclient_version} {utc_date_string}'
 
     has_side_loaded_client = os.path.exists(
@@ -327,26 +328,9 @@ if __name__ == '__main__':
 
     _user_password_is_set = user_password_is_set()
 
-    # optimistic - if the test fails assume this has evolved beyond our ability to check and it's fine
-    gamescope_supports_xprop = True
-    try:
-        output = subprocess.check_output('pacman -Q gamescope',
-                                         shell=True,
-                                         universal_newlines=True)
-        logger.debug(output)
-        (_, major, minor, _) = re.split('gamescope (.*?)\.(.*?)\..*', output)
-        major = int(major)
-        minor = int(minor)
-        if major < 3:
-            gamescope_supports_xprop = False
-        elif major == 3 and minor <= 12:
-            gamescope_supports_xprop = False
-    except Exception as e:
-        logger.warning(f'could not check gamescope version for xprop: {e!r}')
-
     if conf.json:
         ret = {
-            'steamdeck': steamdeck,
+            'is_steamos': is_steamos,
             'os_name': os_name,
             'os_version': os_version,
             'os_info': os_info,
@@ -360,12 +344,11 @@ if __name__ == '__main__':
             'steam_osclient_version': osclient_version,
             'has_side_loaded_client': has_side_loaded_client,
             'steam_default_args': steam_default_args(),
-            'steam_current_args': steam_process_get_args(), # None, or a list
+            'steam_current_args': steam_process_get_args(),
             'has_foxnet_connectivity': has_foxnet_connectivity,
             'foxnet_hostname': foxnet_hostname,
             'user_password_is_set': _user_password_is_set,
             'steam_launch_flags': _steam_launch_flags,
-            'gamescope_supports_xprop': gamescope_supports_xprop,
         }
         json.dump(ret, sys.stdout, sort_keys=True, indent=4)
     else:
@@ -378,11 +361,10 @@ if __name__ == '__main__':
         logger.info(f'Steam client config    : {steam_configuration.description}')
         logger.info(f'Steam OS client branch : {osclient_branch}')
         logger.info(f'Steam OS client version: {osclient_version}')
-        logger.info(f"Side loaded client     : {'available' if has_side_loaded_client else 'not installed'}")
+        logger.info(f"Sideloaded client     : {'available' if has_side_loaded_client else 'not installed'}")
         logger.info(f'OS client arguments    : {steam_default_args()!r}')
         logger.info(f"Foxnet backend         : {'yes' if has_foxnet_connectivity else 'no'}")
         logger.info(f"Foxnet hostname        : {foxnet_hostname}")
         logger.info(f"User password is set   : {'yes' if _user_password_is_set else 'no'}")
         logger.info(f"Steam launch flags     : {_steam_launch_flags}")
-        logger.info(f"Screenshot with xprop  : {gamescope_supports_xprop}")
 

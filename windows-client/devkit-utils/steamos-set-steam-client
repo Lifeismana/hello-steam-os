@@ -27,7 +27,7 @@ STATUS_STRINGS = [
 # gamescope-session passes the execution to this script if it exists rather than start steam itself
 DEVKIT_STEAM_TRAMPOLINE = os.path.expanduser('~/devkit-game/devkit-steam')
 
-# this script executes the side loaded Steam client (part of the steamos-devkit-service package)
+# this script executes the sideloaded Steam client (part of the steamos-devkit-service package)
 SIDE_LOADED_STEAM_CLIENT = '/usr/share/steamos-devkit/bin/devkit-standalone.py'
 
 def write_trampoline(text):

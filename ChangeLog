@@ -1,3 +1,12 @@
+2025-04-23 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20250423.0
+	* Fix ability to fully reset the Steam client from the tool, for users who do not have a sideloaded client (e.g. everyone who is not Valve).
+	* Rework how we restart the Steam client to avoid occasional lockup issues.
+	* Improve SteamOS detection for upcoming devices.
+	* Remove the 'hackendeck' mode that supported SteamOS-like installations on PCs before Steam Deck hardware was widely available.
+	* Several refactorings and cleanups of deprecated functionality.
+
 2024-11-14 Timothee Besset <ttimo@valvesoftware.com>
 
 	* Release v0.20241114.0

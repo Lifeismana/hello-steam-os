@@ -1,6 +1,7 @@
 #! /bin/bash
 
-# verbose 
+# verbose
+#export PS4='${LINENO}: '
 #set -x
 
 set -o pipefail
@@ -59,27 +60,23 @@ done
 # No suitable python found, check for a working pyenv
 if [ -z "${PYTHON-}" ]; then
   if [ -n "$(which pyenv 2>/dev/null)" ]; then
-    PYENV_VERSION="$(pyenv versions | grep -o '3\.12.*')"
+    PYENV_VERSION="$(pyenv versions | grep -o '3\.12\.[^ ]*')"
     if [ -n "${PYENV_VERSION-}" ]; then
-      export PYENV_VERSION="$PYENV_VERSION"
       PYTHON="pyenv exec python3.12"
       PYZ=devkit-gui-cp312.pyz
     else
-      PYENV_VERSION="$(pyenv versions | grep -o '3\.11.*')"
+      PYENV_VERSION="$(pyenv versions | grep -o '3\.11\.[^ ]*')"
       if [ -n "${PYENV_VERSION-}" ]; then
-        export PYENV_VERSION="$PYENV_VERSION"
         PYTHON="pyenv exec python3.11"
         PYZ=devkit-gui-cp311.pyz
       else
-        PYENV_VERSION="$(pyenv versions | grep -o '3\.10.*')"
+        PYENV_VERSION="$(pyenv versions | grep -o '3\.10\.[^ ]*')"
         if [ -n "${PYENV_VERSION-}" ]; then
-          export PYENV_VERSION="$PYENV_VERSION"
           PYTHON="pyenv exec python3.10"
           PYZ=devkit-gui-cp310.pyz
         else
-          PYENV_VERSION="$(pyenv versions | grep -o '3\.9.*')"
+          PYENV_VERSION="$(pyenv versions | grep -o '3\.9\.[^ ]*')"
           if [ -n "${PYENV_VERSION-}" ]; then
-            export PYENV_VERSION="$PYENV_VERSION"
             PYTHON="pyenv exec python3.9"
             PYZ=devkit-gui-cp39.pyz
           fi
