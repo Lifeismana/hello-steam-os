@@ -62,13 +62,22 @@ KERNEL32.dll
 LoadLibraryExW
 MessageBoxA
 MessageBoxW
+Out of memory creating buffer!
 Out of memory creating executable!
-Out of memory creating lib_dir!
-Out of memory creating sys_path!
+Out of memory creating platlib!
+Out of memory creating prefix!
+Out of memory creating shared zip filename!
+PyConfig_Clear
+PyConfig_InitIsolatedConfig
+PyConfig_Read
+PyConfig_SetArgv
+PyConfig_SetString
 PyErr_Clear
 PyErr_ExceptionMatches
 PyErr_Fetch
 PyErr_NormalizeException
+PyEval_RestoreThread
+PyEval_SaveThread
 PyExc_SystemExit
 PyImport_ImportModule
 PyLong_AsLong
@@ -78,22 +87,26 @@ PyMem_RawMalloc
 PyObject_CallObject
 PyObject_GetAttrString
 PyObject_Str
+PyPreConfig_InitIsolatedConfig
+PyStatus_Error
+PyStatus_Exception
+PyStatus_IsError
+PyStatus_Ok
 PySys_GetObject
-PySys_SetArgvEx
 PyTuple_New
 PyUnicode_AsWideCharString
 PyUnicode_Format
 PyUnicode_FromString
 PyUnicode_Join
+PyWideStringList_Append
+PyWideStringList_Insert
 Py_DecodeLocale
 Py_Exit
+Py_ExitStatusException
 Py_Finalize
-Py_FrozenFlag
-Py_IgnoreEnvironmentFlag
-Py_Initialize
-Py_NoSiteFlag
-Py_SetPath
-Py_SetProgramName
+Py_FinalizeEx
+Py_InitializeFromConfig
+Py_PreInitialize
 QueryPerformanceCounter
 RtlCaptureContext
 RtlLookupFunctionEntry
@@ -104,7 +117,7 @@ USER32.dll
 Unable to calculate directory of executable!
 Unable to change DLL search path!
 Unable to convert path to string!
-Unable to get executable name!
+Unable to get executable path!
 UnhandledExceptionFilter
 VCRUNTIME140.dll
 _Py_Dealloc
@@ -154,6 +167,7 @@ check_hash_pycs_mode
 code
 code_debug_ranges
 configure_c_stdio
+cpu_count
 cx_Freeze Fatal Error
 cx_Freeze: Application Terminated
 cx_Freeze: Python error in main script
@@ -196,7 +210,7 @@ platlibdir
 prefix
 program_name
 pycache_prefix
-python312.dll
+python313.dll
 quiet
 run_command
 run_filename

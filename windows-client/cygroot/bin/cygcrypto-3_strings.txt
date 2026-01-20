@@ -30,7 +30,7 @@
   Unable to load public key\n
   issuer  = %s
   subject = %s
- !"#$% !"#$%&'()*+,-./0123456789:;<=>?@ABCD*S
+ !"#$% !"#$%&'()*+,-./0123456789:;<=>?@ABCDR
  !"#$%&'()*+,-./0123
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
@@ -48,7 +48,6 @@
  (default)
  (unknown response type)\n
  5Jb
- GMT
  KMAC
  actual name in %s = %s
  and 
@@ -105,7 +104,7 @@ $d`D-laM
 %*s    registrationNumber: 
 %*s  Profession Info Entry %0d:\n
 %*s  admissionAuthority:\n
-%*s  admissionAuthorityId: 
+%*s  namingAuthorityId: 
 %*s  namingAuthorityText: 
 %*s  namingAuthorityUrl: 
 %*s%s OF %s {\n
@@ -157,7 +156,7 @@ $d`D-laM
 %*scrlTime: 
 %*scrlUrl: 
 %*sinherit\n
-%*snamingAuthority: 
+%*snamingAuthority:\n
 %*spriv:\n
 %*ssignTool    : 
 %*ssignToolCert: 
@@ -182,8 +181,8 @@ $d`D-laM
 %12sUnable to load Public Key\n
 %16s
 %20s
-%4d-%02d-%02d %02d:%02d:%02d%.*s%s
-%4d-%02d-%02d %02d:%02d:%02d%s
+%4d-%02d-%02d %02d:%02d:%02d.%.*sZ
+%4d-%02d-%02d %02d:%02d:%02dZ
 %5ld:d=%-2d hl=%ld l=%4ld %s
 %5ld:d=%-2d hl=%ld l=inf  %s
 %8sAttributes:\n
@@ -204,8 +203,8 @@ $d`D-laM
 %lu nodes used out of %u\n
 %n2.Y
 %pJF
-%s %2d %02d:%02d:%02d %d%s
-%s %2d %02d:%02d:%02d%.*s %d%s
+%s %2d %02d:%02d:%02d %d GMT
+%s %2d %02d:%02d:%02d.%.*s %d GMT
 %s %s%lu (%s0x%lx)\n
 %s HTTP/1.0\r\n
 %s PARAMETERS
@@ -329,6 +328,7 @@ $d`D-laM
 0pp@5tqE?|sO541
 1!1'1-191C1E1K1]1a1g1m1s1
 1.2.840.10045.2.1
+1.3.1
 1024
 14 (default)
 1536
@@ -344,7 +344,7 @@ $d`D-laM
 2va7:\v
 3$ae
 3%3+3/353A3G3[3_3g3k3s3y3
-3.0.12
+3.0.18
 3072
 36w-
 3Wk1^
@@ -369,6 +369,12 @@ $d`D-laM
 6#6165676;6M6O6S6Y6a6k6m6
 6144
 64CK\vH
+6666666666666666\\\\\\\\\\\\\\\\
+6666666666666666\\\\\\\\\\\\\\\\crypto/http/http_client.c
+6666666666666666jjjjjjjjjjjjjjjj
+6666666666666666jjjjjjjjjjjjjjjj@
+6666666666666666jjjjjjjjjjjjjjjjcrypto/evp/e_aria.c
+6666666666666666jjjjjjjjjjjjjjjjcrypto/evp/e_rc5.c
 6tpD4
 7,gm;
 7?7E7I7O7]7a7u7
@@ -437,6 +443,8 @@ $d`D-laM
 ?2'6U
 ?456789:;<=
 ?HAI\t81\t9dcG'
+?crypto/bio/bio_sock.c
+?crypto/ec/ecp_nistz256.c
 ?crypto/rand/rand_pool.c
 @!@%@+@1@?@C@E@]@a@g@m@
 @0pp
@@ -672,6 +680,7 @@ Accuracy:
 Adds a directory from which ENGINEs can be loaded
 Affiliation Changed
 Ag*g*
+Algorithm %s cannot be found
 Algorithm ID generation - md NID: %d
 Algorithm ID generation - pad mode: %d
 All CertStatus but the first will be ignored
@@ -783,21 +792,21 @@ BN_bn2hex
 BN_div
 BN_div_recp
 BN_exp
-BN_generate_dsa_nonce
 BN_generate_prime_ex2
 BN_hex2bn
 BN_lshift
 BN_mod_exp2_mont
 BN_mod_exp_mont
-BN_mod_exp_mont_consttime
 BN_mod_exp_mont_word
 BN_mod_exp_recp
 BN_mod_exp_simple
 BN_mod_inverse
 BN_mod_lshift_quick
 BN_mod_sqrt
+BN_mod_sub_quick
 BN_mpi2bn
 BN_new
+BN_nnmod
 BN_rshift
 BN_to_felem
 BN_usub
@@ -1044,6 +1053,7 @@ Calling OPENSSL_DIR_read("%s")
 Cannot find certificate signature algorithm
 Cannot open file
 Cannot use autodetected salt length
+Ccrypto/params_dup.c
 CertRepMessage with rejection status
 Certificate
 Certificate Hold
@@ -1145,6 +1155,7 @@ DHX:X9.42 DH:dhpublicnumber:1.2.840.10046.2.1
 DH_check
 DH_check_ex
 DH_check_params_ex
+DH_check_pub_key
 DH_check_pub_key_ex
 DH_meth_dup
 DH_meth_new
@@ -1370,6 +1381,7 @@ EVP_DigestFinal_ex
 EVP_DigestSignFinal
 EVP_DigestSignUpdate
 EVP_DigestUpdate
+EVP_DigestVerify
 EVP_DigestVerifyFinal
 EVP_DigestVerifyUpdate
 EVP_EncryptFinal_ex
@@ -1507,7 +1519,8 @@ Field=
 Filename=%s
 Function not implemented
 G9iO
-GCC: (GNU) 11.4.0
+GCC: (GNU) 12.5.0
+GCC: (GNU) 13.4.0
 GENERALIZEDTIME
 GENERALSTRING
 GENERAL_NAME
@@ -2157,7 +2170,7 @@ Only Some Reasons
 Only X.931 or PKCS#1 v1.5 padding allowed
 Only X.931, PKCS#1 v1.5 or PSS padding allowed
 OpenSSL 'dlfcn' shared library method
-OpenSSL 3.0.12 24 Oct 2023
+OpenSSL 3.0.18 30 Sep 2025
 OpenSSL Base Provider
 OpenSSL CMAC via EVP_PKEY implementation
 OpenSSL DH Method
@@ -2284,6 +2297,7 @@ PKCS12_set_mac
 PKCS12_setup_mac
 PKCS12_unpack_authsafes
 PKCS12_unpack_p7data
+PKCS12_unpack_p7encdata
 PKCS12_verify_mac
 PKCS5V2
 PKCS5_PBE_keyivgen_ex
@@ -2415,6 +2429,7 @@ Proc-Type:
 Proc-Type: 4,%s\n
 Professional Information or basis for Admission
 Prompt info data type incorrect
+Property %s overflows
 Provider routines
 Proxy Certificate Information
 Proxy-Authorization: Basic %s\r\n
@@ -2610,6 +2625,8 @@ SHAKE128
 SHAKE256
 SIPHASH
 SK?Nv
+SM2 PARAMETERS
+SM2 PRIVATE KEY
 SM2 routines
 SM2-SM3
 SM2-with-SM3
@@ -2935,6 +2952,7 @@ X509_STORE_new
 X509_TRUST_add
 X509_TRUST_set
 X509_VAL
+X509_VERIFY_PARAM_get0
 X509_VERIFY_PARAM_new
 X509_VERIFY_PARAM_set1
 X509_VERIFY_PARAM_set1_ip
@@ -2955,6 +2973,8 @@ X509_sign_ctx
 X509_to_X509_REQ
 X509_verify_cert
 X509at_add1_attr
+X509at_add1_attr_by_NID
+X509at_add1_attr_by_OBJ
 X509v3 AC Targeting
 X509v3 Any Policy
 X509v3 Authority Key Identifier
@@ -3027,6 +3047,7 @@ Ze2Zh@
 [action:%d, state:%d] trying to get a BIGNUM via ctrl call
 [action:%d, state:%d] unknown OSSL_PARAM data type %d
 [action:%d, state:%d] unsupported OSSL_PARAM data type %d
+[providers/implementations/digests/md5_prov.c
 [uCu
 \%02X
 \(a8Bk
@@ -3034,7 +3055,6 @@ Ze2Zh@
 \SO7tsG
 \U%04lX
 \W%08lX
-\crypto/cmac/cmac.c
 \f%\f/\f1\fA\f[\f_\fa\fm\fs\fw\f
 \f,nSTV
 \f<<0A1pq
@@ -3076,6 +3096,7 @@ Ze2Zh@
 \t-f3F2
 \t6trF
 \tHAI8xpH\f
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00000000000000007777777777777777crypto/asn1/asn_moid.c
 \ttqE5
 \twl]azW
 \v#\v)\v-\v?\vG\vQ\vW\v]\ve\vo\v{\v
@@ -3351,6 +3372,7 @@ assertion failed: ctx->cipher->block_size == 1 || ctx->cipher->block_size == 8 |
 assertion failed: ctx->length <= (int)sizeof(ctx->enc_data)
 assertion failed: ctx->multiblock_max_send_fragment != 0
 assertion failed: ctx->tmp_len <= 3
+assertion failed: embed == 0
 assertion failed: i <= n
 assertion failed: in && out && key && ivec
 assertion failed: j <= sizeof(c->iv)
@@ -3396,6 +3418,7 @@ auth-rsa
 auth-srp
 authAttrs
 authEncryptedContentInfo
+authEnveloped-data
 authInfo
 auth_attr
 authority and issuer serial number mismatch
@@ -3514,6 +3537,7 @@ bn(%zu,%zu)
 bn_compute_wNAF
 bn_expand_internal
 bn_mod_add_fixed_top
+bn_mod_exp_mont_fixed_top
 bn_set_words
 bn_to_asn1_string
 bnrand
@@ -3544,7 +3568,7 @@ buffer_ctrl
 build_chain
 buildinfo
 buildingName
-built on: Sat Nov  4 14:50:37 2023 UTC
+built on: Sat Oct  4 12:20:45 2025 UTC
 builtin
 businessCategory
 by application
@@ -3829,7 +3853,7 @@ common ok and cancel characters
 commonName
 common_get_params
 compatible
-compiler: gcc  -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4 -fdebug-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/build=/usr/src/debug/openssl-3.0.12-1 -fdebug-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/src/openssl-3.0.12=/usr/src/debug/openssl-3.0.12-1 -DTERMIOS -DL_ENDIAN -DOPENSSL_PIC -DOPENSSL_BUILDING_OPENSSL -DZLIB -DNDEBUG -DDEVRANDOM="\"/dev/urandom\"" -DSYSTEM_CIPHERS_FILE="/etc/crypto-policies/back-ends/openssl.config"
+compiler: gcc  -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=3 -fstack-protector-strong --param=ssp-buffer-size=4 -ffile-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/build=/usr/src/debug/openssl-3.0.18-1 -ffile-prefix-map=/mnt/share/cygpkgs/openssl/openssl.x86_64/src/openssl-3.0.18=/usr/src/debug/openssl-3.0.18-1 -DTERMIOS -DL_ENDIAN -DOPENSSL_PIC -DOPENSSL_BUILDING_OPENSSL -DZLIB -DNDEBUG -DDEVRANDOM="\\"/dev/urandom\\"" -DSYSTEM_CIPHERS_FILE="/etc/crypto-policies/back-ends/openssl.config"
 compressed
 compressed-data
 compressionAlgorithm
@@ -3922,7 +3946,6 @@ crypto/asn1/ameth_lib.c
 crypto/asn1/asn1_gen.c
 crypto/asn1/asn1_lib.c
 crypto/asn1/asn_mime.c
-crypto/asn1/asn_moid.c
 crypto/asn1/asn_mstbl.c
 crypto/asn1/asn_pack.c
 crypto/asn1/bio_asn1.c
@@ -3961,7 +3984,6 @@ crypto/bio/bio_addr.c
 crypto/bio/bio_lib.c
 crypto/bio/bio_meth.c
 crypto/bio/bio_print.c
-crypto/bio/bio_sock.c
 crypto/bio/bio_sock2.c
 crypto/bio/bss_acpt.c
 crypto/bio/bss_bio.c
@@ -3993,6 +4015,7 @@ crypto/bn/bn_shift.c
 crypto/bn/bn_sqrt.c
 crypto/bn/rsaz_exp_x2.c
 crypto/buffer/buffer.c
+crypto/cmac/cmac.c
 crypto/cmp/cmp_asn.c
 crypto/cmp/cmp_client.c
 crypto/cmp/cmp_ctx.c
@@ -4054,6 +4077,7 @@ crypto/dh/dh_pmeth.c
 crypto/dh/dh_prn.c
 crypto/dsa/dsa_ameth.c
 crypto/dsa/dsa_backend.c
+crypto/dsa/dsa_check.c
 crypto/dsa/dsa_lib.c
 crypto/dsa/dsa_meth.c
 crypto/dsa/dsa_ossl.c
@@ -4085,7 +4109,6 @@ crypto/ec/ecp_nist.c
 crypto/ec/ecp_nistp224.c
 crypto/ec/ecp_nistp256.c
 crypto/ec/ecp_nistp521.c
-crypto/ec/ecp_nistz256.c
 crypto/ec/ecp_oct.c
 crypto/ec/ecp_smpl.c
 crypto/ec/ecx_backend.c
@@ -4129,12 +4152,10 @@ crypto/evp/dh_ctrl.c
 crypto/evp/digest.c
 crypto/evp/dsa_ctrl.c
 crypto/evp/e_aes.c
-crypto/evp/e_aria.c
 crypto/evp/e_camellia.c
 crypto/evp/e_chacha20_poly1305.c
 crypto/evp/e_des3.c
 crypto/evp/e_rc2.c
-crypto/evp/e_rc5.c
 crypto/evp/ec_ctrl.c
 crypto/evp/encode.c
 crypto/evp/evp_cnf.c
@@ -4175,7 +4196,6 @@ crypto/ffc/ffc_params.c
 crypto/ffc/ffc_params_generate.c
 crypto/ffc/ffc_params_validate.c
 crypto/hmac/hmac.c
-crypto/http/http_client.c
 crypto/http/http_lib.c
 crypto/init.c
 crypto/initthread.c
@@ -4198,7 +4218,6 @@ crypto/ocsp/v3_ocsp.c
 crypto/packet.c
 crypto/param_build.c
 crypto/params.c
-crypto/params_dup.c
 crypto/params_from_text.c
 crypto/passphrase.c
 crypto/pem/pem_all.c
@@ -4683,6 +4702,7 @@ dsa_paramgen_md
 dsa_paramgen_q_bits
 dsa_pkey_import_from
 dsa_pki_priv_to_der
+dsa_precheck_params
 dsa_priv_encode
 dsa_pub_decode
 dsa_pub_encode
@@ -4944,6 +4964,7 @@ error setting encrypted data type
 error setting key
 error setting recipientinfo
 error unexpected certconf
+error unsupported static key agreement
 error using siginf set
 error validating protection
 error validating signature
@@ -4990,6 +5011,7 @@ evp_md_init_internal
 evp_pkcs82pkey_legacy
 evp_pkey_asym_cipher_init
 evp_pkey_copy_downgraded
+evp_pkey_ctx_add1_octet_string
 evp_pkey_ctx_ctrl_int
 evp_pkey_ctx_ctrl_str_int
 evp_pkey_ctx_ctrl_to_param
@@ -5161,6 +5183,7 @@ fromdata_init
 ft1k
 fullname
 functionality not supported
+g&3g
 g*4-E
 gB>d
 gC_7
@@ -6629,6 +6652,8 @@ ossl_asn1_type_get_octetstring_int
 ossl_b2i_DSA_after_header
 ossl_b2i_RSA_after_header
 ossl_b2i_bio
+ossl_bn_gen_dsa_nonce_fixed_top
+ossl_bn_priv_rand_range_fixed_top
 ossl_bn_rsa_fips186_4_derive_prime
 ossl_buf2hexstr_sep
 ossl_c2i_ASN1_BIT_STRING
@@ -6646,6 +6671,7 @@ ossl_cipher_generic_get_ctx_params
 ossl_cipher_generic_get_params
 ossl_cipher_generic_initiv
 ossl_cipher_generic_set_ctx_params
+ossl_cipher_generic_stream_final
 ossl_cipher_generic_stream_update
 ossl_cipher_trailingdata
 ossl_cipher_unpadblock
@@ -6866,6 +6892,7 @@ ossl_tdes_get_ctx_params
 ossl_x509_add_cert_new
 ossl_x509_algor_get_md
 ossl_x509_pubkey_hash
+ossl_x509at_add1_attr
 ossl_x509v3_cache_extensions
 other
 otherCert
@@ -6904,6 +6931,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p09Y
 p5Z3
 p8info_to_encp8
 p@0pqE5tsO?|1
@@ -7264,6 +7292,7 @@ provider=default,fips=yes,output=pvk
 provider=default,fips=yes,output=text
 provider_conf_init
 provider_conf_load
+provider_conf_params_internal
 provider_init
 provider_new
 providers
@@ -7302,7 +7331,6 @@ providers/implementations/ciphers/ciphercommon_ccm.c
 providers/implementations/ciphers/ciphercommon_gcm.c
 providers/implementations/digests/blake2_prov.c
 providers/implementations/digests/digestcommon.c
-providers/implementations/digests/md5_prov.c
 providers/implementations/digests/md5_sha1_prov.c
 providers/implementations/digests/null_prov.c
 providers/implementations/digests/ripemd_prov.c
@@ -7395,6 +7423,7 @@ pvk2obj_decode
 pvno
 pzKD)
 q not prime
+q too large
 q,&2ke!
 qCJ.
 qUN1
@@ -7481,6 +7510,7 @@ recipnonce unmatched
 recommended-private-length: %d bits\n
 recommended-private-length: %ld bits\n
 recursive directory include
+recursive section reference
 redirection from https to http
 redirection not enabled
 redirection_ok
@@ -7969,6 +7999,8 @@ sha512-256
 sha512-256WithRSAEncryption
 sha512WithRSAEncryption
 shaWithRSAEncryption
+shake-128
+shake-256
 shake128
 shake256
 shake_set_ctx_params

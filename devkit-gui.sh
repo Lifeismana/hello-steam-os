@@ -28,10 +28,10 @@ if [ -n "${STEAM_RUNTIME-}" ]; then
 fi
 
 # Find a suitable OS-level python interpreter
-for p in python3.12 python3.11 python3.10 python3.9 python3 python; do
+for p in python3.13 python3.12 python3.11 python3 python; do
   if which "$p" &>/dev/null; then
     VERS=$("$p" 2>/dev/null -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')
-    for v in 12 11 10 9; do
+    for v in 13 12 11; do
       if [ "$VERS" == "3.$v" ]; then
         PYTHON=( "$p" )
         PYZ=devkit-gui-cp3${v}.pyz

@@ -1,2 +1,1 @@
-GCC: (GNU) 9.3.0
-GCC: (GNU) 9.3.0 20200312 (Fedora Cygwin 9.3.0-1)
+GCC: (GNU) 12.4.0

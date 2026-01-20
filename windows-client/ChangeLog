@@ -1,3 +1,21 @@
+2026-01-16 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260116.0
+	* Wait for events to accumulate if we have to start the GPUVis service before capturing, lest we get an empty capture.
+
+2025-12-10 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Fix spawning of remote shell and tools so they do not cause the devkit exe to linger on exit.
+	* Enable RenderDoc and GPUVis support on Steam Frame
+	* Rework RenderDoc UX, persist the replay server state and capture layer per-device.
+
+2025-12-04 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Add support for Python 3.13, obsolete Python 3.10 and older.
+	* Allow selecting between Proton stable and Proton Experimental for devkit titles.
+	* Disable GPUVis and Radeon GPU profile tools on Steam Frame.
+	* Default username is now 'steamos' on Steam Frame.
+
 2025-11-19 Timothee Besset <ttimo@valvesoftware.com>
 
 	* Release v0.20251119.0

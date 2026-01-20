@@ -6,11 +6,15 @@ import logging
 import argparse
 import enum
 import subprocess
+import shutil
+import pathlib
 
 logging.basicConfig(format='%(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 DEVKIT_TOOL_FOLDER = os.path.expanduser('~/devkit-game')
+DEVKIT_UTILS_FOLDER = os.path.expanduser('~/devkit-utils')
+STEAM_EXTRA_ARGS_FILE = os.path.expanduser('~/.config/systemd/user/steam.service.d/extra_args.conf')
 
 class SteamStatus(enum.Enum):
     # Supported values from steamos-get-status
@@ -38,12 +42,22 @@ def write_trampoline(text):
     # trying really hard to avoid leaving a zero sized trampoline if the deck is about to hang on the session restart coming next
     subprocess.run(['/usr/bin/sync', DEVKIT_TOOL_FOLDER])
 
+def get_os_info():
+    os_info = {}
+    try:
+        for k, v in [ s.split('=') for s in open('/etc/os-release').read().split('\n') if len(s) > 0 ]:
+            os_info[k] = v.strip('"')
+    except Exception as e:
+        logger.error(e)
+        logger.error('Failed to parse OS release file')
+    return os_info
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--verbose', required=False, action='store_true')
     parser.add_argument('--client', action='store', required=True, choices=[ v[1] for v in STATUS_STRINGS ])
-    parser.add_argument('--command', action='store', required=False, help='full steam startup command - will attempt to extract command line arguments or fallback to using devkit-standalone.py')
     parser.add_argument('--args', action='store', required=False, help='steam client command line arguments')
+    parser.add_argument('--gameid', required=True, action='store')
     parser.add_argument('--gdbserver', action='store_true', required=False)
     conf = parser.parse_args()
 
@@ -58,7 +72,36 @@ if __name__ == '__main__':
     if os.path.exists(DEVKIT_STEAM_TRAMPOLINE):
         os.unlink(DEVKIT_STEAM_TRAMPOLINE)
 
+    os_info = get_os_info()
+    assert os_info is not None
+    is_deckard = os_info.get('VARIANT_ID', None) == 'vr'
+
     if target == SteamStatus.OS:
+        if is_deckard:
+            # conf.args is the extra arguments for the normal Steam 'OS client', update it now
+            if conf.args is None or conf.args == '':
+                logger.info('Clearning extra arguments for normal Steam client')
+                if os.path.exists(STEAM_EXTRA_ARGS_FILE):
+                    os.unlink(STEAM_EXTRA_ARGS_FILE)
+            else:
+                logger.info(f'Setting extra arguments for normal Steam client: {conf.args}')
+                os.makedirs(os.path.dirname(STEAM_EXTRA_ARGS_FILE), exist_ok=True)
+                with open(STEAM_EXTRA_ARGS_FILE, 'wt') as extra_args_file:
+                    extra_args_file.write(f'[Service]\nEnvironment=STEAM_EXTRA_ARGS={conf.args}')
+
+            # When disabling a sideloaded client, also delete the ~/.steam symlinks:
+            # They will be re-created by the OS client when starting,
+            # this prevents SteamVR trying to use the sideloaded binaries that are still there for the steam API.
+            # (this may happen because SteamVR starts before Steam starts and has a chance to set those symlinks correctly)
+            for path in pathlib.Path(os.path.expanduser('~/.steam')).glob('*'):
+                if path.is_symlink():
+                    try:
+                        lnk = path.resolve()
+                        if 'devkit-game' in str(lnk):
+                            path.unlink()
+                            print(f'Deleted: {path} -> {lnk}')
+                    except Exception as e:
+                        print(f'Error processing {path}: {e}')
         logger.info('Devkit Steam client override is disabled - default OS client execution will resume.')
         sys.exit(0)
 
@@ -69,35 +112,46 @@ if __name__ == '__main__':
     if target == SteamStatus.SIDE:
         steam_client = '$HOME/devkit-game/steam/steam.sh'
 
+    if is_deckard:
+        # copy some files from the OS client install as they are not in the p4 steam client/ tree :(
+        # we do this at the end so it doesn't interfere with the clean upload settings
+        directory = os.path.join(
+            os.path.expanduser(DEVKIT_TOOL_FOLDER),
+            conf.gameid
+        )
+
+        # we provide our own copy of RUNSTEAM.sh rather than copying the OS version,
+        # the current setup in the OS does not allow for easy updating for this script atm
+        filename = 'RUNSTEAM.sh'
+        source_file = os.path.join(DEVKIT_UTILS_FOLDER, 'deckard', filename)
+        target_file = os.path.join(directory, filename)
+        shutil.copyfile(source_file, target_file)
+        os.chmod(target_file, 0o755)
+
+        # RUNSTEAM.sh checks for SIDELOADED_STEAMROOT="${HOME}/devkit-game/steam"
+        # this is consistent with sideload on Steam Deck, but we use a different name 'steamdeckard'
+        # will be addressed when reworking the sideload and debug strategy, for now just drop in a symlink
+        steam_symlink = os.path.expanduser('~/devkit-game/steam')
+        if os.path.lexists(steam_symlink):
+            if os.path.islink(steam_symlink):
+                os.unlink(steam_symlink)
+            else:
+                # this happens if an upload in Steam Deck mode was attempted against a Steam Frame for instance
+                # was an easy mistake to make before recent changes
+                logger.warning('warning: ~/devkit-game/steam exists but is not a symlink. Removing anyway.')
+                shutil.rmtree(steam_symlink)
+        os.symlink(
+            os.path.expanduser('~/devkit-game/steamdeckard'),
+            steam_symlink,
+        )
+
     args = '"$@"'
     if conf.args is not None:
         args = conf.args
-        if conf.command is not None:
-            logger.warning('warning: --args option overrides anything passed in --command, ignoring')
-    elif conf.command is not None:
-        tokens = conf.command.split(' ')
-        if tokens[0].lower().find('steam.sh') != -1:
-            # let's assume we can extract command line arguments and run directly via the trampoline
-            args = ' '.join(tokens[1:])
-        else:
-            # extracting command line arguments doesn't seem safe, the command could be something like this:
-            # sh -c "<whatever>; ./steam.sh <blah>"
-            # for now we will chuck this to the legacy SIDE_LOADED_STEAM_CLIENT,
-            # which takes it's command from steam-argv.json
-            # (we're not going to attempt anything with gdbserver either)
-            write_trampoline('''#!/bin/bash
-# Generated by steamos-set-steam-client, do not edit!
-# configuration tag (do not delete): {}
-mkdir -p $HOME/.steam/steam/logs
-exec {} steam
-'''.format(
-    conf.client,
-    SIDE_LOADED_STEAM_CLIENT
-))
-            sys.exit(0) # done!
 
     gdbserver = ''
     if conf.gdbserver:
+        logger.info('Configuring for remote debugging via gdbserver')
         gdbserver = 'export DEBUGGER="gdbserver 0.0.0.0:2345"'
 
     write_trampoline('''#!/bin/bash

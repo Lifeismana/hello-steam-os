@@ -10,11 +10,13 @@ import argparse
 import json
 import shlex
 import datetime
+import pathlib
 
 logging.basicConfig(format='%(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 DEVKIT_TOOL_FOLDER = os.path.expanduser('~/devkit-game')
+STEAM_EXTRA_ARGS_FILE = os.path.expanduser('~/.config/systemd/user/steam.service.d/extra_args.conf')
 
 WIRELESS_DISABLE_POWER_MANAGEMENT = '/usr/bin/steamos-polkit-helpers/steamos-disable-wireless-power-management'
 
@@ -160,10 +162,12 @@ def osclient_branch(is_deckard):
 def osclient_version(conf):
     '''Which version is the Steam 'OS client'?'''
     if conf.is_deckard:
-        try:
-            return open(os.path.expanduser('~/.steam/steam/linuxarm64/builddate.txt'),'rt').read()
-        except:  # noqa: E722
-            return 'Unknown - no builddate.txt'
+        # old Steam client was using linuxarm64/, which is now reserved for the SDK binaries
+        for folder in ('linuxarm64', 'steamrtarm64'):
+            fn = os.path.expanduser(f'~/.steam/steam/{folder}/builddate.txt')
+            if os.path.exists(fn):
+                return open(fn, 'rt').read()
+        return 'Unknown - no builddate.txt'
     beta_path = os.path.expanduser('~/.steam/steam/package/beta')
     if not os.path.exists(beta_path):
         logger.warning(f'not found: {beta_path}')
@@ -236,6 +240,17 @@ def steam_default_args(conf):
         logger.warning('Could not parse {output!r} for args')
     return ret
 
+def steam_extra_args():
+    if os.path.exists(STEAM_EXTRA_ARGS_FILE):
+        try:
+            content = open(STEAM_EXTRA_ARGS_FILE, 'rt').read()
+            match = re.search(r'STEAM_EXTRA_ARGS=(.*)', content)
+            if match:
+                return match.group(1)
+        except Exception as e:
+            logger.warning(f'Failed to parse steam extra args: {e}')
+    return None
+
 def user_password_is_set():
     ret = subprocess.run('passwd', stdin=subprocess.DEVNULL, shell=True, capture_output=True, universal_newlines=True)
     logger.debug(repr(ret))
@@ -251,8 +266,28 @@ def steam_launch_flags():
     if not os.path.isdir(env_folder):
         return ret
     for fn in os.listdir(env_folder):
-        ret[fn] = open(os.path.join(env_folder, fn), 'rt').read().strip('\n')
+        filepath = os.path.join(env_folder, fn)
+        content = open(filepath, 'rt').read()
+        # Check if this is a declaration file with key=value pairs
+        if content.count('\n') > 1 or '=' in content:
+            # Parse key=value format with comments
+            for line in content.splitlines():
+                line = line.strip()
+                # Skip comments and empty lines
+                if not line or line.startswith('#'):
+                    continue
+                # Parse key=value pairs
+                if '=' in line:
+                    key, value = line.split('=', 1)
+                    ret[key.strip()] = value.strip()
+        else:
+            # Legacy format: filename is the key, file content is the value
+            ret[fn] = content.strip('\n')
     return ret
+
+def renderdoc_replay_server_running():
+    ret = subprocess.run(['pgrep', '-x', 'renderdoccmd'], capture_output=True)
+    return ret.returncode == 0
 
 
 if __name__ == '__main__':
@@ -269,29 +304,10 @@ if __name__ == '__main__':
     os_info = get_os_info()
     assert os_info is not None
     conf.is_deckard = os_info.get('VARIANT_ID', None) == 'vr'
-    # Expecting this to be stable across SteamOS, whitelabel 'Holo' etc.
-    is_steamos = os_info.get('ID', None) == 'steamos' or conf.is_deckard
     os_name = os_info.get('PRETTY_NAME', None)
     os_version = os_info.get('BUILD_ID', None)
 
     _steam_launch_flags = steam_launch_flags()
-
-    if not is_steamos:
-        # the rest of this script pulls status info that is very specific to Holo
-        if conf.json:
-            ret = {
-                'is_steamos': is_steamos,
-                'os_name': os_name,
-                'os_version': os_version,
-                'os_info': os_info,
-                'steam_launch_flags': _steam_launch_flags,
-            }
-            json.dump(ret, sys.stdout, sort_keys=True, indent=4)
-        else:
-            logger.info(f'OS                     : {os_name}')
-            logger.info(f'OS version             : {os_version}')
-            logger.info(f"Steam launch flags     : {_steam_launch_flags}")
-        sys.exit(0)
 
     if not conf.is_deckard:
         # this bit of cargo cult is Steam Deck only
@@ -333,9 +349,11 @@ if __name__ == '__main__':
 
     _user_password_is_set = user_password_is_set()
 
+    _renderdoc_replay_server_running = renderdoc_replay_server_running()
+    _renderdoc_layer_enabled = _steam_launch_flags.get('ENABLE_VULKAN_RENDERDOC_CAPTURE', '0') == '1'
+
     if conf.json:
         ret = {
-            'is_steamos': is_steamos,
             'is_deckard': conf.is_deckard,
             'os_name': os_name,
             'os_version': os_version,
@@ -351,21 +369,27 @@ if __name__ == '__main__':
             'has_side_loaded_client': has_side_loaded_client,
             'steam_default_args': steam_default_args(conf),
             'steam_current_args': steam_process_get_args(),
+            'steam_extra_args': steam_extra_args(),
             'user_password_is_set': _user_password_is_set,
             'steam_launch_flags': _steam_launch_flags,
+            'renderdoc_layer_enabled': _renderdoc_layer_enabled,
+            'renderdoc_replay_server_running': _renderdoc_replay_server_running,
         }
         json.dump(ret, sys.stdout, sort_keys=True, indent=4)
     else:
-        logger.info(f'OS                     : {os_name}')
-        logger.info(f'OS version             : {os_version}')
-        logger.info(f'Session mode is        : {session_status}')
-        logger.info(f'Steam client status    : {steam_status_description}')
-        logger.info(f'Steam client args      : {steam_process_get_args()!r}')
-        logger.info(f"Steam CEF debug        : {'enabled' if cef_debugging_enabled else 'disabled'}")
-        logger.info(f'Steam client config    : {steam_configuration.description}')
-        logger.info(f'Steam OS client branch : {osclient_branch}')
-        logger.info(f'Steam OS client version: {osclient_version}')
-        logger.info(f"Sideloaded client      : {'available' if has_side_loaded_client else 'not installed'}")
-        logger.info(f'OS client arguments    : {steam_default_args(conf)!r}')
-        logger.info(f"User password is set   : {'yes' if _user_password_is_set else 'no'}")
-        logger.info(f"Steam launch flags     : {_steam_launch_flags}")
+        logger.info(f'OS                       : {os_name}')
+        logger.info(f'OS version               : {os_version}')
+        logger.info(f'Session mode is          : {session_status}')
+        logger.info(f'Steam client status      : {steam_status_description}')
+        logger.info(f'Steam client args        : {steam_process_get_args()!r}')
+        logger.info(f"Steam extra args         : {steam_extra_args()!r}")
+        logger.info(f"Steam CEF debug          : {'enabled' if cef_debugging_enabled else 'disabled'}")
+        logger.info(f'Steam client config      : {steam_configuration.description}')
+        logger.info(f'Steam OS client branch   : {osclient_branch}')
+        logger.info(f'Steam OS client version  : {osclient_version}')
+        logger.info(f"Sideloaded client        : {'available' if has_side_loaded_client else 'not installed'}")
+        logger.info(f'OS client arguments      : {steam_default_args(conf)!r}')
+        logger.info(f"User password is set     : {'yes' if _user_password_is_set else 'no'}")
+        logger.info(f"Steam launch flags       : {_steam_launch_flags}")
+        logger.info(f"RenderDoc layer enabled  : {'yes' if _renderdoc_layer_enabled else 'no'}")
+        logger.info(f"RenderDoc replay running : {'yes' if _renderdoc_replay_server_running else 'no'}")

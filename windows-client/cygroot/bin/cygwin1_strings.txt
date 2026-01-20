@@ -35,11 +35,16 @@
 %+03ld%.2ld
 %.2d/%.2d/%.2d
 %.2d:%.2d:%.2d
+%.3ls_%.3ls
 %.3s %.3s%3d %.2d:%.2d:%.2d %d\n
 %012X  %012X
+%016X
 %02lx %02x %02x %02x %s\n
 %04hx
 %04x
+%04x-%04x
+%08_x-%02_x%02_x%02_x%02_x%02_x%02_x
+%08_x-%04_x-%04_x-%02_x%02_x-%02_x%02_x%02_x%02_x%02_x%02_x
 %08lx-%08lx %s %08lx %04x:%04x %U   
 %08x-%08x-%08x-%08x
 %10llu %10u %5o %10d %5u %5u %5u %5u %10ld %10ld\n
@@ -73,6 +78,7 @@
 %R = dup2(%d, %d)
 %R = dup3(%d, %d, %y)
 %R = facl(%s) )
+%R = fallocate(%d, %y, %D, %D)
 %R = fchdir(%d)
 %R = fchown(%s,...)
 %R = fcntl(%d, %d, %ly)
@@ -105,6 +111,7 @@
 %R = pipe([%d, %d])
 %R = pipe([%p, %p], %d, %y)
 %R = pipe2([%d, %d], %y)
+%R = posix_close(%d, %d)
 %R = posix_fadvice(%d, %D, %D, %d)
 %R = posix_fallocate(%d, %D, %D)
 %R = remove(%s)
@@ -142,14 +149,16 @@
 %S+0x%x
 %S, return bin_status %d
 %S, return status = %y
+%S: bustype: %02_y, add_hash: %d, id: '%s' '%s' '%s' 
 %U.%02u %U.%02u\n
 %W (using %W) loaded in wrong place: %p != %p
+%W -> '%W'%s
 %W: Loaded to different address: parent(%p) != child(%p)
 %W:*:%u:%u:%s%sU-%W\%W,%s:%s%W:%s
 %W:*:%u:%u:U-%W\%W,%s:/:/sbin/nologin
 %a %b %e %H:%M:%S %Y
 %a %b %e %H:%M:%S %Z %Y
-%d %d %d:%d / %s %s - %s %s %s\n
+%d %d %d:%d / 
 %d (%s) %c %d %d %d %d %d %u %lu %lu %u %u %U %U %U %U %d %d %d %d %U %lu %ld %lu\n
 %d (err %d) = ReadFile (%p, %p, to_read %u, read %u, 0)
 %d (err %d) = WriteFile (%p, %p, write %u, written %u, 0)
@@ -164,8 +173,10 @@
 %d = closedir(%p, %s)
 %d = conv_to_posix_path(%s)
 %d = cygwait (...)
+%d = fdclosedir(%p)
 %d = fhandler_base::open(%S, %y)
 %d = fhandler_base::open_null (%y)
+%d = fhandler_dev_disk::open(%y, 0%o)
 %d = fhandler_disk_file::open(%S, %y)
 %d = fhandler_proc::open(%p, 0%o)
 %d = fhandler_proc::open(%y, 0%o)
@@ -238,7 +249,6 @@
 %p timer signal already queued
 %p timer thread already queued
 %p wait failed, %E
-%s %s %s %s %d %d\n
 %s %s copy failed, %p..%p, done %lu, windows pid %u, %E
 %s %s, %susecount %d
 %s (called func)
@@ -252,8 +262,6 @@
 %s S4U LsaLogonUser failed: %y (%s)
 %s Section %d Type %u Windows Record Length %u\n
 %s and %s are the same file
-%s failed: %u
-%s failed: %u --> %u from '%W': '%W'
 %s handle %p is bad
 %s is a non-directory
 %s is not a valid executable
@@ -271,10 +279,12 @@
 %s, already ready for read
 %s, bg I/O pgid %d, tpgid %d, myctty %s
 %s, pgid %d, sid %d, tsid %d
+%s-part%u
 %s/%s%016X%016X
 %s/.netrc
 %s: Win32 error %d
 %s: error while loading shared libraries: %s: cannot open shared object file: No such file or directory\n
+%s: loc %d, loc_is_link %d
 %s:%d - winsock error %u -> errno %d
 %s:%d setting errno %d
 %s:%d status %y -> windows error %u
@@ -323,6 +333,7 @@
 %y = NtQueryVolumeInformationFile(%S, FileFsSizeInformation)
 %y = NtReadFile(%S)
 %y = NtSetInformationFile (%p, FileLink %W, iosb.Status %y)
+%y = NtSetInformationFile(%S, FileAllocationInformation)
 %y = NtSetTimer (%D)\n
 'Yck:
 (!_buf && !_buflen) || (_buf && _buflen)
@@ -348,9 +359,9 @@
 (windows pid %u)
 )UUU
 *** STATUS_%y\n
-*** continuing pid %u from debugger call (%d)\n
+*** continuing pid %u\r\n
 *** couldn't find pty master
-*** starting debugger for pid %u, tid %u\n
+*** starting '%W' for pid %u, tid %u\r\n
 *** unknown regexp error code ***
 **********************************************
 *current entry strdup %p
@@ -362,6 +373,7 @@
 ,M%d.%d.%d/%d
 ,M3.2.0,M11.1.0
 ,~:!@#$%^&'.(){} 
+-%04y
 --protected
 --wordexp
 -1 = chdir (%s)
@@ -386,6 +398,7 @@
 -1 [%d] = shmget ()
 ...O/S reports state %d
 ...and DuplicateHandle failed with %E.
+../../sd%c%c
 ./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 .bat
 .btm
@@ -407,66 +420,13 @@
 /bin/cygwin-console-helper.exe
 /bin/sh
 /bin:/usr/bin
+/by-drive
+/by-id
+/by-label
+/by-partuuid
+/by-uuid
+/by-voluuid
 /cygdrive
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/stdlib/dtoa.c
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/stdlib/gdtoa-dmisc.c
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/stdlib/gdtoa-gethex.c
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/stdlib/mprec.c
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/stdlib/strtodg.c
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/newlib/libc/xdr/xdr_rec.c
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygserver/client.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygserver/transport_pipes.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/dlfcn.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/environ.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/base.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/clipboard.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/console.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/disk_file.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/fifo.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/floppy.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/mqueue.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/pipe.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/proc.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/process.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/process_fd.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/procsys.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/pty.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/random.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/raw.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/registry.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/serial.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/socket_inet.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/socket_local.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/tape.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fhandler/windows.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/flock.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/fork.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/grp.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/hookapi.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/local_includes/select.h
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/mm/cygheap.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/mm/mmap.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/mount.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/net.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/ntea.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/path.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/pinfo.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/posix_timer.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/quotactl.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/resource.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/sec/acl.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/sec/auth.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/sec/base.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/sec/helper.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/setlsapwd.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/shm.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/signal.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/sigproc.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/spawn.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/syscalls.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/sysconf.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/thread.cc
-/cygdrive/d/a/scallywag/cygwin/cygwin-3.4.9-1.x86_64/src/newlib-cygwin/winsup/cygwin/uinfo.cc
 /dev
 /dev/clipboard
 /dev/com1
@@ -616,6 +576,7 @@
 /dev/cons98
 /dev/cons99
 /dev/console
+/dev/disk
 /dev/dsp
 /dev/dsp: ioctl %s
 /dev/fd
@@ -637,6 +598,7 @@
 /dev/fd9
 /dev/fifo
 /dev/full
+/dev/mixer
 /dev/mqueue
 /dev/mqueue/
 /dev/nst0
@@ -1356,6 +1318,65 @@
 /usr/share/locale/locale.alias
 /usr/share/terminfo/%02x/%s
 /usr/share/zoneinfo/
+/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/dtoa.c
+/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/gdtoa-dmisc.c
+/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/gdtoa-gethex.c
+/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/mprec.c
+/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/strtodg.c
+/usr/src/debug/cygwin-3.6.5-1/newlib/libc/xdr/xdr_rec.c
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygserver/client.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygserver/transport_pipes.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/dlfcn.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/environ.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/base.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/clipboard.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/console.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/dev_disk.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/disk_file.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/floppy.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/mqueue.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/pipe.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/proc.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/process.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/process_fd.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/procsys.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/pty.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/random.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/raw.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/registry.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/serial.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/socket_inet.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/socket_local.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/tape.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/windows.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/flock.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fork.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/grp.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/hookapi.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/local_includes/select.h
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/mm/cygheap.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/mm/mmap.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/mount.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/net.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/ntea.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/path.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/pinfo.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/posix_timer.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/quotactl.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/resource.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/acl.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/auth.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/base.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/helper.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/setlsapwd.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/shm.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/signal.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sigproc.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/spawn.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/syscalls.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sysconf.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/thread.cc
+/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/uinfo.cc
 /var/log/wtmp
 /var/run/utmp
 0 = fhandler_serial:tcsendbreak (%d)
@@ -1363,6 +1384,8 @@
 0 = initgroups(%s, %u)
 0 = munmap(): %p
 0$v}s
+0000
+0000-0000-00
 0000000000000000                
 0000000000000000                e%ld
 0123456789
@@ -1372,12 +1395,11 @@
 03wR
 09\vXJ
 0Him\f
-100ms
 1h!"3
-2023-09-06 11:19
+2025-10-09 17:21
 20866
 21866
-3.4.9-1
+3.6.5-1
 3.n6 
 4K macro buffer exceeded
 5.5G9
@@ -1390,6 +1412,7 @@
 96_5
 9Fgb<\r
 9\t5\ty
+::ENAMETOOLONG::
 :fifo
 :pipe
 :ptym0
@@ -1560,11 +1583,7 @@
 @8iYP}
 @XMU
 @`M|kpN
-@cjknarrow
-@cyrillic
 @euro
-@iqtelif
-@latin
 A0PQ
 AAAAAA
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
@@ -1577,6 +1596,7 @@ AF_LOCAL: socket bound to port %u
 ALRM
 ANSI_X3.4-1968
 ASCII
+ASCII\nBIG5\nCP1125\nCP1250\nCP1251\nCP1252\nCP1253\nCP1254\nCP1255\nCP1256\nCP1257\nCP1258\nCP437\nCP720\nCP737\nCP775\nCP850\nCP852\nCP855\nCP857\nCP858\nCP862\nCP866\nCP874\nCP932\nEUC-CN\nEUC-JP\nEUC-KR\nGB18030\nGB2312\nGBK\nGEORGIAN-PS\nISO-8859-1\nISO-8859-10\nISO-8859-11\nISO-8859-13\nISO-8859-14\nISO-8859-15\nISO-8859-16\nISO-8859-2\nISO-8859-3\nISO-8859-4\nISO-8859-5\nISO-8859-6\nISO-8859-7\nISO-8859-8\nISO-8859-9\nKOI8-R\nKOI8-T\nKOI8-U\nPT154\nSJIS\nTIS-620\nUTF-8\n
 ASYNCIO
 AS\tN;
 AS]N;
@@ -1586,6 +1606,7 @@ AUTHZ_CLIENT_CONTEXT_HANDLE__* authz_ctx_cache::context(PSID)
 Aborted
 Accessing a corrupted shared library
 Account disabled
+Acquiring pcon_ho_mutex failed.
 Add CREATE_BREAKAWAY_FROM_JOB
 Adding <%S> lock failed
 Address already in use
@@ -1609,7 +1630,7 @@ AuthzInitializeContextFromSid, %E
 AuthzInitializeContextFromToken, %E
 AuthzInitializeResourceManager, %E
 BBBBBB
-BEGIN_CYGWIN_VERSION_INFO\n%%% Cygwin dll major: 3004\n%%% Cygwin dll minor: 9\n%%% Cygwin api major: 0\n%%% Cygwin api minor: 345\n%%% Cygwin shared data: 5\n%%% Cygwin dll identifier: cygwin1\n%%% Cygwin mount registry: 3\n%%% Cygwin cygwin registry name: Cygwin\n%%% Cygwin installations name: Installations\n%%% Cygwin cygdrive default prefix: \n%%% Cygwin build date: \n%%% Cygwin shared id: cygwin1S5\nEND_CYGWIN_VERSION_INFO\n
+BEGIN_CYGWIN_VERSION_INFO\n%%% Cygwin dll major: 3006\n%%% Cygwin dll minor: 5\n%%% Cygwin api major: 0\n%%% Cygwin api minor: 357\n%%% Cygwin shared data: 5\n%%% Cygwin dll identifier: cygwin1\n%%% Cygwin mount registry: 3\n%%% Cygwin cygwin registry name: Cygwin\n%%% Cygwin installations name: Installations\n%%% Cygwin cygdrive default prefix: \n%%% Cygwin build date: \n%%% Cygwin shared id: cygwin1S5\nEND_CYGWIN_VERSION_INFO\n
 BEz\fB
 BIG5
 BLKALIGNOFF
@@ -1634,6 +1655,7 @@ Block device required
 Broken pipe
 Bus error
 C.UTF-8
+C/C.UTF-8/C/C/C/C
 CAk[S
 CHLD
 COMMONPROGRAMFILES=
@@ -1642,7 +1664,9 @@ CONOUT$
 CONT
 CP101
 CP102
+CP103
 CP1251
+CP1255
 CP20866
 CP21866
 CP874
@@ -1692,6 +1716,7 @@ Cannot restore original egid %u
 Cannot restore original euid %u
 Cannot send after transport endpoint shutdown
 Cda`
+Changed priority from 0x%x to 0x%x
 Changing record below from question to answer\n
 Channel number out of range
 Character devices:\n%3d mem\n%3d cons\n%3d /dev/tty\n%3d /dev/console\n%3d /dev/ptmx\n%3d st\n%3d misc\n%3d sound\n%3d ttyS\n%3d tty\n\nBlock devices:\n%3d fd\n%3d sd\n%3d sr\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n%3d sd\n
@@ -1713,7 +1738,6 @@ CloseHandle failed, %E
 Closing last master of pty%d
 Communication error on send
 ConEmuHk64.dll
-ConEmuPID
 Connection refused
 Connection reset by peer
 Connection timed out
@@ -1729,7 +1753,6 @@ Couldn't create/open shared socket mutex %S, %y
 Couldn't realloc() clipboard buffer for write
 Couldn't relock drive after bus reset.
 Couldn't reserve/commit %ld bytes of space for cygwin's heap, %E
-Couldn't set directory to %S temporarily.\nCannot continue.
 CreateDesktop failed, %E
 CreateEvent failed. %E
 CreateEvent for %s failed, %E
@@ -1738,8 +1761,7 @@ CreateFile failed, r %p, %E
 CreateFile: name %s
 CreateFileMapping %W, %E.  Terminating.
 CreateMapping failed with %E
-CreateMutex hdl_cnt_mtx failed: %E
-CreateMutex read_mtx failed: %E
+CreateMutex pipe_mtx failed: %E
 CreatePipe for __SIGCOMMUNE failed, %E
 CreateProcess failed, %E
 CreateProcessA
@@ -1774,11 +1796,13 @@ DWORD aiowaiter(void*)
 DWORD aioworker(void*)
 DWORD child_info::proc_retry(HANDLE)
 DWORD commune_process(void*)
+DWORD cons_master_thread(void*)
 DWORD create_lock_in_parent(PVOID)
 DWORD fhandler_fifo::fifo_reader_thread_func()
 DWORD pinfo::status_exit(DWORD)
 DWORD proc_waiter(void*)
 DWORD thread_console(void*)
+DWORD thread_dsp(void*)
 DWORD thread_fifo(void*)
 DWORD thread_pipe(void*)
 DWORD thread_pty_slave(void*)
@@ -1793,9 +1817,12 @@ Destination address required
 Device not a stream
 Device or resource busy
 DeviceIoControl (%S, IOCTL_DISK_GET_PARTITION_INFO{_EX}) %E
+DeviceIoControl (%S, IOCTL_STORAGE_QUERY_PROPERTY, {StorageDeviceProperty}): %E
+DeviceIoControl (%S, IOCTL_STORAGE_QUERY_PROPERTY, {StorageDeviceUniqueIdProperty}): %E
 DeviceIoControl (%W, FSCTL_LOCK_VOLUME) failed, %E
 DeviceIoControl (FSCTL_ALLOW_EXTENDED_DASD_IO) failed, %E
 DeviceIoControl (FSCTL_LOCK_VOLUME) failed, %E
+DeviceIoControl(%S, IOCTL_DISK_GET_DRIVE_LAYOUT_EX): %E
 DeviceIoControl(%S, IOCTL_DISK_GET_DRIVE_LAYOUT{_EX}): %E
 DeviceIoControl(IOCTL_DISK_GET_DRIVE_LAYOUT_EX): %E
 Directory %S not empty, found file <%S>, query status = %y
@@ -1846,7 +1873,10 @@ FAILURE ! fp_ and message_ both 0!!
 FILE* open_system_file(const char*)
 FILE* popen(const char*, const char*)
 FILE* tmpfile()
-Failed to start debugger, %E
+Failed to create thread_sync_event %08x
+Failed to open thread_sync_event %08x
+Failed to set priority 0x%x, revert from 0x%x to 0x%x
+Failed to start, %E
 Faking chown worked on standalone Samba
 February
 Fetching account info from cygserver with wrong arg.type %d
@@ -1856,7 +1886,6 @@ File locking deadlock error
 File name too long
 File size limit exceeded
 File too large
-Filename exists with different case
 Filename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n
 FindFirstVolumeW, %E
 Floating point exception
@@ -1865,6 +1894,7 @@ Format tape with %s partition(s)
 Found token %p
 Friday
 Function not implemented
+GB18030
 GB2312
 GEORGIAN
 GEORGIAN-PS
@@ -1872,12 +1902,16 @@ GETFL: %y
 GH@7
 GMT%+d:%02d
 GenuineIntel
+GetAddrInfoW(%W) returned %d
 GetEnvironmentStrings returned %p
 GetEnvironmentStrings returned NULL, %E
+GetLogicalDriveStringsW, %E
 GetNetworkParams: OK\n
 GetNetworkParams: error %u (Windows)\n
 GetProcAddress
 GetTapeStatus: %u, get_mp: %d
+GetVolumeNameForVolumeMountPointW(%W): %E
+GetVolumePathNamesForVolumeNameW(%W): %E
 Global
 Global charset set to %s
 HASH: Out of overflow pages.  Increase page size\n
@@ -1892,7 +1926,9 @@ HKEY__* open_key(const char*, REGSAM, DWORD, bool)
 HOME
 HOME is already in the environment %s
 HOME=
+HOMEDRIVE
 HOMEDRIVE=
+HOMEPATH
 HOMEPATH=
 Hangup
 HiUL
@@ -1903,6 +1939,7 @@ I,OwA
 I/O possible
 ISO-8859-
 ISO-8859-1
+ISO-8859-10
 ISO-8859-13
 ISO-8859-14
 ISO-8859-15
@@ -1979,13 +2016,12 @@ K=5k
 KILL
 KOI8
 KOI8-R
+KOI8-T
 KOI8-U
 KerbS4ULogon: ClientUpn: <%S>
 Kerberos
 Killed
 LANG
-LCID __get_lcid_from_locale(const char*)
-LCID=%04y
 LC_ALL
 LC_COLLATE
 LC_CTYPE
@@ -2053,8 +2089,10 @@ NASkQ;
 NASmQ;
 NLSPATH
 NOTUSED
-NTSTATUS _unlink_nt(path_conv&, bool)
 NTSTATUS check_dir_not_empty(HANDLE, path_conv&)
+NTSTATUS fhandler_pipe::set_pipe_non_blocking(bool)
+NTSTATUS nt_create(LPSECURITY_ATTRIBUTES, void*&, void*&, DWORD, int64_t*)
+NTSTATUS unlink_nt(path_conv&, bool)
 NULL
 NULL owner value
 Name not unique on network
@@ -2095,7 +2133,6 @@ No structure for wType %u\n
 No such device
 No such device or address
 No such file or directory
-No such host or network path
 No such process
 Non-recoverable failure in name resolution
 Not a directory
@@ -2111,6 +2148,7 @@ NtCreateFile (%S) failed, status = %y
 NtCreateFile(%W): %y
 NtCreateMutant(%S), %y
 NtCreateMutant(inode): %y
+NtCreateNamedPipeFile failed: %y
 NtFlushBuffersFile (%S), status %y
 NtFsControlFile STATUS_PENDING, then %y
 NtFsControlFile got STATUS_PIPE_CLOSING...
@@ -2123,7 +2161,7 @@ NtOpenDirectoryObject: %y
 NtOpenFile (%S) failed, status = %y
 NtOpenFile (%S) for reopening in renamed case failed, status = %y
 NtOpenFile (%S), status %y
-NtOpenFile failed, r %p, %E
+NtOpenFile failed, r %p: %y
 NtOpenFile(%S) failed, status %y
 NtOpenFile(%S), status %y
 NtOpenFile: %y
@@ -2164,8 +2202,10 @@ NtQuerySystemInformation, %y
 NtQuerySystemInformation: status %y, %E
 NtQuerySystemInformation: status %y, %u
 NtQueryVirtualMemory: status %y
+NtQueryVolumeInformationFile(%S), status %y
 NtQueryVolumeInformationFile: %y
 NtSetEvent, %y
+NtSetInformationFile failed with posix semantics. Disable it and retry.
 NtSetInformationFile(FilePipeInformation): %y
 NtSetInformationToken (TokenDefaultDacl), %y
 NtSetInformationToken (TokenOwner), %y
@@ -2219,6 +2259,7 @@ PIPE_TYPE_MESSAGE
 POLICY_LOOKUP_NAMES right not given?
 POLL
 POSIX
+POSIX delete %S fails with %y, try default method
 POSIX message queue
 POSIX semaphore
 POSIX shared memory object
@@ -2231,6 +2272,7 @@ PT154
 Package not installed
 Parameter string not correctly encoded
 Password expired
+PdhAddEnglishCounterW(alt time), status %y
 PdhAddEnglishCounterW(queue length), status %y
 PdhAddEnglishCounterW(time), status %y
 PdhOpenQueryW, status %y
@@ -2366,6 +2408,7 @@ RtlQueryRegistryValues: status 0x%08X\n
 RtlSetCurrentDirectory_U(%S) failed, %y
 RtlSetDaclSecurityDescriptor %y
 S%T%U%V%W%X%Y%Z%[%\%]%^%_%`%a%
+S%s:%d setting errno %d
 S16LE_S16BE
 S16LE_U16BE
 S16LE_U16LE
@@ -2486,6 +2529,7 @@ STATUS_USER_APC
 STATUS_WAIT_0
 STILL_ACTIVE?  How'd we get here?
 STOP
+STORAGE_DEVICE_UNIQUE_IDENTIFIER.Size: %u
 STREAM
 SYSTEM
 SYSTEMDRIVE=
@@ -2521,6 +2565,7 @@ Setting delete-on-close on %S failed, status = %y
 Setting process group leader to %d since %W(%d) is not a cygwin process
 Sharing violation when opening %S
 Signal %d at rip=%012X\r\n
+Signal stack corrupted (%D)?
 Socket operation on non-socket
 Socket type not supported
 Software caused connection abort
@@ -2541,6 +2586,7 @@ Sunday
 Switch back from restricted token
 Switch to restricted token
 System error
+T@/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/fifo.cc
 TEMP=
 TERM
 TERM=
@@ -2583,6 +2629,9 @@ Try-to-bin %S
 Trying %s...\n
 Trying to delete %S, isdir = %d
 Tuesday
+U-BUILTIN\
+U-NT AUTHORITY\
+U-NT SERVICE\
 U8_S8
 UDP socket sockfd %d\n
 ULONG cyg_ldap::connect_non_ssl(PCWSTR)
@@ -2592,6 +2641,7 @@ ULONG cyg_ldap::search_s(PWCHAR, ULONG, PWCHAR, WCHAR**)
 ULONG get_obj_handle_count(HANDLE)
 USERDOMAIN=
 USERNAME=
+USERPROFILE
 USERPROFILE=
 USR1
 USR2
@@ -2599,7 +2649,7 @@ UTF-8
 UTF8
 UUUUU
 UVPw
-Unable to determine the native mapping for %ls (error %u)
+Unable to determine the native mapping for %ls (error %E)
 Unexpected errno for flushing recvfrom: %s
 Unexpected section order for "%s" %d\n
 Unknown
@@ -2806,11 +2856,6 @@ WM_VSCROLLCLIPBOARD
 WM_WINDOWPOSCHANGED
 WM_WINDOWPOSCHANGING
 WM_WININICHANGE
-WNetGetLastError failed: %u
-WNetGetProviderNameW
-WNetGetResourceInformationW
-WNetOpenEnum
-WNetOpenEnumW
 WSADuplicateSocket succeeded (%x)
 WSAEventSelect, %E
 WSAIoctl: %u
@@ -2822,7 +2867,6 @@ WaitForMultipleObjects failed, %E
 WaitForSingleObject(%p) for thread exit returned %u
 WaitSingleObject returned %d
 Waiting for pack.wakeup %p
-Warning, can't handle more than %d locks per file.
 Warning: '%s' does not exists or is not a directory.\n\n%ss require the existance of this directory.\nCreate the directory '%s' and set the permissions to 01777.\nFor instance on the command line: mkdir -m 01777 %s\n
 Warning: Fixup mapping beyond EOF failed
 Warning: Mapping beyond EOF failed, %E
@@ -2831,7 +2875,6 @@ WeRT@
 Wednesday
 WinSock SO_ERROR = %d
 Window changed
-WnetEnumResource
 Write to echo pipe failed, %E
 WriteConsoleOutputW failed, %E
 WriteFile failed, %E
@@ -2883,6 +2926,7 @@ Zpg'
 [>67;%d%02d;0c
 [teb (tid %ld)]
 [win heap %ld
+\%03o
 \040
 \??\COM10
 \??\COM100
@@ -3187,6 +3231,7 @@ Zpg'
 ]NAS]N;
 ]NASkQ;
 ]NASmQ;
+_%016_Y%016_X
 _SECURITY_ATTRIBUTES* __sec_user(PVOID, PSID, PSID, DWORD, BOOL)
 __acl_t* acl_copy_int(const void*)
 __acl_t* acl_dup(acl_t)
@@ -3222,6 +3267,7 @@ added pid %d to proc table, slot %d
 addr %p, len %lu, prot %y, flags %y, fd %d, off %Y
 address sizes\t: %u bits physical, %u bits virtual\n
 address space needed by '%W' (%p) is already occupied
+adlam
 af_ZA
 af_local_accept called, no_getpeereid=%d
 af_local_connect called, no_getpeereid=%d
@@ -3280,6 +3326,7 @@ assertion "%s" failed: file "%s", line %d%s%s
 assertion "%s" failed: file "%s", line %d%s%s\n
 ast_ES
 asterisk
+ata-
 attaching %s sid %d, pid %d, pgid %d, tty->pgid %d, tty->sid %d
 attempt to access outside of chroot '%s - %s'
 attempt to use destroyed mutex
@@ -3290,7 +3337,6 @@ authz_ctx::operator AUTHZ_RESOURCE_MANAGER_HANDLE()
 auto
 awake
 ayc_PE
-az-AZ
 az_AZ
 az_IR
 b%c%d%e%f%g%h%i%j%k%l%
@@ -3301,6 +3347,7 @@ bash
 be_BY
 be_BY@latin
 bem_ZM
+ber_%.27ls
 ber_DZ
 ber_MA
 bg ioctl pgid %d, tpgid %d, %s
@@ -3320,7 +3367,7 @@ bo_CN
 bo_IN
 bogomips\t: %d.00\n
 bool NT_readline::init(POBJECT_ATTRIBUTES, CHAR*, ULONG)
-bool _cygtls::inside_kernel(CONTEXT*)
+bool _cygtls::inside_kernel(CONTEXT*, bool)
 bool _pinfo::alert_parent(char)
 bool _pinfo::set_ctty(fhandler_termios*, int)
 bool authz_ctx::get_user_attribute(mode_t*, PSECURITY_DESCRIPTOR, PSID)
@@ -3381,18 +3428,23 @@ bool insert_file(char*, char*&)
 bool linebuf::fromargv(av&, const char*, bool)
 bool load_init()
 bool mkdirs(PWCHAR, int)
-bool mmap_record::map_pages(caddr_t, SIZE_T)
+bool mmap_record::map_pages(SIZE_T, int, off_t)
+bool mmap_record::map_pages(caddr_t, SIZE_T, int)
 bool mmap_record::unmap_pages(caddr_t, SIZE_T)
 bool mount_info::from_fstab(bool, WCHAR*, PWCHAR)
 bool parse_protocol_line(FILE*, protoent*)
 bool parse_services_line(FILE*, servent*)
-bool pathfinder::find(const pathfinder::criterion_interface&, const vstrlist::member**, const vstrlist::member**)
+bool partition_to_drive(const UNICODE_STRING*, DWORD, WCHAR*, char*)
+bool partition_to_label_or_uuid(bool, const UNICODE_STRING*, DWORD, char*, char*)
+bool partition_to_volpath(const UNICODE_STRING*, DWORD, WCHAR (&)[260])
+bool pathfinder::find(const criterion_interface&, const vstrlist::member**, const vstrlist::member**)
 bool pinfo::wait()
 bool proc_can_be_signalled(_pinfo*)
 bool pthread::create_cancel_event()
 bool pthread_mutex::can_be_unlocked()
 bool pthread_mutex::no_owner()
 bool sec_acl(PACL, bool, bool, PSID, PSID, DWORD)
+bool set_and_check_winprio(HANDLE, DWORD, bool)
 bool stopped_or_terminated(waitq*, _pinfo*)
 bool timer_tracker::cancel()
 bool tty::exists()
@@ -3403,11 +3455,11 @@ braces not balanced
 brackets ([ ]) not balanced
 break here
 brx_IN
-bs-BA
 bs_BA
 buf %s, suffix found '%s'
 buf=%p frags=%d fragsize=%d bytes=%d
 builtin
+bustype%02_y-
 byn_ER
 bytes read %u
 cYg%08x
@@ -3450,11 +3502,12 @@ char* __acltotext(aclent_t*, int, const char*, char, int)
 char* acl_to_any_text(acl_t, const char*, char, int)
 char* acl_to_text(acl_t, ssize_t*)
 char* cwdstuff::get(char*, int, int, unsigned int)
+char* cygwin_if_indextoname(unsigned int, char*)
 char* get_entire_line(FILE*)
 char* getcwd(char*, size_t)
 char* getlogin()
 char* getwinenveq(const char*, size_t, int)
-char* mmap_list::try_map(void*, size_t, int, off_t)
+char* mmap_list::try_map(void*, size_t, int, int, off_t)
 char* pwdgrp::fetch_account_from_windows(fetch_user_arg_t&, cyg_ldap*)
 char* realpath(const char*, char*)
 char* spenv::retrieve(bool, const char*)
@@ -3472,7 +3525,6 @@ child is running.  pid %d, ppid %d, stack here %p
 child_info* get_cygwin_startup_info()
 child_info::child_info(unsigned int, child_info_types, bool)
 child_procs count %d
-chr-US
 chr_US
 cifs
 circumflex
@@ -3485,7 +3537,7 @@ cleaning up for mutex %W
 clear waiting threads
 clflush size\t: %d\ncache_alignment\t: %d\n
 client buffer too small for reply body: have %lu bytes and need %lu
-client_request::client_request(client_request::request_code_t, void*, size_t)
+client_request::client_request(request_code_t, void*, size_t)
 client_request::header_t::header_t(client_request::request_code_t, size_t)
 client_request_attach_tty::client_request_attach_tty(DWORD, HANDLE, HANDLE)
 clock_nanosleep (%ld.%09ld)
@@ -3500,6 +3552,7 @@ closing '%s' handle %p
 closing archetype
 closing cygheap->ctty %p
 closing fd %d since it is an archetype
+closing fd %u
 closing from_master_nat(%p)/from_master(%p)/to_master_nat(%p)/to_master(%p) since we own them(%u)
 closing last open %s handle
 closing master
@@ -3509,6 +3562,7 @@ cmalloc
 cmdline
 cmn_TW
 cntrl
+codesets
 colon
 comma
 command line too long (>32K), return E2BIG
@@ -3523,9 +3577,10 @@ connect
 connect from unauthorized client
 connect to address %s: 
 connect(TCP): %s\n
+cons_master_thread not started because thread_sync_event could not be duplicated %08x
 considering pid %d, pgid %d, w->pid %d
 consm
-console device allocation failure - too many consoles in use, max consoles is 32
+console device allocation failure - too many consoles in use, max consoles is %d
 conssel
 const char* cygheap_user::ontherange(homebodies, passwd*)
 const char* find_exec(const char*, path_conv&, const char*, unsigned int, const char**)
@@ -3603,7 +3658,7 @@ cygheap
 cygheap->ctty %p, archetype %p
 cygheap->ctty now %p, archetype %p
 cygheap_fdget::cygheap_fdget(int, bool, bool)
-cygheap_protect
+cygpipe.%s.mutex.%u-%p
 cygserver un-available
 cygserver_running == CYGSERVER_OK || cygserver_running == CYGSERVER_UNAVAIL
 cygserver_running == CYGSERVER_UNKNOWN || cygserver_running == CYGSERVER_OK || cygserver_running == CYGSERVER_UNAVAIL
@@ -3620,6 +3675,7 @@ cygwin DLL and APP are out of sync -- API version mismatch %u > %u
 cygwin1.dll
 cygwin1S5
 cygwin_getnameinfo
+cyrillic
 d%04x
 d\rxp
 da_DK
@@ -3635,7 +3691,6 @@ de_IT
 de_LU
 de_LU@euro
 debug
-debugger_command '%W'
 default
 default:
 deleting element %d for %s(%d/%d)
@@ -3644,6 +3699,7 @@ derived path '%W', posix '%s'
 desc
 determining /dev/tty assignment for ctty %p
 dev_=%p
+devanagari
 devices
 died waiting for dll loading
 digit
@@ -3661,9 +3717,10 @@ dollar-sign
 domain
 domain|search "%s"\n
 done
-dos_drive_mappings::dos_drive_mappings()
+dos_drive_mappings::dos_drive_mappings(bool)
 drive size: %D
 dsb_DE
+dspsel
 dup handles directly since I'm the owner
 dup handles via master control pipe %s
 dup handles within myself.
@@ -3775,8 +3832,10 @@ es_VE
 et_EE
 eu_ES
 eu_ES@euro
+euro
 exclamation-mark
 exec
+executing prepared command '%W'
 execve
 exename
 exfat
@@ -3813,7 +3872,6 @@ fd %d, handle %p
 fd %d: defaulting to text
 fd %d: not open
 fd %d: opened as binary
-ff-SN
 ff_SN
 fh %p, dev %08x
 fhandler size
@@ -3829,6 +3887,7 @@ fhandler_serial::open (%s, %y, 0%o)
 fhandler_socket* get(int)
 fi_FI
 fi_FI@euro
+fibre-
 fifo_client_connect_state fifo_client_handler::query_and_set_state()
 fifo_reader
 fifosel
@@ -3879,14 +3938,13 @@ fsi_lock
 fstat (%s)
 full-stop
 fur_IT
-fv-az89-603
 fy_DE
 fy_NL
 gK?A
 ga_IE
 ga_IE@euro
 garbled signal pipe data nb %u, sig %d
-gcc version 11.4.0 (GCC) 
+gcc version 13.4.0 (GCC) 
 gd_GB
 gecos:
 get_dp
@@ -3926,7 +3984,6 @@ gv_GB
 hOy'=
 hParent %p, load_dlls %d
 h_name %s
-ha-NG
 ha_NG
 hak_TW
 handle %p already opened
@@ -3934,7 +3991,6 @@ handle to netdb file %s: %p
 hardlinks created
 has a path longer than allowed for a\nWin32 working directory
 has restricted permissions which render it\ninaccessible as Win32 working directory
-hdl_cnt_mtx
 he_IL
 heap allocated at wrong address %p (mapped) != %p (expected)
 heap base %p, heap top %p, heap size %ly (%lu)
@@ -3987,11 +4043,13 @@ inherited master
 inheriting '%s' from parent
 init_events
 inity
+input
 input pipe
 insert mode %sabled
 int __acl_extended_fh(fhandler_base*)
 int __acl_extended_file(path_conv&)
 int __aclsort(int, aclent_t*)
+int __get_rfc5646_from_locale(const char*, wchar_t*)
 int __sched_getaffinity_sys(pid_t, size_t, cpu_set_t*)
 int __set_errno(const char*, int, int)
 int __xpg_sigpause(int)
@@ -4057,7 +4115,9 @@ int clock_nanosleep(clockid_t, int, const timespec*, timespec*)
 int clock_setres(clockid_t, timespec*)
 int clock_settime(clockid_t, const timespec*)
 int close(int)
+int close_range(unsigned int, unsigned int, int)
 int closedir(DIR*)
+int closedir_worker(DIR*, int*)
 int cwdstuff::set(path_conv*, const char*)
 int cyg_ldap::enumerate_ad_accounts(PCWSTR, bool)
 int cyg_ldap::open(PCWSTR)
@@ -4086,16 +4146,19 @@ int dup(int)
 int dup2(int, int)
 int dup3(int, int, int)
 int euidaccess(const char*, int)
+int exec_prepared_command(PWCHAR)
 int faccessat(int, const char*, int, int)
 int facl(int, int, int, aclent_t*)
+int fallocate(int, int, off_t, off_t)
 int fchdir(int)
 int fchmod(int, mode_t)
 int fchmodat(int, const char*, mode_t, int)
 int fchown(int, uid_t, gid_t)
 int fchownat(int, const char*, uid_t, gid_t, int)
 int fcntl(int, int, ...)
+int fdclosedir(DIR*)
 int fexecve(int, char* const*, char* const*)
-int fhandler_base::close_with_arch()
+int fhandler_base::close_with_arch(int)
 int fhandler_base::fhaccess(int, bool)
 int fhandler_base::fstat_by_handle(stat*)
 int fhandler_base::fstat_by_name(stat*)
@@ -4106,8 +4169,10 @@ int fhandler_base::open_null(int)
 int fhandler_base::open_with_arch(int, mode_t)
 int fhandler_base::utimens_fs(const timespec*)
 int fhandler_dev_clipboard::set_clipboard(const void*, size_t)
-int fhandler_dev_dsp::_ioctl(unsigned int, void*)
+int fhandler_dev_dsp::_ioctl(unsigned int, void*, fhandler_dev_dsp*)
 int fhandler_dev_floppy::get_drive_info(hd_geometry*)
+int fhandler_disk_file::falloc_allocate(int, off_t, off_t)
+int fhandler_disk_file::falloc_punch_hole(off_t, off_t)
 int fhandler_disk_file::fs_ioc_setflags(uint64_t)
 int fhandler_disk_file::prw_open(bool, void*)
 int fhandler_fifo::add_client_handler(bool)
@@ -4127,7 +4192,6 @@ int fhandler_socket_inet::set_keepalive(int, int, int)
 int fhandler_socket_local::af_local_accept()
 int fhandler_socket_local::af_local_set_no_getpeereid()
 int fhandler_socket_wsock::set_socket_handle(SOCKET, int, int, int)
-int fhandler_termios::ioctl(int, void*)
 int fhandler_timerfd::gettime(itimerspec*)
 int fhandler_timerfd::settime(int, const itimerspec*, itimerspec*)
 int fhandler_timerfd::timerfd(clockid_t, int)
@@ -4146,7 +4210,8 @@ int ftruncate(int, off_t)
 int futimens(int, const timespec*)
 int futimesat(int, const char*, const timeval*)
 int gen_full_path_at(char*, int, const char*, int)
-int get_ifconf(ifconf*, int)
+int get_by_id_table(by_id_entry*&, fhandler_dev_disk::dev_disk_location)
+int get_ifconf(ifconf*, unsigned int)
 int get_inet_addr_inet(const sockaddr*, int, sockaddr_storage*, int*)
 int get_inet_addr_local(const sockaddr*, int, sockaddr_storage*, int*, int*, int*)
 int get_object_sd(HANDLE, security_descriptor&)
@@ -4174,7 +4239,7 @@ int kill0(pid_t, siginfo_t&)
 int kill_pgrp(pid_t, siginfo_t&)
 int link(const char*, const char*)
 int linkat(int, const char*, int, const char*, int)
-int lio_listio(int, aiocb* const*, int, sigevent*)
+int lio_listio(int, aiocb* const __restrict__*, int, sigevent*)
 int lockf(int, int, off_t)
 int logout(const char*)
 int lsetxattr(const char*, const char*, const void*, size_t, int)
@@ -4213,9 +4278,9 @@ int mtinfo_drive::open(HANDLE)
 int munlock(const void*, size_t)
 int munmap(void*, size_t)
 int nanosleep(const timespec*, timespec*)
+int nice(int)
 int normalize_posix_path(const char*, char*, char*&)
 int normalize_win32_path(const char*, char*, char*&)
-int nt_create(LPSECURITY_ATTRIBUTES, void*&, void*&, DWORD, int64_t*)
 int open(const char*, int, ...)
 int openat(int, const char*, int, ...)
 int openpty(int*, int*, char*, const termios*, const winsize*)
@@ -4234,9 +4299,10 @@ int peek_timerfd(select_record*, bool)
 int peek_windows(select_record*, bool)
 int pipe(int*)
 int pipe2(int*, int)
-int pipe_data_available(int, fhandler_base*, HANDLE, bool)
+int posix_close(int, int)
 int posix_fadvise(int, off_t, off_t, int)
 int posix_fallocate(int, off_t, off_t)
+int posix_getdents_lseek(cygheap_fdget&, off_t, int)
 int posix_madvise(void*, size_t, int)
 int ppoll(pollfd*, nfds_t, const timespec*, const sigset_t*)
 int proc_subproc(DWORD, uintptr_t)
@@ -4262,9 +4328,11 @@ int scandirat(int, const char*, dirent***, int (*)(const dirent*), int (*)(const
 int sched_get_priority_max(int)
 int sched_get_priority_min(int)
 int sched_getparam(pid_t, sched_param*)
+int sched_getscheduler(pid_t)
 int sched_rr_get_interval(pid_t, timespec*)
 int sched_setaffinity(pid_t, size_t, const cpu_set_t*)
 int sched_setparam(pid_t, const sched_param*)
+int sched_setparam_pinfo(pinfo&, const sched_param*)
 int sched_setscheduler(pid_t, int, const sched_param*)
 int select(int, fd_set*, fd_set*, fd_set*, LONGLONG)
 int semaphore::_trywait()
@@ -4275,7 +4343,6 @@ int semop(int, sembuf*, size_t)
 int set_bits(select_record*, fd_set*, fd_set*, fd_set*)
 int set_privilege(HANDLE, DWORD, bool)
 int set_same_file_return(bool)
-int setcontext(const ucontext_t*)
 int setdtablesize(int)
 int setegid(gid_t)
 int setenv(const char*, const char*, int)
@@ -4322,6 +4389,7 @@ int start_thread_socket(select_record*, select_stuff*)
 int stat(const char*, stat*)
 int stat_worker(path_conv&, stat*)
 int statvfs(const char*, statvfs*)
+int storprop_to_id_name(HANDLE, const UNICODE_STRING*, char*, char (&)[256])
 int strcoll_l(const char*, const char*, __locale_t*)
 int symlink(const char*, const char*)
 int symlink_info::check(char*, const suffix_info*, fs_info&, path_conv_handle&)
@@ -4349,7 +4417,6 @@ int timerfd_create(clockid_t, int)
 int timerfd_gettime(int, itimerspec*)
 int timerfd_settime(int, int, const itimerspec*, itimerspec*)
 int truncate(const char*, off_t)
-int try_to_debug()
 int tty_list::allocate(void*&, void*&)
 int tty_list::connect(int)
 int tty_min::is_orphaned_process_group(int)
@@ -4399,7 +4466,6 @@ it_CH
 it_IT
 it_IT@euro
 itimer
-iu-CA
 iu_CA
 jR\f5a@
 jW6 
@@ -4421,15 +4487,14 @@ km_KH
 kn_IN
 ko_KR
 kok_IN
-ks-IN
 ks_IN
 ks_IN@devanagari
-ku-IQ
 ku_TR
 kw_GB
 ky_KG
 l,kg<i
 lMR:
+latin
 lb_LU
 ldap_bind(%W) 0x%02x
 ldap_init
@@ -4468,6 +4533,8 @@ loadavg
 loaded dll bss
 loaded dll data
 local
+locales
+lock - i_all_lf < MAX_LOCKF_CNT
 lock_process
 lock_ttys::lock_ttys(DWORD)
 lockf_guard
@@ -4509,9 +4576,10 @@ mai_NP
 main
 mallinfo mallinfo()
 malloc failed, %E
-map_pages (addr=%p, len=%lu)
-map_pages (fd=%d, len=%lu)
+map_pages (addr=%p, len=%lu, new_prot=%y)
+map_pages (fd=%d, len=%lu, new_prot=%y)
 maps
+mark duplicates %u-%u of '%s'
 mask:
 max system bytes = %10lu\n
 me %p, testing fd %d (%s)
@@ -4525,8 +4593,6 @@ misc
 mjw_IN
 mk_MK
 ml_IN
-mn-CN
-mn-MN
 mn_MN
 mni_IN
 mnw_MM
@@ -4569,6 +4635,7 @@ nameserver "%s"\n
 naming context <%W>
 nan_TW
 nan_TW@latin
+narrow
 native
 native %s
 nb_NO
@@ -4578,6 +4645,10 @@ nds_NL
 ne_NP
 needed, since last fork loaded %W
 netapp
+netdrive_nfs
+netdrive_smb
+netdrive_wnet
+netdrive_wsd
 new alias alloc %p
 new egid: %u current: %u
 new fd out of bounds: %d
@@ -4602,7 +4673,6 @@ no matching terminated children found
 no problems
 no space for "%s"\n
 no space for server "%s"\n
-no-NO
 no-add-slash
 no_NO
 no_envblock %d
@@ -4629,6 +4699,7 @@ nt_read status %y
 ntdll.dll
 ntfs
 number-sign
+nvme-
 nwfs
 o0D0
 o0D0|
@@ -4643,7 +4714,6 @@ off_t format_process_fd(void*, char*&)
 off_t format_process_maps(void*, char*&)
 off_t format_process_stat(void*, char*&)
 off_t lseek(int, off_t, int)
-off_t mmap_record::map_pages(SIZE_T)
 old %s, ctty device number %y, tc.ntty device number %y flags & O_NOCTTY %y
 old %sent structure "%s" %p\n
 oldfh->dup failed
@@ -4677,6 +4747,7 @@ osquery
 other:
 out of memory
 out of memory reading system process information
+output
 output pipe
 output pipe for non-cygwin apps
 ov.hEvent
@@ -4689,7 +4760,6 @@ p >= path
 pCda`D/vpEDC`E
 pHdr=%p bytes=%d
 pSampleData=%p nBytes=%d
-pa-PK
 pa_IN
 pa_PK
 page %u %u\nswap %u %u\nintr %u\nctxt %u\nbtime %u\n
@@ -4713,7 +4783,6 @@ performed fork fixups and dynamic dll loading
 period
 pgid
 pglock
-phi->NumberOfHandles <= n_handle
 physical id\t: %d\n
 pid %d wants some information
 pid %d, exit value - old %y, windows %y, cygwin %y
@@ -4746,14 +4815,17 @@ pipe:[
 pipe:[%D]
 pipe:[%U]
 pipe_byte
+pipe_mtx
 pipesel
 pl_PL
 plus-sign
 posix %s
 posix=0
 posix=1
+posix_close(%d, %d)
 posixrules
 potential attempt to reinitialise a semaphore
+power management:
 ppid
 ppid->pgid %d, ppid->sid %d
 prefork: couldn't create pipe process tracker, %E
@@ -4825,13 +4897,11 @@ punct
 pure virtual method called
 pw_gecos %p (%s)
 q/Ro
-quc-GT
 query "%s" type %d\n
-query_hdl
-query_hdl_close_req_evt
 querydomain "%s"  "%s" type %d\n
 querydomain: name too long\n
 question-mark
+queue_left > 0
 queued aio %p
 quotation-mark
 quz_PE
@@ -4839,6 +4909,7 @@ r-event.%08x.%016X
 r11=%016X r12=%016X r13=%016X\r\n
 r14=%016X r15=%016X\r\n
 r8 =%016X r9 =%016X r10=%016X\r\n
+raid-
 raj_IN
 random: not enough state (%lu bytes); ignored.\n
 raw keyboard mode %sabled
@@ -4873,7 +4944,6 @@ read: %s, ready for read
 read: %s, ready for read: avail %d
 read: %s, saw EOF
 read_ea (%S, %s, %p, %lu)
-read_mtx
 read_ready
 read_ready: %d, write_ready: %d, except_ready: %d
 readahead
@@ -4933,6 +5003,7 @@ reverse-solidus
 rewind in position 0
 rewinding
 rexec: socket
+rif_MA
 right-brace
 right-curly-bracket
 right-parenthesis
@@ -4945,18 +5016,21 @@ ru_RU
 ru_UA
 runnable
 runneradmin
+runnervmd3hz3
 running
 rw_RW
 s4uauth failed, bail out
 sa_IN
 sah_RU
+sas-
 sat_IN
+sata-
 saw EOF
 sc_IT
-sd-IN
-sd-PK
+scsi-
 sd_IN
 sd_IN@devanagari
+se != NULL
 se_NO
 search
 search "%s" type %d\n
@@ -4994,6 +5068,7 @@ servent* cygwin_getservbyname(const char*, const char*)
 servent* cygwin_getservbyport(int, const char*)
 servent* cygwin_getservent()
 services
+set FD_CLOEXEC on fd %u
 set close_on_exec for %s to %d
 set logout time for %s
 set_blocksize
@@ -5034,6 +5109,7 @@ siblings\t: 1\n
 sid %d, pgid %d, %s
 sid_ET
 sig %d\n
+sig_send
 signal %d %sdelivered
 signal %d blocked
 signal %d default is currently ignore
@@ -5057,6 +5133,7 @@ signalling parent: %s
 sigset_t set_process_mask_delta()
 sigset_t sig_send(_pinfo*, siginfo_t&, _cygtls*)
 sigwait
+single
 size %ld, fds %p
 size of shared memory region changed from %lu to %u
 size_t confstr(int, char*, size_t)
@@ -5098,9 +5175,7 @@ spinlock %p, self %p, owner %p
 splitlock != NULL
 sq_AL
 sq_MK
-sr-BA
-sr-ME
-sr-RS
+sr_%.27ls
 sr_ME
 sr_ME@latin
 sr_RS
@@ -5127,7 +5202,7 @@ ssize_t cygwin_sendmsg(int, const msghdr*, int)
 ssize_t cygwin_sendto(int, const void*, size_t, int, const sockaddr*, socklen_t)
 ssize_t env_PATH_to_posix(const void*, void*, size_t)
 ssize_t fgetxattr(int, const char*, void*, size_t)
-ssize_t fhandler_dev_dsp::_write(const void*, size_t)
+ssize_t fhandler_dev_dsp::_write(const void*, size_t, fhandler_dev_dsp*)
 ssize_t fhandler_mqueue::mq_timedrecv(char*, size_t, unsigned int*, const timespec*)
 ssize_t fhandler_socket_wsock::send_internal(_WSAMSG*, int)
 ssize_t flistxattr(int, char*, size_t)
@@ -5137,6 +5212,8 @@ ssize_t getxattr_worker(path_conv&, const char*, void*, size_t)
 ssize_t lgetxattr(const char*, const char*, void*, size_t)
 ssize_t mq_timedreceive(mqd_t, char*, size_t, unsigned int*, const timespec*)
 ssize_t msgrcv(int, void*, size_t, long int, int)
+ssize_t pipe_data_available(int, fhandler_base*, HANDLE, int)
+ssize_t posix_getdents(int, void*, size_t, int)
 ssize_t pread(int, void*, size_t, off_t)
 ssize_t pwrite(int, const void*, size_t, off_t)
 ssize_t read(int, void*, size_t)
@@ -5156,8 +5233,8 @@ stat
 static BOOL fhandler_pty_common::process_opost_output(HANDLE, const void*, ssize_t&, bool, tty*, bool)
 static DWORD cygthread::stub(void*)
 static DWORD fhandler_pipe::create(LPSECURITY_ATTRIBUTES, PHANDLE, PHANDLE, DWORD, const char*, DWORD, int64_t*)
-static DWORD fhandler_pty_master::pty_master_fwd_thread(const fhandler_pty_master::master_fwd_thread_param_t*)
-static DWORD fhandler_pty_master::pty_master_thread(const fhandler_pty_master::master_thread_param_t*)
+static DWORD fhandler_pty_master::pty_master_fwd_thread(const master_fwd_thread_param_t*)
+static DWORD fhandler_pty_master::pty_master_thread(const master_thread_param_t*)
 static DWORD pthread::thread_init_wrapper(void*)
 static WCHAR* dll_list::form_ntname(PWCHAR, size_t, PCWCHAR)
 static WCHAR* dll_list::form_shortname(PWCHAR, size_t, PCWCHAR)
@@ -5180,6 +5257,7 @@ static int semaphore::trywait(semaphore**)
 static int semaphore::wait(semaphore**)
 static semaphore** semaphore::open(long long unsigned int, LUID, int, int, mode_t, unsigned int, bool&)
 static void fhandler_console::free_console()
+static void fhandler_console::pcon_hand_over_proc()
 static void fhandler_console::set_disable_master_thread(bool, fhandler_console*)
 static void user_info::create(bool)
 static void* dll_list::ntopenfile(PCWCHAR, NTSTATUS*, ULONG, ACCESS_MASK, HANDLE)
@@ -5217,6 +5295,7 @@ szSystemStatus %s
 szl_PL
 ta_IN
 ta_LK
+table_size: %d
 target filename too long
 tcK-
 tcdrain
@@ -5227,7 +5306,6 @@ terminating captive process
 testname: %s
 text
 text write
-tg-TJ
 tg_TJ
 th_TH
 the_NP
@@ -5278,14 +5356,13 @@ try_connect_guard
 trying %s
 trying to send signal %d but signal %d already armed
 ts_ZA
+tsclient
 tt_RU
 tt_RU@iqtelif
 tty_list::mutex
 ttynum (%d) out of range
 two_addr_t wsock_init(func_info*)
 type %d disable %W
-tzm-DZ
-tzm-MA
 ug_CN
 uid: %u myself->uid: %u myself->gid: %u
 uint32_t cyg_ldap::fetch_posix_offset_for_domain(PCWSTR)
@@ -5320,6 +5397,7 @@ unknown value %d on proc pipe
 unknown windows error %u, setting errno to %d
 unlinking a directory
 unlinking a nonexistent file
+unlinking a virtual file
 unm_US
 unsigned int alarm(unsigned int)
 update_needed_evt
@@ -5328,6 +5406,7 @@ uptime
 ur_IN
 ur_PK
 us now %D
+usb-
 useconds_t ualarm(useconds_t, useconds_t)
 user
 user != NULL
@@ -5353,7 +5432,6 @@ utmp* pututline(const utmp*)
 utmpx* getutxid(const utmpx*)
 utmpx* getutxline(const utmpx*)
 utmpx* pututxline(const utmpx*)
-uz-UZ
 uz_UZ
 uz_UZ@cyrillic
 v<y5
@@ -5367,13 +5445,16 @@ vfat
 vi_VN
 virtual DIR* fhandler_base::opendir(int)
 virtual DIR* fhandler_dev::opendir(int)
+virtual DIR* fhandler_dev_disk::opendir(int)
 virtual DIR* fhandler_disk_file::opendir(int)
+virtual DIR* fhandler_netdrive::opendir(int)
 virtual DIR* fhandler_virtual::opendir(int)
 virtual __acl_t* fhandler_base::acl_get(acl_type_t)
 virtual __acl_t* fhandler_disk_file::acl_get(acl_type_t)
 virtual __acl_t* fhandler_socket_local::acl_get(acl_type_t)
 virtual bg_check_types fhandler_termios::bg_check(int, bool)
 virtual bool fhandler_base::fixup_mmap_after_fork(HANDLE, int, int, off_t, SIZE_T, void*)
+virtual bool fhandler_dev_disk::fill_filebuf()
 virtual bool fhandler_dev_fd::fill_filebuf()
 virtual bool fhandler_dev_zero::fixup_mmap_after_fork(HANDLE, int, int, off_t, SIZE_T, void*)
 virtual bool fhandler_disk_file::fixup_mmap_after_fork(HANDLE, int, int, off_t, SIZE_T, void*)
@@ -5387,7 +5468,7 @@ virtual bool pthread::create(void* (*)(void*), pthread_attr*, void*)
 virtual int clk_process_t::now(clockid_t, timespec*)
 virtual int clk_thread_t::now(clockid_t, timespec*)
 virtual int fhandler_base::acl_set(acl_t, acl_type_t)
-virtual int fhandler_base::close()
+virtual int fhandler_base::close(int)
 virtual int fhandler_base::closedir(DIR*)
 virtual int fhandler_base::dup(fhandler_base*, int)
 virtual int fhandler_base::facl(int, int, aclent_t*)
@@ -5396,7 +5477,7 @@ virtual int fhandler_base::fcntl(int, intptr_t)
 virtual int fhandler_base::fpathconf(int)
 virtual int fhandler_base::fsetxattr(const char*, const void*, size_t, int)
 virtual int fhandler_base::fsync()
-virtual int fhandler_base::init(HANDLE, DWORD, mode_t)
+virtual int fhandler_base::init(HANDLE, DWORD, mode_t, int64_t)
 virtual int fhandler_base::ioctl(unsigned int, void*)
 virtual int fhandler_base::link(const char*)
 virtual int fhandler_base::lock(int, flock*)
@@ -5416,7 +5497,7 @@ virtual int fhandler_base::tcsendbreak(int)
 virtual int fhandler_base::tcsetattr(int, const termios*)
 virtual int fhandler_base::tcsetpgrp(pid_t)
 virtual int fhandler_base::utimens(const timespec*)
-virtual int fhandler_console::close()
+virtual int fhandler_console::close(int)
 virtual int fhandler_console::ioctl(unsigned int, void*)
 virtual int fhandler_console::open(int, mode_t)
 virtual int fhandler_cygdrive::open(int, mode_t)
@@ -5424,11 +5505,16 @@ virtual int fhandler_cygdrive::readdir(DIR*, dirent*)
 virtual int fhandler_dev::open(int, mode_t)
 virtual int fhandler_dev::readdir(DIR*, dirent*)
 virtual int fhandler_dev::rmdir()
-virtual int fhandler_dev_dsp::close()
+virtual int fhandler_dev_disk::fstat(stat*)
+virtual int fhandler_dev_disk::open(int, mode_t)
+virtual int fhandler_dev_disk::readdir(DIR*, dirent*)
+virtual int fhandler_dev_dsp::close(int)
 virtual int fhandler_dev_dsp::open(int, mode_t)
 virtual int fhandler_dev_fd::fstat(stat*)
 virtual int fhandler_dev_floppy::ioctl(unsigned int, void*)
 virtual int fhandler_dev_floppy::open(int, mode_t)
+virtual int fhandler_dev_mixer::ioctl(unsigned int, void*)
+virtual int fhandler_dev_mixer::open(int, mode_t)
 virtual int fhandler_dev_raw::fstat(stat*)
 virtual int fhandler_dev_raw::open(int, mode_t)
 virtual int fhandler_dev_tape::dup(fhandler_base*, int)
@@ -5440,7 +5526,6 @@ virtual int fhandler_disk_file::facl(int, int, aclent_t*)
 virtual int fhandler_disk_file::fchown(uid_t, gid_t)
 virtual int fhandler_disk_file::fsetxattr(const char*, const void*, size_t, int)
 virtual int fhandler_disk_file::fstatvfs(statvfs*)
-virtual int fhandler_disk_file::ftruncate(off_t, bool)
 virtual int fhandler_disk_file::ioctl(unsigned int, void*)
 virtual int fhandler_disk_file::link(const char*)
 virtual int fhandler_disk_file::mand_lock(int, flock*)
@@ -5448,9 +5533,9 @@ virtual int fhandler_disk_file::readdir(DIR*, dirent*)
 virtual int fhandler_disk_file::rmdir()
 virtual int fhandler_fifo::open(int, mode_t)
 virtual int fhandler_mqueue::fadvise(off_t, off_t, int)
+virtual int fhandler_mqueue::fallocate(int, off_t, off_t)
 virtual int fhandler_mqueue::fcntl(int, intptr_t)
 virtual int fhandler_mqueue::fsetxattr(const char*, const void*, size_t, int)
-virtual int fhandler_mqueue::ftruncate(off_t, bool)
 virtual int fhandler_mqueue::link(const char*)
 virtual int fhandler_mqueue::lock(int, flock*)
 virtual int fhandler_mqueue::mand_lock(int, flock*)
@@ -5479,17 +5564,18 @@ virtual int fhandler_procsys::readdir(DIR*, dirent*)
 virtual int fhandler_procsysvipc::fstat(stat*)
 virtual int fhandler_procsysvipc::open(int, mode_t)
 virtual int fhandler_procsysvipc::readdir(DIR*, dirent*)
-virtual int fhandler_pty_common::close()
+virtual int fhandler_pty_common::close(int)
 virtual int fhandler_pty_master::accept_input()
-virtual int fhandler_pty_master::close()
+virtual int fhandler_pty_master::close(int)
 virtual int fhandler_pty_master::dup(fhandler_base*, int)
 virtual int fhandler_pty_master::ioctl(unsigned int, void*)
+virtual int fhandler_pty_master::open(int, mode_t)
 virtual int fhandler_pty_master::ptsname_r(char*, size_t)
 virtual int fhandler_pty_master::tcflush(int)
-virtual int fhandler_pty_slave::close()
+virtual int fhandler_pty_slave::close(int)
 virtual int fhandler_pty_slave::dup(fhandler_base*, int)
 virtual int fhandler_pty_slave::facl(int, int, aclent_t*)
-virtual int fhandler_pty_slave::init(HANDLE, DWORD, mode_t)
+virtual int fhandler_pty_slave::init(HANDLE, DWORD, mode_t, int64_t)
 virtual int fhandler_pty_slave::ioctl(unsigned int, void*)
 virtual int fhandler_pty_slave::open(int, mode_t)
 virtual int fhandler_pty_slave::tcflush(int)
@@ -5525,14 +5611,15 @@ virtual int fhandler_socket_local::open(int, mode_t)
 virtual int fhandler_socket_local::setsockopt(int, int, const void*, socklen_t)
 virtual int fhandler_socket_local::socket(int, int, int, int)
 virtual int fhandler_socket_local::socketpair(int, int, int, int, fhandler_socket*)
-virtual int fhandler_socket_wsock::close()
+virtual int fhandler_socket_wsock::close(int)
 virtual int fhandler_socket_wsock::dup(fhandler_base*, int)
 virtual int fhandler_socket_wsock::fcntl(int, intptr_t)
 virtual int fhandler_socket_wsock::fixup_before_fork_exec(DWORD)
 virtual int fhandler_socket_wsock::ioctl(unsigned int, void*)
+virtual int fhandler_termios::ioctl(unsigned int, void*)
 virtual int fhandler_termios::tcgetpgrp()
 virtual int fhandler_termios::tcsetpgrp(pid_t)
-virtual int fhandler_timerfd::close()
+virtual int fhandler_timerfd::close(int)
 virtual int fhandler_timerfd::dup(fhandler_base*, int)
 virtual int fhandler_timerfd::ioctl(unsigned int, void*)
 virtual int fhandler_virtual::fchmod(mode_t)
@@ -5541,6 +5628,7 @@ virtual int fhandler_windows::ioctl(unsigned int, void*)
 virtual int transport_layer_pipes::connect()
 virtual long int fhandler_base::telldir(DIR*)
 virtual off_t fhandler_base::lseek(off_t, int)
+virtual off_t fhandler_dev_clipboard::lseek(off_t, int)
 virtual off_t fhandler_dev_floppy::lseek(off_t, int)
 virtual off_t fhandler_fifo::lseek(off_t, int)
 virtual off_t fhandler_mqueue::lseek(off_t, int)
@@ -5562,6 +5650,7 @@ virtual ssize_t fhandler_base::writev(const iovec*, int, ssize_t)
 virtual ssize_t fhandler_console::write(const void*, size_t)
 virtual ssize_t fhandler_dev_clipboard::write(const void*, size_t)
 virtual ssize_t fhandler_dev_floppy::raw_write(const void*, size_t)
+virtual ssize_t fhandler_dev_mixer::write(const void*, size_t)
 virtual ssize_t fhandler_dev_random::write(const void*, size_t)
 virtual ssize_t fhandler_dev_tape::raw_write(const void*, size_t)
 virtual ssize_t fhandler_dev_zero::write(const void*, size_t)
@@ -5584,6 +5673,8 @@ virtual ssize_t fhandler_timerfd::write(const void*, size_t)
 virtual ssize_t fhandler_virtual::write(const void*, size_t)
 virtual ssize_t transport_layer_pipes::read(void*, size_t)
 virtual ssize_t transport_layer_pipes::write(void*, size_t)
+virtual virtual_ftype_t fhandler_dev_disk::exists()
+virtual virtual_ftype_t fhandler_netdrive::exists()
 virtual virtual_ftype_t fhandler_proc::exists()
 virtual virtual_ftype_t fhandler_process::exists()
 virtual virtual_ftype_t fhandler_procnet::exists()
@@ -5601,6 +5692,7 @@ virtual void fhandler_base::set_no_inheritance(void*&, bool)
 virtual void fhandler_console::acquire_input_mutex_if_necessary(DWORD)
 virtual void fhandler_console::read(void*, size_t&)
 virtual void fhandler_dev_floppy::raw_read(void*, size_t&)
+virtual void fhandler_dev_mixer::read(void*, size_t&)
 virtual void fhandler_dev_random::read(void*, size_t&)
 virtual void fhandler_dev_tape::raw_read(void*, size_t&)
 virtual void fhandler_fifo::raw_read(void*, size_t&)
@@ -5627,6 +5719,7 @@ virtual void* fhandler_base::mmap(char**, size_t, int, int, off_t)
 virtual void* fhandler_dev_zero::mmap(char**, size_t, int, int, off_t)
 virtual void* fhandler_disk_file::mmap(char**, size_t, int, int, off_t)
 virtual void* pg_ent::enumerate_ad()
+virtual-
 virtual_ftype_t fhandler_procsys::exists(stat*)
 vmin_ %u, vtime_ %u
 void (* signal(int, _sig_func_ptr))(int)
@@ -5676,7 +5769,9 @@ void environ_init(char**, int)
 void extract_nt_dom_user(const passwd*, PWCHAR, PWCHAR)
 void fhandler_base::set_flags(int, int)
 void fhandler_console::char_command(char)
+void fhandler_console::set_console_title(char*)
 void fhandler_console::setup_io_mutex()
+void fhandler_dev_disk::init_dev_disk()
 void fhandler_dev_dsp::Audio::queue::dellock()
 void fhandler_dev_dsp::Audio::queue::reset()
 void fhandler_dev_dsp::Audio::setconvert(int)
@@ -5688,11 +5783,11 @@ void fhandler_dev_dsp::Audio_out::stop(bool)
 void fhandler_dev_dsp::Audio_out::waitforallsent()
 void fhandler_dev_dsp::_fixup_after_exec()
 void fhandler_dev_dsp::_fixup_after_fork(HANDLE)
-void fhandler_dev_dsp::_read(void*, size_t&)
+void fhandler_dev_dsp::_read(void*, size_t&, fhandler_dev_dsp*)
 void fhandler_mqueue::mq_open_finish(bool, bool)
-void fhandler_pipe::set_pipe_non_blocking(bool)
 void free(void*)
 void get_azure_grp_sid()
+void get_iis_apppool_grp_sid()
 void get_logon_sid()
 void init_console_handler(bool)
 void init_cygheap::close_ctty()
@@ -5710,6 +5805,7 @@ void openlog(const char*, int, int)
 void parse_alias_list(char***, char**)
 void parse_options(const char*)
 void path_conv::check(const char*, unsigned int, const suffix_info*)
+void pending_signals::add(sigpacket&)
 void pinfo::exit(DWORD)
 void pinfo::init(pid_t, DWORD, HANDLE)
 void pinfo::maybe_set_exit_code_from_windows()
@@ -5729,7 +5825,6 @@ void seekdir(DIR*, long int)
 void select_stuff::cleanup()
 void select_stuff::destroy()
 void semaphore::_fixup_after_fork()
-void set_console_title(char*)
 void set_imp_token(HANDLE, int)
 void set_pipe_non_blocking(HANDLE, bool)
 void set_signal_mask(sigset_t&, sigset_t)
@@ -5749,7 +5844,6 @@ void user_heap_info::init()
 void vsyslog(int, const char*, va_list)
 void wait_sig(void*)
 void win_env::add_cache(const char*, const char*)
-void wnet_dbg_out(const char*, DWORD)
 void* MapView(HANDLE, void*, size_t, DWORD, int, int, off_t, bool)
 void* __aclfromtext(const char*, int*, bool)
 void* _csbrk(int)
@@ -5762,7 +5856,6 @@ void* cygwin_logon_user(const passwd*, const char*)
 void* dlopen(const char*, int)
 void* dlsym(void*, const char*)
 void* dup_ent(unionent*&, unionent*, unionent::struct_type)
-void* fhandler_pipe::get_query_hdl_per_process(WCHAR*, OBJECT_NAME_INFORMATION*)
 void* fhandler_timerfd::get_timerfd_handle()
 void* get_full_privileged_inheritable_token(HANDLE)
 void* load_user_profile(HANDLE, passwd*, cygpsid&)
@@ -5803,6 +5896,7 @@ wal_ET
 warning: %s not present in environment
 wcsdup(%W, %W) %d
 what %d, pw %p
+wide
 win_env* getwinenv(const char*, const char*, win_env*)
 wincmdln
 window %d(%p) not ready
@@ -5812,6 +5906,7 @@ windows
 windows error %u == errno %d
 winexename
 wininfo_lock
+winjitdebug
 winpid
 winsymlinks
 wndproc %d %s %d %d
@@ -5831,6 +5926,7 @@ writer_opening
 writev(%d, %p, %d)
 writing filemark
 wsa_event* search_wsa_event_slot(LONG)
+wsl$
 wsock_evt
 wsock_mtx
 wt >= cnt (%u >= %u)

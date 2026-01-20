@@ -14,8 +14,9 @@ $ffn
 )n/h%fPn
 ,!MbDg[
 /fxLf
+/usr/src/debug/zstd-1.5.7-1/lib//dictBuilder/divsufsort.c
 0 <= ssize
-1.5.5
+1.5.7
 2,THh
 2aNuE
 5nsfZ
@@ -58,8 +59,7 @@ Failed to initialize context\n
 Failed to select dictionary\n
 Frame index is too large
 Frame requires too much memory for decoding
-GCC: (GNU) 11.3.0 20220421 (Fedora Cygwin 11.3.0-1)
-GCC: (GNU) 11.3.1 20230310
+GCC: (GNU) 12.4.0
 HUF_writeCTable error \n
 Header of Literals' block doesn't respect format specification
 Incorrect accel\n
@@ -83,6 +83,7 @@ Src size is incorrect
 T[s - 1] <= T[s]
 T[s - 1] >= T[s]
 Testing on %u samples of total size %u\n
+This mode cannot generate an uncompressed block
 Total number of testing samples is %u and is invalid.
 Total number of testing samples is %u and is invalid.\n
 Total number of training samples is %u and is invalid.
@@ -99,7 +100,6 @@ Unsupported parameter
 Version not supported
 Vgh$
 WARNING: The maximum dictionary size %u is too large compared to the source size %u! size(source)/size(dictionary) = %f, but it should be >= 10! This may lead to a subpar dictionary! We recommend training on sources at least 10x, and preferably 100x the size of the dictionary! \n
-Y@PR\t
 Y\trH5
 \n %u segments found, of total size %u \n
 \r%4.2f %% \r
@@ -109,7 +109,6 @@ construct_BWT
 construct_BWT_indexes
 construct_SA
 dictBufferCapacity must be at least %u\n
-dictBuilder/divsufsort.c
 finding patterns ... \n
 found %3u matches of length >= %i at pos %7u  
 hm~iD
