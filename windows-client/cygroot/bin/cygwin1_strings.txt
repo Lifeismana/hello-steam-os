@@ -1318,65 +1318,65 @@
 /usr/share/locale/locale.alias
 /usr/share/terminfo/%02x/%s
 /usr/share/zoneinfo/
-/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/dtoa.c
-/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/gdtoa-dmisc.c
-/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/gdtoa-gethex.c
-/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/mprec.c
-/usr/src/debug/cygwin-3.6.5-1/newlib/libc/stdlib/strtodg.c
-/usr/src/debug/cygwin-3.6.5-1/newlib/libc/xdr/xdr_rec.c
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygserver/client.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygserver/transport_pipes.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/dlfcn.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/environ.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/base.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/clipboard.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/console.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/dev_disk.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/disk_file.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/floppy.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/mqueue.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/pipe.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/proc.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/process.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/process_fd.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/procsys.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/pty.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/random.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/raw.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/registry.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/serial.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/socket_inet.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/socket_local.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/tape.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/windows.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/flock.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fork.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/grp.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/hookapi.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/local_includes/select.h
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/mm/cygheap.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/mm/mmap.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/mount.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/net.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/ntea.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/path.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/pinfo.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/posix_timer.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/quotactl.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/resource.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/acl.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/auth.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/base.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sec/helper.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/setlsapwd.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/shm.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/signal.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sigproc.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/spawn.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/syscalls.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/sysconf.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/thread.cc
-/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/uinfo.cc
+/usr/src/debug/cygwin-3.6.6-1/newlib/libc/stdlib/dtoa.c
+/usr/src/debug/cygwin-3.6.6-1/newlib/libc/stdlib/gdtoa-dmisc.c
+/usr/src/debug/cygwin-3.6.6-1/newlib/libc/stdlib/gdtoa-gethex.c
+/usr/src/debug/cygwin-3.6.6-1/newlib/libc/stdlib/mprec.c
+/usr/src/debug/cygwin-3.6.6-1/newlib/libc/stdlib/strtodg.c
+/usr/src/debug/cygwin-3.6.6-1/newlib/libc/xdr/xdr_rec.c
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygserver/client.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygserver/transport_pipes.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/dlfcn.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/environ.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/base.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/clipboard.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/console.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/dev_disk.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/disk_file.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/floppy.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/mqueue.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/pipe.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/proc.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/process.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/process_fd.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/procsys.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/pty.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/random.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/raw.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/registry.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/serial.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/socket_inet.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/socket_local.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/tape.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/windows.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/flock.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fork.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/grp.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/hookapi.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/local_includes/select.h
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/mm/cygheap.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/mm/mmap.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/mount.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/net.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/ntea.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/path.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/pinfo.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/posix_timer.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/quotactl.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/resource.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/sec/acl.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/sec/auth.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/sec/base.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/sec/helper.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/setlsapwd.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/shm.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/signal.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/sigproc.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/spawn.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/syscalls.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/sysconf.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/thread.cc
+/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/uinfo.cc
 /var/log/wtmp
 /var/run/utmp
 0 = fhandler_serial:tcsendbreak (%d)
@@ -1396,10 +1396,10 @@
 09\vXJ
 0Him\f
 1h!"3
-2025-10-09 17:21
+2026-01-09 17:39
 20866
 21866
-3.6.5-1
+3.6.6-1
 3.n6 
 4K macro buffer exceeded
 5.5G9
@@ -1630,7 +1630,7 @@ AuthzInitializeContextFromSid, %E
 AuthzInitializeContextFromToken, %E
 AuthzInitializeResourceManager, %E
 BBBBBB
-BEGIN_CYGWIN_VERSION_INFO\n%%% Cygwin dll major: 3006\n%%% Cygwin dll minor: 5\n%%% Cygwin api major: 0\n%%% Cygwin api minor: 357\n%%% Cygwin shared data: 5\n%%% Cygwin dll identifier: cygwin1\n%%% Cygwin mount registry: 3\n%%% Cygwin cygwin registry name: Cygwin\n%%% Cygwin installations name: Installations\n%%% Cygwin cygdrive default prefix: \n%%% Cygwin build date: \n%%% Cygwin shared id: cygwin1S5\nEND_CYGWIN_VERSION_INFO\n
+BEGIN_CYGWIN_VERSION_INFO\n%%% Cygwin dll major: 3006\n%%% Cygwin dll minor: 6\n%%% Cygwin api major: 0\n%%% Cygwin api minor: 357\n%%% Cygwin shared data: 5\n%%% Cygwin dll identifier: cygwin1\n%%% Cygwin mount registry: 3\n%%% Cygwin cygwin registry name: Cygwin\n%%% Cygwin installations name: Installations\n%%% Cygwin cygdrive default prefix: \n%%% Cygwin build date: \n%%% Cygwin shared id: cygwin1S5\nEND_CYGWIN_VERSION_INFO\n
 BEz\fB
 BIG5
 BLKALIGNOFF
@@ -2586,7 +2586,7 @@ Sunday
 Switch back from restricted token
 Switch to restricted token
 System error
-T@/usr/src/debug/cygwin-3.6.5-1/winsup/cygwin/fhandler/fifo.cc
+T@/usr/src/debug/cygwin-3.6.6-1/winsup/cygwin/fhandler/fifo.cc
 TEMP=
 TERM
 TERM=
@@ -5016,7 +5016,7 @@ ru_RU
 ru_UA
 runnable
 runneradmin
-runnervmd3hz3
+runnervmybtk3
 running
 rw_RW
 s4uauth failed, bail out

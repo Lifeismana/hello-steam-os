@@ -11,6 +11,7 @@ import json
 import shlex
 import datetime
 import pathlib
+import socket
 
 logging.basicConfig(format='%(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -25,7 +26,7 @@ class SteamStatus(enum.Enum):
     ERROR = 1
     OS = 2
     OS_DEV = 3
-    SIDE = 4
+    SIDELOADED = 4
 
     @property
     def description(self):
@@ -33,7 +34,7 @@ class SteamStatus(enum.Enum):
             SteamStatus.NOT_RUNNING: 'not running',
             SteamStatus.OS: 'OS client',
             SteamStatus.OS_DEV: 'OS client dev mode',
-            SteamStatus.SIDE: 'sideloaded client',
+            SteamStatus.SIDELOADED: 'sideloaded client',
             SteamStatus.ERROR: 'error',
         }
         return DESCRIPTIONS[self]
@@ -44,14 +45,14 @@ class SteamConfig(enum.Enum):
     # Matching the SteamStatus numeric values
     OS = 2
     OS_DEV = 3
-    SIDE = 4
+    SIDELOADED = 4
 
     @property
     def description(self):
         DESCRIPTIONS = {
             SteamConfig.OS: 'OS client',
             SteamConfig.OS_DEV: 'OS client dev mode',
-            SteamConfig.SIDE: 'sideloaded client',
+            SteamConfig.SIDELOADED: 'sideloaded client',
             SteamConfig.ERROR: 'error',
         }
         return DESCRIPTIONS[self]
@@ -86,10 +87,20 @@ def steam_process_get_path_and_args():
             continue
         rp = os.path.realpath(f'/proc/{pid}/exe')
         if os.path.basename(rp) == 'steam':
-            sp = shlex.split(l)
-            path = sp[1]
-            args = sp[2:]
-            return (path, args)
+            try:
+                with open(f'/proc/{pid}/cmdline', 'rb') as f:
+                    cmdline = f.read()
+                argv = [a.decode('utf-8', errors='replace') for a in cmdline.split(b'\x00') if a]
+                if len(argv) >= 2:
+                    path = argv[0]
+                    args = argv[1:]
+                    # strip -srt-logger-opened: injected by steam.sh at runtime
+                    args = [a for a in args if a != '-srt-logger-opened']
+                    return (path, args)
+                return (argv[0], [])
+            except Exception as e:
+                logger.warning(f'Failed to read /proc/{pid}/cmdline: {e}')
+                return None
 
 def steam_process_get_path():
     try:
@@ -115,7 +126,7 @@ def steam_status():
             return SteamStatus.OS_DEV
         return SteamStatus.OS
     if s.find('devkit-game/steam/') != -1 or s.find('devkit-game/steamdeckard/') != -1:
-        return SteamStatus.SIDE
+        return SteamStatus.SIDELOADED
     logger.warning(f'could not interpret pgrep result to determine steam client status: {s!r}')
     return SteamStatus.ERROR
 
@@ -127,8 +138,8 @@ def steam_configuration():
     t = open(devkit_steam_trampoline_path, 'rt').read()
     if t.find('SteamStatus.OS_DEV') != -1:
         return SteamConfig.OS_DEV
-    if t.find('SteamStatus.SIDE') != -1:
-        return SteamConfig.SIDE
+    if t.find('SteamStatus.SIDELOADED') != -1:
+        return SteamConfig.SIDELOADED
     logger.warning(f'could not determine what {devkit_steam_trampoline_path} means to do')
     return SteamConfig.ERROR
 
@@ -223,30 +234,40 @@ def get_os_info():
 
 def steam_default_args(conf):
     if conf.is_deckard:
-        # Steam Frame supports additional arguments, which by default are empty
-        ret = []
-    else:
-        ret = ['-steamos3', '-steampal', '-steamdeck', '-gamepadui']
+        # Frame currently uses a different setup
+        return []
+
+    try:
+        if os.path.exists('/usr/lib/steamos/steam-launcher'):
+            output = subprocess.check_output('cat /usr/lib/steamos/steam-launcher | grep ^steamargs=',
+                                             shell=True,
+                                             universal_newlines=True)
+            ret = [ v.strip('"') for v in re.findall('\".*?\"', output) ]
+            return ret
+    except:
+        logger.warning('Failed to obtain steam default arguments from /usr/lib/steamos/steam-launcher')
+
+    # Legacy SteamOS
     try:
         output = subprocess.check_output('cat /usr/bin/gamescope-session | grep ^steamargs',
                                          shell=True,
                                          universal_newlines=True)
-    except:
-        logger.warning('Failed to pull default steam command line')
-        return ret
-    try:
         ret = [ v.strip('"') for v in re.findall('\".*?\"', output) ]
     except:
-        logger.warning('Could not parse {output!r} for args')
-    return ret
+        logger.warning('Failed to obtain steam default arguments from /usr/bin/gamescope-session')
 
-def steam_extra_args():
+    # Hardcoded fallback
+    return  ['-steamos3', '-steampal', '-steamdeck', '-gamepadui']
+
+def frame_osclient_extra_args(conf, steam_status):
+    if not conf.is_deckard or steam_status != SteamStatus.OS:
+        return None
     if os.path.exists(STEAM_EXTRA_ARGS_FILE):
         try:
             content = open(STEAM_EXTRA_ARGS_FILE, 'rt').read()
-            match = re.search(r'STEAM_EXTRA_ARGS=(.*)', content)
+            match = re.search(r'Environment="STEAM_EXTRA_ARGS=(.*)"', content)
             if match:
-                return match.group(1)
+                return match.group(1).replace('\\"', '"')
         except Exception as e:
             logger.warning(f'Failed to parse steam extra args: {e}')
     return None
@@ -352,9 +373,12 @@ if __name__ == '__main__':
     _renderdoc_replay_server_running = renderdoc_replay_server_running()
     _renderdoc_layer_enabled = _steam_launch_flags.get('ENABLE_VULKAN_RENDERDOC_CAPTURE', '0') == '1'
 
+    _hostname = socket.gethostname()
+
     if conf.json:
         ret = {
             'is_deckard': conf.is_deckard,
+            'hostname': _hostname,
             'os_name': os_name,
             'os_version': os_version,
             'os_info': os_info,
@@ -369,7 +393,7 @@ if __name__ == '__main__':
             'has_side_loaded_client': has_side_loaded_client,
             'steam_default_args': steam_default_args(conf),
             'steam_current_args': steam_process_get_args(),
-            'steam_extra_args': steam_extra_args(),
+            'frame_osclient_extra_args': frame_osclient_extra_args(conf, steam_status),
             'user_password_is_set': _user_password_is_set,
             'steam_launch_flags': _steam_launch_flags,
             'renderdoc_layer_enabled': _renderdoc_layer_enabled,
@@ -377,12 +401,13 @@ if __name__ == '__main__':
         }
         json.dump(ret, sys.stdout, sort_keys=True, indent=4)
     else:
+        logger.info(f'Hostname                 : {_hostname}')
         logger.info(f'OS                       : {os_name}')
         logger.info(f'OS version               : {os_version}')
         logger.info(f'Session mode is          : {session_status}')
         logger.info(f'Steam client status      : {steam_status_description}')
         logger.info(f'Steam client args        : {steam_process_get_args()!r}')
-        logger.info(f"Steam extra args         : {steam_extra_args()!r}")
+        logger.info(f"Steam extra args (Frame) : {frame_osclient_extra_args(conf, steam_status)!r}")
         logger.info(f"Steam CEF debug          : {'enabled' if cef_debugging_enabled else 'disabled'}")
         logger.info(f'Steam client config      : {steam_configuration.description}')
         logger.info(f'Steam OS client branch   : {osclient_branch}')

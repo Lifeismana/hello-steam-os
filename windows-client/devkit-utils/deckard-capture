@@ -29,12 +29,12 @@ def main():
     output_buffer = io.StringIO()
     try:
         steamvr_path = subprocess.check_output(['steamvr', 'path'], stderr=subprocess.STDOUT, universal_newlines=True).strip()
-        cdd = os.path.join(steamvr_path, 'bin/linuxarm64/deckard')
-        run_vrcmd = os.path.join(cdd, 'run_vrcmd.sh')
-        assert os.path.exists(run_vrcmd), "run_vrcmd.sh not found"
+        cdd = os.path.join(steamvr_path, 'bin/linuxarm64')
+        run_vrcmd = os.path.join(cdd, 'vrcmd')
+        assert os.path.exists(run_vrcmd), "vrcmd not found"
 
         # Enable recording
-        cmd = ['/bin/bash', run_vrcmd, '--mailboxcmd', 'vrcompositor_systemlayer', 'set_local_video_record?enabled=true']
+        cmd = [run_vrcmd, '--mailboxcmd', 'vrcompositor_systemlayer', 'set_local_video_record?enabled=true']
         output_buffer.write(f"Command: {' '.join(cmd)}\n")
         result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
         output_buffer.write(result.stdout)
@@ -70,7 +70,7 @@ def main():
             raise subprocess.CalledProcessError(result.returncode, cmd)
 
         # Disable recording
-        cmd = ['/bin/bash', run_vrcmd, '--mailboxcmd', 'vrcompositor_systemlayer', 'set_local_video_record?enabled=false']
+        cmd = [run_vrcmd, '--mailboxcmd', 'vrcompositor_systemlayer', 'set_local_video_record?enabled=false']
         output_buffer.write(f"Command: {' '.join(cmd)}\n")
         result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
         output_buffer.write(result.stdout)

@@ -14,18 +14,20 @@ logger = logging.getLogger(__name__)
 
 DEVKIT_TOOL_FOLDER = os.path.expanduser('~/devkit-game')
 DEVKIT_UTILS_FOLDER = os.path.expanduser('~/devkit-utils')
+# NOTE: only relevant to Frame + OS client with extra arguments
+# sideloaded client on Frame supports full command line edit instead 
 STEAM_EXTRA_ARGS_FILE = os.path.expanduser('~/.config/systemd/user/steam.service.d/extra_args.conf')
 
 class SteamStatus(enum.Enum):
     # Supported values from steamos-get-status
     OS = 2
     OS_DEV = 3
-    SIDE = 4
+    SIDELOADED = 4
 
 STATUS_STRINGS = [
     ( SteamStatus.OS, 'SteamStatus.OS' ),
     ( SteamStatus.OS_DEV, 'SteamStatus.OS_DEV' ),
-    ( SteamStatus.SIDE, 'SteamStatus.SIDE' ),
+    ( SteamStatus.SIDELOADED, 'SteamStatus.SIDELOADED' ),
 ]
 
 # gamescope-session passes the execution to this script if it exists rather than start steam itself
@@ -83,11 +85,14 @@ if __name__ == '__main__':
                 logger.info('Clearning extra arguments for normal Steam client')
                 if os.path.exists(STEAM_EXTRA_ARGS_FILE):
                     os.unlink(STEAM_EXTRA_ARGS_FILE)
+                    subprocess.run(['systemctl', '--user', 'daemon-reload'], check=True)
             else:
                 logger.info(f'Setting extra arguments for normal Steam client: {conf.args}')
                 os.makedirs(os.path.dirname(STEAM_EXTRA_ARGS_FILE), exist_ok=True)
                 with open(STEAM_EXTRA_ARGS_FILE, 'wt') as extra_args_file:
-                    extra_args_file.write(f'[Service]\nEnvironment=STEAM_EXTRA_ARGS={conf.args}')
+                    escaped_args = conf.args.replace('"', '\\"')
+                    extra_args_file.write(f'[Service]\nEnvironment="STEAM_EXTRA_ARGS={escaped_args}"')
+                subprocess.run(['systemctl', '--user', 'daemon-reload'], check=True)
 
             # When disabling a sideloaded client, also delete the ~/.steam symlinks:
             # They will be re-created by the OS client when starting,
@@ -109,7 +114,7 @@ if __name__ == '__main__':
 
     # OS client
     steam_client = '$HOME/.local/share/Steam/steam.sh'
-    if target == SteamStatus.SIDE:
+    if target == SteamStatus.SIDELOADED:
         steam_client = '$HOME/devkit-game/steam/steam.sh'
 
     if is_deckard:

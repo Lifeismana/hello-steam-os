@@ -18,7 +18,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--verbose', required=False, action='store_true')
     parser.add_argument('--gameid', required=True, action='store')
-    parser.add_argument('--restart-steam', required=False, default='1', action='store')
+    parser.add_argument('--restart-steam', required=False, default='0', action='store')
+    parser.add_argument('--use-mask-unmask', required=False, default='0', action='store')
+    parser.add_argument('--prevent-auto-repair', required=False, default='0', action='store')
     conf = parser.parse_args()
 
     if conf.verbose:
@@ -32,9 +34,14 @@ if __name__ == '__main__':
     )
     os.makedirs(directory, exist_ok=True)
 
-    if conf.gameid == 'steamdeckard' and int(conf.restart_steam) == 1:
-        # tear down steamvr before we start uploading, we mask first to prevent auto restart
-        subprocess.check_call('systemctl --user mask steam ; systemctl --user stop steam', shell=True, stdout=sys.stderr, stderr=subprocess.STDOUT)
+    INHIBIT_SENTINEL = os.path.expanduser('~/.config/inhibit-short-session-tracker')
+    if int(conf.prevent_auto_repair) == 1:
+        open(INHIBIT_SENTINEL, 'w').close()
+        logger.info(f'Created sentinel file: {INHIBIT_SENTINEL}')
+    elif os.path.exists(INHIBIT_SENTINEL):
+        os.remove(INHIBIT_SENTINEL)
+        logger.info(f'Removed sentinel file: {INHIBIT_SENTINEL}')
+
 
     ret = {
         'user': getpass.getuser(),

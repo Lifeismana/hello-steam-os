@@ -9,9 +9,8 @@
 %s: syntax error in special folder ID %s\n
 %s: text\n
 ANSI
-GCC: (GNU) 12.5.0
 GCC: (GNU) 13.4.0
-Oct  9 2025
+Jan  9 2026
 Try `%s --help' for more information.\n
 UNC\
 UTF-8

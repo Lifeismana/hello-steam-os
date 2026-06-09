@@ -1,3 +1,51 @@
+2026-05-06 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260506.0
+	* Frame: fix the screenshot functionality (may require latest Frame OS).
+	* UI: fix issues in the custom Steam client arguments support.
+	* Show the hostname for devices added by IP. Helps fortunate developers with many SteamOS devices.
+	* Switch to a custom version of xdialog for folder and file dialogs.
+
+2026-04-03 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260403.0
+	* Title upload auto-start was hiding errors and trying to start anyway, fixed.
+	* UX: several fixes to the previous work on autoscrolling and window behavior.
+
+2026-03-31 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260331.1
+	* UX: added file and folder browser buttons as needed.
+	* UX: fix the console autoscrolling so it doesn't draw corrupted text anymore.
+	* UX: main window can be resized, tool windows can no longer be dragged and resized inside the main window.
+	* UX: various layout and spacing fixes.
+
+2026-03-16 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260316.0
+	* Fix the new SLR 4.0 runtime options.
+
+2026-03-06 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260306.0
+	* Enable remote debugging support for Proton Experimental. Was unintentionally limited to Proton Stable only.
+
+2026-02-12 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260212.0
+	* Fix handling of Windows code page, fixes support for non English Windows.
+	* Disable auto-uploads when the user cancels an upload operation.
+	* Prevent multiple upload operations from running at the same time, which could get triggered via the build notification mechanism.
+
+2026-01-28 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260128.0
+	* Linux: work around a compatiblity issue with some Ubuntu systems
+	* proxy: disable proxy when connecting to devices
+	* runtime: new steamrt4 and steamrt4 arm64 runtimes (the latter is Steam Frame only)
+	* sniper-arm64 has been retired and won't ship to the public, switch over to steamrt4-arm64
+	* add back support for changing the steam client command line arguments
+
 2026-01-16 Timothee Besset <ttimo@valvesoftware.com>
 
 	* Release v0.20260116.0
@@ -65,7 +113,7 @@
 	* Release v0.20240804.0
 	* Add Python 3.12 support on Linux
 	* Bundle the SDL2 binaries with the Linux release (was previously expected from system)
-	* Update the Windows build to Python 3.12 
+	* Update the Windows build to Python 3.12
 
 2024-07-09 Timothee Besset <ttimo@valvesoftware.com>
 
