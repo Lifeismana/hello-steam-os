@@ -1,3 +1,14 @@
+2026-06-9 Timothee Besset <ttimo@valvesoftware.com>
+
+	* Release v0.20260609.0
+	* improve the device logs tab:
+		- download to per-device folders
+		- show the correct primary log file on Steam Frame
+		- download the SteamVR logs correctly if they are not in the default location
+		- add a button to open the folder in explorer locally
+		- refactored to a single rsync command for speedup
+		note: your stored logs folder location will reset to the default
+
 2026-05-06 Timothee Besset <ttimo@valvesoftware.com>
 
 	* Release v0.20260506.0

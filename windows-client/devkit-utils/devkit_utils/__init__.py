@@ -140,6 +140,39 @@ def obtain_argv(gameid, argv):
     return argv
 
 
+def save_env(gameid, env):
+    """Save environment variables if provided"""
+
+    if not env:
+        return
+
+    envfile = os.path.join(os.getenv("HOME"), "devkit-game",
+                            gameid + "-env.json")
+    try:
+        with open(envfile, "w") as envf:
+            fcntl.flock(envf, fcntl.LOCK_EX)
+            json.dump(env, envf)
+            fcntl.flock(envf, fcntl.LOCK_UN)
+    except IOError:
+        raise Exception(
+            "Unable to open env file for writing: {0}".format(envfile))
+
+
+def obtain_env(gameid):
+    """Obtain environment variables for a game, if any were saved"""
+
+    envfile = os.path.join(os.getenv("HOME"), "devkit-game",
+                            gameid + "-env.json")
+    try:
+        with open(envfile, "r") as envf:
+            fcntl.flock(envf, fcntl.LOCK_EX)
+            env = json.load(envf)
+            fcntl.flock(envf, fcntl.LOCK_UN)
+    except IOError:
+        return {}
+    return env
+
+
 def save_settings(gameid, data):
     """Save settings"""
     settingsfile = os.path.join(os.getenv("HOME"), "devkit-game",

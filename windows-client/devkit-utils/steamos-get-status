@@ -21,12 +21,26 @@ STEAM_EXTRA_ARGS_FILE = os.path.expanduser('~/.config/systemd/user/steam.service
 
 WIRELESS_DISABLE_POWER_MANAGEMENT = '/usr/bin/steamos-polkit-helpers/steamos-disable-wireless-power-management'
 
+# Must match in gui2.py
 class SteamStatus(enum.Enum):
     NOT_RUNNING = 0
     ERROR = 1
     OS = 2
     OS_DEV = 3
     SIDELOADED = 4
+
+    @classmethod
+    def from_string(cls, status_str):
+        if not status_str:
+            return cls.ERROR
+        try:
+            if '.' in status_str:
+                name = status_str.split('.')[-1]
+            else:
+                name = status_str
+            return cls[name]
+        except KeyError:
+            return cls.ERROR
 
     @property
     def description(self):

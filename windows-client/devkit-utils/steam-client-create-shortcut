@@ -33,6 +33,7 @@ if __name__ == '__main__':
 
     logger.info(f'Updating command line and runtime settings for {gameid} on {platform.node()}')
     devkit_utils.save_argv(gameid, parms['argv'])
+    devkit_utils.save_env(gameid, parms['env'])
     devkit_utils.save_settings(gameid, parms)
 
     ret = {}
